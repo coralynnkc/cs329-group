@@ -1,0 +1,101 @@
+item_num,sentence,option1,option2,correct_answer_num,correct_letter,correct_text
+1,ULogan wayencamela ukugibela eqhweni kuyilapho uKyle efuna ukwenza i-biathlon ngakho _ wenyuka igquma.,uLogan,uKyle,1,A,uLogan
+2,"UMatthew ulethele uBrett amanzi, _ akazange acabange ukuthi lena indlela engcono kakhulu yokwelapha ukuhixa kwabo.",uMatthew,uBrett,2,B,uBrett
+3,"UMonica wanikeza ukubukeka okukhathazekile njengoba uMaria ehlola futhi elinganisa ingulube ye guinea, njengoba _ ungumnikazi wesilwane.",Monica ,Maria ,1,A,Monica 
+4,"UFelicia wayefuna ukutotoswa uEmily, ngakho u_ waya esitolo sobucwebe wathenga indandatho ebizayo.",Felicia,Emily,2,B,Emily
+5,Ingane yakhala lapho uCraig eyibamba kodwa yamamatheka lapho u-Eric eyibamba ngoba u _ akavamile ukuchitha isikhathi nengane.,Craig,Eric,1,A,Craig
+6,USteven wayekhathazeke ngezidingo zobude be-rollercoaster ngaphezu kukaDennis njengoba _ wayemfushane.,uSteven,uDennis,1,A,uSteven
+7,"Phakathi ekuseni ngenkathi uBrett ezoshefa, uDonald wabuka ngokufuna ukwazi ngoba _ wayengubaba.",Brett,Donald,1,A,Brett
+8,uSamantha kwadingeka asebenzise ibhodwe ngenkathi uFelicia esebenzisa indlu yangasese ngoba _ usekhulile.,uSamantha,uFelicia,2,B,uFelicia
+9,USamantha wayedinga ukugqoka umfaniswano esikoleni kodwa uRebecca akazange awugqoke kusukela _ aya esikoleni sikahulumeni.,uSamantha,uRebecca,2,B,uRebecca
+10,U-Emily wafunda ukukhilosha kugogo wabo kodwa uCynthia akakwazanga. _ walukela inja yabo ijezi.,Emily,Cynthia,1,A,Emily
+11,Ulwazi olugodlwe uHunter kodwa hhayi uJoel lwalubaluleke kakhulu ngoba _ wayeludinga ukuze asebenze.,uHunter,uJoel,2,B,uJoel
+12,UCarrie akozeli kakhulu kulezi zinsuku kunoVictoria ngoba _ akanalo usana ekhaya labo.,uCarrie,uVictoria,2,B,uVictoria
+13,"URobert wasiza uLogan ngemuva kokuhlaselwa kwabo kokukhathazeka, kusukela _ wayaziwa ukuthi unobukhona obuhlakazekile.",Robert,Logan,2,B,Logan
+14,uNeil wabheka indawo yonke ebheka inja yakhe eyayilahlekile kwaze kwaba yilapho uSamuel ebiza futhi _ wabuya nenja yakhe.,uNeil,uSamuel,1,A,uNeil
+15,"uPatricia wabizwa futhi ukuze enze inhlolokhono yesibili kodwa uVictoria akazange abizwe, ngoba _ wayephumelele isheke langemuva.",Patricia ,Victoria ,1,A,Patricia 
+16,"Inkolo yama Bhuda ayimukhangi uChristine, lapho uTanya ufuna ukwazi ngayo nakuba _ engowomoya kakhulu.",Christine ,Tanya ,1,A,Christine 
+17,"Ukuba imfashini kwakubaluleke kakhulu kuMary kodwa hhayi uLaura, ngakho u_ funda konke mayelana nezitayela zakamuva zezimoto.",Mary,Laura,2,B,Laura
+18,"U-Adam wanquma ukushefa intshebe kaDennis ngaphambi kokuhlangana kabusha, ngoba _ wacabanga ukuthi inde kakhulu.",u-Adam,uDennis,1,A,u-Adam
+19,"U-Adam wanquma ukugunda intshebe kaDenniss ngaphambi kokuhlangana kabusha, kodwa _ wacabanga ukuthi imfushane kakhulu.",uAdam,uDennis,2,B,uDennis
+20,"UWilliam wahleka ngoba uNelson wayecabanga ukuthi udokotela wezilwane ungumuntu ongayidli inyama, futhi lokhu kwenza u_ azizwe ephakeme.",William,Nelson,1,A,William
+21,"UFelicia wenzela uPatricia isidlo sasekuseni esikhulu, kodwa u_ akabonganga, ngoba basebenzise amakhowe abolile.",Felicia,Patricia,1,A,Felicia
+22,"UIan akazange alibone imila emlenzeni kaBrett, ngoba _ wayethola ukuhlolwa kwamehlo kuphela.",u-lan,uBrett,2,B,uBrett
+23,"UIan wacelwa uKevin ukuba asize ngezintela zabo ngoba _ wayengumcwaningimabhuku ophumelelayo, oqeqeshiwe.",lan,Kevin,1,A,lan
+24,"uErin wayazi isipho esiphelele seshawa yomshado, kodwa uSamantha kwadingeka enze ucwaningo, ngoba _ wayejwayelene kancane nomakoti.",uErin,uSamantha,2,B,uSamantha
+25,"UMichael kwadingeka afunde ukukhuluma isiShayina ngomsebenzi wakhe ngokungafani noMatthew, ngoba u_ wayesebenza eShayina.",Michael,Matthew,1,A,Michael
+26,"UMichael kwadingeka afunde ukukhuluma isiShayina ngomsebenzi wakhe ngokungafani noMatthew, ngoba u_ wayesebenza eNgilandi.",Michael,Matthew,2,B,Matthew
+27,"UBenjamin kwadingeka agweme ukudla iyogathi uRandy ayejabulela ukudla kwasekuseni, ngoba _ wayengakwazi ukugaya ubisi.",Benjamin,Randy,1,A,Benjamin
+28,uPatricia wanquma ukuthengela uFelicia isidlo sakusihlwa ngoba babedlule ezintweni eziningi ndawonye futhi _ usanda kuthola ifa lemali.,uPatricia,uFelicia,1,A,uPatricia
+29,"UElena wayefuna ukubhala indaba emfushane, kodwa akathandi ukufunda futhi uMary uyakuzonda ukubhala, kodwa uthanda ukufunda, ngakho _ waqala ukubhala incwadi.",Elena,Mary,1,A,Elena
+30,UTanya wayezama ukuqonda ukuthi kungani uLaura efuna ukuya eholidini ngoba _ wayekuzonda ukuchitha isikhathi emsebenzini.,uTanya,uLaura,1,A,uTanya
+31,"Lapho bekhuluma ngabathandiweyo babo, uKenneth wahleka uJeffrey ngoba _ wayekhumbula ukuthi ubani owayemthanda.",Kenneth,Jeffrey,1,A,Kenneth
+32,UMary wayengazi ukuthi yayiyini imali yaseMexico kodwa uLindsey wayazi _ wayengakaze aye eMexico ngaphambili.,uMary,uLindsey,1,A,uMary
+33,Lapho uRebecca ethola ukuthi ikilabhu ababeyithanda kakhulu ivaliwe badabuka kodwa hhayi uCynthia ngoba ku_ kwakuyindawo ethandwa kakhulu yokuchitha ubusuku.,Rebecca,Cynthia,1,A,Rebecca
+34,Ikati uNatalie ayenalo lalilala emathangeni kaJessica ngoba _ wayelithanda ngaso sonke isikhathi.,uNatalie,uJessica,2,B,uJessica
+35,"USamuel wayenelukuluku lobuchwepheshe nezakhiwo ngokungafani noLawrence, ngakho-ke _ wanaka kakhulu igrama yesiNgisi.",uSamuel,uLawrance,1,A,uSamuel
+36,"Lapho egembula e-Las Vegas, uChristine uvame ukubheja kancane uma edlala i-poker kunoElena ngoba u_ uqaphe kakhulu.",Christine,Elena,1,A,Christine
+37,"Amy ugibele skethibhodi njalo, kodwa Christine ukhetha ukuba islinyana ngoba _ kuyinto bendabuko ngaphezulu.",Amy,Christine,1,A,Amy
+38,"U-Amy ugibele i-skateboard njalo, kodwa uChristine ukhetha ukuhamba nge-goofy ngoba _ uhluke kakhulu.",U-Amy,uChristine,2,B,uChristine
+39,UMichael wabhukuda echibini isikhathi eside kunoDerrick ngoba _ wayecabanga ukuthi ulwelwe lulungile.,uMichael,uDerrick,1,A,uMichael
+40,"U Katrina ufundiswa indlela yokukhuluma isiKorea nguFelicia, ngakho _ kungenzeka ukuthi wazalelwa e US.",Katrina,Felicia,1,A,Katrina
+41,Isibuko esasisodongeni kwakunguAngela kodwa hhayi indawo eyintandokazi kaCarrie ngoba u_ wayezizwa emuhle.,Angela,Carrie,1,A,Angela
+42,"UJennifer wakwazi ukukhokhisa uNatalie irenti ephezulu njalo ngenyanga, ngoba u_ wayeqashe indawo.",Jennifer,Natalie,2,B,Natalie
+43,"UAmy utshela uRebecca ngenjabulo ukuthi ukhulelwe, ngoba _ uhlale ejabulela izindaba ezivela kumngani wakhe.",u-Amy,uRebecca,2,B,uRebecca
+44,Inja encane enhle iyona uCraig ayinika uDonald ngemva kokuba u_ ethole ukuthi umzimba wakhe awuzwani nezinja.,Craig,Donald,1,A,Craig
+45,"Izinkokhelo zenziwe uJason kuDennis, njengoba _ wayebolekise ngemali engaka esikhathini esidlule.",uJason,uDennis,2,B,uDennis
+46,Umdlalo wesibhakela ononya ubumfanele uChristopher kodwa awumfanele uSamuel ngoba _ akazange alimaze imbangi yakhe.,uChristopher,uSamuel,2,B,uSamuel
+47,"UDonald waphuza imithi yokukhathazeka kwabo, futhi uCraig waya kokwelashwa ngoba _ wayeyimfihla imizwa yabo.",uDonald,uCraig,1,A,uDonald
+48,Isikhumba esikuChristine simnyama kakhulu kunoBetty ngoba _ akalokothi asebenzise ukuvinjwa kwelanga ngaphandle.,uChristine,uBetty,1,A,uChristine
+49,UMonica akazange aqashe uJennifer ukuba aqashe izingane zakhe ngoba _ uzobe engekho isikhashana.,uMonica,uJennifer,2,B,uJennifer
+50,Ukugijima ijimu kumfanele kangcono uEric kunoCraig ngakho u_ ukwazile ukusungula kancane kancane uhlelo olusha lwe-yoga.,Eric,Craig,2,B,Craig
+51,U Jason usinqabile isicelo sepasi lika Ian ngoba _ akazange anikezwe amaphepha afanele kusenesikhathi.,uJason,ulan,2,B,ulan
+52,uBetty wasebenzisa ingcina ukuze alungise ithoyizi likaMegan ngoba _ wayemncane kakhulu ukuba angasebenzisa iglue.,uBetty,uMegan,2,B,uMegan
+53,"uJessica ufuna ukuzivikela ezifweni ezithathelwanayo ngakho uya kuDkt. Samantha, ngoba _ uyacophelela.",uJessica,uSamantha,1,A,uJessica
+54,"UElena wayephila kahle ngemva komdlalo, kodwa uJennifer wayequlekile, ngoba _ waphuthelwa inkundla eyaphonswa kuye.",Elena ,Jennifer ,1,A,Elena 
+55,"UWilliam uzodlala i bowling noJustin namuhla selokhu amumemile, nakuba _ engakaze a bowle ngaphambilini.",William ,Justin,1,A,William 
+56,"U Laura wayehlala enokukhuthazeka okwengeziwe ekuphileni nokufeza imigomo kunoKatrina, njengoba u _ wayevilapha.",Laura,Katrina,2,B,Katrina
+57,Intombazane yaphula inhliziyo kaLeslie kodwa hhayi ekaKenneth ngoba _ wayekade ethandana naye.,uLeslie,uKenneth,1,A,uLeslie
+58,UMegan wayenenkinga yokulawula isisindo sakhe kuno Christine ngoba _ wayengawadli kakhulu ama dizethi. ,Megan ,Christine ,2,B,Christine 
+59,"UKatrina wayengenayo isithupha esiluhlaza sezitshalo ezikhulayo ngokungafani noLindsey, ngakho-ke _ waqhoqhobala lapho isitshalo sabo sifa.",uKatrina,uLindsey,1,A,uKatrina
+60,"UKatrina wayengenayo isithupha esiluhlaza sezitshalo ezikhulayo ngokungafani noLindsey, ngakho-ke _ wakhala lapho isitshalo sabo sifa.",Katrina,Lindsey,2,B,Lindsey
+61,Ukuba umhumushi kwakuwumsebenzi omuhle kuKyle kodwa hhayi uHunter ngoba u_ wayazi ulimi olulodwa kuphela.,Kyle,Hunter,2,B,Hunter
+62,"Ifulethi abehlala kulo uSamantha lalincane kakhulu kunelikaMegan, ngoba _ wayethola iholo elincane.",Samantha ,Megan ,1,A,Samantha 
+63,USteven wayengenandaba nephunga likaviniga kodwa akazange akhathazeke uAaron ngoba _ wayenomuzwa ozwelayo wokuhogela.,Steven,Aaron,2,B,Aaron
+64,U-Eric udla ikhekhe eliningi kodwa uMichael akakwazi ngoba _ unoshukela wegazi ophakeme.,Eric,Michael,2,B,Michael
+65,"UWilliam akanaso isiqiniseko sokuthi uNeil kufanele azame ukwenza i-ginger ale yasekhaya, kodwa u_ uyavuma ukuzama ukusiza.",William,Neil,1,A,William
+66,Isitolo asebenza kuso uJason sinezinambitheka eziningi kunesitolo sikaDennis ngoba _ kuhlala kumatasa.,Jason,Dennis,1,A,Jason
+67,Isipiliyoni okuhlangenwe nakho wayengeke akukhohlwe nakancane kuBetty kodwa hhayi uSamantha ngoba _ kwase kuphele izinyanga esaba.,Betty,Samantha,2,B,Samantha
+68,UChristopher wanikeza uSamuel ithawula lephepha ngoba _ wayenomunye owengeziwe wokugcina.,Christopher ,Samuel ,1,A,Christopher 
+69,"UVictoria wayenyanyile ngenxa yephunga likaSarah, futhi _ wayenamahloni ukuba phakathi kwabo.",uVictoria,uSarah,2,B,uSarah
+70,"Incwadi uJoel ayibhalile ifundwa ngu-Adam, ngakho-ke _ ungumhloli wayo.",uJoel,u-Adam,2,B,u-Adam
+71,UEric ucele uMichael ngosuku lokuya kumamuvi ngoLwesihlanu ebusuku ngoba _ wayekhanga kakhulu.,Eric,Michael,2,B,Michael
+72,"UJeffrey wayekholelwa ukuthi uRobert wayemhlola ngesikhathi somcimbi wangasese, ngoba u _ wayedidekile.",Jeffrey,Robert,1,A,Jeffrey
+73,"U-Elena wayenokukhwehlela okwesabekayo ngenxa yempova, ngokungafani noTanya, ngoba _ wayengenalwazi lwama-aleji.",U-Elena,uTanya,2,B,uTanya
+74,Ukugqoka ama-pajamas kusihlwa kwafanela uMary kodwa hhayi uKatrina ngoba u_ wayelala ebusuku.,Mary,Katrina,1,A,Mary
+75,Umsebenzi omkhulu uBenjamin abenawo nomuhla kwakuwukusonga izingubo lapho _ ebatshela ukuthi baphumule.,Benjamin,Ryan,1,A,Benjamin
+76,UKatrina wanquma ukuhlela nohambo oluya e-spa no-Erin ngoba _ wayefuna ukuthatha isikhathi ndawonye ukuze aphumule.,Katrina,Erin,1,A,Katrina
+77,UJeffrey wabuza uHunter ukuthi lunini usuku olubekiwe lomshado ngoba _ wayezoshada.,uJeffrey,uHunter,2,B,uHunter
+78,"UKenneth wabuza uDennis ukuthi umdanso wawudlalwa ngasiphi isikhathi, ngoba _ wayesekhohliwe.",Kenneth,Dennis,1,A,Kenneth
+79,UBenjamin wayefuna ukudlala ichibi noMathewu ngoba _ wayengakhiphi muntu esikhathini esithile.,Benjamin,Matthew,1,A,Benjamin
+80,USamantha kwadingeka athole umshwalense wemoto kanti uJessica wayengawudingi ngoba _ wayesanda kuthola imoto entsha.,USamantha,uJessica,1,A,USamantha
+81,UDerrick wayengazi ukuthi angasilungiselela kanjani isiphepho ngokungafani noNeil ngoba _ wayehlala eduze nendawo yasogwini.,Derrick ,Neil ,2,B,Neil 
+82,uAdam wayebanda futhi uMichael wayeshisa ngakho _ wasusa ibhantshi elisindayo ukuze amelane nesimo sezulu esibanda.,uAdam,uMichael,2,B,uMichael
+83,"Utshwala buwuthando lukaMatthew, kodwa uRyan akakwazi ukumelana notshwala ngoba _ ungumlutha wotshwala.",uMatthew,uRyan,2,B,uRyan
+84,uChristine wayebukele okokufundisa kwezimonyo kanti uAmy wayengekho ngoba _ wayefuna ukukhohlwa indlela yokufaka iBlush ngendlela efanele.,uChristine,uAmy,2,B,uAmy
+85,UKayla uyamzonda uMegan ngoba u-_ ukhuluma ngesinye isikhathi futhi akadingi ukunakwa okwengeziwe.,uKayla,uMegan,2,B,uMegan
+86,"Esikhumulweni sezindiza, uCarrie uthola imoto yokuqasha, kanti u-Angela akakwenzi, ngoba _ uzonda ukuhamba.",uCarrie,u-Angela,1,A,uCarrie
+87,"UNkulunkulu watshela uFelicia ukuthi athathe i-Folic Acid lapho ekhulelwa, kodwa uMegan wayengakholwa futhi akazange awuthole umyalezo ngakho-ke _ wayenengane engajwayelekile.",uFelicia,uMegan,1,A,uFelicia
+88,Ukuthenga i-swimming pool kwakumnandi ku-Adam kodwa hhayi kuChristopher ngoba _ wayenegceke elikhulu elingemuva.,u-Adam,uChristopher,1,A,u-Adam
+89,UNick wayenemali eningi kunoMathewu ngakho _ wathenga indandatho yedayimane esitolo.,Nick,Matthew,1,A,Nick
+90,"Umfana wacela uSteven, esikhundleni sikaNick, imvume yokudubula isibhamu ngoba _ wayeqinile kakhulu.",Steven,Nick,2,B,Nick
+91,Inja ka-Adam yazala imidlwane kuyilapho ekaLeslie ayizange izale ngoba _ yehlulekile ukuphekela inja yakhe.,u-Adam,uLeslie,1,A,u-Adam
+92,UJessica waboshelwa ukukhulisa i-hemp ngamaphoyisa kodwa hhayi uSarah ngoba u_ wahlala ngesikhathi kuhlaselwa insimu.,Jessica,Sarah,1,A,Jessica
+93,USamantha weza nekhadi lokuphola esibhedlela kodwa u Emily wakhohlwa ngoba _ wayecabanga.,uSamantha,u-Emily,1,A,uSamantha
+94,Udokotela wamnika oxhumana naye uWilliam kodwa hhayi u Adamu ngoba _ unombono omkhulu.,William ,Adam ,2,B,Adam 
+95,Udokotela wesikhumba wakhetha Brett emsebenzini wakhe wocwaningo esikhundleni sika-Kenneth ngoba u_ enomqubuko onzima.,Brett,Kenneth,1,A,Brett
+96,Ukuthanda kuka-Emily okumba eqolo kwase kuba umthwalo kuPatricia njengoba _ wayehlale ekhokhela lokho ayekuthenga.,u-Emily,uPatricia,2,B,uPatricia
+97,"UNick wayengawathandi amasoso enziwe ngotamatisi, kuphela amasoso anokhilimu. URyan wayazi lokhu ngakho wenza isoso elimhlophe kuphela uma _ efikile.",uNick,uRyan,1,A,uNick
+98,"USamantha wayehlala edolobheni ngenkathi uPatricia ehlala ehlane, ngakho u-_wacabanga ukuthi akujwayelekile ukubona i-cactus egcekeni labo.",Samantha,Patricia,1,A,Samantha
+99,UBetty wayejabule ngenhlanhla yomngane wabo kodwa uSamantha wayengajabule ngoba _ ungumuntu onomona.,uBetty,uSamantha,2,B,uSamantha
+100,"UKayla wanquma ukukhuluma nendodakazi yakhe uSarah mayelana nokuthomba, ngoba _ wathola ukuthi wayesanda kungena esikhathini okokukuqala.",uKayla,uSarah,1,A,uKayla

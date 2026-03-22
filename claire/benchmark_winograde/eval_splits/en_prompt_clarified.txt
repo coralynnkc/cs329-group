@@ -1,0 +1,205 @@
+You are performing a pronoun resolution task. In each sentence below, the blank (_) represents a pronoun that has been removed. Your job is to determine which of the two provided options the pronoun originally referred to.
+
+Use commonsense reasoning about the context to decide which entity is the correct referent of the missing pronoun.
+
+For each item, respond with ONLY the number and the letter (A or B). Do not explain your reasoning.
+
+1. Anna did a lot worse than her good friend Lucy on the test because _ had studied so hard.
+A) Lucy
+B) Anna
+
+2. John was doing research in the library when he heard a man humming and whistling. _ was very annoying.
+A) John
+B) man
+
+3. Sam and Amy are passionately in love, but Amy's parents are unhappy about it, because _ are snobs.
+A) Sam and Amy
+B) Amy's parents
+
+4. This morning, Joey built a sand castle on the beach, and put a toy flag in the highest tower, but this afternoon the wind knocked _ down.
+A) sand castle
+B) flag
+
+5. The path to the lake was blocked, so we couldn't reach _.
+A) the lake
+B) The path
+
+6. When the sponsors of the bill got to the town hall, they were surprised to find that the room was full of opponents. _ were very much in the minority.
+A) opponents
+B) the sponsors
+
+7. Babar wonders how _ can get new clothing. Luckily, a very rich old man who has always been fond of little elephants understands right away that he is longing for a fine suit. As he likes to make people happy, he gives him his wallet.
+A) old man
+B) Babar
+
+8. Mark heard Steve 's feet going down the ladder. The door of the shop closed after _ . He ran to look out the window.
+A) Mark
+B) Steve
+
+9. Fred and Alice had very warm down coats , but _ were not enough for the cold in Alaska.
+A) Fred and Alice
+B) coats
+
+10. A man's life and a horse's life are worth more than some foxes' tails ; al least _ ought to be.
+A) foxes' tails
+B) A man's life and a horse's life
+
+11. Lily spoke to Donna , breaking _ concentration.
+A) Lily
+B) Donna
+
+12. The pony behaved well, sir, and showed no vice; but at last he just threw up his heels and tipped the young gentleman into the thorn hedge. He wanted me to help _ out, but I hope you will excuse me, sir, I did not feel inclined to do so.
+A) young gentleman
+B) pony
+
+13. Mr. Moncrieff visited Chester 's luxurious New York apartment, thinking that it belonged to his son Edward . The result was that Mr. Moncrieff has decided to cancel Edward 's allowance on the ground that _ no longer requires his financial support.
+A) Edward
+B) Mr. Moncrieff
+
+14. Since Chester was dependent on Uncle Vernon , _ couldn't very well marry without his approval
+A) Uncle Vernon
+B) Chester
+
+15. The bird perched on the limb and _ bent.
+A) The bird
+B) the limb
+
+16. Spiderman defeated Magnito because _ is a bad guy.
+A) Spiderman
+B) Magnito
+
+17. When the preschoolers visited the senior citizens, _ were very hospitable.
+A) the preschoolers
+B) the senior citizens
+
+18. Bob cooked omelets for Jack, because _ knew how.
+A) Bob
+B) Jack
+
+19. Michael backed Bill because John asked _ to.
+A) Bill
+B) Michael
+
+20. John asked the scientist what _ could do to help.
+A) the scientist
+B) John
+
+21. The computer could not run the program because _ had too many errors.
+A) the program
+B) The computer
+
+22. Jim went to Hal's house, and brought _ dog.
+A) Hal
+B) Jim
+
+23. A monkey ate a lizard and _ screamed in pain.
+A) A monkey
+B) a lizard
+
+24. Jill loves Jamie and _ does not feel the same way.
+A) Jill
+B) Jamie
+
+25. Tobias is upset with William because _ would not pay.
+A) Tobias
+B) William
+
+26. Apple defeated Microsoft in the war because _ were creative.
+A) Microsoft
+B) Apple
+
+27. Chuck Norris can beat any man in a fight, unless _ is tied up and blindfolded.
+A) any man
+B) Chuck Norris
+
+28. The children egged the neighbors because _ had no dignity.
+A) The children
+B) the neighbors
+
+29. The Philadelphia Eagles lost to the St. Louis Rams, but it was because _ had the home field advantage.
+A) St. Louis Rams
+B) Philadelphia Eagles
+
+30. Blue Thunder scored more goals than Green Hogs since _ are the better team.
+A) Blue Thunder
+B) Green Hogs
+
+31. Blue Thunder scored more goals than Green Hogs since _ are not very good at the game.
+A) Blue Thunder
+B) Green Hogs
+
+32. Doctor Conrad Murray is accused of negligence in Michael Jackson's death because _ was the doctor on site when the drug overdose took place.
+A) Doctor Conrad Murray
+B) Michael Jackson
+
+33. UPS provides much convenience to the customers with their drop off service since _ make the shipping of packages extremely easy.
+A) UPS
+B) the customers
+
+34. The government has made about 30 percent of the requests for censoring classified materials to Google, because _ did not want this information to be widely available to the public.
+A) The government
+B) Google
+
+35. Peter Griffin often pokes fun at Chris, so _ always ends up being angry.
+A) Peter Griffin
+B) Chris
+
+36. The officers chose a planet to send the new soldiers so _ could receive experience in hostile environments.
+A) The officers
+B) the new soldiers
+
+37. The heavy weapons team bombarded the settlement with their mortars even though _ were unarmed.
+A) the settlement
+B) The heavy weapons team
+
+38. A series of injections are used to battle a type of cancer in patients, but _ do not always provide a hundred percent success rate.
+A) patients
+B) A series of injections
+
+39. New York City was grateful for the sacrifices the American Armed Forces did to save their city because _ managed to divert a devastating attack.
+A) New York City
+B) the American Armed Forces
+
+40. Jim was staring at the guy with the snowboard, because _ was doing tricks.
+A) the guy
+B) Jim
+
+41. When Sue went to Nadia's home for dinner, _ saw a big teddy bear.
+A) Nadia
+B) Sue
+
+42. The professor told John that _ passed him.
+A) The professor
+B) John
+
+43. Nelson punched Milhouse but _ was not caught.
+A) Nelson
+B) Milhouse
+
+44. The clown smiled at the child and _ offered him a balloon.
+A) The clown
+B) the child
+
+45. The city council granted a permit to the construction workers because _ were elected to encourage business.
+A) the construction workers
+B) The city council
+
+46. Data is an android who can learn new materials much faster than Acting Ensign Wesley since _ has the ability to learn vasts amount of information quickly into his database.
+A) Acting Ensign Wesley
+B) Data
+
+47. The Marines are considerably afraid of the aliens because _ are known to hunt down humans.
+A) The Marines
+B) the aliens
+
+48. The Marines are considerably afraid of the aliens, but _ will still use their discipline to overcome their fears.
+A) the aliens
+B) The Marines
+
+49. Neil Armstrong was actually sent on a secret mission assigned by President Kennedy to investigate an abnormal event so _ was trained on what exactly he needed to do.
+A) Neil Armstrong
+B) President Kennedy
+
+50. Arnold Schwarzenegger cannot terminate John Conner, because _ is protecting him.
+A) Arnold Schwarzenegger
+B) John Conner

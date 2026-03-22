@@ -1,0 +1,51 @@
+item_num,sentence,option1,option2,correct_answer_num,correct_letter,correct_text
+1,Anna did a lot worse than her good friend Lucy on the test because _ had studied so hard.,Lucy,Anna,1,A,Lucy
+2,John was doing research in the library when he heard a man humming and whistling. _ was very annoying.,John,man,2,B,man
+3,"Sam and Amy are passionately in love, but Amy's parents are unhappy about it, because _ are snobs.",Sam and Amy,Amy's parents,2,B,Amy's parents
+4,"This morning, Joey built a sand castle on the beach, and put a toy flag in the highest tower, but this afternoon the wind knocked _ down.",sand castle,flag,2,B,flag
+5,"The path to the lake was blocked, so we couldn't reach _.",the lake,The path,1,A,the lake
+6,"When the sponsors of the bill got to the town hall, they were surprised to find that the room was full of opponents. _ were very much in the minority.",opponents,the sponsors,2,B,the sponsors
+7,"Babar wonders how _ can get new clothing. Luckily, a very rich old man who has always been fond of little elephants understands right away that he is longing for a fine suit. As he likes to make people happy, he gives him his wallet.",old man,Babar,1,A,old man
+8,Mark heard Steve 's feet going down the ladder. The door of the shop closed after _ . He ran to look out the window.,Mark,Steve,2,B,Steve
+9,"Fred and Alice had very warm down coats , but _ were not enough for the cold in Alaska.",Fred and Alice,coats,2,B,coats
+10,A man's life and a horse's life are worth more than some foxes' tails ; al least _ ought to be.,foxes' tails,A man's life and a horse's life,2,B,A man's life and a horse's life
+11,"Lily spoke to Donna , breaking _ concentration.",Lily,Donna,2,B,Donna
+12,"The pony behaved well, sir, and showed no vice; but at last he just threw up his heels and tipped the young gentleman into the thorn hedge. He wanted me to help _ out, but I hope you will excuse me, sir, I did not feel inclined to do so.",young gentleman,pony,1,A,young gentleman
+13,"Mr. Moncrieff visited Chester 's luxurious New York apartment, thinking that it belonged to his son Edward . The result was that Mr. Moncrieff has decided to cancel Edward 's allowance on the ground that _ no longer requires his financial support.",Edward,Mr. Moncrieff,1,A,Edward
+14,"Since Chester was dependent on Uncle Vernon , _ couldn't very well marry without his approval",Uncle Vernon,Chester,2,B,Chester
+15,The bird perched on the limb and _ bent.,The bird,the limb,2,B,the limb
+16,Spiderman defeated Magnito because _ is a bad guy.,Spiderman,Magnito,2,B,Magnito
+17,"When the preschoolers visited the senior citizens, _ were very hospitable.",the preschoolers,the senior citizens,2,B,the senior citizens
+18,"Bob cooked omelets for Jack, because _ knew how.",Bob,Jack,1,A,Bob
+19,Michael backed Bill because John asked _ to.,Bill,Michael,2,B,Michael
+20,John asked the scientist what _ could do to help.,the scientist,John,2,B,John
+21,The computer could not run the program because _ had too many errors.,the program,The computer,1,A,the program
+22,"Jim went to Hal's house, and brought _ dog.",Hal,Jim,2,B,Jim
+23,A monkey ate a lizard and _ screamed in pain.,A monkey,a lizard,2,B,a lizard
+24,Jill loves Jamie and _ does not feel the same way.,Jill,Jamie,2,B,Jamie
+25,Tobias is upset with William because _ would not pay.,Tobias,William,1,A,Tobias
+26,Apple defeated Microsoft in the war because _ were creative.,Microsoft,Apple,2,B,Apple
+27,"Chuck Norris can beat any man in a fight, unless _ is tied up and blindfolded.",any man,Chuck Norris,2,B,Chuck Norris
+28,The children egged the neighbors because _ had no dignity.,The children,the neighbors,1,A,The children
+29,"The Philadelphia Eagles lost to the St. Louis Rams, but it was because _ had the home field advantage.",St. Louis Rams,Philadelphia Eagles,1,A,St. Louis Rams
+30,Blue Thunder scored more goals than Green Hogs since _ are the better team.,Blue Thunder,Green Hogs,1,A,Blue Thunder
+31,Blue Thunder scored more goals than Green Hogs since _ are not very good at the game.,Blue Thunder,Green Hogs,2,B,Green Hogs
+32,Doctor Conrad Murray is accused of negligence in Michael Jackson's death because _ was the doctor on site when the drug overdose took place.,Doctor Conrad Murray,Michael Jackson,1,A,Doctor Conrad Murray
+33,UPS provides much convenience to the customers with their drop off service since _ make the shipping of packages extremely easy.,UPS,the customers,1,A,UPS
+34,"The government has made about 30 percent of the requests for censoring classified materials to Google, because _ did not want this information to be widely available to the public.",The government,Google,1,A,The government
+35,"Peter Griffin often pokes fun at Chris, so _ always ends up being angry.",Peter Griffin,Chris,2,B,Chris
+36,The officers chose a planet to send the new soldiers so _ could receive experience in hostile environments.,The officers,the new soldiers,2,B,the new soldiers
+37,The heavy weapons team bombarded the settlement with their mortars even though _ were unarmed.,the settlement,The heavy weapons team,1,A,the settlement
+38,"A series of injections are used to battle a type of cancer in patients, but _ do not always provide a hundred percent success rate.",patients,A series of injections,2,B,A series of injections
+39,New York City was grateful for the sacrifices the American Armed Forces did to save their city because _ managed to divert a devastating attack.,New York City,the American Armed Forces,2,B,the American Armed Forces
+40,"Jim was staring at the guy with the snowboard, because _ was doing tricks.",the guy,Jim,1,A,the guy
+41,"When Sue went to Nadia's home for dinner, _ saw a big teddy bear.",Nadia,Sue,1,A,Nadia
+42,The professor told John that _ passed him.,The professor,John,1,A,The professor
+43,Nelson punched Milhouse but _ was not caught.,Nelson,Milhouse,1,A,Nelson
+44,The clown smiled at the child and _ offered him a balloon.,The clown,the child,1,A,The clown
+45,The city council granted a permit to the construction workers because _ were elected to encourage business.,the construction workers,The city council,2,B,The city council
+46,Data is an android who can learn new materials much faster than Acting Ensign Wesley since _ has the ability to learn vasts amount of information quickly into his database.,Acting Ensign Wesley,Data,2,B,Data
+47,The Marines are considerably afraid of the aliens because _ are known to hunt down humans.,The Marines,the aliens,2,B,the aliens
+48,"The Marines are considerably afraid of the aliens, but _ will still use their discipline to overcome their fears.",the aliens,The Marines,2,B,The Marines
+49,Neil Armstrong was actually sent on a secret mission assigned by President Kennedy to investigate an abnormal event so _ was trained on what exactly he needed to do.,Neil Armstrong,President Kennedy,1,A,Neil Armstrong
+50,"Arnold Schwarzenegger cannot terminate John Conner, because _ is protecting him.",Arnold Schwarzenegger,John Conner,1,A,Arnold Schwarzenegger

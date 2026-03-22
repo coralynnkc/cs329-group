@@ -1,0 +1,405 @@
+You are performing a pronoun resolution task. In each sentence below, the blank (_) represents a pronoun that has been removed. Your job is to determine which of the two provided options the pronoun originally referred to.
+
+Use commonsense reasoning about the context to decide which entity is the correct referent of the missing pronoun.
+
+For each item, respond with ONLY the number and the letter (A or B). Do not explain your reasoning.
+
+1. Craig really loves to clean all the time but Derrick does not because _ is very neat.
+A) Craig
+B) Derrick
+
+2. Rebecca picked up Amy to carpool to work every day, so _ offered some gas money.
+A) Rebecca
+B) Amy
+
+3. Once in Poland, Dennis enjoyed the trip more than Jason because _ had a deeper understanding of the Polish language.
+A) Dennis
+B) Jason
+
+4. Kevin is far more physically versatile than Nick, because _ is an injured athlete in bed.
+A) Kevin
+B) Nick
+
+5. Adam put handwash only clothes in the washer but Aaron washed them by hand as _ was lazy.
+A) Adam
+B) Aaron
+
+6. While out playing golf, Dennis fell in the mud, but Christopher kept their balance because _ had spiked shoes on.
+A) Dennis
+B) Christopher
+
+7. Leslie was fascinated with collecting new shoes compared to Derrick, because _ loved fashion trends.
+A) Leslie
+B) Derrick
+
+8. Katrina's being taught how to speak Korean by Felicia, so _ was most likely born in Korea.
+A) Katrina
+B) Felicia
+
+9. Jason denied Ian's passport application because _ did not provide the correct paperwork in time.
+A) Jason
+B) Ian
+
+10. Justin wrote a paragraph in his planner every day unlike Matthew because _ was organized.
+A) Justin
+B) Matthew
+
+11. Erin is known an an entrepreneur while Victoria is only an employee because _ owns a business.
+A) Erin
+B) Victoria
+
+12. Neil agreed to help wash Adam's large dog, and _ was very eager to help.
+A) Neil
+B) Adam
+
+13. In an effort to control kennel cough, Emily sent Maria to get the medication because _ was busy examining the animals.
+A) Emily
+B) Maria
+
+14. The insurance company blamed Leslie instead of Logan for the accident since _ had a green light.
+A) Leslie
+B) Logan
+
+15. Robert made the choice to buy Neil's house, so _ had a lot more money in the bank afterwards.
+A) Robert
+B) Neil
+
+16. Christopher wanted to be a specialist but not Adam because _ had an interest in a limited number of subjects.
+A) Christopher
+B) Adam
+
+17. Christopher wanted to be a specialist but not Adam because _ had an interest in a many number of subjects.
+A) Christopher
+B) Adam
+
+18. Elena told Natalie to put the hood of her jacket up because _ didn't want her to get cold.
+A) Elena
+B) Natalie
+
+19. Randy started his own business while Ryan worked for someone else so _ had self-employment taxes.
+A) Randy
+B) Ryan
+
+20. Kevin didn't consider the costs when they bought the house from Derrick, so _ was stuck with the money pit.
+A) Kevin
+B) Derrick
+
+21. While Maria rode the bus to work, Megan rode a motorcycle because _ had an unexpired license.
+A) Maria
+B) Megan
+
+22. The system that Jeffrey used was amazing compared to Randy, because _ system was lower end.
+A) Jeffrey
+B) Randy
+
+23. Adam found the blue joke that Steven offensive, because _ was unaware of their own privilege.
+A) Adam
+B) Steven
+
+24. Eric was easier to amuse than Justin because _ had a great sense of humor.
+A) Eric
+B) Justin
+
+25. Tanya couldn't stretch as far down as Jennifer because _ was had a very flexible body.
+A) Tanya
+B) Jennifer
+
+26. Megan gave flowers to Carrie because _ wanted to ask them out on a date.
+A) Megan
+B) Carrie
+
+27. Michael bought mealworms as pet food but not Kenneth because _ had a pony as a pet.
+A) Michael
+B) Kenneth
+
+28. Ian did not see the tumor on Brett's leg, because _ was only performing an eye exam.
+A) Ian
+B) Brett
+
+29. Betty is known as bilingual while Rachel is known as multilingual because _ can speak more than two languages.
+A) Betty
+B) Rachel
+
+30. The ground around Michael's house was solid unlike Aaron's because _ had a month long rainfall.
+A) Michael
+B) Aaron
+
+31. Megan inserted an IV into Sarah's arm once they were admitted to the hospital, because _ was a nurse.
+A) Megan
+B) Sarah
+
+32. Brett was more prepared to be a parent than Aaron because _ had spent very little time with children.
+A) Brett
+B) Aaron
+
+33. Michael discovered Craig was a respected doctor so _ was asked many health related questions.
+A) Michael
+B) Craig
+
+34. Dennis had a much higher testosterone level than Christopher, so _ didn't have to worry about being able to have children.
+A) Dennis
+B) Christopher
+
+35. Ian was asked by Kevin to help with their taxes because _ was a successful, trained accountant.
+A) Ian
+B) Kevin
+
+36. Victoria was more fashionable than Elena but  _ always was concerned about leaving dandruff on their shirts.
+A) Victoria
+B) Elena
+
+37. Sarah was a much better surgeon than Maria so _ always got the easier cases.
+A) Sarah
+B) Maria
+
+38. Cynthia violated the rights of Amy, because _ had too much passivity with other people.
+A) Cynthia
+B) Amy
+
+39. Christine was going to Jessica's house to do some cleaning in the kitchen, because _ was a energetic person.
+A) Christine
+B) Jessica
+
+40. Alcohol is a love of Matthew's, but Ryan can't stand the stuff because _ is a sober alcoholic.
+A) Matthew
+B) Ryan
+
+41. The bartender cut Carrie off but continued to serve Emily because _ was too drunk.
+A) Carrie
+B) Emily
+
+42. William liked to be outside more than Kyle so _ spent time arguing for getting a pool.
+A) William
+B) Kyle
+
+43. Rachel told Patricia to pick up some baby powder at the store because _ had sweaty feet.
+A) Rachel
+B) Patricia
+
+44. Adam's mindset was a lot stronger than William's because _ was able to control it.
+A) Adam
+B) William
+
+45. Whilst on the beach Cynthia loved to wear a bikini but Laura did not because _ had a fat stomach.
+A) Cynthia
+B) Laura
+
+46. Victoria was still grieving the death of a friend more than Elena, because _ had a very close relationship with the friend.
+A) Victoria
+B) Elena
+
+47. Lawrence dealt the cards to Joseph at the blackjack table, because _ was a professional player.
+A) Lawrence
+B) Joseph
+
+48. It seemed more likely that Brett would wear a fedora rather than Justin because _ did not often dress stylishly.
+A) Brett
+B) Justin
+
+49. Elena enjoyed yoga classes while Amy preferred other forms of exercise; this was because _ was inflexible.
+A) Elena
+B) Amy
+
+50. Samantha had to get car insurance and Jessica did not because _ just got a new car.
+A) Samantha
+B) Jessica
+
+51. The stain was lighter on Jason's shirt than Donald's because _ spilled red wine and not white wine.
+A) Jason
+B) Donald
+
+52. The stain was darker on Jason's shirt than Donald's because _ spilled red wine and not white wine.
+A) Jason
+B) Donald
+
+53. Maria asked Cynthia if she could borrow some fuel for her car, as _ had a shortage of it.
+A) Maria
+B) Cynthia
+
+54. Monica is looking to buy some new furniture and Carrie just bought some, so _ is starting to anticipate their purchase arrival.
+A) Monica
+B) Carrie
+
+55. Erin has a teenager whereas Patricia has toddler-age children because _ became a mother first.
+A) Erin
+B) Patricia
+
+56. Betty used glue to fix Megan's toy because _ was too young to use superglue.
+A) Betty
+B) Megan
+
+57. Erin read a book to Monica because _ was old enough to be able to read.
+A) Erin
+B) Monica
+
+58. Cynthia ate all of the dessert while Sarah did not have any since _ was not trying to lose any weight.
+A) Cynthia
+B) Sarah
+
+59. Samantha was not interested in hearing about Tanya awesome marriage, because _ was happy all the time.
+A) Samantha
+B) Tanya
+
+60. Brian informed Aaron that their coach had scheduled an extra event on Saturday morning since _ was present at yesterday's practice.
+A) Brian
+B) Aaron
+
+61. Research came easy to Monica as compared to Erin because _ 's father was a landscaper.
+A) Monica
+B) Erin
+
+62. The gothic lolita style suited Victoria better than Sarah because _ looked the worst in frilly dresses.
+A) Victoria
+B) Sarah
+
+63. Megan liked to read a book good more than Samantha because _ hated the peace and quiet.
+A) Megan
+B) Samantha
+
+64. Natalie committed a bunch of good deeds in Samantha's name, because _ didn't want the credit.
+A) Natalie
+B) Samantha
+
+65. Brian always tried to find ways to be productive at work unlike Kenneth, because _ was a hard worker.
+A) Brian
+B) Kenneth
+
+66. Jessica found the heavy load at work overwhelming but not Katrina because _ did a poor job at planning their work.
+A) Jessica
+B) Katrina
+
+67. The brutal boxing match was suitable for Christopher but not Samuel because _ did damage to his opponent.
+A) Christopher
+B) Samuel
+
+68. Joseph asked Robert to clean the floor with a mop nearby because _ needs to work.
+A) Joseph
+B) Robert
+
+69. Craig grew frustrated trying to coach Nick in soccer, as _ lacked the patience needed for the task.
+A) Craig
+B) Nick
+
+70. More people attended the funeral of Joel than of Derrick because _ was a mean person.
+A) Joel
+B) Derrick
+
+71. Donald took medication for their anxiety, but Craig went to therapy because _ was open with their feelings.
+A) Donald
+B) Craig
+
+72. Steven was worried about the height requirements for the rollercoaster more than Dennis was since _ was short.
+A) Steven
+B) Dennis
+
+73. Neil introduced William, who is very shy, to his friends, but _ was being very embarrassing.
+A) Neil
+B) William
+
+74. While at the store, Logan grabbed a head of lettuce for Eric to use for dinner, but _ already had some at home.
+A) Logan
+B) Eric
+
+75. While waiting for the movie to begin, Natalie bought popcorn and drinks for Lindsey, since _ had little money.
+A) Natalie
+B) Lindsey
+
+76. The patient put in a special request for Brett instead of Kyle because _ was always stern.
+A) Brett
+B) Kyle
+
+77. Samantha failed on the test but Mary got very good marks because _ had been very lazy.
+A) Samantha
+B) Mary
+
+78. Kyle makes a lot more money than Nelson can make at his job, as _ is a cashier.
+A) Kyle
+B) Nelson
+
+79. The man with the fever came over and talked to Carrie and not Lindsey because _ was a patient.
+A) Carrie
+B) Lindsey
+
+80. Derrick greeted Craig at the event but he did not respond to him because _ is arrogant.
+A) Derrick
+B) Craig
+
+81. Laura was climbing down from the roof and Katrina was below so, _ was holding the ladder.
+A) Laura
+B) Katrina
+
+82. Justin admired the art hung on the wall by Nick, so _ asked if he would like to take something home.
+A) Justin
+B) Nick
+
+83. After visiting their tenth college, Kevin asked Donald to just make up his mind, because _ just didn't have time for more.
+A) Kevin
+B) Donald
+
+84. Emily has never struggled with blood clots like Victoria has, because _ lives a sedentary, gluttonous lifestyle.
+A) Emily
+B) Victoria
+
+85. Laura put fruit in their pie for Lindsey to eat, and _ ate half the pie after that one was done baking.
+A) Laura
+B) Lindsey
+
+86. Tanya recently finished filling out a job application but not Megan because _ is currently unemployed.
+A) Tanya
+B) Megan
+
+87. While shopping at the mall, Kevin asked Benjamin to help find a red shirt to wear because _ was great at clothing budgeting.
+A) Kevin
+B) Benjamin
+
+88. The apartment Brett rented was owned by Jason, so _ sent the rent for the apartment each month.
+A) Brett
+B) Jason
+
+89. The apartment Brett rented was owned by Jason, so _ received the rent for the apartment each month.
+A) Brett
+B) Jason
+
+90. Victoria had no issues with Achilles Tendinitis unlike Betty because _ never wore sneakers with cushion.
+A) Victoria
+B) Betty
+
+91. Michael had to learn how to speak Chinese for his job unlike Matthew, because _ worked in England.
+A) Michael
+B) Matthew
+
+92. When gambling in Las Vegas, Christine usually bets less playing poker than Elena because _ is more cautious.
+A) Christine
+B) Elena
+
+93. Patricia bought a plant for Natalie to put in her garden, so _ sent a thank you card.
+A) Patricia
+B) Natalie
+
+94. Jessica was arrested for growing hemp by the police but not Sarah because _ fled during the field raid.
+A) Jessica
+B) Sarah
+
+95. Tanya was an adult while Samantha was young and still had room to grow , so _ gave her her old clothes.
+A) Tanya
+B) Samantha
+
+96. Buying a swimming pool was great for Adam but not for Christopher because _ had a large back yard.
+A) Adam
+B) Christopher
+
+97. Jennifer has more money than Amy, so _ became a homeowner at a young age.
+A) Jennifer
+B) Amy
+
+98. Brian's plants are showing a lot more growth than Logan's, because _ used better fertilizer.
+A) Brian
+B) Logan
+
+99. Monica suspected that Rebecca had become an alcoholic, but _ predicted an intervention to address the problem.
+A) Monica
+B) Rebecca
+
+100. Neil cut trees down into lumber every year unlike Logan because _ lives out in the countryside.
+A) Neil
+B) Logan
