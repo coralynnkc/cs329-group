@@ -31,7 +31,7 @@ DATA_DIR = os.path.dirname(HERE)
 MINI_DIR = os.path.join(DATA_DIR, "mini")
 RES_DIR  = os.path.join(DATA_DIR, "results")
 
-PREFIXES = ["eng", "args", "seg", "deriv"]
+PREFIXES = ["args", "seg"]
 
 # accepted column name variants the model might return
 SAMPLE_ID_VARIANTS = {"sample_id", "sample", "sampleid", "sample_num"}

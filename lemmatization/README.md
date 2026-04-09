@@ -57,10 +57,10 @@ Different task from the others (how new words are coined from existing ones, not
 
 | File | Task | Input | Target |
 |------|------|-------|--------|
-| `eng` | Lemmatization | `inflected_form + tag` | `lemma` |
 | `eng.args` | Lemmatization | `inflected_form + tag` | `lemma` |
 | `eng.segmentations` | Segmentation | `inflected_form + tag` | `segmentation` |
-| `eng.derivations.tsv` | Derivation | `base_word + pos_pair + affix` | `derived_word` |
+
+`eng` overlaps with `eng.args` and is not used for evaluation. `eng.derivations.tsv` covers a different task (derivational morphology) and is not used for baselining.
 
 The core challenge in lemmatization is irregular inflection (e.g., `ate` → `eat`, `went` → `go`) and tag ambiguity (e.g., `reads` is N;PL or V;PRS;3;SG). The meaningful comparison axis is **model tier** (Haiku vs. Sonnet vs. Opus) — not access tier (free vs. paid), since the same model gives the same results regardless.
 
@@ -70,10 +70,10 @@ The core challenge in lemmatization is irregular inflection (e.g., `ate` → `ea
 
 ### How many samples?
 
-Three stratified samples of 150 rows each per file. This gives:
+Three stratified samples of 300 rows each per file (900 rows total per file). This gives:
 - A mean ± range across samples to account for sampling variance
-- ~±6 percentage point confidence interval per sample (sufficient to distinguish models)
-- 12 uploads per model (3 samples × 4 files) — feasible manually
+- ~±4 percentage point confidence interval per sample
+- 2 uploads per model — very feasible manually
 
 The answer key is kept separate from the input so the model never sees gold labels.
 
@@ -85,13 +85,11 @@ The answer key is kept separate from the input so the model never sees gold labe
    ```
    Creates 4 input files and 4 answer key files in `mini/`.
 
-2. **Send 4 separate messages** (one per task) using the prompts below — paste the CSV content
+2. **Send 2 separate messages** (one per task) using the prompts below — paste the CSV content
    directly into each message rather than attaching files. Save each response as:
    ```
-   mini/eng_predictions_<model>.csv
    mini/args_predictions_<model>.csv
    mini/seg_predictions_<model>.csv
-   mini/deriv_predictions_<model>.csv
    ```
 
 3. Score all four at once:
@@ -108,16 +106,12 @@ Scores are saved to:
 
 ## Prompts
 
-Send each prompt as a **separate message**. Paste the contents of the input CSV directly
-after the prompt text (open the file, select all, paste).
+Send **2 separate messages** — one per task. Paste the CSV contents directly after the prompt.
 
-### Lemmatization — use for `eng_input.csv` and `args_input.csv` (send separately)
-
-For `eng_input.csv`, replace `[filename]` with `eng_predictions_[model]` (e.g. `eng_predictions_sonnet`).
-For `args_input.csv`, use `args_predictions_[model]`.
+### Message 1 — Lemmatization (`args_input.csv`)
 
 ```
-For each row, predict the base lemma of the inflected word. Return ONLY a CSV saved as [filename].csv with columns: sample_id,id,predicted_lemma. No explanation. Do not skip rows.
+For each row, predict the base lemma of the inflected word. Return ONLY a CSV saved as args_predictions_[model].csv with columns: sample_id,id,predicted_lemma. No explanation. Do not skip rows.
 
 Tag reference: V;PST=past tense, V;V.PTCP;PRS=present participle, N;PL=plural noun, V;NFIN=base form.
 
@@ -125,21 +119,12 @@ Data:
 [paste CSV contents here]
 ```
 
-### Segmentation — use for `seg_input.csv`
+### Message 2 — Segmentation (`seg_input.csv`)
 
 ```
 For each row, split the inflected word into morphemes using | as the boundary marker. Use - for irregular forms that cannot be cleanly segmented (e.g. ate, went). Return ONLY a CSV saved as seg_predictions_[model].csv with columns: sample_id,id,predicted_segmentation. No explanation. Do not skip rows.
 
 Examples: eating→eat|ing, plays→play|s, geese→-
-
-Data:
-[paste CSV contents here]
-```
-
-### Derivation — use for `deriv_input.csv`
-
-```
-For each row, apply the affix to the base word to form the derived word. pos_pair shows the part-of-speech change (e.g. V:N = verb to noun). Affixes with a leading - are suffixes; with a trailing - are prefixes. Return ONLY a CSV saved as deriv_predictions_[model].csv with columns: sample_id,id,predicted_derived_word. No explanation. Do not skip rows.
 
 Data:
 [paste CSV contents here]

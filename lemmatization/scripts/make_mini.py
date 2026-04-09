@@ -1,14 +1,12 @@
 """
 Generate mini evaluation sets for manual LLM baselining.
 
-Creates one combined input CSV per file (3 x 150 = 450 rows, sample_id 1-3).
+Creates one combined input CSV per file (3 x 300 = 900 rows, sample_id 1-3).
 Upload the input CSV to a model, save its output as predictions, then score.
 
 Output:
-  mini/eng_input.csv       mini/eng_answers.csv
   mini/args_input.csv      mini/args_answers.csv
   mini/seg_input.csv       mini/seg_answers.csv
-  mini/deriv_input.csv     mini/deriv_answers.csv
 
 Run:
     python scripts/make_mini.py
@@ -23,7 +21,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.dirname(HERE)
 OUT_DIR  = os.path.join(DATA_DIR, "mini")
 
-SAMPLE_SIZE = 150
+SAMPLE_SIZE = 300
 SEEDS = [42, 123, 7]
 
 
@@ -60,8 +58,8 @@ def write_csv(rows, path):
 
 os.makedirs(OUT_DIR, exist_ok=True)
 
-# ── lemmatization files (eng, eng.args, eng.segmentations) ───────────────────
-for prefix, filename in [("eng", "eng"), ("args", "eng.args")]:
+# ── eng.args — lemmatization ─────────────────────────────────────────────────
+for prefix, filename in [("args", "eng.args")]:
     print(f"Processing {filename} ...")
     rows = read_tsv(os.path.join(DATA_DIR, filename))
 
@@ -93,23 +91,6 @@ for sample_num, seed in enumerate(SEEDS, start=1):
 
 write_csv(input_rows,  os.path.join(OUT_DIR, "seg_input.csv"))
 write_csv(answer_rows, os.path.join(OUT_DIR, "seg_answers.csv"))
-print(f"  {len(input_rows)-1} rows  ({len(SEEDS)} samples x {SAMPLE_SIZE})")
-
-# ── derivations ───────────────────────────────────────────────────────────────
-print("Processing eng.derivations.tsv ...")
-deriv_rows = read_tsv(os.path.join(DATA_DIR, "eng.derivations.tsv"))
-
-input_rows  = [["sample_id", "id", "base_word", "pos_pair", "affix"]]
-answer_rows = [["sample_id", "id", "derived_word"]]
-
-for sample_num, seed in enumerate(SEEDS, start=1):
-    for row_id, row in enumerate(stratified_sample(deriv_rows, SAMPLE_SIZE, tag_col=2, seed=seed), start=1):
-        base, derived, pos_pair, affix = row[0], row[1], row[2], row[3]
-        input_rows.append([sample_num, row_id, base, pos_pair, affix])
-        answer_rows.append([sample_num, row_id, derived])
-
-write_csv(input_rows,  os.path.join(OUT_DIR, "deriv_input.csv"))
-write_csv(answer_rows, os.path.join(OUT_DIR, "deriv_answers.csv"))
 print(f"  {len(input_rows)-1} rows  ({len(SEEDS)} samples x {SAMPLE_SIZE})")
 
 print(f"\nDone. Files in {OUT_DIR}/")
