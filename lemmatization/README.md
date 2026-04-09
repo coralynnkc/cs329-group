@@ -7,6 +7,7 @@ Source: [UniMorph English](https://unimorph.github.io/) — morphological paradi
 ## Files
 
 ### `eng` — Inflectional morphology (652,477 rows)
+
 Tab-separated: `lemma \t inflected_form \t tag`
 
 ```
@@ -21,13 +22,16 @@ Common tags: `N;PL`, `V;PST`, `V;V.PTCP;PRS`, `V;V.PTCP;PST`, `V;PRS;3;SG`.
 ---
 
 ### `eng.args` — Inflectional morphology, richer verb paradigms (115,523 rows)
+
 Same format as `eng` but from a different source. Verb-focused, with additional tags:
+
 - `V;NFIN` — non-finite / base form (lemma = word itself)
 - `V;PRS;NOM(3,SG)` — 3rd person singular present
 
 ---
 
 ### `eng.segmentations` — Inflection + morpheme boundaries (649,594 rows)
+
 Extends `eng` with a 4th column: `lemma \t inflected_form \t tag \t segmentation`
 
 ```
@@ -40,27 +44,14 @@ Same underlying rows as `eng` — **splits are shared**.
 
 ---
 
-### `eng.derivations.tsv` — Derivational morphology (225,131 rows)
-Tab-separated: `base_word \t derived_word \t pos_pair \t affix`
-
-```
-connote    connotation    V:N     -ation
-abandon    abandonee      N:N     -ee
-back       aback          ADV:ADV  a-
-```
-
-Different task from the others (how new words are coined from existing ones, not how a word inflects). Evaluated and trained separately.
-
----
-
 ## Tasks
 
-| File | Task | Input | Target |
-|------|------|-------|--------|
-| `eng.args` | Lemmatization | `inflected_form + tag` | `lemma` |
-| `eng.segmentations` | Segmentation | `inflected_form + tag` | `segmentation` |
+| File                | Task          | Input                  | Target         |
+| ------------------- | ------------- | ---------------------- | -------------- |
+| `eng.args`          | Lemmatization | `inflected_form + tag` | `lemma`        |
+| `eng.segmentations` | Segmentation  | `inflected_form + tag` | `segmentation` |
 
-`eng` overlaps with `eng.args` and is not used for evaluation. `eng.derivations.tsv` covers a different task (derivational morphology) and is not used for baselining.
+`eng` overlaps with `eng.args` and is not used for evaluation.
 
 The core challenge in lemmatization is irregular inflection (e.g., `ate` → `eat`, `went` → `go`) and tag ambiguity (e.g., `reads` is N;PL or V;PRS;3;SG). The meaningful comparison axis is **model tier** (Haiku vs. Sonnet vs. Opus) — not access tier (free vs. paid), since the same model gives the same results regardless.
 
@@ -71,6 +62,7 @@ The core challenge in lemmatization is irregular inflection (e.g., `ate` → `ea
 ### How many samples?
 
 Three stratified samples of 300 rows each per file (900 rows total per file). This gives:
+
 - A mean ± range across samples to account for sampling variance
 - ~±4 percentage point confidence interval per sample
 - 2 uploads per model — very feasible manually
@@ -80,13 +72,16 @@ The answer key is kept separate from the input so the model never sees gold labe
 ### Workflow
 
 1. Generate mini CSVs (one-time):
+
    ```bash
    python scripts/make_mini.py
    ```
+
    Creates 4 input files and 4 answer key files in `mini/`.
 
 2. **Send 2 separate messages** (one per task) using the prompts below — paste the CSV content
    directly into each message rather than attaching files. Save each response as:
+
    ```
    mini/args_predictions_<model>.csv
    mini/seg_predictions_<model>.csv
@@ -99,6 +94,7 @@ The answer key is kept separate from the input so the model never sees gold labe
    Repeat step 2–3 for each model (e.g. `--model haiku`, `--model gpt4o`).
 
 Scores are saved to:
+
 - `results/<model>_scores.csv` — per-sample breakdown (shows variance across the 3 samples)
 - `results/summary.csv` — all models side by side, updated automatically each run
 
