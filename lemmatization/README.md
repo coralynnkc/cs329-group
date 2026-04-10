@@ -2,6 +2,15 @@
 
 Source: [UniMorph English](https://unimorph.github.io/) — morphological paradigm tables for English.
 
+## Baseline Results — Lemmatization Accuracy
+
+| Model | Sample 1 | Sample 2 | Sample 3 | Mean |
+| ------- | -------- | -------- | -------- | ------ |
+| ChatGPT | 0.680 | 0.633 | 0.790 | 0.701 |
+| Gemini | 0.970 | 0.973 | 0.963 | 0.969 |
+| Sonnet | 0.947 | 0.977 | 0.973 | 0.966 |
+| Opus | 0.967 | 0.967 | 0.980 | 0.971 |
+
 ---
 
 ## Files
