@@ -1,0 +1,4 @@
+model,file,sample,acc
+chatgpt,args,1,0.68
+chatgpt,args,2,0.6333
+chatgpt,args,3,0.79
