@@ -1,0 +1,4 @@
+model,sample,acc
+opus,1,0.8567
+opus,2,0.89
+opus,3,0.8933

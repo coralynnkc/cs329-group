@@ -1,0 +1,4 @@
+model,sample,acc
+sonnet,1,0.8233
+sonnet,2,0.86
+sonnet,3,0.8467

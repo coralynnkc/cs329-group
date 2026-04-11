@@ -1,0 +1,4 @@
+model,sample,acc
+gemini,1,0.7
+gemini,2,0.55
+gemini,3,0.4933
