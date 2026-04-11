@@ -5,22 +5,27 @@ Source: [UD English EWT](https://github.com/UniversalDependencies/UD_English-EWT
 ## Baseline Results — Token-level POS Accuracy
 
 <!-- results:start -->
-| Model | Sample 1 | Sample 2 | Sample 3 | Mean |
+
+| Model   | Sample 1 | Sample 2 | Sample 3 | Mean   |
 | ------- | -------- | -------- | -------- | ------ |
-| | | | | |
+| chatgpt | 0.8232   | 0.8001   | 0.7967   | 0.8067 |
+| gemini  | 0.8557   | 0.841    | 0.7821   | 0.8263 |
+| opus    | 0.9403   | 0.9456   | 0.9328   | 0.9396 |
+| sonnet  | 0.8616   | 0.848    | 0.8411   | 0.8503 |
+
 <!-- results:end -->
 
-*Run `python scripts/update_readme.py` after scoring to populate this table.*
+_Run `python scripts/update_readme.py` after scoring to populate this table._
 
 ---
 
 ## Files
 
-| File | Sentences |
-| --- | --- |
-| `en_ewt-ud-train.conllu` | ~12,500 |
-| `en_ewt-ud-dev.conllu` | ~2,000 |
-| `en_ewt-ud-test.conllu` | ~2,000 |
+| File                     | Sentences |
+| ------------------------ | --------- |
+| `en_ewt-ud-train.conllu` | ~12,500   |
+| `en_ewt-ud-dev.conllu`   | ~2,000    |
+| `en_ewt-ud-test.conllu`  | ~2,000    |
 
 The `.conllu` format has 10 tab-separated columns per token, blank lines between sentences:
 
@@ -33,17 +38,17 @@ We use **FORM** (col 2) and **UPOS** (col 4).
 
 ### Universal Dependencies POS Tags
 
-| Tag | Description | Tag | Description |
-| --- | --- | --- | --- |
-| `ADJ` | Adjective | `NOUN` | Noun |
-| `ADP` | Adposition | `NUM` | Numeral |
-| `ADV` | Adverb | `PART` | Particle |
-| `AUX` | Auxiliary | `PRON` | Pronoun |
-| `CCONJ` | Coordinating conjunction | `PROPN` | Proper noun |
-| `DET` | Determiner | `PUNCT` | Punctuation |
-| `INTJ` | Interjection | `SCONJ` | Subordinating conjunction |
-| `VERB` | Verb | `SYM` | Symbol |
-| `X` | Other | | |
+| Tag     | Description              | Tag     | Description               |
+| ------- | ------------------------ | ------- | ------------------------- |
+| `ADJ`   | Adjective                | `NOUN`  | Noun                      |
+| `ADP`   | Adposition               | `NUM`   | Numeral                   |
+| `ADV`   | Adverb                   | `PART`  | Particle                  |
+| `AUX`   | Auxiliary                | `PRON`  | Pronoun                   |
+| `CCONJ` | Coordinating conjunction | `PROPN` | Proper noun               |
+| `DET`   | Determiner               | `PUNCT` | Punctuation               |
+| `INTJ`  | Interjection             | `SCONJ` | Subordinating conjunction |
+| `VERB`  | Verb                     | `SYM`   | Symbol                    |
+| `X`     | Other                    |         |                           |
 
 ---
 
@@ -66,9 +71,11 @@ We use **FORM** (col 2) and **UPOS** (col 4).
    ```
 
 3. Score:
+
    ```bash
    python scripts/score_baseline.py --model sonnet
    ```
+
    Repeat steps 2–3 for each model.
 
 4. Update this README:

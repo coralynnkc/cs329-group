@@ -1,0 +1,4 @@
+model,sample,acc
+chatgpt,1,0.8232
+chatgpt,2,0.8001
+chatgpt,3,0.7967
