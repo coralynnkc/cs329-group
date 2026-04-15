@@ -1,0 +1,3 @@
+lemmas
+presuppositions
+pronoun resolution
