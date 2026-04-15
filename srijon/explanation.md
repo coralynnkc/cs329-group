@@ -138,4 +138,15 @@ This was the strongest result across all three tasks, reflecting that morphologi
 | Presupposition / NLI | XNLI / CONFER | ~45–52% |
 | Lemmatization | UniMorph ENG | **67.76%** |
 
-All tests were **zero-shot**, using only the model's internal training with no fine-tuning, API calls, or external packages.
+## Cross-Task × Language Accuracy Matrix
+
+| Language | Pronoun Resolution | Presuppositions |
+|----------|--------------------|-----------------|
+| English | 35.72% (n=10,235) | 45.46% (n=6,982) |
+| German | 51.85% (n=5,826) | 45.68% (n=5,011) |
+| French | 52.38% (n=2,794) | 44.99% (n=5,011) |
+| Russian | 51.91% (n=1,488) | 40.41% (n=5,011) |
+| Hindi | — | 41.43% (n=5,011) |
+| Vietnamese | — | 52.03% (n=5,011) |
+
+All tests were **zero-shot**, using only the model's internal training with no fine-tuning, API calls, or external packages, using Claude Sonnet 4.6 (free).
