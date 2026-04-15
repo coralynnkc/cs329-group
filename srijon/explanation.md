@@ -18,6 +18,14 @@ Fill in a `_` blank in each sentence with the correct referent, chosen from two 
 ### Prompt
 > *"I don't want to run API. As a LLM just try and put for your best guess, and output me the excel of words."*
 
+### Pipeline
+1. Parse the Winograd CSV into columnar data.
+2. Strip non-essential columns, retaining only the sentences and two noun choices.
+3. Feed the cleaned data with a suitable prompt to evaluate a pretrained model (Claude) at baseline.
+4. Compare the LLM-filled words against the Winograd gold-standard answers, scoring each as 0 (mismatch) or 1 (match).
+5. Calculate accuracy as the proportion of 1s.
+6. Extend to **Wino-X** — a parallel dataset in German, French, and Russian — for multilingual transference analysis.
+
 ### Method
 Rule-based coreference resolution using semantic/logical reasoning:
 - Pronoun coreference with named people
@@ -56,6 +64,12 @@ Classify premise–hypothesis pairs with a presupposition label.
 ### Prompt
 > *"As a LLM just try and put for your best guess for presupposition label (0, 1, or 2) of the attached words, and output me the excel of labels. Just your own training."*
 
+### Pipeline
+1. Filter the dataset to retain 3 premise variants per sentence, each sharing the same hypothesis.
+2. Prompt the model to label each premise–hypothesis pair with one of three labels (0, 1, or 2).
+3. Match model outputs against the human-annotated gold standard and compute the proportion of correct labels as baseline accuracy.
+4. Extend the same procedure to other languages for multilingual evaluation.
+
 ### Method
 Rule-based labeling derived from presupposition projection principles:
 - **E**: Hypothesis entity directly referenced in premise; presupposition projects through negation, belief contexts, and questions; *never...again* presupposes prior occurrence
@@ -89,6 +103,11 @@ Predict the base (lemma) form of each inflected word.
 
 ### Prompt
 > *"Output — I don't want to run API or package. As a LLM just try and put for your best guess for lemmas of the attached words, and output me the excel of lemmas. For example, you can't use simplemma — just your own training."*
+
+### Pipeline
+1. Remove all identifiers and additional columns from the UniMorph dataset, retaining singular word forms only.
+2. Feed the word list into the LLM to extract lemmas based on its learned morphological knowledge.
+3. Compare the output lemma list against the gold standard to compute an accuracy percentage.
 
 ### Method
 Pure rule-based lemmatizer built from linguistic knowledge (no spaCy, NLTK, or simplemma):
