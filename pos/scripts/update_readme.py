@@ -39,14 +39,15 @@ def load_per_sample(model):
 def build_table(rows):
     lines = [
         "<!-- results:start -->",
-        "| Model | Sample 1 | Sample 2 | Sample 3 | Mean |",
-        "| ------- | -------- | -------- | -------- | ------ |",
+        "| Model | Sample 1 | Sample 2 | Sample 3 | Mean Acc | Macro-F1 |",
+        "| ------- | -------- | -------- | -------- | -------- | -------- |",
     ]
     for row in rows:
-        model = row.get("model", "")
-        mean  = row.get("mean", "")
+        model    = row.get("model", "")
+        mean_acc = row.get("mean_acc", "")
+        mean_f1  = row.get("mean_f1", "")
         s1, s2, s3 = load_per_sample(model)
-        lines.append(f"| {model} | {s1} | {s2} | {s3} | {mean} |")
+        lines.append(f"| {model} | {s1} | {s2} | {s3} | {mean_acc} | {mean_f1} |")
     lines.append("<!-- results:end -->")
     return "\n".join(lines)
 

@@ -2,17 +2,15 @@
 
 Source: [UD English EWT](https://github.com/UniversalDependencies/UD_English-EWT) — English Web Treebank from Universal Dependencies, covering weblogs, newsgroups, emails, reviews, and Yahoo! Answers.
 
-## Baseline Results — Token-level POS Accuracy
+## Baseline Results — Token-level POS Accuracy & Macro-F1
 
 <!-- results:start -->
-
-| Model   | Sample 1 | Sample 2 | Sample 3 | Mean   |
-| ------- | -------- | -------- | -------- | ------ |
-| chatgpt | 0.8232   | 0.8001   | 0.7967   | 0.8067 |
-| gemini  | 0.8557   | 0.841    | 0.7821   | 0.8263 |
-| opus    | 0.9403   | 0.9456   | 0.9328   | 0.9396 |
-| sonnet  | 0.8616   | 0.848    | 0.8411   | 0.8503 |
-
+| Model | Sample 1 | Sample 2 | Sample 3 | Mean Acc | Macro-F1 |
+| ------- | -------- | -------- | -------- | -------- | -------- |
+| chatgpt | 0.8232 | 0.8001 | 0.7967 | 0.8067 | 0.7636 |
+| gemini | 0.8557 | 0.841 | 0.7821 | 0.8263 | 0.7383 |
+| opus | 0.9403 | 0.9456 | 0.9328 | 0.9396 | 0.8547 |
+| sonnet | 0.8616 | 0.848 | 0.8411 | 0.8503 | 0.7126 |
 <!-- results:end -->
 
 _Run `python scripts/update_readme.py` after scoring to populate this table._

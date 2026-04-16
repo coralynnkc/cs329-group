@@ -26,6 +26,29 @@ import csv
 import argparse
 from collections import defaultdict
 
+
+def edit_distance(a, b):
+    """Character-level Levenshtein distance."""
+    m, n = len(a), len(b)
+    dp = list(range(n + 1))
+    for i in range(1, m + 1):
+        prev = dp[:]
+        dp[0] = i
+        for j in range(1, n + 1):
+            if a[i - 1] == b[j - 1]:
+                dp[j] = prev[j - 1]
+            else:
+                dp[j] = 1 + min(prev[j - 1], prev[j], dp[j - 1])
+    return dp[n]
+
+
+def normalised_edit_distance(pred, gold):
+    """Edit distance normalised by max length (0 = identical, 1 = fully different)."""
+    denom = max(len(pred), len(gold))
+    if denom == 0:
+        return 0.0
+    return edit_distance(pred, gold) / denom
+
 HERE     = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.dirname(HERE)
 MINI_DIR = os.path.join(DATA_DIR, "mini")
@@ -101,7 +124,7 @@ def score_file(pred_path, answer_path, debug=False):
     answers = normalise_keys(raw_answers)
     ans_col = pred_col(answers)
 
-    by_sample = defaultdict(lambda: {"correct": 0, "total": 0, "misses": []})
+    by_sample = defaultdict(lambda: {"correct": 0, "total": 0, "ned_sum": 0.0, "misses": []})
     for row in answers:
         sid  = str(row.get("sample_id", "1")).strip()
         rid  = str(row.get("id", "")).strip()
@@ -109,6 +132,7 @@ def score_file(pred_path, answer_path, debug=False):
         pred = preds.get((sid, rid), "").strip().lower()
 
         by_sample[sid]["total"] += 1
+        by_sample[sid]["ned_sum"] += normalised_edit_distance(pred, gold)
         if pred == gold:
             by_sample[sid]["correct"] += 1
         else:
@@ -124,17 +148,25 @@ def score_file(pred_path, answer_path, debug=False):
         print(f"  [debug] matched keys: {len(matched)} / {len(answer_keys)}")
         for sid, data in sorted(by_sample.items()):
             acc = data["correct"] / data["total"] if data["total"] else 0
-            print(f"  [debug] sample {sid}: {data['correct']}/{data['total']} = {acc:.3f}")
+            ned = data["ned_sum"] / data["total"] if data["total"] else 0
+            print(f"  [debug] sample {sid}: {data['correct']}/{data['total']} acc={acc:.3f}  mean_ned={ned:.3f}")
             if data["misses"]:
                 print(f"           first 3 misses: {data['misses'][:3]}")
 
     sample_accs = [v["correct"] / v["total"] for v in by_sample.values() if v["total"]]
+    sample_neds = [v["ned_sum"] / v["total"] for v in by_sample.values() if v["total"]]
     if not sample_accs:
-        return {"mean": 0.0, "min": 0.0, "max": 0.0, "samples": []}
-    mean = sum(sample_accs) / len(sample_accs)
-    return {"mean": round(mean, 4), "min": round(min(sample_accs), 4),
-            "max": round(max(sample_accs), 4),
-            "samples": [round(a, 4) for a in sample_accs]}
+        return {"mean_acc": 0.0, "mean_ned": 0.0, "samples_acc": [], "samples_ned": []}
+    mean_acc = sum(sample_accs) / len(sample_accs)
+    mean_ned = sum(sample_neds) / len(sample_neds)
+    return {
+        "mean_acc": round(mean_acc, 4),
+        "mean_ned": round(mean_ned, 4),
+        "min_acc":  round(min(sample_accs), 4),
+        "max_acc":  round(max(sample_accs), 4),
+        "samples_acc": [round(a, 4) for a in sample_accs],
+        "samples_ned": [round(d, 4) for d in sample_neds],
+    }
 
 
 def write_csv_file(rows, path):
@@ -150,8 +182,8 @@ def score_all(model, debug_prefix=None):
     summary_row = {"model": model}
 
     print(f"\nModel: {model}")
-    print(f"{'file':8s}  {'s1':>6}  {'s2':>6}  {'s3':>6}  {'mean':>6}  {'range':>12}")
-    print("-" * 55)
+    print(f"{'file':8s}  {'s1_acc':>7}  {'s2_acc':>7}  {'s3_acc':>7}  {'mean_acc':>8}  {'mean_ned':>8}")
+    print("-" * 60)
 
     for prefix in PREFIXES:
         pred_path   = os.path.join(MINI_DIR, f"{prefix}_predictions_{model}.csv")
@@ -166,15 +198,14 @@ def score_all(model, debug_prefix=None):
 
         debug = (debug_prefix == prefix)
         r = score_file(pred_path, answer_path, debug=debug)
-        s = r["samples"]
-        rng = f"{r['min']:.3f}–{r['max']:.3f}"
+        s = r["samples_acc"]
         cols = [f"{a:.3f}" for a in s] + [""] * (3 - len(s))
-        print(f"  {prefix:8s}  {'  '.join(cols)}  {r['mean']:.3f}  {rng:>12}")
+        print(f"  {prefix:8s}  {'  '.join(cols)}  {r['mean_acc']:.3f}     {r['mean_ned']:.3f}")
 
-        for i, acc in enumerate(r["samples"], start=1):
-            detail_rows.append({"model": model, "file": prefix, "sample": i, "acc": acc})
-        summary_row[f"{prefix}_mean"] = r["mean"]
-        summary_row[f"{prefix}_range"] = rng
+        for i, (acc, ned) in enumerate(zip(r["samples_acc"], r["samples_ned"]), start=1):
+            detail_rows.append({"model": model, "file": prefix, "sample": i, "acc": acc, "mean_ned": ned})
+        summary_row[f"{prefix}_mean_acc"] = r["mean_acc"]
+        summary_row[f"{prefix}_mean_ned"] = r["mean_ned"]
 
     if detail_rows:
         write_csv_file(detail_rows, os.path.join(RES_DIR, f"{model}_scores.csv"))
@@ -187,7 +218,7 @@ def score_all(model, debug_prefix=None):
         existing = [r for r in existing if r["model"] != model]
     existing.append(summary_row)
 
-    all_keys = ["model"] + [f"{p}_{s}" for p in PREFIXES for s in ("mean", "range")]
+    all_keys = ["model"] + [f"{p}_{s}" for p in PREFIXES for s in ("mean_acc", "mean_ned")]
     write_csv_file([{k: r.get(k, "") for k in all_keys} for r in existing], summary_path)
 
     print(f"\nResults saved to  results/{model}_scores.csv")
@@ -213,8 +244,9 @@ def main():
         if not args.answers:
             parser.error("--answers is required with --predictions")
         r = score_file(args.predictions, args.answers, debug=bool(args.debug))
-        print(f"mean={r['mean']:.3f}  min={r['min']:.3f}  max={r['max']:.3f}")
-        print(f"per-sample: {r['samples']}")
+        print(f"mean_acc={r['mean_acc']:.3f}  min_acc={r['min_acc']:.3f}  max_acc={r['max_acc']:.3f}  mean_ned={r['mean_ned']:.3f}")
+        print(f"per-sample acc: {r['samples_acc']}")
+        print(f"per-sample ned: {r['samples_ned']}")
 
 
 if __name__ == "__main__":

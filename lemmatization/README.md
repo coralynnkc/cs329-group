@@ -2,14 +2,27 @@
 
 Source: [UniMorph English](https://unimorph.github.io/) — morphological paradigm tables for English.
 
-## Baseline Results — Lemmatization Accuracy
+## Baseline Results — Lemmatization (`args`)
 
-| Model | Sample 1 | Sample 2 | Sample 3 | Mean |
-| ------- | -------- | -------- | -------- | ------ |
-| ChatGPT | 0.680 | 0.633 | 0.790 | 0.701 |
-| Gemini | 0.970 | 0.973 | 0.963 | 0.969 |
-| Sonnet | 0.947 | 0.977 | 0.973 | 0.966 |
-| Opus | 0.967 | 0.967 | 0.980 | 0.971 |
+<!-- results-args:start -->
+| Model | Sample 1 | Sample 2 | Sample 3 | Mean Acc | Mean NED |
+| ------- | -------- | -------- | -------- | -------- | -------- |
+| chatgpt | 0.68 | 0.6333 | 0.79 | 0.7011 | 0.0464 |
+| gemini | 0.97 | 0.9733 | 0.9633 | 0.9689 | 0.0067 |
+| opus | 0.9667 | 0.9667 | 0.98 | 0.9711 | 0.006 |
+| sonnet | 0.9467 | 0.9767 | 0.9733 | 0.9656 | 0.0074 |
+<!-- results-args:end -->
+
+## Baseline Results — Segmentation (`seg`)
+
+<!-- results-seg:start -->
+| Model | Sample 1 | Sample 2 | Sample 3 | Mean Acc | Mean NED |
+| ------- | -------- | -------- | -------- | -------- | -------- |
+| chatgpt |  |  |  |  |  |
+| gemini |  |  |  |  |  |
+| opus |  |  |  |  |  |
+| sonnet |  |  |  |  |  |
+<!-- results-seg:end -->
 
 ---
 

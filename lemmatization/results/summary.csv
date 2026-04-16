@@ -1,5 +1,5 @@
-model,args_mean,args_range,seg_mean,seg_range
-sonnet,0.9656,0.947–0.977,,
-opus,0.9711,0.967–0.980,,
-gemini,0.9689,0.963–0.973,,
-chatgpt,0.7011,0.633–0.790,,
+model,args_mean_acc,args_mean_ned,seg_mean_acc,seg_mean_ned
+chatgpt,0.7011,0.0464,,
+gemini,0.9689,0.0067,,
+opus,0.9711,0.006,,
+sonnet,0.9656,0.0074,,

@@ -1,4 +1,4 @@
-model,sample,acc
-chatgpt,1,0.8232
-chatgpt,2,0.8001
-chatgpt,3,0.7967
+model,sample,acc,macro_f1
+chatgpt,1,0.8232,0.7628
+chatgpt,2,0.8001,0.7674
+chatgpt,3,0.7967,0.7606

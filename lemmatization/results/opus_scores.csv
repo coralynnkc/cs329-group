@@ -1,4 +1,4 @@
-model,file,sample,acc
-opus,args,1,0.9667
-opus,args,2,0.9667
-opus,args,3,0.98
+model,file,sample,acc,mean_ned
+opus,args,1,0.9667,0.0066
+opus,args,2,0.9667,0.0082
+opus,args,3,0.98,0.0032

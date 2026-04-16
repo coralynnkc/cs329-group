@@ -1,5 +1,5 @@
-model,mean,range
-chatgpt,0.8067,0.797–0.823
-sonnet,0.8503,0.841–0.862
-gemini,0.8263,0.782–0.856
-opus,0.9396,0.933–0.946
+model,mean_acc,mean_f1
+chatgpt,0.8067,0.7636
+gemini,0.8263,0.7383
+opus,0.9396,0.8547
+sonnet,0.8503,0.7126

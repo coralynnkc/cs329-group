@@ -1,4 +1,4 @@
-model,sample,acc
-sonnet,1,0.8616
-sonnet,2,0.848
-sonnet,3,0.8411
+model,sample,acc,macro_f1
+sonnet,1,0.8616,0.7162
+sonnet,2,0.848,0.711
+sonnet,3,0.8411,0.7105

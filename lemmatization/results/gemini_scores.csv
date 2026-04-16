@@ -1,4 +1,4 @@
-model,file,sample,acc
-gemini,args,1,0.97
-gemini,args,2,0.9733
-gemini,args,3,0.9633
+model,file,sample,acc,mean_ned
+gemini,args,1,0.97,0.0063
+gemini,args,2,0.9733,0.0067
+gemini,args,3,0.9633,0.0071

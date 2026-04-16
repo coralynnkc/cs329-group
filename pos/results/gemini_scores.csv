@@ -1,4 +1,4 @@
-model,sample,acc
-gemini,1,0.8557
-gemini,2,0.841
-gemini,3,0.7821
+model,sample,acc,macro_f1
+gemini,1,0.8557,0.7525
+gemini,2,0.841,0.74
+gemini,3,0.7821,0.7224

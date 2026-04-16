@@ -1,4 +1,4 @@
-model,sample,acc
-opus,1,0.9403
-opus,2,0.9456
-opus,3,0.9328
+model,sample,acc,macro_f1
+opus,1,0.9403,0.8584
+opus,2,0.9456,0.8355
+opus,3,0.9328,0.8701

@@ -27,6 +27,23 @@ import csv
 import argparse
 from collections import defaultdict
 
+
+def macro_f1_from_counts(tag_counts):
+    """
+    Compute macro-averaged F1 from {tag: {"tp": int, "fp": int, "fn": int}}.
+    Tags with no gold occurrences are excluded (undefined recall).
+    """
+    f1s = []
+    for counts in tag_counts.values():
+        tp, fp, fn = counts["tp"], counts["fp"], counts["fn"]
+        if tp + fn == 0:
+            continue  # tag never appears in gold — skip
+        prec = tp / (tp + fp) if (tp + fp) else 0.0
+        rec  = tp / (tp + fn)
+        f1   = 2 * prec * rec / (prec + rec) if (prec + rec) else 0.0
+        f1s.append(f1)
+    return sum(f1s) / len(f1s) if f1s else 0.0
+
 HERE     = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.dirname(HERE)
 MINI_DIR = os.path.join(DATA_DIR, "mini")
@@ -104,29 +121,50 @@ def score_file(pred_path, answer_path, debug=False):
     answers = normalise_keys(raw_answers)
     ans_col = pred_col(answers)
 
-    by_sample = defaultdict(lambda: {"correct": 0, "total": 0})
+    def new_sample():
+        return {"correct": 0, "total": 0, "tag_counts": defaultdict(lambda: {"tp": 0, "fp": 0, "fn": 0})}
+
+    by_sample = defaultdict(new_sample)
     for row in answers:
         sid  = str(row.get("sample_id", "1")).strip()
         sent = str(row.get("sentence_id", "")).strip()
-        gold = row[ans_col].strip()
-        pred = preds.get((sid, sent), "")
+        gold_seq = row[ans_col].strip().split()
+        pred_seq = preds.get((sid, sent), "").strip().split()
 
-        c, t = token_accuracy(pred, gold)
-        by_sample[sid]["correct"] += c
-        by_sample[sid]["total"]   += t
+        by_sample[sid]["total"]   += len(gold_seq)
+        by_sample[sid]["correct"] += sum(p == g for p, g in zip(pred_seq, gold_seq))
+
+        tc = by_sample[sid]["tag_counts"]
+        for p, g in zip(pred_seq, gold_seq):
+            if p == g:
+                tc[g]["tp"] += 1
+            else:
+                tc[g]["fn"] += 1
+                tc[p]["fp"] += 1
+        # gold tokens with no matching pred (length mismatch)
+        for g in gold_seq[len(pred_seq):]:
+            tc[g]["fn"] += 1
 
     if debug:
         for sid, data in sorted(by_sample.items()):
             acc = data["correct"] / data["total"] if data["total"] else 0
-            print(f"  [debug] sample {sid}: {data['correct']}/{data['total']} tokens = {acc:.3f}")
+            f1  = macro_f1_from_counts(data["tag_counts"])
+            print(f"  [debug] sample {sid}: {data['correct']}/{data['total']} tokens  acc={acc:.3f}  macro_f1={f1:.3f}")
 
     sample_accs = [v["correct"] / v["total"] for v in by_sample.values() if v["total"]]
+    sample_f1s  = [macro_f1_from_counts(v["tag_counts"]) for v in by_sample.values() if v["total"]]
     if not sample_accs:
-        return {"mean": 0.0, "min": 0.0, "max": 0.0, "samples": []}
-    mean = sum(sample_accs) / len(sample_accs)
-    return {"mean": round(mean, 4), "min": round(min(sample_accs), 4),
-            "max": round(max(sample_accs), 4),
-            "samples": [round(a, 4) for a in sample_accs]}
+        return {"mean_acc": 0.0, "mean_f1": 0.0, "samples_acc": [], "samples_f1": []}
+    mean_acc = sum(sample_accs) / len(sample_accs)
+    mean_f1  = sum(sample_f1s)  / len(sample_f1s)
+    return {
+        "mean_acc": round(mean_acc, 4),
+        "mean_f1":  round(mean_f1, 4),
+        "min_acc":  round(min(sample_accs), 4),
+        "max_acc":  round(max(sample_accs), 4),
+        "samples_acc": [round(a, 4) for a in sample_accs],
+        "samples_f1":  [round(f, 4) for f in sample_f1s],
+    }
 
 
 def write_csv_file(rows, path):
@@ -149,21 +187,20 @@ def score_model(model, debug=False):
         return
 
     r = score_file(pred_path, answer_path, debug=debug)
-    s = r["samples"]
-    rng = f"{r['min']:.3f}–{r['max']:.3f}"
+    s = r["samples_acc"]
     cols = [f"{a:.3f}" for a in s] + [""] * (3 - len(s))
 
     print(f"\nModel: {model}")
-    print(f"{'s1':>6}  {'s2':>6}  {'s3':>6}  {'mean':>6}  {'range':>12}")
-    print("-" * 45)
-    print(f"{'  '.join(cols)}  {r['mean']:.3f}  {rng:>12}")
+    print(f"{'s1_acc':>7}  {'s2_acc':>7}  {'s3_acc':>7}  {'mean_acc':>8}  {'mean_f1':>8}")
+    print("-" * 50)
+    print(f"{'  '.join(cols)}  {r['mean_acc']:.3f}     {r['mean_f1']:.3f}")
 
-    detail_rows = [{"model": model, "sample": i+1, "acc": acc}
-                   for i, acc in enumerate(r["samples"])]
+    detail_rows = [{"model": model, "sample": i+1, "acc": acc, "macro_f1": f1}
+                   for i, (acc, f1) in enumerate(zip(r["samples_acc"], r["samples_f1"]))]
     if detail_rows:
         write_csv_file(detail_rows, os.path.join(RES_DIR, f"{model}_scores.csv"))
 
-    summary_row = {"model": model, "mean": r["mean"], "range": rng}
+    summary_row = {"model": model, "mean_acc": r["mean_acc"], "mean_f1": r["mean_f1"]}
     summary_path = os.path.join(RES_DIR, "summary.csv")
     existing = []
     if os.path.exists(summary_path):
@@ -172,7 +209,7 @@ def score_model(model, debug=False):
         existing = [row for row in existing if row["model"] != model]
     existing.append(summary_row)
 
-    all_keys = ["model", "mean", "range"]
+    all_keys = ["model", "mean_acc", "mean_f1"]
     write_csv_file([{k: r.get(k, "") for k in all_keys} for r in existing], summary_path)
 
     print(f"\nResults saved to  results/{model}_scores.csv")
@@ -198,8 +235,9 @@ def main():
         if not args.answers:
             parser.error("--answers is required with --predictions")
         r = score_file(args.predictions, args.answers, debug=args.debug)
-        print(f"mean={r['mean']:.3f}  min={r['min']:.3f}  max={r['max']:.3f}")
-        print(f"per-sample: {r['samples']}")
+        print(f"mean_acc={r['mean_acc']:.3f}  min_acc={r['min_acc']:.3f}  max_acc={r['max_acc']:.3f}  mean_f1={r['mean_f1']:.3f}")
+        print(f"per-sample acc: {r['samples_acc']}")
+        print(f"per-sample f1:  {r['samples_f1']}")
 
 
 if __name__ == "__main__":
