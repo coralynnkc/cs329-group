@@ -5,24 +5,13 @@ Source: [UniMorph English](https://unimorph.github.io/) — morphological paradi
 ## Baseline Results — Lemmatization (`args`)
 
 <!-- results-args:start -->
-| Model | Sample 1 | Sample 2 | Sample 3 | Mean Acc | Mean NED |
-| ------- | -------- | -------- | -------- | -------- | -------- |
-| chatgpt | 0.68 | 0.6333 | 0.79 | 0.7011 | 0.0464 |
-| gemini | 0.97 | 0.9733 | 0.9633 | 0.9689 | 0.0067 |
-| opus | 0.9667 | 0.9667 | 0.98 | 0.9711 | 0.006 |
-| sonnet | 0.9467 | 0.9767 | 0.9733 | 0.9656 | 0.0074 |
-<!-- results-args:end -->
 
-## Baseline Results — Segmentation (`seg`)
-
-<!-- results-seg:start -->
-| Model | Sample 1 | Sample 2 | Sample 3 | Mean Acc | Mean NED |
+| Model   | Sample 1 | Sample 2 | Sample 3 | Mean Acc | Mean NED |
 | ------- | -------- | -------- | -------- | -------- | -------- |
-| chatgpt |  |  |  |  |  |
-| gemini |  |  |  |  |  |
-| opus |  |  |  |  |  |
-| sonnet |  |  |  |  |  |
-<!-- results-seg:end -->
+| chatgpt | 0.68     | 0.6333   | 0.79     | 0.7011   | 0.0464   |
+| gemini  | 0.97     | 0.9733   | 0.9633   | 0.9689   | 0.0067   |
+| opus    | 0.9667   | 0.9667   | 0.98     | 0.9711   | 0.006    |
+| sonnet  | 0.9467   | 0.9767   | 0.9733   | 0.9656   | 0.0074   |
 
 ---
 
@@ -50,30 +39,7 @@ Same format as `eng` but from a different source. Verb-focused, with additional 
 - `V;NFIN` — non-finite / base form (lemma = word itself)
 - `V;PRS;NOM(3,SG)` — 3rd person singular present
 
----
-
-### `eng.segmentations` — Inflection + morpheme boundaries (649,594 rows)
-
-Extends `eng` with a 4th column: `lemma \t inflected_form \t tag \t segmentation`
-
-```
-eat    eating    V|V.PTCP;PRS    eat|ing
-eat    ate       V;PST           -
-```
-
-`|` marks morpheme boundaries. Irregular forms get `-`.
-Same underlying rows as `eng` — **splits are shared**.
-
----
-
 ## Tasks
-
-| File                | Task          | Input                  | Target         |
-| ------------------- | ------------- | ---------------------- | -------------- |
-| `eng.args`          | Lemmatization | `inflected_form` only  | `lemma`        |
-| `eng.segmentations` | Segmentation  | `inflected_form + tag` | `segmentation` |
-
-`eng` overlaps with `eng.args` and is not used for evaluation.
 
 The core challenge in lemmatization is irregular inflection (e.g., `ate` → `eat`, `went` → `go`) and tag ambiguity (e.g., `reads` is N;PL or V;PRS;3;SG). The meaningful comparison axis is **model tier** (Haiku vs. Sonnet vs. Opus) — not access tier (free vs. paid), since the same model gives the same results regardless.
 
