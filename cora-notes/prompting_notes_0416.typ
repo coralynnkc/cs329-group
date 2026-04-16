@@ -6,6 +6,7 @@ pubmedbert > biobert, demonstrating that training is extremely, extremely import
 - https://arxiv.org/html/2508.01630v1
 - https://arxiv.org/html/2305.04928v5
 
+
 llms worse
 - https://arxiv.org/abs/2203.08410
 
@@ -23,7 +24,7 @@ other improvement techniques:
 randomly permuting labels in in-context examples barely hurts classification performance
 
 self-consistency (how is this different than cot?) lifts chain-of-thought performance
-- https://arxiv.org/abs/2203.11171
+- https://arxiv.org/abs/2203.11171 
 
 when llms win:
 - unseen domains
@@ -52,3 +53,14 @@ conclusion:
 - structured output infra is making generative ie more reliable
 - agentic and retrieval-augmented ie is the frontier for extraction
 - open-weight parity enables self-hosted pipelines
+
+
+RAMLAH EDIT:
+A practical “LingBERT” project wud look like: 
+collect a large linguistics corpus
+decide whether to do continued pretraining or from-scratch pretraining
+build or reuse a tokenizer
+pretrain on masked language modeling
+then fine-tune on linguistics tasks 
+
+pattern used by BioBERT, PubMedBERT, and SciBERT in their own domains
