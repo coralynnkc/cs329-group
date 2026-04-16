@@ -41,6 +41,7 @@ Interpretation:
 - REFUSE means you cannot determine the answer from the sentence
 
 Use only the attached CSV file and the sentence context in each row. Do not browse the web, search for external sources, retrieve outside documents, or cite external information.
+Do not create weidgets or other tools for this project. Just label the data and output it.
 
 Now label every row in the attached file.
 ```
