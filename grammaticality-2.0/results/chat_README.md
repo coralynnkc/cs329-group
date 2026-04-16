@@ -7,6 +7,13 @@ CHAT 5.4 (Thinking)
 | Repair    |      **0.89** |    **0.7453** |         **0.8726** |              0.86 |            0.6638 |                 0.8300 | **0.875** | **0.7046** |   **0.8513** |
 | Checklist |          0.56 |       -0.0472 |             0.4762 |          **0.90** |        **0.7615** |             **0.8760** |      0.73 |     0.3571 |       0.6761 |
 
+| Prompt    | In-Domain F1_0 | In-Domain F1_1 | Out-of-Domain F1_0 | Out-of-Domain F1_1 |
+| --------- | -------------: | -------------: | -----------------: | -----------------: |
+| Direct    |         0.8125 |         0.9118 |             0.7586 |             0.9014 |
+| Anchor    |     **0.8254** |     **0.9197** |             0.7500 |             0.9028 |
+| Repair    |     **0.8254** |     **0.9197** |             0.7586 |             0.9014 |
+| Checklist |         0.2667 |         0.6857 |         **0.8214** |         **0.9306** |
+
 
 **Conclusions from comparing these prompts **
 On the 100-example in-domain CoLA sample, prompt formulation had a substantial effect on Chat 5.4’s grammaticality judgments. The strongest results came from the anchor and repair prompts, which tied across all major metrics, achieving 89% accuracy, 0.745 MCC, and 0.873 macro-F1. The direct prompt also performed well, but slightly below the top tier at 88% accuracy and 0.725 MCC. In contrast, the checklist prompt performed dramatically worse, reaching only 56% accuracy and a slightly negative MCC (-0.047), indicating that this framing disrupted the model’s classification behavior rather than helping it.
@@ -448,3 +455,110 @@ Repair [Out of Domain]
   }
 }
 
+FINETUNED - IN DOMAIN
+
+{
+  "gold_file": "mini/cola_in_domain_dev_sample100_answers.csv",
+  "pred_file": "results/CHAT_5.4_cola_100_finetuned.csv",
+  "data_size": 100,
+  "prediction_rows_raw": 100,
+  "prediction_rows_after_dedup": 100,
+  "correct": 89,
+  "accuracy": 0.89,
+  "mcc": 0.7453,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 0,
+  "refusal_rate": 0.0,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0,
+  "valid_prediction_rate": 1.0,
+  "precision_0": 0.8125,
+  "recall_0": 0.8387,
+  "f1_0": 0.8254,
+  "precision_1": 0.9265,
+  "recall_1": 0.913,
+  "f1_1": 0.9197,
+  "macro_f1": 0.8726,
+  "tp": 63,
+  "tn": 26,
+  "fp": 5,
+  "fn": 6,
+  "class_metrics": {
+    "0": {
+      "tp": 26,
+      "fp": 6,
+      "fn": 5,
+      "support": 31,
+      "precision": 0.8125,
+      "recall": 0.8387,
+      "f1": 0.8254
+    },
+    "1": {
+      "tp": 63,
+      "fp": 5,
+      "fn": 6,
+      "support": 69,
+      "precision": 0.9265,
+      "recall": 0.913,
+      "f1": 0.9197
+    }
+  }
+}
+
+FINETUNED - OUT OF DOMAIN
+
+{
+  "gold_file": "mini/cola_out_of_domain_dev_sample100_answers.csv",
+  "pred_file": "results/CHAT_5.4_cola_100_finetuned_out_of_domain_.csv",
+  "data_size": 100,
+  "prediction_rows_raw": 100,
+  "prediction_rows_after_dedup": 100,
+  "correct": 85,
+  "accuracy": 0.85,
+  "mcc": 0.6357,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 0,
+  "refusal_rate": 0.0,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0,
+  "valid_prediction_rate": 1.0,
+  "precision_0": 0.8636,
+  "recall_0": 0.6129,
+  "f1_0": 0.717,
+  "precision_1": 0.8462,
+  "recall_1": 0.9565,
+  "f1_1": 0.898,
+  "macro_f1": 0.8075,
+  "tp": 66,
+  "tn": 19,
+  "fp": 12,
+  "fn": 3,
+  "class_metrics": {
+    "0": {
+      "tp": 19,
+      "fp": 3,
+      "fn": 12,
+      "support": 31,
+      "precision": 0.8636,
+      "recall": 0.6129,
+      "f1": 0.717
+    },
+    "1": {
+      "tp": 66,
+      "fp": 12,
+      "fn": 3,
+      "support": 69,
+      "precision": 0.8462,
+      "recall": 0.9565,
+      "f1": 0.898
+    }
+  }
+}

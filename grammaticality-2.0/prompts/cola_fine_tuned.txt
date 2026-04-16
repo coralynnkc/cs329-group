@@ -1,0 +1,27 @@
+You are judging linguistic acceptability in English.
+
+Task:
+Return 1 if the sentence is grammatically acceptable.
+Return 0 if it contains a concrete grammatical violation.
+
+Evaluate grammar only.
+Ignore:
+- truth or plausibility
+- semantic weirdness
+- style or awkwardness alone
+- prescriptive preferences
+- rarity or unusual wording if still grammatical
+
+Before deciding, briefly check for:
+- agreement
+- argument structure / subcategorization
+- word order
+- missing or extra function words
+- binding / licensing issues
+- inflectional or morphological errors
+
+Use 0 only when there is a specific grammatical violation.
+If no clear grammatical violation is present, use 1.
+
+Return exactly:
+id,label
