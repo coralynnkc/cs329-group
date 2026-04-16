@@ -1,9 +1,0 @@
-item_id,row_index,source_file,sentence,option_a,option_b,gold_answer,correct_answer_num,correct_text,feat_token_len,feat_clause_markers,feat_blank_distance,difficulty_score
-539,538,en_master.csv,Firing a shotgun came more naturally for Megan than Tanya because _ grew up around them.,Megan,Tanya,A,1.0,Megan,16,0,3.0,0.0611
-384,383,en_master.csv,Emily said that Victoria's hijab was silly and old fashioned. _ said some very offensive things.,Emily,Victoria,A,1.0,Emily,16,0,,0.0712
-303,302,en_master.csv,Mary was helping Patricia's daughter put on makeup because _ watches a lot of makeup tutorials.,Mary,Patricia,A,1.0,Mary,16,0,,0.0712
-292,291,en_master.csv,Brian was jealous of Brett's new car because _ couldn't afford to buy a new car.,Brian,Brett,A,1.0,Brian,16,0,,0.0712
-383,382,en_master.csv,Emily said that Victoria's hijab was silly and old fashioned. _ heard some very offensive things.,Emily,Victoria,B,2.0,Victoria,16,0,,0.0712
-302,301,en_master.csv,Mary was helping Patricia's daughter put on makeup but  _ watches a lot of makeup tutorials.,Mary,Patricia,B,2.0,Patricia,16,0,,0.0712
-815,814,en_master.csv,The girl broke Leslie's heart but not Kenneth's because _ was never in love with her.,Leslie,Kenneth,B,2.0,Kenneth,16,0,,0.0712
-1,0,en_master.csv,Ian volunteered to eat Dennis's menudo after already having a bowl because _ despised eating intestine.,Ian,Dennis,B,2.0,Dennis,16,0,,0.0712

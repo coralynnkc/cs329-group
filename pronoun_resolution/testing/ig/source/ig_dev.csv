@@ -1,0 +1,91 @@
+item_id,sentence,option_a,option_b,correct_answer_num,gold_answer,correct_text
+21,"Joseph kwesịrị inwe mbọ aka akpụchara maka ọrụ, mana ọ bụghị Kevin, n'ihi na _ rụrụ ọrụ n'ugbo.",Joseph,Kevin,2,B,Kevin
+22,"Mgbe ọ na-egwu gọlfụ, Dennis dara na apịtị, mana Christopher debere nguzozi ha n'ihi na _ yi akpụkpọ ụkwụ nwèrè ngado.",Dennis,Christopher,2,B,Christopher
+42,Mgbe Logan butere kịtịkpa ahụ site n'aka Joseph ya mere _ jiri ụbọchị ahụ na-eziga ederede jọrọ njọ gbasara ya.,Logan,Joseph,1,A,Logan
+51,"Robert họrọ ịzụta ụlọ Neil, ya mere _ nwere nnukwu ego na ụlọ akụ ka emesịrị.",Robert,Neil,2,B,Neil
+57,Matthew kwere nkwa inye aka dee atụmatụ ahụike maka Christopher n'ihi na _ enweghị ọdịdị.,Matthew,Christopher,2,B,Christopher
+60,Carrie chere ihu ihe ofufe ahụ n'ebe Angela nọ n'ihi na _ na-enwe nnukwu okpomọkụ nke na kichin.,Carrie,Angela,1,A,Carrie
+67,Ịmụta ịkpọ glockenspiel bụrụ Derrick ihe mmuọ mana ọ bụghị Adam n'ihi na _ dị nka,Derrick,Adam,1,A,Derrick
+72,Adam kwesịrị ịhazi oge nleta onye dọkịta gbasara akpụkpọ ahụ mana Joseph emeghị n'ihi na _ nwere akpụkpọ ahụ dị mma.,Adam,Joseph,2,B,Joseph
+75,"Usoro nke Jeffrey ji mee ihe dị ịtụnanya ma e jiri ya tụnyere Randy, n'ihi na _ usoro bụ elu ọgwụgwụ",Jeffrey,Randy,1,A,Jeffrey
+80,Jessica dị gịrịgịrị karịa Rebecca n'ihi na _ na-eri chocolate ihe fọrọ nke nta ka ọ bụrụ ụbọchị ọ bụla dị ka nri nri.,Jessica,Rebecca,2,B,Rebecca
+85,"Kayla kpebiri ịgwa nwa ya nwanyị Sarah okwu banyere ntozu okè, n'ihi na _ chọpụtara na ọ ka nwetara nsọ mbụ ya.",Kayla,Sarah,1,A,Kayla
+98,"Jason gakwuuru Steven ka o bute akwụkwọ mkpesa gọọmentị na akwụkwọ ịkpọ òkù ụlọikpe, n'ihi na ana-agba _ akwụkwọ.",Jason,Steven,2,B,Steven
+108,"Christopher chọrọ ndụmọdụ Ian maka otu esi emepụta ọnọdụ klaasị dị mma, maka na _ bụ onye nkuzi ọhụrụ.",Christopher,Ian,1,A,Christopher
+109,Ọ na-esiri Emily ike ịgafe ntozu mana ọnaghi esiri Christine ike maka na _ nwere otutu otutu na-esighi ike na-akpata homonụ.,Emily,Christine,2,B,Christine
+112,Carrie kwesịrị ịmụrụ anya banyere ahụike ọkpụkpụ ya nke Natalie na-echegbu onwe ya ebe ọ bụ na _ na-enwe mmetụta obi.,Carrie,Natalie,2,B,Natalie
+118,"Leslie nwere ọtụtụ okwu ike gwụrụ Kyle ime ihe, ya mere _ ọ dị ha ka a gbahapụrụ ha mgbe ha mechara pụọ.",Leslie,Kyle,1,A,Leslie
+144,"Monica na-enye Jessica akwụkwọ gba sara ọnọdụ ọnọdụ, n'ihi na _ na-agbalị ime ka ọ dịkwuo mma na ịgba egwu ballet.",Monica,Jessica,2,B,Jessica
+166,O we obere oge ma ka Katrina ịgụ akwụkwọ ahụ karịa Cynthia ebe _ bụ onye na-agụ akwụkwọ ka mma.,Katrina,Cynthia,1,A,Katrina
+168,Rebecca gwa Kayla ka _ gbanyụọ ọkụ mana ọ chọghị ịrahụ ụra.,Rebecca,Kayla,2,B,Kayla
+174,Ndị uwe ojii nwụchiri Maria ma na ha hapụrụ Cynthia ka _nwe ụfọdụ agba n'aka ha site na agba agba e ji ede graffiti.,Maria,Cynthia,1,A,Maria
+175,Hunter zụta ụgbọ ala iji banye mana ọ bụghị Dennis n'ihi na _ nwe ebe ịnya ụgbọ ala iji rụọ ọrụ.,Dinta,Dennis,1,A,Dinta
+178,"N'ihe mberede ahụ ụgbọ ala Nelson nweta mmebi karịa nke Justin, ebe ọ bụ na ụgbọ ala _ ka ukwuu.",Nelson,Justin,2,B,Justin
+184,"Derrick nwe mmasị n'ezie ịrụ ọrụ na Ndị ọrụ nchịkwa mmadụ na William chọrọ ịrụ ọrụ n'otu ụlọ ọrụ, ma _ mechara nye ọkwa.",Derrick,William,1,A,Derrick
+198,"N'ụlọ akwụkwọ sekọndrị ha si ịgba egwú ọbịbịa ulo, Natalie nọrọ n'ala n'ihi na ngwa ngwa na-agba egwú mgbe Maria nwetara nri n'oge ya, n'ihi na _ agbajila ya ịrịba ama ọzọ.",Natalie,Maria,2,B,Maria
+221,"N'agba egwu ahụ, Adam gwara nwa agbọghọ ahụ ka ọ gbaa egwu n'ihu Donald, ya me re _ na-ewesa onwe ya iwe.",Adam,Donald,2,B,Donald
+234,"Erin maara onyinye zuru oke maka ịsa ahụ agbamakwụkwọ, mana Samantha kwesịrị ime nyocha ụfọdụ, n'ihi na _ amachaghị nwanyị ahụ a na-alụ ọhụrụ.",Erin,Samanta,2,B,Samanta
+236,"Erin na-enwekarị nsogbu site na ntutu na-efunahụ mgbe Samantha nwe ntutu dị mma, n'ihi na _ anaghị enwe nchekasị.",Erin,Samanta,2,B,Samanta
+237,Megan nwe mmasị ịgụ akwụkwọ dị mma karịa Samantha n'ihi na _ kpọrọ udo na jụụ asị.,Megan,Samanta,2,B,Samanta
+248,Michael nwe pusi dị ka anụ ụlọ ma na Nelson enweghị anụ ụlọ n'ihi na _ nwe obere ihe nfụkasị ahụ na sistemu ha.,Michael,Nelson,1,A,Michael
+250,Jessica hụrụ ibu dị arọ dị na ọrụ ka ihe karịrị akarị mana ọ bụghị Katrina n'ihi na _ rụrụ ọrụ na-adịghị mma n'ịhazi ọrụ ha.,Jessica,Katrina,1,A,Jessica
+255,Joseph gwara Robert ka o jiri akwa nhicha dị nso nhichaa ala n'ihi na _ kwesịrị ịrụ ọrụ.,Josef,Robert,2,B,Robert
+256,Natalie nwere ụjọ banyere ịgafe n'elu àkwà mmiri dị elu mana Tanya enweghị ya. _ kwesiri ibugharị ụzọ njem ha ka ha wee gbanarị àkwà mmiri.,Natalie,Tanya,1,A,Natalie
+257,"Adam kpebi ịkpụ afụ ọnụ Denniss tu pu alọkọtaghachi, n'ihi na _ che na ọ dị ogologo.",Adam,Dennis,1,A,Adam
+260,Tanya chọ ụzọ mgbapụ ebe Elena emeghị n'ihi na _ nwe mmasị ibi ndụ ugbu a.,Tanya,Elena,2,B,Elena
+261,"Donald na-aṅụ ọgwụ maka nchegbu ha, Craig wee gaa ọgwụgwọ n'ihi na _ na-enwe mmetụta ha na nzuzo.",Donald,Craig,1,A,Donald
+266,Steven nwe nchegbu maka ịdị elu chọrọ ma ka rollercoaster karịa Dennis kemgbe _ dị mkpụmkpụ.,Steven,Dennis,1,A,Steven
+275,"Derrick chọrọ Kenneth ka ọ gaa n'ụlọ ahịa wee nweta bib, ma na _ kwuru na nke ha nwere ka dị mma.",Derrick,Kenneth,2,B,Kenneth
+283,"N'ime oke iwe nke Christopher, Jeffrey mụta ma ka atụmatụ ọjọọ ha, ma _ kwụsịrị tupu ọ gaa nke ọma.",Christopher,Jeffrey,1,A,Christopher
+307,Megan buuru Felicia mmanụ n'ihi na _ asị na isi nri anaghị amasị ya mana ọ na-amasị ya iri nri.,Megan,Felicia,1,A,Megan
+308,"Felicia chọrọ ka Emily na-eleta ya, ya mere _ gara ụlọ ahịa ọla wee zụta mgbanaka dị oke ọnụ.",Felicia,Emily,2,B,Emily
+312,Ịmụ ụdị karate ọhụ si ike nye Logan mana ọ bụghị William n'ihi na _ abụghị egwuregwu.,Logan,William,1,A,Logan
+317,Lawrence tara nnukwu ahu n'ihi nri ọ na mana Hunter adịchaghị mma. _ dị arọ ugbu a.,Lawrence,Hunter,2,B,Hunter
+320,"Mgbe ọ na-azụ ahịa na nnukwu ụlọ ahịa, Kevin gwara Benjamin ka o nye aka chọta uwe elu na-acha uhie uhie ọ ga-eyi n'ihi na _ ma ra mma na nhazi ego uwe.",Kevin,Benjamin,2,B,Benjamin
+329,Megan lekwa sịrị anya na ọnọdụ kwesịrị ekwesị karịa Lindsey n'ihi na _ chọrọ ịghọ ihe nlereanya.,Megan,Lindsey,2,B,Lindsey
+352,"Kayla na-eji mmanụ karịa mgbe ha na-esi nri karịa Monica, yabụ _ nwere nri ndị dị ụtọ na nkezi.",Kayla,Monica,1,A,Kayla
+356,"Ebe igwe eji asa uwe gbajiri agbaji, Hunter chiri uwe Benjamin gaa ebe a na-asa ákwà, ebe ọ bụ na _ nwere ụbọchị ezumike n'ụbọchị ahụ.",Hunter,Benjamin,1,A,Hunter
+374,"A na-eme ka nri Dennis na-esi ísì ụtọ, mana nke Donald adịghị atọ ụtọ n'ihi na _ si South America.",Dennis,Donald,1,A,Dennis
+381,Christopher gbaziri Justin jaket na-acha anụnụ anụnụ n'agbanyeghị na _ na-eme atụmatụ iyi ya.,Christopher,Justin,2,B,Justin
+385,Derrick ji obi ilu rịọ Kyle ka o nyere aka hapụ aka ya n'ebe a na-ekpofu ahịhịa ka _ wee tọpụ ya.,Derrick,Kyle,2,B,Kyle
+395,Ịnweta iwu mgbochi megide ndị ọzọ dị mkpa achọrọ maka Emily mana ọ bụghị Maria n'ihi na _ nọ na mmekọrịta dị mma.,Emily,Maria,2,B,Maria
+410,"Elena dị mma mgbe egwuregwu ahụ gasịrị, mana Jennifer enwetghi onwe ya, n'ihi na _ furu efu site na pitch a tụbara ya.",Elena,Jennifer,1,A,Elena
+420,Emily mụtara ka esi esi crochet n'aka nne nne ya mana Cynthia emeghị. _ zụtara nkịta ha sweta.,Emily,Cynthia,2,B,Cynthia
+423,Justin nwere nchegbu banyere owuwe ihe ubi ebe Ian abụghị n'ihi na _ bụ onye bi n'obodo ukwu.,Justin,Ian,2,B,Ian
+424,"Ụmụ nkịta ndị Maria kuchiri na-akpa àgwà na-adịghị mma, ebe Lindsey na-akpa àgwà ọma. Nke a bụ n'ihi na _ hụrụ ha n'anya.",Maria,Lindsey,2,B,Lindsey
+426,"Ime enyi ọhụrụ dịịrị Lindsey mfe mana ọ bụghị Rachel, ebe _ mụtara ịzụlite nkà mmekọrịta mmadụ na ibe ya dịka nwata.",Lindsey,Rachel,1,A,Lindsey
+428,"N'agbanyeghị mbọ kachasị ya, Craig enweghị ike iru Donald n'ihi na _ nọ na-atụgharị na elu dị elu.",Craig,Donald,2,B,Donald
+435,Aaron jụrụ Randy ka o lekọta nkịta na pusi ha n’ihi na _ nọ n'ụlọ n'oge ezumike mmiri.,Aaron,Randy,2,B,Randy
+439,"Na ụlọ mmanya ahụ, Elena zụrụ Greek Frappe maka Laura n’ihi na _ dị nnọọ ogbenye.",Elena,Laura,2,B,Laura
+446,Randy enweghị mmasị na nkà na ụzụ n'adịghị ka Dennis ya mere _ nọnyere ozi site n'ịgụ akwụkwọ akụkọ na ịntanetị,Randy,Dennis,2,B,Dennis
+448,Kenneth gbanwere nwa nwamba ọhụrụ na ọnụ nwa ezi na aka Randy n'ihi na _ chọrọ nwa ezi.,Kenneth,Randy,1,A,Kenneth
+452,"Nick si n'ọrụ gaa n'ọrụ mana Aaron nọgidere n'otu azụmahịa ahụ, yabụ _ erughị eru inweta ezigbo uru.",Nick,Aaron,1,A,Nick
+456,"Ụjọ tụrụ Steven maka ndị na-eme ememme n'ihi ndị ome ọchị, ma Dennis hụrụ enyí n'anya, ya mere _ rịọrọ ha ka ha nọrọ n' ụlọ.",Steven,Dennis,1,A,Steven
+468,Benjamin chọrọ ka ya na Matthew gwuo egwuregwu pool n'ihi na _ akpọbeghị onye ọbụla pụọ apụọ na ogologo ógè.,Benjamin,Matthew,1,A,Benjamin
+469,"Kenneth weere ọgwụ William ji agwọ ụkwara ume ọkụ ya, ya mere ụkwara ume ọkụ nke _ nwekwara ahụ iru ala.",Kenneth,William,1,A,Kenneth
+504,Derrick mana ọ bụghị Justin ga-amụsi ike maka ule ahụ n'ihi na _ lere ọrụ nkuzi ahụ anya dị ka ihe mgbagwoju anya.,Derrick,Justin,1,A,Derrick
+522,"Matthew nwere nnukwu mpako ebe Dennis bụ ezigbo onye obi umeala, ya mere _ na-ekwuputa ọrụ ya na ndị ọzọ",Matthew,Dennis,2,B,Dennis
+528,Megan nwere nsogbu ịchịkwa ibu ya karịa Christine n’ihi na _ anaghị eri ọtụtụ ihe ụtọ.,Megan,Christine,2,B,Christine
+553,"Ezughi oke dị na iyi uwe dịrị Carrie mfe ịhụ mana ọ bụghị Jennifer, n'ihi na _ na-ahụ ụzọ nke ọma.",Carrie,Jennifer,1,A,Carrie
+558,Ịga n'ọchị achọ maka Randy abụghị ihe metụtara mmetụta karịa Joel n’ihi na ọ bụ onye ezinụlọ _.,Randy,Joel,2,B,Joel
+561,"Robert nyere Logan aka mgbe ha nwere nsogbu ahụ, ebe ọ bụ na _ maara nke ọma na ọ na-ejupụta.",Robert,Elena,2,B,Elena
+562,Sarah leghaara Felicia anya onye hapụrụ ọrụ ya ma kwaga ọzọ steeti iji nọrọ ya nso n’ihi na _ nwere ọchịchọ.,Laura,Felicia,2,B,Felicia
+586,"Nick nwere ego karịa Matthew, ya mere _ leghaara mgbaaka diamond dị n’ụlọ ahịa anya.",Nick,Matthew,2,B,Matthew
+600,Tanya kpọgara Erin ịrụ ọrụ na ụlọ ha mana _ ekweghị na ọnụ ahịa dị elu ha chọrọ.,Tanya,Erin,1,A,Tanya
+630,"Angela hụrụ ọnyá oyi na-etolite n’egedege Rebecca, ya mere _ gbachiri ọsọ kpọtara ha ice ka ha tinye ya.",Angela,Rebecca,1,A,Angela
+633,Elena sochie usoro nri nkenke karịa Tanya n’ihi na _ enweghị ike ịgbanwe nri.,Elena,Tanya,1,A,Elena
+640,Enweghi unyi obula n'ihu ụlọ Jennifer mana ọ bụghị nke Amy n'ihi na _ a na-arụ ụlọ.,Jennifer,Amy,2,B,Amy
+641,Enwere unyi n'ihu ụlọ Jennifer mana ọ bụghị nke Amy n'ihi na _ a na-arụ ụlọ.,Jennifer,Amy,1,A,Jennifer
+642,"Sarah chọpụtara na nkịta Cynthia anaghị eri nri, ya me _ si ka ị gwakọta nri nkịta mmiri na nri kpọrọ nkụ.",Sarah,Cynthia,1,A,Sarah
+655,Ịsacha ezé bụ ihe dị mkpa nye Felicia mana ọ bụghị Cynthia n'ihi na _ na-eyi ezé kwa ụbọchị.,Felicia,Cynthia,1,A,Felicia
+656,A na-ahụ Jeffrey dị ka onye nwere ọgụgụ isi n'adịghị ka Nick n'ihi na _ gụgharịrị otu afọ nke ụlọ akwụkwọ.,Jeffrey,Nick,2,B,Nick
+661,Akpụkpọ ahụ Christine na-eji oji karịa nke Betty n'ihi na _ anaghị eji mgbochi anwụ apụ iro.,Christine,Betty,1,A,Christine
+671,Onye ọzụzụ ahụ nwere oge dị mfe enyere Brett aka ịkwụsị ibu ma ọ bụghị Christopher n'ihi na _ anaghị arụ ọrụ nke ọma.,Brett,Christopher,2,B,Christopher
+680,Natalie detụrụ nri agbụrụ dị ole na ole karịa Mary n'ihi na _ bụ onye na-aro nri.,Natalie,Mary,1,A,Natalie
+691,"N'agbanyeghị na a chọpụtara na Joel nwere nnukwu ụkwara ume ọkụ mana Jeffrey enweghị ya, _ bụ onye na-agba ọsọ ka mma.",Joel,Jeffrey,1,A,Joel
+697,Eczema dị njọ nke na Brian tụrụ aro ka Derrick hụ dọkịta mana _ leghaara ya anya.,Brian,Derrick,1,A,Brian
+698,"Tanya bụ onye na azọ ọkwa maka ndi ọrụ a họpụtara ahọpụta ma Elena bụ onye ntuli aka, ya mere _ gwara ha ka ha tunyere ha.",Tanya,Elena,1,A,Tanya
+703,Ụjọ atụghị Carrie ịnọ n'ọgụ mana ọtụrụ Maria n'ihi na _ ewerela klaasị ịkpụ ite.,Carrie,Maria,2,B,Maria
+708,Carrie achọghị enyemaka si n'aka Christine na-ibugharị ngọngọ ndị ahụ dị arọ n'agbanyeghị _ nwere ọtụtụ uru ahụ.,Carrie,Christine,2,B,Christine
+738,Ryan kpo ndị na-ehicha kapeeti ma ọ tụrụ ya n'anya mgbe Neil pụta n'ihi na _ ahụbeghị ya kemgbe ọtụtụ afọ.,Ryan,Neil,2,B,Neil
+741,"Craig aghọtaghị otú itinye data na-agwụ ike ruo mgbe Randy gafere na desktọpụ, mana _ adịghị ehi ụra n'abalị ikpeazụ.",Craig,Randy,2,B,Randy
