@@ -511,7 +511,99 @@ AM DEV P2
 
 IG DEV P2
 
+{
+  "gold_file": "testing/ig/full/ig_dev_full.csv",
+  "pred_file": "testing/results/sonnet_4.6_dev_ig_p2.csv",
+  "data_size": 90,
+  "prediction_rows_raw": 90,
+  "prediction_rows_after_dedup": 90,
+  "correct": 53,
+  "accuracy": 0.5889,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 0,
+  "refusal_rate": 0.0,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0,
+  "precision_A": 0.5882,
+  "recall_A": 0.4651,
+  "f1_A": 0.5195,
+  "precision_B": 0.5893,
+  "recall_B": 0.7021,
+  "f1_B": 0.6408,
+  "macro_f1": 0.5801,
+  "class_metrics": {
+    "A": {
+      "tp": 20,
+      "fp": 14,
+      "fn": 23,
+      "support": 43,
+      "precision": 0.5882,
+      "recall": 0.4651,
+      "f1": 0.5195
+    },
+    "B": {
+      "tp": 33,
+      "fp": 23,
+      "fn": 14,
+      "support": 47,
+      "precision": 0.5893,
+      "recall": 0.7021,
+      "f1": 0.6408
+    }
+  }
+}
+
 ZU DEV P2
+
+{
+  "gold_file": "testing/zu/full/zu_dev_full.csv",
+  "pred_file": "testing/results/sonnet_4.6_dev_zu_p2.csv",
+  "data_size": 90,
+  "prediction_rows_raw": 90,
+  "prediction_rows_after_dedup": 90,
+  "correct": 54,
+  "accuracy": 0.6,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 0,
+  "refusal_rate": 0.0,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0,
+  "precision_A": 0.7429,
+  "recall_A": 0.4906,
+  "f1_A": 0.5909,
+  "precision_B": 0.5091,
+  "recall_B": 0.7568,
+  "f1_B": 0.6087,
+  "macro_f1": 0.5998,
+  "class_metrics": {
+    "A": {
+      "tp": 26,
+      "fp": 9,
+      "fn": 27,
+      "support": 53,
+      "precision": 0.7429,
+      "recall": 0.4906,
+      "f1": 0.5909
+    },
+    "B": {
+      "tp": 28,
+      "fp": 27,
+      "fn": 9,
+      "support": 37,
+      "precision": 0.5091,
+      "recall": 0.7568,
+      "f1": 0.6087
+    }
+  }
+}
 
 *Prompt 3*
 
@@ -613,7 +705,99 @@ AM DEV P3
 
 IG DEV P3
 
+{
+  "gold_file": "testing/ig/full/ig_dev_full.csv",
+  "pred_file": "testing/results/sonnet_4.6_dev_ig_p3.csv",
+  "data_size": 90,
+  "prediction_rows_raw": 90,
+  "prediction_rows_after_dedup": 90,
+  "correct": 48,
+  "accuracy": 0.5333,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 1,
+  "refusal_rate": 0.0111,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0,
+  "precision_A": 0.5128,
+  "recall_A": 0.4651,
+  "f1_A": 0.4878,
+  "precision_B": 0.56,
+  "recall_B": 0.5957,
+  "f1_B": 0.5773,
+  "macro_f1": 0.5326,
+  "class_metrics": {
+    "A": {
+      "tp": 20,
+      "fp": 19,
+      "fn": 23,
+      "support": 43,
+      "precision": 0.5128,
+      "recall": 0.4651,
+      "f1": 0.4878
+    },
+    "B": {
+      "tp": 28,
+      "fp": 22,
+      "fn": 19,
+      "support": 47,
+      "precision": 0.56,
+      "recall": 0.5957,
+      "f1": 0.5773
+    }
+  }
+}
+
 ZU DEV P3
+
+{
+  "gold_file": "testing/zu/full/zu_dev_full.csv",
+  "pred_file": "testing/results/sonnet_4.6_dev_zu_p3.csv",
+  "data_size": 90,
+  "prediction_rows_raw": 90,
+  "prediction_rows_after_dedup": 90,
+  "correct": 50,
+  "accuracy": 0.5556,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 1,
+  "refusal_rate": 0.0111,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0,
+  "precision_A": 0.6842,
+  "recall_A": 0.4906,
+  "f1_A": 0.5714,
+  "precision_B": 0.4706,
+  "recall_B": 0.6486,
+  "f1_B": 0.5455,
+  "macro_f1": 0.5584,
+  "class_metrics": {
+    "A": {
+      "tp": 26,
+      "fp": 12,
+      "fn": 27,
+      "support": 53,
+      "precision": 0.6842,
+      "recall": 0.4906,
+      "f1": 0.5714
+    },
+    "B": {
+      "tp": 24,
+      "fp": 27,
+      "fn": 13,
+      "support": 37,
+      "precision": 0.4706,
+      "recall": 0.6486,
+      "f1": 0.5455
+    }
+  }
+}
 
 *Prompt 4*
 
@@ -715,4 +899,96 @@ AM DEV P4
 
 IG DEV P4
 
+{
+  "gold_file": "testing/ig/full/ig_dev_full.csv",
+  "pred_file": "testing/results/sonnet_4.6_dev_ig_p4.csv",
+  "data_size": 90,
+  "prediction_rows_raw": 90,
+  "prediction_rows_after_dedup": 90,
+  "correct": 46,
+  "accuracy": 0.5111,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 1,
+  "refusal_rate": 0.0111,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0,
+  "precision_A": 0.4865,
+  "recall_A": 0.4186,
+  "f1_A": 0.45,
+  "precision_B": 0.5385,
+  "recall_B": 0.5957,
+  "f1_B": 0.5657,
+  "macro_f1": 0.5078,
+  "class_metrics": {
+    "A": {
+      "tp": 18,
+      "fp": 19,
+      "fn": 25,
+      "support": 43,
+      "precision": 0.4865,
+      "recall": 0.4186,
+      "f1": 0.45
+    },
+    "B": {
+      "tp": 28,
+      "fp": 24,
+      "fn": 19,
+      "support": 47,
+      "precision": 0.5385,
+      "recall": 0.5957,
+      "f1": 0.5657
+    }
+  }
+}
+
 ZU DEV P4
+
+{
+  "gold_file": "testing/zu/full/zu_dev_full.csv",
+  "pred_file": "testing/results/sonnet_4.6_dev_zu_p4.csv",
+  "data_size": 90,
+  "prediction_rows_raw": 90,
+  "prediction_rows_after_dedup": 90,
+  "correct": 50,
+  "accuracy": 0.5556,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 1,
+  "refusal_rate": 0.0111,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0,
+  "precision_A": 0.6944,
+  "recall_A": 0.4717,
+  "f1_A": 0.5618,
+  "precision_B": 0.4717,
+  "recall_B": 0.6757,
+  "f1_B": 0.5556,
+  "macro_f1": 0.5587,
+  "class_metrics": {
+    "A": {
+      "tp": 25,
+      "fp": 11,
+      "fn": 28,
+      "support": 53,
+      "precision": 0.6944,
+      "recall": 0.4717,
+      "f1": 0.5618
+    },
+    "B": {
+      "tp": 25,
+      "fp": 28,
+      "fn": 12,
+      "support": 37,
+      "precision": 0.4717,
+      "recall": 0.6757,
+      "f1": 0.5556
+    }
+  }
+}
