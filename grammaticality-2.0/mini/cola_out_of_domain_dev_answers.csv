@@ -1,0 +1,517 @@
+id,label,source_code,original_id,sentence
+1,1,clc95,1,Somebody just left - guess who.
+2,1,clc95,2,"They claimed they had settled on something, but it wasn't clear what they had settled on."
+3,1,clc95,3,"If Sam was going, Sally would know where."
+4,1,clc95,4,"They're going to serve the guests something, but it's unclear what."
+5,1,clc95,5,She's reading. I can't imagine what.
+6,1,clc95,6,John said Joan saw someone from her graduating class.
+7,0,clc95,7,John ate dinner but I don't know who.
+8,0,clc95,8,"She mailed John a letter, but I don't know to whom."
+9,1,clc95,9,I served leek soup to my guests.
+10,1,clc95,10,I served my guests.
+11,0,clc95,11,"She was bathing, but I couldn't make out who."
+12,0,clc95,12,She knew French for Tom.
+13,0,clc95,13,John is tall on several occasions.
+14,0,clc95,14,"The ship sank, but I don't know with what."
+15,0,clc95,15,"They noticed the painting, but I don't know for how long."
+16,0,clc95,16,"John was tall, but I don't know on what occasions."
+17,1,clc95,17,Joan ate dinner with someone but I don't know who.
+18,1,clc95,18,Joan ate dinner with someone but I don't know who with.
+19,0,clc95,19,"I know that Meg's attracted to Harry, but they don't know who."
+20,0,clc95,20,"Since Jill said Joe had invited Sue, we didn't have to ask who."
+21,1,clc95,21,"I know that Meg's attracted to Harry, but they don't know who."
+22,0,clc95,22,"She said she had spoken to everybody, but he wasn't sure who."
+23,0,clc95,23,"Each of the performers came in, but were sitting so far back that we couldn't see who."
+24,1,clc95,24,She didn't talk to one student.
+25,0,clc95,25,"She doesn't meet anyone for dinner, but they can't figure out who."
+26,1,clc95,26,Everyone relies on someone. It's unclear who.
+27,1,clc95,27,"Each student wrote a paper on a Mayan language, but I don't remember which one."
+28,1,clc95,28,"The newspaper has reported that they are about to appoint someone, but I can't remember who the newspaper has reported that they are about to appoint."
+29,1,clc95,29,"The newspaper has reported that they are about to appoint someone, but I can't remember who they are about to appoint."
+30,1,clc95,30,"Most columnists claim that a senior White House official has been briefing them, and the newspaper today reveals which one."
+31,1,clc95,31,"Most columnists claim that a senior White House official has been briefing them, but none will reveal which one."
+32,1,clc95,32,"Bill wondered how many papers Sandy had read, but he didn't care which ones."
+33,1,clc95,33,"I never know which papers Sandy has read, but I usually know how many."
+34,1,clc95,34,Sandy had read how many papers?!
+35,1,clc95,35,"Everybody gets on well with a certain relative, but often only his therapist knows which one."
+36,1,clc95,36,Which book did each author recommend?
+37,1,clc95,37,His or her least known work.
+38,1,clc95,38,"They were going to meet sometime on Sunday, but the faculty didn't know when."
+39,1,clc95,39,"John likes some students, but I don't know who."
+40,1,clc95,40,I don't know who John likes.
+41,0,clc95,41,"John likes some students, but I don't know who John likes some students."
+42,0,clc95,42,"Joan said she talked to the students, but Fred couldn't figure out who."
+43,0,clc95,43,"He announced he had eaten the asparagus, but we didn't know what."
+44,1,clc95,44,"She was reading the books under the table, but Fred didn't know what books."
+45,1,clc95,45,"He announced he would marry the woman he loved most, but none of his relatives could figure out who."
+46,1,clc95,46,She talked to John or Mary but I don't know which.
+47,1,clc95,47,She talked to John or Mary but I don't know which one.
+48,1,clc95,48,"She talked to Harry, but I don't know who else."
+49,1,clc95,49,"I will see them, but I don't know how many of them."
+50,1,clc95,50,Everyone who knows either Susan or Laura likes her.
+51,0,clc95,51,She said she talked to three students but I don't know how many.
+52,0,clc95,52,She said she talked to those students but I don't know how many.
+53,1,clc95,53,"He shouted again, but I don't know who to."
+54,1,clc95,54,"She was dancing with somebody, but I don't know who with."
+55,1,clc95,55,"Several firefighters were injured, but it's not known."
+56,1,clc95,56,"Meg is attracted to Harry, but they don't know who she is attracted to."
+57,1,clc95,57,"Sandy was trying to work out which students would be able to solve a certain problem, but she wouldn't tell us which one."
+58,0,clc95,58,"Sandy was trying to work out which students would be able to solve a certain problem, but she wouldn't tell us which one."
+59,0,clc95,59,"John and someone were dancing together, but I don't know who."
+60,1,clc95,60,"The TA's have been arguing about whether some student or other should pass, but I can't now remember which one."
+61,0,clc95,61,It has been determined that somebody will be appointed; it's just not clear yet who.
+62,0,clc95,62,"Sally asked if somebody was going to fail math class, but I can't remember who."
+63,0,clc95,63,"The TA's have been arguing about whether some student or other should pass, but I can't now remember which one."
+64,1,clc95,64,"Sandy is very anxious to see if the students will be able to solve the homework problem in a particular way, but she won't tell us which."
+65,1,clc95,65,"Sandy is very anxious to see if the students will be able to solve the homework problem in a particular way, but she won't tell us in which way."
+66,1,clc95,66,"Clinton is anxious to find out which budget dilemmas Panetta would be willing to tackle in a certain way, but he won't say in which."
+67,1,clc95,67,"Sandy is wondering whether there will be students who have to drop the class for a certain reason, but she won't reveal what."
+68,0,clc95,68,In which way is Sandy very anxious to see if the students will be able to solve the homework problem?
+69,0,clc95,69,In which way is Clinton anxious to find out which budget dilemmas Panetta would be willing to solve?
+70,1,clc95,70,"I know how many assignments I've graded, but I don't know how many Bill has."
+71,0,clc95,71,What did you leave before they did?
+72,0,clc95,72,What did you leave before they started playing?
+73,1,clc95,73,Sandy was trying to work out which students would be able to solve a certain problem.
+74,1,clc95,74,The administration has issued a statement that it is willing to meet with one of the student groups.
+75,1,clc95,75,Sandy was trying to work out which students would be able to solve a problem.
+76,1,clc95,76,The administration has issued a statement that it is willing to meet a student group.
+77,1,clc95,77,"The administration has issued a statement that it is willing to meet a student group, but I'm not sure which one."
+78,1,clc95,78,"I think Agnes said that Bill would speak, but I don't remember what about."
+79,0,clc95,79,Agnes wondered how John could eat but it's not clear what.
+80,0,clc95,80,"Tony sent Mo a picture that he painted, but it's not clear with what."
+81,1,clc95,81,She's been dancing but we don't know with whom.
+82,0,clc95,82,Who did they see someone?
+83,1,c-05,83,It was believed by everybody that Mary was a thief.
+84,1,c-05,84,That professor is feared by all students.
+85,1,c-05,85,Mary was respected by John.
+86,1,c-05,86,Ted was bitten by the spider.
+87,0,c-05,87,The book was by John written.
+88,0,c-05,88,The argument was summed by the coach up.
+89,1,c-05,89,The paper was written up by John.
+90,0,c-05,90,The paper was written by John up.
+91,1,c-05,91,John was spoken to by Mary.
+92,0,c-05,92,John was spoken by Mary to.
+93,1,c-05,93,The book was seen by Mary.
+94,0,c-05,94,John was seen the book.
+95,1,c-05,95,The book was written.
+96,0,c-05,96,John was spoke by Mary to.
+97,1,c-05,97,The table was wiped clean by John.
+98,0,c-05,98,The table was wiped by John clean.
+99,0,c-05,99,Mary was given by John the book.
+100,1,c-05,100,John was believed to be telling the truth by Mary.
+101,1,c-05,101,John was believed by Mary to be telling the truth.
+102,1,c-05,102,The car was driven by John to Maine.
+103,1,c-05,103,It was believed by the students that they would have an exam.
+104,0,c-05,104,The magazines were sent to herself by Mary.
+105,0,c-05,105,Chocolate eggs were hidden from each other by the children.
+106,1,c-05,106,The magazines were sent by Mary to herself.
+107,1,c-05,107,Chocolate eggs were hidden from no child by any adult.
+108,1,c-05,108,Tabs were kept on each agent by the other.
+109,1,c-05,109,Chocolate eggs were hidden from every child by his mother.
+110,1,c-05,110,Books were taken from no student and given to Mary.
+111,0,c-05,111,Books were taken from no student and given to Mary by any professor.
+112,1,c-05,112,Books were taken from each student by the other.
+113,1,c-05,113,Books were taken from each student and given to Mary.
+114,0,c-05,114,Books were taken from each student and given to Mary by the other.
+115,1,j_71,115,Jack hates Sue and is loved by Mary.
+116,1,j_71,116,Vera sent a baby alligator to Max and a leather dinosaur to Phyllis.
+117,1,j_71,117,Either Sam plays the bassoon or Jekyll the oboe.
+118,1,j_71,118,"Sam doesn't play bassoon, nor Medusa oboe."
+119,0,j_71,119,"Bill ate the peaches, but Harry the grapes."
+120,1,j_71,120,I no more could have stolen that steak than Jack the diamonds.
+121,1,j_71,121,Bill ate more peaches than Harry did grapes.
+122,0,j_71,122,Bill ate the peaches and Harry did the grapes.
+123,0,j_71,123,"Tom will smoke the grass, and Reuben has the hash."
+124,1,j_71,124,"If the ants were called elephants and elephants ants, I'd be able to squash an elephant."
+125,1,j_71,125,"Simon quickly dropped the gold, and Jack the diamonds."
+126,1,j_71,126,"Bob tried to wash himself, and Mary to read the funnies."
+127,1,j_71,127,"Harry told Sue that Albania is a lovely place for a vacation, and Tom told Sally that Albania is a lovely place for a vacation."
+128,1,j_71,128,"Harry told Sue that Albania is a lovely place for a vacation, and Tom."
+129,1,j_71,129,"Max seemed to be trying to begin to love Harriet, and Fred to be trying to begin to love Sue."
+130,1,j_71,130,"Max seemed to be trying to force Ted to leave the room, and Walt, Ira."
+131,0,j_71,131,"Max seemed to be trying to force Ted to leave the room, and Walt to stay a little longer."
+132,0,j_71,132,"Arizona elected Goldwater Senator, and Massachusetts, McCormack."
+133,0,j_71,133,"Millie will send the President an obscene telegram, and Paul, the Secretary a rude letter."
+134,0,j_71,134,Maytag will give a brand-new dryer to the winner of the Mrs.
+135,0,j_71,135,"Bill didn't eat the peaches, nor Harry."
+136,1,j_71,136,"Bill ate the peaches, and Harry did, too."
+137,0,j_71,137,"Bill must quickly eat the peaches, and Harry must slowly."
+138,1,j_71,138,"Whenever Russia has made a major political blunder, the U.S. has too."
+139,1,j_71,139,Bill's story about Sue and Max's about Kathy both amazed me.
+140,1,j_71,140,I bought three quarts of wine and two of Clorox.
+141,1,j_71,141,"Scientists at the South Hanoi Institute of Technology have succeeded in raising one dog with five legs, another with a cow's liver, and a third with no head."
+142,1,j_71,142,"Bill's story about Sue may be amazing, but Max's is virtually incredible."
+143,1,j_71,143,"I like Bill's yellow shirt, but not Max's."
+144,1,j_71,144,Bill's funny story about Sue and Max's boring one about Kathy both amazed me.
+145,1,j_71,145,Bill's wine from France and Ted's from California cannot be compared.
+146,0,j_71,146,"As a teacher, you have to deal simultaneously with the administration's pressure on you to succeed, and the children's to be a nice guy."
+147,1,j_71,147,Neither Von Karajan's recording of Beethoven's 6th on Columbia nor Klemperer's on Angel has the right tempo.
+148,0,j_71,148,Gould's performance of Bach on the piano doesn't please me anywhere as much as Ross's on the harpsichord.
+149,0,j_71,149,Tom's dog with one eye attacked Frank's with three legs.
+150,0,j_71,150,"Because Steve's of a spider's eye had been stolen, I borrowed Fred's diagram of a snake's fang."
+151,1,j_71,151,Neither von Karajan's recording of Beethoven's 6th on Columbia nor Klemperer's has the right tempo.
+152,1,j_71,152,Tom's dog with one eye attacked Fred's.
+153,1,j_71,153,I borrowed Fred's diagram of a snake's eye because Steve's had been stolen.
+154,1,j_71,154,Jerry attempted to blow up the Pentagon.
+155,1,j_71,155,So fast did he run that nobody could catch him.
+156,1,j_71,156,"Bill bought a red house, and Max bought one too."
+157,1,s_97,157,Who always drinks milk?
+158,1,s_97,158,The book which inspired them was very long.
+159,0,s_97,159,The book what inspired them was very long.
+160,1,s_97,160,I know the person whose mother died.
+161,1,s_97,161,The person whose mother's dog we were all fond of.
+162,1,s_97,162,I wonder whose mother died.
+163,1,s_97,163,I wonder whose mother's dog died.
+164,1,s_97,164,I wonder to whom they dedicated the building.
+165,1,s_97,165,Give me the phone number of the person whose mother's dog died.
+166,1,s_97,166,This is the senator to whose mother's friend's sister's I sent the letter.
+167,0,s_97,167,I want goes to the store.
+168,0,s_97,168,I wonder what to be a clown on the cover of.
+169,0,s_97,169,Bother you that Kim left!
+170,0,s_97,170,A student who to talk to us just walked in.
+171,1,s_97,171,Whose bagels do you like?
+172,1,s_97,172,I wonder in whom to place my trust.
+173,1,s_97,173,There were several old rocks songs that she and I were the only two who knew.
+174,0,s_97,174,It was to to amuse us that Kim was singing that they wanted.
+175,0,s_97,175,What they feared most was to be no one available to help them.
+176,0,s_97,176,We tried to amuse them that Kim was singing.
+177,1,s_97,177,"Mary asked me if, in St. Louis, John could rent a house cheap."
+178,0,s_97,178,"Mary arranged for, in St. Louis, John to rent a house cheap."
+179,1,s_97,179,It would be unwise for there to be no fire exit.
+180,1,s_97,180,I believe there to be no way out.
+181,0,s_97,181,I wonder in whom them to place their trust.
+182,0,s_97,182,I wonder whom us to trust.
+183,0,s_97,183,I wonder who for us to trust.
+184,1,s_97,184,I wonder who to place my trust in.
+185,1,s_97,185,I know the people that voted in the election.
+186,1,s_97,186,I threw away a book that Sandy thought we had read.
+187,1,s_97,187,I thought that you were sick.
+188,0,s_97,188,I dislike the people in who we placed our trust.
+189,1,s_97,189,I dislike the company in which we placed our trust.
+190,1,s_97,190,I dislike the people in whose house we stayed.
+191,1,s_97,191,I dislike the person with whom we were talking.
+192,0,s_97,192,"Jones, that we were talking to last night, always watches football games alone."
+193,1,s_97,193,A letter was received that Jones would be upset by.
+194,0,s_97,194,A letter was received Jones would be upset by.
+195,1,s_97,195,I saw someone yesterday I hadn't seen for years.
+196,1,s_97,196,Something happened I couldn't really talk about.
+197,1,s_97,197,The only person that I like whose kids Dana is willing to put up with is Pat.
+198,1,s_97,198,The book that I like which everyone else in the class hates was written by John.
+199,0,s_97,199,The only person whose kids Dana is willing to put up with was written by John.
+200,0,s_97,200,The book that I like - everyone else in the class hates.
+201,1,s_97,201,The only person whose kids Dana is willing to put up with is Pat.
+202,1,s_97,202,Which book's author did you meet?
+203,0,s_97,203,Which boy's mother did you meet who you liked?
+204,0,s_97,204,Which book's author did you meet who you liked?
+205,1,s_97,205,Which boy's mother did you meet?
+206,1,s_97,206,All who lost money in the scam are eligible for the program.
+207,0,s_97,207,Who for Sandy to talk to is still enrolled in the class?
+208,1,s_97,208,Who who you like does Sandy also like?
+209,1,s_97,209,Everything you like is on the table.
+210,1,s_97,210,The bills passed by the House yesterday that we objected to were vetoed.
+211,1,s_97,211,The only people being added to our group who were at Harvard were students.
+212,1,swb04,212,We like ourselves.
+213,1,swb04,213,Nobody likes us.
+214,0,swb04,214,Leslie likes ourselves.
+215,0,swb04,215,Ourselves like ourselves.
+216,1,swb04,216,She voted for herself.
+217,0,swb04,217,We gave us presents.
+218,1,swb04,218,We gave ourselves presents.
+219,1,swb04,219,We gave presents to ourselves.
+220,0,swb04,220,We gave us to the cause.
+221,1,swb04,221,We gave ourselves to the cause.
+222,0,swb04,222,Leslie told us about us.
+223,0,swb04,223,Leslie told ourselves about us.
+224,1,swb04,224,We think that Leslie likes us.
+225,0,swb04,225,We think that Leslie likes ourselves.
+226,1,swb04,226,Our friends like us.
+227,1,swb04,227,Those pictures of us offended us.
+228,0,swb04,228,We found your letter to ourselves in the trash.
+229,0,swb04,229,Vote for you!
+230,1,swb04,230,Vote for yourself!
+231,0,swb04,231,We appeared to them to vote for themselves.
+232,1,swb04,232,We admired the pictures of us in the album.
+233,1,swb04,233,We admired the pictures of ourselves in the album.
+234,1,swb04,234,Leslie used a pen.
+235,1,swb04,235,We put the pigs in a pen.
+236,1,swb04,236,We need to pen the pigs to keep them from getting into the corn.
+237,1,swb04,237,They should pen the letter quickly.
+238,1,swb04,238,The car won't run.
+239,1,swb04,239,This dye will run.
+240,1,swb04,240,She can run an accelerator.
+241,1,swb04,241,These stockings will run.
+242,1,swb04,242,We need another run to win.
+243,1,swb04,243,Lee saw the student with a telescope.
+244,1,swb04,244,I forgot how good beer tastes.
+245,1,swb04,245,Visiting relatives can be boring.
+246,1,swb04,246,If only Superman would stop flying planes!
+247,1,swb04,247,That's a new car dealership.
+248,1,swb04,248,I know you like the back of my hand.
+249,1,swb04,249,Max is on the phone now.
+250,1,swb04,250,I saw her duck.
+251,1,swb04,251,I'm creating a committee. Kim – you're in charge.
+252,1,swb04,252,Lights go out at ten. There will be no talking afterwards.
+253,1,swb04,253,They found the book on the atom.
+254,1,swb04,254,Which experts testified against defendants who exposed them?
+255,1,swb04,255,List all experts for the defendant who represented himself.
+256,1,swb04,256,List associates of each defendant who speaks Spanish.
+257,0,swb04,257,They lost themselves' books.
+258,1,swb04,258,Some sentences go on and on and on.
+259,0,swb04,259,Sentences some go on and on and on and on.
+260,1,swb04,260,That surprised me.
+261,0,swb04,261,I noticed the.
+262,1,swb04,262,They were interested in his.
+263,1,swb04,263,This is my favorite.
+264,1,swb04,264,A large dog chased a small cat.
+265,1,swb04,265,Some people yell at noisy dogs in my neighborhood.
+266,1,swb04,266,Some people yell at the dogs in my neighborhood.
+267,1,swb04,267,Some people yell at the dogs.
+268,1,swb04,268,Some people yell at noisy dogs.
+269,1,swb04,269,Some people yell at dogs.
+270,1,swb04,270,Some people consider the noisy dogs dangerous.
+271,1,swb04,271,Some people consider the dogs in my neighborhood dangerous.
+272,1,swb04,272,Some people consider noisy dogs in my neighborhood dangerous.
+273,1,swb04,273,Some people consider the dogs dangerous.
+274,1,swb04,274,Some people consider noisy dogs dangerous.
+275,1,swb04,275,Some people consider dogs in my neighborhood dangerous.
+276,1,swb04,276,Some people consider dogs dangerous.
+277,1,swb04,277,People with children who use drugs should be locked up.
+278,1,swb04,278,This disease gave Leslie a fever in Rome.
+279,1,swb04,279,The love of my life and mother of my children would never do such a thing.
+280,1,swb04,280,"Most elections are quickly forgotten, but the election of 2000, everyone will remember for a long time."
+281,0,swb04,281,It is painting by Klee or drawing by Miro that the museum displays no.
+282,1,swb04,282,The defendant denied the accusation.
+283,0,swb04,283,The teacher disappeared the problem.
+284,0,swb04,284,The teacher handed the student.
+285,1,swb04,285,The bird sings.
+286,0,swb04,286,The bird sing.
+287,0,swb04,287,Birds sings.
+288,1,swb04,288,The birds give the worm a tug.
+289,0,swb04,289,The bird give the worm a tug.
+290,0,swb04,290,The birds gives the worm a tug.
+291,1,swb04,291,Terry delighted in my pain.
+292,0,swb04,292,Terry delighted.
+293,0,swb04,293,Terry delighted my pain.
+294,1,swb04,294,Kerry remarked it was late.
+295,1,swb04,295,What additional categories and rules would be required to handle these verbs?
+296,1,swb04,296,We created a monster.
+297,0,swb04,297,I was already aware of fact.
+298,0,swb04,298,The defendant deny the allegation.
+299,0,swb04,299,The defendants denies the allegation.
+300,1,swb04,300,The defendant walks.
+301,0,swb04,301,The defendant walk.
+302,0,swb04,302,The defendants walks.
+303,1,swb04,303,How many feature structures categories can label the first daughter?
+304,1,swb04,304,The child put the toy on the table.
+305,1,swb04,305,The teacher became angry with the students.
+306,0,swb04,306,The teacher became.
+307,1,swb04,307,The jury believed the defendant lied.
+308,1,swb04,308,The guests dined.
+309,1,swb04,309,We relied on Leslie.
+310,0,swb04,310,We relied above Leslie.
+311,1,swb04,311,We celebrated in the streets.
+312,1,swb04,312,We celebrated in the streets in the rain on Tuesday in the morning.
+313,0,swb04,313,The children are happy of ice cream.
+314,0,swb04,314,The children are fond with the ice cream.
+315,0,swb04,315,The children are fond that they have ice cream.
+316,1,swb04,316,A magazine appeared on the newsstands.
+317,1,swb04,317,A magazine about crime appeared on the newsstands.
+318,1,swb04,318,Newsweek appeared on the newsstands.
+319,0,swb04,319,Newsweek about crime appeared on the newsstands.
+320,1,swb04,320,The report that crime was declining surprised many people.
+321,1,swb04,321,The book surprised many people.
+322,0,swb04,322,The book that crime was declining surprised many people.
+323,1,swb04,323,The storm arrived after the picnic.
+324,0,swb04,324,The storm arrived while the picnic.
+325,1,swb04,325,The storm arrived while we ate lunch.
+326,0,swb04,326,This dogs barked.
+327,1,swb04,327,These dogs barked.
+328,1,swb04,328,A chair was broken.
+329,1,swb04,329,They want them arrested.
+330,1,swb04,330,They preferred them arrested.
+331,1,swb04,331,We preferred them on our team.
+332,1,swb04,332,"With my parents as supportive as they are, I'll be in fine shape."
+333,0,swb04,333,We walks.
+334,0,swb04,334,Few dog barked.
+335,1,swb04,335,The dogs barked.
+336,1,swb04,336,I walk and Dana runs.
+337,1,swb04,337,They like us.
+338,0,swb04,338,Us like them.
+339,1,swb04,339,Kim likes dogs.
+340,1,swb04,340,Dogs like Kim.
+341,1,swb04,341,The person responsible confessed.
+342,0,swb04,342,The person confessed responsible.
+343,0,swb04,343,The cat slept soundly and furry.
+344,0,swb04,344,The soundly and furry cat slept.
+345,1,swb04,345,"Chris walks, Pat eats broccoli, and Sandy plays squash."
+346,1,swb04,346,There was some particular dog who saved every family.
+347,1,swb04,347,Susan frightens her.
+348,1,swb04,348,Susan told her a story.
+349,1,swb04,349,Susan told a story to her.
+350,1,swb04,350,Susan devoted herself to linguistics.
+351,1,swb04,351,Nobody told Susan about herself.
+352,1,swb04,352,That picture of Susan offended her.
+353,1,swb04,353,He offended Sandy.
+354,0,swb04,354,I enjoy yourself.
+355,1,swb04,355,They talk to themselves.
+356,1,swb04,356,Nobody told Susan.
+357,1,swb04,357,Protect yourself!
+358,0,swb04,358,Protect you!
+359,1,swb04,359,I met the person who left.
+360,1,swb04,360,Leslie slept.
+361,0,swb04,361,Chris handed Bo.
+362,1,swb04,362,Dana walked and Leslie ran.
+363,0,swb04,363,Dana walking and Leslie ran.
+364,0,swb04,364,Dana walking and Leslie running.
+365,0,swb04,365,the putter of books left.
+366,1,swb04,366,Kris donated a book to the library.
+367,1,swb04,367,The police sprayed the protesters with water.
+368,1,swb04,368,The police sprayed water on the protesters.
+369,1,swb04,369,The students drove cars.
+370,1,swb04,370,These cars drive easily.
+371,1,swb04,371,The horse kicked me black and blue.
+372,1,swb04,372,They yelled.
+373,1,swb04,373,The horse raced past the barn fell.
+374,1,swb04,374,The horse that was raced past the barn fell.
+375,1,swb04,375,The boat seen down the river sank.
+376,1,swb04,376,The evidence assembled by the prosecution convinced the jury.
+377,1,swb04,377,Lou forgot the umbrella.
+378,1,swb04,378,Lou forgot the umbrella in the closet.
+379,1,swb04,379,Lou hoped the umbrella was broken.
+380,0,swb04,380,Lou hoped the umbrella in the closet.
+381,0,swb04,381,Lou put the umbrella was broken.
+382,1,swb04,382,Lou put the umbrella in the closet.
+383,1,swb04,383,The artist drew the child with a pencil.
+384,1,swb04,384,The dog bit the cat.
+385,0,swb04,385,The cat was bitten the mouse.
+386,0,swb04,386,The cat was bitten the mouse by the dog.
+387,0,swb04,387,Chris was handed Sandy a note by Pat.
+388,1,swb04,388,Chris was handed a note.
+389,0,swb04,389,Chris was handed Sandy a note.
+390,1,swb04,390,TV puts dumb ideas in children's heads.
+391,1,swb04,391,Dumb ideas are put in children's heads by TV.
+392,1,swb04,392,Dumb ideas are put in children's heads.
+393,0,swb04,393,Dumb ideas are put notions in children's heads by TV.
+394,1,swb04,394,The patient died.
+395,0,swb04,395,The patient was died.
+396,0,swb04,396,Chris was handed.
+397,0,swb04,397,TV puts dumb ideas.
+398,1,swb04,398,He was arrested by the police.
+399,1,swb04,399,The cat got bitten.
+400,0,swb04,400,The cat were bitten by the dog.
+401,1,swb04,401,There is a monster in Loch Ness.
+402,1,swb04,402,It is obvious that Pat is lying.
+403,1,swb04,403,Pat is the captain of the team.
+404,0,swb04,404,Pat is hate Chris.
+405,1,swb04,405,There is a unicorn in the garden.
+406,1,swb04,406,There was a felon elected to the city council.
+407,1,swb04,407,There is a seat available.
+408,0,swb04,408,A seat available was in the last row.
+409,1,swb04,409,Many people were fond of Pat.
+410,1,swb04,410,People are looking through the window.
+411,1,swb04,411,A felon was elected to the city council.
+412,0,swb04,412,There loved Sandy.
+413,0,swb04,413,We talked to them about there.
+414,1,swb04,414,It mattered that the Giants had lost.
+415,1,swb04,415,That dogs bark annoys people.
+416,1,swb04,416,It annoys people that dogs bark.
+417,1,swb04,417,That Chris knew the answer occurred to Pat.
+418,1,swb04,418,It never occurred to Pat that Chris knew the answer.
+419,1,swb04,419,That the Cardinal won the game gave Sandy a thrill.
+420,1,swb04,420,It gave Sandy a thrill that the Cardinal won the game.
+421,0,swb04,421,That Sandy had lied suggested.
+422,0,swb04,422,It loved Sandy.
+423,1,swb04,423,Cohen proved the independence of the continuum hypothesis.
+424,1,swb04,424,Cohen proved that the continuum hypothesis was independent.
+425,1,swb04,425,We forgot our invitations.
+426,1,swb04,426,Nobody saw Pat.
+427,1,swb04,427,That Fido barks annoys me.
+428,1,swb04,428,Fido barks.
+429,1,swb04,429,Chris dreads the bucket.
+430,1,swb04,430,The candidates bring advantage to the voters.
+431,1,swb04,431,Tabs are kept on suspected drug dealers by the FBI.
+432,1,swb04,432,Advantage is taken of every opportunity for improvement.
+433,1,swb04,433,The bucket was kicked by Pat.
+434,1,w_80,434,John is sad.
+435,1,w_80,435,John loaded the wagon full with hay.
+436,0,w_80,436,John loaded the wagon with hay green.
+437,0,w_80,437,I presented John with it dead.
+438,1,w_80,438,Of whom are you thinking?
+439,1,w_80,439,John became rich.
+440,1,w_80,440,I gave John gold apples.
+441,1,w_80,441,how silly is Bill considered?
+442,1,w_80,442,how mad was Bill made?
+443,1,w_80,443,John is sick.
+444,1,w_80,444,John left singing.
+445,1,w_80,445,John is near Larry.
+446,1,w_80,446,John gave Bill the dog dead.
+447,0,w_80,447,Bill was struck by John as stupid.
+448,0,w_80,448,John was struck as sick.
+449,1,w_80,449,John was struck by Bill's idiocy.
+450,1,w_80,450,John promised Bill to leave.
+451,1,w_80,451,John tried to leave.
+452,1,w_80,452,To leave would be a pleasure.
+453,0,w_80,453,John was struck by Bill as pompous.
+454,0,w_80,454,John was promised by Bill to leave.
+455,1,w_80,455,They make good cooks.
+456,1,w_80,456,there is nothing to do.
+457,1,w_80,457,John has something for Bill to do.
+458,1,w_80,458,I am counting on Bill to incriminate himself.
+459,1,w_80,459,On whom are you counting to incriminate himself?
+460,1,w_80,460,I am counting on Bill to get there on time.
+461,1,w_80,461,I would prefer to leave.
+462,1,w_80,462,I would hate for John to leave.
+463,1,w_80,463,I would prefer for John to leave.
+464,0,w_80,464,It was hated for John to leave.
+465,0,w_80,465,John decided for Bill to get the prize.
+466,0,w_80,466,John decided Bill to get the prize.
+467,1,w_80,467,to die is no fun.
+468,1,w_80,468,John wants to leave.
+469,1,w_80,469,John counted on Bill to get there on time.
+470,1,w_80,470,I bought Bill a book to read.
+471,1,w_80,471,John told Mary that it would be important to leave early.
+472,1,w_80,472,John told Mary that it was important to Fred to leave early.
+473,1,w_80,473,"John, told Mary that it would be appropriate to leave together."
+474,0,w_80,474,the election of John president surprised me.
+475,1,w_80,475,John's arriving dead surprised me.
+476,1,w_80,476,the attempt by John to leave surprised me.
+477,1,w_80,477,John left orders to follow Pete.
+478,1,w_80,478,John left us orders to follow Pete.
+479,1,w_80,479,John left orders not to be disturbed.
+480,1,w_80,480,That he is here is clear.
+481,1,w_80,481,It is a problem that he is here.
+482,1,w_80,482,It bothers me that he is here.
+483,1,w_80,483,John regretted it that Bill had a good time.
+484,0,w_80,484,John believes it that Bill is here.
+485,0,w_80,485,John believes it sincerely that Bill is here.
+486,0,w_80,486,John is aware of it that Bill is here.
+487,0,w_80,487,John felt it that Bill was tardy.
+488,0,w_80,488,John believed it that Bill was tardy.
+489,1,w_80,489,It was believed that Bill was tardy.
+490,0,w_80,490,That John is reluctant seems.
+491,0,w_80,491,It is the problem that he is here.
+492,1,w_80,492,That he is here is the problem.
+493,1,w_80,493,The problem we are discussing is George.
+494,0,w_80,494,It is to give up to leave.
+495,1,w_80,495,It would prove our theory to be untenable for carrots to be vegetables.
+496,0,w_80,496,It was believed to be illegal by them to do that.
+497,1,w_80,497,John grudgingly accepted judgments of his incompetence as an auto mechanic.
+498,1,w_80,498,It was to John that I gave the book.
+499,1,w_80,499,I bought it to read.
+500,1,w_80,500,I bought it to give to Pete.
+501,1,w_80,501,I gave it to Pete to take to the fair.
+502,0,w_80,502,I gave Pete the book to impress.
+503,1,w_80,503,I wrote to Bill.
+504,1,w_80,504,I presented it to Bill to read.
+505,0,w_80,505,I presented Bill with it to read.
+506,1,w_80,506,I gave a book to Bill to read.
+507,1,w_80,507,John thinks it would upset himself to die.
+508,1,w_80,508,John made Bill mad at himself.
+509,1,w_80,509,John made Bill master of himself.
+510,1,w_80,510,The correspondence school made Bill a good typist.
+511,1,w_80,511,The correspondence school sent Bill a good typist.
+512,1,w_80,512,John considers Bill silly.
+513,1,w_80,513,John considers Bill to be silly.
+514,0,w_80,514,John bought a dog for himself to play with.
+515,1,w_80,515,John arranged for himself to get the prize.
+516,1,w_80,516,John talked to Bill about himself.

@@ -1,0 +1,101 @@
+id,label,source_code,original_id,sentence
+1,1,ks08,3426,The man kicked a ball.
+2,1,bc01,1068,Each other's houses seem to the women to be garish.
+3,1,ad03,8007,"Medea was happy, because she had got the highest marks"
+4,0,bc01,934,"While Rusty might leave in order to please Mag, he won't his father."
+5,1,bc01,373,"Kathy likes astronomy, but she doesn't meteorology?"
+6,0,ad03,8532,Anson believed to be happy.
+7,1,m_02,6830,All the armies of Europe marched over these fields.
+8,1,ad03,7842,Where are you living?
+9,1,ks08,4662,He kicked the ball.
+10,0,l-93,2791,Steve pelted acorns to Anna.
+11,0,r-67,1908,The car had a yellow collar on the dog which it injured.
+12,1,ks08,5066,I made it my objective to settle the matter.
+13,0,ad03,7937,He could might go
+14,0,m_02,6987,It's high time Fiona gets a job.
+15,1,l-93,2457,Suddenly an ugly old man entered the hall.
+16,1,c_13,6270,Rosemary tried to get a new car.
+17,1,r-67,1119,They dismissed the proposal as too costly.
+18,0,cj99,180,"I don't plan to lock the door, no matter how fancy this hotel."
+19,1,sks13,7400,They intensified.
+20,0,sks13,7450,Mary prefers that Bill will come.
+21,1,m_02,6616,Accountants audit our finances every year.
+22,1,sks13,7223,What Henri wants is the book which is on the top shelf.
+23,1,ks08,3910,Kim jogs on the hill.
+24,1,g_81,6546,Who is it that Mary likes?
+25,1,gj04,40,They made him angry.
+26,1,b_82,5327,He has not finished.
+27,1,c_13,6214,Lucy seems to have been mugged.
+28,1,ks08,3454,The student was hoping for a good clue.
+29,1,bc01,365,I heard that Mary hired someone.
+30,1,ad03,8332,No one wanted any cake.
+31,1,ks08,3525,The birds are singing because the weather is lovely today.
+32,1,c_13,5802,John is afraid of dogs.
+33,1,r-67,1661,"Fluffy is sick, which I believe that few people realize."
+34,1,c_13,5987,Catherine did her homework.
+35,0,b_73,5415,She speaks too much clearly.
+36,1,l-93,2544,I put the books on the table.
+37,0,c_13,6031,The cake was have eaten.
+38,0,sgww85,7114,"Pat has become crazy, and Chris in good spirits."
+39,0,l-93,3219,I gushed the fountain.
+40,1,r-67,1123,I found delicious some fruit which I picked up on my way home.
+41,1,l-93,2521,The truck rumbled into the driveway.
+42,0,r-67,1859,"They, they can't stand each other."
+43,0,bc01,648,Dry the baby with the cloth torn.
+44,1,l-93,3332,The river runs from the lake to the sea.
+45,1,ad03,7790,Who did you say that John thought would leave early?
+46,1,c_13,6286,Martina is deathly afraid of spiders.
+47,1,r-67,1850,"We'll do it together, you and me."
+48,0,ks08,4885,Pictures of whom appeared in the newspaper?
+49,1,ks08,4311,There seemed to be a fountain in the park.
+50,1,ks08,4135,This John Smith lives in Seoul.
+51,0,ks08,4754,To which man did you talk to?
+52,0,r-67,1663,"Fluffy is sick, which that no one here realizes is certain."
+53,0,r-67,1944,I didn't eat the ice cream and any cake.
+54,1,kl93,5187,Perhaps some dry socks would help?
+55,1,l-93,2873,The eggs mixed with the cream.
+56,0,l-93,2737,Brown equipped a camera at Jones.
+57,0,ks08,4411,John wills leave the party early.
+58,1,bc01,518,The ball lies in the box.
+59,1,cj99,102,"When you eat more, you want correspondingly less."
+60,1,b_73,5383,There is enough bread for all of you.
+61,1,ks08,4215,The committee was unanimous in their decision.
+62,1,r-67,1084,I gave a gun to my brother which I had cleaned.
+63,1,r-67,1421,"I am confident of, and my boss depends on, a successful outing at the track."
+64,1,ad03,8525,I asked who John would introduce to who.
+65,1,rhl07,2119,Nixon's behavior gave an idea for a book to every journalist living in New York City in the 1970s.
+66,1,b_73,5518,I've never seen a man who is taller than my mother.
+67,1,bc01,546,The train reached the station.
+68,1,bc01,672,"Smith loaned, and his widow later donated, a valuable collection of manuscripts to the library."
+69,1,ks08,3958,Tom locked Fido in the garage.
+70,1,l-93,2826,Paula spanked the naughty child's back.
+71,0,ad03,8511,There were killed three men by the assassin.
+72,1,sgww85,7047,We called up every man whose father and whose mother had played on the team.
+73,1,d_98,6505,Any cat doesn't like mice.
+74,1,c_13,6260,Louis begged Kate to leave.
+75,1,r-67,1904,Fred had a snake behind the car Joe was sitting in.
+76,0,sks13,7319,I prefer.
+77,1,l-93,3351,The rabbit vanished into thin air.
+78,0,l-93,2323,Plays and ballets alternate together.
+79,0,c_13,6043,I wanted if he should leave.
+80,1,sks13,7236,It was John and Bill that were waiting at the restaurant.
+81,1,c_13,6179,I know I bought the book that you recommended.
+82,1,l-93,3021,I was hunting game in the woods.
+83,1,sks13,7443,John goes to school.
+84,0,ks08,4467,John did not rain.
+85,0,ks08,3938,John coughed the money.
+86,0,l-93,2260,The spaceship revolves the earth.
+87,1,sks13,7442,John was carefully studying Russian.
+88,1,m_02,6708,Too many vehicles are damaged by salt.
+89,1,ks08,4734,John's bike got fixed or got stolen.
+90,1,ks08,4698,Over 120 different contaminants have been dumped into the river.
+91,1,l-93,2939,"$100,000 will build a house."
+92,0,ks08,5072,I believe that the world is round strongly.
+93,1,ad03,8545,Gilgamesh hasn't kissed Ishtar.
+94,1,ks08,4436,The children are seen in the yard.
+95,1,ad03,8308,Gilgamesh didn't fly the broomstick.
+96,0,bc01,736,The boys were made a good mother.
+97,0,d_98,6399,Mary talked to any man or any woman.
+98,1,l-93,2426,This window just opens itself.
+99,1,m_02,6895,Mr Knightley rode to Kingston.
+100,1,ks08,3791,Shakespeare wrote his plays a long time ago.

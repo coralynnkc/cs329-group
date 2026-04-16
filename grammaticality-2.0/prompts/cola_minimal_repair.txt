@@ -1,0 +1,24 @@
+For each row, decide whether the sentence is already grammatically acceptable in English.
+
+Think of the task this way:
+- If a native speaker could say or write the sentence without needing any grammatical repair, label it 1.
+- If the sentence would require a grammatical repair to be well-formed, label it 0.
+- Judge grammar only, not truth, plausibility, or style.
+
+Output rules:
+- Return ONLY a CSV.
+- Use 1 for acceptable and 0 for unacceptable.
+- Do not skip rows.
+- Do not explain anything.
+
+Return columns:
+id,predicted_label
+
+Examples:
+"The children are eager to leave." -> 1
+"*The children are eager leaving." -> 0
+"John persuaded Mary to leave." -> 1
+"*John persuaded to leave Mary." -> 0
+
+Data:
+[paste CSV here]

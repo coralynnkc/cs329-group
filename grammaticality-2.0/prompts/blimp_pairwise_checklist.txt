@@ -1,0 +1,18 @@
+For each row, choose which sentence is more grammatically acceptable in English.
+
+Judge like a linguist:
+- Focus on syntax.
+- Ignore plausibility, frequency, and style.
+- Look for agreement, licensing, word order, binding, movement, extraction, and argument structure issues.
+
+Rules:
+- Pick exactly one option: A or B.
+- Return ONLY a CSV.
+- Do not explain.
+- Do not skip rows.
+
+Return columns:
+pair_id,predicted_option
+
+Data:
+[paste CSV here]

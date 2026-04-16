@@ -1,0 +1,20 @@
+For each row, judge whether the English sentence is grammatically acceptable.
+
+Important:
+- Judge grammatical well-formedness, not truth, plausibility, register, or style.
+- Return 1 for acceptable and 0 for unacceptable.
+- Return ONLY a CSV.
+- Do not skip rows.
+- Do not explain your answers.
+
+Return columns:
+id,predicted_label
+
+Examples:
+"The book was written by John." -> 1
+"Books were sent to each other by the students." -> 0
+"She voted for herself." -> 1
+"In price soared oil." -> 0
+
+Data:
+Read from the CSV and return the proper label.

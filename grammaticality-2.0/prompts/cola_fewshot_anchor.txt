@@ -1,0 +1,26 @@
+For each row, judge whether the English sentence is grammatically acceptable.
+
+Guidelines:
+- Acceptability is about grammatical well-formedness.
+- A sentence can be semantically odd but still grammatical.
+- A sentence can be easy to understand but still ungrammatical.
+- Ignore truth, plausibility, and style.
+
+Return 1 for acceptable and 0 for unacceptable.
+Return ONLY a CSV with columns:
+id,predicted_label
+
+Anchors:
+"The cat slept on the mat." -> 1
+"Colorless green ideas sleep furiously." -> 1
+"What did the teacher say that John bought?" -> 1
+"What did the teacher wonder whether John bought?" -> 0
+"John likes himself." -> 1
+"Himself likes John." -> 0
+"The dogs are barking." -> 1
+"The dogs is barking." -> 0
+
+Do not skip rows. Do not explain.
+
+Data:
+[paste CSV here]

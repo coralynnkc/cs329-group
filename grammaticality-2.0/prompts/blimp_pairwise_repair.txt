@@ -1,0 +1,17 @@
+For each row, choose the sentence that would require fewer grammatical repairs to be well-formed English.
+
+Interpretation:
+- If one sentence is already grammatically well-formed and the other is not, choose the well-formed one.
+- Focus on grammar only, not plausibility or style.
+
+Rules:
+- Pick exactly one option: A or B.
+- Return ONLY a CSV.
+- Do not explain.
+- Do not skip rows.
+
+Return columns:
+pair_id,predicted_option
+
+Data:
+[paste CSV here]

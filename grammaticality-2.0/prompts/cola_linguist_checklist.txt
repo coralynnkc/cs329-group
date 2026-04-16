@@ -1,0 +1,25 @@
+For each row, decide whether the sentence is grammatically acceptable in English.
+
+Use a linguist-style acceptability judgment:
+- Focus on syntax and grammatical well-formedness.
+- Ignore whether the sentence is strange, unlikely, or implausible if it is still grammatical.
+- Ignore prescriptive style rules.
+- Consider issues such as agreement, argument structure, binding, word order, extraction, licensing, and clause structure.
+
+Output rules:
+- Return 1 for acceptable and 0 for unacceptable.
+- Return ONLY a CSV.
+- Do not skip rows.
+- Do not include explanation.
+
+Return columns:
+id,predicted_label
+
+Examples:
+"The farmer that the parents love swims." -> 1
+"Which book did Mary wonder who bought?" -> 0
+"John seems to Mary to be happy." -> 1
+"Himself likes John." -> 0
+
+Data:
+[paste CSV here]

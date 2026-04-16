@@ -1,0 +1,22 @@
+For each row, choose which sentence is more grammatically acceptable in English.
+
+Rules:
+- Exactly one of A or B should be selected.
+- Focus on grammatical well-formedness, not plausibility or style.
+- Return ONLY a CSV.
+- Do not explain your choices.
+- Do not skip rows.
+
+Return columns:
+pair_id,predicted_option
+
+Example:
+pair_id,sentence_A,sentence_B
+1,The boys are sleeping.,The boys is sleeping.
+
+Output:
+pair_id,predicted_option
+1,A
+
+Data:
+[paste CSV here]
