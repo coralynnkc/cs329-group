@@ -1,0 +1,26 @@
+item_id,row_index,source_file,sentence,option_a,option_b,gold_answer,correct_answer_num,correct_text
+39,38,en_master.csv,"The letter that Joel has written is being read by Adam, so _ is the writer.",Joel,Adam,A,1.0,Joel
+82,81,en_master.csv,Erin is known an an entrepreneur while Victoria is only an employee because _ owns a business.,Erin,Victoria,A,1.0,Erin
+165,164,en_master.csv,"The system that Jeffrey used was amazing compared to Randy, because _ system was higher end.",Jeffrey,Randy,A,1.0,Jeffrey
+186,185,en_master.csv,"At the mall, Laura applied makeup on Betty to beautify her because _ was not very attractive.",Laura,Betty,B,2.0,Betty
+193,192,en_master.csv,Jeffrey build a house with Kenneth's help so _ will have a nice new place to live.,Jeffrey,Kenneth,A,1.0,Jeffrey
+211,210,en_master.csv,"Craig volunteered to help the dyslexic students at the school while Joel avoided them, since _ loved reading.",Craig,Joel,A,1.0,Craig
+231,230,en_master.csv,Patricia chose a hardy cultivar to grow unlike Tanya because _ had very rocky soil.,Patricia,Tanya,A,1.0,Patricia
+238,237,en_master.csv,"Dennis had a much higher testosterone level than Christopher, so _ started to worry about being able to have children.",Dennis,Christopher,B,2.0,Christopher
+250,249,en_master.csv,"Ian asked Kevin to help with their taxes because _ was a successful, trained accountant.",Ian,Kevin,B,2.0,Kevin
+258,257,en_master.csv,"Patricia always had to clean up after Angela, because _ didn't care about living in filth.",Patricia,Angela,B,2.0,Angela
+276,275,en_master.csv,"At night, Jeffrey always stays up later than Hunter to watch TV because _ wakes up late.",Jeffrey,Hunter,A,1.0,Jeffrey
+344,343,en_master.csv,William liked to be outside more than Kyle so _ spent time arguing against getting a pool.,William,Kyle,B,2.0,Kyle
+376,375,en_master.csv,Kevin ate large amounts of food but not Adam. _ didn't have to get checked to see if they had a tapeworm.,Kevin,Adam,B,2.0,Adam
+389,388,en_master.csv,The stain was lighter on Jason's shirt than Donald's because _ spilled red wine and not white wine.,Jason,Donald,B,2.0,Donald
+399,398,en_master.csv,"Christine accepted the over night challenge from Laura, because _ had a better chance of winning.",Christine,Laura,A,1.0,Christine
+445,444,en_master.csv,Brett wanted to get a massage but Kenneth did not. This is because _ was feeling relaxed.,Brett,Kenneth,B,2.0,Kenneth
+596,595,en_master.csv,"Derrick showed Jason how to cut the tiles for their kitchen, and _ was shown appreciation for their help.",Derrick,Jason,A,1.0,Derrick
+624,623,en_master.csv,More people attended the funeral of Joel than of Derrick because _ was a mean person.,Joel,Derrick,B,2.0,Derrick
+671,670,en_master.csv,Nelson teased Christopher about needing to find a homecoming date because _ already had one.,Nelson,Christopher,A,1.0,Nelson
+684,683,en_master.csv,Michael loved eating many different vegetables but not Brett because _ was on a vegetarian diet.,Michael,Brett,A,1.0,Michael
+689,688,en_master.csv,The food that Hunter ate was spoiled but not that of Brett because _ left his food in the fridge.,Hunter,Brett,B,2.0,Brett
+700,699,en_master.csv,Derrick greeted Craig at the event but he did not respond to him because _ is arrogant.,Derrick,Craig,B,2.0,Craig
+701,700,en_master.csv,Monica chose Kayla as the winning contestant on the reality show because _ was a contestant on the show.,Monica,Kayla,B,2.0,Kayla
+766,765,en_master.csv,"The mirror didn't lie when it showed how overweight Patricia was and how emaciated Felicia was, so _ needed to go on diet.",Patricia,Felicia,A,1.0,Patricia
+778,777,en_master.csv,Victoria had no issues with Achilles Tendinitis unlike Betty because _ never wore sneakers with cushion.,Victoria,Betty,B,2.0,Betty

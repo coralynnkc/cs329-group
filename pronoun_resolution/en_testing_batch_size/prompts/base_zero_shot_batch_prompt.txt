@@ -1,0 +1,30 @@
+You are labeling a pronoun-resolution dataset in the attached CSV file.
+
+The file contains these columns:
+- item_id
+- sentence
+- option_a
+- option_b
+
+Task:
+For each row, determine whether the blank in the sentence refers to option_a or option_b.
+
+Output requirements:
+- Return ONLY CSV
+- Use exactly this header:
+item_id,answer
+- For each row, answer must be exactly one of:
+A
+B
+REFUSE
+- Preserve the input row order
+- Include exactly one output row for every input row
+- Do not omit any item_id
+- Do not add explanations, notes, markdown, or code fences
+
+Interpretation:
+- A means the blank refers to option_a
+- B means the blank refers to option_b
+- REFUSE means you cannot determine the answer from the sentence
+
+Now label every row in the attached file.

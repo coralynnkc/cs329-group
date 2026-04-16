@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-04-16T02:09:29.162847Z",
+  "source_file": "en_master.csv",
+  "source_path": "/Users/claireburkhardt/Documents/cs329-group/pronoun_resolution/en_master.csv",
+  "seed": 329,
+  "sizes": [
+    25,
+    100,
+    250,
+    500
+  ],
+  "nesting": "batch_25 \u2286 batch_100 \u2286 batch_250 \u2286 batch_500",
+  "subsets": {
+    "batch_500": {
+      "n": 500,
+      "label_A": 250,
+      "label_B": 250,
+      "label_balance_ratio": 0.5
+    },
+    "batch_250": {
+      "n": 250,
+      "label_A": 125,
+      "label_B": 125,
+      "label_balance_ratio": 0.5
+    },
+    "batch_100": {
+      "n": 100,
+      "label_A": 50,
+      "label_B": 50,
+      "label_balance_ratio": 0.5
+    },
+    "batch_25": {
+      "n": 25,
+      "label_A": 12,
+      "label_B": 13,
+      "label_balance_ratio": 0.48
+    }
+  },
+  "schema_notes": {
+    "item_id": "Preserved from item_num in en_master.csv. Unique integer string, stable across runs.",
+    "gold_answer": "Uppercase A or B (from correct_letter).",
+    "option_a / option_b": "Mapped from option1 / option2.",
+    "inference_cols": [
+      "item_id",
+      "sentence",
+      "option_a",
+      "option_b"
+    ],
+    "nesting_strategy": "Items are drawn as label-balanced prefixes from a single deterministically shuffled pool, ensuring strict nesting.",
+    "label_balance": "Each subset is split as floor(N/2) label-A items and ceil(N/2) label-B items."
+  }
+}
