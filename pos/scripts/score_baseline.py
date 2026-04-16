@@ -151,10 +151,27 @@ def score_file(pred_path, answer_path, debug=False):
             f1  = macro_f1_from_counts(data["tag_counts"])
             print(f"  [debug] sample {sid}: {data['correct']}/{data['total']} tokens  acc={acc:.3f}  macro_f1={f1:.3f}")
 
+    # Aggregate tag counts across all samples for per-tag F1
+    all_tag_counts = defaultdict(lambda: {"tp": 0, "fp": 0, "fn": 0})
+    for sample_data in by_sample.values():
+        for tag, counts in sample_data["tag_counts"].items():
+            for k in ("tp", "fp", "fn"):
+                all_tag_counts[tag][k] += counts[k]
+
+    tag_f1 = {}
+    for tag, counts in all_tag_counts.items():
+        tp, fp, fn = counts["tp"], counts["fp"], counts["fn"]
+        if tp + fn == 0:
+            continue
+        prec = tp / (tp + fp) if (tp + fp) else 0.0
+        rec  = tp / (tp + fn)
+        f1   = 2 * prec * rec / (prec + rec) if (prec + rec) else 0.0
+        tag_f1[tag] = round(f1, 4)
+
     sample_accs = [v["correct"] / v["total"] for v in by_sample.values() if v["total"]]
     sample_f1s  = [macro_f1_from_counts(v["tag_counts"]) for v in by_sample.values() if v["total"]]
     if not sample_accs:
-        return {"mean_acc": 0.0, "mean_f1": 0.0, "samples_acc": [], "samples_f1": []}
+        return {"mean_acc": 0.0, "mean_f1": 0.0, "samples_acc": [], "samples_f1": [], "tag_f1": {}}
     mean_acc = sum(sample_accs) / len(sample_accs)
     mean_f1  = sum(sample_f1s)  / len(sample_f1s)
     return {
@@ -164,6 +181,7 @@ def score_file(pred_path, answer_path, debug=False):
         "max_acc":  round(max(sample_accs), 4),
         "samples_acc": [round(a, 4) for a in sample_accs],
         "samples_f1":  [round(f, 4) for f in sample_f1s],
+        "tag_f1": tag_f1,
     }
 
 
@@ -199,6 +217,10 @@ def score_model(model, debug=False):
                    for i, (acc, f1) in enumerate(zip(r["samples_acc"], r["samples_f1"]))]
     if detail_rows:
         write_csv_file(detail_rows, os.path.join(RES_DIR, f"{model}_scores.csv"))
+
+    if r["tag_f1"]:
+        tag_rows = [{"tag": tag, "f1": f1} for tag, f1 in sorted(r["tag_f1"].items())]
+        write_csv_file(tag_rows, os.path.join(RES_DIR, f"{model}_tag_f1.csv"))
 
     summary_row = {"model": model, "mean_acc": r["mean_acc"], "mean_f1": r["mean_f1"]}
     summary_path = os.path.join(RES_DIR, "summary.csv")

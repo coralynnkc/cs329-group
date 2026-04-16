@@ -15,6 +15,13 @@ Source: [UD English EWT](https://github.com/UniversalDependencies/UD_English-EWT
 
 _Run `python scripts/update_readme.py` after scoring to populate this table._
 
+## Baseline Results — Per-tag F1
+
+<!-- tag-f1:start -->
+| Tag | placeholder |
+| --- | --- |
+<!-- tag-f1:end -->
+
 ---
 
 ## Files
