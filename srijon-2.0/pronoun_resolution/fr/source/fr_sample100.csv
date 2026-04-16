@@ -1,0 +1,101 @@
+item_id,sentence,option_a,option_b,gold_answer
+pr_fr_000019,"Percy va au parc sur son vélo plutôt que sur le train, car _ le fait y aller plus lentement.",le train,le vélo,A
+pr_fr_000103,"Par une chaude journée d' été, Kai a étudié dans la baignoire après que la climatisation de la bibliothèque se soit cassée, _ était chaude.",la bibliothèque,la baignoire,A
+pr_fr_000182,Le spectacle était beaucoup plus merveilleux que le dessin animé parce que _ animé était très ennuyeux.,le dessin,le spectacle,A
+pr_fr_000233,"Le circuit n' a pas réussi à alimenter la télévision mais a maintenu la radio en marche, car _ avait une connexion faible.",la radio,la télévision,B
+pr_fr_000247,"La durée de la réunion était beaucoup plus longue que la présentation précédente, car _ était plus détaillée.",la présentation,la réunion,B
+pr_fr_000255,"Tout le papier que j' ai reçu de l' école ne rentrerait pas dans le dossier, parce que _ était trop épais.",le dossier,le papier,B
+pr_fr_000269,L' homme a essayé d' installer l' écran sur le mur mais _ était trop court.,l' écran,le mur,B
+pr_fr_000282,J' ai jeté le verre contre le mur et il s' est cassé parce que _ est trop faible.,le mur,le verre,B
+pr_fr_000299,"Le marché n' a pas duré dans notre quartier comme le salon, car _ était toujours vide.",le marché,le salon,A
+pr_fr_000431,J' allais toujours au bar et pas au club car _ était beaucoup plus proche de chez moi.,le club,le bar,B
+pr_fr_000436,La jeune fille a essayé d' utiliser la crème pour éliminer l' hyperpigmentation mais _ était trop faible.,la crème,l' hyperpigmentation,A
+pr_fr_000475,L' enfant se concentrait sur la lecture au lieu de prêter attention à la télévision car _ était importante.,la lecture,la télévision,A
+pr_fr_000485,Il était plus facile de décomposer le plastique que le verre dans ce cas pour le recyclage car _ était plutôt cassant.,le plastique,le verre,A
+pr_fr_000526,Le mur a mis plus de temps à peindre que le plafond car _ couvrait une zone plus petite.,le mur,le plafond,B
+pr_fr_000547,L' athlète devait se préparer pour la compétition finale avec son uniforme mais pas son casque car _ était avec lui.,le casque,l' uniforme,B
+pr_fr_000550,La sorcière a essayé d' écrire le sort dans le livre mais _ était trop petit.,le livre,le sort,A
+pr_fr_000570,"Quand il était temps de partir, nous prenions le train au lieu du taxi car _ mettrait moins de temps à rentrer à la maison.",le train,le taxi,A
+pr_fr_000576,Elle voulait lire l' histoire à sa classe de première année mais _ était trop bruyante.,la classe,l' histoire,A
+pr_fr_000627,L' abricot orange ne rentrera pas dans le pot car _ est trop large.,l' abricot,le pot,A
+pr_fr_000632,Jameson est allé au DMV pour obtenir sa licence et a porté le chapeau pour la photo mais a laissé le nœud papillon parce que _ était étrange.,le chapeau,le papillon,B
+pr_fr_000640,"L' eau bout bien sur le poêle mais pas sur le feu ouvert, car _ a une chaleur insuffisante.",le feu,le poêle,A
+pr_fr_000659,Le chef a essayé de mettre le pruneau dans le verre mais _ était trop gros.,le pruneau,le verre,A
+pr_fr_000685,"Le blocage provenait du robinet, pas du tuyau, car _ avait été nettoyé de manière irrégulière.",le robinet,le tuyau,A
+pr_fr_000699,Pam aimait plus lire le livre de fiction que lire le magazine parce que _ était beaucoup plus ennuyeux.,le magazine,le livre,A
+pr_fr_000706,"Son imagination s' est déchaînée dans le parc, mais s' est endormie sur le sentier, car il pensait que _ était blasé.",le sentier,le parc,A
+pr_fr_000710,"L' homme a essayé d' écrire le plan sur un morceau de papier, mais _ était trop petit.",le plan,le papier,B
+pr_fr_000748,Le toit de la propriété a été emporté par l' ouragan parce que _ est fort.,l' ouragan,le toit,A
+pr_fr_000766,Les dossiers médicaux étaient stockés sur disque au lieu de papier car _ était plus douteux.,le papier,le disque,A
+pr_fr_000815,"L' aspirateur de la femme fonctionnait beaucoup mieux sur le tapis que le balai, car _ était puissant.",l' aspirateur,le balai,A
+pr_fr_000817,Le mannequin a mis la lotion sur sa peau sèche mais _ était trop dure.,la peau,la lotion,A
+pr_fr_000850,La fumée de l' encens a rempli toute la pièce et a commencé à étouffer les gens parce que _ est trop petite.,la pièce,la fumée,A
+pr_fr_000897,"Basé sur le petit budget de James, il a choisi de se rendre en Grande-Bretagne en train et non en avion car _ est plus coûteux.",le train,le vol,B
+pr_fr_000909,Clare et David ont décidé d' aller au cinéma plutôt qu' au théâtre parce que _ n' avait pas l' air intéressant.,le film,le théâtre,B
+pr_fr_000933,L' entraîneur a essayé de mettre la voiture sur la piste mais _ était trop grande.,la voiture,la piste,A
+pr_fr_000982,Je n' ai pas pu utiliser le mot dans le titre de mon livre car _ était très long.,le titre,le mot,B
+pr_fr_000995,"Le projet que j' ai entrepris cette année était meilleur que mon travail de l' année dernière, car _ était plus difficile.",le projet,le travail,B
+pr_fr_001021,"Il a lancé le ballon vers le cerceau, mais il l' a raté, car _ était trop loin.",le ballon,le cerceau,B
+pr_fr_001039,Le logiciel fonctionnait beaucoup mieux que l' ancien programme car _ était conçu par des professionnels.,le programme,le logiciel,B
+pr_fr_001045,L' homme a essayé de mettre le dossier sur le support mais _ était trop petit.,le dossier,le support,B
+pr_fr_001070,Il faisait chaud dans le placard mais froid au sous-sol car _ faisait fonctionner un radiateur.,le placard,le sous-sol,A
+pr_fr_001120,Je n' ai pas pu mettre la pierre précieuse sur l' ancienne étagère de ma chambre car _ est trop lourde.,la pierre,l' étagère,A
+pr_fr_001139,"Kenny voulait épouser Paulie dans la cathédrale mais Paulie avait peur des grands endroits, alors leur cérémonie de mariage a eu lieu dans une grotte à la place puisque _ était vaste.",la grotte,la cathédrale,B
+pr_fr_001204,Le document était difficile à lire par rapport à l' autre papier car _ était dactylographié.,le document,le papier,B
+pr_fr_001241,J' aimais plus faire du yoga sur le tapis que sur le sol car _ était dur.,le tapis,le sol,B
+pr_fr_001256,"Enfant, mon père m' a encouragé à jouer au football plutôt qu' au baseball car il considérait _ comme un faux sport.",le baseball,le football,A
+pr_fr_001281,La moto que j' ai louée au magasin est plus lente que ma voiture car _ a un moteur plus petit.,la voiture,la moto,B
+pr_fr_001350,"Nous avons remplacé le lit par un matelas car l' espace était limité dans la chambre, _ était vaste.",le matelas,le lit,B
+pr_fr_001365,Les artistes ont utilisé 1 livre d' argile pour le vase et 2 livres d' argile pour le bol puisque _ était plus petit.,le vase,le bol,A
+pr_fr_001400,"Lors de l' entraînement au gymnase, mon instructeur a recommandé le rouleau sur le tapis pour le prix car _ était plus cher à utiliser.",le rouleau,le tapis,B
+pr_fr_001410,"Le coup de soleil était mieux évité avec de la lotion qu' avec de l' huile, car _ avait un FPS réduit.",l' huile,la lotion,A
+pr_fr_001417,Le voleur est entré silencieusement dans la maison et a trébuché sur la corde après avoir passé la brique parce que _ était invisible.,la brique,la corde,B
+pr_fr_001422,Jessica a préféré rafraîchir son haleine avec de la menthe au lieu de la gomme car _ ne durait pas.,la gomme,la menthe,A
+pr_fr_001490,L' homme a mis la veste sur le dossier de la chaise mais _ était trop grande.,la chaise,la veste,B
+pr_fr_001516,"L' entraîneur a essayé de mettre le filet dans le gymnase, mais _ était trop petit.",le gymnase,le filet,A
+pr_fr_001553,"Nathan a essayé d' améliorer son crédit en payant son prêt à temps et en gagnant plus à son travail, mais _ a payé peu.",le travail,le prêt,A
+pr_fr_001575,"Il était plus difficile pour la femme d' identifier le type de plante que le type de fougère, car _ était familière.",la plante,la fougère,B
+pr_fr_001624,Callie a suivi un régime liquide à travers un tube mais souffrait parce que _ était douloureux.,le régime,le tube,B
+pr_fr_001629,"Le coup de pied de l' attaquant a creusé le sol au fur et à mesure, _ de pied était trop dur.",le coup,le sol,A
+pr_fr_001642,J' ai lentement ajouté les pois du sac dans le pot jusqu' à ce que _ soit sorti.,le sac,le pot,A
+pr_fr_001670,"La cicatrice avait besoin de soins médicaux pour guérir, tandis que la coupure guérissait naturellement, car _ était une blessure grave.",la coupure,la cicatrice,A
+pr_fr_001702,"L' homme a enlevé le débardeur et mis le t-shirt, car _ était en sueur.",le débardeur,le t-shirt,A
+pr_fr_001761,"Le rasoir ne fonctionnait pas aussi bien que le couteau que j' avais, car _ était tranchant.",le rasoir,le couteau,B
+pr_fr_001771,"Nous nous sommes beaucoup plus amusés à la fête et non à la conférence, car _ était stressante.",la fête,la conférence,B
+pr_fr_001788,"Le théâtre n' a pas projeté le film, mais a montré le dessin animé à la place, car _ était générateur de pertes.",le film,le dessin,A
+pr_fr_001820,James avait besoin d' une brosse plus longue pour nettoyer la fenêtre car _ est trop haute.,la brosse,la fenêtre,B
+pr_fr_001877,Le chien ne dormait que sur le lit et non sur le canapé car _ était trop ferme.,le canapé,le lit,A
+pr_fr_001882,"J' ai jeté la roquette avec de l' huile et du vinaigre et l' ai mangée, mais j' ai jeté la laitue à la poubelle, car _ était fraîche.",la roquette,la laitue,A
+pr_fr_001901,Leur culture était beaucoup plus difficile à adapter que mon atmosphère car _ était très clémente.,l' atmosphère,la culture,A
+pr_fr_001907,"Je méprise le système actuellement en place au collège par rapport au programme à l' école, car _ est simple.",le programme,le système,A
+pr_fr_001962,"En faisant ses valises pour la chasse, Chris s' est assuré d' apporter son sac et non son couteau car _ était essentiel.",le couteau,le sac,B
+pr_fr_001988,Nous avons décidé d' aller au bowling au lieu du cinéma car _ fermait plus tard.,le cinéma,le bowling,B
+pr_fr_002034,Je me suis senti plus négatif quand je suis resté au motel que lorsque j' ai séjourné à l' hôtel car _ était sombre.,l' hôtel,le motel,B
+pr_fr_002057,Kim est fatiguée de dégivrer son pare-brise avec sa main dans la neige mais _ est devenue trop importante.,la main,la neige,B
+pr_fr_002102,"La pelle a été abandonnée et ils ont amené une grue pour construire la maison, car _ s' est avérée inutile pour le processus.",la grue,la pelle,B
+pr_fr_002118,L' homme du bureau était moins paisible que l' homme du parc car _ était plus calme.,le bureau,le parc,B
+pr_fr_002122,"Mon père utilisait toujours son fusil et non son arc, car _ était plus précis.",le fusil,l' arc,A
+pr_fr_002187,"J' ai ajouté du cacao à ma poudre de protéines, j' ai versé le cacao de la boîte à la cruche jusqu' à ce que _ soit pleine.",la boîte,la cruche,B
+pr_fr_002215,"Pour rendre les choses moins gênantes entre eux, Kevin a acheté à sa femme une marguerite, même si elle préférait une tulipe, car _ lui était plus facile à acquérir.",la marguerite,la tulipe,A
+pr_fr_002230,"Carrie a mis des huiles essentielles dans le diffuseur plutôt que dans le brûleur de bougie, car _ émettait des fumées plus dangereuses.",le diffuseur,le brûleur,B
+pr_fr_002305,La femme voulait ranger le peigne dans le tiroir mais _ était trop grand.,le peigne,le tiroir,A
+pr_fr_002350,"La société a changé la recette de ses boissons en utilisant un nouveau colorant alimentaire et un édulcorant, mais _ avait une couleur impopulaire.",le colorant,l' édulcorant,A
+pr_fr_002361,"Son commerce a vraiment échoué sur la côte, mais a prospéré dans la ville, car _ était un marché substantiel pour ses marchandises.",la côte,la ville,B
+pr_fr_002372,"Le sol ne pouvait pas résister aux égratignures du chat, mais le mur était indemne, car _ y était vulnérable.",le mur,le sol,B
+pr_fr_002393,La cuisine rénovée a reçu une disposition modulaire innovante pendant les travaux de construction car _ était amusante.,la cuisine,la disposition,B
+pr_fr_002422,"La bataille a été moins féroce que la grande guerre, car _ n' a duré qu' un jour.",la guerre,la bataille,B
+pr_fr_002472,J' ai utilisé l' arc au lieu du pistolet car _ était précis pour moi.,le pistolet,l' arc,B
+pr_fr_002487,Elle a versé le bouillon dans le bac à glaçons et a dû prendre un plateau supplémentaire car _ était trop.,le bouillon,le bac,A
+pr_fr_002523,Le lit donnait un meilleur repos que le canapé car _ était beaucoup plus dur.,le lit,le canapé,B
+pr_fr_002533,Cara a voulu refaire sa chambre et a décidé d' acheter une nouvelle commode au lieu d' une chaise car _ était quelque chose d' inutile à remplacer.,la commode,la chaise,B
+pr_fr_002541,"J' ai essayé de faire passer l' eau de la cruche dans la bouteille, mais tout ne rentre pas car _ était trop petite.",l' eau,la bouteille,B
+pr_fr_002573,Connie aime cuisiner à la maison et a décidé de renoncer au rôti au profit du tofu car _ est parfait pour un repas végétarien.,le tofu,le rôti,A
+pr_fr_002611,"J' ai détesté le projet cette année par rapport à l' essai de l' année dernière, car _ nécessitait moins de travail.",le projet,l' essai,B
+pr_fr_002615,Le cheval a sauté par-dessus la barre mais s' est quand même retrouvé piégé dans la cage car _ est haute.,la cage,la barre,A
+pr_fr_002655,"Il a essayé d' utiliser un outil pour couper à travers le bois, mais _ était fragile.",l' outil,le bois,A
+pr_fr_002659,"Avec mon entorse de la cheville, je n' arrive pas à mettre mon pied dans ma chaussure car _ est trop petite.",la chaussure,l' entorse,A
+pr_fr_002664,"Son inquiétude concernant les hauteurs a disparu après être passée du toit au sol, car _ était dangereux.",le sol,le toit,B
+pr_fr_002671,"Elsie aimait l' espace et passait plus de temps dans le planétarium que l' aquarium, car _ limitait son imagination.",le planétarium,l' aquarium,B
+pr_fr_002697,"Les citoyens aimaient beaucoup plus la police que l' armée, car _ était toujours méchante avec eux.",l' armée,la police,A
+pr_fr_002723,Le drapeau peut difficilement souffler lorsqu' il est soulevé au vent car _ est léger.,le vent,le drapeau,A
+pr_fr_002774,"La corde a cédé alors que l' équipe la tirait dans différentes directions, _ était faible.",l' équipe,la corde,B

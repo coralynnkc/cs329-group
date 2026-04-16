@@ -1,0 +1,1024 @@
+item_id,sentence,option_a,option_b,gold_answer
+pr_en_000026,Dennis gave his hammer to Robert so he could hammer the nails. _ had no hammers.,Dennis,Robert,B
+pr_en_000047,"Kenneth asked Dennis what time the dance was being held, but _ had forgotten.",Kenneth,Dennis,B
+pr_en_000085,"Derrick was unable to stay focused at work unlike Justin, because _ had a fun job.",Derrick,Justin,B
+pr_en_000087,"Avery was debating on taking up German instead of Latin, because the _ was newer.",Latin,German,B
+pr_en_000101,"Joseph had to have well manicured nails for work, but not Kevin, because _ worked at a bank.",Joseph,Kevin,A
+pr_en_000126,"Amy hated the smell of bleach, but still Kayla used it all the time to clean so _ always leaves the house.",Amy,Kayla,A
+pr_en_000127,Eric looked at Neil in shock and started to react violently because _ lied to him.,Eric,Neil,B
+pr_en_000133,Jessica took off the gloves and gave them to Katrina because _ 's hands were cold.,Jessica,Katrina,B
+pr_en_000134,Jessica took off the gloves and gave them to Katrina because _ 's hands were warm.,Jessica,Katrina,A
+pr_en_000152,"Laura always had more motivation in life and achieving goals than Katrina, as _ was lazy.",Laura,Katrina,B
+pr_en_000154,Ben had to either stop eating chocolates or nuts. He chose to stop eating the _ because they were sweet.,chocolates,nuts,A
+pr_en_000229,"When opening up about their crushes, Kenneth sighed at Jeffrey because _ forgot who their crush was.",Kenneth,Jeffrey,B
+pr_en_000244,Donald offered Leslie their last sick some mint gum as _ had a stinky breath already.,Donald,Leslie,B
+pr_en_000259,Matthew offered to help write a fitness plan for Christopher because _ was out of shape.,Matthew,Christopher,B
+pr_en_000267,The library kept an enormous collection of novels but not comics because the _ were dull.,novels,comics,B
+pr_en_000270,Carrie's store has more loyal customers than Patricia's store does because _ 's store is newer.,Carrie,Patricia,B
+pr_en_000273,Carrie faced the fan away from Angela because _ was getting too warm in the kitchen.,Carrie,Angela,A
+pr_en_000299,Neil asked Michael what it was like to go to war because _ was a pacifist.,Neil,Michael,A
+pr_en_000308,The documents contained in the files could not fit properly. The _ were too large.,Files,Documents,B
+pr_en_000311,Mary only wore stripes to work and not plaids because the _ made her look sloppy.,plaids,stripes,A
+pr_en_000312,Mary only wore stripes to work and not plaids because the _ made her look professional.,plaids,stripes,B
+pr_en_000342,"Dennis has been away on vacation, while Nelson stayed at home so the lettuce in _ 's fridge was used to make a salad.",Dennis,Nelson,B
+pr_en_000350,My knee joint is more injured than my ankle joint so I'm trying not to put too much stress on the _ if I can help it.,knee joint,ankle joint,A
+pr_en_000360,Bob tore his shirt that was a night shirt. He decided to get a tuxedo shirt because the _ is old.,night shirt,tuxedo shirt,A
+pr_en_000380,Adam had to schedule a visit a dermatologist but Joseph didn't because _ had good skin.,Adam,Joseph,B
+pr_en_000411,Eric was easier to amuse than Justin because _ had a great sense of humor.,Eric,Justin,A
+pr_en_000423,Tanya couldn't stretch as far down as Jennifer because _ was had a very flexible body.,Tanya,Jennifer,B
+pr_en_000425,Ben had to stop driving his car or motorcycle. He chose to stop the _ because it was safe.,motorcycle,car,B
+pr_en_000431,More birds were in the garden than in the park because the _ only had grass.,garden,park,B
+pr_en_000437,"Jeffrey asked Joel to express their feelings in a more productive manner, but _ was actually the one being reasonable.",Jeffrey,Joel,B
+pr_en_000462,"Megan had a baby whereas Katrina had a college aged child, so _ no longer had to change diapers.",Megan,Katrina,B
+pr_en_000465,Emptying the litter box was a dreaded chore for Adam while Lawrence didn't mind doing it. _ never tried to get someone else to handle it.,Adam,Lawrence,B
+pr_en_000497,Samuel knew to recycle aluminum cans but not Logan because _ was never in need of extra change.,Samuel,Logan,B
+pr_en_000503,John said that he preferred the chocolate frosting over the lemon frosting because the _ tasted good.,chocolate,lemon,A
+pr_en_000511,"The quilt Margot was making would take up the whole closet, because the _ was huge.",quilt,closet,A
+pr_en_000518,Benjamin had a more juvenile sense of humor than Donald so _ enjoyed whoopie cushions.,Benjamin,Donald,A
+pr_en_000531,Brett was more prepared to be a parent than Aaron because _ had spent a lot of time with children.,Brett,Aaron,A
+pr_en_000537,Donald invited Brett to Paris because _ knew how to speak the native language perfectly.,Donald,Brett,B
+pr_en_000547,It was easy for Joel but not Kevin to have fun on the camping trip because _ had not learned how to enjoy the outdoors.,Joel,Kevin,B
+pr_en_000571,"Ian asked Kevin to help with their taxes because _ was a successful, trained accountant.",Ian,Kevin,B
+pr_en_000596,"The clouds evoked great fear in the people, while the clear skies calmed them, because the _ were so comforting.",clouds,skies,B
+pr_en_000600,Dina fed her children yogurt instead of ice cream because she thought that the _ was unhealthy.,yogurt,ice cream,B
+pr_en_000606,"Even though Robert was experiencing hair loss and Brian was not, _ was jealous of his hair.",Robert,Brian,B
+pr_en_000610,"Lawrence shovelled their driveway after the snow storm while Aaron avoided doing so, so _ had a driveway that was free from snow.",Lawrence,Aaron,A
+pr_en_000612,Cathy felt a stronger bond with her dog than her cat because her _ was very affectionate.,cat,dog,B
+pr_en_000614,"Patricia always had to clean up after Angela, because _ didn't want to live in filth.",Patricia,Angela,A
+pr_en_000617,Jennifer liked to smoke pot but Laura like to smoke cigars. _ wound up in the local jail for smoking their favorite thing in public.,Jennifer,Laura,A
+pr_en_000619,"Jeffrey believed Robert was spying on him during the private event, because _ was sneaky.",Jeffrey,Robert,B
+pr_en_000628,"Hunter likes tulips and Ryan does not, so _ refused to buy some from the store.",Hunter,Ryan,B
+pr_en_000638,The waves destroyed the garage but left the house intact because the _ was so close to the shore.,garage,house,A
+pr_en_000642,"When Sarah wanted to pursue acting, Elena started laughing, because _ was a terrible actor.",Sarah,Elena,A
+pr_en_000646,"The scar needed medical care to heal, while the cut healed naturally, because the _ was a severe wound.",cut,scar,A
+pr_en_000675,"While the thrifty family was at the grocery store, they bought soap instead of shampoo because the _ was needed.",soap,shampoo,A
+pr_en_000687,"When Robert was asked by Christopher what he wanted for his birthday, he said money. _ wanted to choose his own gift.",Robert,Christopher,A
+pr_en_000690,The candy jar could hold 100 gumballs or 80 maltballs because the _ were larger.,gumballs,maltballs,B
+pr_en_000694,Kyle had a black hair color and Joseph had a blue hair color. _ hair color was uncommon.,Kyle,Joseph,B
+pr_en_000711,The coach quit his job at the school and went on to work at the rec center because the _ paid more.,school,rec center,B
+pr_en_000714,"At dinner, Steven was starving but Ian was already full, so _ ate the pizza quickly.",Steven,Ian,A
+pr_en_000718,"When I shot the paintball, it didn't go through the window as the _ was weak.",paintball,window,A
+pr_en_000727,Randy worked very hard in high school but Adam goofed around a lot. _ didn't get a scholarship to college.,Randy,Adam,B
+pr_en_000742,"Mary was prone to depression while Monica was not, because _ was a naturally pessimistic person.",Mary,Monica,B
+pr_en_000743,"Robert told Brian that he thought that is wife was cheating on him, so _ chose to hire a private detective.",Robert,Brian,A
+pr_en_000745,"Jessica was more hungry than Elena, so _ ordered a steak instead of ramen noodles.",Jessica,Elena,A
+pr_en_000783,William showed Randy how to replace the paneling in his home.  _ was talented.,William,Randy,A
+pr_en_000784,William showed Randy how to replace the paneling in his home.  _ was grateful.,William,Randy,B
+pr_en_000798,Angela was the king while Carrie was a jester so _ laughed at the other's performance.,Angela,Carrie,A
+pr_en_000804,"The cat was shedding, so we went with the bath treatment instead of the medicine since the _ was unavailable.",treatment,medicine,B
+pr_en_000816,The razor of Carrie is much duller than Patricia's because _ bought it new yesterday.,Carrie,Patricia,B
+pr_en_000830,Ben had to make carrot juice and apple juice. Everyone liked the _ because it was uncommon.,apple juice,carrot juice,B
+pr_en_000832,A lawsuit was filed against Patricia by Erin because _ had their new car damaged.,Patricia,Erin,B
+pr_en_000839,"In the cricket match, Cynthia beats Kayla by a lot of points, so _ is the winner.",Cynthia,Kayla,A
+pr_en_000843,"Steven knocked on Williams door because he wanted to play shuffleboard today, but nobody was around.  _ was upset.",Steven,William,A
+pr_en_000855,John liked the gift that Susan gave him more than the present from his brother because the _ was very ugly.,gift,present,B
+pr_en_000858,The hair held together by a clip dropped into the fire but only the hair got burned. The _ is inflammable.,hair,clip,B
+pr_en_000859,"Donna was in love with two perfumes, coconut and floral. She preferred the _ for the tropical smell.",coconut,floral,A
+pr_en_000861,Hunter was visited by Neil because _ was very sick and needed a friend to bring him medicine and chicken soup.,Hunter,Neil,A
+pr_en_000862,Hunter went to see Neil because _ was very sick and needed a friend to bring him medicine and chicken soup.,Hunter,Neil,B
+pr_en_000873,"The homemaker used a pail of water to clean the old door, when she was done the _ was dirty.",water,door,A
+pr_en_000898,"The oil spilled on Nick 's shirt while he cooked for Justin, so _ offered him for a clean shirt.",Nick,Justin,B
+pr_en_000908,Nelson finished the mile run faster than Ian because _ liked to relax every day.,Nelson,Ian,B
+pr_en_000921,"Dennis made a blue outfit while Aaron made a pink outfit for the baby, _ was expecting a boy.",Dennis,Aaron,A
+pr_en_000933,For Halloween this year Victoria bought a costume at store but Katrina made their own as _ doesn't mind spending money.,Victoria,Katrina,A
+pr_en_000940,Elena loves to read books but Jessica does not. _ bought videos all the time.,Elena,Jessica,B
+pr_en_000970,Sarah found the sound of the sax peaceful but Maria found it grating. _ bought a Metallic album.,Sarah,Maria,B
+pr_en_000982,"We needed to return the book we barrowed from the library, but the _ was not open.",library,book,A
+pr_en_000983,Neil got a bird as a pet and Michael go a horse because _ liked animals that could fly.,Neil,Michael,A
+pr_en_000993,Jay washed the glass bowl instead of the plate because the _ was very clean.,bowl,plate,B
+pr_en_000997,Bullies usually left Sarah alone but bothered Maria because _ was really very physically strong.,Sarah,Maria,A
+pr_en_001014,"Helen was curious about how the ball broke the window, because the _ was hard.",ball,window,B
+pr_en_001030,Jane was surprised the pin could not go through the jean because the _ is weak.,pin,jean,A
+pr_en_001034,Samuel took more vitamins than Robert did because _ had more trouble with their mind.,Samuel,Robert,A
+pr_en_001036,Aaron spent more time with their pet than Ryan because _ was at work all day.,Aaron,Ryan,B
+pr_en_001042,The pressure of the water increased when it flowed from the tank to the pipe because the _ is wider.,tank,pipe,A
+pr_en_001064,I felt more negative when I stayed at the motel than when I stayed at the hotel because the _ was dark.,motel,hotel,A
+pr_en_001077,I paid more attention at the stove than at the sink because it was more dangerous working near the _ .,stove,sink,A
+pr_en_001078,I paid more attention at the stove than at the sink because it was safer working near the _ .,stove,sink,B
+pr_en_001080,Data entry is a perfect job for Betty but not so for Laura as _ likes routine work.,Betty,Laura,A
+pr_en_001100,"The doctors like giving their patients the pill instead of the liquid, because the _ was more hurtful.",liquid,pill,A
+pr_en_001102,"Sarah had a bachelor's degree in microbiology and Katrina had a PhD, so _ had a hard time finding a cure for the disease on the proficiency test.",Sarah,Katrina,A
+pr_en_001107,"Dennis wanted to teach biology, but Lawrence thought he should teach chemistry so _ relented and taught chemistry.",Dennis,Lawrence,A
+pr_en_001109,James threw the ball into the basket and it could not enter it. The _ is very big.,ball,basket,A
+pr_en_001119,"When it was time for the reunion, Neil got invited but not Aaron, so _ was rather mad about the situation.",Neil,Aaron,B
+pr_en_001141,"Megan held Laura in a hug while they were crying, because _ was more stable than they were.",Megan,Laura,A
+pr_en_001181,Katrina could always go out drinking with friends but not Kayla because _ was over age.,Katrina,Kayla,A
+pr_en_001196,I'm going to enter the spelling bee instead of the geography bee since the _ seems easier to win.,spelling bee,geography bee,A
+pr_en_001205,"Jason did bathroom renovation for Michael, later his house failed inspection when _ wanted to sell the house.",Jason,Michael,B
+pr_en_001209,He was emotionally distraught so he went out for a walk and bought himself an ice cream. The _ appeased his hunger.,walk,ice cream,B
+pr_en_001211,"Hanging out at the party they had beer and soda for drinks, I wanted to feel inebriated so I grabbed the _ from the cooler.",beer,soda,A
+pr_en_001216,Juan decided to buy a raffle ticket instead of a lottery ticket because the _ was fair.,lottery,raffle,B
+pr_en_001234,Katrina gave Christine a stuffed animal for their birthday because _ already had this one himself.,Katrina,Christine,A
+pr_en_001235,John after crying for a while wipes his face with the new towel and got the _ wet.,face,towel,B
+pr_en_001252,Kayla got good grades in school while Rebecca didnt really care for school. _  didn't get a scholarship.,Kayla,Rebecca,B
+pr_en_001258,"Victoria's daily routine includes jumping rope as opposed to Monica's, so _ is likely healthier overall.",Victoria,Monica,A
+pr_en_001260,Ryan loved having an iPhone but Leslie refused to upgrade their flip phone. _ had always been first to learn new technology.,Ryan,Leslie,A
+pr_en_001265,"The light sensitive roses had to be removed from the garden and moved to the vineyard, as the _ was sunnier.",garden,vineyard,A
+pr_en_001276,We had to clean up the huge mess using the mop instead of the broom as the _ was weak.,mop,broom,B
+pr_en_001289,Jennifer would outgrow Sarah in a matter of a few months even though _ was younger.,Jennifer,Sarah,A
+pr_en_001293,"Billy knew his LEGO snake was hungry, but didn't know if it would eat the rat, because the _ wasn't alive.",snake,rat,A
+pr_en_001294,"Billy knew his LEGO snake was hungry, but didn't know if it would eat the rat, because the _ wasn't dead.",snake,rat,B
+pr_en_001295,The teacher enjoyed having Patricia in their class but wished Betty would be transferred because _ was defiant.,Patricia,Betty,B
+pr_en_001299,"Joseph built their home out of concrete but Randy used wood, so _ had tremendous damage after the twister hit the neighborhood.",Joseph,Randy,B
+pr_en_001312,"Jason excelled at the violin lessons while Logan struggled, because _ had a gift for music.",Jason,Logan,A
+pr_en_001324,The hair Hannah attached to his hair with a glue got blown away by the wind. The _ is confirmed strong.,glue,wind,B
+pr_en_001336,I kept the rabbit in a cage instead of in the barn because it was easier to find it in the _ .,barn,cage,B
+pr_en_001337,"Ryan only found one tomato in Brett's garden that was ripe, so _ felt bad picking it.",Ryan,Brett,A
+pr_en_001338,"Ryan only found one tomato in Brett's garden that was ripe, and _ didn't want it picked.",Ryan,Brett,B
+pr_en_001354,The steak cooked faster than the roast did because the _ was a thicker piece of meat.,steak,roast,B
+pr_en_001375,Jason had a pain in their neck but Craig did not. _ had to make an appointment with a chiropractor.,Jason,Craig,A
+pr_en_001382,"I wanted to fry vegetables or meat, I decided to fry the _ because they are more healthier.",meat,vegetables,B
+pr_en_001389,Laura told Rachel about a medical condition they might have. _ felt like they were being nosey.,Laura,Rachel,B
+pr_en_001392,Cynthia used a blender to make vegetable smoothies but Amy did not as _ was very healthy.,Cynthia,Amy,A
+pr_en_001399,The police wanted to talk to Angela and not Jennifer in regards to the murder because _ was at the scene.,Angela,Jennifer,A
+pr_en_001413,"Kim used a sans-serif font in the letter to her boyfriend, but a serif font in an email to her boss, because she felt the _ was harder to read..",sans-serif font,serif font,A
+pr_en_001439,The clown wore a flower in the pocket instead of a pen because the _ was more dull.,flower,pen,B
+pr_en_001444,Carrie was more likely than Jessica to go to Mexico on vacation because _ did not have a high sense of adventure.,Carrie,Jessica,B
+pr_en_001466,"Jennifer earned royalties from the music that Katrina created, because _ bought the rights to the music.",Jennifer,Katrina,A
+pr_en_001476,"He liked to drink wine rather than liquor, because the _ left a good taste in his mouth.",liquor,wine,B
+pr_en_001477,Robert drank more than Jason and yet _ had less of a hangover due to having a much higher tolerance.,Robert,Jason,A
+pr_en_001480,"Ryan was better at male modeling compared to Matthew, so _ asked him for help.",Ryan,Matthew,B
+pr_en_001502,"Unlike Benjamin, Adam drove a hybrid electric vehicle because _ wanted to increase smog pollution.",Benjamin,Adam,B
+pr_en_001503,"Cross-training for runners mixes the intensity of sprinting with the mildness of jogging, since the _ is necessary for quick dashes.",intensity,mildness,A
+pr_en_001504,"Cross-training for runners mixes the intensity of sprinting with the mildness of jogging, since the _ is necessary for longer runs.",intensity,mildness,B
+pr_en_001532,"Randy had a dream that their friend, Jason, would be in a car accident after work. _ was busy and didn't know tried to reach them.",Randy,Jason,B
+pr_en_001549,"Elena chose to honor Kayla at their funeral by singing a song, because _ was a dead loved one.",Elena,Kayla,B
+pr_en_001558,James could not get the new bracelet into his wrist because the _ is too big.,wrist,bracelet,A
+pr_en_001583,Billy wanted to rent a movie but James said TV was better. James said the _ would have more variety.,movie,TV,B
+pr_en_001587,"There was less chocolate in the cake than in the pie, so the _ was sweeter.",cake,pie,B
+pr_en_001592,Rachel was interested in learning about herbal treatments and asked Betty to share her knowledge. _ was anxious to learn.,Rachel,Betty,A
+pr_en_001593,"Jennifer had to wash their face with a special cleanser that Cynthia found too drying, because _ 's face produced more oil.",Jennifer,Cynthia,A
+pr_en_001623,Kayla got to their destination later than Rebecca because _ didn't stop to pay the toll.,Kayla,Rebecca,B
+pr_en_001624,Kayla got to their destination later than Rebecca because _ had to stop to pay the toll.,Kayla,Rebecca,A
+pr_en_001625,The line cook at the restaurant added tomatoes and croutons to the salads; the _ were red.,tomatoes,croutons,A
+pr_en_001628,Kim tired to de-ice her windshield with her hand in the snow but the _ got too much.,hand,snow,B
+pr_en_001642,"After the terrible traffic accident, Justin paid 3 million to Benjamin, _ was at fault.",Justin,Benjamin,A
+pr_en_001658,The man had an easier time walking in the desert than in the snow because it was hotter in the _ .,desert,snow,A
+pr_en_001696,"Cynthia skipped breakfast but Angela ate a large morning meal, so _ was still full by lunchtime.",Cynthia,Angela,B
+pr_en_001699,"Lindsey asks for Megan's advice on how to politely say no to a man who asked her out, because _ doesn't want to hurt his feelings.",Lindsey,Megan,A
+pr_en_001735,Megan used a razor while Angela used a pair of clippers so the hair was shorter on _ .,Megan,Angela,A
+pr_en_001740,With practice the skateboarder could jump the rail but not the ramp since the _ was high.,rail,ramp,B
+pr_en_001748,"Samuel had an unhealthy love for jolly ranchers, so Benjamin tried to get them help.  _ was satisfied.",Samuel,Benjamin,B
+pr_en_001759,Dennis was a very talented singer unlike Ryan because _ wanted to be a musician for a living.,Dennis,Ryan,A
+pr_en_001762,"He knew that the sun was closer to earth than the other star, because the _ was brighter.",sun,star,A
+pr_en_001769,john cannot use the rake to clear the debris and they pass through the holes between the prong. The _ are tiny.,debris,holes,A
+pr_en_001774,"She decided to learn to play the harp and the trumpet, as the _ was jazzy.",harp,trumpet,B
+pr_en_001776,Arby prefers to go to a community college rather than a university because the _ is more laid back.,community college,university,A
+pr_en_001787,"Their relationship soured in the country, but rejuvenated in the city, since the _ was such an invigorating atmosphere for them.",country,city,B
+pr_en_001790,The floor was much more slippery than the carpet because the _ had less friction.,carpet,floor,B
+pr_en_001796,The meditation center replaced the wood on the floor with foam since the _ was uncomfortable for concentration.,wood,foam,A
+pr_en_001801,"i wear skirts best  in the hot climate and temperatures, the _ are short.",temperatures,skirt,B
+pr_en_001802,"i wear skirts best  in the hot climate and temperatures, the _ are hot.",temperatures,skirt,A
+pr_en_001817,"When the tank needed to be cleaned, Betty left so Maria would have to do it. _ felt imposed upon.",Betty,Maria,B
+pr_en_001822,"The carrots burned on the grill, but the tomatoes were okay, because the _ were wetter.",tomatoes,carrots,A
+pr_en_001863,"The doctor told Joel that he needed to quit smoking, whereas William didn't need to, due to _ being a casual smoker.",Joel,William,B
+pr_en_001865,"David was a teenager who had just gotten his first car which had nice leather seats, David was careless sitting down and damaged the _ .",car,seats,B
+pr_en_001869,Michael had such a simple life compared to Steven because _ came from a poor family.,Michael,Steven,B
+pr_en_001883,Justin provided thorough and concise legal advice for Christopher in their office because _ was an attorney.,Justin,Christopher,A
+pr_en_001887,Michael bought the goldfish for Craig to feed to his arowanas. _ had too little money to pay for them.,Michael,Craig,B
+pr_en_001888,Michael bought the goldfish for Craig to feed to his arowanas. _ had enough money to pay for them.,Michael,Craig,A
+pr_en_001903,Justin won many more races than Jason was able to win because _ had shorter legs.,Justin,Jason,B
+pr_en_001912,"Since Craig's dog was sick and in need of a veterinarian while Kevin's was healthy and energetic, _ took their dog to the animal hospital.",Craig,Kevin,A
+pr_en_001930,The signs that were on the corner below the lights flew off in the hurricane. The _ were light.,signs,lights,A
+pr_en_001947,"Nathan tried to improve his credit by paying his loan on time and earning more at his job, but the _ paid little.",loan,job,B
+pr_en_001966,Logan watched rugby while Matthew watched golf for the reason that _ liked sports with a lot of physical contact.,Logan,Matthew,A
+pr_en_001997,"When I decorate the house for Halloween, I remove the lamp and replace it with a cauldron. The _ is common.",lamp,cauldron,A
+pr_en_002002,"Joel was prone to sunburn so spent much time indoors, quite the opposite of Lawrence. _ often cooked to pass the summer days.",Joel,Lawrence,A
+pr_en_002003,"Maria is struggling with her exams and asks for help from Rebecca, because _ wants to be more successful.",Maria,Rebecca,A
+pr_en_002008,James finished washing with the sponge and had to stuff it in its case because the _ is small.,sponge,case,B
+pr_en_002010,The man decided to leave the carpet on the floor because the _ was new.,floor,carpet,B
+pr_en_002025,"She normally kept her ID and a pocket knife in the car, but when visiting her husband in prison she left the _ behind.",ID,knife,B
+pr_en_002035,"Betty was in charge of planning the wedding for Amy, and _ ended up being very useful.",Betty,Amy,A
+pr_en_002040,"Randy doesn't care about using natural products, while that's all that Craig uses, so _ is probably less friendly to the environment.",Randy,Craig,A
+pr_en_002043,"My meeting with Marina was at eight but my shuttle was coming at nine so the timing was tight. Luckily, the _ started early.",meeting,shuttle,A
+pr_en_002051,Kyle will be able to retire a lot earlier than Adam because _ is further behind in their career.,Kyle,Adam,B
+pr_en_002054,Joel didn't want to let Logan play with the slot machine seeing as how _ was on a hot streak.,Joel,Logan,A
+pr_en_002064,Henry tried to cut the bamboo in his yard using a trimmer but had difficulty because the _ was too short.,trimmer,bamboo,A
+pr_en_002068,Lindsey gained a little weight so she gave  Rebecca a few tank tops and they fit _ well.,Lindsey,Rebecca,B
+pr_en_002077,My mother made tacos today and burritos yesterday for lunch so the _ were older.,tacos,burritos,B
+pr_en_002094,Brett drank several bottles of water every day while Neil drank several bottles of pop. _ was often dehydrated during the day.,Brett,Neil,B
+pr_en_002103,"Since Betty is a lot less resourceful than Natalie, _ tends to save money easier.",Betty,Natalie,B
+pr_en_002109,Ben went to a restaurant and was stuck between ordering ginger or peppermint tea. He chose the _ because he liked the bitterness.,ginger,mint,A
+pr_en_002113,Jesse was learning to parallel park when he hit the gas pedal so hard he hit the car behind him and got out to check on the _ .,gas pedal,car,B
+pr_en_002115,Cynthia got a much better score on their math test than Rebecca. _ took the time to study for it.,Cynthia,Rebecca,A
+pr_en_002117,"Mary sat still while Victoria listened to her chest. The diagnosis was dengue fever, which surprised _ as she hadn't found this in patients.",Mary,Victoria,B
+pr_en_002127,"Marilyn was usually a casual dresser, but since the wedding was formal, she knew the _ dress she bought would be inappropriate.",casual,formal,A
+pr_en_002130,"The damage in Hawaii was worse than the destruction in Japan, because the _ was from a stronger earthquake.",damage,destruction,A
+pr_en_002132,Jill poured the entire bag of flour into the mixing bowl until the _ was empty.,bag,bowl,A
+pr_en_002143,"The woman got the blouse instead of the shirt, because the _ was a less fitting size.",shirt,blouse,A
+pr_en_002148,"The police were looking for Neil and not Nelson, by reason that _ was an unwanted person.",Neil,Nelson,B
+pr_en_002154,"In order to use the washer and dryer for laundry, Steve separated his laundry into dirty and wet, then he filled the _ with wet laundry.",washer,dryer,B
+pr_en_002160,Developing good study habits came easier to Neil than Benjamin because _ had a lot of self discipline.,Neil,Benjamin,A
+pr_en_002166,"Daphne got herself a cloak and a bodysuit for her Raven costume, and she thought the _ made her look skinny.",cloak,bodysuit,B
+pr_en_002186,"Kayla brought something from Lindsey in the store, because _ wanted to buy it and so it was brought.",Kayla,Lindsey,A
+pr_en_002195,"Neil is determined to overcome his laziness and help Matthew do yard work, because _ is struggling outside.",Neil,Matthew,B
+pr_en_002210,"I couldn't decide what jewelry to wear, should I go with the emerald or sapphire?  My outfit was green, so I chose the _ .",sapphire,emerald,B
+pr_en_002223,"Neil has recently gotten hepatitis A and asks for Kevin's advice, because _ has already had hepatitis.",Neil,Kevin,B
+pr_en_002241,Logan was Donald's new research assistant so _ tried to give the instructions that are necessary.,Logan,Donald,B
+pr_en_002246,"SEO is work that Natalie performs sometimes, but Patricia never has, so _ is likely better with technology.",Natalie,Patricia,A
+pr_en_002249,The dog was crying with the collar hurting its neck because the _ is small.,neck,collar,B
+pr_en_002250,The dog was crying with the collar hurting its neck because the _ is big.,neck,collar,A
+pr_en_002253,"The tastes of Ian make him like dark chocolate more than Brett who likes milk chocolate, so _ is more likely to be an adult.",Ian,Brett,A
+pr_en_002254,"The tastes of Ian make him like dark chocolate more than Brett who likes milk chocolate, so _ is more likely to be a kid.",Ian,Brett,B
+pr_en_002255,Adam turned on his computer to work on a plan for surprising Matthew because _ is a prankster.,Adam,Matthew,A
+pr_en_002256,Adam turned on his computer to work on a plan for surprising Matthew because _ has a birthday coming up.,Adam,Matthew,B
+pr_en_002263,"Carrie worked for a great company compared to Samantha, therefore _ received a lot more benefits.",Carrie,Samantha,A
+pr_en_002274,"The man didn't want to get his rearview mirror replaced before the windshield, since the _ was cleaner.",windshield,mirror,B
+pr_en_002276,"The plant withered in the garden but thrived in the field, as the _ had plentiful nutrients for it.",garden,field,B
+pr_en_002291,Katrina likes to keep moving whilst Angela likes to stay still because _ is calm.,Katrina,Angela,B
+pr_en_002307,It was easier for us to pick the apples than the oranges because the _ were lower down in the trees.,apples,oranges,A
+pr_en_002309,Brian needed to apply lotion more frequently than Adam due to _ 's naturally oily skin.,Brian,Adam,B
+pr_en_002318,I sent a sick relative a card and a plant but he's allergic to the plant so the _ was kept.,plant,card,B
+pr_en_002325,Mr. Farmer's son noticed a hole in the wooden fence so he tried hitting a golf ball through it; he didn't realize that the _ was too tiny.,ball,hole,B
+pr_en_002340,"Tanya had to take a flight to a different country while Maria had to go down the street, so _ traveled by plane.",Tanya,Maria,A
+pr_en_002345,"Eric always made rice with chicken, but Neil was bored of the same dish. _ decided not to cook anymore.",Eric,Neil,A
+pr_en_002348,"To clean my floors I use a broom and sometimes also use a mop, since I want to be thorough today I am using the _ on the floor.",broom,mop,B
+pr_en_002353,Joey bought some caramel glazing to use for bread decoration but the _ was too big.,bread,glazing,A
+pr_en_002354,Joey bought some caramel glazing to use for bread decoration but the _ was not enough.,bread,glazing,B
+pr_en_002364,Jennifer is a real asshole but Katrina is not. _ has very few good friends.,Jennifer,Katrina,A
+pr_en_002371,"In my opinion, oak is a far superior wood than pine, because the _ is very weak.",oak,pine,B
+pr_en_002386,"Robert trusted Leslie to broker his money online because, between the two of them, _ was the master investor.",Robert,Leslie,B
+pr_en_002393,Leslie wanted to cosplay with Samuel because he always had a lot of fun with _ there.,Leslie,Samuel,B
+pr_en_002400,"In dire need of a new kidney, Ryan sought out Jason so _ could beg him to donate one.",Ryan,Jason,A
+pr_en_002420,Kayla didn't put a pumpkin and candy on their porch like Patricia did because _ celebrates Halloween.,Kayla,Patricia,B
+pr_en_002422,"Eric put out his electrical fire with baking soda, while Craig tried water. The house of _ survived.",Eric,Craig,A
+pr_en_002431,"The windows of Brad's home need replacing, while the doors are fine. So, the _ are likely newer.",windows,doors,B
+pr_en_002441,The area was easier to navigate for Aaron than for Jason because _ never had a house there.,Aaron,Jason,B
+pr_en_002450,"After her lips swelled up, Brian gave all the lip gloss to Christopher since _ was insensitive to it.",Brian,Christopher,B
+pr_en_002464,Cynthia bought mats to show Victoria how to do meditation because _ was a very caring person.,Cynthia,Victoria,A
+pr_en_002474,So _ turned on the fan because Christine was hot while Victoria was cold for some reason.,Christine,Victoria,A
+pr_en_002482,Lawrence knew how to mix soap and water better than Jeffrey because _ had a lot of chores that involved cleaning.,Lawrence,Jeffrey,A
+pr_en_002501,Jennifer has the phone ringer set louder than Patricia because _ is hard of hearing.,Jennifer,Patricia,A
+pr_en_002508,Neil was looking for a soulmate and Dennis was looking for a friend. _ made a new friend that day.,Neil,Dennis,B
+pr_en_002514,"When he wanted to transition a firefighter, they told him he was too short and weak. The _ issue was harder to resolve.",short,weak,A
+pr_en_002527,"They chose to dye the shirt instead of paint it during the festival, since the _ was more vibrant.",dye,paint,A
+pr_en_002528,"They chose to dye the shirt instead of paint it during the festival, since the _ was more dull.",dye,paint,B
+pr_en_002532,Laura attained much better grades in school than Elena did because _ did not study really hard.,Laura,Elena,B
+pr_en_002536,The barber tried to use the comb to brush the hair but the _ was too tough.,hair,comb,A
+pr_en_002539,The water spilling out of the pot put out the fire on the stove. The _ is plentiful.,water,fire,A
+pr_en_002550,Cynthia loved lounging on the deck in the morning while Kayla preferred to lounge in the evening. _ decided to watch the sunrise for a change.,Cynthia,Kayla,B
+pr_en_002579,James tried to buy the last vitamin from the store until he ran out of cash. The _ is low.,vitamin,cash,B
+pr_en_002581,The dog ran up to Leslie and away from Lawrence because _ had soap for the dog to take a bath.,Leslie,Lawrence,B
+pr_en_002588,"Jeffrey always wanted a pet quail, but Derrick never wanted pets, so _ never went to a pet store to look at animals.",Jeffrey,Derrick,B
+pr_en_002589,"While Derrick ate worse than Dennis generally, _ did like the taste of pears a bit more.",Derrick,Dennis,A
+pr_en_002590,"While Derrick ate worse than Dennis generally, _ did like the taste of pears a bit less.",Derrick,Dennis,B
+pr_en_002601,At dinner Felicia decided to pay for Elena's meal because _ had received a large bonus today.,Felicia,Elena,A
+pr_en_002611,"The woman put away the milk and placed the butter on the countertop, because the _ was unecessary for the recipe.",milk,butter,A
+pr_en_002617,I hired a tutor and my brother went to extra classes. He ended up getting better grades than me so the _ must be pretty ineffective.,extra classes,tutor,B
+pr_en_002627,I had to replace my washer instead of my dryer because the _ was newer.,dryer,washer,A
+pr_en_002654,The cards that were given in the deal were turned over before the stones since the _ were heavier.,cards,stones,B
+pr_en_002656,Kevin hated sweets but Kyle loved them which made _ irritated to receive a large birthday cake.,Kevin,Kyle,A
+pr_en_002659,"I bought a lamp and placed it in my room, because the _ was dark.",room,lamp,A
+pr_en_002696,Maria needed Felicia to pick up her phone after she dropped it. _ couldn't bend over.,Maria,Felicia,A
+pr_en_002713,Natalie was being cold to Katrina because _ was angry about the broken gold necklace that had sentimental value.,Natalie,Katrina,A
+pr_en_002731,"Victoria could not sleep well and always had insomnia as opposed to Angela, due to _ anxiety.",Victoria,Angela,A
+pr_en_002755,"Every time that Jessica would go tanning her skin would break out, unlike Sarah since _ had tough skin.",Jessica,Sarah,B
+pr_en_002763,The clothes of Kyle look more shabby than Donald's because _ has a larger salary to buy clothes with.,Kyle,Donald,B
+pr_en_002786,Kenneth helped Randy prune the cherry tree because _ had nothing to do for the rest of the week.,Kenneth,Randy,A
+pr_en_002794,Winning a goldfish at the carnival was worth all the money to Lawrence but not Neil because _ liked the yellow fish.,Lawrence,Neil,A
+pr_en_002805,Declaring paternity is important for official records like medical records but not credit records because the _ are restricted.,medical records,credit records,A
+pr_en_002816,The carpet at the house of Emily was more stained than the one at the home of Samantha because _ was more careful.,Emily,Samantha,B
+pr_en_002828,"Matthew grinds their teeth a lot in their sleep, and Hunter does not, so _ is likely more relaxed.",Matthew,Hunter,B
+pr_en_002829,"During the consultation, Monica recommended the medication to Samantha instead of the surgery. _ was a patient.",Monica,Samantha,B
+pr_en_002838,Ryan offered condolences to Joseph although _ was more upset about the death of their friend.,Ryan,Joseph,A
+pr_en_002843,Mary bought a laptop to replace her computer for picture editing. The _ was new.,computer,laptop,B
+pr_en_002853,James put the egg in the refrigerator and the meat in the sun. Now the _ is cold.,egg,meat,A
+pr_en_002855,"On the field trip to the art gallery, many of the children misbehaved. The _ was a poor choice.",field trip,gallery,B
+pr_en_002859,"Christopher aced the exam, but Matthew failed it. The parents gave _ a proud look.",Christopher,Matthew,A
+pr_en_002869,Logan hated working night shifts but Lawrence preferred them. _ had always suffered from insomnia.,Logan,Lawrence,B
+pr_en_002878,John wanted to tie a rope around a tire to swing on but the _ was too soft.,tire,rope,A
+pr_en_002879,The traveler tried to store his passport in his pocket but the _ was too small.,passport,pocket,B
+pr_en_002881,Kenneth interpreted the Russian speaker's sentiments during the speech for Justin because _ was from Russia.,Kenneth,Justin,A
+pr_en_002903,"Jessica made Sarah do their bidding and bend to their will, because _ lacked the position of control in the situation.",Jessica,Sarah,B
+pr_en_002951,James cut the board with the wire. He never knew the _ is that hard.,wire,board,A
+pr_en_002954,"The ears on the elf were easier to spot than the eyes, and this is because the _ are smaller.",ears,eyes,B
+pr_en_002956,Robert was more of a loner than Brett because _ loved to talk to people.,Robert,Brett,B
+pr_en_002957,Justin was using the bathroom therefore Nick had to go use the bushes leaving _  on the outside.,Justin,Nick,B
+pr_en_002963,The dog was less healthy than the cat because the _ got much less exercise.,cat,dog,B
+pr_en_002973,"Joseph went to Matthew office for a a exam and was informed they were not in good health, bad news is something _ hated to deliver.",Joseph,Matthew,B
+pr_en_002982,It is always a noble act to donate your body to science. The _ is very useful.,Body,Science,A
+pr_en_002987,The cross was moved from the roadside to the hill because the _ was distant from speeding traffic.,roadside,hill,B
+pr_en_003049,"For natural looking hair, the hairdresser recommended gel over mousse, because the _ was less noticable.",gel,mousse,A
+pr_en_003053,Leslie was seen as arrogant but not Kyle because _ would mention their accomplishments frequently.,Leslie,Kyle,A
+pr_en_003061,"Eric didn't sleep well the night before, but Jeffrey slept peacefully. The next day, _ was energetic at work.",Eric,Jeffrey,B
+pr_en_003069,"Kevin left Nick and their parents and started a new life, but _ decided to obey his father.",Kevin,Nick,B
+pr_en_003085,"Matthew, who was rich, and Lawrence who was poor, both wanted to be a volunteer but only _ could afford to.",Matthew,Lawrence,A
+pr_en_003110,Brush is effective to clean the bathtub while sponge is not as the _ is stiff.,brush,sponge,A
+pr_en_003111,Enjoying a massage at the spa was relaxing for Dennis but not Aaron because _ minded others touch.,Dennis,Aaron,B
+pr_en_003116,Mary asked Christine a lot of questions during the football game because _ knew nothing about the game.,Mary,Christine,A
+pr_en_003126,Mark couldn't decide to replace the mittens with a pair of gloves on his trip. The _ were new.,mittens,gloves,B
+pr_en_003132,"He tried to put his portfolio in the folder, but the _ was too large.",portfolio,folder,A
+pr_en_003146,"Christopher picked their nose in public, but Kenneth didn't. _ never cared what other people thought of them.",Christopher,Kenneth,A
+pr_en_003177,"After Derrick dropped the phone on the ground, Jason laughed, so the teacher gave _ a sympathetic frown.",Derrick,Jason,A
+pr_en_003179,The expensive mandolin would not fit inside the case because the _ was too big.,case,mandolin,B
+pr_en_003190,Emily felt the beret looked lovely but Victoria felt foolish. _ didn't think you had to be French to wear the hat.,Emily,Victoria,A
+pr_en_003217,"it was not a good time for the meeting, all people were very busy, the _ was limited.",time,meeting,A
+pr_en_003233,Victoria had to clean their windshield but not Lindsey because _ had a bike for transportation.,Victoria,Lindsey,B
+pr_en_003262,Amy made Patricia go to the outdoors to camp with her because _ likes camping trips.,Amy,Patricia,A
+pr_en_003264,I bought magazines for my boyfriend instead of books because he hated reading the _ .,magazines,books,B
+pr_en_003268,"The recovery was a lot longer for Natalie than Betty, because _ injury was more severe.",Natalie,Betty,A
+pr_en_003269,He thinks the sculpture he bought is so much better as art than the painting I bought just because the _ is cheap.,sculpture,painting,B
+pr_en_003272,"Elena gave Samantha a scrapbook for their birthday, later on _ received a cake too.",Elena,Samantha,B
+pr_en_003280,"Kayla bought a tablet for Rachel for their birthday last Sunday, and _ thanked them for the thoughtful gift.",Kayla,Rachel,B
+pr_en_003290,James can count all the numbers on his fingers tips because the _ are few.,numbers,fingers,A
+pr_en_003293,Joe knew that planets are closer to the sun than stars and that the _ were much bigger.,planets,stars,B
+pr_en_003303,Dennis decided to start a compost near the fence they shared with Craig because _ did not care what others thought.,Dennis,Craig,A
+pr_en_003311,"At the construction site, only Kenneth can drive the bulldozer, not Brian. _ has their license to do so.",Kenneth,Brian,A
+pr_en_003341,"When Kenneth fought last night, they were very aggressive with Ian, because _ had wanted this match for a long time and lost.",Kenneth,Ian,A
+pr_en_003343,Aaron ate cheap while he was in college while Adam spend all his money eating at restaurants. _ saved so much money during college.,Aaron,Adam,A
+pr_en_003350,"The tape broke with the logs, but stayed firm with the rods, as the _ were smooth.",logs,rods,B
+pr_en_003363,"He could study at night better than he could in the daytime, as during the _ his mind tended to focus.",night,daytime,A
+pr_en_003395,Emily had to unfollow a friend on facebook and Sarah didn't because _ thought the views were extreme.,Emily,Sarah,A
+pr_en_003397,"Jake stopped to grab a waffle before going to the bus station for his meeting, fortunately he had plenty of time because the _ was late.",bus,meeting,A
+pr_en_003398,"Jake stopped to grab a waffle before going to the bus station for his meeting, fortunately he had plenty of time because the _ was postponed.",bus,meeting,B
+pr_en_003454,"The comet slammed into the planet but had missed the satellite, so the _ was destroyed.",planet,satellite,A
+pr_en_003461,The grey moon showed itself above in the sky as I watched the cars go by with passion. Then the _ brightened.,moon,sky,A
+pr_en_003486,Megan's memory is a lot sharper than Rebecca's is due to _ being a lot older.,Megan,Rebecca,B
+pr_en_003510,"Maria was going to visit Patricia in Florida, but the humidity got to _ rather quickly.",Maria,Patricia,A
+pr_en_003516,Maria showed Cynthia how to clean their engine since _ had limited knowledge about cars and trucks.,Maria,Cynthia,B
+pr_en_003523,Jessica asked Tanya to go to the dance because _ didn't have a date yet.,Jessica,Tanya,A
+pr_en_003525,Amy bought a new storage bin from Monica at the hardware store because _ is a homeowner.,Amy,Monica,A
+pr_en_003532,"Sarah did not recognize Samantha in her costume at first, but then _ began to speak.",Sarah,Samantha,B
+pr_en_003534,"The store sold a frames that were made of a new type of wood and metal, but the _ was prone to rust.",wood,metal,B
+pr_en_003539,Hunter enjoyed singing in front of large crowds but not Dennis because _ was at ease with crowds.,Hunter,Dennis,A
+pr_en_003560,"Tanya determined that the couch made the deep scratches, and not the chair, because the _ is heavier.",couch,chair,A
+pr_en_003589,By using a knife and a board he was able to do a great job cutting all the food.  The _ was nonslip.,board,knife,A
+pr_en_003613,Joel asked Nelson for help with a paragraph for his paper because _ never wrote a book.,Joel,Nelson,A
+pr_en_003627,Jessica asked Cynthia for tips to improve their flexibility since they knew _ was a yoga instructor and would have helpful recommendations.,Jessica,Cynthia,B
+pr_en_003630,Leslie carried an oxygen tank while working and Hunter did not because _ was a paramedic.,Leslie,Hunter,A
+pr_en_003638,"Mary had to climb the mountain to reach Cynthia, so _ could finally drink in their wisdom.",Mary,Cynthia,A
+pr_en_003675,The article was a lot less depressing than the newspaper clipping because the _ was written about a happy time.,article,clipping,A
+pr_en_003679,"In school, Megan is always getting distracted, and Tanya has no trouble paying attention. _ is more focused.",Megan,Tanya,B
+pr_en_003685,One way to make rice crispy treats will need chocolate chips and marshmallows with the _ starting off hard.,chocolate,marshmallows,A
+pr_en_003695,Carrie ate a lot less food with sugar than Rebecca because _ has no known health problems.,Carrie,Rebecca,B
+pr_en_003697,Lauren was surprised to hear that meat was healthier to eat than yogurt because the _ contains a lesser percentage of fat.,yogurt,meat,B
+pr_en_003706,"Jim was choosing between brown and yellow paint color for his bathroom wall, but the _ was too bright.",brown,yellow,B
+pr_en_003712,A lesson was given by Mary to Jessica on cooking carrot oil due to _ being a novice in the kitchen.,Mary,Jessica,B
+pr_en_003744,The message was sent in a traditional fashion instead of a digital one because the _ way is secretive to prying eyes.,traditional,digital,A
+pr_en_003805,"Megan hated the table she saw, but Emily loved it. When they left the store empty-handed, _ was disappointed.",Megan,Emily,B
+pr_en_003818,I have become a pattern day trader. I need to sell stocks when they are high vs when they are low. The _ stocks get me more money.,high,low,A
+pr_en_003831,Samantha could wrap a package well but Rachel could not. _ got very few compliments on their gift wrapping.,Samantha,Rachel,B
+pr_en_003834,"At the house, Dennis would leave the sprinkler on unlike Neil because _ is forgetful.",Dennis,Neil,A
+pr_en_003863,Sarah was constantly feeling dizzy but not Betty because _ did not have symptoms of vertigo.,Sarah,Betty,B
+pr_en_003867,"To shave his head, Bob asked that scissors be used instead of razors because his skin was more forgiving of the _ .",razors,scissors,B
+pr_en_003869,The painter got his hand stained on the wall and he cleaned it with a towel. The _ is tacky.,wall,towel,A
+pr_en_003872,"Christine asked Erin to read the blog they had just finished, but _ was unhappy about it.",Christine,Erin,B
+pr_en_003887,Michael was able to impress everyone at the party unlike Randy because _ was very uncouth.,Michael,Randy,B
+pr_en_003892,Victoria loved to eat meat way more than Cynthia because _ was a carnivore and not a vegetarian.,Victoria,Cynthia,A
+pr_en_003894,"Matthew never has more money than Christopher, so _ told them to get a job.",Matthew,Christopher,B
+pr_en_003899,Jim wanted to get rid of the rosacea with a prescription but the _ is too strong.,rosacea,prescription,A
+pr_en_003907,The musician tried to put the guitar in the case but it wouldn't fit because the _ was too short.,case,guitar,A
+pr_en_003919,"Tanya gave some money to Emily for cutting their grass, because _ didn't want to do it.",Tanya,Emily,A
+pr_en_003942,Earplugs were often  required around Kevin but not Nick because _ always played the accordian.,Kevin,Nick,A
+pr_en_003945,The bread Sarah made was lighter than the bread Monica made because _ kneaded the dough the wrong amount.,Sarah,Monica,B
+pr_en_003946,The bread Sarah made was lighter than the bread Monica made because _ kneaded the dough the perfect amount.,Sarah,Monica,A
+pr_en_003951,"Brian had a more close knit family than Adam who was from a broken home, so _ seemed friendlier.",Brian,Adam,A
+pr_en_003961,Mary preferred to plant flowers in the garden over the planter because the _ was easier to weed.,garden,planter,A
+pr_en_003964,Nick has learned to develop photos by themselves but Donald has not because _ finds photography fascinating.,Nick,Donald,A
+pr_en_003969,During martial arts class the kid broke the blocks above the stones as the _ were being supported at his height.,blocks,stones,A
+pr_en_003973,The weight of the freighter had changed after the metals and the feathers were removed although the _ accounted for a lot of it.,metals,feathers,A
+pr_en_003991,It took longer to read the book than the magazine because the _ had more words.,book,magazine,A
+pr_en_004001,The job of Monica was a lot easier than Betty because _ was a chemical engineer.,Monica,Betty,B
+pr_en_004039,Christine borrowed a book from the library unlike Tanya because _ found their library card.,Christine,Tanya,A
+pr_en_004060,Maria thought the crop circles were mysterious while Lindsey thought they were made by farmers because _ did not believe in aliens.,Maria,Lindsey,B
+pr_en_004068,"Although it was night time, Jeffrey stayed up while Brian went to bed because _ just had some medicine with a sleep aid.",Jeffrey,Brian,B
+pr_en_004090,The diner paid less in taxes than the television station did because the _ made more money.,diner,television station,B
+pr_en_004097,I like using sea salt instead of table salt as the _ has finer crystals.,sea salt,table salt,B
+pr_en_004098,I like using sea salt instead of table salt as the _ has chunkier crystals.,sea salt,table salt,A
+pr_en_004106,Jane knew he will need more banana to feed the children unlike the pineapple that would have been enough. The _ is big.,banana,pineapple,B
+pr_en_004107,"The fish tank of Brett is dirtier than the one that Leslie owns, so _ is a proper pet owner.",Brett,Leslie,B
+pr_en_004129,"Samuel felt the effects of the alcohol more quickly than Donald, as _ drank on a full stomach.",Samuel,Donald,B
+pr_en_004151,"Joel loves doing research, but not Jeffrey, so _ got a D on the research paper.",Joel,Jeffrey,B
+pr_en_004156,"The members enjoyed the drinks and threw away the foods, thanks to the _ being garbage quality.",drinks,foods,B
+pr_en_004162,"The emerald that my sister bought was better than the ruby that I had, because the _ was bigger.",emerald,ruby,A
+pr_en_004177,"Chang bought a new treadmill and water container for use at the gym, but the _ had leaks.",treadmill,container,B
+pr_en_004184,Logan was a vegan but Dennis was a pescatarian. _ ordered the tuna salad for lunch.,Logan,Dennis,B
+pr_en_004187,"Despite multiple diets, Logan remains large while Ian kept  getting slimmer, which makes _ feel like a failure.",Logan,Ian,A
+pr_en_004194,Marge put the leftovers in the microwave and the turkey in the oven because the _ was better for cooking.,microwave,oven,B
+pr_en_004202,"While shopping at the yard sale, the woman passed on the dishes, but bought the spoons, because she already had many of the _ .",dishes,spoons,A
+pr_en_004211,"After the wood play house fell down at the park it was replaced with a metal one, the _ was stable.",metal,wood,A
+pr_en_004265,Derrick tends to spend a lot more time and money on their hair than William because _ doesn't have bleached hair.,Derrick,William,B
+pr_en_004289,Jason was excited to share the plot of the new short story with Samuel because _ wanted advice.,Jason,Samuel,A
+pr_en_004296,Cramps that affect pregnant mothers are as a result of pressure on the nerves. The _ are pressured.,Cramps,nerves,B
+pr_en_004332,The phone I got couldn't fit into the pocket of the black pants I was wearing  The _ was too big.,pocket,phone,B
+pr_en_004333,Elena decided to attend a seminar on self esteem but Christine did not as _ was very insecure.,Elena,Christine,A
+pr_en_004337,The mans desktop was a lot heaver than the laptop because the _ was smaller.,desktop,laptop,B
+pr_en_004348,The eye doctor prescribed reading glasses to Samantha but not Emily because _ is keen-sighted.,Samantha,Emily,B
+pr_en_004351,The house on the hill needed some work on the floors but not the cabinets as the _ were ancient.,floors,cabinets,A
+pr_en_004370,Rachel drinks a lot of milk but Kayla does not and as a result _ has very weak bones.,Rachel,Kayla,B
+pr_en_004382,So _ walks with a limp because Jessica injured their foot and Samantha is fine and nothing happened to them.,Jessica,Samantha,A
+pr_en_004383,The Thanksgiving feast was no longer going to be able to be served at the table because the _ was too small.,feast,table,B
+pr_en_004443,"Leslie decides to surprise Aaron with a new piece of furniture, but _ has second thoughts about the expensive gift.",Leslie,Aaron,A
+pr_en_004451,Christine did a better job writing in the finals than Kayla because _ loved English.,Christine,Kayla,A
+pr_en_004459,Lawrence offered their services to Craig after _ was able to see that they were in need.,Lawrence,Craig,A
+pr_en_004466,The card got scratched when it was continuously dragged over the table because the _ is rough.,table,card,A
+pr_en_004470,James could not hear the sound of his television in his neighborhood because the _ is too quite.,neighborhood,television,B
+pr_en_004476,Jane brushed down her hair with a brush but it is still tangled because the _ is too soft.,hair,brush,B
+pr_en_004477,The dog was cooler than the cat because the _ was sitting under the tree.,dog,cat,A
+pr_en_004478,The dog was cooler than the cat although the _ was sitting under the tree.,dog,cat,B
+pr_en_004481,"Mike and friends practiced basketball out in the field instead of gym during rain, even though the _ is wet.",field,gym,A
+pr_en_004497,Jose wanted to upgrade the performance of his computer and overclocked the CPU instead of the GPU because the _ was the bottleneck.,CPU,GPU,A
+pr_en_004498,Jose wanted to upgrade the performance of his computer and overclocked the CPU instead of the GPU because the _ was fast already.,CPU,GPU,B
+pr_en_004499,Creating restaurant review blogs is a passion of Betty but not Rebecca because _ is bored by writing and food.,Betty,Rebecca,B
+pr_en_004501,She became extremely  educated by reading books and watching videos. The _ were often loud.,books,videos,B
+pr_en_004506,The cat ran into the house when it started to rain and then rubbed its fur on the couch. It got the _ dry.,fur,couch,A
+pr_en_004521,Lindsey was more worried about finding a boyfriend than Angela because _ had a lot of sex appeal.,Lindsey,Angela,B
+pr_en_004543,"Nelson sent a formal invitation to Robert to come over for high tea, because _ likes to send fancy invites.",Nelson,Robert,A
+pr_en_004567,Throughout his years the child loved his blanket and not his teddy because the _ was bland.,blanket,teddy,B
+pr_en_004572,"My mom bought me cookies, but I couldn't get them in the containers, because the _ were too little.",cookies,containers,B
+pr_en_004583,Carrie was a hairdresser and Erin wanted to improve their appearance so _ got a new style.,Carrie,Erin,B
+pr_en_004584,Carrie was a hairdresser and Erin wanted to improve their appearance so _ cut a new style.,Carrie,Erin,A
+pr_en_004610,Joel never wore earplugs at concerts while Hunter always had a pair in their ears. _ was found to have good hearing years later.,Joel,Hunter,B
+pr_en_004641,"Ben wanted to dye his hair blue or brown, but the _ color was too bright.",blue,brown,A
+pr_en_004654,Victoria likes to keep their front door locked shut but Lindsey does not because _ lives in a safe neighbourhood.,Victoria,Lindsey,B
+pr_en_004656,"Jennifer does not believe in God, while Rachel is a devout Christian, so _ is a theist.",Jennifer,Rachel,B
+pr_en_004663,"Neil offers some garlic from the garden to Brett, because _ likes to give away produce.",Neil,Brett,A
+pr_en_004669,The head was weaving through the crowd and couldn't be missed. The _ was bald.,head,crowd,A
+pr_en_004671,Sarah bought the utensils that Felicia needed because _ had free time all day.,Sarah,Felicia,A
+pr_en_004677,Kevin gave Hunter a horseshoe for luck so that he could win at blackjack. _ was a lucky person.,Kevin,Hunter,A
+pr_en_004679,"Samantha needs an advice from Betty on how to prevent mascara from smudging, because _ is really annoyed with that.",Samantha,Betty,A
+pr_en_004688,"The oils seeped out of the bag but were contained in the box, since the _ was impenetrable.",bag,box,B
+pr_en_004690,Water and flour are essential ingredients in any dough. The _ keeps the dough from being overly wet.,water,flour,B
+pr_en_004704,The mirror will not fit through the slot in the door because the _ is too short.,slot,mirror,A
+pr_en_004707,So _ was embarrassed that Elena did not have enough money to buy a new computer when Carrie did.,Elena,Carrie,A
+pr_en_004713,James cloth faded after washing few time with some detergent. The _ is too weak.,cloth,detergent,A
+pr_en_004716,Joel doesn't keep a clean and tidy house like Adam because _ is a neat freak.,Joel,Adam,B
+pr_en_004736,The money that belonged to Tanya ended up in Rachel's pocket after _ was robbed on the street.,Tanya,Rachel,A
+pr_en_004743,"Smoke from cigars permeated the lounge but the air was clear in the hall, as the _ permitted smoking.",lounge,hall,A
+pr_en_004744,"Smoke from cigars permeated the lounge but the air was clear in the hall, as the _ forbade smoking.",lounge,hall,B
+pr_en_004746,Katrina was wealthier than Carrie but _ saved hard to afford the fees to send their children to private school.,Katrina,Carrie,B
+pr_en_004755,"Rebecca was slimmer than Carrie, so _ didn't have to worry about calories and a diet.",Rebecca,Carrie,A
+pr_en_004758,Ben went to massage his mom's feet and shoulders. She liked the _ because she was always standing.,feet,shoulder,A
+pr_en_004759,"The man seeks treatment for his feet, but not his hands. His _ have been hurting a lot lately.",feet,hands,A
+pr_en_004773,Donald blamed Adam for making him miss the train. _ said he didn't plan ahead and was always late.,Donald,Adam,B
+pr_en_004808,"The rose I got was beautiful so I put it in the window rather than on the table, because others could see it from the _ more clearly.",window,table,A
+pr_en_004814,Tanya's eyebrows are much thicker than Cynthia's are because _ styles them a lot more.,Tanya,Cynthia,B
+pr_en_004832,"Hunter spend the night burying Samuel in the woods, after _ was murdered in cold blood.",Hunter,Samuel,B
+pr_en_004836,So _ went from the hospital because Amy was sick while Mary was actually getting better.,Amy,Mary,B
+pr_en_004838,Carrie took her hamster to the vet because it had diarrhea where Amy's diagnosed it with wet tail. _ was very concerned about her favorite patient.,Carrie,Amy,B
+pr_en_004844,"Patricia always had a hard time trying to catch the ball unlike Betty, because _ was coordinated.",Patricia,Betty,B
+pr_en_004847,"Laura wanted a child and Victoria does not, so _ started trying to get pregnant after marriage.",Laura,Victoria,A
+pr_en_004848,"Laura wanted a child and Victoria does not, so _ started planning to get tubes tied after marriage.",Laura,Victoria,B
+pr_en_004874,John purchased a subscription for monthly home protection security service but the _ was not enough.,protection,subscription,A
+pr_en_004877,"The laundry detergent that Cynthia uses works better than Jennifer's, so _ must spend more money on it.",Cynthia,Jennifer,A
+pr_en_004889,Jennifer was being taken out Sarah out to a restaurant for _ wanted to thank the other for helping them in a difficult time.,Jennifer,Sarah,B
+pr_en_004891,The martial artist tried to wanted to store the uniform in the trunk but the _ was too large.,trunk,uniform,B
+pr_en_004902,"Betty mailed Laura's lost luggage to them in the mail, because it had been left at _ 's house.",Betty,Laura,A
+pr_en_004903,"Despite winning the lottery, Lindsey refused to loan Jennifer money to pay bills, because _ was a mooch.",Lindsey,Jennifer,B
+pr_en_004912,"The water was too cold for Felicia but just right for Christine, so _ got out of the pool.",Felicia,Christine,A
+pr_en_004915,"At the park, the boy said hello to William but ignored Randy, because _ was his enemy.",William,Randy,B
+pr_en_004935,Angel preferred winter to summer because she could see her breath. The _ was very cold.,summer,winter,B
+pr_en_004939,"In the middle of the night, Rachel checked Carrie's garage but there was no car. _ was gone.",Rachel,Carrie,B
+pr_en_004950,James used a wet towel to scrub the floor and got it clean. The _ was wet before.,floor,towel,B
+pr_en_004952,"While sparring, Sarah poked Christine's eye by accident with a finger. _ was feeling very hurt.",Sarah,Christine,B
+pr_en_004962,Christine stayed over with Elena at their house because the home of _ was filled with mold.,Christine,Elena,A
+pr_en_004987,"Swimming was forbidden in the pool, but allowed in the lake, because the _ was safe.",pool,lake,B
+pr_en_005022,"Brett was always trying to get as much calcium into his body as possible unlike Kyle, because _ had a deficiency.",Brett,Kyle,A
+pr_en_005041,The tire on the car lasted a longer time than the one on the bike because the man never drove the _ .,car,bike,A
+pr_en_005054,"While repairing the drywall, Joel asked Ian if the texture of the new drywall matched the old drywall in the dining room, because _ was in the living room.",Joel,Ian,A
+pr_en_005056,"Adam could install flooring expertly and quickly, which was great for the less skilled Michael. _ was quite inefficient in his methods.",Adam,Michael,B
+pr_en_005061,Michael convinced Randy that his priceless glass vase was a knockoff because _ is disingenuous.,Michael,Randy,A
+pr_en_005062,Michael convinced Randy that his priceless glass vase was a knockoff because _ is exploitable.,Michael,Randy,B
+pr_en_005063,Patricia is known to be less gracious than Lindsey because _ is just thankful for everything.,Patricia,Lindsey,B
+pr_en_005071,John still find the sound of the radio annoying after putting a headphone on his head. The _ is just too loud.,radio,headphone,A
+pr_en_005073,"When Christine crashed the car into Felicia's garden,  _ was sued for damages that the insurance company refused to pay.",Christine,Felicia,A
+pr_en_005081,Using a broom was good for Kayla to clean but not Victoria because _ had carpeted floors.,Kayla,Victoria,B
+pr_en_005083,The breath of Benjamin was better than the breath of Jason was because _ made sure to gargle every day.,Benjamin,Jason,A
+pr_en_005084,The breath of Benjamin was worse than the breath of Jason was because _ made sure to gargle every day.,Benjamin,Jason,B
+pr_en_005106,Craig agreed to water Randy's plants while they were away since _ did not go on vacation.,Craig,Randy,A
+pr_en_005120,"I was alone in the dark, so I found it better to focus on using night vision goggles instead of lights as the _ were covert.",goggles,lights,A
+pr_en_005121,"In order to avoid bear attacks, Ben had loud pans and storage bins. Ben found the _ helpless when the bear came.",pans,bins,B
+pr_en_005122,"In order to avoid bear attacks, Ben had loud pans and storage bins. Ben found the _ helpful when the bear came.",pans,bins,A
+pr_en_005124,"Because Jesse had a low risk tolerance, he invested more in bonds than stocks since the _ have a higher risk but a higher return.",bonds,stocks,B
+pr_en_005130,"My business meeting started at 9:00 and I needed to be home at 10:00 for an appointment, so there wasn't much time. The _ was short, so it worked out.",meeting,appointment,A
+pr_en_005141,Rachel called a plumber when they had water leaks while Victoria did not because _ was a plumber and could fix it.,Rachel,Victoria,B
+pr_en_005151,Emily sold Monica a bottle of lotion that she promised would keep her smooth and hair free; _ likes selling goods .,Emily,Monica,A
+pr_en_005171,"Amy was allergic to cats but Samantha was not, so _ was nervous to go to the new cat cafe.",Amy,Samantha,A
+pr_en_005180,"She didn't like the style of the jacket, but enjoyed the look of the scarf, because the _ was shabby.",jacket,scarf,A
+pr_en_005195,I decided to change my exercise routine from running to swimming because the _  results were disapointing.,swimming,running,B
+pr_en_005219,"Victoria asked for some tips from Lindsey on dealing with an ear infection, in spite of _ being unfamiliar with them.",Victoria,Lindsey,B
+pr_en_005222,"The child was screaming after the baby bottle and toy fell. Since the child was hungry, the _ stopped his crying.",baby bottle,toy,A
+pr_en_005229,"Logan chose all the outfits and Justin bought them, because _ had good money in the bank.",Logan,Justin,B
+pr_en_005232,"Natalie asked Tanya if she had planted the seeds in the garden, but _ she had forgotten.",Natalie,Tanya,B
+pr_en_005237,"Justice didn't like sweet drinks, so threw out the coffee and drank the tea because the _ was sweeter.",coffee,tea,A
+pr_en_005254,"Mary tried connecting the HDMI cord to the television, but it would not work because the _ was newer.",television,cord,B
+pr_en_005263,Amy was more sober than Angela because _ had alcohol withdrawal from drinking too much.,Amy,Angela,B
+pr_en_005268,"The wrecking ball swung at the building but hit the pole instead, since _ was in its range.",building,pole,B
+pr_en_005278,The dog looked at the fence and the gate and wondered if it would be best to go over the _ .,fence,gate,A
+pr_en_005287,"Randy lost touch with his family after high school unlike Justin, because _ family were evil.",Randy,Justin,A
+pr_en_005296,"At dinner, Tanya gave the rest of her spinach to Betty, because _ was full.",Tanya,Betty,A
+pr_en_005305,Janet was able to stop her pad from leaking her period because the _ is low.,pad,period,B
+pr_en_005322,"Don hung the picture in the bathroom instead of the den, because the walls in the _ were all empty.",bathroom,den,A
+pr_en_005328,Samantha's recent health has been a very big problem unlike Monica's because _ was cleared of cancer.,Samantha,Monica,B
+pr_en_005353,"The ninja hid in the garage, instead of the shed, because there was more light in the _ .",garage,shed,B
+pr_en_005365,Bad posture causes the shoulders to round and the hips to arch. The _ do this because the lumbar spine is curved forward.,shoulders,hips,A
+pr_en_005373,Nancy decided to stop wearing glasses and switched to contacts instead. The _ could change the color of her eyes.,glasses,contacts,B
+pr_en_005374,Nancy decided to stop wearing glasses and switched to contacts instead. The _ couldn't change the color of her eyes.,glasses,contacts,A
+pr_en_005375,During their initial electrical engineering class Patricia helped Katrina making the circuit when _ was free.,Patricia,Katrina,A
+pr_en_005376,During their initial electrical engineering class Patricia helped Katrina making the circuit when _ was confused.,Patricia,Katrina,B
+pr_en_005382,James was trying to talk to Jill who has headphones on his head and he could not hear because the _ is loud.,headphone,talk,A
+pr_en_005401,"The hotel business was not doing well because of its location, the _ was great.",business,location,A
+pr_en_005402,"The hotel business was not doing well because of its location, the _ was bad.",business,location,B
+pr_en_005412,"The children of Hunter were very polite unlike the kids of Jeffrey, due to _ raising them right.",Hunter,Jeffrey,A
+pr_en_005428,"Elena asked Christine to borrow some hosiery, because _ had run out of stockings that day.",Elena,Christine,A
+pr_en_005439,Hunter was the employee of William because _ continued his college education in business management.,Hunter,William,B
+pr_en_005448,Kevin enjoyed a better view of the play than Jason because _ 's seat had a better perspective .,Kevin,Jason,A
+pr_en_005457,"The pigeons in the city bothered Maria, but not Samantha, because _ was a bird freak.",Maria,Samantha,B
+pr_en_005462,"Victoria could visit certain websites that Rachel could not, yet, because _ was much older.",Victoria,Rachel,A
+pr_en_005483,Going to jazz festivals was entertaining to Christine but not Erin because _ enjoyed large crowds.,Christine,Erin,A
+pr_en_005490,"Rachel enjoys sleeping on the ground, while Tanya really can't stand it, because _ likes soft surfaces.",Rachel,Tanya,B
+pr_en_005494,Donald would not greet Leslie no matter how many times they said hello. _ was also polite to everyone.,Donald,Leslie,B
+pr_en_005518,"Ryan wondered if Donald thought he was an enemy, but _ said he was being crazy.",Ryan,Donald,B
+pr_en_005532,Aftershave is something Christopher likes and Eric hates because _ likes the burn of it.,Christopher,Eric,A
+pr_en_005544,The package she was waiting for was delivered and placed behind the bench on her porch so that only the _ would be seen.,package,bench,B
+pr_en_005550,I had to communicate the news over the phone or at the restaurant tonight. I told them at the _ even though I wanted them to enjoy their evening.,phone,restaurant,B
+pr_en_005554,"Monica had to iron the wrinkles out of their shirt, so Victoria lent them a hand steamer. _ kept forgetting to return the hand steamer.",Monica,Victoria,A
+pr_en_005555,Bob poured the entire bag of plain chip into the serving bowl for the party until the _ was full.,bag,bowl,B
+pr_en_005556,Bob poured the entire bag of plain chip into the serving bowl for the party until the _ was empty.,bag,bowl,A
+pr_en_005563,Anxiety is difficult for Nick while Lawrence is a social butterfly. _ loves going to parties.,Nick,Lawrence,B
+pr_en_005568,The forever stamps that Ryan had were far prettier than the ones William had and _ asked for some of them.,Ryan,William,B
+pr_en_005586,William always had a few too many when out for drinks with Logan. _ would drive home.,William,Logan,B
+pr_en_005599,Natalie always ate less eggs than Christine because _ lived a healthy lifestyle and needed a lot of protein.,Natalie,Christine,B
+pr_en_005609,The old capacitor would not fit in the box because the _ is too awkward.,capacitor,box,A
+pr_en_005627,"The flowers in my moms house were beautiful as opposed to the plants in my house, because the _ were well kept.",flowers,plants,A
+pr_en_005645,"Before removing the tick, he gathered tweezers and a small bottle of rubbing alcohol. He dropped the tick into the _ .",tweezers,bottle,B
+pr_en_005650,"Zelda could throw the javelin further than the shot put, because the _ was much heavier.",javelin,shot put,B
+pr_en_005656,"Natalie is not satisfied with her look and asks girl next door Katrina for an advice, because _ wants to look like her.",Natalie,Katrina,A
+pr_en_005659,Ryan is better at telling a story than Neil because _ took storytelling classes in college.,Ryan,Neil,A
+pr_en_005662,"Rebecca's collection of silver coins were tarnished, and Elena refused to clean them since they were rare coins. _ was interested in the coins that were still dirty.",Rebecca,Elena,B
+pr_en_005670,James wanted to get a new pillow and mattress for his bedroom.  He got the _ first because it was less expensive.,pillow,mattress,A
+pr_en_005675,"Mary looked worse than Monica during their tropical vacation, because _ had hair that would frizz in humid weather.",Mary,Monica,A
+pr_en_005693,"i wanted to fly the kite during the day but there was no wind, The _ was light.",kite,wind,B
+pr_en_005715,"The files would load on my PC, but not my Mac, because my _ was compatible with them.",PC,Mac,A
+pr_en_005725,"The carpenter used the nails on the walls and not on the doors, because the _ were sturdy enough for them.",doors,walls,B
+pr_en_005728,Matthew used the blender in the kitchen a lot more often than Joel because _ hated drinking smoothies.,Matthew,Joel,B
+pr_en_005732,"Christine is working as a doctor and Victoria is working as a volunteer, so _ is poor.",Christine,Victoria,B
+pr_en_005737,Lindsey paid more for their wedding than Angela did because _ got their wedding catered.,Lindsey,Angela,A
+pr_en_005752,The dog belonging to Brett was able to walk a further distance than the one belonging to Lawrence because _ had their dog on a longer leash.,Brett,Lawrence,A
+pr_en_005753,"She tried to extract lemon oil out of the lemon's peel, but not much came out because the _ is thin.",peel,oil,A
+pr_en_005760,"Justin showed Brett how to grind their own coffee beans, because _ thought freshly ground was best.",Justin,Brett,A
+pr_en_005762,Rebecca treated Victoria's hemorrhoids and _ spent time after asking questions about how to treat it.,Rebecca,Victoria,B
+pr_en_005767,"Patricia taught Mary how to eat healthy foods, and she followed it. _ felt grateful.",Patricia,Mary,B
+pr_en_005773,The staff the man bought made out of plastic was actually nicer than the wood one because the _ one was an antique.,plastic,wood,A
+pr_en_005777,Amy had to travel today. Wells Fargo was a few miles away and Taco Bell was many miles away. She traveled to the _ first because it was nearer.,Taco Bell,Wells Fargo,B
+pr_en_005781,"The woman counted money, hoping to buy the moby wrap, but the _ was too much.",moby wrap,money,A
+pr_en_005782,"The woman counted money, hoping to buy the moby wrap, but the _ was too little.",moby wrap,money,B
+pr_en_005794,"Sandra's leg was hit by a stick and a rock, but only the stick cut her because the _ was round.",stick,rock,B
+pr_en_005803,"Jeffrey demanded that Ryan pay him what he was owed for his labor, because _ finished the work.",Jeffrey,Ryan,A
+pr_en_005849,"Joel preferred to drive when Christopher was in the car, since _ was a very shaky driver.",Joel,Christopher,B
+pr_en_005851,"Jason and Michael won a million dollars, but the former was still wealthy after ten years because _ wisely invested his winnings.",Jason,Michael,A
+pr_en_005870,"I threw the boomerang and it hit a window, but luckily the _ was too flimsy for there to be any damage.",boomerang,window,A
+pr_en_005877,"For our 5:30 PM flight we took the 5 PM train, and were worried about time.  Fortunately, the _ was delayed, so we caught our airplane in time.",flight,train,A
+pr_en_005909,Gao ate a fruit graham cake instead of cheese cake because the _ is homemade and will go bad quickly.,fruit Graham Cake,cheese cake,A
+pr_en_005923,"the strong steel on the  could not bend as the machine was fragile, the _ was strong.",machine,steel,B
+pr_en_005929,For their landscaping buisness Sarah was trying to use the xerox machine that Lindsey owned to make signs. _ was a tree-cutter.,Sarah,Lindsey,A
+pr_en_005932,"Ian usually wore contact lenses, whereas Steven stuck to wearing glasses, because _ was vain.",Ian,Steven,A
+pr_en_005934,"Falling from the fence, john was glad he landed on the table first before getting to the patio. The _ is tall.",fence,table,A
+pr_en_005940,"Samantha was always asked to join in games of basketball instead of Maria, because _ was much shorter.",Samantha,Maria,B
+pr_en_005941,Eating zucchini bread was a treat for Aaron but not Ian because _ ate it very rarely.,Aaron,Ian,A
+pr_en_005943,Dennis could build a house on their own but not Derrick because _ had a plethora of construction knowledge.,Dennis,Derrick,A
+pr_en_005953,The carpet felt great under Matthew's feet but Hunter didn't like it. _ offered him some slippers to wear.,Matthew,Hunter,A
+pr_en_005963,"After buying the animals food, the medicine treat for the dog was better than the syringe since the _ was empty of medicine.",treat,syringe,B
+pr_en_005969,"We were planning on growing cucumbers next to the tomatoes instead of the corn, since the _ were shorter.",corn,tomatoes,B
+pr_en_005991,Rebecca hated the ways oils smelled so wouldn't go to Sarah's house. _ loved how it smelt.,Rebecca,Sarah,B
+pr_en_005993,I just got home from the grocery store and put the milk into the refrigerator because the _ was cold.,milk,refrigerator,B
+pr_en_005995,Laura went to get themselves a beverage but Victoria did not because _ was sated.,Laura,Victoria,B
+pr_en_005996,Laura went to get themselves a beverage but Victoria did not because _ was parched.,Laura,Victoria,A
+pr_en_006002,"Christopher does not have good willpower, Nelson does therefore _ did not eat cake and was not increased in size.",Christopher,Nelson,B
+pr_en_006013,"Although Betty was a angrier person overall than Amy, _ let her negative thoughts get away from her.",Betty,Amy,B
+pr_en_006019,"Kevin has lost his phone so he asks Michael to find it with tracking app, because _ feels really bad.",Kevin,Michael,A
+pr_en_006023,"The team lacked motivation for the warmup, but had plenty of energy for the practice, as they thought the _ was important.",warmup,practice,B
+pr_en_006027,Jeffrey exercised and ate a diet much higher in fiber than Benjamin. _ felt this didn't matter.,Jeffrey,Benjamin,B
+pr_en_006030,"During the concert, Leslie signed Justin's shirt with a pen since _ was a singer.",Leslie,Justin,A
+pr_en_006036,Derrick found it easier than Jason to go to sleep at night because _ never overslept in the morning.,Derrick,Jason,A
+pr_en_006039,Being a soldier in the war suited Justin but not Randy because _ had always been cowardly.,Justin,Randy,B
+pr_en_006042,Craig has to read a lot more contracts than Christopher because _ is a gym teacher.,Craig,Christopher,B
+pr_en_006045,I want to buy a car after the accident but my wife wants us to get a minivan. If we didn't have kids I might have gotten the _ .,car,minivan,A
+pr_en_006063,"given between working and going for holiday, I will choose the _ because it is easy.",holiday,work,A
+pr_en_006071,Exam time always sent the fraternities and not the sororities into a tail spin as the _ were never prepared.,sororities,fraternities,B
+pr_en_006078,Betty complained about the rain to Rebecca yet _ enjoyed going outside to play on rainy days.,Betty,Rebecca,B
+pr_en_006079,William told Brett that he had started taking these pills off of the TV to increase his mental stamina.  _ was skeptical about them.,William,Brett,B
+pr_en_006082,"Megan despises traveling a lot more than Erin, therefore _ rarely leaves the country for holidays.",Megan,Erin,A
+pr_en_006087,The man chose the watercolor for his paintings rather than the acrylic because the _ was ugly.,acrylic,watercolor,A
+pr_en_006096,John cannot go to the hospital and waited for his doctor at the park because the _ is far.,hospital,park,A
+pr_en_006106,The hard mattress on the bed was comfortable for Randy but not Michael because _ prefers soft support.,Randy,Michael,B
+pr_en_006109,Jeffrey is the tenant of Joseph because _ is too rich to rent the apartment building.,Jeffrey,Joseph,B
+pr_en_006115,Brett did all the talking to attract customers for Kenneth because _ is personable and chatty.,Brett,Kenneth,A
+pr_en_006117,James had his nose scratched after he cleaned it with the towel. The _ is rough.,towel,nose,A
+pr_en_006133,"Maria was perfectly happy being in a relationship with Tanya, but _ didn't want to stay together forever.",Maria,Tanya,B
+pr_en_006143,"The man became healthy because of the elliptical machine, not the treadmill. The _ is more distasteful to him.",elliptical machine,treadmill,B
+pr_en_006164,The Mangos grew better in the fields that Hunter owned versus those of Logan even though _ used better fertilizer.,Hunter,Logan,B
+pr_en_006172,The honey was poured out of  the jar and into the pot until the _ was empty.,jar,pot,A
+pr_en_006173,So _ does not use a lot oil in cooking because Erin wants to stay healthy and Amy wants the food to taste good.,Erin,Amy,A
+pr_en_006174,So _ does not refuse a lot oil in cooking because Erin wants to stay healthy and Amy wants the food to taste good.,Erin,Amy,B
+pr_en_006221,Kenneth went to the store to buy a cage for William's new pet rabbit. _ was happy to get a new home for the rabbit.,Kenneth,William,B
+pr_en_006230,"I used a wine bottle to pour some wine into a wine glass, because the _ was empty.",wine glass,wine bottle,A
+pr_en_006241,"Menopause has its downsides, but you save money despite having to take medicine because you no longer have to buy menstrual products, and the _ end up being cheaper. .",medicine,menstrual products,A
+pr_en_006243,"Randy used whatever dirty methods he had to interrupt Kyle from his concentration at work, but _ refused to do the same.",Randy,Kyle,B
+pr_en_006249,Megan felt scared while watching the movie while Laura felt excited for the reason that _ loved horror movies.,Megan,Laura,B
+pr_en_006257,Nick was helping Jason with their addiction because _ remembered how difficult recovery was long term.,Nick,Jason,A
+pr_en_006273,"The burglar felt safer robbing the store than robbing the house, because the _ had higher levels of security.",house,store,A
+pr_en_006294,Erin no longer loved Kayla and _ cried as they walked out the door of their house.,Erin,Kayla,B
+pr_en_006300,Pier ordered a debit card from his bank account and didn't need a check because the _ was for payments.,card,check,A
+pr_en_006303,The nurse tried to store the medicines inside the cabinets but the _ were too large.,cabinets,medicines,B
+pr_en_006327,Megan was infuriated with Jessica stampeding the garden because _ destroyed all the crops and flowers.,Megan,Jessica,B
+pr_en_006330,My wife and kids are coughing so my choices are the bed or couch. I don't really have concern I'll get sick so I'll take the _ .,couch,bed,B
+pr_en_006334,The chef made soups and stews from the vegetables from the garden; the _ were very fresh.,vegetables,soups,A
+pr_en_006335,"The memo was read more than the note, because the _ was put in a busy place at work.",memo,note,A
+pr_en_006339,at the gym I worked my upper body  but i could not carry the weight because the _ was heavy.,upper body,weight,B
+pr_en_006341,While Michael didn't like animals as much as Robert however _ had a soft spot for frogs.,Michael,Robert,A
+pr_en_006348,"Carrie was in a pretty rough condition after Emily beat them up, so _ ended up in jail.",Carrie,Emily,B
+pr_en_006368,Maria helped Elena cope with the newly diagnosed autism because _ was inexperienced with the disorder.,Maria,Elena,B
+pr_en_006398,"The nails of Tanya were a lot dirtier than Natalie, by reason of _ being a hard worker.",Tanya,Natalie,A
+pr_en_006422,A strong cup of java was fine with Jennifer but Carrie thought it was too bitter. _ drank their java black.,Jennifer,Carrie,A
+pr_en_006439,Rachel hadn't ever gotten a tattoo but wanted one while Carrie had many. _ often went to a tattoo parlor.,Rachel,Carrie,B
+pr_en_006443,The boss gave Nelson a job instead of Logan. _ was angry with their interaction with the boss.,Nelson,Logan,B
+pr_en_006454,There is more fat on Aaron's body when compared to Kevin as a result of _ being a couch potato.,Aaron,Kevin,A
+pr_en_006465,Josh had to clean sand off his feet but not his hands after going to the beach because the _  generally touch the sand less often.,feet,hands,B
+pr_en_006476,The company bought more bar stools than booths although the patrons like to sit at the _ .,stools,booths,B
+pr_en_006496,"During the call, Laura yelled at Cynthia because _ was had a very bad temper, which hindered productivity.",Laura,Cynthia,A
+pr_en_006505,Victoria likes to communicate with friends via their computer whereas Cynthia likes to communicate face to face because _ is an introvert.,Victoria,Cynthia,A
+pr_en_006506,Victoria likes to communicate with friends via their computer whereas Cynthia likes to communicate face to face because _ is an extrovert.,Victoria,Cynthia,B
+pr_en_006512,At the doctor's office Matthew was diagnosed with Epilepsy by Jason and _ was scared.,Matthew,Jason,A
+pr_en_006522,Their daughter could relate more to Katrina than to Sarah on somethings because _ was a female.,Katrina,Sarah,A
+pr_en_006524,The performer was designing the show vividly and wanted to add colorful balloons but not lights because the _ were overused.,balloons,lights,B
+pr_en_006525,I needed to add two more teaspoons of sweetener to the coffee because the _ was far too strong.,coffee,sweetener,A
+pr_en_006533,Tanya could drink coffee black while Samantha needed creamer for theirs because _ hated the bitterness.,Tanya,Samantha,B
+pr_en_006554,The wheel of the cart had gone through the space but the handle was stuck. The _ is wider.,wheel,handle,B
+pr_en_006561,"Sarah approached Katrina to discuss taking leave after the birth of the baby, because _ was going to be short staffed.",Sarah,Katrina,B
+pr_en_006564,"We used red paint in the kitchen but not the den, because it matched with the furniture in the _ .",kitchen,den,A
+pr_en_006567,"Logan ate more sugary candy than Samuel and rarely brushed their teeth, but _ still had more cavities.",Logan,Samuel,B
+pr_en_006577,"His wife was violent, with destruction of his house and clothing. The _ had been burnt down.",house,clothing,A
+pr_en_006581,The age of Elena's mother was older than Rachel's mother because _ mother was born first.,Elena,Rachel,A
+pr_en_006607,The man tried to put the folder on the stand but the _ was too small.,stand,folder,A
+pr_en_006627,Jeremy wanted a unique piece of art for his home and got the statue but not the painting because the _ was cool.,statue,painting,A
+pr_en_006637,Kyle stole the ball from Ryan during a friendly game so _ asked for the ball back.,Kyle,Ryan,B
+pr_en_006656,"At the party, Marion ignored Victoria and opened her arms to hug Erin, because Marion loved _ .",Victoria,Erin,B
+pr_en_006667,Kyle showed Joseph how to use the teflon tape to repair his faucet because _ is good with home repair.,Kyle,Joseph,A
+pr_en_006687,Matthew was almost always behind Dennis because _ was a far more experienced horse rider.,Matthew,Dennis,B
+pr_en_006690,"after so much work, we needed to do some relaxation for the nest assignments, the _ were too many.",assignment,relaxation,A
+pr_en_006698,Playing Scrabble is fun for Joel but not Hunter because _ knows a lot of simple words.,Joel,Hunter,B
+pr_en_006709,The bristles of the paintbrush were made of horse hair and the bristles of the hairbrush were made of plastic. The _ had the natural bristles.,paintbrush,hairbrush,A
+pr_en_006724,Eric is known as bilingual whereas Jason is not because _ can speak Spanish fluently.,Eric,Jason,A
+pr_en_006732,"Craig was upset he had to stay home while Neil got to travel to England, because _ 's passport was denied.",Craig,Neil,A
+pr_en_006752,Leslie knew Randy had a lot of social anxiety. _  wanted a lot of personal space.,Leslie,Randy,B
+pr_en_006766,"The tune of the songs were motivating to listen to while doing light housework, but not while doing his serious job. The _ was more intense.",job,housework,A
+pr_en_006772,Carrie wanted to prune their Forsythia so they asked Jennifer to help because _ was bad at taking care of plants.,Carrie,Jennifer,A
+pr_en_006780,The teacher has a complaint or two about the new classroom and the old book. The _ is too modernized she said.,book,classroom,B
+pr_en_006786,The parents got their children masks as costumes for their children instead of robes because the _ were expensive.,masks,costumes,B
+pr_en_006810,Jane's finger could not fit into the ring her boyfriend bought for her because the _ is wide.,finger,ring,A
+pr_en_006816,Jamie agreed to help clean her boyfriend’s kitchen floor and would carry mop but not the bucket because the _ was heavy.,mop,bucket,B
+pr_en_006825,I had a hard time backing out of my space in the parking garage because a truck had parked next to me and the _ was quite narrow.,truck,space,B
+pr_en_006826,I had a hard time backing out of my space in the parking garage because a truck had parked next to me and the _ was quite large.,truck,space,A
+pr_en_006844,"Derrick was more skinny than Joseph, so _ had to go to the gym and workout often.",Derrick,Joseph,B
+pr_en_006847,"Kayla does not know how to manage her finances so she asks Amy for help, because _ is financial advisor.",Kayla,Amy,B
+pr_en_006851,The bed was replaced by a futon in Jeff's bedroom because the _ is wider.,bed,futon,A
+pr_en_006860,"Laura is very talkative at parties when being compared to Rebecca, so _ is more energetic.",Laura,Rebecca,A
+pr_en_006862,"Sam had to control his diet by eating only mushroom and broccoli, but he only ate the _ to increase his greens.",broccoli,mushroom,A
+pr_en_006867,Hunter asked Derrick to make the fresh chips and dip for the birthday party because _ ran out of potatoes.,Hunter,Derrick,A
+pr_en_006879,Donald was showing Logan how to do difficult puzzles but _ was struggling to learn how.,Donald,Logan,B
+pr_en_006898,Lawrence sent a detailed resume to Adam because _ wanted a job with their company.,Lawrence,Adam,A
+pr_en_006930,Jane had gout pain that needed to be treated with either aspirins or immunosuppressants. She chose the _ as it was over the counter.,aspirins,immunosuppressants,A
+pr_en_006935,The contagious disease was passed to Brett and not Steven because _ has a weak immune system.,Brett,Steven,A
+pr_en_006938,Ray was tasked to ensure the family business ran smoothly. The _ was very important.,Family,Business,B
+pr_en_006948,Jason always tries to improve every situation in his life unlike William because _ has a positive mindset.,Jason,William,A
+pr_en_006952,Growing succulents indoors suited Patricia but not Samantha because _ had what is known as a green thumb.,Patricia,Samantha,A
+pr_en_006956,Aaron had more friends than Christopher had because _ liked to bully new people at school.,Aaron,Christopher,B
+pr_en_006982,Logan went to the store to buy a bigger wardrobe unlike Aaron because _ old one was full.,Logan,Aaron,A
+pr_en_006985,Erin thought clutter made a home look unattractive but Felicia did not. _ kept their home clutter free.,Erin,Felicia,A
+pr_en_006993,"The pageant winner's lace dress was noticed by all who attended, because the _ was very fine.",dress,lace,B
+pr_en_007031,"The arrow missed the target by only a foot, as the _ was positioned poorly.",arrow,target,B
+pr_en_007033,When we moved the table next to the stove I was overcome with heat exhaustion.  The _ was quickly moved.,table,stove,A
+pr_en_007034,When we moved the table next to the stove I was overcome with heat exhaustion.  The _ was quickly turned off.,table,stove,B
+pr_en_007047,"The outdoors are where Craig prefers to be, but Brett prefers to be in his house. _ likes to be at home.",Craig,Brett,B
+pr_en_007049,Justin stood in front of Benjamin which completely hid them from view behind them since _ was narrower.,Justin,Benjamin,B
+pr_en_007056,"The girls fought over the toys over the books, because the _ seemed boring to them.",toys,books,B
+pr_en_007061,"Tanya ate a lot of candy as a child whereas Felicia ate vegetables. As a result, _ had great teeth.",Tanya,Felicia,B
+pr_en_007076,Talking to strangers and making friends came easily to Robert but not Michael because _ was a prude.,Robert,Michael,B
+pr_en_007089,"Laura found a book and a magazine on the table, and she decided to take the _ because she was going to the beach for a short time.",book,magazine,B
+pr_en_007127,I bought a steel property at the same time as my wooden property. The _ property was harder.,wooden,steel,B
+pr_en_007139,Kevin used a knife to trim his fingernails while Christopher buffed with an emory board. _ was more bold.,Kevin,Christopher,A
+pr_en_007148,Brett liked working for a big corporation but Neil preferred to work for a small business. _ got a job at Bob's Ice Cream.,Brett,Neil,B
+pr_en_007156,"Emily gave Monica a job at her catering business, as _ really needed the extra income.",Emily,Monica,B
+pr_en_007160,The child preferred to play with the blocks rather than his parents' puzzles because the _ were hard for him to play with.,blocks,puzzles,B
+pr_en_007168,"Rachel took their dog for a walk while Lindsey played with their dog at home, and _ enjoyed the time at home.",Rachel,Lindsey,B
+pr_en_007171,"Michael wants to marry Lawrence, who isn't interested in the same sex, so _ is straight.",Michael,Lawrence,B
+pr_en_007200,"The child got itchy when wearing the shirt but it went away when he applied oil, because the _ was irritating to him.",shirt,oil,A
+pr_en_007203,We had a lightning warning and we didn't take shelter under the tree but took shelter in the shed instead. The experts say the _ provides less protection.,tree,shed,A
+pr_en_007205,"The new towel Julie purchased for herself would not fit around her head, the _ was too narrow.",head,towel,B
+pr_en_007206,"The new towel Julie purchased for herself would not fit around her head, the _ was too wide.",head,towel,A
+pr_en_007219,So _ enjoys reading books because Robert spends a lot of time with books and Aaron outside.,Robert,Aaron,A
+pr_en_007223,Dating is far easier than courting because with the _ you always have to ask for the parents permission.,dating,courting,B
+pr_en_007226,Eric bought Ian a skateboard for his birthday although _ could skateboard and really wanted one instead.,Eric,Ian,A
+pr_en_007238,Tammy was treated for depression at the clinic and was overcharged but the _ was helpful.,depression,clinic,B
+pr_en_007248,"Felicia has a kinder boss than Tanya, so _ will be looking for a job in the near future.",Felicia,Tanya,B
+pr_en_007260,"Natalie's studies require much more studying than Cynthia, so _ had an easier time in school.",Natalie,Cynthia,B
+pr_en_007265,The old harmonica sold for more at the auction when compared to the violin. The _ had a famous owner.,harmonica,violin,A
+pr_en_007268,"Michael was outgoing but Ian was shy, so _ always wanted to be the center of attention.",Michael,Ian,A
+pr_en_007273,The boy was more comfortable flirting at the party than at the meeting because he was sober at the _ .,meeting,party,A
+pr_en_007274,The boy was more comfortable flirting at the party than at the meeting because he was drunk at the _ .,meeting,party,B
+pr_en_007278,It was easy for Tanya but not Betty to fight loneliness because _ had many friends.,Tanya,Betty,A
+pr_en_007286,Megan has recently bought a rat with respiratory disease from Christine and now _ wants to help.,Megan,Christine,B
+pr_en_007293,A raccoon broke into Neil's camper while Benjamin was sleeping there so _ quietly got the raccoon out.,Neil,Benjamin,A
+pr_en_007312,Joseph was more careful than Brian and so _ had a rougher surface left on their varnished woodworking project.,Joseph,Brian,B
+pr_en_007326,"Peter cleaned the oven with vinegar instead of alcohol, because the _ was too weak.",alcohol,vinegar,A
+pr_en_007345,"Cynthia made fun of how Lindsey looked, but _ put very little stock in positive outward appearances.",Cynthia,Lindsey,B
+pr_en_007350,"Dave bought flowers and chocolate for his date, then his date tasted the _ .",flowers,chocolate,B
+pr_en_007355,Kayla did not have a large backyard like Erin did because _ lived in an apartment.,Kayla,Erin,A
+pr_en_007356,Kayla did not have a large backyard like Erin did because _ lived in a house.,Kayla,Erin,B
+pr_en_007362,"After comparing sizes, Cynthia was surprised her waist was thinner than Mary's since _ weighed more.",Cynthia,Mary,A
+pr_en_007367,"The stubble showed on his chin, but his cheek was clean.  The _ got a sufficient shave.",chin,cheek,B
+pr_en_007369,"Matthew offered Kyle some good whiskey, but _ really wanted to keep it all to themselves.",Matthew,Kyle,A
+pr_en_007372,"Natalie was trained and very good at giving commands unlike Tanya, due to _ being a leader.",Natalie,Tanya,A
+pr_en_007373,Victoria wanted the attention and interest of Jessica so _ did a cute little dance.,Victoria,Jessica,A
+pr_en_007379,It was likely that Benjamin but not Logan would get lung cancer because _ had not been smoking cigarettes for thirty years.,Benjamin,Logan,B
+pr_en_007392,"Steven was afraid of the cockatiel, when Hunter would hand feed it. The cockatiel ignored _ for getting head scratches.",Steven,Hunter,A
+pr_en_007399,The marketer was able to sell the bands faster than the ball because the _ is expensive.,band,ball,B
+pr_en_007405,The hospital in the city is better equipped but not as friendly as the hospital in the small town because the _ hires people that are well-known.,city,town,B
+pr_en_007406,The hospital in the city is better equipped but not as friendly as the hospital in the small town because the _ hires people that you don't likely know.,city,town,A
+pr_en_007407,"We used plaster to make the mold, but solid iron for the actual structure, since the _ was intended to be permanent.",mold,structure,B
+pr_en_007431,Sarah did not want to wash her lace handkerchief in the washing machine because the _ is too rough.,handkerchief,machine,B
+pr_en_007433,Brian had a lot more storage in his garage than Adam because _ didn't have a car.,Brian,Adam,A
+pr_en_007445,The flag was not blowing in the wind when it was raised on the pole. The _ is heavy.,flag,wind,A
+pr_en_007451,"Christine answers the phone and  takes orders for Lindsey everyday as scheduled, _  expects loyalty from others.",Christine,Lindsey,B
+pr_en_007485,"The kids abused the slides in the playground, but took better care of the swings.  They just thought the _ were a wonderful ride.",slides,swings,B
+pr_en_007488,Walking in the rain was something that Sarah liked to do but Megan hated because _ hated the feel of it.,Sarah,Megan,B
+pr_en_007490,The clock of Benjamin was more modern than the clock of Randy because _ clock was passed down through the family.,Benjamin,Randy,B
+pr_en_007499,"Because Elena was far less successful at their job this year than Megan, _ received a smaller raise.",Elena,Megan,A
+pr_en_007505,Katrina uses a cleansing product every day to make their skin clean but Sarah does not not because _ is hygenic.,Katrina,Sarah,A
+pr_en_007530,Jen needed to detox her body with either pills or fruits. She chose the _ because it was natural.,fruits,pills,A
+pr_en_007532,"The pedal on Jim's bike hurt more than the seat, because the _ was rough.",pedal,seat,A
+pr_en_007539,"Amy helped Emily immensely with her disability, as _ had so much help she needed.",Amy,Emily,B
+pr_en_007556,"For two months Lindsey was on a diet while Carrie ate fast food. Afterwards, when they weighed themselves _ was remorseful to see a 10 pounds gain.",Lindsey,Carrie,B
+pr_en_007566,Tanya had thick wavy hair but Sarah's hair was thinning. _ often thought about wearing a wig.,Tanya,Sarah,B
+pr_en_007582,John was putting together pieces to a crib for the room but the _ was too wide.,crib,room,A
+pr_en_007602,Paying the electricity bill is an adult responsibility for Joseph but not for Jeffrey because _ lives on his own.,Joseph,Jeffrey,A
+pr_en_007607,"Emily told Jennifer about the exciting new episode, because _ managed to watched it first.",Emily,Jennifer,A
+pr_en_007610,"Kenneth couldn't find a clean pair of underwear, so he took one from Joseph, so _ wasn't able to find theirs on time.",Kenneth,Joseph,B
+pr_en_007623,Kayla loved to go to the gym to exercise while Katrina preferred to be outside; _ primarily ran on the treadmill.,Kayla,Katrina,A
+pr_en_007633,"Jason had good teeth unlike Donald, and the dentist treating _ suspected it was because he avoided sweets.",Jason,Donald,A
+pr_en_007643,The stick wasn't able to reach across the hallway because the _ was too short.,stick,hallway,A
+pr_en_007649,Bob had oranges and eggs for lunch. He finished eating all his oranges but didn't touch the eggs because the _ were delicious.,eggs,oranges,B
+pr_en_007674,"Because Kayla had a brother and Sarah had no brothers, _ went to a lot of football games.",Kayla,Sarah,A
+pr_en_007683,"Jen wore a professional jacket for her interview and brought her resume, but the manager liked the _ because he was focused on appearances.",jacket,resume,A
+pr_en_007685,The bottle spent the whole day to get cold in the refrigerator because the _ is small.,bottle,refrigerator,B
+pr_en_007686,The bottle spent the whole day to get cold in the refrigerator because the _ is big.,bottle,refrigerator,A
+pr_en_007703,"Amy wrote a letter to Kai to send a clear message, Kai replied Ami with a poem which was obscure, because of the _ Kai knew how Ami feels.",letter,poem,A
+pr_en_007711,"Adam cleaned his bathroom sink more often than Jason, therefore _ wasn't embarrassed when company came over.",Adam,Jason,A
+pr_en_007725,The pan placed over the flame do not get hot fast enough because the _ is low.,pan,flame,B
+pr_en_007727,"Elena is buying a coloured contacts for her friend Carrie, because _ wants to surprise her.",Elena,Carrie,A
+pr_en_007740,The police had a warrant out for Nick but not for Kenneth. _ was always breaking the law.,Nick,Kenneth,A
+pr_en_007741,"During the early stages of her pregnancy, the woman only needed to buy new pants, but could still wear her shirts, because the _ still fit.",pants,shirts,B
+pr_en_007757,"Although broccoli and steak can both be part of a healthy diet, the _ has more antioxidants.",broccoli,steak,A
+pr_en_007762,"I bought the wrong size of tarp and it didn't fit the truck, because the _ was too long.",tarp,truck,B
+pr_en_007771,Mindy smokes cigarettes while she does her yoga poses. The _ statistically increase her chances of future panic attacks.,yoga poses,cigarettes,B
+pr_en_007776,"Claudia bought a dress for the party, but then decided to wear a pantsuit because the _ was itchy.",pantsuit,dress,B
+pr_en_007781,Jilly tried to put on the costume but couldn't get it around her leg because the _ was too small.,costume,leg,A
+pr_en_007793,Angela was less talkative now than Katrina but _ was actually less shy in school.,Angela,Katrina,A
+pr_en_007794,Angela was less talkative now than Katrina but _ was actually more shy in school.,Angela,Katrina,B
+pr_en_007803,"Maria went to the spa and got a massage every Saturday unlike Lindsey, because _ hated the feeling.",Maria,Lindsey,B
+pr_en_007823,Making new friends wasn't easy for Adam while it came easily to Donald because _ wasn't shy at all.,Adam,Donald,B
+pr_en_007838,Sarah was landscaping for Laura so _ spent none of the day digging for the new post.,Sarah,Laura,B
+pr_en_007841,Angela prefers to wear skirts while Amy prefers long pants.  _  wears socks.,Angela,Amy,B
+pr_en_007843,"Preston liked learning violin better than piano at music class, because the _ hurt his back.",piano,violin,A
+pr_en_007848,"She didn't mind having to change her hair, but hating changing her makeup, because the _ was tedious to alter.",makeup,hair,A
+pr_en_007850,"The car's tires were unable to navigate the driveway of the property, thanks to the _ being too muddy.",driveway,tires,A
+pr_en_007862,"Jessica was locked out of their house so Jennifer offered to crawl in through the window, because _ was small enough to fit.",Jessica,Jennifer,B
+pr_en_007872,Laura didn't keep their vagina very clean but Betty did. _ never had an odor about their crotch.,Laura,Betty,B
+pr_en_007874,"When their baby tripped over the baby walker, Cynthia laughed as Katrina helped the baby so grandmother gave _ caring look.",Cynthia,Katrina,B
+pr_en_007895,Katrina knew how to fix a broken leg but Rachel did not as _ was medically inept.,Katrina,Rachel,B
+pr_en_007901,"The man put the milk in the refrigerator but accidentally left the juice on the counter, in the morning the _ was cold.",Milk,Juice,A
+pr_en_007913,"Two different methods to help the blind people at the shelter, Maria raised money for it while Natalie preferred to do work for it because _ was a businessman.",Maria,Natalie,A
+pr_en_007917,"The chair fell when Kyle tipped it backwards, so Nelson yelled at him for making loud noise. _ said he wouldn't tip the chair again.",Kyle,Nelson,A
+pr_en_007933,Victoria felt a lot of guilt over stealing penny sweets but Mary did not because _ had a weak conscience.,Victoria,Mary,B
+pr_en_007958,"James tried to fix his hair by using a new brand of hair gel and comb, but the _ had quickly broken.",gel,comb,B
+pr_en_007968,Maria added rice and water to her pressure cooker. The results were dry because the amount of the _  added was too small.,rice,water,B
+pr_en_007973,There were more ants under the carport than in the yard because it was wetter in the _ .,yard,carport,A
+pr_en_008012,Leslie offered to show Logan where all main spots in town are as _ has lived there for only days..,Leslie,Logan,B
+pr_en_008018,It is better to play a prank on Samuel than Craig because _ gets angry more often.,Samuel,Craig,B
+pr_en_008026,Emily called Carrie to tell her that her young children were sick and therefore she couldn't go to the movies with her.  _ was apologetic.,Emily,Carrie,A
+pr_en_008033,Sarah had fewer ants in their house than Jennifer because _ left pesticide where the ants were.,Sarah,Jennifer,A
+pr_en_008048,"We went inside a store to cool off in the summer, and my friend wanted a chair but it wouldn't fit through the door since the _ was short.",chair,door,B
+pr_en_008072,"Emily ended up getting caught in the police sting, but Felicia escaped, because _ didn't realize it was a trap.",Emily,Felicia,A
+pr_en_008095,Steven was prescribed medicine to take daily by Derrick after an examination. _ was the patient.,Steven,Derrick,A
+pr_en_008096,Steven was prescribed medicine to take daily by Derrick after an examination. _ was the physician.,Steven,Derrick,B
+pr_en_008103,"Betty hoped to get pregnant, while Angela did not, because _ was excited about having children.",Betty,Angela,A
+pr_en_008109,"The artist used the markers instead of the pens to create the bright image, since the _ have a duller look.",markers,pens,B
+pr_en_008117,"Products sold at the outlet made more money than those sold at the store , so the _ was a losing business.",outlet,store,B
+pr_en_008130,Cynthia had a cold. Tanya did not want to catch it. _ was infectious by being in the same room.,Cynthia,Tanya,A
+pr_en_008139,"The model was a lot worse than the toy truck, because the _ was expensively made.",model,truck,B
+pr_en_008149,"Sarah had been abused badly by Rebecca , so the pain _ received was recurring every day.",Sarah,Rebecca,A
+pr_en_008150,"Sarah had been abused badly by Rebecca , so the pain _ gave was recurring every day.",Sarah,Rebecca,B
+pr_en_008152,"Maria dressed as a clown for Laura's birthday party yesterday, and _ was quite entertained the whole time.",Maria,Laura,B
+pr_en_008154,"Nick held Samuel's horse while they conditioned it, because _ was better with the horse.",Nick,Samuel,A
+pr_en_008160,Matthew tried to hide their condition from Craig so that _ would not have to talk about it.,Matthew,Craig,A
+pr_en_008164,William thinks coyotes are dangerous and Donald does not. _ shot a coyote in their backyard.,William,Donald,A
+pr_en_008172,Laura was quick to compliment their employees for a job well done but Megan was not. _ was well respected by everyone in the company.,Laura,Megan,A
+pr_en_008177,The class took an exam in the classroom instead of a quiz since the _ was later.,exam,quiz,B
+pr_en_008190,"Elena didn't want to invite Betty to the party, because _  was a snobby host.",Elena,Betty,A
+pr_en_008194,"Joel's friends were all busy while Derrick's friends were available, so _ went to the concert alone.",Joel,Derrick,A
+pr_en_008197,I preferred snow to the cold rain because the _ was not pretty and did soak me to the bone.,snow,cold rain,B
+pr_en_008215,The man had to poop in the hole in his yard instead of a toilet because the _ was non-functioning.,toilet,hole,A
+pr_en_008222,"The debt of Elena is out of control, but Lindsey barely has any. This is due to _ being a reckless spender.",Elena,Lindsey,A
+pr_en_008225,Elena is better at parallel parking than Kayla is even though _ lives in the city.,Elena,Kayla,B
+pr_en_008234,"Bill replaced the chicken bone in his soup with cabbage after it cooked for a couple of hours, the _ was smooth.",bone,cabbage,B
+pr_en_008235,"Kyle had a huge flag that William really wanted, so _ stole it from him.",Kyle,William,B
+pr_en_008240,The letter wouldn't fit in the envelope that I bought because the _ was too thick.,letter,envelope,A
+pr_en_008255,I decided to give my girlfriend a card instead of the candy as the _ is less intimate.,card,candy,B
+pr_en_008262,"Aaron wanted his kids to practice on drum pads instead of drums, because the _ were quieter in the house.",drum pads,drums,A
+pr_en_008267,Kevin puts a band aid on the scab of Ryan because _ is the child in the situation.,Kevin,Ryan,B
+pr_en_008282,"Because the _ was uncomfortable, the horse fled the barn and rested in the shed.",barn,shed,A
+pr_en_008283,"The puppy always followed Ryan but avoided Donald, since _ did not like to play or throw the ball.",Ryan,Donald,B
+pr_en_008308,Joseph made friends very easily but Joel did not. _ had a small social circle.,Joseph,Joel,B
+pr_en_008313,The candles of Cynthia don't look as neat as Rebecca's. That's because _ is less experienced at candle making.,Cynthia,Rebecca,A
+pr_en_008314,The candles of Cynthia don't look as neat as Rebecca's. Despite that _ is less experienced at candle making.,Cynthia,Rebecca,B
+pr_en_008317,Mary was going to sleep in the tent instead of the camper but the _ stayed cooler in the sun.,tent,camper,B
+pr_en_008332,"Angela was flying high on adrenaline after robbing Monica, because _ found $1000 in their wallet.",Angela,Monica,A
+pr_en_008336,"She was writing her paper with ink, but needed to get more ink since the _ was long.",paper,ink,A
+pr_en_008356,The medication failed to treat the disease and doctors were in a panic because the _ was resistant.,disease,medication,A
+pr_en_008364,Katrina went to the florist less often than Jessica because _ was more allergic to flowers in her home.,Katrina,Jessica,A
+pr_en_008395,The constitution was put onto a wall and the paper was discarded because the _ was temporary.,wall,paper,B
+pr_en_008407,"Laura helped Christine with their exercises, as _ didn't know how to stretch muscles  for warming up.",Laura,Christine,B
+pr_en_008409,"To tell if Brian 's gold was real, Jason used a magnifying glass because _ was suspicious of it.",Brian,Jason,B
+pr_en_008411,The waiter took his tips from the jar and put them in his wallet until the _ was empty.,jar,wallet,A
+pr_en_008444,I had to buy a new pair of socks for the game but not shoes since the _ were intact.,socks,shoes,B
+pr_en_008445,The girl wanted to get married at the church instead of at the park because the _ was more formal.,church,park,A
+pr_en_008453,"Mary, a baby girl, suffered from colic, whereas Patricia, also a baby girl, did not, so it was quite difficult to console _ .",Mary,Patricia,A
+pr_en_008457,Robert suffered from extremely bad anxiety. Logan did not suffer from anxiety. _ was very stressed.,Robert,Logan,A
+pr_en_008483,Patricia wanted to host a weight loss talk show and Laura wanted to host a comedy talk show because _ was more health conscious.,Patricia,Laura,A
+pr_en_008508,Nick is better at ping pong than Jason because _ is a novice at the game.,Nick,Jason,B
+pr_en_008544,The recruiting agency of Elena does better than Jessica's due to _ having an average reputation.,Elena,Jessica,B
+pr_en_008552,"Benjamin helped Lawrence to recaulk their bathroom tile as a favor, because _ was know to be handy.",Benjamin,Lawrence,A
+pr_en_008565,All of the hipsters were interested in the new shoes from the company but not the jackets because the _ were trendy.,shoes,jackets,A
+pr_en_008577,Noah had to take out a loan to buy the house but not the vehicle because the _ was expensive.,house,vehicle,A
+pr_en_008585,She ordered ginger ale to drink instead of lemonade because the _ tasted bad to her.,lemonade,ginger ale,A
+pr_en_008587,"Craig read the long book to Jason before the due date, because _ is a very fast reader.",Craig,Jason,A
+pr_en_008597,The Northern council encouraged people to recycle but the Southern council did not because the _ council was very slapdash.,Northern,Southern,B
+pr_en_008620,"The water in the sink would not go down the drain, because the _ was static.",water,drain,A
+pr_en_008623,"I really hated the flavor of corn more than pie, because the _ was always sweet.",corn,pie,B
+pr_en_008625,Kenneth asked Kyle what time the reality show came on because _ had a good memory.,Kenneth,Kyle,B
+pr_en_008627,There was more blood after the accident than the fight because the _ was safer.,accident,fight,B
+pr_en_008634,Joel always needs more practice than Randy for soccer games because _ talents in sports are mediocre.,Joel,Randy,A
+pr_en_008640,"In the mountains of Japan, Erin sought physical training from Amy because _ was a protege.",Erin,Amy,A
+pr_en_008642,Joe chose to invest in real estate over the stock market because he thought the _ would have a lower long term return.,real estate,stock market,B
+pr_en_008674,The baseball game cost more for us to go to than the football game because the _ was amateur.,football game,baseball game,A
+pr_en_008689,The hairdresser wanted to give Lindsey choppy bangs but Monica warned against it. _ had always wanted bangs.,Lindsey,Monica,A
+pr_en_008692,"During the brewing process, the pots were on the stove and the bottles were in the fridge, so the _ were hotter.",bottles,pots,B
+pr_en_008693,Christine's telescope can't see nearly as far as the one Jessica purchased. _ got a more expensive model telescope.,Christine,Jessica,B
+pr_en_008694,Christine's telescope can't see nearly as far as the one Jessica purchased. _ got a cheaper model telescope.,Christine,Jessica,A
+pr_en_008698,Candy chose to purchase the boots over the sandals. She felt the _ were more attractive.,boots,sandals,A
+pr_en_008726,Angela loved to eat spicy curry but Rachel liked tacos better. _ took a trip to Mexico instead of India.,Angela,Rachel,B
+pr_en_008792,Jason got a nice tan at the beach but Michael got a sunburn because _ used a good sunscreen.,Jason,Michael,A
+pr_en_008807,"The bread Sara purchased yesterday at the store was already growing mold, because the _ was overlooked.",bread,store,A
+pr_en_008808,"The bread Sara purchased yesterday at the store was already growing mold, because the _ was inept.",bread,store,B
+pr_en_008812,So _ was terrible at making speeches because Felicia enjoys talking a lot and Mary is always quiet.,Felicia,Mary,B
+pr_en_008828,Keeping track of his budget in a notebook became sporadic so he switched to a phone app since the _ was consistent.,notebook,phone,B
+pr_en_008829,I gave my son a peanut butter sandwich instead of nutella as the _ is less sweet and healthier.,peanut butter,nutella,A
+pr_en_008842,"The summer camp counselor, Amy, gave lessons to Katrina because _ was a great instructor.",Amy,Katrina,A
+pr_en_008851,Tim was trying to get into good health and preferred berries over limes because the _ were out of season.,berries,limes,B
+pr_en_008855,"Elena is helping Sarah who is a homeless child, because _ has a good nature.",Elena,Sarah,A
+pr_en_008871,"Logan is a doctor, Nick is not therefore _ knows a great deal about the human tongue.",Logan,Nick,A
+pr_en_008878,"Donald gave a nice compliment to Robert, which made _ feel like an attractive person.",Donald,Robert,B
+pr_en_008881,Tom was frustrated while using the computer printer but was fine with the keyboard because the _ was working.,printer,keyboard,B
+pr_en_008886,Laura learned more songs on the piano than Katrina although _ was more talented musically.,Laura,Katrina,B
+pr_en_008896,"Neil loved word games but Nelson never played them, so _ invited people over to play games often.",Neil,Nelson,A
+pr_en_008921,Joseph has a white puppy and Logan has a brown puppy. _ feeds his brown puppy oatmeal for breakfast.,Joseph,Logan,B
+pr_en_008926,Monica asked Amy to help her get a volunteer position at the animal shelter as _ would like to become involved with animal rights.,Monica,Amy,A
+pr_en_008928,"They decided that they were going to play volleyball instead of golf, because the _ was exciting.",volleyball,golf,A
+pr_en_008945,"I chose the first plan rather the second plan, because the _ seemed like it would be a success.",second plan,first plan,B
+pr_en_008956,The lab was excited about the new medication that had tested on a rat with an illness because the _ is working.,illness,medication,B
+pr_en_008961,John has hypothermia and is near a cabin and an outhouse. He went into the _ to relieve himself.,cabin,outhouse,B
+pr_en_008965,The cookies Aaron got from Joel were a hit so _ made them for him a second time.,Aaron,Joel,B
+pr_en_008983,Felicia had to move seats unlike Rebecca because _ sat in the right seat at the event.,Felicia,Rebecca,B
+pr_en_008985,The crowd at the gig could barely hear the singer because the _ was too loud.,crowd,singer,A
+pr_en_008986,The crowd at the gig could barely hear the singer because the _ was too quiet.,crowd,singer,B
+pr_en_008987,Adam was less excited about the fall harvest than Nick because _ loved to make cider from the apples.,Adam,Nick,B
+pr_en_009010,Lawrence needed an air purifier in their home but not Kenneth because _ lived in a town with toxic air.,Lawrence,Kenneth,A
+pr_en_009064,Samantha looks a lot younger than Mary does although _ uses a cream that fights wrinkles and age lines.,Samantha,Mary,B
+pr_en_009072,"John could not find a good spot to place the chair on the lawn without falling, hence he returned it to the pavement because the _ is uneven.",lawn,pavement,A
+pr_en_009083,The girl was trying to put the book in the bookbag. The _ would not fit in the bookbag on the table.,book,bookbag,A
+pr_en_009089,"The tobacco farm wasn't doing well, so they replaced the pipes with conveyors as the _ were efficient.",pipes,conveyors,B
+pr_en_009092,"The senior woman's portfolio was low on stocks but high in bonds, as she considered the _ to be risky.",stocks,bonds,A
+pr_en_009094,Tanya looked thinner than Megan because _ had lost more weight overall within the three month period.,Tanya,Megan,A
+pr_en_009104,Rachel didn't know how to be humble and Tanya did because _ got angry with people very easily.,Rachel,Tanya,A
+pr_en_009105,"Jeffrey walked his dog in the park instead of at the lake, because the _ was uglier.",park,lake,B
+pr_en_009119,I had no more room to put the water in the bucket because the _ was too much.,bucket,water,B
+pr_en_009127,"Nick knew the answers in advance, while Benjamin did not, because _ had studied their textbook.",Nick,Benjamin,A
+pr_en_009128,"Nick knew the answers in advance, while Benjamin did not, because _ had lost their textbook.",Nick,Benjamin,B
+pr_en_009141,Donald told Michael how we was going to start eating healthy by eating rice.  _ was unconvinced.,Donald,Michael,B
+pr_en_009150,The young magician was able to lock the assistant in the box but couldn't use the key to open it because the _ was lost.,box,key,B
+pr_en_009160,Making soap was easy for Ryan but not Dennis because _ had access to all the ingredients.,Ryan,Dennis,A
+pr_en_009163,Rachel hires Carrie as a tutor for her daughter because _ is a good teacher.,Rachel,Carrie,B
+pr_en_009164,Rachel hires Carrie as a tutor for her daughter because _ is a good parent.,Rachel,Carrie,A
+pr_en_009170,Katrina has a more modern dressing style than Maria because _ is an old soul.,Katrina,Maria,B
+pr_en_009181,"The man hired a lawyer to create the contract but read the paperwork himself, because the _ was simple.",Contract,Paperwork,B
+pr_en_009191,Jason needed the balm but not Kenneth because _ had painless calf muscles after working out.,Jason,Kenneth,B
+pr_en_009203,"The man could not jump over the wall, but easily hopped over the fence, because the _ was shorter.",wall,fence,B
+pr_en_009204,"The man could not jump over the wall, but easily hopped over the fence, because the _ was taller.",wall,fence,A
+pr_en_009216,"Jessica wants to write an alien sci fi story and asks for a help from her role model Angela, because _ is beginner.",Jessica,Angela,A
+pr_en_009218,Juniper's school put down a patch of artificial grass on the dying lawn. It didn't match because the _ was too green.,grass,lawn,A
+pr_en_009228,"Carrie had health insurance coverage while Angela did not, as _ had a really bad job.",Carrie,Angela,B
+pr_en_009236,"Tanya needed help from Cynthia to get down the stairs in her huge wedding dress, and _ felt a bit silly.",Tanya,Cynthia,A
+pr_en_009239,"I wish that I had enough money to buy a new house, but I don't because the _ is too little.",house,money,B
+pr_en_009254,Bill wanted to keep his house clean instead of dirty to keep the ants from coming in. Keeping the _ house was good.,clean,dirty,A
+pr_en_009262,The weights were harder for Elena to lift than Maria since _ worked out a lot.,Elena,Maria,B
+pr_en_009263,"Laura got hired for the job right away, but Elena did not, because _ had interviewed well.",Laura,Elena,A
+pr_en_009274,The contractor wanted to build the church on the vacant lot but the _ was too small.,church,lot,B
+pr_en_009281,"Brian spent all day looking out the window and watching William's every move, so _ thought he was a stalker.",Brian,William,B
+pr_en_009299,"My first flight arrives at 04:00 and my second flight is at 04:20, so there wasn't much time. Fortunately, the _ was early, so it worked out.",first flight,second flight,A
+pr_en_009307,The man caught a bigger fish in the ocean than in the lake because the water was deeper in the _ .,ocean,lake,A
+pr_en_009309,I like to play with the golf ball rather than a tennis ball as the _ fits in my fist.,golf ball,tennis ball,A
+pr_en_009316,Using the shovel gave the man blisters but the rake was comfortable to use because the handle of the _ was smooth.,Shovel,Rake,B
+pr_en_009327,Natalie found their tongue very useful but Laura found their's less useful because _ was very taciturn.,Natalie,Laura,B
+pr_en_009344,During summer Victoria always felt confident wearing leggins but Natalie did not as _ was very overweight.,Victoria,Natalie,B
+pr_en_009359,Felicia loved animals more than Cynthia so _ liked to play with mice and watch them run around.,Felicia,Cynthia,A
+pr_en_009364,The grandchildren began jumping all over Brian but not Joel because they knew _ loved to play.,Brian,Joel,A
+pr_en_009368,"He had honed his muscles at the gym and bought new workout clothes but they didn't fit, because the _ were too big.",muscles,clothes,A
+pr_en_009379,"Samuel would use alcohol to cook while Eric used tasteless marinade, and _ made more exotic dishes.",Samuel,Eric,A
+pr_en_009385,Jennifer insisted to Erin that this miraculous diet would cause her to lose 20 pounds.  _ was skeptical.,Jennifer,Erin,B
+pr_en_009389,Joel walks up the driveway slower than Leslie does because _ is an older person.,Joel,Leslie,A
+pr_en_009408,Monica's passion for photography was a lot stronger than Samantha's because _ took pictures seldom.,Monica,Samantha,B
+pr_en_009413,"At the recital, Rachel's music doesn't sound as good as Natalie's because _ hasn't stopped practicing.",Rachel,Natalie,B
+pr_en_009417,"While camping, Betty asked Christine to put the tent up because _ was a novice camper.",Betty,Christine,A
+pr_en_009422,"Elena wanted to have a serious conversation with Laura who did not, so _ adopted a humorous tone.",Elena,Laura,B
+pr_en_009436,The man chose to roller skate instead of ice skate because he had less experience on the _ .,roller skate,ice skate,B
+pr_en_009454,It was more probable that Maria would end up in prison rather than Tanya because _ had a criminal lifestyle.,Maria,Tanya,A
+pr_en_009463,Nick gave Matthew a dose of medication because he had a fever. _ checked on him later.,Nick,Matthew,A
+pr_en_009476,I was hungry and I put the pork chop on the pan because the _ was cold.,pork chop,pan,A
+pr_en_009480,My mom's hair was a lot lighter than my friends wig because the _ was dyed dark.,hair,wig,B
+pr_en_009484,The facial given to Leslie was better than the one given to Donald because _ paid for extra time.,Leslie,Donald,A
+pr_en_009500,Leslie had better grades than Derrick although _ spent more time studying than playing video games.,Leslie,Derrick,B
+pr_en_009508,"Christine hates to go fishing, but Patricia loves it. This is due to _ being an outdoor person.",Christine,Patricia,B
+pr_en_009510,The pilot took Katrina up for a free ride in the plane unlike Cynthia because _ asked politely.,Katrina,Cynthia,A
+pr_en_009518,Jane wanted to be a member of a book or gardening club. She opted for the _ as she loved growing food..,book,gardening,B
+pr_en_009522,The manager needed to account for the computer and not the laptop because the _ was useless.,computer,laptop,B
+pr_en_009532,Learning to ride a skateboard was easier for Joseph than Derrick because _ had one when younger.,Joseph,Derrick,A
+pr_en_009535,"Bill's new comforter would not fit inside his old washing machine, the _ was too wide.",machine,comforter,B
+pr_en_009538,Craig's greed was very well known to so when he saw Michael's gold watch _ envied it.,Craig,Michael,A
+pr_en_009558,Monica booked twice as many parties at her tubberware party than Amy because _ offered a larger cut in the sales as a gift.,Monica,Amy,A
+pr_en_009575,Kayla was able to keep flowers alive longer than Amy because _ had a black thumb.,Kayla,Amy,B
+pr_en_009596,"William didn't want to move but Benjamin loved the change, as _ was wanting a new start.",William,Benjamin,B
+pr_en_009601,Donald writes the numerous great speeches for William because _ 's job is speech writer.,Donald,William,A
+pr_en_009606,"Wendy wanted to switch from disposable diapers to cloth diapers, because the _ were trendy.",cloth diapers,disposable diapers,A
+pr_en_009607,The parent of Neil looked sternly at Donald because _ had nearly run over the child in the street.,Neil,Donald,B
+pr_en_009610,John replaced all the halogen bulbs with LED bulbs because the _ consume less energy.,halogen bulbs,LED bulbs,B
+pr_en_009627,The board broke in half when shot by the arrow because the _ was strong.,board,arrow,B
+pr_en_009628,The board broke in half when shot by the arrow because the _ was weak.,board,arrow,A
+pr_en_009637,Cynthia was given a medical diagnosis by Maria at an appointment. _ was the patient.,Cynthia,Maria,A
+pr_en_009664,"Because Joel was very lonely, he sought to hang out with Logan. _ was no longer lonely.",Joel,Logan,A
+pr_en_009670,"John wanted to travel to travel to Australia by ship but he had little time, so he used the train because the _ is slower.",train,ship,B
+pr_en_009672,"Kenneth accidentally shrunk the sweater belonging to Eric, so _ demanded to be paid for a new one.",Kenneth,Eric,B
+pr_en_009676,"Robert had glowing skin, while Nelson had dull, dry skin, because _ never used an exfoliating scrub.",Robert,Nelson,B
+pr_en_009677,Amy wanted to set a coyote trap but Samantha insisted not to. _ was obsessed with wild animals and wanted them healthy.,Amy,Samantha,B
+pr_en_009684,William went to Justin's office to surprise him with a painting one day but the door was locked. _ was away.,William,Justin,B
+pr_en_009697,"Emily asked Rebecca what time the dress store closes in the mall, but  _  had forgotten.",Emily,Rebecca,B
+pr_en_009704,"William wiped all of the saliva off of Nelson's chin, because _ was an invalid.",William,Nelson,B
+pr_en_009705,"Kayla belonged to an important group unlike Jennifer, since _ was a very popular person.",Kayla,Jennifer,A
+pr_en_009708,"She used a soft touch when handling the sheets, but not the pillow cases, because the _ were tough.",sheets,pillow cases,B
+pr_en_009719,Brian gave Matthew lemons to use in the pie recipe because _ had recently asked for some.,Brian,Matthew,B
+pr_en_009733,The broomsticks worked a lot better than the mops that I had because the _ were modern.,broomsticks,mops,A
+pr_en_009736,"The CEO of the company replaced the lunch room with a game room for employees, the _ was old.",lunch room,game room,A
+pr_en_009738,"Johnathan wanted to treat his blisters on his legs, so he used some ointment and aspirin, but the _ was addictive.",ointment,aspirin,B
+pr_en_009752,"With his rifle he could shoot the jar but not the bottle , although the _ was a harder target .",jar,bottle,A
+pr_en_009754,"The teacher stated that Craig didn't understand the lessons like Benjamin did, since _ ignored them.",Craig,Benjamin,A
+pr_en_009758,Felicia liked to take a supplement containing cranberry but Angela did not because _ was very indifferent of their health.,Felicia,Angela,B
+pr_en_009771,Mary missed many more days at work than Angela because _ suffered from physical exhaustion.,Mary,Angela,A
+pr_en_009788,"The barn made a good home for the horse, much better than the pen, as the _ was more comfortable for him.",barn,pen,A
+pr_en_009793,"His alarm was a lot worse than the radio, because the _ made a horrible sound.",alarm,radio,A
+pr_en_009812,"Donald never eats bacon, but it is Robert's favorite food, so _ is a vegetarian.",Donald,Robert,A
+pr_en_009818,"Ellie liked playing basketball on the court but not at home in her driveway, because the _ was sloped.",driveway,court,A
+pr_en_009826,In tense situations Jeffrey did not scare easily but Jason did because _ was very brave.,Jeffrey,Jason,A
+pr_en_009837,The chef tried to store the food inside the basket but the _ was too large.,food,basket,A
+pr_en_009838,The chef tried to store the food inside the basket but the _ was too small.,food,basket,B
+pr_en_009843,"Growing the tomatoes proved easier, than growing the potatoes. The _ must be better suited to the climate.",tomatoes,potatoes,A
+pr_en_009870,Samuel has hard time to detach from family and friends but Brett has no problem as _ is needy.,Samuel,Brett,A
+pr_en_009884,I was concerned with the youthful look of my skin and choose to go with cream over Botox because the _ is topical.,Botox,cream,B
+pr_en_009890,The student tried to put the food onto the tray but the _ was too small.,tray,food,A
+pr_en_009898,"Knowing his trauma history Derrick was not surprised with the fact Kevin was diagnosed with borderline personality disorder, luckily _ seems serene.",Derrick,Kevin,B
+pr_en_009899,I used the toaster and oven to cook dinner.  I tried to clean the _ but it was too small.,toaster,oven,A
+pr_en_009918,"Betty was afraid to get in the water, so Christine helped her. _ felt helpful.",Betty,Christine,B
+pr_en_009921,Rebecca paid for Emily's dinner that night because _ was the only one that forgot to bring her purse with her.,Rebecca,Emily,B
+pr_en_009948,Natalie did not go to a prestigious private school but Angela did because _ had parents who made a lot of money.,Natalie,Angela,B
+pr_en_009950,The woman switched from a medicated cream to a gel to treat her acne because the _ burned her skin.,cream,gel,A
+pr_en_009952,I definitely preferred the bowls to the plates because the _ could hold more food.,bowls,plates,A
+pr_en_009973,"Eric gave Craig ideas for writing original twin sentences, as _ had a seemingly limited imagination.",Eric,Craig,B
+pr_en_009985,Emily loved swimming in a pool while Rebecca preferred to swim in the ocean. _ came home smelling of chlorine.,Emily,Rebecca,A
+pr_en_010010,Megan shoveled the hay from the horse stall with no help from Laura because _ was hardworking.,Megan,Laura,A
+pr_en_010038,"He played his saxophone not in the studio but in the lobby, as the _ had a lively sound for the instrument.",studio,lobby,B
+pr_en_010039,Jeffrey doesn't believe in using the microwave like Neil does because _ is more health conscious.,Jeffrey,Neil,A
+pr_en_010045,"Brett is often anxious and  under much stress at work, Samuel has a calm personality. _ constantly worries.",Brett,Samuel,A
+pr_en_010085,"Rebecca had a and easier time skiing when Angela guided her, as _ was very unsure of herself on the trails.",Rebecca,Angela,A
+pr_en_010086,"Rebecca had a and easier time skiing when Angela guided her, as _ was very confident of herself on the trails.",Rebecca,Angela,B
+pr_en_010089,Katrina was a shoe fanatic but Carrie was not. _ had 10 pairs of shoes.,Katrina,Carrie,B
+pr_en_010097,Nick was preparing for the job interview and took out the suit but didn't use the jacket because the _ was professional.,suit,jacket,A
+pr_en_010102,"The house needed redecorating, which Tanya was much better at than Angela, since _ was much messier with paint.",Tanya,Angela,B
+pr_en_010117,"Maria was not afraid of heights but Amy was, so _ always took the bottom bunk bed.",Maria,Amy,B
+pr_en_010133,"Matthew was being prissy to Kevin, so _ was the victim of all the nasty drama.",Matthew,Kevin,B
+pr_en_010154,"The variety of cars that Katrina had compared to Elena was amazing, and it was because _ is rich.",Katrina,Elena,A
+pr_en_010169,"Jessica was suspended from school while Maria was praised, because _ cheated on a test.",Jessica,Maria,A
+pr_en_010174,"John and Jim's bodies were unable to get rid of the parasites, because the _ were so strong.",bodies,parasites,B
+pr_en_010180,"Samantha loves to climb trees, while Megan is at the office, so _ is an adult.",Samantha,Megan,B
+pr_en_010193,The car is not able to make it up the mountain because the _ is too steep.,mountain,car,A
+pr_en_010195,"Cynthia went to the store while Sarah went to work, and _ spent the next couple hours working on spreadsheets..",Cynthia,Sarah,B
+pr_en_010196,"Cynthia went to the store while Sarah went to work, and _ spent the next couple hours shopping.",Cynthia,Sarah,A
+pr_en_010231,"Eric was looking through the old temple and found a tomb with Matthew, completely wrapped in bandages, get up and start chasing them. The explorer was _ .",Eric,Matthew,A

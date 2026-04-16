@@ -1,0 +1,502 @@
+item_id,premise,hypothesis,gold_label
+ps_vi_000010,Có rất nhiều điều bạn có thể nói mà tôi sẽ chỉ bỏ qua điều đó thôi.,Tôi muốn nói với bạn tất cả mọi thứ tôi biết về điều đó!,C
+ps_vi_000022,"Và tôi đã đặt uh, năm sự tách rời khỏi U2.",Tôi đã xử lý U2.,E
+ps_vi_000049,"Cô ấy nói chỉ có mình cô ấy là rơi nước mắt và cô ấy nói là, sau đó cô ấy nói rằng Joe xuất hiện trên hiên nhà.","Khi cô nói với anh ấy đi lên hiên nhà, đôi mắt cô đã ngấn lệ.",E
+ps_vi_000063,Họ đã luyện tập trong bộ com lê đầy áp lực và mất một thời gian nếu bạn mặc bộ quần áo đầy áp lực.,Chúng tôi có thể giúp bạn luyện tập để mặc bộ com lê áp lực vào cuối ngày.,C
+ps_vi_000084,"Vậy nên, tôi không có bất cứ câu chuyện cụ thể nào.",Có rất nhiều cửa hàng.,N
+ps_vi_000101,"Họ nói, Chúng tôi đang trả tiền cho nơi bạn ở.",Họ trả tiền nhà cho tôi và các anh chị em của tôi.,N
+ps_vi_000104,"Vâng, tất nhiên Tổng thống Kennedy đã phong tỏa Cuba ngày hôm sau và các tàu của chúng tôi đã chặn một con tàu của Nga đang đứng ngay bên ngoài ranh giới với Cuba và họ đã tìm thấy tên lửa ở đó.",Họ không dừng tàu vì họ không muốn xung đột.,C
+ps_vi_000113,Tôi không có thời gian để tham gia tất cả.,Tôi đã vào đó đúng giờ.,C
+ps_vi_000116,"Và, ừ, một trong những công việc của tôi vào thời điểm đó là huấn luyện các cá nhân cách đặt dù trên nút kích hoạt vũ khí hạt nhân, ừ, để tự phát nổ bom nguyên tử.",Cò kích nổ quả bom khi nó bị kéo.,E
+ps_vi_000119,"Bà tôi thường kể cho tôi nghe rất nhiều câu chuyện khác nhau về những năm trưởng thành của bà và, uh, đặc biệt là, uh, bà thường nói về gia đình của mình, và nó như thế nào trong những thời gian đó.",Bà tôi luôn từ chối nói về bà,C
+ps_vi_000142,Đó là một tâm trạng tuyệt vời.,Tâm trạng của cô ấy hoàn toàn nhất quán.,C
+ps_vi_000148,"Họ phải trải qua qua một số buồng áp lực, uh, thậm chí ngay trước khi họ được bắt đầu bay chiếc U2 hoặc bay với bộ đồ chịu áp lực.",Hầu hết mọi người trượt bài kiểm tra và không bao giờ được bay U2.,N
+ps_vi_000159,Nếu có bất cứ điều gì tôi có thể làm.,Tôi nghĩ tôi có thể làm gì đó để cứu anh ta.,N
+ps_vi_000161,"Cô ghét điều đó, và cô thường nói với chị mình mỗi ngày, cô nói rằng, Chị đang làm sai.",Cô khẳng định rõ rằng em gái mình không thể làm điều gì cho nên hồn.,N
+ps_vi_000167,"Ồ tôi tới đây sáng nay và ừm, tôi quên mất bằng cách nào, tôi nghĩ chắc tôi đã hỏi một câu hỏi gì đó và anh ta tới đây hoặc là, điều gì đó tương tự.","Hôm nay tôi đến phòng tập thể hình, anh ấy đến sau và nói xin chào.",N
+ps_vi_000170,Chúng tôi không biết họ sẽ đi đâu.,Chúng tôi không biết người ta đang đi đâu.,E
+ps_vi_000189,Mọi người đều uống rượu sâm banh và một số người không uống nó vì vậy những gì còn lại cho trẻ em uống vì vậy chúng tôi đã đi xung quanh uống tất cả rượu sâm banh này.,Cả buổi tiệc khát khô cả cổ và không phục vụ rượu.,C
+ps_vi_000211,Và họ không thể ở lại khu vực Augusta bởi vì mọi người biết rằng họ đã cố gắng làm một điều cấm kỵ và cố gắng biến địa vị của mình thành người da trắng.,Mọi người không biết họ không phải người da trắng.,C
+ps_vi_000212,Và họ không thể ở lại khu vực Augusta bởi vì mọi người biết rằng họ đã cố gắng làm một điều cấm kỵ và cố gắng biến địa vị của mình thành người da trắng.,Mọi người đều biết rằng họ là người Mỹ gốc Phi.,N
+ps_vi_000221,"Dù sao đi nữa, tôi nghĩ tôi đã nói chuyện với Ramona một lần nữa.",Tôi đã nói chuyện với Ramona vào dịp khác.,E
+ps_vi_000223,"Anh ta là nạn nhân duy nhất của cuộc khủng hoảng Cuba, và uh, anh ta đã chụp ảnh và bay thẳng đến Không quân Andrews ở Washington.",10000 người đã thiệt mạng trong cuộc khủng hoảng Cuba.,C
+ps_vi_000230,"Sau đó, tôi đã hiểu ra và tôi cảm thấy tuyệt, tôi phải làm gì với nó?",Tôi không biết tôi phải sử dụng nó cho việc gì.,E
+ps_vi_000236,"Và tôi đã đến, tôi đã đến Washington D.C. và tôi đã không đi thẳng đến, uh, chỗ đó, uh, nơi họ bảo tôi đến trong các đơn hàng.",Tôi đến DC để gặp người hướng dẫn của tôi.,N
+ps_vi_000237,"Và tôi đã đến, tôi đã đến Washington D.C. và tôi đã không đi thẳng đến, uh, chỗ đó, uh, nơi họ bảo tôi đến trong các đơn hàng.",Tôi đã đến thủ đô của đất nước.,E
+ps_vi_000238,Cô ta là một người da đen.,Cô ấy sở hữu làn da cực kỳ đen.,C
+ps_vi_000255,"OK, bạn có nghe thấy tôi nói không?",Tôi biết bạn không thể nghe thấy tôi.,C
+ps_vi_000268,"Và tôi đã như thế, tôi gần xong rồi.",Tôi nói với anh ta tôi sẽ hoàn thành trong 10 phút.,N
+ps_vi_000281,"Chị của cô ấy có thể đỗ điểm cao, và thực tế, cô ấy đã đỗ điểm cao.",Chị gái của cô ấy thường được cho là người da trắng.,E
+ps_vi_000301,Miễn là nó không bao giờ được nói ra--,Anh ta nói rằng anh ta đã nói mọi thứ tôi cần biết,C
+ps_vi_000304,"Vì vậy, ông, chúng tôi sống trong khu vực này.",Nhà của chúng tôi đã ở đây.,E
+ps_vi_000307,Và anh ấy thích nói nhanh; anh ấy đang dùng điện thoại di động.,Anh ấy đang nói chậm nhất có thể.,C
+ps_vi_000329,Chồng của chị gái bạn cũng là người da trắng à?,Chị gái của cô ấy đã kết hôn,E
+ps_vi_000330,Chồng của chị gái bạn cũng là người da trắng à?,Em gái cô ấy độc thân.,C
+ps_vi_000337,"Tôi đã đi đến nhà em gái tôi vốn sống ở đó. Chồng cô ấy đang phục vụ trong quân đội và làm việc với bên Tình báo, và tôi đã đến nhà họ.",Anh họ tôi đã ở trong quân đội.,N
+ps_vi_000358,"Tôi đã bắt đầu ngay lập tức, uh, uh, luyện tập từ hai anh bạn ở chỗ đó.",Tôi chưa bao giờ được đào tạo vì vậy tôi chỉ tìm ra nó khi tôi đi tới cùng.,C
+ps_vi_000371,Chúng tôi sẽ đi vào đó.,Chúng ta sẽ vào đó.,E
+ps_vi_000373,"Và nó giống như việc bà ấy đã từ chối mình là ai, theo vài cách, bạn biết đấy, cách bà ấy đối xử với những đứa cháu khác.",Cô đã đối xử với mọi người như nhau.,C
+ps_vi_000404,Chồng của chị/em gái cô ấy cũng da trắng.,Anh chồng cô ấy là người Thụy Điển.,N
+ps_vi_000409,"Và vì thế, chúng tôi đã chuyển tới Las Vegas, NV và tôi đã báo cáo, giống như tôi đã làm ở Washington, đến một địa chỉ cố định ở trung tâm Las Vegas.",Tôi chưa bao giờ đến Los Vegas trong cuộc đời tôi.,C
+ps_vi_000412,"Ah, lớp bốn rất vui.",Tôi ghét mọi điều về trường học!,C
+ps_vi_000421,Và họ chuyển đến Mallard Creek ở Charlotte.,Họ xây một ngôi nhà ở Mallard Creek.,N
+ps_vi_000423,Và họ chuyển đến Mallard Creek ở Charlotte.,Sau đó họ sống ở Mallard Creek.,E
+ps_vi_000427,"Và tôi um, tôi không biết anh ta muốn biết bao nhiêu chi tiết.",Tôi không biết anh ấy có muốn nhận thông tin về ngày khởi hành không.,N
+ps_vi_000440,"Cuối năm 1962, tôi nhận được đơn đặt hàng đến Washington, D.C.",Quân đội đã gửi tôi đến DC ngay lập tức.,N
+ps_vi_000445,"Dù sao, chúng tôi đã triển khai và bây giờ tôi có thể nói, bởi vì điều này, rằng, chúng tôi đã triển khai đến Kadina, Okinawa và vào năm 1968.",Chúng tôi đã triển khai lực lượng của mình vào năm 1968.,E
+ps_vi_000447,"Dù sao, chúng tôi đã triển khai và bây giờ tôi có thể nói, bởi vì điều này, rằng, chúng tôi đã triển khai đến Kadina, Okinawa và vào năm 1968.",Chúng tôi đã gửi quân đến Nhật Bản vào tháng 6 năm 1968.,N
+ps_vi_000489,"Chúng tôi sống nhờ vào, um, nhờ vào khu 85 ở Mallard Creek, nơi mà hiện tại là khu 485, vì gần như mười năm qua, chúng tôi phải rời đi vì khu 485.",Chúng tôi chỉ sống ở đó hai tuần.,C
+ps_vi_000494,Ông ta đủ tuổi để làm bố tôi.,Anh ấy trẻ hơn tôi nhiều.,C
+ps_vi_000511,ôi trời bạn có một vấn đề dây dợ lạ lùng ở đó,Tôi chưa bao giờ nhìn thấy những vấn đề về đường dây như thế này trước đó.,N
+ps_vi_000518,"đúng, đó chính xác là ý nghĩ của tôi, tại thời điểm bạn tự trang bị đầy đủ sau đó phải mướt mải làm việc đó thì bạn có thể  tham gia Club med có tất cả mọi thứ bao gồm cả kỳ nghỉ",Tốn chi phí rất nhiều cho trang phục của chính mình.,E
+ps_vi_000527,những người có thể làm việc bất cứ lúc nào hoặc quyết định của họ có thể bị che khuất nếu họ phải đưa ra quyết định,"Yeah, mọi người có thể sẽ không đói bụng.",N
+ps_vi_000536,đó là một điều tốt tôi đã không nghĩ về điều đó,Đó là một điểm hay.,E
+ps_vi_000563,ừ hừm đúng vậy nó thực là nó không thực sự ừm phù hợp,Tôi nghĩ rằng bạn có thể chính xác về tính nhất quán của nó.,N
+ps_vi_000565,Tôi đang cố gắng để trụ lại,Tôi đang cố gắng bám trụ.,E
+ps_vi_000572,"bạn nói bạn có con cái, vậy chúng bao nhiêu tuổi rồi",Tôi rất tiếc khi biết rằng bạn không thể có con.,C
+ps_vi_000584,và việc này cũng sẽ khiến cho người ra nén rác của mình ngày càng uh uh thêm và việc giới hạn thể tích có thể giúp tiến gần hơn một chút đến vấn đề thực sự so với việc giới hạn trọng lượng,Mọi người không cần phải lo lắng về số lượng rác miễn là họ vứt bỏ nó đúng cách.,C
+ps_vi_000591,bạn biết đặc biệt là làm cho các đường nối và những thứ như vậy bạn biết nó có một kết thúc chuyên nghiệp trên chúng,Tốn một khoảng thời gian lâu để họ hoàn tất đường nối.,N
+ps_vi_000607,vâng chúc mùa hè,Tôi hy vọng bạn có một kỳ nghỉ hè khốn khổ.,C
+ps_vi_000615,vâng tôi nhớ ông bà của tôi và tôi trước đây thường hay ra đường và nhặt lon bia và uh,Chúng tôi thường đi dự tiệc tại nhà của bố tôi.,C
+ps_vi_000623,"Ừm không, tôi sống dựa vào đại học",Tôi sống cách kí túc xá một vài toà nhà.,N
+ps_vi_000633,"nó đến từ Wills Point, tôi không biết bạn có biết không",Nó đến từ Cambridge.,C
+ps_vi_000635,"ý tôi là đồng hồ đeo tay, những đôi giày và, vâng những cây bụi đều chuyển sang màu trắng",Thật khó chịu khi nó che đi giày của tôi.,N
+ps_vi_000659,uh mỗi khi bạn mua một món đồ đặc biệt là một món đắt tiền thứ mà bạn trả tiền và bạn luôn phải trả thêm khoảng mười phần trăm tiền thuế,Bạn luôn phải thêm mười phần trăm thuế vào bất cứ thứ gì bạn mua khi bạn tính chi phí.,E
+ps_vi_000661,đó là một chút bất thường nhưng được thực hiện thông qua sự bảo trợ,Nó không hẳn là thông thường.,E
+ps_vi_000666,đó là điều cô ta lên kế hoạch muốn làm do đó tôi hi vọng là,Cô ấy không có kế hoạch để làm điều đó.,C
+ps_vi_000671,"golly này, bạn biết anh ta thậm chí không tuân theo bất kỳ quy tắc nào và tôi và thậm chí không thèm quan tâm tất nhiên họ đá tống cổ anh ta ra",Anh ấy đã tuân thủ mọi luật lệ và vẫn bị đuổi ra.,C
+ps_vi_000682,ồ bản thân tôi cũng thấy thích bầu không khí này,Tôi thực sự thích cảm giác bản thân mình.,E
+ps_vi_000688,con thứ hai mà cô ấy có là một trong những chú chó từ đống rác và ừ là con đực từng có vấn đề về răng,Cô ấy chẳng có bất kỳ con chó nào cả.,C
+ps_vi_000698,bạn đã đến các viện bảo tàng ở châu âu chưa,Bạn đã tham quan bất kỳ viện bảo tàng nào ở Canada chưa?,C
+ps_vi_000710,và sau đó điều thứ hai tôi có thể xem là những gì họ có thể mua được,Tôi không quan tâm về những gì họ có thể mua được.,C
+ps_vi_000722,ném một quảng cáo Coke vào đó,Thêm một chai nước giải khát.,N
+ps_vi_000748,nó chẳng mang đến điều gì ngoài sự hỗn loạn,Hỗn loạn là tất cả những gì bạn nhận được từ nó.,E
+ps_vi_000749,nó chẳng mang đến điều gì ngoài sự hỗn loạn,Nó rất bình tĩnh và không gây ra bất kỳ vấn đề gì.,C
+ps_vi_000763,nó có lẽ nhiều hơn bởi vì tôi chỉ thích vùng phủ sóng hơn là vì tôi không có thời gian để đọc bài báo mà bạn biết,Tôi thích mức độ phù hợp bởi vì tôi không bao giờ có thời gian để ngồi và đọc bài báo.,E
+ps_vi_000764,nó có lẽ nhiều hơn bởi vì tôi chỉ thích vùng phủ sóng hơn là vì tôi không có thời gian để đọc bài báo mà bạn biết,Tôi dành ít nhất một giờ mỗi ngày đọc báo chỉ để tôi không phải xem nó.,C
+ps_vi_000813,"vâng, họ tập trung quá nhanh, đám đông cũng có một chút sang trọng hơn so với đám đông thành thị",Quần áo của họ rất hợp thời trang.,N
+ps_vi_000824,"vâng đúng vậy, nhưng ý của tôi là sẽ còn hơn như vậy nếu bạn bỏ học trung học","Không, điều đó hoàn toàn không đúng.",C
+ps_vi_000835,vâng tôi thực sự đã có những ca sĩ lớn tuổi như vậy hoặc những ca sĩ lớn tuổi hơn nữa và những người chị lớn tuổi hơn,Tất cả em gái của tôi đều nhỏ hơn tôi.,C
+ps_vi_000841,"uh Dances With Wolves, chúng tôi vừa thấy những thứ mà tôi đã từng nhìn thấy trong Silence of the Lambs",Tôi đã xem Dances with Wolves.,E
+ps_vi_000857,phải bạn biết đấy thường thì có uh tôi có một trang trại cách đây một trăm dặm về phía đông ở Đông Texas,Tôi có một cánh đồng ở Texas.,E
+ps_vi_000865,và uh tôi nghĩ rằng chúng tôi sẽ được uh ngang bằng với họ trong tiền lương và công nhận trong dài hạn,Hai lựa chọn nên trả hơn giá thị trường trung bình trong thập kỉ sau.,N
+ps_vi_000930,khi tôi dần lớn lên ừm,Đó là một lần tôi là một người già.,C
+ps_vi_000932,"chỗ họ ở không có tuyết, họ không biết tuyết là gì nên khi có tuyết rơi trên mặt đất Amarillo họ đã phát hoảng lênnơi đó cũng ở gần đây, bạn đã ở Raleigh bao lâu rồi",Mọi người ở Amarillo đi trú khi có tuyết rơi trên mặt đất.,E
+ps_vi_000935,"Chà chà, cũng không trễ lắm.",Nó thậm chí không xảy ra muộn.,E
+ps_vi_000938,huh-uh uh không xuống dốc chúng ta có bầu trời xuyên quốc gia và,Chúng tôi có năm nhóm trượt tuyết xuyên quốc gia.,N
+ps_vi_000941,"do đó tôi không biết, ước gì tôi đã làm",Tôi thực sự muốn tôi biết về điều đó.,E
+ps_vi_000950,"ừm, tôi sống tại Texas và chúng tôi có một giáo viên đã chết vì AIDS",Một giáo viên Texas đã chiến đấu với AIDS trong một thập kỷ nhưng cuối cùng đã chết năm ngoái.,N
+ps_vi_000962,"và sau đó nếu bạn cố gắng để có được nó bên ngoài của công ty, bạn sẽ phải trả một cánh tay và một cái chân",Nếu bạn ra ngoài tập đoàn chỉ một chút bạn có thể thực sự tiết kiệm nhiều tiền.,C
+ps_vi_000963,"và sau đó nếu bạn cố gắng để có được nó bên ngoài của công ty, bạn sẽ phải trả một cánh tay và một cái chân","Nếu bạn đã vượt ra ngoài công ty, bạn sẽ mất rất nhiều tiền.",E
+ps_vi_000971,tất cả những điều đó có rất nhiều thứ như Texas Instruments làm cho ngay cả những nhân viên không biết họ làm cho hầu hết các phần,Hãng Texas Instruments chế những quả bom tối mật.,N
+ps_vi_000980,"Vâng, đó là một điều tôi không hiểu là là những thứ như bán công nghệ và thậm chí cả phần cứng quân sự cho chính phủ nước ngoài và sau đó tha thứ cho nợ của họ",Nó làm cho toàn bộ ý nghĩa để bán bí mật cho các nước khác cho không có gì trong trở lại.,C
+ps_vi_000989,ừ thì khoa học máy tính và khoa học nhận thức,Khoa học môi trường nữa.,N
+ps_vi_000995,"Bạn biết đó, họ đã đi, sẽ không có nhiều hoạt động cho bạn","Một khi họ rời đi, các hoạt động cũng sẽ thế.",E
+ps_vi_001001,nhưng ngoài đó tôi hy vọng nó vẫn còn ấm áp không quá lạnh có lẽ cũng có một chút tuyết vào đêm Giáng sinh hoặc một cái gì đó tốt đẹp nhưng nó không nhìn tốt,"Tôi hy vọng trời không quá lạnh và đôi chút ấm áp, ngoại trừ một vài trận tuyết rơi vào đêm Giáng sinh.",E
+ps_vi_001019,"Với bước nhảy vọt đó, một tinh thể thông thường không thể mã hóa nhiều thông tin.",Các tinh thể thông thường không hữu ích cho việc mã hóa thông tin.,E
+ps_vi_001035,Tôi có nên khen anh ấy nữa không?,Tôi có nên ca ngợi anh ấy nhiều hơn cho màn trình diễn piano của anh ấy không?,N
+ps_vi_001037,Các lý thuyết mạng spin có thể được xây dựng theo các chiều kích hướng.,Các mạng xoay rất hữu ích cho công nghệ dự trữ dữ liệu.,N
+ps_vi_001046,"Ở trạng thái hỗn loạn, nước biển xanh biếc lấp lánh đang lan ra.",Biển đầy những con cá nhỏ lao vào thuyền.,N
+ps_vi_001074,"Phần lớn các nghiên cứu trên Quinceaeeras cho thấy rằng các gia đình muốn duy trì truyền thống lịch sử văn hóa, và lễ kỷ niệm sinh nhật thứ mười lăm của một cô con gái là một cách để duy trì nền văn hóa đó gắn kết với di sản Mỹ Latinh.",Kỷ niệm sinh nhật thứ mười lăm của một cô con gái là một cách để tiếp tục mối liên hệ văn hóa.,E
+ps_vi_001093,"Trong một nền kinh tế với sự tái đầu tư, chuyện gì sẽ xảy ra nếu chúng ta tận dụng lợi thế trao đổi và tái đầu tư bất kì khoản dư nào để có thể tạo nên nhiều táo và dứa hơn lượng chúng ta có ban đầu?",Chúng ta có buôn bán rất nhiều trong nền kinh tế.,E
+ps_vi_001112,"Đây là một sự chuyển dịch đơn giản từ trạng thái cân bằng, và một thiết bị đơn giản, tấm mica, sẽ được thực hiện để đo độ rung, do đó, đây dành cho công việc cơ khí.",Tấm mica là một thiết bị phức tạp.,C
+ps_vi_001119,Giá trị nằm ở đâu trong thế giới của sự thật?,Chúng tôi từ chối giải quyết bất cứ điều gì khác hơn là thực tế.,N
+ps_vi_001166,Những thứ khác không làm cho người tiêu dùng đủ hạnh phúc.,Những người còn lại đang làm việc rất tồi.,E
+ps_vi_001178,"Tước đoạt ưu tiên và quyền miễn trừ của công dân như một giá trị cốt lõi của trật tự mới, như Black làm, tạo ra những vấn đề của riêng nó liên quan tới tính công bằng của pháp luật.",Công dân có thể có đặc quyền của họ.,E
+ps_vi_001185,"Trong một số biến thể, một cô gái trẻ đặc biệt vượt qua niềm tin tôn giáo bằng cách nhấn mạnh vào một buổi khiêu vũ vào thứ Sáu Tuần Thánh, một ngày thánh tôn giáo, và một ngày cầu nguyện tôn kính trong các gia đình Công giáo Chicano.",Cha mẹ của các cô gái đặt nền móng cho cô nhảy ở Good Friday.,N
+ps_vi_001202,"Anh ta bảo đảm rằng lý tưởng hóa Boolean có vấn đề của nó, nhưng thấy rằng trong nhiều trường hợp, phản ứng của một gen không tuyến tính với các đầu vào của nó.",Các gen luôn luôn tuyến tính với các đầu vào của chúng.,C
+ps_vi_001218,"Vì vậy, tôi giả định rằng P là một chất tăng cường allosteric của phản ứng.","Khi P được thêm vào phản ứng, phản ứng dừng hẳn.",C
+ps_vi_001221,Các giáo sĩ Do Thái không bị ấn tượng bởi những dấu hiệu này.,Các giáo sĩ Do Thái đã không nhận ra được các dấu hiệu.,C
+ps_vi_001223,Cuối thế kỷ thứ mười tám thực sự là một thời gian đơn giản kỳ diệu.,Cuối thế kỷ thứ mười tám là một thời gian của hòa bình.,N
+ps_vi_001227,Nhiệm vụ trước mắt là kết thúc chiến tranh và tái thống nhất đất nước.,Chúng ta cần phải chắc chắn rằng cuộc chiến diễn ra trong nhiều thời đại.,C
+ps_vi_001236,"Ngồi một mình như một thẩm phán chính, Chánh án Taney giải thích điều khoản hiến pháp để yêu cầu sự cho phép của quốc hội để đình chỉ lệnh.",Taney nói Quốc hội có thể sẽ trì hoãn pháp lệnh.,E
+ps_vi_001243,"Và, tất nhiên, những di tích vĩ đại cho sự hiểu biết về tự do của thế kỷ 18 là Hiến pháp và Tuyên ngôn Nhân quyền.",Không ai trong thế kỷ thứ mười tám hiểu tự do.,C
+ps_vi_001247,1 Con người làm tốt hơn máy tính việc điều chỉnh sao cho vải thẳng hàng sử dụng máy may và việc bù đắp các lỗi may và cắt trước đó.,Con người làm tốt hơn máy tính trong một số hàng thủ công may mặc.,E
+ps_vi_001249,Trẻ em sẽ gõ cửa nhà hàng xóm của họ và,Những đứa trẻ sẽ đi đến những nhà hàng xóm.,E
+ps_vi_001252,"Triết lý pháp lý của Liên minh chiến thắng, cả về chất và phong cách.","Ngay thậm chí có chiến thắng, triết lí hợp pháp vẫn sai về mặt đạo đức.",N
+ps_vi_001254,"Triết lý pháp lý của Liên minh chiến thắng, cả về chất và phong cách.",Triết lý pháp lý đã chiến thắng cả về mặt chất và phong cách.,E
+ps_vi_001262,"C. P. Snow đã viết về hai nền văn hóa, khoa học và nhân văn, không bao giờ trộn lẫn.",Hai nền văn hóa là khoa học và nhân văn.,E
+ps_vi_001283,"Về trực giác, khó có khả năng một hành tinh như vậy thuộc các phức thể không tồn tại sự sống lại có thể tự hình thành kể từ vụ nổ lớn big bang.",Có vẻ như các sinh vật không ở đây một cách ngẫu nhiên.,E
+ps_vi_001287,Vậy nên chúng ta đang bước vào một kỷ nguyên hoàn toàn mới.,Chúng tôi đang tạo ra một sản phẩm mới.,N
+ps_vi_001298,"Đây là cách chúng ta sống hôm nay, Gehry dường như đang nói, tại sao không thích nó?",Gehry là một người hạnh phúc.,N
+ps_vi_001304,Năng lượng của toàn bộ hệ thống sẽ bị giảm xuống nếu lưỡng cực đảo hướng để đến gần hơn với một hoặc những trạng thái năng lượng mặt đất khác.,Có thể cho các lưỡng cực thay đổi hướng của chúng.,E
+ps_vi_001318,Lego World có thể xây dựng các công cụ máy để xây dựng các đối tượng khác bao gồm các công cụ khác.,Lego World chỉ có thể in các nhân vật hoạt hình trên giấy.,C
+ps_vi_001329,Những thay đổi về giá trị của các spin trên các cạnh làm thay đổi diện tích và thể tích của tứ diện có thể được coi là biến dạng hình học sao cho nó cong theo các kiểu khác nhau.,Khối lượng tứ diện luôn giống nhau.,C
+ps_vi_001342,96 Và cha mẹ và huấn luyện viên chỉ trích chứ không khuyến khích và đừng để người chơi quên đi sự thất bại khiến mọi người trẻ lo lắng.,Các huấn luyện viên không để cho người chơi quên đi thất bại.,C
+ps_vi_001346,"Chúng tôi đã quan sát một cách khéo léo các bóng khác nhau của cỏ nâu, cây cối, đất, bụi, chim ưng, chuột và đã đồng ý.)",Có rất nhiều màu sắc khác nhau trên mặt đất.,N
+ps_vi_001360,"Khi được sử dụng trong các thiết bị riêng, phản ứng này tạo nhiệt và, khi có quá nhiều chất tam phân so với tỷ lệ cân bằng giữa phân tử lục phân và chất tam phân, sẽ chảy và tỏa nhiệt để cân bằng thông qua tổng hợp phân tử lục phân.",Nếu việc này bất khả xâm phạm thì cuối cùng sẽ đạt đến trạng thái cân bằng.,E
+ps_vi_001375,"Do đó, có một số, một vài, hoặc vô số các chương trình máy tính.",Cái gì mà vừa đếm được và không đếm được,E
+ps_vi_001387,"Thật vậy, những đám mây phân tử lạnh khổng lồ trong các thiên hà, đạt mức độ nhiệt độ tuyệt đối, là hỗn hợp phức tạp của các loại phân tử khác nhau, nhiều trong số đó chứa carbon, chúng cũng là nơi sinh ra các ngôi sao.",Các đám mây phân tử rất nóng.,N
+ps_vi_001424,"Thật vậy, một trong những tính năng thú vị của đồ thị công nghệ là chúng tạo thành khung khái niệm thích hợp để xem xét quy trình và đồng thời thiết kế sản phẩm.",Đồ thị cho bạn thấy bộ khung hợp lý.,E
+ps_vi_001436,"Các thành viên Mandala của vô hạn mandalas chỉ khác nhau trong biên độ cơ bản, do đó luật, áp dụng cho mỗi thành viên Mandala.",Thành viên Mandala chết vì bị đầu độc.,N
+ps_vi_001441,"Nếu vậy, chỉ có lựa chọn tự nhiên mới có thể điều chỉnh nó.","Nếu vậy, thì nó được tạo ra theo cách đó bởi Đức Chúa Trời.",C
+ps_vi_001443,"Nếu vậy, chỉ có lựa chọn tự nhiên mới có thể điều chỉnh nó.",Lựa chọn tự nhiên có thể đã biến nó thành điều đó.,E
+ps_vi_001469,Các quyền dành cho những người bị nghi ngờ phạm tội.,Mọi nghi phạm hình sự đều có quyền có luật sư.,N
+ps_vi_001487,"Cũng trong nhóm này là Bản sửa đổi hai mươi ba, mở rộng quyền bỏ phiếu cho tổng thống và phó tổng thống đến công dân nếu không có đủ điều kiện tại Quận Columbia.",Việc sửa đổi lần thứ 23 cho biết bạn có thể bầu cho tổng thống nếu bạn sống ở thủ đô trừ khi bạn là một kẻ phạm tội.,N
+ps_vi_001489,"Tinh thần chung của sự sửa đổi vẫn tôn trọng sự kiểm soát của nước Mỹ đối với quy trình bầu cử, kể cả với các ban ngành.",Các tiểu bang thay đổi quá trình bầu cử của họ khi họ thấy phù hợp.,N
+ps_vi_001490,"Tinh thần chung của sự sửa đổi vẫn tôn trọng sự kiểm soát của nước Mỹ đối với quy trình bầu cử, kể cả với các ban ngành.",Nước Mỹ không bao giờ thay đổi quy trình bầu cử bởi họ không được phép.,C
+ps_vi_001511,"Nhưng tao không thể quên rằng khi tao phải sống không khác gì một nô lệ trong gia đình chú của mày ở Barbados, mày đã lợi dụng theo theo một cách mà trong đó còn một chút lòng tốt.","Bạn vô cùng tàn nhẫn với tôi, và đối xử với tôi tệ hơn cả bụi bẩn.",C
+ps_vi_001517,"Ở đó, không xa hơn ba dặm, là đất - một bức tường không bằng phẳng của màu xanh lá cây sống động đã lấp đầy chân trời phía tây.",Hòn đảo mà họ đang hướng đến không có người ở.,N
+ps_vi_001536,"Chắc chắn rồi, thế thì, tôi sẽ nói với anh.",Chỉ vì bạn hứa sẽ không lặp lại điều này mà tôi đang nói với bạn.,N
+ps_vi_001537,Tôi đột ngột bình luận về Mary Hoàng gia....,Tôi đã đến qua Royal Mary.,E
+ps_vi_001546,Động cơ của bạn thật xứng đáng và chẳng có gì phải nghi ngờ về điều đó ... lòng biết ơn của bạn đối với anh ấy vì đã mang bạn rời khỏi những người Tây Ban Nha.,"Người Tây Ban Nha đã có bạn, trước khi anh ta đưa bạn từ họ.",E
+ps_vi_001557,Ah! Và cách đó có thể là gì?,Người hỏi đang vội vàng và cần biết ngay con đường để đi.,N
+ps_vi_001562,Tôi không ban sự tín nhiệm của Vua một cách dễ dàng.,Tôi đã suy nghĩ rất nhiều về hoa hồng của nhà vua.,E
+ps_vi_001566,Anh nhận ra rằng anh có thể phải nhanh chóng lui đi.,"Nếu anh ta đã ở cùng một chỗ, anh ta sẽ bị phát hiện",N
+ps_vi_001578,Cái nhíu mày cau mặt của cô ấy.,Có một sự cau có trên mặt cô ta.,E
+ps_vi_001591,Tôi tin rằng hy vọng có thể bắt và treo cổ Captain Blood đã khiến cho chú tôi rời đồn điền Barbados của mình để chấp nhận phó thống đốc Jamaica.,Tôi tin rằng chú tôi muốn thấy Thuyền trưởng Blood chết vì tội ác của mình.,N
+ps_vi_001621,"Cô ấy rất trắng, và cô ấy để mắt đến hai bàn tay gập lại của mình.",Cô ấy buồn bã và cô ấy luôn nhắm mắt lại.,C
+ps_vi_001625,Vậy là họ đã nói bạn nghe về điều đó!,"Vì vậy, họ đã nói với bạn về tình huống khó khăn!",N
+ps_vi_001634,"Không vì cháu gái anh ta, không vì con gái anh ta, không vì mẹ anh ta, liệu anh ta có quên đi mối nợ máu mà anh ta nghĩ do anh ta gây ra không.",Anh ta sẽ từ bỏ máu vì anh ta nếu mẹ anh ta hỏi anh ta.,C
+ps_vi_001680,Đó không phải là mặc cả.,Điều đó không được bao gồm trong thỏa thuận.,E
+ps_vi_001688,"Aye! gầm gừ trong điệp khúc những cướp biển bên dưới, và một hoặc hai người trong số họ đã nói thêm sự khẳng định đó.",Các Buccaneers đã nói lớn khi đưa ra một sự đồng ý.,E
+ps_vi_001695,"Tôi đã giết anh ta, nó là sự thật.",Cuộc sống của người đàn ông đã được tha.,C
+ps_vi_001703,Trạm của bạn ở trên boong tàu vũ khí.,Bạn được đóng quân trên boong súng.,E
+ps_vi_001734,"Tại sao, như tôi vừa nói về uy quyền của anh ta ở đây, người cũng nghĩ như anh rằng đưa Cô Bishop lên tàu sẽ giúp chúng ta an toàn, không phải vì mẹ anh ta thì liệu tên buôn nô lệ bẩn thỉu đó có bỏ qua những gì anh ta gây ra hay không.",Tôi cũng phải lòng Miss Bishop.,N
+ps_vi_001738,Xin giới thiệu Đội trưởng Blood. Giám mục buộc phải làm tỏ ra bình tĩnh nhất có thể.,Thuyền Trưởng Blood gần đây đã được thăng chức lên vị trí của anh ấy bởi vì công việc anh đã làm.,N
+ps_vi_001753,Cuối cùng anh ấy cũng than phiền về nó.,"Cuối cùng, nó đã tạo cho anh ấy một vài phiền não.",E
+ps_vi_001765,Mặc dù chúng tôi đã có một hàng hóa của cháu gái của Giám mục nó sẽ không làm cho anh ta nắm tay anh ta.,Bàn tay của anh luôn bị các cô cháu gái nhà Bishop níu chặt.,C
+ps_vi_001773,Đó là những gì chúng tôi được khuyên.,"Khi được bảo phải làm gì, ban quản lý đã không cho chúng tôi biết bí mật thương mại.",N
+ps_vi_001778,"'nếu sẽ là điều tốt, thì nó sẽ tốt. Trong một khoảnh khắc cô ấy đứng trước anh với hơi thở nhanh, má cô ửng hồng.",Cô dường như không còn chút hơi thở và trông bối rối một lúc.,E
+ps_vi_001786,"Tôi hiểu rồi thưa ngài, rằng ngài vẫn chưa hiểu rõ hoàn cảnh này.","Anh hoàn toàn và khá rõ ràng, hiểu rõ tình hình.",C
+ps_vi_001798,Rõ ràng. Vị lãnh chúa của ông chờ đợi một lúc để trả lời.,Lãnh chúa của anh ta đã trả lời sau một chút thời gian.,E
+ps_vi_001804,"Nhưng rất nhiều người không thể giải quyết theo cách này hay cách khác cho đến khi họ hài lòng với một số câu hỏi, và chủ yếu dựa trên một câu hỏi được lồng tiếng bởi Ogle.",Tất cả các câu hỏi đã được quyết định nhanh chóng và giải pháp nhanh chóng được đưa ra.,C
+ps_vi_001807,"Anh sẽ tự đưa mình vào tay của Giám mục, Pitt cảnh báo anh ta.",Đức Giám mục là một kẻ độc ác không hề có tình thương.,N
+ps_vi_001816,"Nhưng nếu như cô ấy bực mình với giọng nói và lời nói của anh, cô đã bóp nghẹt sự oán giận của mình.",Anh đã cư xử khá khủng khiếp với cô.,N
+ps_vi_001818,"Nhưng nếu như cô ấy bực mình với giọng nói và lời nói của anh, cô đã bóp nghẹt sự oán giận của mình.",Cô yêu những lời mà anh nói với cô.,C
+ps_vi_001837,"Chào buổi sáng, anh ấy nói, và nói thêm là anh ấy đã rất lúng túng, tôi cũng vậy","Xin chào buổi tối, anh ấy tự nói với mình.",C
+ps_vi_001842,"Anh ấy lùi lại, một người đàn ông vô sự, bất lực.",Phản ứng của anh ta cho thấy anh ta bị tổn thương sâu sắc.,N
+ps_vi_001849,"Đó sẽ là tín hiệu để nói dối, Blood nói, trong cùng một giọng nói vô nghĩa; và anh thở dài.",Blood nói rằng sẽ không có bất kỳ dấu hiệu nào được đưa ra và những người khác sẽ phải tự tìm ra nó.,C
+ps_vi_001864,"Cho dù những người hoảng sợ  trong Ogle đã nổi lên, một số họ sẽ có một cái nhìn khác nhau từ Wolverstone mà không hay biết.",Adrian không chắc liệu những người đàn ông hoảng loạn có nhìn thấy những thứ khác với Woverstone không.,N
+ps_vi_001872,Tôi chấp nhận nó như là cách duy nhất để cứu tất cả chúng ta khỏi sự hủy diệt nhất định mà hành động của chính tôi có thể mang lại cho chúng ta.,"Mặc dù vấn đề không phải do bản thân tôi gây ra, tôi có thể giải cứu tất cả các bạn.",C
+ps_vi_001889,"Các mối đe dọa sẽ không phục vụ, Thuyền trưởng.",Thuyền trưởng đưa ra lời đe dọa.,N
+ps_vi_001895,"Nếu ngươi tính chuyện trêu đùa tình cảm của Đức giám mục, ngươi là một đứa đại ngốc, Ogle, hơn cả mức ta nghĩ ngươi có thể ngu ngốc với bất cứ thứ gì trừ chuyện súng ống.",Ogle rất yêu Đức Giám Mục.,N
+ps_vi_001897,"Anh ấy chỉ mối tìm thấy chỉ một cách, và mặc dù nó có thể là với anh ta, anh ta phải lấy nó.",Anh có một khát khao sâu sắc để nắm lấy nó.,C
+ps_vi_001913,"Bạn lấy giọng đó! Bạn dám lấy giọng đó! cô khóc, kinh ngạc bởi sự hung hăng đột ngột của cô.",Cô ấy đã hét lên khá to khiến anh ta ngạc nhiên.,E
+ps_vi_001914,"Bạn lấy giọng đó! Bạn dám lấy giọng đó! cô khóc, kinh ngạc bởi sự hung hăng đột ngột của cô.",Cô hét lên bởi vì người đàn ông được cho là ngu ngốc.,N
+ps_vi_001921,"Nếu bất cứ điều gì xảy ra với bạn, Peter, anh ta nói, khi Máu đang đi qua một bên, Đại tá Bishop đã tốt hơn với chính mình.","Đức Giám mục mang các vết rượu vang khắp nơi, khi Máu đến gần ông ta.",N
+ps_vi_001924,Tôi sẽ đi lấy mũ và gậy cùng thanh kiếm của tôi để ra khơi trên chiếc thuyền nhỏ.,Tôi sẽ ở lại đây và không đi lên bờ.,C
+ps_vi_001955,Anh chỉnh kính viễn vọng của mình lên con số đó.,Anh ta nhắm vào chiếc kính viễn vọng của mình trên hình.,E
+ps_vi_001957,"Cô Bishop cũng lên tàu Hoàng Gia Mary, và tôi đã giải cứu cô cùng với nhà lãnh đạo của cô ấy.",Tôi cũng cứu được 15 người khác.,N
+ps_vi_001960,Nếu anh ta có thể? Blood ngắt lời thiếu tôn trọng.,Máu đã hỏi vì anh ta rất có ý định làm mọi thứ theo cách của mình.,N
+ps_vi_001961,Nếu anh ta có thể? Blood ngắt lời thiếu tôn trọng.,"Blood, không cần quan tâm, hỏi liệu anh ta có thể hay không.",E
+ps_vi_001965,"Tôi sẽ thối trong địa ngục hoặc bao giờ tôi phục vụ nhà vua, ông bawled trong một cơn thịnh nộ lớn.",Tôi sẽ không bao giờ phục vụ nhà vua!,E
+ps_vi_001969,Thuyền trường Blood đang đứng ngay trên lan can bên cạnh Lãnh Chúa Julian và  giãi bày.,Captain Blood và Lord Julian đứng cách nhau bốn mươi feet.,C
+ps_vi_001978,"Đức tin, bạn giải thích cho bản thân sau một khoảng thời gian, anh ta nói.",Một lời giải thích được cung cấp ngay lập tức.,C
+ps_vi_001990,"Và nếu cậu không phải kẻ ngốc, Ogle, tôi đã không phải giải thích điều này cho cậu.",Một người nhận xét Ogle có vẻ hơi ngốc nghếch.,E
+ps_vi_001994,"Và chuyện gì sẽ xảy ra với tôi, Jeremy? Chắc chắn, bây giờ, tôi sẽ trở lại cho bữa ăn tối, vì vậy tôi sẽ. Máu trèo xuống thuyền chờ.",Blood đã lên một con thuyền.,E
+ps_vi_001997,"Vừa đến lối dẫn vào con hẻm đưa tới cabin, anh va vào Cô Bishop.",Anh ta chưa bao giờ gặp Cô Bishop.,C
+ps_vi_001998,"Vừa đến lối dẫn vào con hẻm đưa tới cabin, anh va vào Cô Bishop.",Cô Bishop đang mang giày đỏ.,N
+ps_vi_002012,Thuyền máy Con kênh BV có hai địa điểm trong thành phố.,Có hai đại lý cho Canal Motorboats BV tại thành phố này.,E
+ps_vi_002026,"Trẻ em sẽ thưởng thức Cite de la Mer (37 Rue de l'Asile Thomas), với các cuộc triển lãm về lịch sử của ngành đóng tàu, ngành công nghiệp đánh cá, và thủy triều và dòng chảy hình thành bờ biển như thế nào.",Trẻ em sẽ thích các cuộc triển lãm về thuyền.,E
+ps_vi_002034,"Các Lăng mộ nhà Minh đã từng là điểm chính trong các tour du lịch đến Vạn Lý Trường Thành tại Badaling, nhưng khách du lịch nước ngoài ít ấn tượng với địa điểm này bởi nó ẩm ướt và được tu tạo kém.",Lăng mộ Ming không còn là điểm thu hút khách du lịch tuyệt vời nữa.,E
+ps_vi_002042,"Và họ tiếp tục bao dung và hữu ích, dù họ biết bờ biển yêu quý của họ không chỉ của riêng họ nữa.",Bây giờ họ phải chia sẻ bờ biển với những người khác.,E
+ps_vi_002052,"Đồng hóa dễ dàng hơn với cộng đồng người Anglo chỉ các trường Tin Lành mới chấp nhận con cái Người Đông Âu người Do Thái đã tốt nghiệp với Westmount giàu có hoặc di cư, một lần nữa, đến Toronto.",Người Do Thái đồng hóa dễ dàng hơn với cộng đồng Anglo.,E
+ps_vi_002067,"Khoảng 1,400 năm trước khi Cung điện Estei dựng lên, Milreu cũng là biệt thự nông thôn của một người kiệt xuất.",Milreu đã ở ngay trung tâm thành phố.,C
+ps_vi_002068,"Với việc gia nhập Thị trường Chung năm 1981, triển vọng kinh tế của Hy Lạp đã được củng cố.",Dân chúng Hy Lạp vui mừng khi đất nước gia nhập thị trường chung.,N
+ps_vi_002069,"Với việc gia nhập Thị trường Chung năm 1981, triển vọng kinh tế của Hy Lạp đã được củng cố.",Sự xâm nhập của Hy Lạp vào thị trường chung đánh dấu sự suy sụp của nền kinh tế.,C
+ps_vi_002100,"Hồ nằm dưới bóng một vài ngọn núi cao gồm Scafell Pike, ngọn núi cao nhất nước Anh với độ cao 977 m (3.205 ft).",Đỉnh của Scafell Pike là một nơi tuyệt vời để ngắm hồ.,N
+ps_vi_002117,"Trong số các ao này có một cái ao chứa các đồng xu lẻ do du khách quăng vào với hy vọng đầu rùa sẽ nổi lên, điều chắc chắn sẽ có được điềm lành.",Mọi người ném các đồng xu mặc dù có biển chỉ dẫn không được làm như thế.,N
+ps_vi_002124,"Ở trung tâm của khu nghỉ mát, trong vùng nước được khoanh vùng của đầm phá bên trong, có một chương trình Bơi cùng Cá heo.",Bạn có thể bơi với cá heo tại khu nghỉ mát.,E
+ps_vi_002132,"Xuống xe tại điểm dừng trước khi Batthyany ter chiêm ngưỡng vẻ ngoài đầy màu sắc của Nhà thờ Calvinist Neo-Gothic năm 1896, nơi có rất nhiều bức tranh toàn cảnh của thành phố.",Nhà thờ tân Gothic Calvinist có một vài ảnh toàn cảnh.,N
+ps_vi_002155,"Nổi tiếng với các cuộc thi ủn đẩy trên gỗ nổi vào tháng 8, thị trấn Squamish là một điểm trú chân hữu ích cho các tour đi bộ đường dài vào Công viên Tỉnh Garibaldi.",Sqamish chưa bao giờ thi chơi trò lăn khúc gỗ.,C
+ps_vi_002168,Những liên kết này là các bãi biển công cộng chính (từ Vịnh Warwick đến Vịnh Horseshoe).,Một vài bài biển là công cộng,E
+ps_vi_002177,"Ngoài các phần thiết lập, hầu hết các âm nhạc là bộ gõ và phục vụ để hỗ trợ và phản ánh hành động và tâm trạng.",Âm nhạc chủ yếu là sáo.,C
+ps_vi_002189,"Biển chỉ đến được khi đi qua những con đường hẹp và đường mòn nông trại, nhưng nó đáng để đi bộ để tránh xa đám đông.",Đại dương có những con đường nhỏ rộng 2 feet dẫn đến nó.,N
+ps_vi_002199,Bạn sẽ tìm thấy một bãi biển dễ chịu ở gần Batu Hitam.,Có một bãi biển gần Batu Hitam.,E
+ps_vi_002208,"Người ta học được rằng, kẻ mãnh liệt và người dè dặt, cùng tồn tại ở đây mà không gây lộn xộn.",Mọi người rất hòa thuận với nhau.,E
+ps_vi_002213,Bộ trưởng quốc phòng tàn nhẫn Gustav Noske đã kêu gọi 4.000 người Freikorps (những người lính bão cánh hữu) để đập vỡ phong trào.,Noske muốn mọi thứ tiếp tục ngay lập tức.,C
+ps_vi_002217,"Ngày nay, những nhóm du lịch đến thăm ngắn hạn và, như mọi nơi trên Bali, tiêu chuẩn và giá đều đặn đi lên.",Nhóm du lịch đến tham quan các ngôi đền ở Bali.,N
+ps_vi_002220,Chính họ là những người đã nỗ lực đầu tiên và khó khăn nhất để có một cuộc sống hiện đại ra khỏi vùng đất khó khăn này.,Họ đáng ra nên cố gắng hơn nữa.,N
+ps_vi_002226,Hãy chú ý đến bức tranh trompe l'oeil trên trần nhà vòm cong thấp có tham vọng biến nhà thờ nhỏ này thành một nhà thờ Gothic cao ngất.,Bức vẽ sẽ biến nhà thờ thành hậu cung.,C
+ps_vi_002231,"Người câu cá nước ngọt phải có giấy phép, hãy hỏi văn phòng du lịch gần nhất để biết thông tin về cách lấy giấy phép.","Bạn chỉ có thể có bất cứ điều gì bạn muốn, bất cứ khi nào bạn muốn.",C
+ps_vi_002236,Chỉ những chuyến leo núi đi kèm với hướng dẫn viên từ hợp tác xã hướng dẫn địa phương mới được khuyến cáo.,Bạn có thể đi bộ một mình bất cứ lúc nào.,C
+ps_vi_002240,"Tại thời điểm này, suy nghĩ là nó có lẽ tốt nhất để rời khỏi những hòn đảo nhỏ hơn, kém phát triển hơn này trong hòa bình.",Các hòn đảo bị bắt giữa chiến tranh.,N
+ps_vi_002248,"Từ phố Baixada de Santa Eulalia xuống đến phố Carrer dels Banys Nous, được đặt tên cho các bồn tắm mới xa xưa của khu ổ chuột được hình thành vào thế kỷ 12.",CArrer dels Banys Nous được đặt tên cho một khu rừng.,C
+ps_vi_002250,"Từ phố Baixada de Santa Eulalia xuống đến phố Carrer dels Banys Nous, được đặt tên cho các bồn tắm mới xa xưa của khu ổ chuột được hình thành vào thế kỷ 12.",Carrer dels Banys Nous được đặt tên cho phòng tắm.,E
+ps_vi_002264,"Nó có ba ngôi đền cao cấp dành riêng cho Brahma, Shiva, và Vishnu.",Các đền thờ phục vụ bánh mì thịt vào các ngày thứ hai.,N
+ps_vi_002266,"Cách Vườn ươm chưa đến một dặm, bạn sẽ tìm thấy hai nhà thờ ở phía bên phải của con đường, đằng sau là hàng trăm ngôi mộ gia đình sơn màu trắng trên sườn đồi.",Nhà thờ cũng có trung tâm chăm sóc trẻ ban ngày.,N
+ps_vi_002272,Gần 100.000 người mỗi ngày đến đây để chiêm ngưỡng kiến trúc nổi bật và khám phá những điểm hấp dẫn mới nhất trong thành phố không ngừng thay đổi này.,Gần 100 nghìn người đến để xem xét thành phố mỗi ngày.,E
+ps_vi_002280,"Phía sau khách sạn, ngoài bức tượng 1989 của Samuel de Champlain, người sáng lập thành phố, Dufferin Terrace có tầm nhìn tuyệt đẹp ra sông St. Lawrence và vùng hạ lưu tới đảo Ile d'Orleans.",Bức tượng được xây dựng vào năm 1775.,C
+ps_vi_002285,"Viện Công nghệ Massachusetts (MIT), được thành lập năm 1861 là cơ sở khoa học và kỹ thuật hàng đầu của Mỹ, đã đi tiên phong trong nhiều công nghệ hiện đại, từ nhiếp ảnh động học đến các quy trình bảo quản thực phẩm.",MIT được thành lập vào năm 1861.,E
+ps_vi_002291,"Kodaly kerend (Kodaly lưỡi liềm, được đặt theo tên nhà soạn nhạc Hungary khác) là một quần thể lộng lẫy, với bề mặt uốn lượn được trang trí bằng các hình vẽ cổ điển và họa tiết khảm.","Kodaly Kerend được trang trí bằng một số thứ, bao gồm cả gures và họa tiết ren.",N
+ps_vi_002317,"Tòa nhà được xây dựng trên các khu đất dưới lòng đất của các lính canh SS của nhà thờ Topographie des Terrors, một cuộc triển lãm các bức ảnh và tài liệu minh họa cho cuộc sống của những người chống lại sự khủng bố của Đức Quốc xã.",Tòa nhà không có tầng hầm.,C
+ps_vi_002318,"Tòa nhà được xây dựng trên các khu đất dưới lòng đất của các lính canh SS của nhà thờ Topographie des Terrors, một cuộc triển lãm các bức ảnh và tài liệu minh họa cho cuộc sống của những người chống lại sự khủng bố của Đức Quốc xã.",Tòa nhà che giấu các nhà bảo vệ SS.,N
+ps_vi_002319,"Tòa nhà được xây dựng trên các khu đất dưới lòng đất của các lính canh SS của nhà thờ Topographie des Terrors, một cuộc triển lãm các bức ảnh và tài liệu minh họa cho cuộc sống của những người chống lại sự khủng bố của Đức Quốc xã.",Tòa nhà cao phía trên các chốt bảo vệ SS.,E
+ps_vi_002330,Thế vận hội năm 1992 đã củng cố danh tiếng của Barcelona là một thành phố cuồng nhiệt thể thao.,Thế vận hội ở Tay Ban Nha là được yêu thích nhất trong thật kỷ đó.,N
+ps_vi_002341,Tháp Pei là con đường quanh co dẫn đến Công viên Hồng Kông.,Công viên Hong Kong là con đường đi đến đó.,E
+ps_vi_002360,"Từ một cổng thành Gothic ở giữa thị trấn, bên cạnh gác chuông thế kỷ 13, một cầu thang gồm 90 bậc sẽ đưa bạn xuống cánh cửa bằng đồng thế kỷ 11 của thánh đường.",Có 90 bậc.,E
+ps_vi_002361,"Từ một cổng thành Gothic ở giữa thị trấn, bên cạnh gác chuông thế kỷ 13, một cầu thang gồm 90 bậc sẽ đưa bạn xuống cánh cửa bằng đồng thế kỷ 11 của thánh đường.",Chỉ có 3 bước thôi.,C
+ps_vi_002362,"Họ thích giao lưu xã hội, và các quán bar đặc biệt là các quán bar nâu nổi tiếng là nơi họ gặp gỡ, thường là để đưa thế giới đi đúng hướng.","Họ không bao giờ đi chơi với bạn bè, nhưng chỉ ở bên trong một mình.",C
+ps_vi_002365,Nó được vận hành đơn giản bằng cách nâng hai ván gỗ bằng tay,Nó liệt kê 10 loại ván gỗ.,C
+ps_vi_002386,Xem danh sách các điểm nổi bật của bãi biển ở trang 82 và 85.,Jane yêu cầu một mẫu xác nhận FISA đã được ký.,E
+ps_vi_002391,"Trong khi chờ đợi, Caldas de Monchique là một nơi tốt cho một bữa ăn ngoài trời và đi dạo trong rừng.",Có những khu rừng quanh Caldas de Monchique.,E
+ps_vi_002394,"Bạn có thể tản bộ trên boong, hoặc thậm chí đi du thuyền hai giờ trên bản sao của chiếc thuyền buồm nhà vô địch nổi tiếng 1921 được miêu tả trên đồng xu Canada 10 cent này.",Chuyến du thuyền chỉ có 17 phút.,C
+ps_vi_002411,"Sau hai thế kỷ lịch sử tôn giáo, Giáo Hội cần một sự đổi mới tâm linh, tìm kiếm đồng minh hoàn hảo trong Thánh Phanxicô Assisi (1182-1226), đạo đức mà không gây phiền hà.",Giáo Hội đã ghét Francis của Asssisi.,C
+ps_vi_002418,"Nhưng với tất cả các quảng cáo ngông cuồng mới lạ, bảo tàng đã không quên sự quyến rũ của những chiếc xe cổ mới toanh và, trên tất cả, những khối khổng lồ động cơ tàu hỏa cũ từ thời đại hơi nước thực sự tạo ra bởi Canada.",Bảo tàng có những chiếc xe hơi thời cổ.,E
+ps_vi_002427,"29 cho đồ nội thất và bạc, Công ty Tai Sing ở 122 cho đồ sứ.",Đồ sứ còn hơn cả đồ nội thất và đồ back.,E
+ps_vi_002436,"Colenia de Sant Jordi được điểm nét bằng các khách sạn và biệt thự, nhưng nó có vẻ là một nỗ lực khá nửa vời tại một khu nghỉ mát.",Đường phố chỉ có các khách sạn và cung điện nhỏ để ở.,N
+ps_vi_002446,Bạn sẽ tìm thấy những kích thước khác nhau và với trang trí khác nhau.,Chúng được trang trí với các đồng xêquin và nhãn dán.limb,N
+ps_vi_002447,Bạn sẽ tìm thấy những kích thước khác nhau và với trang trí khác nhau.,Chúng đã được trang trí.,E
+ps_vi_002471,"Trái tim của Athens cổ đại được tập trung xung quanh mái vòm của Acropolis, với các ngôi đền thiêng liêng được xây dựng trên đỉnh tảng đá và thị trấn được xây dựng trên những cánh sườn nhấp nhô của nó.",Acropolis là tòa nhà quan trọng nhất trong tất cả các nền văn hóa cổ đại Greeek.,N
+ps_vi_002477,"Không gian mở được phát hiện từ những năm 1960 hiện nay được cho là được sử dụng cho các trò chơi banh, điều này có vai trò quan trọng dù chỉ là mục đích nghi lễ ít được hiểu trong văn hóa Ấn Độ.",Họ không phát hiện ra các không gian mở kể từ năm 1932.,C
+ps_vi_002492,Bạn sẽ có thể chơi cùng với các con lăn cao tại bàn roulette hoặc bàn craps hoặc đặt một vài đồng xu trong các máy đánh bạc.,Bạn có thể đánh bạc ở Vegas.,N
+ps_vi_002502,Con đường ngoằn ngèo và rẽ cua ở những khúc cua hẹp và lên xuống những khúc uốn lượn.,Con đường hoàn toàn thẳng.,C
+ps_vi_002509,Nhóm bảo mật thông tin thực hiện từ 8 đến 12 phiên mỗi tháng.,Nhóm bảo mật họp trung bình 9 phiên một tháng.,N
+ps_vi_002512,"Tuy nhiên, kỹ thuật sơ bộ đã hoàn thành sớm hơn.",Kỹ thuật đã có một giai đoạn sơ bộ.,E
+ps_vi_002530,Việc này áp dụng cho cả mối quan hệ C-R được xác định bởi một chức năng C-R đơn và những thứ được xác định bởi một sự kết hợp của nhiều chức năng C-R.,Các nhà khoa học có thể lưu trữ các chức năng C-R.,N
+ps_vi_002546,"Việc tiết kiệm không chỉ ảnh hưởng đến cổ phiếu của cải, nhưng sự giàu có lần lượt ảnh hưởng đến sự lựa chọn để tiết kiệm.",Giàu có và tiết kiệm thường không có liên quan trong bất kỳ hoàn cảnh nào.,C
+ps_vi_002549,"Ví dụ, một tổ chức mà chúng tôi nghiên cứu đã trải qua hai vụ sáp nhập yêu cầu công ty nhanh chóng tích hợp các doanh nghiệp mới và tái cơ cấu để đáp ứng nhu cầu kinh doanh ngày càng tăng.",Việc sáp nhập hai công ty thành một tổ chức và tái cơ cấu dẫn đến một môi trường làm việc hỗn loạn.,N
+ps_vi_002553,"bản thiết kế, chúng tôi lo ngại rằng việc thanh toán sẽ được duyệt trước khi xác minh rằng chuyến đi đã thực sự diễn ra.",Chúng tôi đã nghĩ rằng việc thanh toán có thể diễn ra quá sớm và chúng tôi sẽ bị lừa.,N
+ps_vi_002556,"Công nghệ được tích hợp chặt chẽ với các quy trình kinh doanh trong các tổ chức này bởi vì công nghệ được xem như là một yếu tố kích hoạt cho doanh nghiệp, không chỉ là một công cụ.",Các doanh nghiệp này chú trọng vào công nghệ.,E
+ps_vi_002568,Các dòng có các ô hình hộp hiển thị mức độ phúc lợi của tất cả các nhân viên bưu chính kết hợp lại và các dòng có các ô hình kim cương cho thấy các tổn thất kỹ thuật (nếu âm) khi chuyển dịch công việc sang cho một bên khác.,Những dòng hiển thị có bao nhiêu phúc lợi trong tất cả các bưu phẩm.,E
+ps_vi_002577,"Để làm cách khác là gửi một thông điệp gây phiền hà cho nhân viên của GAO, báo chí, và công chúng.",Đó là một thông điệp xấu gửi đến người lao động nếu bạn không làm điều đó.,E
+ps_vi_002586,"CIO và ban Hội đồng sẽ quyết định công việc nào là phù hợp để thuê ngoài, và công việc nào tốt nhất thực hiện trong nội bộ.",CIO đã không tham gia bất kỳ cuộc thảo luận nào về công việc được cho phép.,C
+ps_vi_002596,"CIO của tập đoàn làm việc với các CIO hoặc các nhà quản lý thông tin khác tại mỗi đơn vị kinh doanh để đảm bảo một hệ thống công nghệ hiệu quả, đáng tin cậy và có tính tương tác cho toàn bộ tập đoàn.",Nhân viên CIO đào tạo các nhân viên CIO khác.,E
+ps_vi_002600,BLM bao gồm các tiêu chuẩn thành tích thành công toàn diện.,BLM tập hợp thông tin trong một cuốn sách nhỏ.,N
+ps_vi_002607,Bao gồm tất cả các phần hoặc thành phần cần thiết.,Họ chỉ phải bao gồm các phần thiết yếu.,C
+ps_vi_002620,"Dòng chảy tiết kiệm là điều cần thiết để tích lũy gia sản-như một quy luật chung, một người không tiết kiệm sẽ không bao giờ có được sự giàu có.","Nếu bạn không tiết kiệm tiền trong tài khoản ngân hàng của bạn, bạn sẽ không có gì.",N
+ps_vi_002631,"Chiến lược tìm nguồn cung ứng của tổ chức là một phần của chiến lược phát triển vốn nhân lực lớn hơn, được thảo luận trên nguyên tắc VI.",Nguyên tắc XII đề cập đến chiến lược phát triển vốn.,C
+ps_vi_002637,Năm tài chính 2000 là một năm rất lớn về thành tích và thành tựu cho GAO một năm phục vụ tuyệt vời cho Quốc hội và mang lại lợi ích to lớn cho người đóng thuế Hoa Kỳ.,Năm 2000 là năm tồi tệ nhất từ trước đến nay.,C
+ps_vi_002641,"Kỹ năng CNTT là yêu cầu rất quan trọng khiến cho việc thuê người trở nên khó khăn, vì vậy CIO này tìm kiếm các giải pháp thay thế để phát triển và quản lý phần mềm tại chỗ.",Nhân viên CNTT quá phổ biến trong những ngày này.,C
+ps_vi_002649,Khí thải thủy ngân là điều làm nên thủy ngân lắng đọng trong nước.,Sự lan tỏa của thủy ngân hoàn toàn không ảnh hưởng đến nước.,C
+ps_vi_002662,"Cuối cùng, nếu dữ liệu bạn đánh giá không đủ đáng tin cậy, bạn nên bao gồm phát hiện này trong báo cáo và đề xuất rằng thực thể được kiểm toán thực hiện hành động khắc phục.",Giữ các hóa đơn giấy là một cách tăng độ tin cậy của số liệu.,N
+ps_vi_002663,"Cuối cùng, nếu dữ liệu bạn đánh giá không đủ đáng tin cậy, bạn nên bao gồm phát hiện này trong báo cáo và đề xuất rằng thực thể được kiểm toán thực hiện hành động khắc phục.",Đối tượng được kiểm toán có thể chỉnh sửa để tăng sự đáng tin cậy cho dữ liệu.,E
+ps_vi_002678,Bảo hiểm xã hội không bao gồm các chương trình dành riêng hoặc cơ bản dành cho nhân viên Liên bang  như lương hưu và các chương trình hưu trí khác.,Bảo hiểm xã hội không bao gồm các chương trình chỉ dành cho công nhân liên bang.,E
+ps_vi_002682,Một danh sách kiểu thế này sẽ cung cấp cho các quan chức đã phê duyệt về mặt hành chính các phiếu chứng nhận thanh toán (thường là người quản lý đoàn du lịch) và các quan chức có chứng nhận các bằng chứng bổ sung trong việc xác định tính hợp lý trong các khiếu nại.,Danh sách thể hiện ai đã nhận phiếu thưởng.,E
+ps_vi_002702,"Bao gồm cả các chuyến thăm phòng cấp cứu trong một phân tích lợi ích đã xem xét nhập viện, chẳng hạn, sẽ dẫn đến việc tính hai lần một số lợi ích nếu việc nhập viện vào danh mục bao gồm các lần đến phòng cấp cứu.",Nhập viện tăng gấp đôi lợi ích nếu bệnh nhân không có bảo hiểm.,N
+ps_vi_002710,"11 Tuy nhiên, trong các trang bị thêm khó khăn, giảm thời gian có thể bị ảnh hưởng một cách đáng kể.",Retrofits không có tác động thực sự vào thời gian suy thoái.,C
+ps_vi_002711,"11 Tuy nhiên, trong các trang bị thêm khó khăn, giảm thời gian có thể bị ảnh hưởng một cách đáng kể.",Thời gian giảm đáng kể tác động có thể được trải qua trong việc cải thiện khó khăn hơn.,E
+ps_vi_002724,Thời gian từ khi đặt hàng đến khi hoàn thành các hoạt động vận hành thử nghiệm là mất 46 tuần cho cả hai bước.,Có những đơn vị khác có thể hoàn thành những nhiệm vụ này nhanh hơn với giá đắt hơn.,N
+ps_vi_002731,"Một sáng kiến liên quan đến việc thiết lập định hướng chiến lược, hướng dẫn và tiêu chuẩn cho việc thiết lập thương mại điện tử trong chính phủ tiểu bang.",Những nỗ lực đã được thực hiện để giúp viện thương mại điện tử trong chính phủ tiểu bang.,E
+ps_vi_002752,Một vài hàm nồng độ-đáp ứng được sử dụng trong phân tích lợi ích này được lấy từ các nghiên cứu ngắn hạn như vậy.,Năm nghiên cứu ngắn hạn khác nhau đã được phân tích cho nghiên cứu này.,N
+ps_vi_002754,Một vài hàm nồng độ-đáp ứng được sử dụng trong phân tích lợi ích này được lấy từ các nghiên cứu ngắn hạn như vậy.,Các nghiên cứu ngắn hạn đã được sử dụng trong một số phần của phân tích này.,E
+ps_vi_002756,24 Các tính năng này cũng sẽ thích hợp cho các báo cáo trách nhiệm của GMRA.,Có các tính năng khác cũng có thể được sử dụng cho các báo cáo.,N
+ps_vi_002763,"Trong mọi trường hợp, các bước quan trọng sẽ phải được thực hiện để tránh làm tổn hại đến yêu sách của khách hàng.",Các bước này bao gồm việc che giấu danh tính thực của khách hàng trước các nhà điều tra.,N
+ps_vi_002765,"Nếu sản phẩm bao gồm nhiều nội dung hoặc sáng chế mới, các nguyên mẫu được tích hợp đầy đủ thường được sử dụng để chứng minh rằng thiết kế đáp ứng các yêu cầu.",Các yêu cầu về thiết kế thường được trình bày qua các nguyên mẫu.,E
+ps_vi_002785,Một nhà cung cấp hệ thống SCR của Đức đã lắp đặt SCR trên một phần công suất đáng kể của Đức trong thời gian ngừng hoạt động ít hơn bốn tuần.,Một hệ thống SCR của Đức đã ở châu Âu trong 20 năm.,N
+ps_vi_002789,Đóng góp của người sử dụng lao động và nhân viên thường được tính theo cùng một cách,Có hai phương pháp khác nhau để tính toán sự đóng góp của chủ và nhân viên.,C
+ps_vi_002792,"Quản lý, lạm dụng chất gây nghiện và quản lý dịch vụ sức khỏe tâm thần, và quản lý tài nguyên và dịch vụ y tế.",Các hành vi lạm dụng chất gây nghiện và dịch vụ sức khỏe tâm thần là các vấn đề khác nhau.,C
+ps_vi_002796,"20 Ngược lại, tiêu tan chi tiêu nhiều hơn thu nhập hiện tại-làm giảm trữ lượng của cải vì số tiền tiết kiệm trong quá khứ phải được rút ra, tài sản hiện có được bán, hoặc vay tăng lên.",Dissaving có nghĩa là bạn tiết kiệm rất nhiều tiền.,C
+ps_vi_002804,Texas xem các hình thức giáo dục khác nhau có lợi về chi phí trong chương trình Medicaid của bang.,Texas không cho rằng giáo dục mang lại lợi ích.,C
+ps_vi_002817,"Một cơ quan có ý định thực hiện thủ tục yêu cầu đi lại của nhân viên cho phép khách du lịch, với một số trường hợp ngoại lệ nhất định, chỉ liệt kê một tổng số tiền của tất cả các chi phí riêng lẻ có giá từ 75 đô la trở xuống.",Du khách không phải liệt kê chi phí cá nhân của mình.,C
+ps_vi_002828,Thời gian cần thiết để hoàn thành giai đoạn này của một dự án thực hiện là khoảng 17 tháng đối với SCR.,Mất 17 tháng để thi hành các luật lệ mới.,N
+ps_vi_002838,Gói hàng chào mừng ngày được phát tận tay trong một chuyến viếng thăm của một trong đại diện 19 nhân viên Medicaid bang Texas.,Các hình thức chào mừng được gửi bằng thư.,C
+ps_vi_002843,"Tương tự như vậy, các số liệu thống kê trong Bảng A2 và A3 cho thấy các tuyến đường có khối lượng vận chuyển cao nằm trong các Mã ZIP với mức thu nhập hộ gia đình và trình độ học vấn cao hơn.",Những khu vực có khối lượng cao là những khu vực nghèo nhất.,C
+ps_vi_002845,"TVA đã thi công một con đường để gửi khí ga từ cửa xả sơ bộ không khí trực tiếp tới FGD, trong khi ESP bị phá hủy và lò phản ứng SCR được lắp đặt tại vị trí của nó.",Đường vòng sẽ gửi nước tới FGD.,C
+ps_vi_002851,Bốn mươi bốn dự án thí điểm đã gửi báo cáo về vòng biểu diễn đầu tiên vào năm 1995.,Không có báo cáo về các chương trình thí điểm đã được gửi.,C
+ps_vi_002867,"Như thể hiện trong Phụ lục A-3 trong Phụ lục A, quá trình này có thể xảy ra đồng thời với việc xử lý đơn xin giấy phép xây dựng.",Hai tiến trình có thể xảy ra cùng lúc.,E
+ps_vi_002882,Nhóm sẽ họp hàng tháng để thảo luận về trạng thái của các vấn đề tồn tại của buổi họp trước và/hoặc các sáng kiến thực hiện và đưa ra giải pháp và thảo luận về các vấn đề hiện tại và các sáng kiến mới.,Nhóm họp mỗi tháng.,E
+ps_vi_002883,Nhóm sẽ họp hàng tháng để thảo luận về trạng thái của các vấn đề tồn tại của buổi họp trước và/hoặc các sáng kiến thực hiện và đưa ra giải pháp và thảo luận về các vấn đề hiện tại và các sáng kiến mới.,Nhóm chỉ gặp nhau hai lần một năm.,C
+ps_vi_002884,61--Nhân viên liên bang có thể được bảo hiểm bởi các chương trình bảo hiểm xã hội như Social Security62 và Medicare theo cùng các điều khoản và điều kiện như số cư dân còn lại được bảo hiểm.,Nhân viên liên bang đồng ý với các điều khoản và điều kiện tương tự như phần còn lại của người được bảo hiểm.,E
+ps_vi_002907,Phòng cứu hỏa cứu hỏa của hạt Baltimore không có một chương trình chính thức để tăng cường tài chính cho nhân viên cứu hỏa và nhân viên y tế bị thương và không thể tiếp tục làm việc.,Cần phải có một chương trình để đền bù cho những công chức này.,N
+ps_vi_002944,Tự do khỏi lỗi trong dữ liệu.,Lỗi dữ liệu đem lại tự do.,E
+ps_vi_002957,"Đối mặt với sự lựa chọn này, khách hàng nhiều khả năng sẽ bảo toàn quyền rời nước của họ.",Rời khỏi đất nước có thể là sự lựa chọn tốt nhất cho khách hàng.,E
+ps_vi_002960,Khoảng 2.100 học viên nói chung đã truy cập các báo cáo phản hồi trực tuyến của họ trong năm 1999 và HIC đã thực hiện các cải tiến hơn nữa để đưa phản hồi cho các học viên y tế khác.,HIC không làm thay đổi phản hồi.,C
+ps_vi_002964,"Chúng ta có nên không trả lời điện thoại, không trả lời thắc mắc, hủy bỏ lời khai, hoặc không đến thư viện và nghiên cứu vụ án không?",Không có câu hỏi về việc trả lời điện thoại.,C
+ps_vi_002968,Một ví dụ về sự phá huỷ có thể xảy ra được cung cấp bởi các cuộc tấn công từ chối dịch vụ gần đây trên các trang web nổi tiếng.,Việc từ chối các cuộc tấn côgn nhằm vào dịch vụ gây gián đoạn.,E
+ps_vi_003022,"Khallad đã cung cấp một phiên bản thứ hai, cụ thể là cả ba đã cùng nhau đến Karachi.",Khallad nói anh không biết gì về ba người họ.,C
+ps_vi_003024,"Khallad đã cung cấp một phiên bản thứ hai, cụ thể là cả ba đã cùng nhau đến Karachi.",Khallad nói rằng có 50% khả năng ba người đó đã đến Karachi cùng nhau vào Tháng mười.,N
+ps_vi_003036,"Trong nhà tù, KSM phủ nhận việc al Qaeda có bất kỳ điệp viên nào tại miền Nam California.",KSM xác nhận rằng có một số thành viên ở miền Nam California.,C
+ps_vi_003059,"Vào ngày 9 tháng 9, những tin tức đầy kịch tính đến từ Afghanistan.",Chúng tôi không nghe tin tức gì từ Afghanistan cho đến tận tháng Mười.,C
+ps_vi_003075,"Năm 2003, những chỉ định này đã bị cắt giảm; tất cả các vấn đề về khủng bố quốc tế hiện nay nhận được cùng chỉ định, 315.",Mỗi vấn đề khủng bố đều được điều tra và xếp hạng một cách độc lập.,C
+ps_vi_003091,Cả hai thư ký Powell và thư ký Rumsfeld dường như đã được tóm tắt về các chủ đề này của DCI.,DCI từ chối tóm tắt ngay cả những quan chức chính quyền cao cấp nhất trong lĩnh vực này.,C
+ps_vi_003111,"Đồng thời, xã hội của Ả Rập Xê Út là nơi Al Qaeda huy động tiền trực tiếp từ các cá nhân và thông qua các tổ chức từ thiện.","Tại Ả Rập Xê Út, al Qaeda nhận tiền từ các cá nhân và tổ chức từ thiện.",E
+ps_vi_003115,FBI cần phải duy trì an ninh nghiêm ngặt và các tiêu chuẩn về thực hiện thành thạo với những nhân viên hợp đồng dài hạn của mình.,FBI không đưa ra bất kỳ suy nghĩ nào cho nhân viên của họ.,C
+ps_vi_003117,FBI cần phải duy trì an ninh nghiêm ngặt và các tiêu chuẩn về thực hiện thành thạo với những nhân viên hợp đồng dài hạn của mình.,FBI phải luôn giữ cho nhân viên của mình an toàn.,E
+ps_vi_003124,"Thứ ba, đầu đạn Hellfire do Predator mang theo cần hoạt động.","Hellfire, mang theo Predator, có thể sẽ rất tốt để đi sớm.",N
+ps_vi_003138,"Khi trở về Hoa Kỳ, Hage đã được các nhân viên FBI gặp tại sân bay, bị thẩm vấn, và được gọi vào ngày hôm sau trước khi bồi thẩm đoàn liên bang điều tra Bin Ladin sau đó.",Hage không bao giờ bị thẩm vấn bởi các nhân viên FBI.,C
+ps_vi_003143,"Đối với hai công ty và các hành động của họ, hãy xem cuộc phỏng vấn 22, của FDNY , Tiểu đoàn 28 (tháng Một.",Không một cuộc phỏng vấn nào được ghi nhận liên quan đến hành động của sở cứu hoả.,C
+ps_vi_003163,Những người dân gọi là sở cảnh sát của Cơ quan Cảng vụ tại số 5 WTC đã được khuyên nên rời đi nếu có thể.,Quản lý Cảng nói mọi người nên chạy càng xa càng tốt.,N
+ps_vi_003186,"Đối với các cảnh báo của Ballinger, xem cuộc phỏng vấn Ed Ballinger (ngày 14 tháng 4 năm 2004).",Ông ấy cảnh báo người phỏng vấn rằng sẽ có một cuộc tấn công có chủ đích  vào tháng Năm.,N
+ps_vi_003191,"Có thể nói công việc nhóm đã trở nên tốt hơn, và cũng có thể nói nó trở nên tệ hơn.","Kể từ đó, việc hợp tác đã tiến triển trên mọi mặt.",C
+ps_vi_003195,"Hệ thống biên giới và nhập cư của chúng tôi, bao gồm cả việc thực thi pháp luật, nên gửi một thông điệp chào mừng, khoan dung và công lý cho các thành viên của cộng đồng nhập cư tại Hoa Kỳ và ở các quốc gia bản xứ của họ.",Chúng ta cần nói rõ rằng chúng ta không muốn bất kỳ người nhập cư nào ở đây.,C
+ps_vi_003202,"Bandar al Hazmi tiếp tục đào tạo tại Arizona Aviation với các chuyến đi liên tục đến Ả Rập Saudi, trước khi rời Hoa Kỳ lần cuối vào tháng 1 năm 2000.",Bandar al Hazmi đã đến Mỹ 18 lần.,N
+ps_vi_003228,"Khi nghe trại đóng cửa, anh ta và những người khác đi đến trại al Faruq gần Kandahar, nơi họ được huấn luyện nhiều hơn.",Không có trại nào ở gần Kandahar.,C
+ps_vi_003250,"Vào đầu tháng 5 năm 1996, CIA nhận được tin tình báo rằng Bin Ladin có thể sẽ rời Sudan.",Bin Ladin đã đặt chỗ tại một khu khách sạn nghỉ mát  ở Hy Lạp cho một hội nghị vào thời điểm này.,N
+ps_vi_003262,Một vài tầng đang cháy có lẽ nằm ngoài khả năng dập tắt của đội cứu hỏa mà chúng ta có thể xử lý.,"Toàn bộ tòa nhà có thể đã mất trong ngọn lửa, và chúng tôi đã có thể dập tắt đám cháy.",C
+ps_vi_003281,Các cửa sổ lớn từ sàn tới trần của tầng trệt ở góc tây bắc đường West Street đã bị thổi bay,Đội thi công mất hơn hai tuần để thay thế tất cả các cửa sổ bị hỏng.,N
+ps_vi_003283,Anh ta được xác định là có cấu kết với cả hai bên đường biên giới.,Ông đã có ảnh hưởng trên cả hai mặt của biên giới.,E
+ps_vi_003298,"Trong khi ông tiếp tục theo dõi kênh SOD toàn thành phố, mà trực thăng NYPD đang sử dụng, ông cũng theo dõi kênh chiến thuật điểm đến điểm mà các đội ESU leo lên trong các tòa tháp sẽ sử dụng.",Máy bay trực thăng NYPD đang sử dụng kênh SOD.,E
+ps_vi_003312,Chúng tôi chưa phỏng vấn từng người hiểu biết hoặc tìm thấy mọi mẩu giấy liên quan.,Có rất nhiều người hiểu biết hơn mà chưa được phỏng vấn.,N
+ps_vi_003313,Sự giám sát của quốc hội đối với tình báo và chống khủng bố hiện nay rất rối loạn.,Quốc hội chưa bao giờ giám sát tình báo hoặc chống khủng bố.,C
+ps_vi_003340,"Mặc dù chúng tôi sẵn sàng đánh giá KSM với al Qaeda ngày hôm nay, nhưng đây không phải là trường hợp trước ngày 11/9.","Mặc dù không ai nhận ra nó, KSM luôn được kết nối với al Qaeda.",N
+ps_vi_003343,Các hiệu trưởng cũng tập trung vào Pakistan và việc nó có thể thực hiện để biến Taliban thành một bên chống đối lại với Al Qaeda.,Taliban là đồng minh thân cận với Qaeda.,N
+ps_vi_003347,"Cuối cùng, ông đã chỉ đạo Bộ trưởng Tài chính Paul O'Neill lập kế hoạch nhắm vào ngân quỹ của al Qaeda và tịch thu tài sản của họ.",Mọi người cho rằng Bộ trưởng Tài chính Paul O'Neill không bận tâm với nguồn tài trợ của al Qaeda.,C
+ps_vi_003366,"Vào tháng Năm hoặc tháng Sáu, Clarke đã yêu cầu được chuyển từ bộ trương chống khủng bố sang một bộ mới phụ trách về an ninh mạng.",Clarke chịu trách nhiệm chống khủng bố vào tháng Tư.,E
+ps_vi_003386,"Để xác định tình trạng của các hệ thống xây dựng từ việc xây dựng nhân sự, xem phỏng vấn FDNY 4, Chief (Jan.",Có một cuộc phỏng vấn có sẵn thảo luận về các hệ thống xây dựng.,E
+ps_vi_003399,"Báo cáo điều tra từ FBI, cuộc phỏng vấn với Jennifer Stangel, ngày 14 tháng 9 năm 2001.",Jennifer Stangel được phỏng vấn lần đầu tiên vào ngày 14 tháng 9.,N
+ps_vi_003400,"Trước ngày 11 tháng 11, không có cơ quan nào của chính phủ Hoa Kỳ phân tích hệ thống các chiến lược du lịch của những kẻ khủng bố.",Về sau này người ta phát hiện ra là những tên khủng bố thường đi bằng máy bay hoặc ô tô.,N
+ps_vi_003404,"Xem các báo cáo tình báo, thẩm vấn của KSM, ngày 1 tháng 7 năm 2003; 5 tháng 9 năm 2003.",KSM bị chất vấn năm 2003.,E
+ps_vi_003407,Nó chưa bao giờ là chủ đề cho việc cân nhắc nội bộ chính thức.,Các cơ quan thiết lập nhiều bảng để đánh giá chủ đề một cách chính thức.,C
+ps_vi_003410,3. Cuộc gọi được thực hiện từ điện thoại trả tiền ở Nhà ga C (giữa trạm kiểm soát sàng lọc và cửa lên máy bay của United 175).,Cuộc gọi điện thoại là cho một cái pizza pepperoni loại lớn.,N
+ps_vi_003433,"Lúc 10:45, những người tham dự hội nghị được thông báo tạm nhưng Defcon 3, nhưng một phút sau đó, quyết định đã được phục hồi.",Cuối cùng nó đã được quyết định rằng Defcon 3 nên được đặt hàng.,E
+ps_vi_003442,Mối đe dọa đang đến không phải từ các băng nhóm.,Các tế bào ngủ không phải là mối đe dọa trong trường hợp này.,E
+ps_vi_003454,"Đối với sự xuất hiện của người đứng đầu và các công ty, xem Jules Naudet và Gedeon Naudet, cảnh quay video, 11/9/2001; Phỏng vấn FDNY 4, Chief (Jan.",Người đứng đầu đã đến địa điểm WTC lúc 10 giờ sáng.,N
+ps_vi_003462,"Anh ấy kể lại rằng nếu như vị cố vấn nói với anh ta về một tế bào ở Mỹ, họ đã có thể chuyển đến đó để săn sóc nó.","Trong thực tế, có ba tế bào khác nhau ở Mỹ vào thời điểm đó.",N
+ps_vi_003486,KSM có thể đã hướng dẫn Binalshibh gửi tiền cho Moussaoui để giúp chuẩn bị Moussaoui như một phi công thay thế tiềm năng cho Jarrah.,KSM bảo với Binalshibh điều gì cần làm.,E
+ps_vi_003489,Thumairy phủ nhận bất kỳ biện pháp kỷ luật nào như vậy.,Thumairy bị một số người cáo buộc là không chịu trách nhiệm.,N
+ps_vi_003492,"Ngoài việc nghiên cứu cẩn thận các hồ sơ chính thức khác nhau, chính phủ Séc cũng xem xét các bức ảnh giám sát được chụp bên ngoài đại sứ quán Iraq.",Chính phủ Séc đã xem những bức ảnh họ có.,E
+ps_vi_003496,"Nếu Hoa Kỳ không có những hành động mạnh mẽ để định rõ vị trí trong thế giới Hồi giáo, những kẻ cực đoan sẽ sẵn lòng làm việc đó giúp chúng ta.",Những người cực đoan sẽ sẵn sàng định nghĩa hình ảnh Hoa Kỳ trong thế giới Hồi giáo.,E
+ps_vi_003512,"Chúng tôi cung cấp trợ giúp qua điện thoại 24 giờ mỗi ngày, 7 ngày mỗi tuần thông qua Trung tâm tài nguyên thông tin phòng chống & amp; Đường dây Trợ giúp dành cho Phụ huynh.","Chúng tôi có thể truy cập bằng điện thoại, vào bất kỳ thời điểm nào trong ngày.",E
+ps_vi_003513,"Chúng tôi cung cấp trợ giúp qua điện thoại 24 giờ mỗi ngày, 7 ngày mỗi tuần thông qua Trung tâm tài nguyên thông tin phòng chống & amp; Đường dây Trợ giúp dành cho Phụ huynh.",Chúng tôi nhận được hơn một trăm cuộc gọi mỗi Thứ hai và Thứ sáu.,N
+ps_vi_003520,"00 đã giúp chúng tôi có thể cung cấp hướng dẫn, khuyến khích và vui chơi cho gần 400 trẻ em vùng Indianapolis.","Cảm ơn các nhà quyên góp hảo tâm, chúng ta có thể mời Beyonce tới diễn một buổi hòa nhạc cho trẻ mồ côi ở Indianapolis. j",N
+ps_vi_003540,Nếu mỗi người nhận được lá thư này chỉ cần tặng $18.,Chúng tôi hy vọng rằng tất cả những người nhận được thư sẽ đóng góp 18$.,E
+ps_vi_003552,80% người tham gia sẽ báo cáo các kỹ năng giải quyết mâu thuẫn gia tăng.,Có hơn 100 người tham gia với tư cách cá nhân.,N
+ps_vi_003563,"Do đó, tôi rất vui mừng được mở rộng lời mời này hôm nay, mang đến cho bạn cơ hội tham gia với chúng tôi với tư cách là Điều phối viên của Trung tâm từ thiện.",Chúng tôi quyết định rằng bạn không thể là Hội viên Điều lệ của Trung tâm Từ thiện.,C
+ps_vi_003568,Nhu cầu của trường luật bao gồm từ mua thêm thiết bị liên lạc máy tính đến chi trả chi phí đi lại cho nhóm toà tranh luận và từ việc làm mới lại phòng chờ Gray đến việc mua thêm tài liệu tham khảo cần thiết cho thư viện.,Chỉ có một nửa số máy tính của trường luật vẫn còn hoạt động.,N
+ps_vi_003569,Nhu cầu của trường luật bao gồm từ mua thêm thiết bị liên lạc máy tính đến chi trả chi phí đi lại cho nhóm toà tranh luận và từ việc làm mới lại phòng chờ Gray đến việc mua thêm tài liệu tham khảo cần thiết cho thư viện.,"Trường Luật có máy tính, cũng như thư viện.",E
+ps_vi_003571,HÀNG MỚI VỀ MỌI MÓN QUÀ ĐỀU TẠO NÊN MỘT SỰ KHÁC BIỆT!,Mỗi món quà được ghi lại và công bố trên tạp chí hàng tháng của chúng tôi.,N
+ps_vi_003574,"Chúng tôi có một chặng đường dài để đi trước khi chúng tôi đạt được mục tiêu của chúng tôi là $ 365,000 từ bạn bè và người đăng ký như chính bạn.",Mục tiêu tiền góp của chúng tôi đã vượt quá 300.000$.,E
+ps_vi_003581,Thu nhập từ vé không bắt đầu bao gồm chi phí của các chương trình này.,Chi phí của các chương trình này là rất cao.,N
+ps_vi_003587,"Tổ chức tên (nếu có) Địa chỉ Thành phố, mã bưu chính của Tiểu bang",Nếu tổ chức không có tên bao gồm họ và tên của bạn cùng với thông tin địa chỉ.,N
+ps_vi_003598,"Là thành viên của Vòng kết nối bên trong, bạn sẽ được chọn chỗ ngồi trong sự kiện và lời mời đặc biệt cho bữa tối, tiệc chiêu đãi và các hoạt động trong suốt cả tuần.",Các thành viên Inner Circle không nhận được bất cứ điều gì ngoại trừ là một phần của nhóm.,C
+ps_vi_003604,"Tôi mời bạn tham gia cùng với tôi trong việc đổi mới cam kết hỗ trợ của bạn cho Thư viện Đại học tại IUPUI, và để xem xét gia tăng đóng góp đó.",IUPUI không nhận các khoản quyên góp nữa.,C
+ps_vi_003609,"Trang phục bởi Brigitte Doth, Jade Stice, và Penny Laimana.",Để tạo ra trang phục này cần sự hợp sức của cả ba người.,E
+ps_vi_003622,.Bằng cách tiếp cận các học sinh không tiếp cận được thông qua trường học và các tổ chức cộng đồng khác.,Mỗi một học sinh đều có thể đến trường.,C
+ps_vi_003626,"Để đánh giá cao sự đóng góp của bạn từ 100 đô la trở lên cho chiến dịch, bạn và một vị khách được mời tham dự một buổi gặp đặc biệt vào Thứ Năm, 23 tháng Ba từ 5: 30- 8:00 tối tại Herron Hall.",Bạn và một vị khách sẽ được mời tham dự một buổi tiếp tân đặc biệt nếu bạn quyên tặng 100 đô la trở lên cho chiến dịch.,E
+ps_vi_003627,"Để đánh giá cao sự đóng góp của bạn từ 100 đô la trở lên cho chiến dịch, bạn và một vị khách được mời tham dự một buổi gặp đặc biệt vào Thứ Năm, 23 tháng Ba từ 5: 30- 8:00 tối tại Herron Hall.","Bạn phải quyên góp ít nhất $ 10,000 để được mời tham dự buổi tiếp tân.",C
+ps_vi_003635,"Đối với Thư viện Đại học IUPUI có các bộ sưu tập, truy cập và các dịch vụ đáp ứng kỳ vọng của bạn, đòi hỏi bạn bè và đối tác cả bên trong trường và trong cộng đồng, tiểu bang và quốc gia.",Thư viện IUPUI cần trợ giúp.,E
+ps_vi_003653,", các lớp học có quy mô nhỏ hơn, sử dụng công nghệ) và từ sự thiếu hụt lâu dài về không gian hỗ trợ sinh viên (tủ khóa, dịch vụ ăn uống, văn phòng cho các tổ chức sinh viên).",Có nhiều tủ khóa hơn những sinh viên cần.,C
+ps_vi_003659,Quỹ Clinton Birthplace Foundation cung cấp các đặc quyền thành viên đầy đủ cho những người chỉ phải trả $ 10.,Bạn nhận được một bản tin nếu bạn là thành viên của Quỹ sinh nơi Clinton.,N
+ps_vi_003672,"Wanda cũng ý thức như bất kỳ người mẹ nào về những khả năng mới mà bạn tạo ra, điều mà cô ấy gọi là một điều tuyệt vời để biết.",Wanda là một người mẹ.,E
+ps_vi_003687,Đính kèm là thẻ trả lời và phong bì với hy vọng rằng bạn sẽ cân nhắc bắt đầu với 1994 như một món quà đến IU.,Hãy gửi lại tấm thẻ này để cho chúng tôi biết bạn muốn dùng gì cho bữa tối.,C
+ps_vi_003691,Chúng tôi dựa vào bạn và những người bạn hào phóng khác để cung cấp 38 phần trăm còn lại.,"62 phần trăm đã được bảo hiểm, và chúng tôi hy vọng bạn sẽ cung cấp phần còn lại.",E
+ps_vi_003693,Chúng tôi dựa vào bạn và những người bạn hào phóng khác để cung cấp 38 phần trăm còn lại.,"Chúng tôi sẽ không cần sự giúp đỡ của bạn, vì chúng tôi nhận được nhiều tiền hơn chúng tôi cần.",C
+ps_vi_003701,Mười ba màu sợi của tấm thảm tráng lệ tượng trưng cho mười ba thuộc địa nguyên thủy của quốc gia này.,"Quốc gia này có mười ba thuộc địa lúc đầu, và nhiều hơn nữa đã được thêm vào rất nhiều.",E
+ps_vi_003718,"Trong trường hợp động vật không được chủ sở hữu phục hồi, Hội Nhân đạo của bạn sử dụng nhiều dịch vụ khác nhau để hỗ trợ những động vật đó và mang đến cho chúng cơ hội có một cuộc sống hạnh phúc.",Tất cả các con vật đều được chủ nhân của chúng tìm lại được.,C
+ps_vi_003720,"Trong trường hợp động vật không được chủ sở hữu phục hồi, Hội Nhân đạo của bạn sử dụng nhiều dịch vụ khác nhau để hỗ trợ những động vật đó và mang đến cho chúng cơ hội có một cuộc sống hạnh phúc.",Hội Nhân đạo là một tổ chức phi lợi nhuận quan tâm đến vật nuôi bị bỏ rơi.,N
+ps_vi_003725,"Chúng tôi hy vọng bạn sẽ thích nói chuyện với họ, nhưng bạn có thể tiết kiệm tiền hành chính IRT bằng cách gửi quà tặng của bạn trong phong bì gửi lại vào hôm nay.",Gửi quà của bạn qua bưu điện sẽ tiết kiệm $500 IRT.,N
+ps_vi_003726,"Chúng tôi hy vọng bạn sẽ thích nói chuyện với họ, nhưng bạn có thể tiết kiệm tiền hành chính IRT bằng cách gửi quà tặng của bạn trong phong bì gửi lại vào hôm nay.",Bạn chỉ có thể cho tặng bằng chuyển khoản ngân hàng.,C
+ps_vi_003730,"Với sự đóng góp của bạn vào Thư viện, bạn sẽ trở thành thành viên của bạn bè trên toàn thành phố.",Hãy đóng góp ngay hôm nay cho Thư viện để trở thành một Người Bạn Nông Thôn.,C
+ps_vi_003740,Khoản hỗ trợ đóng góp của bạn trực tiếp có lợi cho các chương trình tiếp cận cộng đồng của IRT và tận dụng được các khoản tiền quà tặng phù hợp.,Đóng góp của bạn được ghi nhận.,E
+ps_vi_003742,Đến lúc cho LẦN GỌI CUỐI CÙNG ai cũng biết!,Đã đến lúc gọi lần cuối vì chúng tôi sẽ kết thúc lúc 2 giờ sáng,N
+ps_vi_003767,Tôi yêu cầu bạn vui lòng cung cấp hôm nay cho IRT và giúp họ tiếp tục công việc tuyệt vời mà họ đã sản xuất được 26 năm.,Xin tặng $ 100.00 cho IRT hôm nay.,N
+ps_vi_003773,"Kể từ năm 1914, Civic đã duy trì tính độc đáo của mình bằng cách sống đúng với bản chất của nó",Civic đã tồn tại từ đầu những năm 1900.,E
+ps_vi_003781,Cần các nguồn vốn tại đây để dùng làm khoản tiền ban đầu khi chúng ta làm việc để thiết lập các dự án trở thành nguồn tự trang trải cho trường học.,"Chúng tôi không cần thêm tiền, chỉ cần thời gian của bạn.",C
+ps_vi_003783,Cần các nguồn vốn tại đây để dùng làm khoản tiền ban đầu khi chúng ta làm việc để thiết lập các dự án trở thành nguồn tự trang trải cho trường học.,Chúng ta cần vốn ban đầug để giúp nhà trường.,E
+ps_vi_003785,Việc mua lại mang tính bước ngoặt trong tháng 12 của 75 cuộn dây treo và màn hình gấp hiếm hoi và quan trọng là minh chứng cho cam kết xây dựng bộ sưu tập nghệ thuật thế giới vĩnh viễn của IMA.,"Nghệ thuật đã được thụ đắc, điều này thật thú vị.",E
+ps_vi_003806,"Năm ngoái, chỉ có 20% cựu sinh viên của chúng tôi đóng góp cho trường, tăng từ 14% vào năm 1990.",17% cựu sinh viên của chúng tôi đã đóng góp cho trường ba năm trước đây.,N
+ps_vi_003807,"Năm ngoái, chỉ có 20% cựu sinh viên của chúng tôi đóng góp cho trường, tăng từ 14% vào năm 1990.",Những đóng góp của cựu sinh viên cho trường đã tăng lên kể từ năm 1990.,E
+ps_vi_003809,"Là một thành viên của nhóm Bạn bè toàn thành phố của Thư viện miễn phí, bạn sẽ nhận được một bản tin hàng quý thông báo cho bạn về các sự kiện thư viện và các vấn đề lập pháp.",Các thành viên của Bạn bè trên toàn thành phố của Thư viện miễn phí nhận bản tin gồm 16 trang.,N
+ps_vi_003817,"Đây là kết quả mới nhất: 5,615 nhóm đối tượng tham gia hội cựu sinh viên không đóng góp, 81 1.4 phần trăm, người đóng góp nhiều nhất là $2,840 và người đóng góp ít nhất là $5.",Hầu hết mọi người đã chi hơn 1000 đô la.,N
+ps_vi_003829,"Trong nhiều năm, ông đã làm công việc đóng gói và văn thư.",Anh kiếm được 400 đô la một tuần để đóng gói các sản phẩm họ bán.,N
+ps_vi_003840,Khoảng 25% tập thể sinh viên Nhà thờ hiện được hỗ trợ tài chính một phần.,Chúng tôi không hỗ trợ tài chính cho sinh viên.,C
+ps_vi_003846,"Chúng tôi gửi thư này để thông báo cho ông rằng chúng tôi vẫn cần sự giúp đỡ của ông để tiếp tục duy trì tình trạng quản lý tài chính tốt, sản phẩm sân khấu sôi động và các chương trình giáo dục xuất sắc.",Chúng tôi cần sự giúp đỡ của bạn để giữ sự sản xuất nhạc kịch hoạt động.,E
+ps_vi_003850,"Nếu không có sự giúp đỡ của bạn, chúng tôi sẽ mất số tiền trợ cấp này.","Nếu bạn không giúp chúng tôi, chúng tôi sẽ mất 10.000 đô la.",N
+ps_vi_003851,"Nếu không có sự giúp đỡ của bạn, chúng tôi sẽ mất số tiền trợ cấp này.","Chúng tôi không cần sự giúp đỡ của bạn, chúng tôi đã có mọi thứ chúng tôi cần.",C
+ps_vi_003853,Nghiên cứu được công bố trên tạp chí Khoa học đưa ra bằng chứng về sự tiến bộ bằng cách ghi chép lại ca ghép tạng thành công đầu tiên của các tế bào tim chức năng vào một mô hình động vật.,Các tế bào tim có thể được cấy ghép ở động vật.,E
+ps_vi_003855,Nghiên cứu được công bố trên tạp chí Khoa học đưa ra bằng chứng về sự tiến bộ bằng cách ghi chép lại ca ghép tạng thành công đầu tiên của các tế bào tim chức năng vào một mô hình động vật.,Lợn được cấy tế bào tim đầu tiên.,N
+ps_vi_003869,Tôi muốn thấy điều đó tiếp tục.,Nó thì tuyệt vời nếu việc gây quỹ kéo dài cho đến tháng Bảy.,N
+ps_vi_003880,"Nếu bạn muốn biết thêm thông tin về chiến dịch Y học của Trường IU hoặc nghiên cứu của Tiến sĩ Field, vui lòng gọi số 274-3270.",Tiến sĩ Field là nhà khoa học quan trọng nhất tại trường y học.,N
+ps_vi_003889,"Vì đặt phòng cho kỳ nghỉ của chúng tôi ở Houston bị hạn chế, tôi hy vọng bạn sẽ trở lại Đề cử chấp nhận của bạn ngay hôm nay.",Tôi hy vọng bạn gửi lại thứ này trước khi ba chỗ cuối cùng được lấp đầy!,N
+ps_vi_003901,Sự hào phóng của bạn sẽ giúp IRT tiếp tục kể những câu chuyện hay nhất theo cách hay nhất có thể.,"Nếu không có sự đóng góp của bạn, IRT sẽ gặp rắc rối.",N
+ps_vi_003908,"Jerry Bepko, Chủ tịch của IUPUI, đã đóng góp cho Kent qua những nhận xét này.",Bepko trân trọng Kent.,E
+ps_vi_003909,"Jerry Bepko, Chủ tịch của IUPUI, đã đóng góp cho Kent qua những nhận xét này.",Bepko không bao giờ có điều gì tốt đẹp để nói về Kent.,C
+ps_vi_003914,Điều quan trọng là chúng tôi hy vọng rằng bạn sẽ đóng góp đáng kể vào quỹ Pursuit of Excellence trong năm nay.,Chúng tôi muốn bạn biết được sự đóng góp quan trọng đối với Pursuit of Excellence là cần thiết trong năm nay.,E
+ps_vi_003922,"Bạn, cùng với những thành viên biết quan tâm khác, sẽ giúp đỡ nỗ lực gìn giữ và phát huy di sản đáng tự hào của bang chúng ta.",Đang cần cứu viện cho tiểu bang,E
+ps_vi_003953,"Trực giác của tôi, tất nhiên, rất mang tính chủ quan-bạn là người quan tâm, theo như mô tả trong đóng góp thường niên của thành viên hiệp hội tiếp viên hàng không cho giáo xứ của bạn.",Tôi cảm nhận được sự chăm sóc tận tình và tốt bụng của bạn.,E
+ps_vi_003955,Và cô ấy luôn ở đó vì chúng ta,Cô ấy đưa chúng tôi toàn bộ số tiền chúng tôi cần.,N
+ps_vi_003961,"Những chiếc ghế còn trống --Washington, Colorado, và Bắc Dakota - cùng với việc Alan Dixon của đảng Dân chủ bị lật đổ lâu dài, đã tăng đáng kể cơ hội chiến thắng của chúng ta.",Alan Dixon là một chính trị gia Đảng dân chủ.,E
+ps_vi_003967,"Ngoài ra, cư dân Indiana có thể nhận được các khoản trợ cấp thuế thông qua tín dụng thuế bang Indiana được đăng ký trực tiếp ở dòng cuối của tờ khai thuế bang.",Indiana không cung cấp tín dụng thuế.,C
+ps_vi_003968,"Ngoài ra, cư dân Indiana có thể nhận được các khoản trợ cấp thuế thông qua tín dụng thuế bang Indiana được đăng ký trực tiếp ở dòng cuối của tờ khai thuế bang.",Cư dân Indiana nhận được khoản tín dụng thuế 50% nếu họ quyên góp cho nhà hát,N
+ps_vi_003970,"Tiếp theo buổi biểu diễn, một cặp đôi trẻ tuổi bước lên sàn và cất lời chào.",Một cặp vợ chồng trẻ đang tham gia chương trình.,E
+ps_vi_003971,"Tiếp theo buổi biểu diễn, một cặp đôi trẻ tuổi bước lên sàn và cất lời chào.",Một cặp vợ chồng trẻ đã đi đến buổi biểu diễn đầu tiên của họ.,N
+ps_vi_003973,Chúng tôi yêu cầu tất cả sinh viên tốt nghiệp cho một món quà trị giá $ 1000.,Chúng tôi đang gây quỹ từ sinh viên tốt nghiệp.,E
+ps_vi_003995,Lễ trao học vị năm 1991 làm mới những kỷ niệm về ngày sinh viên tại Đại học Indiana.,Sinh viên tốt nghiệp ghi nhớ hành trình sinh viên của mình tại Đại học Indiana.,E
+ps_vi_004000,Nhưng còn rất nhiều người vẫn cần sự giúp đỡ của chúng tôi.,10.000 người vẫn cần sự giúp đỡ của chúng ta.,N
+ps_vi_004008,"Chúng tôi cũng chú trọng vào những vở kịch liên quan trực tiếp đến chủ đề lịch sử, văn học và nghiên cứu xã hội.",Chúng tôi cố gắng không làm những vở kịch nhìn nhận về lịch sử hay văn học.,C
+ps_vi_004012,Phần lớn đã được thực hiện bằng cách thuê Michael Apted để mang lại một liên lạc của con người hơn cho bộ truyện.,"Michael Apted đã hủy hoại bộ phim bằng cách nhấn mạnh rằng họ lấy ra những yếu tố ấm áp, con người.",C
+ps_vi_004016,để xem một cô gái trong một parka lông trắng và giầy ủng,Một cô gái mặc quần áo trắng.,E
+ps_vi_004021,Rockefeller đã bị cuốn vào sự khốn khổ này khi Avenging Angel Tarbell bắt đầu xé xác của anh ta trong McClure.,Rockefeller đã tài trợ hoạt động nghiên cứu ung thư.,N
+ps_vi_004022,Rockefeller đã bị cuốn vào sự khốn khổ này khi Avenging Angel Tarbell bắt đầu xé xác của anh ta trong McClure.,Rockefeller đã quyên tặng.,E
+ps_vi_004029,"Nancy Griffin viết trong Hollywood Strikes Back rằng Michael Eisner đã mở rộng chi nhánh ô liu cho người bạn cũ Mike Ovitz, nhưng Ovitz từ chối chấp nhận nó.","Do sự nghi ngờ về tài chính và tầm nhìn với công ty, Mike Ovitz từ chối nỗ lực của Michael Eistener nhằm làm rõ sự khác biệt giữa họ.",N
+ps_vi_004046,"Việc xuất bản cuốn sách RPH ngay sau các tour du lịch đã được đặt, dẫn đến thực tế tiếp theo về",Các tour du lịch đã đặt đi 10 thành phố.,N
+ps_vi_004058,Thể thao không phải là sự kiện duy nhất để đặt cược tại các trang web này.,Những trang web này chỉ nhận đặt cược các sự kiện thể thao.,C
+ps_vi_004059,Thể thao không phải là sự kiện duy nhất để đặt cược tại các trang web này.,Các trang web này thực hiện một số hoạt động.,E
+ps_vi_004083,"Có rất nhiều lựa chọn để tấn công logic trong lập luận về vũ trụ này, và các đối thủ đương thời của chủ nghĩa duy thần đã thử tất cả chúng.",Lập luận vũ trụ này đã được những người đọc nó chấp nhận và chấp thuận.,C
+ps_vi_004084,Talmudic không đem cái túi nào cả.,Talmudic có đủ các vấn đề đó.,C
+ps_vi_004089,Tòa án không phải là rạp xiếc chính trị duy nhất ở Washington sáng nay.,Có một rạp xiếc ở tòa án cùng cùng chú hề.,C
+ps_vi_004100,Tổ chức Y tế Thế giới đã thông báo rằng một chiến dịch mới để xử lý bệnh lao phổi có thể cứu được 10 triệu mạng sống trong thập kỷ tới.,Tổ chức y tế thế giới (WHO) có một chiến lược điều trị bệnh lao có thể cứu sống hơn mười triệu người.,N
+ps_vi_004136,"Bằng cách sử dụng 8 kỹ thuật đơn giản này, bạn có thể tạo ra một câu chuyện tin tức tại ngay nhà của bạn.",Viết truyện ngắn trong bộ đồ ngủ thật dễ dàng và bổ ích về mặt tài chính nếu bạn làm theo tám bước này.,N
+ps_vi_004147,Sự Chính trị hóa của Gần như Mọi thứ (Bộ phận Văn học) tiếp diễn nhanh chóng.,Chính trị hóa Gần như Mọi thứ diễn ra nhanh chóng.,E
+ps_vi_004216,Việc dân chủ hóa cũng không thay đổi thực tế cơ bản của địa lý quốc tế.,Dân chủ hóa có thể làm ít để thay đổi thực tế của địa lý quốc tế.,E
+ps_vi_004233,Nguyên nhân thực sự đáng lo ngại là HMO có thể không kiểm soát được chi phí trong dài hạn.,Có khả năng HMO không thể kiểm soát chi phí trong thời gian tới.,E
+ps_vi_004238,Bạn không thể tìm thấy câu trả lời rẻ hơn đâu,Đây là những câu trả lời cho một mức giá thấp hơn gần như tại bất cứ nơi nào bạn thấy.,C
+ps_vi_004244,"biết rằng trong suốt thời gian đó, tôi đã biết, tôi sẽ luôn nhận ra giọng điệu này, giọng nói duy nhất",Tôi biết giọng nói đó,E
+ps_vi_004245,"biết rằng trong suốt thời gian đó, tôi đã biết, tôi sẽ luôn nhận ra giọng điệu này, giọng nói duy nhất",Tôi biết giọng nói đó vì đó là giọng mẹ tôi.,N
+ps_vi_004254,"Ngược lại, việc cung cấp tiền cho chính phủ không phải là sự ép buộc -- và thậm chí không thể so sánh với những gì diễn ra ở Trung Quốc.",Chính phủ rõ ràng mua chuộc mọi người nếu họ đưa tiền,C
+ps_vi_004266,Vậy Slate có bao nhiêu độc giả?,Người nói đang tự hỏi có bao nhiêu người đọc Slate.,E
+ps_vi_004271,"Raves cho bà Dalloway tiếp tục đến, nhưng một quan trọng hơn mất cũng xuất hiện.",Một số sinh viên đã phát cáu về bà Dalloway và thậm chí còn chỉ trích bà hơn.,N
+ps_vi_004275,Khi nào một đồng đô la không phải là một đô la?,"Có những lúc tiền có giá trị hơn bình thường, giống như trong thời gian chiến tranh.",N
+ps_vi_004296,"Những người trả lời tích cực hơn của chúng tôi, phấn khởi để làm nền móng cho toàn bộ công việc trong một lần, bỏ qua sách và tự đi thẳng đến các tác giả.",Những người phản hồi nói về các tác giả họ yêu thích.,N
+ps_vi_004352,Bất cứ điều gì đã xảy ra với cách tiếp cận vô tâm truyền thống của quân đội trong việc tìm kiếm một vật tế thần?,Quân đội có một lịch sử sử dụng vật tế thần.,E
+ps_vi_004354,"Michael Lewis, được phỏng vấn về cuốn sách Trail Fever của ông, quan sát thấy Alexander đã làm điều mà tôi không nghĩ đó là điều có thể trong chiến dịch này.","Michael Lewis đã phỏng vấn hơn 50 cuộc về cuốn sách của ông, Trail Fever.",N
+ps_vi_004362,"Câu chuyện bao gồm của Newsweek cho rằng Bắc Mỹ lần đầu tiên được một Liên minh Cầu vồng của các dân tộc bao gồm, không chỉ là những người châu Á qua eo biển Bering thường được mô tả trong sách giáo khoa lịch sử.",Người da trắng chủ yếu đại diện cho Bắc Mỹ kể từ khi phát hiện ra nó.,N
+ps_vi_004365,Dẫm lên Một Vài Ngón Chân To Lớn,Các ngón chân thật to.,E
+ps_vi_004400,"Thứ tư, Clinton đã chọn để nói về một ngành công nghiệp khác.",Clinton nói hôm thứ Tư.,E
+ps_vi_004407,Đừng để tâm đến câu hỏi liệu chỉ số trung bình công nghiệp của Dow Jones có phải là thước đo thích hợp về tình hình kinh doanh của người giàu có hay không.,Chỉ số Dow Jones cho thấy những gì đang xảy ra trong nền kinh tế.,E
+ps_vi_004410,Ý nghĩa nổi bật nhất của lý thuyết CMP là mối quan tâm về vị trí tương đối biến mất trong các xã hội nơi mà các bạn tình được phân bổ bởi các cơ chế khác ngoài sự giàu có.,Lý thuyết CMP là về diều.,C
+ps_vi_004423,Tôi có nên đặt một bộ cho bản thân mình không?,Bộ này là rất tốn kém.,N
+ps_vi_004424,Tôi có nên đặt một bộ cho bản thân mình không?,Tôi có bỏ qua bộ này không?,C
+ps_vi_004425,Tôi có nên đặt một bộ cho bản thân mình không?,Liệu tôi có nên mua một bộ cho tôi không?,E
+ps_vi_004426,Thời gian dự đoán trước rắc rối với SAT.,SAT là vô tận và sẽ không có rắc rối trong tương lai.,C
+ps_vi_004439,"Thứ ba, ngay cả khi chúng tôi chấp nhận các kết luận, họ không áp dụng cho tất cả các địa điểm giải trí.",Các kết luận không liên quan đến các địa điểm vui chơi giải trí lớn.,E
+ps_vi_004444,"Để ngăn chặn việc coi hình ảnh của đồng tính luyến ái như một tội lỗi, Clinton và Birch gắn liền những phẩm của công dân với sự đồng tính.",Clinton và Birch là đồng tính luyến ái.,N
+ps_vi_004446,"Để ngăn chặn việc coi hình ảnh của đồng tính luyến ái như một tội lỗi, Clinton và Birch gắn liền những phẩm của công dân với sự đồng tính.",Đồng tính luyến ái được xem như là một tính xấu.,E
+ps_vi_004456,Newsweek đã giả vờ than khóc trong sự hào nhoáng của Hamptons.,Newsweek chưa bao giờ viết bất cứ điều gì về Hamptons.,C
+ps_vi_004459,"Tuy nhiên, người hùng của tôi là Richard Heseltine, chủ tịch của Quỹ đầu tư nước ngoài, người đã từ chức hồi đầu tháng này để phản đối kế hoạch kinh doanh do cấp trên áp đặt.",Heseltine vẫn chưa có kế hoạch nghỉ hưu.,C
+ps_vi_004471,Tiếng ồn thực sự hấp dẫn với giới trẻ và gây phiền cho những người già.,Người lớn tuổi không thích tiếng ồn vì họ nhạy cảm.,N
+ps_vi_004486,Liệu sự kết hợp giữa các sự kiện và suy đoán này là cơ sở cho các cuộc biểu tình phản đối là một vấn đề về ý kiến cá nhân.,Những sự kiện đóng góp nhiều hơn đối với những sự kháng nghị.,N
+ps_vi_004495,Nga đang đối mặt với những thách thức ngày càng tăng trong cuộc chiến Chechnya.,Các thách thức Nga đang phải đối mặt giảm sút dần do cuộc chiến Chechnya.,C
+ps_vi_004501,Các lý thuyết kết thúc xác định tuổi tác với những đặc điểm đặc trưng đã phải kết thúc hoặc sẽ kết thúc và không lặp lại.,Những học thuyết nhận ra được tuổi tác qua những đặc tính của khuân mặt.,N
+ps_vi_004506,"Time phỏng vấn Deborah Eappen, người mẹ đang đau buồn trong vụ án du học sinh trao đổi văn hóa tại Louise Woodward.",Tờ báo Thời đại phỏng vấn John Handcock.,C
+ps_vi_004511,") Khi trở về căn cứ, một người đỗ xe  ngay tại ngôi nhà di động - còn nơi nào khác nữa chứ?",Nhà động cơ nơi trú ẩn xe ô tô từ mặt trời và từ tuyết.,N
+ps_vi_004515,"Người ta có thể tưởng tượng tới cảnh một người lái xe ủi đất đang lê lưỡi ủi trên đường cho một sự phát triển mới được ca ngợi bởi nhà phát triển    Này, Loyd…",Không thể tưởng tượng bạn là một công nhân lái máy ủi.,C
+ps_vi_004517,"Tôi báo cáo điều này trong một lá thư gửi cho Tiến sĩ     nó dường như khiến anh ta thích thú, và anh ấy đã gửi cho tôi một loại bánh trái cây nhỏ vào Giáng sinh.",Tôi không ăn bánh mà bác sĩ đã gửi cho tôi Giáng sinh đó.,N
+ps_vi_004521,"Nhóm trước đây đã được biết đến với tên gọi đáng nhớ là Beaneaters, một cách tò mò khác, cũng có thể được xem là một biệt danh của người Ấn Độ.",Đội chỉ có một cái tên.,C
+ps_vi_004522,Giả định một cách đầy hàm ơn rằng Yddish ...,Có lý khi giả định rằng Yiddish....,E
+ps_vi_004529,Tôi không thể tìm thấy định nghĩa nào như vậy trong từ điển.,Tôi tra từ điển và không tìm thấy một định nghĩa.,E
+ps_vi_004541,"Nó có thể được lập luận rằng văn bản nên được phiên âm, không phải ngữ âm, nhưng âm vị thay đổi quá, mặc dù chậm hơn.",Âm vị không bao giờ thay đổi theo thời gian.,C
+ps_vi_004543,Cửa hàng thẩm mỹ Split Ends là một ví dụ điển hình về sự sang trọng kết hợp với uyển ngữ khi nói về chuyện khai trương không quá sôi động hay khác thường.,Split Ends là tiệm làm tóc.,E
+ps_vi_004548,Bernstein giải thích trong phần giới thiệu,Phần giới thiệu chứa một lời giải thích.,E
+ps_vi_004550,"Nếu bạn tìm thấy bất kỳ tên đặc biệt (Missouri) hoặc những người đến như là một bất ngờ (Nebraska), chỉ Jot 'Em Down (Texas) một cách an toàn (Tennessee) - trừ khi, tất nhiên, họ là Errata (Mississippi).","Surprise, Nebraska có 10.000 cư dân.",N
+ps_vi_004554,"Kỹ năng biết viết, đọc và tính toán đã giữ được vị trí chủ đạo trong những năm gần đây như những vấn đề chính, không chỉ (hoặc thậm chí quá nhiều) tại Thế giới Thứ ba như tại các quốc gia công nghiệp.",Thế giới thứ ba đang tụt lại phía sau.,N
+ps_vi_004562,"Một điều mà cô Tesniares chưa lường trước được, là, đầu vào Anglo-Saxon.",M. Tesniares không xem xét đầu vào của Anglo Saxon.,E
+ps_vi_004583,"Trên hết, chúng ta có một sự thật không mấy hoan hỉ là văn phong hùng biện đôi khi thật sự đáng nhớ, làm vấn đề trầm trọng hơn.",Bài viết hay thường dễ nhớ hơn nhiều so với bài viết dở.,E
+ps_vi_004616,"Vì nó xảy ra, tất nhiên, có nhiều tiếng địa phương đặc biệt của tiếng Anh ở Anh hơn ở Bắc Mỹ, và bất cứ ai đã dành bất cứ lúc nào lắng nghe họ biết rằng một số người không hiểu lẫn nhau.","Giong điệu Bắc Mỹ và Anh hoàn toàn giống nhau, và mọi người không thể phân biệt được sự khác biệt giữa chúng.",C
+ps_vi_004618,"'Một người cung cấp tin tức ở Tennessee sử dụng thời tiết cho chó' thời tiết nóng, không đau, 'có thể xuất phát từ những ngày chó biểu hiện đề cập đến thời tiết tháng 8 khô ráo.","Theo người cung cấp thông tin, chó có thể dự báo thời tiết khi những cơn gió theo mùa ập đến.",C
+ps_vi_004620,"'Một người cung cấp tin tức ở Tennessee sử dụng thời tiết cho chó' thời tiết nóng, không đau, 'có thể xuất phát từ những ngày chó biểu hiện đề cập đến thời tiết tháng 8 khô ráo.",Thời tiết nóng và không mưa trong hầu hết các ngày tháng Tám.,E
+ps_vi_004622,"một thay đổi cho một biểu thị không mong muốn, để tránh những thiệt hại có thể xảy ra đối với khuôn mặt ai đó hoặc thông qua việc xúc phạm, với khán giả, hoặc một vài bên thứ ba.",Để tránh mất mát.,E
+ps_vi_004629,"Những thứ này ở bên ngoài con người, trong khi phong cách chính là con người.",Bản chất của một người là phong cách của họ.,E
+ps_vi_004636,"Tôi hy vọng sẽ sống đến năm 2000 để giúp hướng dẫn viên Yiddish. Tôi chắc chắn rằng Yiddish sẽ vẫn còn tồn tại, sống sót sau những kẻ gièm pha của nó, vì nó đã có hàng ngàn năm rồi.",Tôi chắc chắn rằng tiếng Yiddish sẽ vẫn còn tồn tại vào năm 2000.,E
+ps_vi_004665,(a) Thay đổi d hoặc t trong mục tiêu hướng đến c.,Nên có nhiều c trong mục tiêu hơn d.,E
+ps_vi_004666,'Một ví dụ khác đến từ VIP' Vasoactive Intestinal Poly-peptide,Một ví dụ đến từ VIP.,E
+ps_vi_004669,Grammar và glamour về phương diện lịch sử là cùng một từ.,Ngữ pháp và sự quyến rũ chưa bao giờ liên quan đến nhau.,C
+ps_vi_004687,Một trong những từ mới nhất để nhập vào Chu kỳ viết tắt của cuộc đua thừa là Missouri. Trạng thái Show-Me đã đạt được thiết lập vào năm 1821.,Trước năm 1800 Missouri không được coi là một tiểu bang của Hoa Kỳ.,E
+ps_vi_004694,"Trong một cuốn sách nói về chủ đề này người ta phải cực kỳ cẩn thận để tách ra các định nghĩa cứng nhắc của các thuật ngữ chính (euphemism, dysphemism, taboo, vv) và không đi chệch khỏi chúng.",Cuốn sách nói về cách các từ được sử dụng trong y học.,N
+ps_vi_004696,Và chúng tôi biết rằng Giáo sư Honey đã đúng khi ông viết về,Và chúng ta biết rằng Giáo sư Mật ong chính xác trong các tác phẩm của ông.,E
+ps_vi_004710,Một trong những hiện tượng ngôn ngữ đã nổi lên trong suốt mấy trăm năm qua hay có thể gọi là việc chấp nhận quan niệm rằng bước quan trọng trong việc giải quyết các vấn đề lại nằm trong việc đặt tên chúng.,"Khi một vấn đề được đặt tên, giải pháp sẽ theo sau trong một khung thời gian có thể chấp nhận được.",N
+ps_vi_004754,"Ngôn ngữ chửi bậy và nói tục tiếng Tây Ban Nha thật là sáng tạo-- echar sapos y culebras, nghĩa đen là 'nôn ra ếch và rắn.",Echar sapos y culebras có nghĩa là loại bỏ ếch và rắn trong tiếng Pháp.,C
+ps_vi_004760,từ khi bắt đầu con người phải có tên để xác định chính họ.,Những người bắt đầu tự xác định bằng cách sử dụng tên.,E
+ps_vi_004798,"Ở đây dọc theo Oil Creek, những người Anh-Điêng đã tách dầu bề mặt khỏi nước để sử dụng trong nội địa, và những người định cư da trắng đã đóng chai nó cho mục đích y học và gọi nó là Dầu Seneca.",Cả người Ấn Độ và người định cư da trắng đều sử dụng dầu từ Lạch Dầu.,E
+ps_vi_004814,"Một bộ phận của lực lượng vũ trang là Tiểu đoàn Xây dựng, nhanh chóng được lấy tên viết tắt là C.B.",Tiểu đoàn xây dựng là một trong những nhánh quan trọng nhất của lực lượng vũ trang.,N
+ps_vi_004821,"Luật thương hiệu, bao gồm hơn hai tập Chú thích Hoa Kỳ.",Luật nhãn hiệu rất phức tạp và yêu cầu tài liệu tham khảo thường xuyên về hai tập của Hoa Kỳ được chú thích,N
+ps_vi_004827,"Ông Nields trả lời rằng, tôi hoàn toàn hạnh phúc khi sử dụng cụm từ 'những câu nói dài dòng.",Ông Nields nói ông rất vui khi sử dụng những từ đó.,E
+ps_vi_004840,ẹo của Venus Một phát ban được sản xuất bởi giang mai thứ phát.,Phát ban là dấu hiệu bên ngoài đầu tiên của bệnh giang mai.,N
+ps_vi_004841,ẹo của Venus Một phát ban được sản xuất bởi giang mai thứ phát.,Không có biểu hiện nào của bệnh giang mai,C
+ps_vi_004848,"Nhưng nếu anh ta sử dụng ngữ pháp, từ vựng và thành ngữ tiếng Anh chuẩn mực trên báo chí, sách vở, tạp chí và bản tin, thì tất cả những gì chúng tôi nhận thấy về giọng nói của anh ấy là giọng của anh ấy--và có thể là ngữ điệu của anh ấy.",Giọng của anh ấy và có thể ngữ điệu của anh ấy là điều đáng chú ý khi anh ấy sử dụng ngữ pháp và từ vựng tiếng Anh chuẩn.,E
+ps_vi_004854,"Do đó, các vết lõm được gọi là nudgies, và các vết lõm lớn--những vết cần nhiều hơn $500 để sửa chữa-- được gọi là owies.",Họ chỉ gọi họ là tất cả các vết lõm.,C
+ps_vi_004883,"Nhưng ngay cả khi còn là một cậu bé tôi sống trong một trang trại ngay sát biên giới Mexico, tôi vẫn nhớ mình thường bị mê hoặc bởi những khoảng thời gian đi chăn súc vật được dần hiện rõ trong những ca khúc nhạc miền Tây từ khu phía bắc của chúng tôi, như từ phía người Cayuse chẳng hạn.",Tôi hoang mang về các điều khoản chăn nuôi.,E
+ps_vi_004887,"Trong thực tế, có hơn một trăm công cụ sửa đổi tổng hợp.",Chỉ có 50 điều chỉnh âm tiết.,C
+ps_vi_004893,Mục 8 xả được đặt hàng cho công ty không hợp lệ này fxxxup.,Người đó đang được xuất viện.,N
+ps_vi_004902,"Tuy nhiên, như con gái của ông Levitt chỉ ra, nó thường được tìm thấy như một tie co giãn được sử dụng để ràng buộc những thứ lên, như một mainsail rạn san hô trên bùng nổ của nó, bài viết ánh sáng với một rack hành lý, vv.",Con gái của Levitt 17 tuổi.,N
+ps_vi_004906,"Nếu như Esperanto đang cố gắng trở thành một ngôn ngữ có thực thì trước tiên nó phải giống như một ngôn ngữ, và trước đó, nó sẽ chịu chung một điểm yếu như các ngôn ngữ tự nhiên khác đang hứng chịu -- đa nghĩa và đa ngôn từ.",Esperanto là một ngôn ngữ thực sự có tất cả các điểm yếu của các ngôn ngữ khác.,C
+ps_vi_004907,"Nếu như Esperanto đang cố gắng trở thành một ngôn ngữ có thực thì trước tiên nó phải giống như một ngôn ngữ, và trước đó, nó sẽ chịu chung một điểm yếu như các ngôn ngữ tự nhiên khác đang hứng chịu -- đa nghĩa và đa ngôn từ.",Esperanto được nói bởi chưa đến một phần trăm dân số thế giới.,N
+ps_vi_004922,"Khi tôi bắt đầu công việc văn phòng đầu tiên của mình ở Switzerland, tôi có một cô thư ký không biết cả tiếng Pháp lẫn tiếng Anh, do đó, tôi phải viết bằng tay cho cô ấy đánh máy lại.","Thư ký của tôi không nói được tiếng Anh hay tiếng Pháp, nhưng tôi thì có.",N
+ps_vi_004926,"Sự phức tạp của việc hạ gục Gallic không làm anh ấy lo lắng chút nào, và vì lý do tốt nhất trong anh ta thậm chí không bận tâm để thử.",Anh ta không lo lắng vì anh ta không cố gắng.,E
+ps_vi_004938,"Có vẻ như ngớ ngẩn khi tách biệt pho mát Gruyare với địa danh Gruyare ở Thụy Sĩ - quê hương thực sự của loại pho mát này, nơi này thậm chí còn không có tên trên bất kỳ bản đồ địa lý của bất kỳ từ điển nào.",Bạn không thể loại bỏ pho mát Gruyare ra khỏi nơi này.,E
+ps_vi_004940,Thấy con thú nhỏ tò mò ở đằng kia không?,Bạn có thấy con thú tò mò ở đó không?,E
+ps_vi_004941,Thấy con thú nhỏ tò mò ở đằng kia không?,Tôi không thể nhìn thấy con thú nhỏ kỳ lạ đó.,C
+ps_vi_004984,Tiền thân của nó là hiện tượng khá lạ lùng (1398) 'đi tiểu chậm và đau đớn.,Đi tiểu chậm và đau là triệu chứng.,E
+ps_vi_004990,"Và nghỉ ngơi dễ dàng, cô Dalrymple, khi tôi biên tập lại các kịch bản phát biểu để in ấn ấn phẩm, tôi luôn trở lại với cách sử dụng tiếng Anh học thuật thuần túy.",Tôi tiếp tục nói như vậy.,C
