@@ -192,3 +192,129 @@ forced recomplete from original:
 
 250 - 25 seconds [refused every query. on reprompt, hallucinated task IDs and answered A/B every other in a clear pattern]
 
+
+
+claude:
+
+sonnet 4.6
+
+batch size
+25 -- 11 seconds
+
+  "pred_file": "sonnet_4.6_25_en.csv",
+  "data_size": 25,
+  "prediction_rows_raw": 25,
+  "prediction_rows_after_dedup": 25,
+  "correct": 24,
+  "accuracy": 0.96,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 0,
+  "refusal_rate": 0.0,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0
+}
+
+100 -- 14 seconds
+
+  "pred_file": "results/sonnet_4.6_100_en.csv",
+  "data_size": 100,
+  "prediction_rows_raw": 100,
+  "prediction_rows_after_dedup": 100,
+  "correct": 91,
+  "accuracy": 0.91,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 2,
+  "refusal_rate": 0.02,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0
+}
+
+250 - 78 seconds
+
+{
+  "gold_file": "data/batch_250_full.csv",
+  "pred_file": "results/sonnet_4.6_250_en.csv",
+  "data_size": 250,
+  "prediction_rows_raw": 250,
+  "prediction_rows_after_dedup": 250,
+  "correct": 213,
+  "accuracy": 0.852,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 0,
+  "refusal_rate": 0.0,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0
+}
+
+500 - 170 seconds
+
+  "pred_file": "results/sonnet_4.6_500_en.csv",
+  "data_size": 500,
+  "prediction_rows_raw": 500,
+  "prediction_rows_after_dedup": 500,
+  "correct": 438,
+  "accuracy": 0.876,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 0,
+  "refusal_rate": 0.0,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0
+}
+
+
+claude opus 4.6 (more advanced)
+
+250 - 52 seconds
+
+  "pred_file": "results/opus_4.6_250_en.csv",
+  "data_size": 250,
+  "prediction_rows_raw": 250,
+  "prediction_rows_after_dedup": 250,
+  "correct": 239,
+  "accuracy": 0.956,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 1,
+  "refusal_rate": 0.004,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0
+}
+
+500 - 286 seconds
+
+  "pred_file": "results/opus_4.6_500_en.csv",
+  "data_size": 500,
+  "prediction_rows_raw": 500,
+  "prediction_rows_after_dedup": 500,
+  "correct": 463,
+  "accuracy": 0.926,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 0,
+  "refusal_rate": 0.0,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0
+}
+

@@ -32,8 +32,8 @@ def main():
     pred_path = Path(args.pred)
 
     gold = pd.read_csv(gold_path)
-    pred = pd.read_csv(pred_path)
-
+#    pred = pd.read_csv(pred_path)
+    pred = pd.read_csv(pred_path, sep=r"[\s,]+", engine="python")
     gold = normalize_columns(gold)
     pred = normalize_columns(pred)
 
