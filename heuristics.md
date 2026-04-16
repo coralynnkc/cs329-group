@@ -2,3 +2,5 @@
 2. telling the models to 'think like a linguist, follow linguistic/syntatic reasoning', or providing a sample list of important linguistic heuristics is often counterproductive. Hypothesis: this is the same reason that NNs are less effective than transformers. Language is complicated. Trust the LLMs to find more complex patterns than we can outline in a brief prompt.
 3. Similarly, prompt engineering had a weaker effect than antipated for well-understood tasks and languages. Generally, a useful but minimal prompt will be best. 
 4. However, the prompt effect (or lack thereof) is not equally large everywhere. In English, both models are already strong, so prompt changes mostly shift scores at the margins. In the lower-resource settings, especially Igbo and Zulu, prompt wording matters more because the models appear to be operating closer to their uncertainty boundary. That is why small prompt changes can move Macro-F1 much more there than in English. {This is looking at African language prompting strategies}
+5. training data matters more than architecture [literature says]?
+6. 
