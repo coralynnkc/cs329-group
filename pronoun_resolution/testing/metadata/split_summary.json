@@ -1,0 +1,64 @@
+{
+  "english_master_file": "en_master.csv",
+  "english_master_path": "/Users/claireburkhardt/Documents/cs329-group/pronoun_resolution/en_master.csv",
+  "seed": 329,
+  "split_sizes": {
+    "fewshot_bank": 8,
+    "dev": 100,
+    "challenge": 50,
+    "holdout": 668
+  },
+  "label_distribution": {
+    "fewshot_bank": {
+      "A": 4,
+      "B": 4
+    },
+    "dev": {
+      "A": 50,
+      "B": 50
+    },
+    "challenge": {
+      "A": 25,
+      "B": 25
+    },
+    "holdout": {
+      "B": 339,
+      "A": 329
+    }
+  },
+  "difficulty_score_stats": {
+    "fewshot_bank": {
+      "mean": 0.0699,
+      "min": 0.0611,
+      "max": 0.0712
+    },
+    "dev": {
+      "mean": 0.3231,
+      "min": 0.0356,
+      "max": 0.8639
+    },
+    "challenge": {
+      "mean": 0.4959,
+      "min": 0.4139,
+      "max": 0.6833
+    },
+    "holdout": {
+      "mean": 0.2325,
+      "min": 0.0356,
+      "max": 0.4389
+    }
+  },
+  "multilingual_propagation": {
+    "am": "am_master.csv: covers items 1\u2013744 (744 items); English has 82 additional items beyond this range. Alignment is safe for the shared range. Parallel split files written (items outside range omitted).",
+    "ig": "ig_master.csv: covers items 1\u2013744 (744 items); English has 82 additional items beyond this range. Alignment is safe for the shared range. Parallel split files written (items outside range omitted).",
+    "zu": "zu_master.csv: covers items 1\u2013744 (744 items); English has 82 additional items beyond this range. Alignment is safe for the shared range. Parallel split files written (items outside range omitted)."
+  },
+  "schema_notes": {
+    "item_id": "Preserved from source item_num (integer string). Unique and stable across all language files.",
+    "gold_answer": "Normalised to uppercase A or B.",
+    "difficulty_score": "Normalised weighted sum of: feat_token_len (0.4), feat_clause_markers (0.3), feat_blank_distance (0.3 when available, else redistributed to 0.57/0.43). Higher = harder.",
+    "dev_stratification": "Stratified on (gold_answer \u00d7 coarse sentence-length bin).",
+    "challenge_selection": "Top-difficulty items from post-dev pool, label-balanced.",
+    "fewshot_selection": "Lowest-difficulty medium-length items, label-balanced. Disjoint from all scored splits."
+  }
+}
