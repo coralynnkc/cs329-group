@@ -45,22 +45,25 @@ Each task is selected to illustrate a specific failure mode of existing supervis
 | Grammaticality / CoLA binary | `grammatical/` | chatgpt, gemini, sonnet, opus | human ~80% | sonnet 84%, opus 88%; chatgpt ~49% |
 | POS tagging (in-domain) | `pos/` | chatgpt, gemini, sonnet, opus | spaCy/udpipe ~97–98% | opus 94%; sonnet 85%; chatgpt 81% |
 | Pronoun resolution (EN, AM, IG, ZU) — P0–P4 | `pronoun_resolution/testing/` | sonnet (full EN/AM, partial IG/ZU); chatgpt (partial); opus (P0 EN only) | chance = 50% | EN: 87% (P0) → 91% (P1); IG/ZU near chance |
+| Multilingual pronoun resolution (EN, DE, FR, RU) — P0–P4 | `srijon-2.0/pronoun_resolution/` | sonnet 4.6, GPT 5.4 (both full P0–P4) | chance = 50% | sonnet EN 89%, FR 88–91%, RU 95–97%, DE 86–88%; GPT similar |
+| Presuppositions — probabilistic E/N/C (EN, DE, FR, HI, RU, VI) — P0–P1 | `srijon-2.0/presuppositions/` | sonnet 4.6 | — | EN: model assigns high prob to correct label; centroid-of-simplex scoring |
 
 ### Partially done
 
 | Task | Gap |
 |------|-----|
-| Pronoun resolution — Igbo | P2–P4 missing for sonnet; chatgpt only P0 |
-| Pronoun resolution — Zulu | P2–P4 missing for sonnet; chatgpt only P0 |
-| Pronoun resolution — Opus | only P0 for EN; nothing for AM/IG/ZU |
+| Pronoun resolution (EN/AM/IG/ZU) — Igbo | P2–P4 missing for sonnet; chatgpt only P0 |
+| Pronoun resolution (EN/AM/IG/ZU) — Zulu | P2–P4 missing for sonnet; chatgpt only P0 |
+| Pronoun resolution (EN/AM/IG/ZU) — Opus | only P0 for EN; nothing for AM/IG/ZU |
 | Lemmatization segmentation | mini CSVs exist, zero prediction files (`seg_predictions_*.csv`) |
 | grammaticality-2.0 (CoLA + BLiMP) | mini CSVs exist, `cola_summary.csv` is empty — no predictions run yet |
+| NER | zero-shot predictions done on CoNLL-2003 100-sample eval (`predictions_zero.csv`); eval script exists but `pred_clean.csv` not yet populated for scoring; no few-shot or novel-schema runs yet |
 
 ### Not started
 
-- **NER** — no directory, no data, no scripts
 - POS out-of-domain evaluation (the key argument: SOTA drops 4–5% OOD; LLMs may hold)
 - Grammaticality on non-English benchmarks
+- NER few-shot and novel-schema experiments (zero-shot batch run done; scoring pipeline incomplete)
 
 ---
 
