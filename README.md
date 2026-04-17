@@ -24,7 +24,7 @@ Each task is selected to illustrate a specific failure mode of existing supervis
 | Lemmatization (args) | `lemmatization/` | ✓ | **primary** — matches SOTA | — | done |
 | Grammaticality / CoLA binary | `grammatical/` | ✓ | **primary** — fills gap where tools are absent | — | done |
 | POS tagging | `pos/` | ✓ | **primary** — competitive in-domain; OOD story pending | — | done (in-domain) |
-| Grammaticality 2.0 (CoLA + BLiMP) | `grammaticality-2.0/` | ✓ | **primary** — prompt design story; MCC/F1/BLiMP | — | GPT 5.4 predictions done; needs scoring |
+| Grammaticality 2.0 (CoLA + BLiMP) | `grammaticality-2.0/` | ✓ | **primary** — prompt design story; MCC/F1/BLiMP | — | Chat 5.4 CoLA fully scored (all prompts × both splits); BLiMP pending |
 | Pronoun resolution (EN/AM/IG/ZU) | `pronoun_resolution/testing/` | ✓ | ✓ | **primary** — EN/AM/IG/ZU; low-resource degradation | mostly done |
 | Pronoun resolution (EN/DE/FR/RU) | `srijon-2.0/pronoun_resolution/` | ✓ | ✓ | **primary** — P0–P4 fully scored for both models | **done** |
 | NER | `ner/` | **primary** — novel schemas supervised models can't handle | ✓ | — | zero-shot batch done; scoring pipeline broken |
@@ -47,6 +47,7 @@ Each task is selected to illustrate a specific failure mode of existing supervis
 | POS tagging (in-domain) | `pos/` | chatgpt, gemini, sonnet, opus | spaCy/udpipe ~97–98% | opus 94%; sonnet 85%; chatgpt 81% |
 | Pronoun resolution (EN/AM/IG/ZU) — P0–P4 | `pronoun_resolution/testing/` | sonnet (full EN/AM, partial IG/ZU); chatgpt P0 only; opus P0 EN only | chance = 50% | EN: 87% (P0) → 91% (P1); IG/ZU near chance |
 | Pronoun resolution (EN/DE/FR/RU) — P0–P4 | `srijon-2.0/pronoun_resolution/` | sonnet 4.6 (full), GPT 5.4 (full) | chance = 50% | see table below |
+| Grammaticality 2.0 (CoLA) | `grammaticality-2.0/` | Chat 5.4 | — | direct/anchor/repair ~88–89% acc, MCC 0.73–0.75 in-domain; checklist collapses in-domain but recovers OOD (90% acc, MCC 0.76) |
 | Presuppositions (EN/DE/FR/HI/RU/VI) — P0–P1 | `srijon-2.0/presuppositions/` | sonnet 4.6 | — | probabilistic E/N/C; model assigns high prob to correct label across all 6 languages |
 
 #### Multilingual pronoun resolution — full results (srijon-2.0)
@@ -64,7 +65,6 @@ Both models fully scored. Prompt engineering has marginal effect in English; lar
 
 | Task | What exists | What's missing |
 |------|-------------|----------------|
-| Grammaticality 2.0 (CoLA) | GPT 5.4 predictions for all 5 prompt types × in-domain + OOD (`CHAT_5.4_cola_100_*.csv` in `results/`) | Run `score_cola.py`; `cola_summary.csv` is headers-only |
 | Grammaticality 2.0 (BLiMP) | `blimp_summary.csv` exists (headers-only) | No prediction files yet |
 | NER | `pred_clean.csv` exists but has parsing errors (malformed JSON in predicted_entities column) | Fix parser; populate `pred_clean.csv`; run `eval_ner.py` |
 
@@ -105,12 +105,6 @@ From `heuristics.md` (consolidated lessons from running experiments):
 ## What we have left to do
 
 ### 1. Score existing predictions
-
-**Grammaticality 2.0 (CoLA)** — GPT 5.4 predictions are in `results/`. Run:
-```bash
-python grammaticality-2.0/scripts/score_cola.py --model CHAT_5.4 --prompt direct --split in_domain
-# repeat for: anchor, checklist, fewshot/finetuned, repair × in_domain + out_of_domain
-```
 
 **NER** — Fix `pred_clean.csv` parsing (the predicted_entities column has raw JSON that wasn't parsed correctly). Then run `ner/eval_ner.py`.
 

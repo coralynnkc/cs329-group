@@ -284,6 +284,16 @@ This script rebuilds:
 
 | Model | Prompt | Split | N | Accuracy | MCC | Precision(1) | Recall(1) | F1(1) | Coverage | Refusal rate | Invalid rate |
 | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| chat_5.4 | direct | in_domain_dev | 100 | 0.88 | 0.7252 | 0.9254 | 0.8986 | 0.9118 | 1.0 | 0.0 | 0.0 |
+| chat_5.4 | checklist | in_domain_dev | 100 | 0.56 | -0.0472 | 0.6761 | 0.6957 | 0.6857 | 1.0 | 0.0 | 0.0 |
+| chat_5.4 | anchor | in_domain_dev | 100 | 0.89 | 0.7453 | 0.9265 | 0.913 | 0.9197 | 1.0 | 0.0 | 0.0 |
+| chat_5.4 | repair | in_domain_dev | 100 | 0.89 | 0.7453 | 0.9265 | 0.913 | 0.9197 | 1.0 | 0.0 | 0.0 |
+| chat_5.4 | finetuned | in_domain_dev | 100 | 0.89 | 0.7453 | 0.9265 | 0.913 | 0.9197 | 1.0 | 0.0 | 0.0 |
+| chat_5.4 | direct | out_of_domain_dev | 100 | 0.86 | 0.6638 | 0.8767 | 0.9275 | 0.9014 | 1.0 | 0.0 | 0.0 |
+| chat_5.4 | anchor | out_of_domain_dev | 100 | 0.86 | 0.6616 | 0.8667 | 0.942 | 0.9028 | 1.0 | 0.0 | 0.0 |
+| chat_5.4 | checklist | out_of_domain_dev | 100 | 0.9 | 0.7615 | 0.8933 | 0.971 | 0.9306 | 1.0 | 0.0 | 0.0 |
+| chat_5.4 | repair | out_of_domain_dev | 100 | 0.86 | 0.6638 | 0.8767 | 0.9275 | 0.9014 | 1.0 | 0.0 | 0.0 |
+| chat_5.4 | finetuned | out_of_domain_dev | 100 | 0.85 | 0.6357 | 0.8462 | 0.9565 | 0.898 | 1.0 | 0.0 | 0.0 |
 
 ## BLiMP Results Table
 
