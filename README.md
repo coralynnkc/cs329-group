@@ -129,19 +129,21 @@ python grammaticality-2.0/scripts/score_cola.py --model CHAT_5.4 --prompt direct
 
 ### 3. NER — generality proof of concept
 
-The argument: supervised NER (PubMedBERT, BioBERT) is trained on fixed schemas and fails when label types change. LLMs handle novel/unseen entity types without retraining.
+The argument: supervised NER is trained on fixed schemas (PER, LOC, ORG) and cannot adapt when the label set changes. LLMs handle novel, theory-driven annotation schemes without retraining. Our demo is **agency-based NER in narrative texts** — a custom schema that no supervised model has been trained on.
 
-**Recommended setup:**
+**Task:** Given sentences from *The Chronicles of Narnia*, classify each named entity by its agentive role:
+- **Active entity** — drives the event (e.g., "Lucy opened the wardrobe.")
+- **Passive entity** — acted upon (e.g., "Edmund was captured by the Witch.")
+- **Mentioned indirectly** — referenced without participation (e.g., "They spoke of Aslan in hushed tones.")
 
-| Domain | Dataset | Gold standard | Why |
-|--------|---------|---------------|-----|
-| News (standard) | CoNLL-2003 | 92–95% F1 (fine-tuned BERT) | establishes baseline gap |
-| Biomedical | BC5CDR or NCBI-Disease | PubMedBERT ceiling | cross-domain generality |
+This operationalizes linguistic agency (thematic roles, transitivity, voice) as an NER-style annotation task — something no fixed-schema supervised model can do without retraining on a new label set.
+
+**Why this proves generality:** The schema is custom and theory-driven. Supervised models trained on CoNLL or OntoNotes cannot perform this task at all. LLMs handle it via prompting alone, demonstrating that the same interface generalizes to arbitrary user-defined annotation schemes.
 
 **Experimental design:**
-1. Zero-shot: give model entity types + definitions, return tagged spans
+1. Zero-shot: provide entity role definitions, return tagged spans
 2. Few-shot (2–4 examples per type): test in-context learning sensitivity
-3. Novel schema: define 1–2 entity types not in any training corpus — this is where LLMs win and supervised models can't compete
+3. Comparison baseline: standard NER tools (spaCy, stanza) applied to the same text — they extract entities but cannot assign agency labels
 
 **Eval metrics:** F1 with strict span match; also relaxed (type-only) match. Report per-entity-type breakdown.
 
@@ -149,11 +151,6 @@ The argument: supervised NER (PubMedBERT, BioBERT) is trained on fixed schemas a
 - Text-to-text with special tokens: `[ENTITY]...[/ENTITY]` inline markup
 - Chain-of-thought: reason first, then produce entity list
 - Code-based extraction: ask model to output a Python dict / dataclass
-
-**Recommended datasets to download:**
-- CoNLL-2003: available via HuggingFace `datasets` (`conll2003`)
-- BC5CDR: `bigbio/bc5cdr` on HuggingFace
-- NCBI-Disease: `ncbi_disease` on HuggingFace
 
 ### 4. Prompt engineering — qualitative analysis
 
@@ -181,7 +178,7 @@ Lemmatization         → "solved" anchor: prompting = SOTA, no training needed
 Grammaticality        → "no tool exists": LLMs fill a gap, prompt design matters
 POS tagging           → "LLMs competitive OOD where SOTA degrades"
 Pronoun resolution    → "multilingual": English strong, low-resource languages degrade gracefully
-NER                   → "generality": novel schemas, LLMs win where supervised can't adapt
+NER                   → "generality": agency-based custom schema in narratives, supervised models can't adapt without retraining
 ```
 
 The through-line for the paper: each task is chosen to illustrate a different failure mode of existing supervised pipelines. LLMs via prompting address all of them from a single interface.
