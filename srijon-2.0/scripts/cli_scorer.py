@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+import io
 import json
 from pathlib import Path
 
@@ -88,16 +89,28 @@ def read_prediction_file(pred_path: Path) -> pd.DataFrame:
     """
     Prefer ordinary CSV parsing. If that fails to expose plausible columns,
     fall back to the legacy permissive whitespace/comma parser used in batch testing.
+    Handles UTF-8 BOM and files where each row is wrapped in outer double-quotes.
     """
+    with open(pred_path, encoding="utf-8-sig", newline="") as f:
+        raw = f.read()
+
+    # If every non-empty line is wrapped in double-quotes (whole-row quoting),
+    # strip those outer quotes so the comma is visible as a separator.
+    lines = raw.splitlines()
+    non_empty = [l for l in lines if l.strip()]
+    if non_empty and all(l.startswith('"') and l.endswith('"') for l in non_empty):
+        lines = [l[1:-1] if (l.startswith('"') and l.endswith('"')) else l for l in lines]
+    content = "\n".join(lines)
+
     try:
-        pred = pd.read_csv(pred_path)
+        pred = pd.read_csv(io.StringIO(content))
         pred = normalize_columns(pred)
         if find_column(pred, PRED_ID_CANDIDATES) and find_column(pred, PRED_ANSWER_CANDIDATES):
             return pred
     except Exception:
         pass
 
-    pred = pd.read_csv(pred_path, sep=r"[\s,]+", engine="python")
+    pred = pd.read_csv(io.StringIO(content), sep=r"[\s,]+", engine="python")
     pred = normalize_columns(pred)
     return pred
 
