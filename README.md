@@ -1,5 +1,5 @@
 # Working Document — LLMs for Linguistic Annotation
-*Last updated: 2026-04-16*
+*Last updated: 2026-04-17*
 
 ---
 
@@ -15,23 +15,43 @@ Three claims, in order of how well we can currently defend them:
 
 ---
 
+## Task × Goal Matrix
+
+Each task is selected to illustrate a specific failure mode of existing supervised pipelines. This table maps every module to the project claims it supports.
+
+| Task | Module | Generality | No Training Needed | Multilingual | Status |
+|------|--------|:----------:|:-----------------:|:------------:|--------|
+| Lemmatization (args) | `lemmatization/` | ✓ | **primary** — matches SOTA | — | done |
+| Grammaticality / CoLA binary | `grammatical/` | ✓ | **primary** — fills gap where tools are absent | — | done |
+| POS tagging | `pos/` | ✓ | **primary** — competitive in-domain; OOD story pending | — | done (in-domain) |
+| Grammaticality 2.0 (CoLA + BLiMP) | `grammaticality-2.0/` | ✓ | **primary** — prompt design story; MCC/F1/BLiMP | — | not started |
+| Pronoun resolution | `pronoun_resolution/testing/` | ✓ | ✓ | **primary** — EN/AM/IG/ZU; low-resource degradation | mostly done |
+| NER | *(not started)* | **primary** — novel schemas supervised models can't handle | ✓ | — | not started |
+| Presuppositions | `srijon-2.0/presuppositions/` | ✓ | ✓ | **secondary** — EN/FR/DE/HI/RU/VI | deprioritized |
+| Coreference | `coref/` | ✓ | — | — | deprioritized |
+| Lemmatization segmentation | `lemmatization/` | ✓ | ✓ | — | partial — no predictions yet |
+
+**Key:** ✓ = task supports this goal; **primary** = task is the main evidence for this goal; — = not applicable or not a focus.
+
+---
+
 ## What we have
 
 ### Fully baselined (results in hand, 4 models)
 
-| Task | Module | Models scored | SOTA comparison | Status |
-|------|--------|---------------|-----------------|--------|
-| Lemmatization (args) | `lemmatization/` | chatgpt, gemini, sonnet, opus | spaCy/stanza ~95–99% | **done** — sonnet/opus match SOTA |
-| Grammaticality / CoLA binary | `grammatical/` | chatgpt, gemini, sonnet, opus | human ~80%; LLMs 58–86% | **done** |
-| POS tagging (in-domain) | `pos/` | chatgpt, gemini, sonnet, opus | spaCy/udpipe ~97–98%; LLMs 85–94% | **done** |
-| Pronoun resolution (EN, AM, IG, ZU) — P0–P4 | `pronoun_resolution/testing/` | sonnet (full P0–P4 EN/AM, partial IG/ZU); ChatGPT (partial); Opus (partial) | WinoGrande chance = 50% | **mostly done**, gaps below |
+| Task | Module | Models scored | SOTA comparison | Key result |
+|------|--------|---------------|-----------------|------------|
+| Lemmatization (args) | `lemmatization/` | chatgpt, gemini, sonnet, opus | spaCy/stanza ~95–99% | sonnet/opus match SOTA (~96–97%) |
+| Grammaticality / CoLA binary | `grammatical/` | chatgpt, gemini, sonnet, opus | human ~80% | sonnet 84%, opus 88%; chatgpt ~49% |
+| POS tagging (in-domain) | `pos/` | chatgpt, gemini, sonnet, opus | spaCy/udpipe ~97–98% | opus 94%; sonnet 85%; chatgpt 81% |
+| Pronoun resolution (EN, AM, IG, ZU) — P0–P4 | `pronoun_resolution/testing/` | sonnet (full EN/AM, partial IG/ZU); chatgpt (partial); opus (P0 EN only) | chance = 50% | EN: 87% (P0) → 91% (P1); IG/ZU near chance |
 
 ### Partially done
 
 | Task | Gap |
 |------|-----|
-| Pronoun resolution — Igbo | P2–P4 missing for sonnet; ChatGPT only P0 |
-| Pronoun resolution — Zulu | P2–P4 missing for sonnet; ChatGPT only P0 |
+| Pronoun resolution — Igbo | P2–P4 missing for sonnet; chatgpt only P0 |
+| Pronoun resolution — Zulu | P2–P4 missing for sonnet; chatgpt only P0 |
 | Pronoun resolution — Opus | only P0 for EN; nothing for AM/IG/ZU |
 | Lemmatization segmentation | mini CSVs exist, zero prediction files (`seg_predictions_*.csv`) |
 | grammaticality-2.0 (CoLA + BLiMP) | mini CSVs exist, `cola_summary.csv` is empty — no predictions run yet |
@@ -39,7 +59,7 @@ Three claims, in order of how well we can currently defend them:
 ### Not started
 
 - **NER** — no directory, no data, no scripts
-- POS out-of-domain evaluation (the key argument: SOTA drops 4–5%, LLMs may hold)
+- POS out-of-domain evaluation (the key argument: SOTA drops 4–5% OOD; LLMs may hold)
 - Grammaticality on non-English benchmarks
 
 ---
