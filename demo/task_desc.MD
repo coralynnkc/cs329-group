@@ -32,7 +32,7 @@ In narrative texts such as The Chronicles of Narnia, agency is central to how st
 2. how narrative focus is constructed and importance is placed
 3. how perceived importance diverges from actual participation (mandela effect)
 
-These types of tasks were not possible before the advent of LLMs. Furthermore, what modern interaction with LLMs (as shown in our research) has allowed is for linguists to be able to carry out any analysis they were previous limited to. Even if a linguist wanted to study a topic as niche as NER in the context of this one literary wor, we show how they are able to utilize growing LLM developements for their research purposes.
+These types of tasks were not possible before the advent of LLMs. Furthermore, what modern interaction with LLMs (as shown in our research) has allowed is for linguists to be able to carry out any analysis they were previous limited to. Even if a linguist wanted to study a topic as niche as NER in the context of this one literary work, we show how they are able to utilize growing LLM developements for their research purposes.
 
   # Associated Work
 This task is closely related to several established NLP and linguistic annotation tasks:
