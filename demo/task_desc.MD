@@ -51,8 +51,6 @@ This enables linguists to directly operationalize their research questions on re
 
 In this sense, our NER serves as **a proof of concept** that LLMs can act as general-purpose annotation engines, allowing linguists to explore new questions without engineering overhead.
 
-#P 
-
 # Citations
 Dowty, David. 1991. “Thematic Proto-Roles and Argument Selection.” Language 67 (3): 547–619.
 Elson, David K., Nicholas Dames, and Kathleen R. McKeown. 2010. “Extracting Social Networks from Literary Fiction.” In Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics, 138–147.
