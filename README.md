@@ -24,10 +24,11 @@ Each task is selected to illustrate a specific failure mode of existing supervis
 | Lemmatization (args) | `lemmatization/` | ✓ | **primary** — matches SOTA | — | done |
 | Grammaticality / CoLA binary | `grammatical/` | ✓ | **primary** — fills gap where tools are absent | — | done |
 | POS tagging | `pos/` | ✓ | **primary** — competitive in-domain; OOD story pending | — | done (in-domain) |
-| Grammaticality 2.0 (CoLA + BLiMP) | `grammaticality-2.0/` | ✓ | **primary** — prompt design story; MCC/F1/BLiMP | — | not started |
-| Pronoun resolution | `pronoun_resolution/testing/` | ✓ | ✓ | **primary** — EN/AM/IG/ZU; low-resource degradation | mostly done |
-| NER | *(not started)* | **primary** — novel schemas supervised models can't handle | ✓ | — | not started |
-| Presuppositions | `srijon-2.0/presuppositions/` | ✓ | ✓ | **secondary** — EN/FR/DE/HI/RU/VI | deprioritized |
+| Grammaticality 2.0 (CoLA + BLiMP) | `grammaticality-2.0/` | ✓ | **primary** — prompt design story; MCC/F1/BLiMP | — | GPT 5.4 predictions done; needs scoring |
+| Pronoun resolution (EN/AM/IG/ZU) | `pronoun_resolution/testing/` | ✓ | ✓ | **primary** — EN/AM/IG/ZU; low-resource degradation | mostly done |
+| Pronoun resolution (EN/DE/FR/RU) | `srijon-2.0/pronoun_resolution/` | ✓ | ✓ | **primary** — P0–P4 fully scored for both models | **done** |
+| NER | `ner/` | **primary** — novel schemas supervised models can't handle | ✓ | — | zero-shot batch done; scoring pipeline broken |
+| Presuppositions | `srijon-2.0/presuppositions/` | ✓ | ✓ | **secondary** — EN/DE/FR/HI/RU/VI | P0–P1 sonnet done |
 | Coreference | `coref/` | ✓ | — | — | deprioritized |
 | Lemmatization segmentation | `lemmatization/` | ✓ | ✓ | — | partial — no predictions yet |
 
@@ -37,16 +38,35 @@ Each task is selected to illustrate a specific failure mode of existing supervis
 
 ## What we have
 
-### Fully baselined (results in hand, 4 models)
+### Fully scored (results in hand)
 
 | Task | Module | Models scored | SOTA comparison | Key result |
 |------|--------|---------------|-----------------|------------|
 | Lemmatization (args) | `lemmatization/` | chatgpt, gemini, sonnet, opus | spaCy/stanza ~95–99% | sonnet/opus match SOTA (~96–97%) |
 | Grammaticality / CoLA binary | `grammatical/` | chatgpt, gemini, sonnet, opus | human ~80% | sonnet 84%, opus 88%; chatgpt ~49% |
 | POS tagging (in-domain) | `pos/` | chatgpt, gemini, sonnet, opus | spaCy/udpipe ~97–98% | opus 94%; sonnet 85%; chatgpt 81% |
-| Pronoun resolution (EN, AM, IG, ZU) — P0–P4 | `pronoun_resolution/testing/` | sonnet (full EN/AM, partial IG/ZU); chatgpt (partial); opus (P0 EN only) | chance = 50% | EN: 87% (P0) → 91% (P1); IG/ZU near chance |
-| Multilingual pronoun resolution (EN, DE, FR, RU) — P0–P4 | `srijon-2.0/pronoun_resolution/` | sonnet 4.6, GPT 5.4 (both full P0–P4) | chance = 50% | sonnet EN 89%, FR 88–91%, RU 95–97%, DE 86–88%; GPT similar |
-| Presuppositions — probabilistic E/N/C (EN, DE, FR, HI, RU, VI) — P0–P1 | `srijon-2.0/presuppositions/` | sonnet 4.6 | — | EN: model assigns high prob to correct label; centroid-of-simplex scoring |
+| Pronoun resolution (EN/AM/IG/ZU) — P0–P4 | `pronoun_resolution/testing/` | sonnet (full EN/AM, partial IG/ZU); chatgpt P0 only; opus P0 EN only | chance = 50% | EN: 87% (P0) → 91% (P1); IG/ZU near chance |
+| Pronoun resolution (EN/DE/FR/RU) — P0–P4 | `srijon-2.0/pronoun_resolution/` | sonnet 4.6 (full), GPT 5.4 (full) | chance = 50% | see table below |
+| Presuppositions (EN/DE/FR/HI/RU/VI) — P0–P1 | `srijon-2.0/presuppositions/` | sonnet 4.6 | — | probabilistic E/N/C; model assigns high prob to correct label across all 6 languages |
+
+#### Multilingual pronoun resolution — full results (srijon-2.0)
+
+| Language | Sonnet 4.6 acc (P0→P4) | GPT 5.4 acc (P0→P4) |
+|----------|------------------------|----------------------|
+| English  | 89% (stable P0–P4)     | 84–86%               |
+| French   | 88–91%                 | 90–93%               |
+| German   | 86–88%                 | 88–89%               |
+| Russian  | 95–97%                 | 90–93%               |
+
+Both models fully scored. Prompt engineering has marginal effect in English; larger effect in lower-resource settings (see Empirical Findings below).
+
+### Predictions done, scoring incomplete
+
+| Task | What exists | What's missing |
+|------|-------------|----------------|
+| Grammaticality 2.0 (CoLA) | GPT 5.4 predictions for all 5 prompt types × in-domain + OOD (`CHAT_5.4_cola_100_*.csv` in `results/`) | Run `score_cola.py`; `cola_summary.csv` is headers-only |
+| Grammaticality 2.0 (BLiMP) | `blimp_summary.csv` exists (headers-only) | No prediction files yet |
+| NER | `pred_clean.csv` exists but has parsing errors (malformed JSON in predicted_entities column) | Fix parser; populate `pred_clean.csv`; run `eval_ner.py` |
 
 ### Partially done
 
@@ -56,36 +76,58 @@ Each task is selected to illustrate a specific failure mode of existing supervis
 | Pronoun resolution (EN/AM/IG/ZU) — Zulu | P2–P4 missing for sonnet; chatgpt only P0 |
 | Pronoun resolution (EN/AM/IG/ZU) — Opus | only P0 for EN; nothing for AM/IG/ZU |
 | Lemmatization segmentation | mini CSVs exist, zero prediction files (`seg_predictions_*.csv`) |
-| grammaticality-2.0 (CoLA + BLiMP) | mini CSVs exist, `cola_summary.csv` is empty — no predictions run yet |
-| NER | zero-shot predictions done on CoNLL-2003 100-sample eval (`predictions_zero.csv`); eval script exists but `pred_clean.csv` not yet populated for scoring; no few-shot or novel-schema runs yet |
 
 ### Not started
 
 - POS out-of-domain evaluation (the key argument: SOTA drops 4–5% OOD; LLMs may hold)
 - Grammaticality on non-English benchmarks
-- NER few-shot and novel-schema experiments (zero-shot batch run done; scoring pipeline incomplete)
+- NER few-shot and novel-schema experiments
+- BLiMP pairwise predictions for any model
+
+---
+
+## Empirical findings so far
+
+From `heuristics.md` (consolidated lessons from running experiments):
+
+1. **Chunking matters a lot.** Performance throttling from too-large chunks is hard to detect. Include refusal as an option rather than forcing a label. Use task-specific validation to distinguish difficulty from chunking artifacts.
+
+2. **"Think like a linguist" prompts are counterproductive.** Providing explicit linguistic heuristics or telling models to reason linguistically tends to hurt, not help. Hypothesis: LLMs find more complex patterns than we can outline in a brief prompt; explicit framing interferes with that.
+
+3. **Prompt engineering has weaker effect than expected for well-understood tasks.** For English grammaticality, pronoun resolution, etc., a minimal, clear prompt usually outperforms elaborate prompt scaffolding.
+
+4. **The prompt effect is not uniform across languages.** In English, both models are already strong, so prompt changes shift scores marginally. In lower-resource settings (especially Igbo and Zulu in the African WinoGrande experiments), prompt wording matters more — models appear to operate closer to their uncertainty boundary, making small prompt changes move Macro-F1 more dramatically.
+
+5. **Training data matters more than architecture** (per recent literature; see `cora-notes/training_data_vs_architecture_papers.docx`).
 
 ---
 
 ## What we have left to do
 
-### 1. Complete baselining
+### 1. Score existing predictions
 
-**Pronoun resolution gaps** — run and score missing cells:
+**Grammaticality 2.0 (CoLA)** — GPT 5.4 predictions are in `results/`. Run:
+```bash
+python grammaticality-2.0/scripts/score_cola.py --model CHAT_5.4 --prompt direct --split in_domain
+# repeat for: anchor, checklist, fewshot/finetuned, repair × in_domain + out_of_domain
+```
+
+**NER** — Fix `pred_clean.csv` parsing (the predicted_entities column has raw JSON that wasn't parsed correctly). Then run `ner/eval_ner.py`.
+
+### 2. Complete baselining
+
+**Grammaticality 2.0 BLiMP** — run pairwise predictions for at least sonnet and GPT 5.4.
+
+**Pronoun resolution (EN/AM/IG/ZU) gaps** — run missing cells:
 - Sonnet: IG P2–P4, ZU P2–P4
-- ChatGPT: all languages P1–P4 (only P0 done)
+- ChatGPT: all languages P1–P4
 - Opus: AM/IG/ZU P0 at minimum
 
 **Lemmatization segmentation** — send `seg_input.csv` to each model, save `seg_predictions_<model>.csv`, run `python lemmatization/scripts/score_baseline.py --model <model>`
 
-**grammaticality-2.0** — this is the strongest prompting story for grammaticality (MCC, F1 breakdown, prompt variants). Run at least:
-- Sonnet × {direct, checklist, repair, fewshot} on `in_domain_dev` and `out_of_domain_dev`
-- Opus × {direct, checklist} for comparison
-- Use `grammaticality-2.0/prompts/cola_*.txt` prompt files; save predictions as `mini/predictions_<model>_<prompt>_<split>.csv`; score with `python grammaticality-2.0/scripts/score_cola.py --model sonnet --prompt direct --split in_domain_dev`
+**POS out-of-domain** — run existing models on an out-of-domain source. This is the clearest head-to-head: SOTA degrades ~4–5% OOD; LLM should hold or degrade less.
 
-**POS out-of-domain** — run the existing models on `pos/en_ewt-ud-dev.conllu` or an out-of-domain source. This is the clearest head-to-head: SOTA degrades ~4–5% OOD; LLM should hold or degrade less.
-
-### 2. NER — generality proof of concept
+### 3. NER — generality proof of concept
 
 The argument: supervised NER (PubMedBERT, BioBERT) is trained on fixed schemas and fails when label types change. LLMs handle novel/unseen entity types without retraining.
 
@@ -99,7 +141,7 @@ The argument: supervised NER (PubMedBERT, BioBERT) is trained on fixed schemas a
 **Experimental design:**
 1. Zero-shot: give model entity types + definitions, return tagged spans
 2. Few-shot (2–4 examples per type): test in-context learning sensitivity
-3. Novel schema: define 1–2 entity types not in any training corpus (e.g. linguistic phenomena, historical entities) — this is where LLMs win and supervised models can't compete
+3. Novel schema: define 1–2 entity types not in any training corpus — this is where LLMs win and supervised models can't compete
 
 **Eval metrics:** F1 with strict span match; also relaxed (type-only) match. Report per-entity-type breakdown.
 
@@ -113,7 +155,7 @@ The argument: supervised NER (PubMedBERT, BioBERT) is trained on fixed schemas a
 - BC5CDR: `bigbio/bc5cdr` on HuggingFace
 - NCBI-Disease: `ncbi_disease` on HuggingFace
 
-### 3. Prompt engineering — qualitative analysis
+### 4. Prompt engineering — qualitative analysis
 
 Goal: don't just show accuracy numbers; show *which constructions* improve with better prompts and explain why.
 
@@ -125,7 +167,7 @@ Goal: don't just show accuracy numbers; show *which constructions* improve with 
 **Pronoun resolution:**
 - P0 vs. P1 (two-shot) comparison already in hand for EN: 87% → 91%
 - Igbo/Zulu near-chance even with few-shot — worth documenting as the multilingual failure mode
-- Run P2–P4 for the remaining languages to complete the prompt × language matrix
+- Run P2–P4 for remaining languages to complete the prompt × language matrix
 
 **NER:**
 - Position bias and overclassification are the known failure modes — document their frequency per prompt type
@@ -148,7 +190,7 @@ The through-line for the paper: each task is chosen to illustrate a different fa
 
 ## Deprioritized
 
-- **Presupposition** — sparse literature (~20 papers), risky positioning, only pursue if another task is dropped
+- **Presupposition** — sparse literature (~20 papers), risky positioning. P0–P1 done for sonnet across 6 languages; only pursue further if another task is dropped
 - **Coreference** — requires training to be competitive; deprioritize
 - **Lemmatization segmentation** — worth running for completeness but not a primary contribution
 
@@ -160,3 +202,5 @@ The through-line for the paper: each task is chosen to illustrate a different fa
 - [ ] Decide strict vs. relaxed span match for NER and document rationale
 - [ ] Decide whether to include gradient grammaticality judgments (Pearson/Spearman with BLiMP) or keep binary-only
 - [ ] Confirm which models to run NER on (at minimum: sonnet, opus, one GPT variant for cross-family comparison)
+- [ ] Decide whether to run Sonnet on grammaticality-2.0 CoLA (currently only GPT 5.4 predictions exist)
+- [ ] Decide whether to include srijon-2.0 presuppositions in the paper or keep as supplemental
