@@ -88,7 +88,7 @@ Paste the contents of `mini/ner_input.csv` directly after this message:
 
 ```
 For each row, identify all named entities in the sentence.
-Return ONLY a CSV with columns: sample_id,sentence_id,predicted_entities
+Return ONLY a CSV saved as ner_predictions_[model].csv with columns: sample_id,sentence_id,predicted_entities
 where predicted_entities is a JSON list of {"text": "...", "label": "..."} objects.
 No explanation. Do not skip rows.
 
