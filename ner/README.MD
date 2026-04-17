@@ -7,6 +7,8 @@ Source: [CoNLL-2003](https://www.clips.uantwerpen.be/conll2003/ner/) — newswir
 <!-- results:start -->
 | Model | Sample 1 F1 | Sample 2 F1 | Sample 3 F1 | Precision | Recall | Mean F1 |
 | ----- | ----------- | ----------- | ----------- | --------- | ------ | ------- |
+| chatgpt | 0.2147 | 0.2254 | 0.347 | 0.2266 | 0.3117 | 0.2624 |
+| gemini | 0.9308 | 0.9425 | 0.9169 | 0.9325 | 0.9282 | 0.9301 |
 <!-- results:end -->
 
 _Run `python ner/scripts/update_readme.py` after scoring to populate this table._
