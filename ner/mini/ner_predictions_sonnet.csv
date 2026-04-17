@@ -1,0 +1,301 @@
+sample_id,sentence_id,predicted_entities
+1,1,"[{""text"": ""Turkish"", ""label"": ""MISC""}]"
+1,2,"[{""text"": ""Merlene Ottey"", ""label"": ""PER""}, {""text"": ""Jamaica"", ""label"": ""LOC""}]"
+1,3,"[{""text"": ""MOSCOW"", ""label"": ""LOC""}]"
+1,4,[]
+1,5,[]
+1,6,[]
+1,7,"[{""text"": ""Poland"", ""label"": ""LOC""}, {""text"": ""Dariusz Rosati"", ""label"": ""PER""}, {""text"": ""Yugoslavia"", ""label"": ""LOC""}, {""text"": ""PAP"", ""label"": ""ORG""}]"
+1,8,"[{""text"": ""Atlanta"", ""label"": ""LOC""}, {""text"": ""Edwards"", ""label"": ""PER""}, {""text"": ""Sarajevo"", ""label"": ""LOC""}, {""text"": ""Bosnia"", ""label"": ""LOC""}, {""text"": ""Balkans"", ""label"": ""LOC""}, {""text"": ""Milan"", ""label"": ""LOC""}]"
+1,9,"[{""text"": ""Wang"", ""label"": ""PER""}, {""text"": ""China"", ""label"": ""LOC""}]"
+1,10,"[{""text"": ""Frank Busemann"", ""label"": ""PER""}, {""text"": ""Germany"", ""label"": ""LOC""}]"
+1,11,"[{""text"": ""U.S."", ""label"": ""LOC""}, {""text"": ""French"", ""label"": ""MISC""}, {""text"": ""British"", ""label"": ""MISC""}]"
+1,12,[]
+1,13,"[{""text"": ""Buducnost"", ""label"": ""ORG""}, {""text"": ""OFK Beograd"", ""label"": ""ORG""}]"
+1,14,[]
+1,15,"[{""text"": ""BOSTON"", ""label"": ""LOC""}]"
+1,16,"[{""text"": ""BIRMINGHAM"", ""label"": ""LOC""}, {""text"": ""England"", ""label"": ""LOC""}]"
+1,17,"[{""text"": ""South Korean"", ""label"": ""MISC""}]"
+1,18,"[{""text"": ""HONG KONG"", ""label"": ""LOC""}]"
+1,19,"[{""text"": ""Jamaica"", ""label"": ""LOC""}, {""text"": ""Michael Green"", ""label"": ""PER""}, {""text"": ""Bailey"", ""label"": ""PER""}]"
+1,20,"[{""text"": ""Tavildara"", ""label"": ""LOC""}]"
+1,21,"[{""text"": ""Cofinec"", ""label"": ""ORG""}, {""text"": ""Budapest"", ""label"": ""LOC""}]"
+1,22,"[{""text"": ""Stirling"", ""label"": ""ORG""}, {""text"": ""Dundee"", ""label"": ""ORG""}]"
+1,23,"[{""text"": ""SAN DIEGO"", ""label"": ""LOC""}, {""text"": ""MONTREAL"", ""label"": ""LOC""}]"
+1,24,"[{""text"": ""PANAMA"", ""label"": ""LOC""}, {""text"": ""ROBERTO DURAN"", ""label"": ""PER""}]"
+1,25,"[{""text"": ""BELARUS"", ""label"": ""LOC""}, {""text"": ""ESTONIA"", ""label"": ""LOC""}, {""text"": ""WORLD CUP"", ""label"": ""MISC""}]"
+1,26,"[{""text"": ""Driefontein Consolidated Ltd"", ""label"": ""ORG""}, {""text"": ""Gold Fields of South Africa Ltd"", ""label"": ""ORG""}, {""text"": ""South Africa"", ""label"": ""LOC""}]"
+1,27,"[{""text"": ""Xiao"", ""label"": ""PER""}, {""text"": ""Manila"", ""label"": ""LOC""}, {""text"": ""Amnesty International"", ""label"": ""ORG""}, {""text"": ""China"", ""label"": ""LOC""}]"
+1,28,"[{""text"": ""American"", ""label"": ""MISC""}, {""text"": ""Nate Miller"", ""label"": ""PER""}, {""text"": ""WBA"", ""label"": ""ORG""}, {""text"": ""James Heath"", ""label"": ""PER""}]"
+1,29,[]
+1,30,"[{""text"": ""Sloboda"", ""label"": ""ORG""}, {""text"": ""Mladost"", ""label"": ""ORG""}]"
+1,31,"[{""text"": ""Lance Armstrong"", ""label"": ""PER""}, {""text"": ""U.S."", ""label"": ""LOC""}, {""text"": ""Motorola"", ""label"": ""ORG""}]"
+1,32,"[{""text"": ""Tavildara"", ""label"": ""LOC""}]"
+1,33,"[{""text"": ""Cleveland"", ""label"": ""ORG""}, {""text"": ""White Sox"", ""label"": ""ORG""}, {""text"": ""American League Central"", ""label"": ""MISC""}]"
+1,34,"[{""text"": ""AMERICAN LEAGUE"", ""label"": ""MISC""}]"
+1,35,[]
+1,36,"[{""text"": ""Portsmouth"", ""label"": ""LOC""}, {""text"": ""Middlesex"", ""label"": ""ORG""}, {""text"": ""J. Pooley"", ""label"": ""PER""}, {""text"": ""M. Ramprakash"", ""label"": ""PER""}, {""text"": ""M. Gatting"", ""label"": ""PER""}, {""text"": ""Hampshire"", ""label"": ""ORG""}]"
+1,37,[]
+1,38,"[{""text"": ""Comelf"", ""label"": ""ORG""}, {""text"": ""Bucharest"", ""label"": ""LOC""}]"
+1,39,[]
+1,40,"[{""text"": ""N. Knight"", ""label"": ""PER""}, {""text"": ""Moin Khan"", ""label"": ""PER""}, {""text"": ""Saqlain Mushtaq"", ""label"": ""PER""}]"
+1,41,[]
+1,42,"[{""text"": ""American Catholics"", ""label"": ""MISC""}]"
+1,43,"[{""text"": ""Australia"", ""label"": ""LOC""}]"
+1,44,[]
+1,45,[]
+1,46,[]
+1,47,"[{""text"": ""Steve Brown"", ""label"": ""PER""}, {""text"": ""U.S."", ""label"": ""LOC""}]"
+1,48,"[{""text"": ""BERLIN"", ""label"": ""LOC""}]"
+1,49,"[{""text"": ""Russia"", ""label"": ""LOC""}]"
+1,50,"[{""text"": ""Michelle Freeman"", ""label"": ""PER""}, {""text"": ""Jamaica"", ""label"": ""LOC""}]"
+1,51,"[{""text"": ""Pirelli"", ""label"": ""ORG""}]"
+1,52,[]
+1,53,"[{""text"": ""DETROIT"", ""label"": ""LOC""}, {""text"": ""Kansas City"", ""label"": ""LOC""}]"
+1,54,[]
+1,55,"[{""text"": ""Sjeng Schalken"", ""label"": ""PER""}, {""text"": ""Netherlands"", ""label"": ""LOC""}, {""text"": ""David Rikl"", ""label"": ""PER""}, {""text"": ""Czech Republic"", ""label"": ""LOC""}]"
+1,56,[]
+1,57,[]
+1,58,"[{""text"": ""New Zealand"", ""label"": ""LOC""}]"
+1,59,"[{""text"": ""Tim Lobinger"", ""label"": ""PER""}, {""text"": ""Germany"", ""label"": ""LOC""}]"
+1,60,[]
+1,61,"[{""text"": ""PHILADELPHIA"", ""label"": ""LOC""}]"
+1,62,[]
+1,63,[]
+1,64,[]
+1,65,"[{""text"": ""Richard Finn"", ""label"": ""PER""}]"
+1,66,"[{""text"": ""EOE"", ""label"": ""ORG""}]"
+1,67,"[{""text"": ""NEW YORK"", ""label"": ""LOC""}]"
+1,68,"[{""text"": ""World Boxing Council"", ""label"": ""ORG""}, {""text"": ""WBC"", ""label"": ""ORG""}, {""text"": ""Mike Tyson"", ""label"": ""PER""}]"
+1,69,"[{""text"": ""Zycie Warszawy"", ""label"": ""ORG""}, {""text"": ""Polish"", ""label"": ""MISC""}, {""text"": ""Privatisation Minister"", ""label"": ""MISC""}, {""text"": ""Wieslaw Kaczmarek"", ""label"": ""PER""}]"
+1,70,"[{""text"": ""Chilean"", ""label"": ""MISC""}]"
+1,71,"[{""text"": ""Linda Wild"", ""label"": ""PER""}, {""text"": ""U.S."", ""label"": ""LOC""}, {""text"": ""Barbara Rittner"", ""label"": ""PER""}, {""text"": ""Germany"", ""label"": ""LOC""}, {""text"": ""Asa Carlsson"", ""label"": ""PER""}, {""text"": ""Sweden"", ""label"": ""LOC""}, {""text"": ""Gabriela Sabatini"", ""label"": ""PER""}, {""text"": ""Argentina"", ""label"": ""LOC""}]"
+1,72,"[{""text"": ""Reuters"", ""label"": ""ORG""}]"
+1,73,"[{""text"": ""Russian"", ""label"": ""MISC""}, {""text"": ""Alexander Lebed"", ""label"": ""PER""}, {""text"": ""Chechen"", ""label"": ""MISC""}, {""text"": ""Aslan Maskhadov"", ""label"": ""PER""}]"
+1,74,"[{""text"": ""Algerian"", ""label"": ""MISC""}, {""text"": ""Human Rights National Observatory"", ""label"": ""ORG""}, {""text"": ""ONDH"", ""label"": ""ORG""}, {""text"": ""Moslem"", ""label"": ""MISC""}]"
+1,75,"[{""text"": ""Dole"", ""label"": ""ORG""}, {""text"": ""Clinton"", ""label"": ""PER""}, {""text"": ""Scott Reed"", ""label"": ""PER""}]"
+1,76,"[{""text"": ""Eagles"", ""label"": ""ORG""}, {""text"": ""Philadelphia"", ""label"": ""LOC""}, {""text"": ""Cunningham"", ""label"": ""PER""}]"
+1,77,"[{""text"": ""Frater"", ""label"": ""PER""}, {""text"": ""Cofinec"", ""label"": ""ORG""}]"
+1,78,"[{""text"": ""Mark Crear"", ""label"": ""PER""}, {""text"": ""U.S."", ""label"": ""LOC""}]"
+1,79,"[{""text"": ""Telgheder"", ""label"": ""PER""}]"
+1,80,"[{""text"": ""BRUSSELS"", ""label"": ""LOC""}]"
+1,81,"[{""text"": ""Chechnya"", ""label"": ""LOC""}]"
+1,82,[]
+1,83,"[{""text"": ""Nagorno-Karabakh"", ""label"": ""LOC""}]"
+1,84,[]
+1,85,"[{""text"": ""U.S."", ""label"": ""LOC""}]"
+1,86,"[{""text"": ""Soviet"", ""label"": ""MISC""}, {""text"": ""Russia"", ""label"": ""LOC""}, {""text"": ""Belarus"", ""label"": ""LOC""}, {""text"": ""Kazakhstan"", ""label"": ""LOC""}, {""text"": ""Uzbekistan"", ""label"": ""LOC""}, {""text"": ""Armenia"", ""label"": ""LOC""}, {""text"": ""Tajikistan"", ""label"": ""LOC""}]"
+1,87,[]
+1,88,[]
+1,89,"[{""text"": ""S. Korean"", ""label"": ""MISC""}]"
+1,90,"[{""text"": ""Brazil"", ""label"": ""LOC""}]"
+1,91,"[{""text"": ""Washington"", ""label"": ""PER""}, {""text"": ""O'Brien"", ""label"": ""PER""}]"
+1,92,[]
+1,93,[]
+1,94,[]
+1,95,"[{""text"": ""JOHANNESBURG"", ""label"": ""LOC""}]"
+1,96,"[{""text"": ""Caltex Petroleum Corp"", ""label"": ""ORG""}, {""text"": ""Tianjin"", ""label"": ""LOC""}]"
+1,97,"[{""text"": ""Singapore"", ""label"": ""LOC""}, {""text"": ""South Korean"", ""label"": ""MISC""}, {""text"": ""Seoul"", ""label"": ""LOC""}]"
+1,98,"[{""text"": ""OTTAWA"", ""label"": ""LOC""}]"
+1,99,"[{""text"": ""Paul Lawrie"", ""label"": ""PER""}]"
+1,100,[]
+2,1,"[{""text"": ""TORONTO"", ""label"": ""LOC""}]"
+2,2,"[{""text"": ""Maggie McNeil"", ""label"": ""PER""}]"
+2,3,[]
+2,4,"[{""text"": ""Carl Vinson"", ""label"": ""ORG""}, {""text"": ""U.S."", ""label"": ""LOC""}, {""text"": ""Gulf"", ""label"": ""LOC""}]"
+2,5,"[{""text"": ""ESCHEN"", ""label"": ""LOC""}, {""text"": ""Liechtenstein"", ""label"": ""LOC""}]"
+2,6,"[{""text"": ""Fed"", ""label"": ""ORG""}]"
+2,7,"[{""text"": ""Marko Koers"", ""label"": ""PER""}, {""text"": ""Netherlands"", ""label"": ""LOC""}]"
+2,8,"[{""text"": ""Lotte"", ""label"": ""ORG""}, {""text"": ""Hyundai"", ""label"": ""ORG""}, {""text"": ""Haitai"", ""label"": ""ORG""}, {""text"": ""Samsung"", ""label"": ""ORG""}]"
+2,9,"[{""text"": ""Spitzbergen"", ""label"": ""LOC""}, {""text"": ""Norway"", ""label"": ""LOC""}]"
+2,10,"[{""text"": ""New Zealand"", ""label"": ""LOC""}]"
+2,11,"[{""text"": ""ENGLAND"", ""label"": ""LOC""}, {""text"": ""MOLDOVA"", ""label"": ""LOC""}]"
+2,12,[]
+2,13,[]
+2,14,"[{""text"": ""BALTIMORE"", ""label"": ""LOC""}]"
+2,15,"[{""text"": ""Comelf"", ""label"": ""ORG""}, {""text"": ""Bucharest"", ""label"": ""LOC""}]"
+2,16,"[{""text"": ""Donovan Bailey"", ""label"": ""PER""}, {""text"": ""Canada"", ""label"": ""LOC""}, {""text"": ""Michael Johnson"", ""label"": ""PER""}, {""text"": ""U.S."", ""label"": ""LOC""}, {""text"": ""Frankie"", ""label"": ""PER""}]"
+2,17,[]
+2,18,[]
+2,19,[]
+2,20,[]
+2,21,"[{""text"": ""Koreans"", ""label"": ""MISC""}]"
+2,22,"[{""text"": ""Canada"", ""label"": ""LOC""}, {""text"": ""Bank of Canada"", ""label"": ""ORG""}]"
+2,23,"[{""text"": ""Essex"", ""label"": ""ORG""}, {""text"": ""Nasser Hussain"", ""label"": ""PER""}, {""text"": ""Peter Such"", ""label"": ""PER""}, {""text"": ""Yorkshire"", ""label"": ""ORG""}, {""text"": ""Headingley"", ""label"": ""LOC""}]"
+2,24,"[{""text"": ""Felicia Ballanger"", ""label"": ""PER""}, {""text"": ""France"", ""label"": ""LOC""}]"
+2,25,"[{""text"": ""Iran"", ""label"": ""LOC""}, {""text"": ""German"", ""label"": ""MISC""}, {""text"": ""Bonn"", ""label"": ""LOC""}]"
+2,26,"[{""text"": ""Henke"", ""label"": ""PER""}]"
+2,27,"[{""text"": ""PHILADELPHIA"", ""label"": ""LOC""}]"
+2,28,[]
+2,29,[]
+2,30,"[{""text"": ""Chesterfield"", ""label"": ""LOC""}, {""text"": ""Worcestershire"", ""label"": ""ORG""}, {""text"": ""Derbyshire"", ""label"": ""ORG""}, {""text"": ""J. Adams"", ""label"": ""PER""}, {""text"": ""T.O'Gorman"", ""label"": ""PER""}, {""text"": ""K. Barnett"", ""label"": ""PER""}, {""text"": ""T. Moody"", ""label"": ""PER""}]"
+2,31,[]
+2,32,[]
+2,33,"[{""text"": ""Roger Pavlik"", ""label"": ""PER""}, {""text"": ""American League"", ""label"": ""MISC""}]"
+2,34,"[{""text"": ""Falk Balzer"", ""label"": ""PER""}, {""text"": ""Germany"", ""label"": ""LOC""}]"
+2,35,[]
+2,36,"[{""text"": ""BERLIN"", ""label"": ""LOC""}]"
+2,37,"[{""text"": ""U.S."", ""label"": ""LOC""}]"
+2,38,"[{""text"": ""Lentini"", ""label"": ""PER""}, {""text"": ""Milan"", ""label"": ""ORG""}, {""text"": ""Torino"", ""label"": ""ORG""}]"
+2,39,"[{""text"": ""Stefka Kostadinova"", ""label"": ""PER""}, {""text"": ""Bulgaria"", ""label"": ""LOC""}]"
+2,40,"[{""text"": ""Collins"", ""label"": ""PER""}, {""text"": ""Britain"", ""label"": ""LOC""}]"
+2,41,"[{""text"": ""Shearer"", ""label"": ""PER""}, {""text"": ""Euro 96"", ""label"": ""MISC""}, {""text"": ""Teddy Sheringham"", ""label"": ""PER""}]"
+2,42,"[{""text"": ""RMS Titanic"", ""label"": ""MISC""}]"
+2,43,[]
+2,44,[]
+2,45,"[{""text"": ""St Mirren"", ""label"": ""ORG""}]"
+2,46,"[{""text"": ""Lindsey"", ""label"": ""PER""}]"
+2,47,"[{""text"": ""Boroughmuir"", ""label"": ""ORG""}, {""text"": ""Hawick"", ""label"": ""ORG""}]"
+2,48,"[{""text"": ""LG"", ""label"": ""ORG""}, {""text"": ""OB"", ""label"": ""ORG""}]"
+2,49,"[{""text"": ""Marines"", ""label"": ""ORG""}, {""text"": ""Tarawa Amphibious Readiness Group"", ""label"": ""ORG""}]"
+2,50,[]
+2,51,"[{""text"": ""Commerce"", ""label"": ""ORG""}]"
+2,52,"[{""text"": ""Warwickshire"", ""label"": ""ORG""}, {""text"": ""J. Benjamin"", ""label"": ""PER""}, {""text"": ""M. Bicknell"", ""label"": ""PER""}, {""text"": ""Surrey"", ""label"": ""ORG""}, {""text"": ""C. Lewis"", ""label"": ""PER""}, {""text"": ""M. Butcher"", ""label"": ""PER""}, {""text"": ""G. Kersey"", ""label"": ""PER""}, {""text"": ""J. Ratcliffe"", ""label"": ""PER""}, {""text"": ""D. Bicknell"", ""label"": ""PER""}]"
+2,53,"[{""text"": ""Montrose"", ""label"": ""ORG""}]"
+2,54,"[{""text"": ""Lebed"", ""label"": ""PER""}]"
+2,55,"[{""text"": ""Florida"", ""label"": ""LOC""}, {""text"": ""John Boles"", ""label"": ""PER""}, {""text"": ""Brown"", ""label"": ""PER""}]"
+2,56,"[{""text"": ""Belgium"", ""label"": ""LOC""}, {""text"": ""Filip De Wilde"", ""label"": ""PER""}, {""text"": ""Bertrand Crasson"", ""label"": ""PER""}, {""text"": ""Dirk Medved"", ""label"": ""PER""}, {""text"": ""Pascal Renier"", ""label"": ""PER""}, {""text"": ""Geoffrey Claeys"", ""label"": ""PER""}, {""text"": ""Gunther Schepens"", ""label"": ""PER""}, {""text"": ""Nico Van Kerckhoven"", ""label"": ""PER""}, {""text"": ""Enzo Scifo"", ""label"": ""PER""}, {""text"": ""Gert Verheyen"", ""label"": ""PER""}, {""text"": ""Frederic Peiremans"", ""label"": ""PER""}, {""text"": ""Marc Degryse"", ""label"": ""PER""}, {""text"": ""Luc Nilis"", ""label"": ""PER""}, {""text"": ""Luis Oliveira"", ""label"": ""PER""}, {""text"": ""Gilles De Bilde"", ""label"": ""PER""}]"
+2,57,"[{""text"": ""Gil de Ferran"", ""label"": ""PER""}, {""text"": ""Brazil"", ""label"": ""LOC""}, {""text"": ""Reynard Honda"", ""label"": ""ORG""}]"
+2,58,"[{""text"": ""Hill"", ""label"": ""PER""}]"
+2,59,[]
+2,60,"[{""text"": ""The Oval"", ""label"": ""LOC""}]"
+2,61,"[{""text"": ""Arafat"", ""label"": ""PER""}, {""text"": ""Palestinian"", ""label"": ""MISC""}, {""text"": ""Nablus"", ""label"": ""LOC""}]"
+2,62,"[{""text"": ""Belgian"", ""label"": ""MISC""}]"
+2,63,"[{""text"": ""DUBLIN"", ""label"": ""LOC""}]"
+2,64,"[{""text"": ""Blackpool"", ""label"": ""ORG""}, {""text"": ""Wycombe"", ""label"": ""ORG""}]"
+2,65,"[{""text"": ""Rasa Mazeikyte"", ""label"": ""PER""}, {""text"": ""Lithuania"", ""label"": ""LOC""}]"
+2,66,[]
+2,67,"[{""text"": ""Benin"", ""label"": ""LOC""}]"
+2,68,"[{""text"": ""Belgium"", ""label"": ""LOC""}, {""text"": ""Degryse"", ""label"": ""PER""}, {""text"": ""Recber"", ""label"": ""PER""}]"
+2,69,"[{""text"": ""Ice Cold in Alex"", ""label"": ""MISC""}, {""text"": ""Lawrence of Arabia"", ""label"": ""MISC""}, {""text"": ""Cardinal Wolsey"", ""label"": ""PER""}, {""text"": ""Anne of a Thousand Days"", ""label"": ""MISC""}]"
+2,70,"[{""text"": ""ATLANTA"", ""label"": ""LOC""}]"
+2,71,"[{""text"": ""Tranmere"", ""label"": ""ORG""}]"
+2,72,"[{""text"": ""Chesterfield"", ""label"": ""LOC""}, {""text"": ""Derbyshire"", ""label"": ""ORG""}, {""text"": ""Worcestershire"", ""label"": ""ORG""}]"
+2,73,[]
+2,74,"[{""text"": ""Lance Armstrong"", ""label"": ""PER""}, {""text"": ""U.S."", ""label"": ""LOC""}, {""text"": ""Motorola"", ""label"": ""ORG""}]"
+2,75,"[{""text"": ""Russians"", ""label"": ""MISC""}, {""text"": ""Ukrainians"", ""label"": ""MISC""}, {""text"": ""Barentsburg"", ""label"": ""LOC""}, {""text"": ""Pyramiden"", ""label"": ""LOC""}]"
+2,76,"[{""text"": ""Bradford"", ""label"": ""ORG""}, {""text"": ""Tranmere"", ""label"": ""ORG""}]"
+2,77,"[{""text"": ""South Korean"", ""label"": ""MISC""}]"
+2,78,"[{""text"": ""Tunisia"", ""label"": ""LOC""}]"
+2,79,"[{""text"": ""Austria"", ""label"": ""LOC""}, {""text"": ""Scotland"", ""label"": ""LOC""}, {""text"": ""World Cup"", ""label"": ""MISC""}]"
+2,80,"[{""text"": ""Magna"", ""label"": ""ORG""}]"
+2,81,[]
+2,82,"[{""text"": ""Nolan Henke"", ""label"": ""PER""}]"
+2,83,"[{""text"": ""Wolverhampton"", ""label"": ""ORG""}]"
+2,84,"[{""text"": ""Lithuania"", ""label"": ""LOC""}, {""text"": ""Danius Gleveckas"", ""label"": ""PER""}]"
+2,85,"[{""text"": ""Lynn Reaser"", ""label"": ""PER""}, {""text"": ""Barnett Banks Inc."", ""label"": ""ORG""}, {""text"": ""Jacksonville"", ""label"": ""LOC""}]"
+2,86,"[{""text"": ""U.S."", ""label"": ""LOC""}, {""text"": ""Labor Day"", ""label"": ""MISC""}]"
+2,87,[]
+2,88,[]
+2,89,[]
+2,90,"[{""text"": ""Jeans Mate Corp"", ""label"": ""ORG""}]"
+2,91,[]
+2,92,[]
+2,93,"[{""text"": ""ESSEX"", ""label"": ""ORG""}, {""text"": ""KENT"", ""label"": ""ORG""}]"
+2,94,"[{""text"": ""Indonesia"", ""label"": ""LOC""}, {""text"": ""Timor"", ""label"": ""LOC""}, {""text"": ""Kia Motor Corp"", ""label"": ""ORG""}, {""text"": ""South Korea"", ""label"": ""LOC""}, {""text"": ""Jakarta"", ""label"": ""LOC""}, {""text"": ""Tanjung Priok"", ""label"": ""LOC""}]"
+2,95,[]
+2,96,[]
+2,97,"[{""text"": ""Detroit"", ""label"": ""LOC""}]"
+2,98,[]
+2,99,"[{""text"": ""Chicago Board of Trade"", ""label"": ""ORG""}]"
+2,100,"[{""text"": ""U.S."", ""label"": ""LOC""}, {""text"": ""EL SALVADOR"", ""label"": ""LOC""}]"
+3,1,"[{""text"": ""Israel"", ""label"": ""LOC""}, {""text"": ""Israeli"", ""label"": ""MISC""}]"
+3,2,"[{""text"": ""A.de Silva"", ""label"": ""PER""}]"
+3,3,[]
+3,4,"[{""text"": ""The Curragh"", ""label"": ""LOC""}]"
+3,5,[]
+3,6,[]
+3,7,"[{""text"": ""Andrew Mehrtens"", ""label"": ""PER""}]"
+3,8,"[{""text"": ""Bailey"", ""label"": ""PER""}, {""text"": ""Zurich"", ""label"": ""LOC""}]"
+3,9,"[{""text"": ""Cotti"", ""label"": ""PER""}, {""text"": ""Chechnya"", ""label"": ""LOC""}, {""text"": ""Russia"", ""label"": ""LOC""}]"
+3,10,"[{""text"": ""FED CUP"", ""label"": ""MISC""}]"
+3,11,[]
+3,12,[]
+3,13,"[{""text"": ""Lukashenko"", ""label"": ""PER""}, {""text"": ""Sharetsky"", ""label"": ""PER""}]"
+3,14,"[{""text"": ""Haitai"", ""label"": ""ORG""}, {""text"": ""Samsung"", ""label"": ""ORG""}]"
+3,15,[]
+3,16,"[{""text"": ""Natalia Karimova"", ""label"": ""PER""}, {""text"": ""Russia"", ""label"": ""LOC""}]"
+3,17,"[{""text"": ""Luca Pavanello"", ""label"": ""PER""}, {""text"": ""Italy"", ""label"": ""LOC""}, {""text"": ""Aki"", ""label"": ""ORG""}]"
+3,18,[]
+3,19,[]
+3,20,"[{""text"": ""Mark Brooks"", ""label"": ""PER""}, {""text"": ""Tom Lehman"", ""label"": ""PER""}, {""text"": ""Mark O'Meara"", ""label"": ""PER""}]"
+3,21,"[{""text"": ""England"", ""label"": ""LOC""}, {""text"": ""Moldova"", ""label"": ""LOC""}, {""text"": ""World Cup"", ""label"": ""MISC""}]"
+3,22,"[{""text"": ""D. Gough"", ""label"": ""PER""}]"
+3,23,"[{""text"": ""PHILADELPHIA"", ""label"": ""LOC""}]"
+3,24,"[{""text"": ""Jansher"", ""label"": ""PER""}, {""text"": ""Australian"", ""label"": ""MISC""}]"
+3,25,[]
+3,26,"[{""text"": ""Poland"", ""label"": ""LOC""}, {""text"": ""Dariusz Rosati"", ""label"": ""PER""}, {""text"": ""Yugoslavia"", ""label"": ""LOC""}, {""text"": ""PAP"", ""label"": ""ORG""}]"
+3,27,"[{""text"": ""FRANCE"", ""label"": ""LOC""}, {""text"": ""WORLD CUP"", ""label"": ""MISC""}]"
+3,28,"[{""text"": ""Scotland"", ""label"": ""LOC""}, {""text"": ""Gary McAllister"", ""label"": ""PER""}, {""text"": ""Andreas Heraf"", ""label"": ""PER""}, {""text"": ""Ferguson"", ""label"": ""PER""}]"
+3,29,"[{""text"": ""SAN FRANCISCO"", ""label"": ""LOC""}]"
+3,30,"[{""text"": ""Richard Finn"", ""label"": ""PER""}]"
+3,31,"[{""text"": ""Switzerland"", ""label"": ""LOC""}, {""text"": ""Slovak Republic"", ""label"": ""LOC""}]"
+3,32,"[{""text"": ""Singapore"", ""label"": ""LOC""}, {""text"": ""Thai"", ""label"": ""MISC""}, {""text"": ""Changi Prison"", ""label"": ""LOC""}, {""text"": ""Central Narcotics Bureau"", ""label"": ""ORG""}, {""text"": ""CNB"", ""label"": ""ORG""}]"
+3,33,"[{""text"": ""MAJOR LEAGUE"", ""label"": ""MISC""}]"
+3,34,[]
+3,35,[]
+3,36,"[{""text"": ""ARMENIA"", ""label"": ""LOC""}, {""text"": ""PORTUGAL"", ""label"": ""LOC""}, {""text"": ""WORLD CUP"", ""label"": ""MISC""}]"
+3,37,"[{""text"": ""Trine Hattesta"", ""label"": ""PER""}, {""text"": ""Norway"", ""label"": ""LOC""}]"
+3,38,"[{""text"": ""Dole"", ""label"": ""ORG""}, {""text"": ""Scott Reed"", ""label"": ""PER""}, {""text"": ""Clinton"", ""label"": ""PER""}, {""text"": ""Peter Knight"", ""label"": ""PER""}]"
+3,39,[]
+3,40,"[{""text"": ""COLOMBO"", ""label"": ""LOC""}]"
+3,41,"[{""text"": ""Cukaricki"", ""label"": ""ORG""}, {""text"": ""Vojvodina"", ""label"": ""ORG""}]"
+3,42,"[{""text"": ""Falilat Ogunkoya"", ""label"": ""PER""}, {""text"": ""Nigeria"", ""label"": ""LOC""}]"
+3,43,"[{""text"": ""Parnevik"", ""label"": ""PER""}, {""text"": ""Loren Roberts"", ""label"": ""PER""}, {""text"": ""Brown Deer Park Golf Course"", ""label"": ""LOC""}, {""text"": ""Greg Kraft"", ""label"": ""PER""}]"
+3,44,[]
+3,45,"[{""text"": ""RIGA"", ""label"": ""LOC""}]"
+3,46,"[{""text"": ""Iraq"", ""label"": ""LOC""}, {""text"": ""Iran"", ""label"": ""LOC""}, {""text"": ""Tehran"", ""label"": ""LOC""}, {""text"": ""Iraqi"", ""label"": ""MISC""}, {""text"": ""Kurdish"", ""label"": ""MISC""}]"
+3,47,[]
+3,48,"[{""text"": ""Frankie Fredericks"", ""label"": ""PER""}, {""text"": ""Namibia"", ""label"": ""LOC""}]"
+3,49,"[{""text"": ""U.S. OPEN"", ""label"": ""MISC""}]"
+3,50,"[{""text"": ""Nolan Henke"", ""label"": ""PER""}]"
+3,51,"[{""text"": ""Belgium"", ""label"": ""LOC""}, {""text"": ""Filip De Wilde"", ""label"": ""PER""}, {""text"": ""Bertrand Crasson"", ""label"": ""PER""}, {""text"": ""Dirk Medved"", ""label"": ""PER""}, {""text"": ""Pascal Renier"", ""label"": ""PER""}, {""text"": ""Geoffrey Claeys"", ""label"": ""PER""}, {""text"": ""Gunther Schepens"", ""label"": ""PER""}, {""text"": ""Nico Van Kerckhoven"", ""label"": ""PER""}, {""text"": ""Enzo Scifo"", ""label"": ""PER""}, {""text"": ""Gert Verheyen"", ""label"": ""PER""}, {""text"": ""Frederic Peiremans"", ""label"": ""PER""}, {""text"": ""Marc Degryse"", ""label"": ""PER""}, {""text"": ""Luc Nilis"", ""label"": ""PER""}, {""text"": ""Luis Oliveira"", ""label"": ""PER""}, {""text"": ""Gilles De Bilde"", ""label"": ""PER""}]"
+3,52,"[{""text"": ""FRANCE"", ""label"": ""LOC""}, {""text"": ""U.S."", ""label"": ""LOC""}]"
+3,53,"[{""text"": ""Longyear"", ""label"": ""LOC""}]"
+3,54,"[{""text"": ""Brigita Bokovec"", ""label"": ""PER""}, {""text"": ""Slovenia"", ""label"": ""LOC""}]"
+3,55,"[{""text"": ""OFK Beograd"", ""label"": ""ORG""}]"
+3,56,"[{""text"": ""Bolivia"", ""label"": ""LOC""}, {""text"": ""Latin American"", ""label"": ""MISC""}, {""text"": ""Cochabamba"", ""label"": ""LOC""}]"
+3,57,"[{""text"": ""SAN DIEGO"", ""label"": ""LOC""}, {""text"": ""MONTREAL"", ""label"": ""LOC""}]"
+3,58,"[{""text"": ""Hill"", ""label"": ""PER""}]"
+3,59,"[{""text"": ""HOUSTON"", ""label"": ""LOC""}]"
+3,60,"[{""text"": ""Stefan Edberg"", ""label"": ""PER""}, {""text"": ""U.S. Open"", ""label"": ""MISC""}, {""text"": ""Bernd Karbacher"", ""label"": ""PER""}]"
+3,61,"[{""text"": ""KHASAVYURT"", ""label"": ""LOC""}, {""text"": ""Russia"", ""label"": ""LOC""}]"
+3,62,"[{""text"": ""Wrexham"", ""label"": ""ORG""}]"
+3,63,"[{""text"": ""LONDON"", ""label"": ""LOC""}]"
+3,64,"[{""text"": ""Mehrtens"", ""label"": ""PER""}, {""text"": ""Springboks"", ""label"": ""ORG""}]"
+3,65,"[{""text"": ""Moin Khan"", ""label"": ""PER""}, {""text"": ""Mullally"", ""label"": ""PER""}]"
+3,66,"[{""text"": ""Iran"", ""label"": ""LOC""}, {""text"": ""German"", ""label"": ""MISC""}, {""text"": ""Banisadr"", ""label"": ""PER""}]"
+3,67,"[{""text"": ""U.S."", ""label"": ""LOC""}]"
+3,68,"[{""text"": ""Welsh"", ""label"": ""MISC""}]"
+3,69,"[{""text"": ""Oakland"", ""label"": ""LOC""}, {""text"": ""Dave Telgheder"", ""label"": ""PER""}, {""text"": ""Mark McGwire"", ""label"": ""PER""}, {""text"": ""Athetlics"", ""label"": ""ORG""}, {""text"": ""Boston Red Sox"", ""label"": ""ORG""}]"
+3,70,"[{""text"": ""EOE"", ""label"": ""ORG""}]"
+3,71,"[{""text"": ""Prime Minister"", ""label"": ""MISC""}, {""text"": ""Alain Juppe"", ""label"": ""PER""}]"
+3,72,"[{""text"": ""Tripoli"", ""label"": ""LOC""}]"
+3,73,"[{""text"": ""Hoey"", ""label"": ""PER""}]"
+3,74,"[{""text"": ""Dudayeva"", ""label"": ""PER""}, {""text"": ""Urus-Martan"", ""label"": ""LOC""}]"
+3,75,"[{""text"": ""Burundi"", ""label"": ""LOC""}, {""text"": ""Hutu"", ""label"": ""MISC""}]"
+3,76,[]
+3,77,"[{""text"": ""Milwaukee"", ""label"": ""LOC""}]"
+3,78,"[{""text"": ""Henke"", ""label"": ""PER""}]"
+3,79,"[{""text"": ""Juppe"", ""label"": ""PER""}]"
+3,80,"[{""text"": ""Bobby Rahal"", ""label"": ""PER""}, {""text"": ""U.S."", ""label"": ""LOC""}, {""text"": ""Reynard Mercedes-Benz"", ""label"": ""ORG""}]"
+3,81,"[{""text"": ""Crewe"", ""label"": ""ORG""}]"
+3,82,"[{""text"": ""Commerce"", ""label"": ""ORG""}]"
+3,83,"[{""text"": ""Mobil"", ""label"": ""ORG""}, {""text"": ""Shell"", ""label"": ""ORG""}, {""text"": ""Caltex"", ""label"": ""ORG""}, {""text"": ""Tianjin"", ""label"": ""LOC""}, {""text"": ""China"", ""label"": ""LOC""}]"
+3,84,"[{""text"": ""Brian Giles"", ""label"": ""PER""}, {""text"": ""Jim Thome"", ""label"": ""PER""}, {""text"": ""Cleveland"", ""label"": ""ORG""}]"
+3,85,"[{""text"": ""European"", ""label"": ""MISC""}, {""text"": ""Mediterranean"", ""label"": ""LOC""}]"
+3,86,"[{""text"": ""Florida"", ""label"": ""LOC""}, {""text"": ""John Boles"", ""label"": ""PER""}, {""text"": ""Brown"", ""label"": ""PER""}]"
+3,87,"[{""text"": ""Tarango"", ""label"": ""PER""}]"
+3,88,"[{""text"": ""Jearl Miles"", ""label"": ""PER""}, {""text"": ""U.S."", ""label"": ""LOC""}]"
+3,89,"[{""text"": ""Southend"", ""label"": ""ORG""}, {""text"": ""Swindon"", ""label"": ""ORG""}]"
+3,90,[]
+3,91,"[{""text"": ""DETROIT"", ""label"": ""LOC""}]"
+3,92,[]
+3,93,[]
+3,94,"[{""text"": ""Reading"", ""label"": ""ORG""}]"
+3,95,"[{""text"": ""ENGLAND"", ""label"": ""LOC""}, {""text"": ""PAKISTAN"", ""label"": ""LOC""}]"
+3,96,"[{""text"": ""Haitai"", ""label"": ""ORG""}]"
+3,97,"[{""text"": ""Scottish"", ""label"": ""MISC""}, {""text"": ""Jackie Stewart"", ""label"": ""PER""}, {""text"": ""Italian Grand Prix"", ""label"": ""MISC""}]"
+3,98,"[{""text"": ""Tarango"", ""label"": ""PER""}, {""text"": ""Rios"", ""label"": ""PER""}]"
+3,99,"[{""text"": ""U.S."", ""label"": ""LOC""}, {""text"": ""Clinton"", ""label"": ""PER""}, {""text"": ""Gulf"", ""label"": ""LOC""}]"
+3,100,"[{""text"": ""BAKU"", ""label"": ""LOC""}]"

@@ -9,6 +9,8 @@ Source: [CoNLL-2003](https://www.clips.uantwerpen.be/conll2003/ner/) — newswir
 | ----- | ----------- | ----------- | ----------- | --------- | ------ | ------- |
 | chatgpt | 0.2147 | 0.2254 | 0.347 | 0.2266 | 0.3117 | 0.2624 |
 | gemini | 0.9308 | 0.9425 | 0.9169 | 0.9325 | 0.9282 | 0.9301 |
+| sonnet | 0.9137 | 0.9267 | 0.9183 | 0.9278 | 0.9116 | 0.9196 |
+| opus | 0.949 | 0.956 | 0.9435 | 0.9579 | 0.9414 | 0.9495 |
 <!-- results:end -->
 
 _Run `python ner/scripts/update_readme.py` after scoring to populate this table._
