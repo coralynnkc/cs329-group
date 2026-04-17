@@ -1,0 +1,259 @@
+"""
+Score model NER predictions against the answer key.
+
+Expects a prediction file named:  mini/ner_predictions_<model>.csv
+with columns: sample_id, sentence_id, predicted_entities
+where predicted_entities is a JSON list of {"text": "...", "label": "..."} objects.
+
+Evaluation uses entity-level exact-match precision, recall, and F1 — the standard
+CoNLL-2003 metric.  A predicted entity counts as correct only if both the text span
+and the label exactly match a gold entity (label comparison is case-insensitive).
+
+Usage:
+    python ner/scripts/score_baseline.py --model sonnet
+    python ner/scripts/score_baseline.py --model sonnet --debug
+
+Results are saved to:
+    ner/results/<model>_scores.csv   — per-sample breakdown
+    ner/results/summary.csv          — all models side by side
+"""
+
+import os
+import csv
+import json
+import argparse
+from collections import defaultdict
+
+HERE     = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.dirname(HERE)
+MINI_DIR = os.path.join(DATA_DIR, "mini")
+RES_DIR  = os.path.join(DATA_DIR, "results")
+
+SAMPLE_ID_VARIANTS = {"sample_id", "sample", "sampleid", "sample_num"}
+SENT_ID_VARIANTS   = {"sentence_id", "sent_id", "sentid", "id"}
+
+
+# ---------------------------------------------------------------------------
+# CSV helpers
+# ---------------------------------------------------------------------------
+
+def load_csv(path):
+    with open(path, encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        reader.fieldnames = [h.strip().lstrip("\ufeff") for h in reader.fieldnames]
+        return list(reader)
+
+
+def normalise_keys(rows):
+    if not rows:
+        return rows
+    remap = {}
+    for k in rows[0].keys():
+        kl = k.strip().lower()
+        if kl in SAMPLE_ID_VARIANTS:
+            remap[k] = "sample_id"
+        elif kl in SENT_ID_VARIANTS:
+            remap[k] = "sentence_id"
+    return [{remap.get(k, k): v for k, v in row.items()} for row in rows]
+
+
+def entity_col(rows):
+    skip = SAMPLE_ID_VARIANTS | SENT_ID_VARIANTS
+    for col in rows[0].keys():
+        if col.strip().lower() not in skip:
+            return col
+    raise ValueError(f"Could not find entity column in: {list(rows[0].keys())}")
+
+
+# ---------------------------------------------------------------------------
+# Entity parsing
+# ---------------------------------------------------------------------------
+
+def parse_entities(raw):
+    """
+    Parse a JSON entity list from a model response string.
+    Returns a set of (text, label) tuples (label uppercased for comparison).
+    Silently returns an empty set on parse errors.
+    """
+    if not raw or not raw.strip():
+        return set()
+    raw = raw.strip()
+    try:
+        items = json.loads(raw)
+    except json.JSONDecodeError:
+        # Try to be lenient: wrap bare objects in a list
+        try:
+            items = json.loads(f"[{raw}]")
+        except json.JSONDecodeError:
+            return set()
+    if not isinstance(items, list):
+        return set()
+    result = set()
+    for item in items:
+        if isinstance(item, dict) and "text" in item and "label" in item:
+            result.add((str(item["text"]).strip(), str(item["label"]).strip().upper()))
+    return result
+
+
+# ---------------------------------------------------------------------------
+# Scoring
+# ---------------------------------------------------------------------------
+
+def prf(tp, fp, fn):
+    precision = tp / (tp + fp) if (tp + fp) else 0.0
+    recall    = tp / (tp + fn) if (tp + fn) else 0.0
+    f1        = 2 * precision * recall / (precision + recall) if (precision + recall) else 0.0
+    return precision, recall, f1
+
+
+def score_file(pred_path, answer_path, debug=False):
+    raw_preds   = load_csv(pred_path)
+    raw_answers = load_csv(answer_path)
+
+    if debug:
+        print(f"\n  [debug] pred columns  : {list(raw_preds[0].keys()) if raw_preds else 'EMPTY'}")
+        print(f"  [debug] answer columns: {list(raw_answers[0].keys())}")
+        print(f"  [debug] pred rows     : {len(raw_preds)}")
+        print(f"  [debug] answer rows   : {len(raw_answers)}")
+
+    preds   = normalise_keys(raw_preds)
+    answers = normalise_keys(raw_answers)
+
+    pred_col = entity_col(preds)
+    ans_col  = entity_col(answers)
+
+    # Build lookup: (sample_id, sentence_id) -> predicted entity set
+    pred_lookup = {}
+    for r in preds:
+        key = (str(r.get("sample_id", "1")).strip(),
+               str(r.get("sentence_id", "")).strip())
+        pred_lookup[key] = parse_entities(r.get(pred_col, ""))
+
+    # Per-sample counts
+    by_sample = defaultdict(lambda: {"tp": 0, "fp": 0, "fn": 0})
+
+    for row in answers:
+        sid  = str(row.get("sample_id", "1")).strip()
+        sent = str(row.get("sentence_id", "")).strip()
+        gold = parse_entities(row.get(ans_col, ""))
+        pred = pred_lookup.get((sid, sent), set())
+
+        by_sample[sid]["tp"] += len(gold & pred)
+        by_sample[sid]["fp"] += len(pred - gold)
+        by_sample[sid]["fn"] += len(gold - pred)
+
+        if debug and (gold | pred):
+            p, r, f = prf(len(gold & pred), len(pred - gold), len(gold - pred))
+            print(f"  [debug] sample={sid} sent={sent}  gold={gold}  pred={pred}  f1={f:.3f}")
+
+    sample_results = []
+    for sid in sorted(by_sample):
+        tp, fp, fn = by_sample[sid]["tp"], by_sample[sid]["fp"], by_sample[sid]["fn"]
+        p, r, f = prf(tp, fp, fn)
+        sample_results.append({"sample_id": sid, "precision": p, "recall": r, "f1": f,
+                                "tp": tp, "fp": fp, "fn": fn})
+
+    if not sample_results:
+        return {"precision": 0.0, "recall": 0.0, "f1": 0.0, "samples": []}
+
+    mean_p = sum(s["precision"] for s in sample_results) / len(sample_results)
+    mean_r = sum(s["recall"]    for s in sample_results) / len(sample_results)
+    mean_f = sum(s["f1"]        for s in sample_results) / len(sample_results)
+
+    return {
+        "precision": round(mean_p, 4),
+        "recall":    round(mean_r, 4),
+        "f1":        round(mean_f, 4),
+        "samples":   sample_results,
+    }
+
+
+# ---------------------------------------------------------------------------
+# Output helpers
+# ---------------------------------------------------------------------------
+
+def write_csv_file(rows, path):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=rows[0].keys())
+        w.writeheader()
+        w.writerows(rows)
+
+
+def score_model(model, debug=False):
+    pred_path   = os.path.join(MINI_DIR, f"ner_predictions_{model}.csv")
+    answer_path = os.path.join(MINI_DIR, "ner_answers.csv")
+
+    if not os.path.exists(pred_path):
+        print(f"No predictions file found: {pred_path}")
+        return
+    if not os.path.exists(answer_path):
+        print(f"No answers file found: {answer_path}")
+        return
+
+    r = score_file(pred_path, answer_path, debug=debug)
+
+    print(f"\nModel: {model}")
+    print(f"{'s1_f1':>7}  {'s2_f1':>7}  {'s3_f1':>7}  {'mean_p':>7}  {'mean_r':>7}  {'mean_f1':>8}")
+    print("-" * 60)
+    cols = [f"{s['f1']:.3f}" for s in r["samples"]] + [""] * (3 - len(r["samples"]))
+    print(f"{'  '.join(cols)}  {r['precision']:.3f}    {r['recall']:.3f}    {r['f1']:.3f}")
+
+    detail_rows = [
+        {"model": model, "sample": s["sample_id"],
+         "precision": round(s["precision"], 4),
+         "recall":    round(s["recall"],    4),
+         "f1":        round(s["f1"],        4),
+         "tp": s["tp"], "fp": s["fp"], "fn": s["fn"]}
+        for s in r["samples"]
+    ]
+    if detail_rows:
+        write_csv_file(detail_rows, os.path.join(RES_DIR, f"{model}_scores.csv"))
+
+    summary_row  = {"model": model, "precision": r["precision"],
+                    "recall": r["recall"], "f1": r["f1"]}
+    summary_path = os.path.join(RES_DIR, "summary.csv")
+    existing = []
+    if os.path.exists(summary_path):
+        with open(summary_path, encoding="utf-8") as f:
+            existing = list(csv.DictReader(f))
+        existing = [row for row in existing if row.get("model") != model]
+    existing.append(summary_row)
+
+    all_keys = ["model", "precision", "recall", "f1"]
+    write_csv_file([{k: row.get(k, "") for k in all_keys} for row in existing], summary_path)
+
+    print(f"\nResults saved to  results/{model}_scores.csv")
+    print(f"Summary updated:  results/summary.csv")
+
+
+# ---------------------------------------------------------------------------
+# CLI
+# ---------------------------------------------------------------------------
+
+def main():
+    parser = argparse.ArgumentParser()
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument("--model",
+                       help="score mini predictions for this model (e.g. sonnet, gpt4o)")
+    group.add_argument("--predictions",
+                       help="path to a single predictions CSV")
+    parser.add_argument("--answers",
+                       help="answer key CSV (required with --predictions)")
+    parser.add_argument("--debug", action="store_true",
+                        help="print per-sentence diagnostics")
+    args = parser.parse_args()
+
+    if args.model:
+        score_model(args.model, debug=args.debug)
+    else:
+        if not args.answers:
+            parser.error("--answers is required with --predictions")
+        r = score_file(args.predictions, args.answers, debug=args.debug)
+        print(f"precision={r['precision']:.3f}  recall={r['recall']:.3f}  f1={r['f1']:.3f}")
+        for s in r["samples"]:
+            print(f"  sample {s['sample_id']}: p={s['precision']:.3f} r={s['recall']:.3f} f1={s['f1']:.3f}")
+
+
+if __name__ == "__main__":
+    main()
