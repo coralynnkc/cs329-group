@@ -1,0 +1,321 @@
+{
+  "summary": {
+    "total_files_processed": 12,
+    "successful": 12,
+    "failed": 0
+  },
+  "results": {
+    "sonnet_4.6_dev_de_p0.csv": {
+      "gold_file": "de_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_de_p0.csv",
+      "items_in_gold": 100,
+      "items_matched": 100,
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.7645,
+          "avg_n_probability": 0.1709,
+          "avg_c_probability": 0.0645
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.2576,
+          "avg_n_probability": 0.5918,
+          "avg_c_probability": 0.1506
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0691,
+          "avg_n_probability": 0.1132,
+          "avg_c_probability": 0.8176
+        }
+      }
+    },
+    "sonnet_4.6_dev_de_p1.csv": {
+      "gold_file": "de_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_de_p1.csv",
+      "items_in_gold": 100,
+      "items_matched": 100,
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.7858,
+          "avg_n_probability": 0.1761,
+          "avg_c_probability": 0.0382
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.163,
+          "avg_n_probability": 0.673,
+          "avg_c_probability": 0.1639
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0706,
+          "avg_n_probability": 0.1068,
+          "avg_c_probability": 0.8226
+        }
+      }
+    },
+    "sonnet_4.6_dev_en_p0.csv": {
+      "gold_file": "en_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_en_p0.csv",
+      "items_in_gold": 100,
+      "items_matched": 100,
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.9485,
+          "avg_n_probability": 0.0403,
+          "avg_c_probability": 0.0112
+        },
+        "N": {
+          "count": 34,
+          "avg_e_probability": 0.7847,
+          "avg_n_probability": 0.0924,
+          "avg_c_probability": 0.1229
+        },
+        "C": {
+          "count": 33,
+          "avg_e_probability": 0.0203,
+          "avg_n_probability": 0.0306,
+          "avg_c_probability": 0.9491
+        }
+      }
+    },
+    "sonnet_4.6_dev_en_p1.csv": {
+      "gold_file": "en_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_en_p1.csv",
+      "items_in_gold": 100,
+      "items_matched": 100,
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.8985,
+          "avg_n_probability": 0.0806,
+          "avg_c_probability": 0.0209
+        },
+        "N": {
+          "count": 34,
+          "avg_e_probability": 0.7235,
+          "avg_n_probability": 0.1465,
+          "avg_c_probability": 0.13
+        },
+        "C": {
+          "count": 33,
+          "avg_e_probability": 0.05,
+          "avg_n_probability": 0.05,
+          "avg_c_probability": 0.9
+        }
+      }
+    },
+    "sonnet_4.6_dev_fr_p0.csv": {
+      "gold_file": "fr_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_fr_p0.csv",
+      "items_in_gold": 100,
+      "items_matched": 100,
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.8324,
+          "avg_n_probability": 0.1309,
+          "avg_c_probability": 0.0367
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.163,
+          "avg_n_probability": 0.673,
+          "avg_c_probability": 0.1639
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0706,
+          "avg_n_probability": 0.1068,
+          "avg_c_probability": 0.8226
+        }
+      }
+    },
+    "sonnet_4.6_dev_fr_p1.csv": {
+      "gold_file": "fr_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_fr_p1.csv",
+      "items_in_gold": 100,
+      "items_matched": 100,
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.8324,
+          "avg_n_probability": 0.1309,
+          "avg_c_probability": 0.0367
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.163,
+          "avg_n_probability": 0.673,
+          "avg_c_probability": 0.1639
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0706,
+          "avg_n_probability": 0.1068,
+          "avg_c_probability": 0.8226
+        }
+      }
+    },
+    "sonnet_4.6_dev_hi_p0.csv": {
+      "gold_file": "hi_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_hi_p0.csv",
+      "items_in_gold": 100,
+      "items_matched": 100,
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.7879,
+          "avg_n_probability": 0.1742,
+          "avg_c_probability": 0.0379
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.163,
+          "avg_n_probability": 0.673,
+          "avg_c_probability": 0.1639
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0706,
+          "avg_n_probability": 0.1068,
+          "avg_c_probability": 0.8226
+        }
+      }
+    },
+    "sonnet_4.6_dev_hi_p1.csv": {
+      "gold_file": "hi_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_hi_p1.csv",
+      "items_in_gold": 100,
+      "items_matched": 100,
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.8112,
+          "avg_n_probability": 0.1515,
+          "avg_c_probability": 0.0373
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.163,
+          "avg_n_probability": 0.673,
+          "avg_c_probability": 0.1639
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0706,
+          "avg_n_probability": 0.1068,
+          "avg_c_probability": 0.8226
+        }
+      }
+    },
+    "sonnet_4.6_dev_ru_p0.csv": {
+      "gold_file": "ru_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_ru_p0.csv",
+      "items_in_gold": 100,
+      "items_matched": 100,
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.8324,
+          "avg_n_probability": 0.1309,
+          "avg_c_probability": 0.0367
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.163,
+          "avg_n_probability": 0.673,
+          "avg_c_probability": 0.1639
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0706,
+          "avg_n_probability": 0.1068,
+          "avg_c_probability": 0.8226
+        }
+      }
+    },
+    "sonnet_4.6_dev_ru_p1.csv": {
+      "gold_file": "ru_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_ru_p1.csv",
+      "items_in_gold": 100,
+      "items_matched": 100,
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.8306,
+          "avg_n_probability": 0.1318,
+          "avg_c_probability": 0.0376
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.163,
+          "avg_n_probability": 0.673,
+          "avg_c_probability": 0.1639
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0706,
+          "avg_n_probability": 0.1068,
+          "avg_c_probability": 0.8226
+        }
+      }
+    },
+    "sonnet_4.6_dev_vi_p0.csv": {
+      "gold_file": "vi_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_vi_p0.csv",
+      "items_in_gold": 100,
+      "items_matched": 100,
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.8324,
+          "avg_n_probability": 0.1309,
+          "avg_c_probability": 0.0367
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.163,
+          "avg_n_probability": 0.673,
+          "avg_c_probability": 0.1639
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0706,
+          "avg_n_probability": 0.1068,
+          "avg_c_probability": 0.8226
+        }
+      }
+    },
+    "sonnet_4.6_dev_vi_p1.csv": {
+      "gold_file": "vi_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_vi_p1.csv",
+      "items_in_gold": 100,
+      "items_matched": 100,
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.8324,
+          "avg_n_probability": 0.1309,
+          "avg_c_probability": 0.0367
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.163,
+          "avg_n_probability": 0.673,
+          "avg_c_probability": 0.1639
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0706,
+          "avg_n_probability": 0.1068,
+          "avg_c_probability": 0.8226
+        }
+      }
+    }
+  }
+}
