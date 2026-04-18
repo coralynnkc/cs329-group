@@ -7,10 +7,10 @@ Source: Chronicles of Narnia — 200 sentences manually annotated with character
 <!-- results:start -->
 | Model | Precision | Recall | F1 |
 | ----- | --------- | ------ | -- |
-| sonnet | 0.7154 | 0.7686 | 0.741 |
-| opus | 0.7899 | 0.7769 | 0.7833 |
-| chatgpt | 0.7372 | 0.8347 | 0.7829 |
-| gemini | 0.1951 | 0.1983 | 0.1967 |
+| chatgpt 4.6 | 0.7372 | 0.8347 | 0.7829 |
+| gemini 3 | 0.1951 | 0.1983 | 0.1967 |
+| sonnet 4.6 | 0.7154 | 0.7686 | 0.741 |
+| opus 4.6 | 0.7899 | 0.7769 | 0.7833 |
 <!-- results:end -->
 
 _Run `python narnia/scripts/update_readme.py` after scoring to update this table._
