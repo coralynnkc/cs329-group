@@ -31,6 +31,9 @@ Combined with the agency labels from `narnia/`, each `(span, character, agency_r
 <!-- results:start -->
 | Model | Precision | Recall | F1 |
 | ----- | --------- | ------ | -- |
+| opus | 0.8699 | 0.8992 | 0.8843 |
+| sonnet | 0.7355 | 0.7479 | 0.7417 |
+| chatgpt | 0.2801 | 0.7815 | 0.4124 |
 <!-- results:end -->
 
 _Run `python coref/scripts/update_readme.py` after scoring to update this table._
