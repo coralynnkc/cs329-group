@@ -199,8 +199,10 @@ def write_csv_file(rows, path):
         w.writerows(rows)
 
 
-def score_model(model, debug=False, per_role=False):
-    pred_path   = os.path.join(MINI_DIR, f"narnia_predictions_{model}.csv")
+def score_model(model, prompt=None, debug=False, per_role=False):
+    suffix      = f"_{prompt}" if prompt else ""
+    model_key   = f"{model}_{prompt}" if prompt else model
+    pred_path   = os.path.join(MINI_DIR, f"narnia_predictions_{model}{suffix}.csv")
     answer_path = os.path.join(MINI_DIR, "narnia_answers.csv")
 
     if not os.path.exists(pred_path):
@@ -212,7 +214,7 @@ def score_model(model, debug=False, per_role=False):
 
     r = score_file(pred_path, answer_path, debug=debug)
 
-    print(f"\nModel: {model}")
+    print(f"\nModel: {model_key}")
     print(f"{'s1_f1':>7}  {'s2_f1':>7}  {'s3_f1':>7}  {'mean_p':>7}  {'mean_r':>7}  {'mean_f1':>8}")
     print("-" * 60)
     cols = [f"{s['f1']:.3f}" for s in r["samples"]] + [""] * (3 - len(r["samples"]))
@@ -227,7 +229,7 @@ def score_model(model, debug=False, per_role=False):
                   f"  {v['tp']:>4}  {v['fp']:>4}  {v['fn']:>4}")
 
     detail_rows = [
-        {"model": model, "sample": s["sample_id"],
+        {"model": model_key, "sample": s["sample_id"],
          "precision": round(s["precision"], 4),
          "recall":    round(s["recall"],    4),
          "f1":        round(s["f1"],        4),
@@ -235,22 +237,22 @@ def score_model(model, debug=False, per_role=False):
         for s in r["samples"]
     ]
     if detail_rows:
-        write_csv_file(detail_rows, os.path.join(RES_DIR, f"{model}_scores.csv"))
+        write_csv_file(detail_rows, os.path.join(RES_DIR, f"{model_key}_scores.csv"))
 
-    summary_row  = {"model": model, "precision": r["precision"],
+    summary_row  = {"model": model_key, "precision": r["precision"],
                     "recall": r["recall"], "f1": r["f1"]}
     summary_path = os.path.join(RES_DIR, "summary.csv")
     existing = []
     if os.path.exists(summary_path):
         with open(summary_path, encoding="utf-8") as f:
             existing = list(csv.DictReader(f))
-        existing = [row for row in existing if row.get("model") != model]
+        existing = [row for row in existing if row.get("model") != model_key]
     existing.append(summary_row)
 
     all_keys = ["model", "precision", "recall", "f1"]
     write_csv_file([{k: row.get(k, "") for k in all_keys} for row in existing], summary_path)
 
-    print(f"\nResults saved to  results/{model}_scores.csv")
+    print(f"\nResults saved to  results/{model_key}_scores.csv")
     print(f"Summary updated:  results/summary.csv")
 
 
@@ -267,6 +269,8 @@ def main():
                        help="path to a single predictions CSV")
     parser.add_argument("--answers",
                        help="answer key CSV (required with --predictions)")
+    parser.add_argument("--prompt",
+                       help="prompt variant (e.g. fewshot); expects narnia_predictions_<model>_<prompt>.csv")
     parser.add_argument("--debug", action="store_true",
                         help="print per-sentence diagnostics")
     parser.add_argument("--per_role", action="store_true",
@@ -274,7 +278,7 @@ def main():
     args = parser.parse_args()
 
     if args.model:
-        score_model(args.model, debug=args.debug, per_role=args.per_role)
+        score_model(args.model, prompt=args.prompt, debug=args.debug, per_role=args.per_role)
     else:
         if not args.answers:
             parser.error("--answers is required with --predictions")

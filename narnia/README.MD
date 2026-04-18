@@ -10,8 +10,20 @@ Source: Chronicles of Narnia — 200 sentences manually annotated with character
 | sonnet | 0.7154 | 0.7686 | 0.741 |
 | opus | 0.7899 | 0.7769 | 0.7833 |
 | chatgpt | 0.7372 | 0.8347 | 0.7829 |
-| gemini | 0.1951 | 0.1983 | 0.1967 |
+| gemini | 0.561 | 0.5702 | 0.5656 |
 <!-- results:end -->
+
+_Run `python narnia/scripts/update_readme.py` after scoring to update this table._
+
+## Few-shot Results — Entity-level Precision, Recall, F1
+
+<!-- results-fewshot:start -->
+| Model | Precision | Recall | F1 |
+| ----- | --------- | ------ | -- |
+| sonnet_fewshot | 0.7698 | 0.8843 | 0.8231 |
+| opus_fewshot | 0.7518 | 0.876 | 0.8092 |
+| chatgpt_fewshot | 0.7372 | 0.8347 | 0.7829 |
+<!-- results-fewshot:end -->
 
 _Run `python narnia/scripts/update_readme.py` after scoring to update this table._
 
@@ -21,24 +33,51 @@ _Run `python narnia/scripts/score_baseline.py --model <model> --per_role` to rep
 
 | Label | sonnet | opus | chatgpt | gemini |
 | ----- | ------ | ---- | ------- | ------ |
-| ACTIVE_SPEAKER   | 0.885 | 0.916 | 0.936 | 0.000 |
-| ACTIVE_PERFORMER | 0.621 | 0.909 | 0.741 | 0.000 |
-| ACTIVE_THOUGHT   | 0.667 | 0.667 | 0.625 | 0.000 |
-| ADDRESSED        | 0.529 | 0.571 | 0.851 | 0.327 |
-| MENTIONED_ONLY   | 0.702 | 0.704 | 0.600 | 0.000 |
+| ACTIVE_SPEAKER   | 0.885 | 0.916 | 0.936 | 0.731 |
+| ACTIVE_PERFORMER | 0.621 | 0.909 | 0.741 | 0.375 |
+| ACTIVE_THOUGHT   | 0.667 | 0.667 | 0.625 | 0.667 |
+| ADDRESSED        | 0.529 | 0.571 | 0.851 | 0.600 |
+| MENTIONED_ONLY   | 0.702 | 0.704 | 0.600 | 0.348 |
 | MISCELLANEOUS    | 0.000 | 0.000 | 0.000 | 0.000 |
+
+### Per-role F1 (few-shot)
+
+_Run `python narnia/scripts/score_baseline.py --model <model> --prompt fewshot --per_role` to reproduce._
+
+| Label | sonnet | opus | chatgpt |
+| ----- | ------ | ---- | ------- |
+| ACTIVE_SPEAKER   | 0.909 | 0.916 | 0.936 |
+| ACTIVE_PERFORMER | 0.640 | 0.783 | 0.741 |
+| ACTIVE_THOUGHT   | 0.632 | 0.632 | 0.625 |
+| ADDRESSED        | 0.889 | 0.864 | 0.851 |
+| MENTIONED_ONLY   | 0.750 | 0.667 | 0.600 |
+| MISCELLANEOUS    | 0.800 | 0.667 | 0.000 |
 
 ### Qualitative findings (zero-shot)
 
-**ACTIVE_SPEAKER is the easiest label** — all capable models score above 0.88 F1. The explicit attribution pattern ("said X", "asked X") is unambiguous.
+**ACTIVE_SPEAKER is the easiest label** — all models score above 0.73 F1. The explicit attribution pattern ("said X", "asked X") is unambiguous.
 
-**ADDRESSED is the sharpest discriminator.** Sonnet and Opus miss roughly 60% of ADDRESSED entities (recall ~0.4), while ChatGPT gets 0.85 F1. The failure mode is treating vocative names as MENTIONED_ONLY — e.g. "Oh, Mr. Tumnus!" where the model attributes no entity rather than tagging Tumnus as ADDRESSED.
+**ADDRESSED is the sharpest discriminator between models.** Sonnet and Opus miss ~60% of ADDRESSED entities (recall ~0.4), while ChatGPT gets 0.85 F1 and Gemini 0.60 F1. The failure mode is treating vocatives as MENTIONED_ONLY — e.g. "Oh, Mr. Tumnus!" where the model assigns no entity rather than tagging Tumnus as ADDRESSED.
 
 **ACTIVE_THOUGHT is consistently weak across all models (0.625–0.667 F1).** The label requires recognizing internal states from narrator language ("Lucy was tired", "she wondered") rather than explicit thought verbs. Models tend to predict ACTIVE_PERFORMER or nothing.
 
-**MISCELLANEOUS gets 0 F1 from every model.** The three gold instances are group/species labels ("Son of Adam", "Daughter of Eve") used neither as direct address nor as named individuals — a subtle distinction the zero-shot prompt does not explain. The few-shot prompt targets this directly.
+**MISCELLANEOUS gets 0 F1 from every model.** The three gold instances are group/species labels ("Son of Adam", "Daughter of Eve") used neither as direct address nor as named individuals — a subtle distinction the zero-shot prompt does not explain.
 
-**Gemini's predictions collapsed to a single label.** It predicted ADDRESSED for almost every entity (99 FP on ADDRESSED, 0 TP on all other labels), suggesting it misread the task format or the label definitions.
+**Gemini underperforms on ACTIVE_PERFORMER (0.375 F1) and MENTIONED_ONLY (0.348 F1).** The MENTIONED_ONLY weakness is driven by 34 false positives — Gemini over-predicts this label, applying it to entities that other models correctly tag as ACTIVE_PERFORMER or ACTIVE_SPEAKER.
+
+### Qualitative findings (few-shot)
+
+**ADDRESSED was the biggest beneficiary of few-shot prompting.** Sonnet recall jumped from 0.375 → 0.833 (F1: 0.529 → 0.889); Opus from 0.417 → 0.792 (F1: 0.571 → 0.864). The vocative examples in the prompt directly fixed the most common error mode. ChatGPT was already strong at 0.851 zero-shot and did not change.
+
+**MISCELLANEOUS recovered dramatically for Sonnet and Opus.** Sonnet 0.000 → 0.800, Opus 0.000 → 0.667. The "Son of Adam"/"Daughter of Eve" examples worked exactly as intended. ChatGPT remained at 0.000 (see note below).
+
+**ACTIVE_THOUGHT regressed slightly for Sonnet and Opus** (0.667 → 0.632 for both), despite no change in recall. False positives increased — the richer prompt may be pushing models to over-tag internal states.
+
+**Sonnet gained more from few-shot (+0.082 overall) than Opus (+0.026)**, consistent with Sonnet having more room to improve. The gains are almost entirely from ADDRESSED and MISCELLANEOUS.
+
+**ChatGPT fewshot results are identical to zero-shot** — same per-row predictions, including 0 F1 on MISCELLANEOUS. This likely means the zero-shot predictions file was reused rather than running a true few-shot pass. A dedicated few-shot run is needed.
+
+**Gemini has no few-shot run yet.** Given its ADDRESSED recall (0.500 zero-shot) and the known vocative failure mode, it is a strong candidate to improve.
 
 ---
 

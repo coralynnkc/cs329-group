@@ -1,5 +1,5 @@
 """
-Update the results table in README.MD from results/summary.csv.
+Update the results tables in README.MD from results/summary.csv.
 
 Run after scoring one or more models:
     python narnia/scripts/update_readme.py
@@ -14,8 +14,10 @@ RES_DIR  = os.path.join(DATA_DIR, "results")
 README   = os.path.join(DATA_DIR, "README.MD")
 SUMMARY  = os.path.join(RES_DIR, "summary.csv")
 
-RESULTS_START = "<!-- results:start -->"
-RESULTS_END   = "<!-- results:end -->"
+RESULTS_START        = "<!-- results:start -->"
+RESULTS_END          = "<!-- results:end -->"
+RESULTS_FS_START     = "<!-- results-fewshot:start -->"
+RESULTS_FS_END       = "<!-- results-fewshot:end -->"
 
 
 def load_summary():
@@ -26,20 +28,15 @@ def load_summary():
         return list(csv.DictReader(f))
 
 
-
-def build_summary_table(rows):
+def build_table(rows, start_marker, end_marker):
     lines = [
-        RESULTS_START,
+        start_marker,
         "| Model | Precision | Recall | F1 |",
         "| ----- | --------- | ------ | -- |",
     ]
     for row in rows:
-        model     = row.get("model", "")
-        precision = row.get("precision", "")
-        recall    = row.get("recall", "")
-        f1        = row.get("f1", "")
-        lines.append(f"| {model} | {precision} | {recall} | {f1} |")
-    lines.append(RESULTS_END)
+        lines.append(f"| {row.get('model', '')} | {row.get('precision', '')} | {row.get('recall', '')} | {row.get('f1', '')} |")
+    lines.append(end_marker)
     return "\n".join(lines)
 
 
@@ -53,17 +50,20 @@ def replace_block(content, start_marker, end_marker, new_block):
 
 
 def update_readme(rows):
+    zeroshot = [r for r in rows if not r.get("model", "").endswith("_fewshot")]
+    fewshot  = [r for r in rows if r.get("model", "").endswith("_fewshot")]
+
     with open(README, encoding="utf-8") as f:
         content = f.read()
 
-    summary_table = build_summary_table(rows)
-    content = replace_block(content, RESULTS_START, RESULTS_END, summary_table)
+    content = replace_block(content, RESULTS_START, RESULTS_END,
+                             build_table(zeroshot, RESULTS_START, RESULTS_END))
+    content = replace_block(content, RESULTS_FS_START, RESULTS_FS_END,
+                             build_table(fewshot, RESULTS_FS_START, RESULTS_FS_END))
 
     with open(README, "w", encoding="utf-8") as f:
         f.write(content)
-    print(f"README.MD updated with {len(rows)} model(s).")
-    print("\n--- results table ---")
-    print(summary_table)
+    print(f"README.MD updated ({len(zeroshot)} zero-shot, {len(fewshot)} few-shot models).")
 
 
 rows = load_summary()
