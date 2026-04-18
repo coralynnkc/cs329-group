@@ -9,8 +9,8 @@ Source: Chronicles of Narnia — 200 sentences manually annotated with character
 | ----- | --------- | ------ | -- |
 | sonnet | 0.7154 | 0.7686 | 0.741 |
 | opus | 0.7899 | 0.7769 | 0.7833 |
-| chatgpt | 0.7372 | 0.8347 | 0.7829 |
 | gemini | 0.561 | 0.5702 | 0.5656 |
+| chatgpt | 0.5263 | 0.6612 | 0.5861 |
 <!-- results:end -->
 
 _Run `python narnia/scripts/update_readme.py` after scoring to update this table._

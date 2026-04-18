@@ -12,15 +12,15 @@ sample_id,sentence_id,predicted_entities
 1,11,"[{""text"": ""Mr. Tumnus"", ""label"": ""ADDRESSED""}]"
 1,12,[]
 1,13,"[{""text"": ""Mr. Tumnus"", ""label"": ""ACTIVE_SPEAKER""}, {""text"": ""Faun"", ""label"": ""MENTIONED_ONLY""}]"
-1,14,"[{""text"": ""Lucy"", ""label"": ""MISCELLANEOUS""}, {""text"": ""Faun"", ""label"": ""ACTIVE_SPEAKER""}]"
+1,14,"[{""text"": ""Lucy"", ""label"": ""ACTIVE_THOUGHT""}, {""text"": ""Faun"", ""label"": ""ACTIVE_PERFORMER""}]"
 1,15,[]
 1,16,[]
 1,17,"[{""text"": ""Mr. Tumnus"", ""label"": ""ADDRESSED""}, {""text"": ""Lucy"", ""label"": ""ACTIVE_SPEAKER""}]"
 1,18,"[{""text"": ""Faun"", ""label"": ""ADDRESSED""}]"
 1,19,"[{""text"": ""Mrs. Macready"", ""label"": ""MENTIONED_ONLY""}]"
 1,20,"[{""text"": ""Faun"", ""label"": ""ACTIVE_PERFORMER""}]"
-1,21,"[{""text"": ""Mother"", ""label"": ""MENTIONED_ONLY""}, {""text"": ""Edmund"", ""label"": ""ACTIVE_SPEAKER""}]"
-1,22,"[{""text"": ""Nymphs"", ""label"": ""ACTIVE_PERFORMER""}, {""text"": ""Dryads"", ""label"": ""ACTIVE_PERFORMER""}, {""text"": ""Fauns"", ""label"": ""MENTIONED_ONLY""}, {""text"": ""Stag"", ""label"": ""MENTIONED_ONLY""}, {""text"": ""Red Dwarfs"", ""label"": ""MENTIONED_ONLY""}, {""text"": ""Silenus"", ""label"": ""ACTIVE_PERFORMER""}, {""text"": ""Bacchus"", ""label"": ""ACTIVE_PERFORMER""}]"
+1,21,"[{""text"": ""Mother"", ""label"": ""MISCELLANEOUS""}, {""text"": ""Edmund"", ""label"": ""ACTIVE_SPEAKER""}]"
+1,22,"[{""text"": ""Nymphs"", ""label"": ""ACTIVE_PERFORMER""}, {""text"": ""Dryads"", ""label"": ""ACTIVE_PERFORMER""}, {""text"": ""Fauns"", ""label"": ""MENTIONED_ONLY""}, {""text"": ""Stag"", ""label"": ""ACTIVE_PERFORMER""}, {""text"": ""Red Dwarfs"", ""label"": ""MENTIONED_ONLY""}, {""text"": ""Silenus"", ""label"": ""ACTIVE_PERFORMER""}, {""text"": ""Bacchus"", ""label"": ""ACTIVE_PERFORMER""}]"
 1,23,[]
 1,24,[]
 1,25,[]
@@ -55,8 +55,8 @@ sample_id,sentence_id,predicted_entities
 1,54,"[{""text"": ""Peter"", ""label"": ""MENTIONED_ONLY""}, {""text"": ""Susan"", ""label"": ""MENTIONED_ONLY""}, {""text"": ""Edmund"", ""label"": ""MENTIONED_ONLY""}, {""text"": ""Lucy"", ""label"": ""MENTIONED_ONLY""}]"
 1,55,[]
 1,56,[]
-1,57,"[{""text"": ""Lucy"", ""label"": ""MISCELLANEOUS""}]"
-1,58,"[{""text"": ""Son of Adam"", ""label"": ""MENTIONED_ONLY""}, {""text"": ""Daughter of Eve"", ""label"": ""MENTIONED_ONLY""}]"
+1,57,"[{""text"": ""Lucy"", ""label"": ""MENTIONED_ONLY""}]"
+1,58,"[{""text"": ""Son of Adam"", ""label"": ""MISCELLANEOUS""}, {""text"": ""Daughter of Eve"", ""label"": ""MISCELLANEOUS""}]"
 1,59,"[{""text"": ""Lucy"", ""label"": ""ACTIVE_SPEAKER""}]"
 1,60,"[{""text"": ""Lucy"", ""label"": ""ACTIVE_THOUGHT""}]"
 1,61,[]
@@ -65,7 +65,7 @@ sample_id,sentence_id,predicted_entities
 1,64,[]
 1,65,"[{""text"": ""Mr. Tumnus"", ""label"": ""ACTIVE_SPEAKER""}, {""text"": ""Faun"", ""label"": ""MENTIONED_ONLY""}]"
 1,66,"[{""text"": ""Peter"", ""label"": ""ACTIVE_SPEAKER""}]"
-1,67,[]
+1,67,"[{""text"": ""Mother"", ""label"": ""MISCELLANEOUS""}, {""text"": ""Edmund"", ""label"": ""ACTIVE_SPEAKER""}]"
 1,68,"[{""text"": ""Faun"", ""label"": ""ADDRESSED""}]"
 1,69,[]
 1,70,"[{""text"": ""Mr. Tumnus"", ""label"": ""ADDRESSED""}]"
@@ -76,7 +76,7 @@ sample_id,sentence_id,predicted_entities
 1,75,"[{""text"": ""Lucy"", ""label"": ""ACTIVE_THOUGHT""}]"
 1,76,"[{""text"": ""Lucy"", ""label"": ""ACTIVE_SPEAKER""}]"
 1,77,[]
-1,78,[]
+1,78,"[{""text"": ""Silenus"", ""label"": ""MENTIONED_ONLY""}, {""text"": ""Nymphs"", ""label"": ""MISCELLANEOUS""}, {""text"": ""Men"", ""label"": ""MISCELLANEOUS""}, {""text"": ""Monks"", ""label"": ""MISCELLANEOUS""}, {""text"": ""Gamekeepers"", ""label"": ""MISCELLANEOUS""}, {""text"": ""Man"", ""label"": ""MISCELLANEOUS""}]"
 1,79,[]
 1,80,"[{""text"": ""Mr. Tumnus"", ""label"": ""ACTIVE_PERFORMER""}]"
 1,81,"[{""text"": ""Faun"", ""label"": ""ADDRESSED""}]"
@@ -89,21 +89,21 @@ sample_id,sentence_id,predicted_entities
 1,88,"[{""text"": ""Faun"", ""label"": ""ADDRESSED""}, {""text"": ""Lucy"", ""label"": ""ACTIVE_SPEAKER""}]"
 1,89,[]
 1,90,[]
-1,91,"[{""text"": ""Faun"", ""label"": ""MISCELLANEOUS""}]"
+1,91,"[{""text"": ""Faun"", ""label"": ""MENTIONED_ONLY""}]"
 1,92,[]
 1,93,"[{""text"": ""Mr. Tumnus"", ""label"": ""ACTIVE_SPEAKER""}]"
 1,94,[]
 1,95,[]
 1,96,"[{""text"": ""Lucy"", ""label"": ""ACTIVE_SPEAKER""}]"
 1,97,"[{""text"": ""Faun"", ""label"": ""ACTIVE_SPEAKER""}]"
-1,98,"[{""text"": ""Peter"", ""label"": ""ACTIVE_SPEAKER""}, {""text"": ""Lucy"", ""label"": ""MISCELLANEOUS""}]"
+1,98,"[{""text"": ""Peter"", ""label"": ""ACTIVE_SPEAKER""}, {""text"": ""Lucy"", ""label"": ""MENTIONED_ONLY""}]"
 1,99,"[{""text"": ""Faun"", ""label"": ""ACTIVE_PERFORMER""}]"
 1,100,"[{""text"": ""Ivy"", ""label"": ""MENTIONED_ONLY""}, {""text"": ""Margaret"", ""label"": ""MENTIONED_ONLY""}, {""text"": ""Betty"", ""label"": ""MENTIONED_ONLY""}]"
 1,101,[]
 1,102,[]
 1,103,[]
 1,104,"[{""text"": ""Faun"", ""label"": ""ACTIVE_SPEAKER""}]"
-1,105,"[{""text"": ""Mr. Tumnus"", ""label"": ""ACTIVE_PERFORMER""}, {""text"": ""Lucy"", ""label"": ""ACTIVE_PERFORMER""}]"
+1,105,"[{""text"": ""Mr. Tumnus"", ""label"": ""ACTIVE_PERFORMER""}, {""text"": ""Lucy"", ""label"": ""ACTIVE_THOUGHT""}]"
 1,106,"[{""text"": ""Faun"", ""label"": ""ACTIVE_SPEAKER""}]"
 1,107,"[{""text"": ""Daughter of Eve"", ""label"": ""ADDRESSED""}]"
 1,108,[]
@@ -125,10 +125,10 @@ sample_id,sentence_id,predicted_entities
 1,124,"[{""text"": ""Daughter of Eve"", ""label"": ""ADDRESSED""}]"
 1,125,"[{""text"": ""Faun"", ""label"": ""ACTIVE_PERFORMER""}]"
 1,126,[]
-1,127,"[{""text"": ""Faun"", ""label"": ""MISCELLANEOUS""}]"
+1,127,"[{""text"": ""Faun"", ""label"": ""MENTIONED_ONLY""}]"
 1,128,[]
 1,129,[]
-1,130,"[{""text"": ""girl"", ""label"": ""ADDRESSED""}, {""text"": ""Faun"", ""label"": ""ACTIVE_SPEAKER""}]"
+1,130,"[{""text"": ""Faun"", ""label"": ""ACTIVE_SPEAKER""}]"
 1,131,"[{""text"": ""Professor"", ""label"": ""MENTIONED_ONLY""}]"
 1,132,"[{""text"": ""Lucy"", ""label"": ""ACTIVE_SPEAKER""}]"
 1,133,[]
@@ -142,11 +142,11 @@ sample_id,sentence_id,predicted_entities
 1,141,"[{""text"": ""White Witch"", ""label"": ""MENTIONED_ONLY""}]"
 1,142,"[{""text"": ""Lucy"", ""label"": ""ACTIVE_SPEAKER""}]"
 1,143,[]
-1,144,"[{""text"": ""Daughter of Eve"", ""label"": ""ADDRESSED""}]"
+1,144,"[{""text"": ""Daughter of Eve"", ""label"": ""MISCELLANEOUS""}]"
 1,145,[]
 1,146,[]
 1,147,[]
-1,148,"[{""text"": ""Human"", ""label"": ""ADDRESSED""}]"
+1,148,"[{""text"": ""Human"", ""label"": ""MISCELLANEOUS""}]"
 1,149,[]
 1,150,"[{""text"": ""Lucy"", ""label"": ""ACTIVE_PERFORMER""}]"
 1,151,[]
@@ -156,9 +156,9 @@ sample_id,sentence_id,predicted_entities
 1,155,"[{""text"": ""Faun"", ""label"": ""ACTIVE_SPEAKER""}]"
 1,156,[]
 1,157,"[{""text"": ""Lucy"", ""label"": ""ACTIVE_SPEAKER""}]"
-1,158,"[{""text"": ""Mr. Tumnus"", ""label"": ""ACTIVE_SPEAKER""}, {""text"": ""father"", ""label"": ""MENTIONED_ONLY""}]"
+1,158,"[{""text"": ""Mr. Tumnus"", ""label"": ""ACTIVE_SPEAKER""}]"
 1,159,"[{""text"": ""Mr. Tumnus"", ""label"": ""ACTIVE_SPEAKER""}]"
-1,160,"[{""text"": ""Lucy"", ""label"": ""ACTIVE_PERFORMER""}]"
+1,160,"[{""text"": ""Lucy"", ""label"": ""MENTIONED_ONLY""}]"
 1,161,"[{""text"": ""Lucy"", ""label"": ""ACTIVE_SPEAKER""}]"
 1,162,[]
 1,163,"[{""text"": ""Lucy"", ""label"": ""ACTIVE_PERFORMER""}]"
@@ -187,7 +187,7 @@ sample_id,sentence_id,predicted_entities
 1,186,"[{""text"": ""Faun"", ""label"": ""ACTIVE_SPEAKER""}]"
 1,187,[]
 1,188,"[{""text"": ""Daughter of Eve"", ""label"": ""ADDRESSED""}, {""text"": ""Faun"", ""label"": ""ACTIVE_SPEAKER""}]"
-1,189,"[{""text"": ""Mr. Tumnus"", ""label"": ""ACTIVE_SPEAKER""}, {""text"": ""Faun"", ""label"": ""MISCELLANEOUS""}]"
+1,189,"[{""text"": ""Mr. Tumnus"", ""label"": ""ACTIVE_SPEAKER""}, {""text"": ""Faun"", ""label"": ""MENTIONED_ONLY""}]"
 1,190,"[{""text"": ""Peter"", ""label"": ""ACTIVE_SPEAKER""}]"
 1,191,"[{""text"": ""White Witch"", ""label"": ""MENTIONED_ONLY""}]"
 1,192,[]
@@ -195,6 +195,6 @@ sample_id,sentence_id,predicted_entities
 1,194,[]
 1,195,[]
 1,196,[]
-1,197,"[{""text"": ""Professor"", ""label"": ""MENTIONED_ONLY""}]"
+1,197,"[{""text"": ""Professor"", ""label"": ""MENTIONED_ONLY""}, {""text"": ""boys"", ""label"": ""MISCELLANEOUS""}, {""text"": ""girls"", ""label"": ""MISCELLANEOUS""}]"
 1,198,[]
 1,199,[]
