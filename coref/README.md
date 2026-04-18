@@ -1,28 +1,32 @@
-# Coref — Character Cluster Coreference (Narnia)
+# Coref — Character Coreference NER (Narnia)
 
-Source: Chronicles of Narnia — same 199 sentences used in agency-based NER, re-annotated for character identity clustering.
+Source: Chronicles of Narnia — same 199 sentences used in agency-based NER (`narnia/`), re-annotated for character identity resolution.
 
 ## Task
 
-Given a sentence, identify all character mentions and group them under their canonical character name. This is a hybrid of NER (find the spans) and coreference resolution (cluster them by identity) — neither task alone gives you character-centric annotation where every mention of a character maps to their canonical name, including nicknames and epithets.
+Given a sentence, identify all character mentions and assign each one their canonical character name. The model must resolve both named references ("the Faun", "the Professor") and nicknames to the correct canonical label — this is NER where the label set is the set of characters, not entity types.
+
+Combined with the agency labels from `narnia/`, each `(span, character, agency_role)` triple enables corpus-level insights like "how often is Lucy Pevensie an ACTIVE_SPEAKER?"
 
 ## Canonical Characters
 
-- Peter Pevensie
-- Susan Pevensie
-- Edmund Pevensie
-- Lucy Pevensie
-- Professor Digory Kirke
-- Mrs. Macready
-- Mr. Tumnus
-- Jadis
-- Bacchus
-- Silenus
-- Ivy
-- Margaret
-- Betty
+| Canonical name | Notes |
+| -------------- | ----- |
+| Peter Pevensie | |
+| Susan Pevensie | |
+| Edmund Pevensie | |
+| Lucy Pevensie | |
+| Professor Digory Kirke | |
+| Mrs. Macready | |
+| Mr. Tumnus | |
+| Jadis | the White Witch |
+| Bacchus | |
+| Silenus | |
+| Ivy | servant |
+| Margaret | servant |
+| Betty | servant |
 
-## Baseline Results — Mention-level Precision, Recall, F1
+## Baseline Results — Entity-level Precision, Recall, F1
 
 <!-- results:start -->
 | Model | Precision | Recall | F1 |
@@ -31,7 +35,7 @@ Given a sentence, identify all character mentions and group them under their can
 
 _Run `python coref/scripts/update_readme.py` after scoring to update this table._
 
-## Few-shot Results — Mention-level Precision, Recall, F1
+## Few-shot Results — Entity-level Precision, Recall, F1
 
 <!-- results-fewshot:start -->
 | Model | Precision | Recall | F1 |
@@ -44,20 +48,20 @@ _Run `python coref/scripts/update_readme.py` after scoring to update this table.
 
 ## Data Format
 
-`data/narnia_coref_annotated.csv` and the split files share the schema:
+`data/narnia_coref_annotated.csv` shares the same schema as `narnia/data/narnia_annotated.csv`:
 
 ```
-sentence_id, sentence, clusters
+sentence_id, sentence, entities
 ```
 
-where `clusters` is a JSON list of `{"character": "<canonical_name>", "mentions": ["<span>", ...]}` objects:
+where `entities` is a JSON list of `{"text": "...", "character": "..."}` objects:
 
 ```
-1,"Once there were four children whose names were Peter , Susan , Edmund and Lucy .","[{""character"": ""Peter Pevensie"", ""mentions"": [""Peter""]}, {""character"": ""Susan Pevensie"", ""mentions"": [""Susan""]}, {""character"": ""Edmund Pevensie"", ""mentions"": [""Edmund""]}, {""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,"Once there were four children whose names were Peter , Susan , Edmund and Lucy .","[{""text"": ""Peter"", ""character"": ""Peter Pevensie""}, {""text"": ""Susan"", ""character"": ""Susan Pevensie""}, ...]"
 2,This story is about something that happened to them ...,[]
 ```
 
-Sentences with no character mentions have `clusters = []`.
+Sentences with no character mentions have `entities = []`.
 
 ---
 
@@ -65,9 +69,9 @@ Sentences with no character mentions have `clusters = []`.
 
 | File | Description |
 | ---- | ----------- |
-| `data/narnia_coref_annotated.csv` | Character-cluster format: sentence + JSON cluster list |
+| `data/narnia_coref_annotated.csv` | Character NER format: sentence + JSON entity list |
 | `mini/narnia_coref_input.csv` | Model-facing eval input (no labels) |
-| `mini/narnia_coref_answers.csv` | Gold answer key (JSON cluster lists) |
+| `mini/narnia_coref_answers.csv` | Gold answer key (JSON entity lists) |
 | `mini/narnia_coref_predictions_<model>.csv` | Model predictions (save here after running a model) |
 
 ---
@@ -123,33 +127,35 @@ Scores are saved to:
 
 ### Zero-shot prompt
 
-Paste the contents of `mini/narnia_coref_input.csv` directly after this message:
+Paste the contents of `mini/narnia_coref_input.csv` directly after this message.
+Save the response as `mini/narnia_coref_predictions_[model].csv`.
 
 ```
-For each row, identify all character mentions in the sentence and group them by their canonical character name.
-Return ONLY a CSV with columns: sample_id,sentence_id,predicted_clusters
-where predicted_clusters is a JSON list of {"character": "<canonical_name>", "mentions": ["<span>", ...]} objects.
+For each row, identify all character mentions in the sentence and assign each one their canonical character name.
+Return ONLY a CSV saved as narnia_coref_predictions_[model].csv with columns: sample_id,sentence_id,predicted_entities
+where predicted_entities is a JSON list of {"text": "...", "character": "..."} objects.
 No explanation. Do not skip rows.
 
-Canonical characters and their common surface forms:
-- Peter Pevensie (Peter, he)
-- Susan Pevensie (Susan, she)
-- Edmund Pevensie (Edmund, Ed, he)
-- Lucy Pevensie (Lucy, she)
-- Professor Digory Kirke (Professor, the Professor, he)
-- Mrs. Macready (Mrs. Macready, she)
-- Mr. Tumnus (Mr. Tumnus, Tumnus, the Faun, he)
-- Jadis (Jadis, the White Witch, the Queen, she)
-- Bacchus (Bacchus, he)
-- Silenus (Silenus, he)
-- Ivy, Margaret, Betty (servants — use their names as canonical)
+Valid canonical character names:
+- Peter Pevensie
+- Susan Pevensie
+- Edmund Pevensie
+- Lucy Pevensie
+- Professor Digory Kirke
+- Mrs. Macready
+- Mr. Tumnus
+- Jadis
+- Bacchus
+- Silenus
+- Ivy
+- Margaret
+- Betty
 
-Only tag named character mentions that appear explicitly in the sentence.
-Do not tag pronouns (he, she, they) unless you are certain from the sentence alone.
+Assign every mention — including epithets and titles — to the correct canonical name.
 If a sentence has no character mentions, return an empty list: []
 
 Example input:  1,1,Once there were four children whose names were Peter , Susan , Edmund and Lucy .
-Example output: 1,1,"[{""character"": ""Peter Pevensie"", ""mentions"": [""Peter""]}, {""character"": ""Susan Pevensie"", ""mentions"": [""Susan""]}, {""character"": ""Edmund Pevensie"", ""mentions"": [""Edmund""]}, {""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+Example output: 1,1,"[{""text"": ""Peter"", ""character"": ""Peter Pevensie""}, {""text"": ""Susan"", ""character"": ""Susan Pevensie""}, {""text"": ""Edmund"", ""character"": ""Edmund Pevensie""}, {""text"": ""Lucy"", ""character"": ""Lucy Pevensie""}]"
 
 Example input:  1,2,This story is about something that happened to them .
 Example output: 1,2,[]
@@ -163,56 +169,59 @@ Data:
 ### Few-shot prompt
 
 Paste the contents of `mini/narnia_coref_input.csv` after the examples block below.
-Save the response as `mini/narnia_coref_predictions_<model>_fewshot.csv`.
+Save the response as `mini/narnia_coref_predictions_[model]_fewshot.csv`.
 
 ```
 You are annotating sentences from The Chronicles of Narnia for character coreference.
 
-For each row, identify all character mentions in the sentence and group them under
-their canonical character name. Return ONLY a CSV with columns:
-sample_id,sentence_id,predicted_clusters
-where predicted_clusters is a JSON list of {"character": "<canonical_name>", "mentions": ["<span>", ...]} objects.
+For each row, identify all character mentions in the sentence and assign each one
+their canonical character name. Return ONLY a CSV saved as narnia_coref_predictions_[model]_fewshot.csv
+with columns: sample_id,sentence_id,predicted_entities
+where predicted_entities is a JSON list of {"text": "...", "character": "..."} objects.
 No explanation. Do not skip rows.
 
-Canonical characters:
-- Peter Pevensie — surface forms: Peter
-- Susan Pevensie — surface forms: Susan
-- Edmund Pevensie — surface forms: Edmund, Ed
-- Lucy Pevensie — surface forms: Lucy
-- Professor Digory Kirke — surface forms: Professor, the Professor
-- Mrs. Macready — surface forms: Mrs. Macready
-- Mr. Tumnus — surface forms: Mr. Tumnus, Tumnus, the Faun, Faun
-- Jadis — surface forms: Jadis, the White Witch, the Queen, the Witch
-- Bacchus — surface forms: Bacchus
-- Silenus — surface forms: Silenus
-- Ivy, Margaret, Betty — use the name as written
+Valid canonical character names:
+- Peter Pevensie
+- Susan Pevensie
+- Edmund Pevensie
+- Lucy Pevensie
+- Professor Digory Kirke
+- Mrs. Macready
+- Mr. Tumnus
+- Jadis
+- Bacchus
+- Silenus
+- Ivy
+- Margaret
+- Betty
 
 Key rules:
-- Only tag spans that appear explicitly in the sentence text.
-- A name like "the Faun" or "the Professor" counts as a mention — use the canonical name.
-- If a character is mentioned twice (e.g. "Mr. Tumnus" and "the Faun" in one sentence), both go in the same mentions list.
-- Group labels like "Son of Adam" or "Daughter of Eve" are NOT character names — omit them.
+- The text field should be the span as it appears in the sentence.
+- Resolve all epithets and titles to the correct canonical name (e.g. "the Faun" → Mr. Tumnus, "the Professor" → Professor Digory Kirke, "the White Witch" → Jadis).
 - If a sentence has no character mentions, return [].
 
 --- EXAMPLES ---
 
 Input:  1,1,Once there were four children whose names were Peter , Susan , Edmund and Lucy .
-Output: 1,1,"[{""character"": ""Peter Pevensie"", ""mentions"": [""Peter""]}, {""character"": ""Susan Pevensie"", ""mentions"": [""Susan""]}, {""character"": ""Edmund Pevensie"", ""mentions"": [""Edmund""]}, {""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+Output: 1,1,"[{""text"": ""Peter"", ""character"": ""Peter Pevensie""}, {""text"": ""Susan"", ""character"": ""Susan Pevensie""}, {""text"": ""Edmund"", ""character"": ""Edmund Pevensie""}, {""text"": ""Lucy"", ""character"": ""Lucy Pevensie""}]"
 
 Input:  1,2,This story is about something that happened to them when they were sent away .
 Output: 1,2,[]
 
 Input:  1,3,"This is the land of Narnia , said the Faun , where we are now ."
-Output: 1,3,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Faun""]}]"
+Output: 1,3,"[{""text"": ""Faun"", ""character"": ""Mr. Tumnus""}]"
 
-Input:  1,4,"And may I ask , O Lucy , said Mr. Tumnus , how you have come into Narnia ?"
-Output: 1,4,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}, {""character"": ""Mr. Tumnus"", ""mentions"": [""Mr. Tumnus""]}]"
+Input:  1,4,"They were sent to the house of an old Professor who lived in the heart of the country ."
+Output: 1,4,"[{""text"": ""Professor"", ""character"": ""Professor Digory Kirke""}]"
 
 Input:  1,5,He had no wife and he lived in a very large house with a housekeeper called Mrs. Macready and three servants .
-Output: 1,5,"[{""character"": ""Mrs. Macready"", ""mentions"": [""Mrs. Macready""]}]"
+Output: 1,5,"[{""text"": ""Mrs. Macready"", ""character"": ""Mrs. Macready""}]"
 
-Input:  1,6,"We 've fallen on our feet and no mistake , said Peter ."
-Output: 1,6,"[{""character"": ""Peter Pevensie"", ""mentions"": [""Peter""]}]"
+Input:  1,6,"And may I ask , O Lucy , said Mr. Tumnus , how you have come into Narnia ?"
+Output: 1,6,"[{""text"": ""Lucy"", ""character"": ""Lucy Pevensie""}, {""text"": ""Mr. Tumnus"", ""character"": ""Mr. Tumnus""}]"
+
+Input:  1,7,"It was she who had enchanted the whole country so that it was always winter ."
+Output: 1,7,"[{""text"": ""she"", ""character"": ""Jadis""}]"
 
 --- DATA ---
 [paste contents of mini/narnia_coref_input.csv here]

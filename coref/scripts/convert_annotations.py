@@ -1,14 +1,13 @@
 """
-Convert the narnia manual annotations to character-cluster format for coreference evaluation.
+Convert the narnia manual annotations to character-label NER format for coreference evaluation.
 
 Input:  narnia/man_annotated_narnia200 - Sheet1.csv
 Output: coref/data/narnia_coref_annotated.csv
 
 Each output row represents one sentence:
-    sentence_id, sentence, clusters
-where clusters is a JSON list of {"character": "<canonical_name>", "mentions": ["<span>", ...]} objects.
-Characters with multiple surface mentions in the same sentence are grouped.
-Sentences with no annotated characters get clusters = [].
+    sentence_id, sentence, entities
+where entities is a JSON list of {"text": "<character_mention>", "character": "<canonical_name>"} objects.
+Sentences with no annotated characters get entities = [].
 
 Run:
     python coref/scripts/convert_annotations.py
@@ -17,7 +16,7 @@ Run:
 import os
 import csv
 import json
-from collections import defaultdict, OrderedDict
+from collections import OrderedDict
 
 HERE       = os.path.dirname(os.path.abspath(__file__))
 COREF_DIR  = os.path.dirname(HERE)
@@ -30,7 +29,7 @@ OUT_FILE   = os.path.join(OUT_DIR, "narnia_coref_annotated.csv")
 def convert():
     os.makedirs(OUT_DIR, exist_ok=True)
 
-    # sentence_id -> {"text": str, "clusters": {canonical_character: [mention, ...]}}
+    # sentence_id -> {"text": str, "entities": [{"text": mention, "character": canonical}, ...]}
     by_sent = OrderedDict()
 
     with open(SOURCE, encoding="utf-8") as f:
@@ -42,27 +41,20 @@ def convert():
             canonical = row["canonical_character"].strip()
 
             if sid not in by_sent:
-                by_sent[sid] = {"text": text, "clusters": defaultdict(list)}
+                by_sent[sid] = {"text": text, "entities": []}
             elif not by_sent[sid]["text"] and text:
                 by_sent[sid]["text"] = text
 
-            # Only add if both mention and canonical character are present
             if mention and canonical:
-                # Avoid duplicate mentions for the same canonical character in one sentence
-                if mention not in by_sent[sid]["clusters"][canonical]:
-                    by_sent[sid]["clusters"][canonical].append(mention)
+                by_sent[sid]["entities"].append({"text": mention, "character": canonical})
 
-    rows = [["sentence_id", "sentence", "clusters"]]
+    rows = [["sentence_id", "sentence", "entities"]]
     skipped = 0
     for sid, data in by_sent.items():
         if not data["text"]:
             skipped += 1
             continue
-        clusters = [
-            {"character": char, "mentions": mentions}
-            for char, mentions in data["clusters"].items()
-        ]
-        rows.append([sid, data["text"], json.dumps(clusters)])
+        rows.append([sid, data["text"], json.dumps(data["entities"])])
 
     with open(OUT_FILE, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)

@@ -2,13 +2,13 @@
 Score model character-coreference predictions against the answer key.
 
 Expects a prediction file named:  mini/narnia_coref_predictions_<model>.csv
-with columns: sample_id, sentence_id, predicted_clusters
-where predicted_clusters is a JSON list of {"character": "...", "mentions": ["..."]} objects.
+with columns: sample_id, sentence_id, predicted_entities
+where predicted_entities is a JSON list of {"text": "...", "character": "..."} objects.
 
-Evaluation uses mention-level exact-match precision, recall, and F1.
-A predicted (mention, character) pair is correct only if both the mention text
-and the canonical character name exactly match a gold pair (character comparison
-is case-insensitive; mention text is stripped but case-sensitive).
+Evaluation uses entity-level exact-match precision, recall, and F1.
+A predicted entity is correct only if both the mention text and the canonical
+character name exactly match a gold entity (character comparison is
+case-insensitive; text is stripped but case-sensitive to match annotation style).
 
 Usage:
     python coref/scripts/score_baseline.py --model sonnet
@@ -60,23 +60,23 @@ def normalise_keys(rows):
     return [{remap.get(k, k): v for k, v in row.items()} for row in rows]
 
 
-def cluster_col(rows):
+def entity_col(rows):
     skip = SAMPLE_ID_VARIANTS | SENT_ID_VARIANTS
     for col in rows[0].keys():
         if col.strip().lower() not in skip:
             return col
-    raise ValueError(f"Could not find cluster column in: {list(rows[0].keys())}")
+    raise ValueError(f"Could not find entity column in: {list(rows[0].keys())}")
 
 
 # ---------------------------------------------------------------------------
-# Cluster parsing
+# Entity parsing
 # ---------------------------------------------------------------------------
 
-def parse_clusters(raw):
+def parse_entities(raw):
     """
-    Parse a JSON cluster list from a model response string.
-    Returns a set of (mention, character) tuples (character lowercased for comparison,
-    mention stripped but case-preserved to match annotation style).
+    Parse a JSON entity list from a model response string.
+    Returns a set of (text, character) tuples (character lowercased for comparison,
+    text stripped but case-preserved to match annotation style).
     Silently returns an empty set on parse errors.
     """
     if not raw or not raw.strip():
@@ -93,17 +93,8 @@ def parse_clusters(raw):
         return set()
     result = set()
     for item in items:
-        if not isinstance(item, dict):
-            continue
-        character = str(item.get("character", "")).strip()
-        mentions  = item.get("mentions", [])
-        if not character:
-            continue
-        if isinstance(mentions, list):
-            for m in mentions:
-                result.add((str(m).strip(), character.lower()))
-        elif isinstance(mentions, str):
-            result.add((mentions.strip(), character.lower()))
+        if isinstance(item, dict) and "text" in item and "character" in item:
+            result.add((str(item["text"]).strip(), str(item["character"]).strip().lower()))
     return result
 
 
@@ -131,22 +122,22 @@ def score_file(pred_path, answer_path, debug=False):
     preds   = normalise_keys(raw_preds)
     answers = normalise_keys(raw_answers)
 
-    pred_col = cluster_col(preds)
-    ans_col  = cluster_col(answers)
+    pred_col = entity_col(preds)
+    ans_col  = entity_col(answers)
 
     pred_lookup = {}
     for r in preds:
         key = (str(r.get("sample_id", "1")).strip(),
                str(r.get("sentence_id", "")).strip())
-        pred_lookup[key] = parse_clusters(r.get(pred_col, ""))
+        pred_lookup[key] = parse_entities(r.get(pred_col, ""))
 
-    by_sample     = defaultdict(lambda: {"tp": 0, "fp": 0, "fn": 0})
-    by_character  = defaultdict(lambda: {"tp": 0, "fp": 0, "fn": 0})
+    by_sample    = defaultdict(lambda: {"tp": 0, "fp": 0, "fn": 0})
+    by_character = defaultdict(lambda: {"tp": 0, "fp": 0, "fn": 0})
 
     for row in answers:
         sid  = str(row.get("sample_id", "1")).strip()
         sent = str(row.get("sentence_id", "")).strip()
-        gold = parse_clusters(row.get(ans_col, ""))
+        gold = parse_entities(row.get(ans_col, ""))
         pred = pred_lookup.get((sid, sent), set())
 
         by_sample[sid]["tp"] += len(gold & pred)

@@ -1,15 +1,15 @@
 """
-Generate mini evaluation sets for manual LLM baselining (character coreference).
+Generate mini evaluation sets for manual LLM baselining (character coreference NER).
 
-Task: given a sentence, identify all character mentions and group them under
-their canonical character name.
+Task: given a sentence, identify all character mentions and assign each one
+the canonical character name (coreference as NER).
 
-Reads coref/data/narnia_coref_annotated.csv (all sentences) and writes a single
+Reads coref/data/narnia_coref_annotated.csv (all 199 sentences) and writes a single
 sample in shuffled order.
 
 Output:
     mini/narnia_coref_input.csv    — sentences for the model (no labels)
-    mini/narnia_coref_answers.csv  — gold cluster lists as JSON
+    mini/narnia_coref_answers.csv  — gold entity lists as JSON
 
 Run:
     python coref/scripts/make_mini.py
@@ -47,11 +47,11 @@ rng = random.Random(SEED)
 rng.shuffle(sentences)
 
 input_rows  = [["sample_id", "sentence_id", "sentence"]]
-answer_rows = [["sample_id", "sentence_id", "clusters"]]
+answer_rows = [["sample_id", "sentence_id", "entities"]]
 
 for sent_num, row in enumerate(sentences, start=1):
     input_rows.append([1, sent_num, row["sentence"]])
-    answer_rows.append([1, sent_num, row["clusters"]])
+    answer_rows.append([1, sent_num, row["entities"]])
 
 write_csv(input_rows,  os.path.join(OUT_DIR, "narnia_coref_input.csv"))
 write_csv(answer_rows, os.path.join(OUT_DIR, "narnia_coref_answers.csv"))
