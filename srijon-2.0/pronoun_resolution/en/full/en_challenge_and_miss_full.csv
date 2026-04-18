@@ -1,0 +1,70 @@
+item_id,sentence,option_a,option_b,gold_answer,model_prediction,correct
+pr_en_000298,"Tea and coffee should be drunk out of different vessels, cups and mugs respectively. Tea is usually served in the _ , with milk and sometimes sugar.",cup,mug,A,,
+pr_en_000871,The bus was supposed to arrive at 7:45 but the concert featuring my favorite indie band was scheduled for 8:00; luckily the _ was early so I didn't miss anything.,bus,concert,A,,
+pr_en_000872,The bus was supposed to arrive at 7:45 but the concert featuring my favorite indie band was scheduled for 8:00; luckily the _ was late so I didn't miss anything.,bus,concert,B,,
+pr_en_000925,Mary preferred to grill her vegetables in the patio instead of cooking them on the stove in the kitchen because it was too cold out to use the _ .,grill,stove,A,,
+pr_en_000926,Mary preferred to grill her vegetables in the patio instead of cooking them on the stove in the kitchen because it was too hot inside to use the _ .,grill,stove,B,,
+pr_en_001414,"Kim used a sans-serif font in the letter to her boyfriend, but a serif font in an email to her boss, because she felt the _ was easier to read.",sans-serif font,serif font,B,,
+pr_en_001422,"Joanna mixed together eyeshadow and water in order to make a dye, but she felt that she had added too much of the _ and made it too weak.",water,dye,A,,
+pr_en_001708,"Sarah was afraid of the moon, so Christine wrote her a story about how the moon is helpful. _ hoped she wouldn't be afraid of the moon after reading it.",Sarah,Christine,B,,
+pr_en_002122,The fact is dating can be difficult if one wants to from friends to couple. People should always be respectful of the _ they may want to stay friends.,fact,difficult,A,,
+pr_en_002153,"In order to use the washer and dryer for laundry, Steve separated his laundry into dirty and wet, then he filled the _ with dirty laundry.",washer,dryer,A,,
+pr_en_002347,"To clean my floors I use a broom and sometimes also use a mop, since I want to be quick today I am using the _ on the floor.",broom,mop,A,,
+pr_en_002819,"Sarah (an adopted child) and Jessica (a foster child) lost their parents in unexpected car wrecks, and _ lost their parents wealth since they were an foster child.",Sarah,Jessica,B,,
+pr_en_002820,"Sarah (an adopted child) and Jessica (a foster child) lost their parents in unexpected car wrecks, and _ inherited their parents wealth since they were an adopted child.",Sarah,Jessica,A,,
+pr_en_003790,"I was trying to decide if I should use the oven or bbq the corn, after looking at the bad weather, I decided to use the _ .",bbq,oven,B,,
+pr_en_003906,"Washing his face once a day was enough for Craig, but Michael preferred to do it twice a day, which is why _ had the dirtier face by comparison.",Craig,Michael,A,,
+pr_en_003915,"On his way to the interview, Max bought a nice tie to go along with his slacks, but he spilled food on his chest, causing the _ to get dirty.",tie,slacks,A,,
+pr_en_003916,"On his way to the interview, Max bought a nice tie to go along with his slacks, but he spilled food on his lap, causing the _ to get dirty.",tie,slacks,B,,
+pr_en_004775,"Kevin tried to explain that the greens Kyle was eating were kale, not collard greens, not like it made any difference for _ , who was consuming them.",Kevin,Kyle,B,,
+pr_en_004776,"Kevin tried to explain that the greens Kyle was eating were kale, not collard greens, not like it made any difference for _ , who was differentiating them.",Kevin,Kyle,A,,
+pr_en_005053,"While repairing the drywall, Joel asked Ian if the texture of the new drywall matched the old drywall in the dining room, because _ was in the dining room.",Joel,Ian,B,,
+pr_en_005129,"My business meeting started at 9:00 and I needed to be home at 10:00 for an appointment, so there wasn't much time. The _ was behind, so it worked out.",meeting,appointment,B,,
+pr_en_005830,The hollyhocks in her garden needed plenty of sun and water to moisten the soil. She made sure to plant them in a place with plenty of the _ .,sun,water,A,,
+pr_en_005878,"For our 5:30 PM flight we took the 5 PM train, and were worried about time.  Fortunately, the _ was early, so we caught our airplane in time.",flight,train,B,,
+pr_en_006246,"Mary's apartment had a door in front and a kitchen window in back. When a fire broke out in the kitchen, Mary escaped through the _ .",door,window,A,,
+pr_en_006633,"A tortoise crawled in front of William's car, so Nelson got out of the passenger seat to move it away. _ got back into the car once it was safe.",William,Nelson,B,,
+pr_en_006634,"A tortoise crawled in front of William's car, so Nelson got out of the passenger seat to move it away. _ waited until it was safe to drive away.",William,Nelson,A,,
+pr_en_007289,"The menu at the bar was so small that I didn’t feel like I had many choices, so I just randomly picked something off of the _ .",menu,bar,A,,
+pr_en_007290,"The menu at the bar was so big that I feel like I had too many choices, so I just randomly picked something at the _ .",menu,bar,B,,
+pr_en_007322,"To be an expert at poker, Samuel chose to play the game for many, many, hours, learning from Robert because _ was not as skilled as him.",Samuel,Robert,A,,
+pr_en_007597,"Joseph made honey on toast for breakfast, but Jason did not eat it because he thought it was gross. _ thought it was rude not to eat the toast.",Joseph,Jason,A,,
+pr_en_007598,"Joseph made honey on toast for breakfast, but Jason did not eat it because he thought it was gross. _ thought it was rude not ask before making the toast.",Joseph,Jason,B,,
+pr_en_007704,"Amy wrote a letter to Kai to send a clear message, Kai replied Ami with a poem which was obscure, because of the _ Ami never knew how Kai feels.",letter,poem,B,,
+pr_en_008137,"Martha and Mary, who lived far away from each other, sent each other oranges and cherries from their gardens. Because Mary lived in Washington state, she grew the _ .",oranges,cherries,B,,
+pr_en_008138,"Martha and Mary, who lived far away from each other, sent each other oranges and cherries from their gardens. Because Martha lived in Florida, she grew the _ .",oranges,cherries,A,,
+pr_en_008419,"Laura had more struggles growing up than Jennifer, so when they were asked to create a character based on their childhood experiences, the character _ created about was less interesting.",Laura,Jennifer,B,,
+pr_en_008420,"Laura had more struggles growing up than Jennifer, so when they were asked to create a character based on their childhood experiences, the character _ created about was more interesting.",Laura,Jennifer,A,,
+pr_en_008454,"Mary, a baby girl, suffered from colic, whereas Patricia, also a baby girl, did not, so it was quite simple to console _ .",Mary,Patricia,B,,
+pr_en_008561,"Mary was frustrated the clothes were still on the bed, but happy the dishes were off the counter, because her husband remembered to put away the _ .",clothes,dishes,B,,
+pr_en_008649,"Carl tripped into a puddle of water, got his jodhpurs wet, needed some dry leggings, and decided on yoga pants. He put on the _ because they are dry.",jodhpurs,yoga pants,B,,
+pr_en_008650,"Carl tripped into a puddle of water, got his jodhpurs wet, needed some dry leggings, and decided on yoga pants. He took off the _ because they are wet.",jodhpurs,yoga pants,A,,
+pr_en_009131,"My work training started at 9:00 and I needed to catch the bus at 12:30, so time is tight. Luckily, the _ was late, so I managed.",training,bus,B,,
+pr_en_009132,"My work training started at 9:00 and I needed to catch the bus at 12:30, so time is tight. Luckily, the _ was short, so I managed.",training,bus,A,,
+pr_en_009265,"Jane tried to apply her makeup in the mirror at home or at her workplace bathroom, she was running late so she applied her makeup at the _ .",workplace,home,A,,
+pr_en_009266,"Jane tried to apply her makeup in the mirror at home or at her workplace bathroom, she was on time so she applied her makeup at the _ mirror .",workplace,home,B,,
+pr_en_009300,"My first flight arrives at 04:00 and my second flight is at 04:20, so there wasn't much time. Fortunately, the _ was late, so it worked out.",first flight,second flight,B,,
+pr_en_009468,"Erin always had a steady stream of clients unlike Angela who only had a few clients because, as a professional, _ was very knowledgeable of tax laws.",Erin,Angela,A,,
+pr_en_009797,"Dennis helped Kevin to save money by telling him how to file a lawsuit in small claims court by himself, _ is full of frugal living tips.",Dennis,Kevin,A,,
+pr_en_009975,"The mature forsythia in Natalie's yard was growing out of control, so she hired a gardener, Mary, to fix it. _ gladly pruned the forsythia until it looked nice.",Natalie,Mary,B,,
+pr_en_009976,"The mature forsythia in Natalie's yard was growing out of control, so she hired a gardener, Mary, to fix it. _ watched her prune the forsythia until it looked nice.",Natalie,Mary,A,,
+pr_en_010232,"Eric was looking through the old temple and found a tomb with Matthew, completely wrapped in bandages, get up and start chasing them. The mummy was _ .",Eric,Matthew,B,,
+pr_en_000953,"Lawrence did not like the smell of Joel's new soap but _ liked musky smells.","Lawrence","Joel",B
+pr_en_001314,"Brian liked to clean with vinegar but Kenneth hated the smell, so _ had to use something else.","Brian","Kenneth",A
+pr_en_001869,"Michael had such a simple life compared to Steven because _ came from a poor family.","Michael","Steven",B
+pr_en_002924,"The wood on the chopstick began to splinter after John picked up a chicken wing because the _ was too light.","wood","wing",A
+pr_en_003090,"Christine knew that Kayla didn't like roses, so _ asked for none in the bouquet.","Christine","Kayla",A
+pr_en_003930,"Back when I was obese, I ate too many snacks and ate too few vegetables, but my weight reacted best when the _ were bland.","vegetables","snacks",B
+pr_en_004316,"Rachel asked Betty if she had ever applied for a bank loan, because _ couldn't remember.","Rachel","Betty",A
+pr_en_005069,"Elena was a worse overall tennis player than Mary however _ had a great serve.","Elena","Mary",A
+pr_en_005078,"Jen tried to get rid of her baby's cradle cap with dandruff shampoo and a soft brush, and the _ helped heal the dry skin.","brush","shampoo",B
+pr_en_005469,"After having their babies, Christine fed her baby formula while Victoria was nursing, leading to _ spending much less money.","Christine","Victoria",B
+pr_en_005854,"The ball was thrown father than the disc, because the _ was a lot heavier.","ball","disc",B
+pr_en_007103,"The woman wanted to grow potatoes in her gardens but the _ were too large.","potatoes","gardens",A
+pr_en_007119,"The sportsman could not tie his fishing boat to the dock because the _ was too long.","dock","boat",B
+pr_en_007468,"Jessica gave her glass of red wine to Erin, because _ preferred to stay inebriated.","Jessica","Erin",B
+pr_en_008594,"The young monk would meditate for hours a day on a chair but not a pillow because the _ was uncomfortable.","chair","pillow",B
+pr_en_008654,"The stain was removed when he poured more soda on it and then scrubbed with a brush.  The _ was large.","soda","brush",B
+pr_en_009076,"Late on Monday, Christine was doing an excel report for Erin because _ was the employee.","Christine","Erin",A
+pr_en_009310,"I like to play with the golf ball rather than a tennis ball as the _  extends my fist.","golf ball","tennis ball",B
+pr_en_010221,"It was easier to comb the hair on the dog than on the cat because the _ had longer hair.","cat","dog",A
