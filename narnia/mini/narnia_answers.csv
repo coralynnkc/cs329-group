@@ -1,0 +1,40 @@
+sample_id,sentence_id,entities
+1,1,[]
+1,2,[]
+1,3,[]
+1,4,[]
+1,5,"[{""text"": ""Lucy"", ""label"": ""ACTIVE_PERFORMER""}]"
+1,6,"[{""text"": ""Daughter of Eve"", ""label"": ""ADDRESSED""}, {""text"": ""Faun"", ""label"": ""ACTIVE_SPEAKER""}]"
+1,7,"[{""text"": ""Edmund"", ""label"": ""ACTIVE_SPEAKER""}]"
+1,8,"[{""text"": ""Mr. Tumnus"", ""label"": ""ADDRESSED""}, {""text"": ""Mr. Tumnus"", ""label"": ""ACTIVE_SPEAKER""}]"
+1,9,"[{""text"": ""Faun"", ""label"": ""ADDRESSED""}]"
+1,10,[]
+1,11,"[{""text"": ""Lucy"", ""label"": ""MENTIONED_ONLY""}]"
+1,12,[]
+1,13,"[{""text"": ""Lucy"", ""label"": ""ACTIVE_SPEAKER""}]"
+2,1,"[{""text"": ""Faun"", ""label"": ""ACTIVE_SPEAKER""}]"
+2,2,[]
+2,3,"[{""text"": ""Mr. Tumnus"", ""label"": ""ADDRESSED""}, {""text"": ""Mr. Tumnus"", ""label"": ""ACTIVE_SPEAKER""}]"
+2,4,"[{""text"": ""Mr. Tumnus"", ""label"": ""ACTIVE_SPEAKER""}]"
+2,5,[]
+2,6,"[{""text"": ""Edmund"", ""label"": ""ACTIVE_SPEAKER""}]"
+2,7,[]
+2,8,[]
+2,9,[]
+2,10,[]
+2,11,"[{""text"": ""Faun"", ""label"": ""ADDRESSED""}]"
+2,12,[]
+2,13,[]
+3,1,[]
+3,2,[]
+3,3,[]
+3,4,"[{""text"": ""Faun"", ""label"": ""ACTIVE_SPEAKER""}]"
+3,5,"[{""text"": ""Lucy"", ""label"": ""ACTIVE_THOUGHT""}]"
+3,6,[]
+3,7,"[{""text"": ""Edmund"", ""label"": ""ACTIVE_SPEAKER""}]"
+3,8,[]
+3,9,[]
+3,10,"[{""text"": ""Faun"", ""label"": ""ACTIVE_PERFORMER""}]"
+3,11,[]
+3,12,"[{""text"": ""Lucy"", ""label"": ""ACTIVE_SPEAKER""}]"
+3,13,[]
