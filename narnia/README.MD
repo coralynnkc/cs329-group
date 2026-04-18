@@ -2,6 +2,25 @@
 
 Source: Chronicles of Narnia — 200 sentences manually annotated with character mentions and their narrative agency role.
 
+##Task Title: Multi-label entity categorization through coreferenced objects 
+
+## Canonical Characters
+Jadis
+Mr. Tumnus
+Lucy Pevensie
+Bacchus
+Silenus
+Unknown
+Peter Pevensie
+Susan Pevensie
+Lucy Pevensie
+Edmund Pevensie
+Professor Digory Kirke
+Betty
+Ivy
+Margaret
+Mrs. Macready
+
 ## Baseline Results — Entity-level Precision, Recall, F1
 
 <!-- results:start -->
