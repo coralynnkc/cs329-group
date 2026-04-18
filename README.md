@@ -29,7 +29,7 @@ Each task is selected to illustrate a specific failure mode of existing supervis
 | NER | `ner/` | **primary** — novel schemas supervised models can't handle | ✓ | — | **done** — all 4 models fully scored (CoNLL-2003) |
 | Agency-based NER (Narnia) | `narnia/` | **primary** — custom schema; no supervised baseline possible | ✓ | — | **done** — zero-shot + few-shot scored for 3/4 models |
 | Presuppositions (XNLI) | `srijon-2.0/presuppositions/` | ✓ | ✓ | **primary** — 6 languages; prompt-framing effect on class boundaries | mostly done — sonnet P0/P1 + chatgpt P0/P2/P4 |
-| Fancy coreference (character-name clusters) | `coref/` | **primary** — hybrid NER + coref; no fixed-schema baseline | ✓ | — | **planned** — zero-shot + few-shot |
+| Fancy coreference (character-name clusters) | `coref/` | **primary** — hybrid NER + coref; no fixed-schema baseline | ✓ | — | **done** — zero-shot + few-shot scored (opus/sonnet/chatgpt) |
 
 **Key:** ✓ = task supports this goal; **primary** = task is the main evidence for this goal; — = not applicable or not a focus.
 
@@ -48,7 +48,9 @@ Each task is selected to illustrate a specific failure mode of existing supervis
 | Pronoun resolution (EN/AM/IG/ZU + EN/DE/FR/RU) | `pronoun_resolution/testing/`, `srijon-2.0/` | sonnet 4.6 (7 langs), GPT 5.4 (full EN/DE/FR/RU); partial IG/ZU | chance = 50% | EN: 87–91%; FR/DE/RU: 86–97%; IG/ZU near chance; see table below |
 | NER (CoNLL-2003) | `ner/` | Chat 5.4, Gemini 3, Sonnet 4.6, Opus 4.6 | spaCy/stanza F1 ~91% | opus 0.95; gemini 0.93; sonnet 0.92; chatgpt 0.26 (failure — see note below) |
 | Agency-based NER (Narnia) — zero-shot | `narnia/` | Chat 5.4, Gemini 3, Sonnet 4.6, Opus 4.6 | no supervised baseline (novel schema) | opus F1 0.78; chatgpt F1 0.59; sonnet F1 0.74; gemini F1 0.57 (zero-shot) |
-| Agency-based NER (Narnia) — few-shot | `narnia/` | Chat 5.4, Sonnet 4.6, Opus 4.6 (gemini pending) | — | sonnet F1 **0.82**; opus F1 0.81; chatgpt F1 0.80 — few-shot gives +5–23 pp gain |
+| Agency-based NER (Narnia) — few-shot | `narnia/` | Chat 5.4, Gemini 3, Sonnet 4.6, Opus 4.6 | — | sonnet F1 **0.82**; gemini F1 0.81; opus F1 0.81; chatgpt F1 0.80 — few-shot gives +5–23 pp gain |
+| Fancy coreference / character-cluster NER (Narnia) — zero-shot | `coref/` | Opus 4.6, Sonnet 4.6, Chat 5.4 | no supervised baseline (novel schema) | opus F1 **0.88**; sonnet F1 0.74; chatgpt F1 0.41 (same over-prediction failure as CoNLL NER) |
+| Fancy coreference / character-cluster NER (Narnia) — few-shot | `coref/` | Opus 4.6, Sonnet 4.6, Chat 5.4 | — | opus F1 0.82; sonnet F1 0.80; chatgpt F1 0.55 — few-shot fixes epithet resolution for sonnet; chatgpt precision stays low |
 
 #### Multilingual pronoun resolution — full results (srijon-2.0)
 
@@ -85,7 +87,6 @@ Sonnet 4.6 P0/P1 and ChatGPT 5.4 P0/P2/P4 across 6 languages (DE, EN, FR, HI, RU
 | Task | What exists | What's missing |
 |------|-------------|----------------|
 | Grammaticality 2.0 (BLiMP) | `blimp_summary.csv` exists (headers-only) | No prediction files yet |
-| Agency-based NER (Narnia) — Gemini few-shot | `narnia_predictions_gemini_fewshot.csv` (199 rows) | Not yet scored — run `python narnia/scripts/score_baseline.py --model gemini --prompt fewshot` |
 
 ### Partially done
 
@@ -134,7 +135,9 @@ Source, inference, and full versions of each split are generated and committed. 
 
 8. **Few-shot gives large gains on agency-based NER (Narnia).** Sonnet: F1 0.74 → 0.82 (+8 pp); ChatGPT: F1 0.59 → 0.80 (+21 pp); Opus: F1 0.78 → 0.81 (+3 pp). The largest gain is for the weakest zero-shot model (ChatGPT), suggesting few-shot examples mainly fix output-format failures rather than improving genuine label understanding.
 
-9. **Presupposition prompt framing changes class boundaries, not just accuracy.** Decision-first prompts (P2/P4) improve E/N boundary but often shift C predictions into N. P0 (probability-first) is a weaker but more consistent baseline. No single prompt dominates all languages — French is easiest/most stable; English is hardest regardless of prompt.
+9. **Epithet resolution is the hard part of character-cluster NER.** Opus handles "the Faun → Mr. Tumnus", "the White Witch → Jadis" reliably zero-shot (F1 0.88); sonnet fails on these (Jadis: F1 0.000 zero-shot) but few-shot examples fix it (Jadis: F1 0.800). ChatGPT's over-prediction failure persists zero-shot and few-shot — same qualitative failure as its CoNLL NER result.
+
+10. **Presupposition prompt framing changes class boundaries, not just accuracy.** Decision-first prompts (P2/P4) improve E/N boundary but often shift C predictions into N. P0 (probability-first) is a weaker but more consistent baseline. No single prompt dominates all languages — French is easiest/most stable; English is hardest regardless of prompt.
 
 ---
 
@@ -192,15 +195,9 @@ Results exist for sonnet P0/P1 and chatgpt P0/P2/P4 across 6 languages. What rem
 
 **Script to write:** `narnia/scripts/annotate_full_corpus.py` — takes `--model haiku|sonnet`, `--batch-size N`, `--output path`, `--dry-run` (estimates cost without calling the API).
 
-### 4. Clustered coreference
+### 4. Clustered coreference — **done**
 
-**Goal:** Evaluate coreference resolution with proper cluster metrics (MUC, B³, CEAFₑ) rather than per-span F1. The `coref/` directory already has the infrastructure; it just needs harder test cases and real data.
-
-**Plan:**
-- Port the Narnia character-cluster annotations (from Task 2 above) into the coref evaluation format
-- Run sonnet and chatgpt zero-shot and few-shot
-- Report CoNLL F1 = average of MUC + B³ + CEAFₑ
-- Compare against a supervised coref baseline (spaCy `en_core_web_trf` coref pipeline, or neuralcoref) — these will fail on Narnia epithets/nicknames, which proves the point
+Opus, sonnet, and chatgpt scored zero-shot and few-shot on the Narnia character-cluster NER task. Results in `coref/results/summary.csv` and `coref/README.md`. Key findings: opus F1 0.88 zero-shot (best); few-shot fixes sonnet's Jadis/Professor Digory Kirke failures; chatgpt's over-prediction failure persists even with few-shot examples.
 
 ### 5. 10-minute demo outline
 
@@ -245,7 +242,7 @@ Pronoun resolution        → "multilingual": English strong, low-resource langu
 Presuppositions           → "multilingual + prompt framing": 6 languages; prompt structure changes class geometry; English hardest
 NER (CoNLL-2003)          → "generality": strong baseline (opus F1 0.95); supervised schema
 NER (Narnia / agency)     → "generality proof of concept": custom schema, no supervised baseline; few-shot sonnet F1 0.82
-Fancy coref (Narnia)      → "novel schema": character-cluster NER; hybrid of NER + coref; no supervised baseline
+Fancy coref (Narnia)      → "novel schema": character-cluster NER; hybrid of NER + coref; no supervised baseline; opus F1 0.88; few-shot fixes epithet failures
 Corpus-level insights     → "proof of concept → application": agency statistics over full Narnia corpus
 ```
 
@@ -264,7 +261,7 @@ The through-line for the paper: each task is chosen to illustrate a different fa
 ## Open decisions
 - [ ] Is Claire running sonnet grammaticality 2.0?
 - [ ] Investigate EN presuppositions neutral-class collapse further — dataset artifact or model prior? (see Empirical Finding 7)
-- [ ] Score Gemini few-shot Narnia predictions (file exists at `narnia/narnia_predictions_gemini_fewshot.csv`)
+- [x] Score Gemini few-shot Narnia predictions — done (F1 0.81)
 - [ ] Decide: run sonnet P2/P4 presuppositions, or call presuppositions done with current results?
 - [ ] Write `narnia/scripts/annotate_full_corpus.py` — do a cost estimate before running on full corpus
 - [ ] Gold character-cluster annotations for Narnia: derive from `narnia_answers.csv` or re-annotate?
