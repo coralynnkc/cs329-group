@@ -43,6 +43,9 @@ _Run `python coref/scripts/update_readme.py` after scoring to update this table.
 <!-- results-fewshot:start -->
 | Model | Precision | Recall | F1 |
 | ----- | --------- | ------ | -- |
+| sonnet_fewshot | 0.7481 | 0.8487 | 0.7953 |
+| opus_fewshot | 0.8 | 0.8403 | 0.8197 |
+| chatgpt_fewshot | 0.4056 | 0.8487 | 0.5489 |
 <!-- results-fewshot:end -->
 
 _Run `python coref/scripts/update_readme.py` after scoring to update this table._
