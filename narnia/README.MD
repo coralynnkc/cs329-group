@@ -64,14 +64,14 @@ _Run `python narnia/scripts/score_baseline.py --model <model> --per_role` to rep
 
 _Run `python narnia/scripts/score_baseline.py --model <model> --prompt fewshot --per_role` to reproduce._
 
-| Label | sonnet | opus | chatgpt |
-| ----- | ------ | ---- | ------- |
-| ACTIVE_SPEAKER   | 0.909 | 0.916 | 0.936 |
-| ACTIVE_PERFORMER | 0.640 | 0.783 | 0.741 |
-| ACTIVE_THOUGHT   | 0.632 | 0.632 | 0.625 |
-| ADDRESSED        | 0.889 | 0.864 | 0.851 |
-| MENTIONED_ONLY   | 0.750 | 0.667 | 0.600 |
-| MISCELLANEOUS    | 0.800 | 0.667 | 0.000 |
+| Label | sonnet | opus | chatgpt | gemini | gemini |
+| ----- | ------ | ---- | ------- | ------ |
+| ACTIVE_SPEAKER   | 0.909 | 0.916 | 0.936 | 0.907 |
+| ACTIVE_PERFORMER | 0.640 | 0.783 | 0.741 | 0.643 |
+| ACTIVE_THOUGHT   | 0.632 | 0.632 | 0.625 | 0.667 |
+| ADDRESSED        | 0.889 | 0.864 | 0.851 | 0.889 |
+| MENTIONED_ONLY   | 0.750 | 0.667 | 0.600 | 0.691 |
+| MISCELLANEOUS    | 0.800 | 0.667 | 0.000 | 0.800 |
 
 ### Qualitative findings (zero-shot)
 
