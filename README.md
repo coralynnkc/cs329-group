@@ -193,10 +193,6 @@ The through-line for the paper: each task is chosen to illustrate a different fa
 ---
 
 ## Open decisions
-
-- [ ] Decide whether to rerun NER with ChatGPT using a corrected prompt (current results are anomalous — see Empirical Finding 6)
-- [ ] Decide strict vs. relaxed span match for NER novel-schema experiment and document rationale
-- [ ] Decide whether to include gradient grammaticality judgments (Pearson/Spearman with BLiMP) or keep binary-only
 - [ ] Decide whether to run Sonnet on grammaticality-2.0 CoLA (currently only GPT 5.4 predictions exist)
 - [ ] Decide whether to include srijon-2.0 presuppositions in the paper or keep as supplemental
 - [ ] Investigate EN presuppositions neutral-class collapse further — dataset artifact or model prior? (see Empirical Finding 7)
