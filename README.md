@@ -193,6 +193,5 @@ The through-line for the paper: each task is chosen to illustrate a different fa
 ---
 
 ## Open decisions
-- [ ] Decide whether to run Sonnet on grammaticality-2.0 CoLA (currently only GPT 5.4 predictions exist)
-- [ ] Decide whether to include srijon-2.0 presuppositions in the paper or keep as supplemental
+- [ ] Is Claire running sonnet gramticality 2.0?
 - [ ] Investigate EN presuppositions neutral-class collapse further — dataset artifact or model prior? (see Empirical Finding 7)
