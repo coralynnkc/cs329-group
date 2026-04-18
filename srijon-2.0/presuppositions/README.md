@@ -2,6 +2,13 @@
 
 This directory contains multilingual presupposition-labeling experiments using LLMs.
 
+Clean, pretty data: https://docs.google.com/spreadsheets/d/1lgxXQ80iZjNAnLjoxwhp_ALLh-r1eJDfS4ktZK4ubbs/edit?gid=48303836#gid=48303836 **(start here)**
+
+Writeup: https://docs.google.com/document/d/1FE2MNvQg3cjaUybsyY9nZky-q5gvIz_ROeis55yzFh4/edit?tab=t.0
+
+
+[consider everything below, especially conclusions, to be provisional. I don't necessarily agree that P2 is better than P4]
+
 ## Goal
 
 Test which **semantic reasoning structure** works best for 3-way labeling:
