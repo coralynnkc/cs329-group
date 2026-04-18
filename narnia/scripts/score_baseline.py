@@ -128,7 +128,8 @@ def score_file(pred_path, answer_path, debug=False):
                str(r.get("sentence_id", "")).strip())
         pred_lookup[key] = parse_entities(r.get(pred_col, ""))
 
-    by_sample = defaultdict(lambda: {"tp": 0, "fp": 0, "fn": 0})
+    by_sample  = defaultdict(lambda: {"tp": 0, "fp": 0, "fn": 0})
+    by_role    = defaultdict(lambda: {"tp": 0, "fp": 0, "fn": 0})
 
     for row in answers:
         sid  = str(row.get("sample_id", "1")).strip()
@@ -139,6 +140,17 @@ def score_file(pred_path, answer_path, debug=False):
         by_sample[sid]["tp"] += len(gold & pred)
         by_sample[sid]["fp"] += len(pred - gold)
         by_sample[sid]["fn"] += len(gold - pred)
+
+        # per-role counts
+        gold_labels = {label for _, label in gold}
+        pred_labels = {label for _, label in pred}
+        all_labels  = gold_labels | pred_labels
+        for label in all_labels:
+            gold_l = {e for e in gold if e[1] == label}
+            pred_l = {e for e in pred if e[1] == label}
+            by_role[label]["tp"] += len(gold_l & pred_l)
+            by_role[label]["fp"] += len(pred_l - gold_l)
+            by_role[label]["fn"] += len(gold_l - pred_l)
 
         if debug and (gold | pred):
             p, r, f = prf(len(gold & pred), len(pred - gold), len(gold - pred))
@@ -152,17 +164,26 @@ def score_file(pred_path, answer_path, debug=False):
                                 "tp": tp, "fp": fp, "fn": fn})
 
     if not sample_results:
-        return {"precision": 0.0, "recall": 0.0, "f1": 0.0, "samples": []}
+        return {"precision": 0.0, "recall": 0.0, "f1": 0.0, "samples": [], "by_role": {}}
 
     mean_p = sum(s["precision"] for s in sample_results) / len(sample_results)
     mean_r = sum(s["recall"]    for s in sample_results) / len(sample_results)
     mean_f = sum(s["f1"]        for s in sample_results) / len(sample_results)
+
+    role_results = {}
+    for label, counts in sorted(by_role.items()):
+        p, r, f = prf(counts["tp"], counts["fp"], counts["fn"])
+        role_results[label] = {
+            "precision": round(p, 4), "recall": round(r, 4), "f1": round(f, 4),
+            "tp": counts["tp"], "fp": counts["fp"], "fn": counts["fn"],
+        }
 
     return {
         "precision": round(mean_p, 4),
         "recall":    round(mean_r, 4),
         "f1":        round(mean_f, 4),
         "samples":   sample_results,
+        "by_role":   role_results,
     }
 
 
@@ -178,7 +199,7 @@ def write_csv_file(rows, path):
         w.writerows(rows)
 
 
-def score_model(model, debug=False):
+def score_model(model, debug=False, per_role=False):
     pred_path   = os.path.join(MINI_DIR, f"narnia_predictions_{model}.csv")
     answer_path = os.path.join(MINI_DIR, "narnia_answers.csv")
 
@@ -196,6 +217,14 @@ def score_model(model, debug=False):
     print("-" * 60)
     cols = [f"{s['f1']:.3f}" for s in r["samples"]] + [""] * (3 - len(r["samples"]))
     print(f"{'  '.join(cols)}  {r['precision']:.3f}    {r['recall']:.3f}    {r['f1']:.3f}")
+
+    if per_role and r["by_role"]:
+        print(f"\nPer-role breakdown:")
+        print(f"  {'Label':<20}  {'P':>6}  {'R':>6}  {'F1':>6}  {'TP':>4}  {'FP':>4}  {'FN':>4}")
+        print(f"  {'-'*20}  {'-'*6}  {'-'*6}  {'-'*6}  {'-'*4}  {'-'*4}  {'-'*4}")
+        for label, v in sorted(r["by_role"].items()):
+            print(f"  {label:<20}  {v['precision']:>6.3f}  {v['recall']:>6.3f}  {v['f1']:>6.3f}"
+                  f"  {v['tp']:>4}  {v['fp']:>4}  {v['fn']:>4}")
 
     detail_rows = [
         {"model": model, "sample": s["sample_id"],
@@ -240,10 +269,12 @@ def main():
                        help="answer key CSV (required with --predictions)")
     parser.add_argument("--debug", action="store_true",
                         help="print per-sentence diagnostics")
+    parser.add_argument("--per_role", action="store_true",
+                        help="print per-label precision/recall/F1 breakdown")
     args = parser.parse_args()
 
     if args.model:
-        score_model(args.model, debug=args.debug)
+        score_model(args.model, debug=args.debug, per_role=args.per_role)
     else:
         if not args.answers:
             parser.error("--answers is required with --predictions")

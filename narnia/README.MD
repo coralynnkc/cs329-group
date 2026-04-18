@@ -15,6 +15,31 @@ Source: Chronicles of Narnia — 200 sentences manually annotated with character
 
 _Run `python narnia/scripts/update_readme.py` after scoring to update this table._
 
+### Per-role F1 (zero-shot)
+
+_Run `python narnia/scripts/score_baseline.py --model <model> --per_role` to reproduce._
+
+| Label | sonnet | opus | chatgpt | gemini |
+| ----- | ------ | ---- | ------- | ------ |
+| ACTIVE_SPEAKER   | 0.885 | 0.916 | 0.936 | 0.000 |
+| ACTIVE_PERFORMER | 0.621 | 0.909 | 0.741 | 0.000 |
+| ACTIVE_THOUGHT   | 0.667 | 0.667 | 0.625 | 0.000 |
+| ADDRESSED        | 0.529 | 0.571 | 0.851 | 0.327 |
+| MENTIONED_ONLY   | 0.702 | 0.704 | 0.600 | 0.000 |
+| MISCELLANEOUS    | 0.000 | 0.000 | 0.000 | 0.000 |
+
+### Qualitative findings (zero-shot)
+
+**ACTIVE_SPEAKER is the easiest label** — all capable models score above 0.88 F1. The explicit attribution pattern ("said X", "asked X") is unambiguous.
+
+**ADDRESSED is the sharpest discriminator.** Sonnet and Opus miss roughly 60% of ADDRESSED entities (recall ~0.4), while ChatGPT gets 0.85 F1. The failure mode is treating vocative names as MENTIONED_ONLY — e.g. "Oh, Mr. Tumnus!" where the model attributes no entity rather than tagging Tumnus as ADDRESSED.
+
+**ACTIVE_THOUGHT is consistently weak across all models (0.625–0.667 F1).** The label requires recognizing internal states from narrator language ("Lucy was tired", "she wondered") rather than explicit thought verbs. Models tend to predict ACTIVE_PERFORMER or nothing.
+
+**MISCELLANEOUS gets 0 F1 from every model.** The three gold instances are group/species labels ("Son of Adam", "Daughter of Eve") used neither as direct address nor as named individuals — a subtle distinction the zero-shot prompt does not explain. The few-shot prompt targets this directly.
+
+**Gemini's predictions collapsed to a single label.** It predicted ADDRESSED for almost every entity (99 FP on ADDRESSED, 0 TP on all other labels), suggesting it misread the task format or the label definitions.
+
 ---
 
 ## Task
@@ -106,7 +131,9 @@ Scores are saved to:
 
 ---
 
-## Prompt
+## Prompts
+
+### Zero-shot prompt (baseline)
 
 Paste the contents of `mini/narnia_input.csv` directly after this message:
 
@@ -135,5 +162,64 @@ Example input row:  1,2,This story is about something that happened to them when
 Example output row: 1,2,[]
 
 Data:
+[paste contents of mini/narnia_input.csv here]
+```
+
+---
+
+### Few-shot prompt
+
+Paste the contents of `mini/narnia_input.csv` after the examples block below.
+Save the response as `mini/narnia_predictions_<model>_fewshot.csv`.
+
+```
+You are annotating sentences from The Chronicles of Narnia for character agency.
+
+For each row, identify all character or group mentions and assign each one an agency label.
+Return ONLY a CSV with columns: sample_id,sentence_id,predicted_entities
+where predicted_entities is a JSON list of {"text": "...", "label": "..."} objects.
+No explanation. Do not skip rows.
+
+Valid labels:
+- ACTIVE_SPEAKER   — character is speaking (look for "said X", "asked X", dialogue attribution)
+- ACTIVE_PERFORMER — character performs a physical action (look for action verbs with character as subject)
+- ACTIVE_THOUGHT   — character thinks, feels, wonders, or has an internal state
+- ADDRESSED        — character is spoken to or called by name in dialogue (vocatives, direct address)
+- MENTIONED_ONLY   — character is named by the narrator or in third-person reference, with no agency
+- MISCELLANEOUS    — group or species labels used as names (e.g. "Son of Adam", "Daughter of Eve"), or roles that don't fit above
+
+Key distinctions:
+- A character called by name in speech ("Oh, Mr. Tumnus!") is ADDRESSED, not MENTIONED_ONLY.
+- A character's feeling or internal state ("Lucy was tired", "Lucy thought") is ACTIVE_THOUGHT, not ACTIVE_PERFORMER.
+- "Son of Adam" / "Daughter of Eve" / "Faun" used as a form of address → ADDRESSED; used as a species label → MISCELLANEOUS.
+- If a sentence has no character mentions, return [].
+
+--- EXAMPLES ---
+
+Input:  1,1,It 's only just back there -- at least -- I 'm not sure .
+Output: 1,1,[]
+
+Input:  1,2,"This is the land of Narnia , said the Faun , "" where we are now ; all that lies between the lamp - post and the great castle of Cair Paravel on the eastern sea ."""
+Output: 1,2,"[{""text"": ""Faun"", ""label"": ""ACTIVE_SPEAKER""}]"
+
+Input:  1,3,But the Faun continued sobbing as if his heart would break .
+Output: 1,3,"[{""text"": ""Faun"", ""label"": ""ACTIVE_PERFORMER""}]"
+
+Input:  1,4,He was a Faun .
+Output: 1,4,"[{""text"": ""Faun"", ""label"": ""MENTIONED_ONLY""}]"
+
+Input:  1,5,And when Lucy was tired of eating the Faun began to talk .
+Output: 1,5,"[{""text"": ""Lucy"", ""label"": ""ACTIVE_THOUGHT""}]"
+
+Input:  1,6,You are the nicest Faun I 've ever met .
+Output: 1,6,"[{""text"": ""Faun"", ""label"": ""ADDRESSED""}]"
+
+Input:  1,7,But I 've never seen a Son of Adam or a Daughter of Eve before .
+Output: 1,7,"[{""text"": ""Son of Adam"", ""label"": ""MISCELLANEOUS""}, {""text"": ""Daughter of Eve"", ""label"": ""MISCELLANEOUS""}]"
+
+Input:  1,8,"And may I ask , O Lucy , Daughter of Eve , said Mr. Tumnus , "" how you have come into Narnia ? """
+Output: 1,8,"[{""text"": ""Lucy"", ""label"": ""ADDRESSED""}, {""text"": ""Daughter of Eve"", ""label"": ""ADDRESSED""}, {""text"": ""Mr. Tumnus"", ""label"": ""ACTIVE_SPEAKER""}]"
+
+--- DATA ---
 [paste contents of mini/narnia_input.csv here]
 ```
