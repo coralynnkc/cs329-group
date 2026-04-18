@@ -1,11 +1,12 @@
 # Working Document — LLMs for Linguistic Annotation
-*Last updated: 2026-04-18*
+
+_Last updated: 2026-04-18_
 
 ---
 
 ## Thesis
 
-LLMs can serve as general-purpose linguistic annotation tools using prompt engineering alone — no fine-tuning, no labeled training data, no task-specific pipelines. We demonstrate this across multiple tasks, with particular attention to where supervised models *can't* generalize (new label schemas, low-resource languages, out-of-domain data).
+LLMs can serve as general-purpose linguistic annotation tools using prompt engineering alone — no fine-tuning, no labeled training data, no task-specific pipelines. We demonstrate this across multiple tasks, with particular attention to where supervised models _can't_ generalize (new label schemas, low-resource languages, out-of-domain data).
 
 Three claims, in order of how well we can currently defend them:
 
@@ -19,17 +20,17 @@ Three claims, in order of how well we can currently defend them:
 
 Each task is selected to illustrate a specific failure mode of existing supervised pipelines. This table maps every module to the project claims it supports.
 
-| Task | Module | Generality | No Training Needed | Multilingual | Status |
-|------|--------|:----------:|:-----------------:|:------------:|--------|
-| Lemmatization | `lemmatization/` | ✓ | **primary** — matches SOTA | — | done |
-| Grammaticality / CoLA binary | `grammatical/` | ✓ | **primary** — fills gap where tools are absent | — | done |
-| POS tagging | `pos/` | ✓ | **primary** — competitive in-domain; OOD story pending | — | done (in-domain) |
-| Grammaticality 2.0 (CoLA + BLiMP) | `grammaticality-2.0/` | ✓ | **primary** — prompt design story; MCC/F1/BLiMP | — | CoLA fully scored (all prompts × both splits); BLiMP pending |
-| Pronoun resolution (EN/AM/IG/ZU + EN/DE/FR/RU) | `pronoun_resolution/testing/`, `srijon-2.0/` | ✓ | ✓ | **primary** — 7 languages; low-resource degradation | mostly done |
-| NER | `ner/` | **primary** — novel schemas supervised models can't handle | ✓ | — | **done** — all 4 models fully scored (CoNLL-2003) |
-| Agency-based NER (Narnia) | `narnia/` | **primary** — custom schema; no supervised baseline possible | ✓ | — | **done** — zero-shot + few-shot scored for 3/4 models |
-| Presuppositions (XNLI) | `srijon-2.0/presuppositions/` | ✓ | ✓ | **primary** — 6 languages; prompt-framing effect on class boundaries | mostly done — sonnet P0/P1 + chatgpt P0/P2/P4 |
-| Fancy coreference (character-name clusters) | `coref/` | **primary** — hybrid NER + coref; no fixed-schema baseline | ✓ | — | **done** — zero-shot + few-shot scored (opus/sonnet/chatgpt) |
+| Task                                           | Module                                       |                          Generality                          |                   No Training Needed                   |                             Multilingual                             | Status                                                       |
+| ---------------------------------------------- | -------------------------------------------- | :----------------------------------------------------------: | :----------------------------------------------------: | :------------------------------------------------------------------: | ------------------------------------------------------------ |
+| Lemmatization                                  | `lemmatization/`                             |                              ✓                               |               **primary** — matches SOTA               |                                  —                                   | done                                                         |
+| Grammaticality / CoLA binary                   | `grammatical/`                               |                              ✓                               |     **primary** — fills gap where tools are absent     |                                  —                                   | done                                                         |
+| POS tagging                                    | `pos/`                                       |                              ✓                               | **primary** — competitive in-domain; OOD story pending |                                  —                                   | done (in-domain)                                             |
+| Grammaticality 2.0 (CoLA + BLiMP)              | `grammaticality-2.0/`                        |                              ✓                               |    **primary** — prompt design story; MCC/F1/BLiMP     |                                  —                                   | CoLA fully scored (all prompts × both splits); BLiMP pending |
+| Pronoun resolution (EN/AM/IG/ZU + EN/DE/FR/RU) | `pronoun_resolution/testing/`, `srijon-2.0/` |                              ✓                               |                           ✓                            |         **primary** — 7 languages; low-resource degradation          | mostly done                                                  |
+| NER                                            | `ner/`                                       |  **primary** — novel schemas supervised models can't handle  |                           ✓                            |                                  —                                   | **done** — all 4 models fully scored (CoNLL-2003)            |
+| Agency-based NER (Narnia)                      | `narnia/`                                    | **primary** — custom schema; no supervised baseline possible |                           ✓                            |                                  —                                   | **done** — zero-shot + few-shot scored for 3/4 models        |
+| Presuppositions (XNLI)                         | `srijon-2.0/presuppositions/`                |                              ✓                               |                           ✓                            | **primary** — 6 languages; prompt-framing effect on class boundaries | mostly done — sonnet P0/P1 + chatgpt P0/P2/P4                |
+| Fancy coreference (character-name clusters)    | `coref/`                                     |  **primary** — hybrid NER + coref; no fixed-schema baseline  |                           ✓                            |                                  —                                   | **done** — zero-shot + few-shot scored (opus/sonnet/chatgpt) |
 
 **Key:** ✓ = task supports this goal; **primary** = task is the main evidence for this goal; — = not applicable or not a focus.
 
@@ -39,27 +40,27 @@ Each task is selected to illustrate a specific failure mode of existing supervis
 
 ### Fully scored (results in hand)
 
-| Task | Module | Models scored | SOTA comparison | Key result |
-|------|--------|---------------|-----------------|------------|
-| Lemmatization | `lemmatization/` | Chat 5.4, Gemini 3, Sonnet 4.6, Opus 4.6 | spaCy/stanza ~95–99% | sonnet/opus match SOTA (~96–97%) |
-| Grammaticality / CoLA binary | `grammatical/` | Chat 5.4, Gemini 3, Sonnet 4.6, Opus 4.6 | human ~80% | sonnet 84%, opus 88%; chatgpt ~49% |
-| POS tagging (in-domain) | `pos/` | Chat 5.4, Gemini 3, Sonnet 4.6, Opus 4.6 | spaCy/udpipe ~97–98% | opus 94%; sonnet 85%; chatgpt 81% |
-| Grammaticality 2.0 (CoLA) | `grammaticality-2.0/` | Chat 5.4 | — | direct/anchor/repair ~88–89% acc, MCC 0.73–0.75 in-domain; checklist collapses in-domain but recovers OOD (90% acc, MCC 0.76) |
-| Pronoun resolution (EN/AM/IG/ZU + EN/DE/FR/RU) | `pronoun_resolution/testing/`, `srijon-2.0/` | sonnet 4.6 (7 langs), GPT 5.4 (full EN/DE/FR/RU); partial IG/ZU | chance = 50% | EN: 87–91%; FR/DE/RU: 86–97%; IG/ZU near chance; see table below |
-| NER (CoNLL-2003) | `ner/` | Chat 5.4, Gemini 3, Sonnet 4.6, Opus 4.6 | spaCy/stanza F1 ~91% | opus 0.95; gemini 0.93; sonnet 0.92; chatgpt 0.26 (failure — see note below) |
-| Agency-based NER (Narnia) — zero-shot | `narnia/` | Chat 5.4, Gemini 3, Sonnet 4.6, Opus 4.6 | no supervised baseline (novel schema) | opus F1 0.78; chatgpt F1 0.59; sonnet F1 0.74; gemini F1 0.57 (zero-shot) |
-| Agency-based NER (Narnia) — few-shot | `narnia/` | Chat 5.4, Gemini 3, Sonnet 4.6, Opus 4.6 | — | sonnet F1 **0.82**; gemini F1 0.81; opus F1 0.81; chatgpt F1 0.80 — few-shot gives +5–23 pp gain |
-| Fancy coreference / character-cluster NER (Narnia) — zero-shot | `coref/` | Opus 4.6, Sonnet 4.6, Chat 5.4 | no supervised baseline (novel schema) | opus F1 **0.88**; sonnet F1 0.74; chatgpt F1 0.41 (same over-prediction failure as CoNLL NER) |
-| Fancy coreference / character-cluster NER (Narnia) — few-shot | `coref/` | Opus 4.6, Sonnet 4.6, Chat 5.4 | — | opus F1 0.82; sonnet F1 0.80; chatgpt F1 0.55 — few-shot fixes epithet resolution for sonnet; chatgpt precision stays low |
+| Task                                                           | Module                                       | Models scored                                                   | SOTA comparison                       | Key result                                                                                                                    |
+| -------------------------------------------------------------- | -------------------------------------------- | --------------------------------------------------------------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Lemmatization                                                  | `lemmatization/`                             | Chat 5.4, Gemini 3, Sonnet 4.6, Opus 4.6                        | spaCy/stanza ~95–99%                  | sonnet/opus match SOTA (~96–97%)                                                                                              |
+| Grammaticality / CoLA binary                                   | `grammatical/`                               | Chat 5.4, Gemini 3, Sonnet 4.6, Opus 4.6                        | human ~80%                            | sonnet 84%, opus 88%; chatgpt ~49%                                                                                            |
+| POS tagging (in-domain)                                        | `pos/`                                       | Chat 5.4, Gemini 3, Sonnet 4.6, Opus 4.6                        | spaCy/udpipe ~97–98%                  | opus 94%; sonnet 85%; chatgpt 81%                                                                                             |
+| Grammaticality 2.0 (CoLA)                                      | `grammaticality-2.0/`                        | Chat 5.4                                                        | —                                     | direct/anchor/repair ~88–89% acc, MCC 0.73–0.75 in-domain; checklist collapses in-domain but recovers OOD (90% acc, MCC 0.76) |
+| Pronoun resolution (EN/AM/IG/ZU + EN/DE/FR/RU)                 | `pronoun_resolution/testing/`, `srijon-2.0/` | sonnet 4.6 (7 langs), GPT 5.4 (full EN/DE/FR/RU); partial IG/ZU | chance = 50%                          | EN: 87–91%; FR/DE/RU: 86–97%; IG/ZU near chance; see table below                                                              |
+| NER (CoNLL-2003)                                               | `ner/`                                       | Chat 5.4, Gemini 3, Sonnet 4.6, Opus 4.6                        | spaCy/stanza F1 ~91%                  | opus 0.95; gemini 0.93; sonnet 0.92; chatgpt 0.26 (failure — see note below)                                                  |
+| Agency-based NER (Narnia) — zero-shot                          | `narnia/`                                    | Chat 5.4, Gemini 3, Sonnet 4.6, Opus 4.6                        | no supervised baseline (novel schema) | opus F1 0.78; chatgpt F1 0.59; sonnet F1 0.74; gemini F1 0.57 (zero-shot)                                                     |
+| Agency-based NER (Narnia) — few-shot                           | `narnia/`                                    | Chat 5.4, Gemini 3, Sonnet 4.6, Opus 4.6                        | —                                     | sonnet F1 **0.82**; gemini F1 0.81; opus F1 0.81; chatgpt F1 0.80 — few-shot gives +5–23 pp gain                              |
+| Fancy coreference / character-cluster NER (Narnia) — zero-shot | `coref/`                                     | Opus 4.6, Sonnet 4.6, Chat 5.4                                  | no supervised baseline (novel schema) | opus F1 **0.88**; sonnet F1 0.74; chatgpt F1 0.41 (same over-prediction failure as CoNLL NER)                                 |
+| Fancy coreference / character-cluster NER (Narnia) — few-shot  | `coref/`                                     | Opus 4.6, Sonnet 4.6, Chat 5.4                                  | —                                     | opus F1 0.82; sonnet F1 0.80; chatgpt F1 0.55 — few-shot fixes epithet resolution for sonnet; chatgpt precision stays low     |
 
 #### Multilingual pronoun resolution — full results (srijon-2.0)
 
 | Language | Sonnet 4.6 acc (P0→P4) | GPT 5.4 acc (P0→P4) |
-|----------|------------------------|----------------------|
-| English  | 89% (stable P0–P4)     | 84–86%               |
-| French   | 88–91%                 | 90–93%               |
-| German   | 86–88%                 | 88–89%               |
-| Russian  | 95–97%                 | 90–93%               |
+| -------- | ---------------------- | ------------------- |
+| English  | 89% (stable P0–P4)     | 84–86%              |
+| French   | 88–91%                 | 90–93%              |
+| German   | 86–88%                 | 88–89%              |
+| Russian  | 95–97%                 | 90–93%              |
 
 Both models fully scored. Prompt engineering has marginal effect in English; larger effect in lower-resource settings.
 
@@ -67,44 +68,45 @@ Both models fully scored. Prompt engineering has marginal effect in English; lar
 
 Sonnet 4.6 P0/P1 and ChatGPT 5.4 P0/P2/P4 across 6 languages (DE, EN, FR, HI, RU, VI). Full analysis in `srijon-2.0/presuppositions/README.md`.
 
-| Model | Prompt | DE | EN | FR | HI | RU | VI |
-|-------|--------|----|----|----|----|----|----|
-| Sonnet 4.6 | P0 | 0.82 | 0.59 | 0.88 | 0.86 | 0.88 | 0.88 |
-| Sonnet 4.6 | P1 | 0.86 | 0.62 | 0.88 | 0.87 | 0.88 | 0.88 |
-| ChatGPT 5.4 | P0 | 0.86 | 0.51 | 0.85 | 0.75 | 0.79 | 0.78 |
-| ChatGPT 5.4 | P2 | 0.83 | 0.57 | 0.84 | 0.80 | 0.78 | 0.78 |
-| ChatGPT 5.4 | P4 | 0.84 | 0.48 | 0.92 | 0.77 | 0.81 | 0.77 |
+| Model       | Prompt | DE   | EN   | FR   | HI   | RU   | VI   |
+| ----------- | ------ | ---- | ---- | ---- | ---- | ---- | ---- |
+| Sonnet 4.6  | P0     | 0.82 | 0.59 | 0.88 | 0.86 | 0.88 | 0.88 |
+| Sonnet 4.6  | P1     | 0.86 | 0.62 | 0.88 | 0.87 | 0.88 | 0.88 |
+| ChatGPT 5.4 | P0     | 0.86 | 0.51 | 0.85 | 0.75 | 0.79 | 0.78 |
+| ChatGPT 5.4 | P2     | 0.83 | 0.57 | 0.84 | 0.80 | 0.78 | 0.78 |
+| ChatGPT 5.4 | P4     | 0.84 | 0.48 | 0.92 | 0.77 | 0.81 | 0.77 |
 
-*(Macro-F1 scores. EN consistently lowest — Neutral class collapses in both models.)*
+_(Macro-F1 scores. EN consistently lowest — Neutral class collapses in both models.)_
 
 **What's still missing:**
+
 - Sonnet P2/P4 (not yet run)
 - ChatGPT/sonnet on HI/VI — only partial
 - No Opus or Gemini runs yet
 
 ### Predictions done, scoring incomplete
 
-| Task | What exists | What's missing |
-|------|-------------|----------------|
+| Task                       | What exists                               | What's missing          |
+| -------------------------- | ----------------------------------------- | ----------------------- |
 | Grammaticality 2.0 (BLiMP) | `blimp_summary.csv` exists (headers-only) | No prediction files yet |
 
 ### Partially done
 
-| Task | Gap |
-|------|-----|
-| Pronoun resolution (EN/AM/IG/ZU) — Igbo | P2–P4 missing for sonnet; chatgpt only P0 |
-| Pronoun resolution (EN/AM/IG/ZU) — Zulu | P2–P4 missing for sonnet; chatgpt only P0 |
-| Pronoun resolution (EN/AM/IG/ZU) — Opus | only P0 for EN; nothing for AM/IG/ZU |
-| Pronoun resolution challenge splits (all languages) | splits generated; no predictions yet |
+| Task                                                | Gap                                       |
+| --------------------------------------------------- | ----------------------------------------- |
+| Pronoun resolution (EN/AM/IG/ZU) — Igbo             | P2–P4 missing for sonnet; chatgpt only P0 |
+| Pronoun resolution (EN/AM/IG/ZU) — Zulu             | P2–P4 missing for sonnet; chatgpt only P0 |
+| Pronoun resolution (EN/AM/IG/ZU) — Opus             | only P0 for EN; nothing for AM/IG/ZU      |
+| Pronoun resolution challenge splits (all languages) | splits generated; no predictions yet      |
 
 ### New data splits (ready for baselining)
 
 **Challenge splits** — difficulty-stratified subsets of the train data, selected using a composite heuristic (sentence length, clause markers, blank-candidate distance). Generated for all 7 languages via `srijon-2.0/scripts/generate_challenge_splits.py`.
 
-| Module | Languages | Challenge size | Holdout size |
-|--------|-----------|---------------|--------------|
-| `srijon-2.0/pronoun_resolution/` | EN, DE, FR, RU | 50 items each | remainder of train |
-| `pronoun_resolution/testing/` | EN, AM, IG, ZU | ~70 items each | — |
+| Module                           | Languages      | Challenge size | Holdout size       |
+| -------------------------------- | -------------- | -------------- | ------------------ |
+| `srijon-2.0/pronoun_resolution/` | EN, DE, FR, RU | 50 items each  | remainder of train |
+| `pronoun_resolution/testing/`    | EN, AM, IG, ZU | ~70 items each | —                  |
 
 Source, inference, and full versions of each split are generated and committed. No predictions have been run yet — these are the next baselining targets.
 
@@ -146,18 +148,20 @@ Source, inference, and full versions of each split are generated and committed. 
 ### 1. Finish presuppositions
 
 Results exist for sonnet P0/P1 and chatgpt P0/P2/P4 across 6 languages. What remains:
+
 - Run **sonnet P2 and P4** across all 6 languages (strongest prompt-comparison story requires all prompts on both models)
 - Score **Gemini** on at least P0 + P4 (one additional model for robustness)
-- Write a 1-page qualitative analysis: which languages / prompt pairs fail on the E/N boundary? Use centroid to explain *why* — does the model confuse plausibility with entailment, or contradiction with neutral?
+- Write a 1-page qualitative analysis: which languages / prompt pairs fail on the E/N boundary? Use centroid to explain _why_ — does the model confuse plausibility with entailment, or contradiction with neutral?
 - **Key claim to make:** prompt decision-framing changes class geometry in probability space, not just accuracy; this holds cross-linguistically except English (where neutral collapses persist regardless of prompt)
 
 ### 2. Fancy coreference — "character cluster" NER
 
 **What it is:** For each sentence, identify all ways a character is referenced — proper names, pronouns, epithets ("the Lion", "the Great King") — and group them under a canonical character label. This is a hybrid of NER (find the spans) and coreference resolution (cluster them by identity).
 
-**Why it's interesting:** Standard NER labels span type (PER/LOC/ORG). Standard coref clusters spans by identity. Neither task alone gives you *character-centric* annotation where every mention of Aslan maps to `ASLAN`, including indirect ones. LLMs can do this zero-shot; supervised pipelines require a two-stage pipeline that was never trained for this formulation.
+**Why it's interesting:** Standard NER labels span type (PER/LOC/ORG). Standard coref clusters spans by identity. Neither task alone gives you _character-centric_ annotation where every mention of Aslan maps to `ASLAN`, including indirect ones. LLMs can do this zero-shot; supervised pipelines require a two-stage pipeline that was never trained for this formulation.
 
 **Plan:**
+
 - Zero-shot: prompt the model to return `{character_name: [list of spans]}` for each sentence
 - Few-shot: 2–3 examples showing name + pronoun + epithet clustering
 - Metrics: use existing `coref/` infrastructure (MUC, B³, CEAFₑ, CoNLL F1) — this gives "fancy" validation
@@ -165,13 +169,14 @@ Results exist for sonnet P0/P1 and chatgpt P0/P2/P4 across 6 languages. What rem
 
 ### 3. Narnia corpus — linguistic insight generation (token-efficient)
 
-**Goal:** Run agency-based NER + character clustering on the *full* Narnia corpus (`narnia.txt`) to generate insights like "Aslan is active in 73% of his appearances" or "Edmund is mostly passive in Book 1, active in Book 2."
+**Goal:** Run agency-based NER + character clustering on the _full_ Narnia corpus (`narnia.txt`) to generate insights like "Aslan is active in 73% of his appearances" or "Edmund is mostly passive in Book 1, active in Book 2."
 
 **How to do it without killing tokens:**
 
 1. **Pre-split the corpus.** Chunk `narnia.txt` into batches of ~20–30 sentences. Do this locally in a script — no model call needed.
 
 2. **Batch, don't loop.** Send each batch as a single prompt asking the model to process all sentences and return a JSON array. Never call the model once per sentence.
+
    ```
    "Below are 25 sentences from Narnia. For each sentence_id, return: {sentence_id, entities: [{span, character, role}]}"
    ```
@@ -181,6 +186,7 @@ Results exist for sonnet P0/P1 and chatgpt P0/P2/P4 across 6 languages. What rem
 4. **Save incrementally.** Write results to `narnia_full_results.jsonl` after each batch — one JSON object per line — so a crash doesn't lose everything.
 
 5. **Estimate token cost before running.** `narnia.txt` is ~X words. At ~750 words/1k tokens, with ~150-token prompt overhead per batch of 25 sentences, the full corpus is roughly Y batches × Z tokens = W total. Run a cost estimate script before committing.
+
    ```python
    # rough_cost.py
    import tiktoken, math
@@ -195,25 +201,21 @@ Results exist for sonnet P0/P1 and chatgpt P0/P2/P4 across 6 languages. What rem
 
 **Script to write:** `narnia/scripts/annotate_full_corpus.py` — takes `--model haiku|sonnet`, `--batch-size N`, `--output path`, `--dry-run` (estimates cost without calling the API).
 
-### 4. Clustered coreference — **done**
-
-Opus, sonnet, and chatgpt scored zero-shot and few-shot on the Narnia character-cluster NER task. Results in `coref/results/summary.csv` and `coref/README.md`. Key findings: opus F1 0.88 zero-shot (best); few-shot fixes sonnet's Jadis/Professor Digory Kirke failures; chatgpt's over-prediction failure persists even with few-shot examples.
-
-### 5. 10-minute demo outline
+### 4. 10-minute demo outline
 
 **Target audience:** CS329 class — knows NLP, may not know the full project.
 
 **Structure:**
 
-| Time | Segment | Content |
-|------|---------|---------|
-| 0:00–1:00 | Hook | One slide: "Can an LLM annotate any linguistic schema with no training?" — show a Narnia sentence annotated three ways: POS, NER, agency |
-| 1:00–2:30 | Thesis + task map | Three claims (generality / no training / multilingual) → task × goal matrix, one sentence per task |
-| 2:30–4:30 | Core results | Four tasks in 2 minutes: lemmatization = SOTA match; CoLA = beats human; NER = opus 0.95; Narnia agency = custom schema, no supervised baseline |
-| 4:30–6:00 | Narnia deep dive | Show zero-shot vs. few-shot F1 bar chart; show a sentence where the model gets agency right (and one where it fails); linguistic insight teaser ("Aslan is active 73% of the time") |
-| 6:00–7:30 | Multilingual story | Pronoun resolution: EN 87–91%, FR/DE/RU 86–97%, IG/ZU near chance — one chart; presuppositions: EN hardest, neutral collapse |
-| 7:30–9:00 | Prompt engineering | One finding per task: "think like a linguist" hurts; few-shot fixes format failures; decision-framing changes class geometry |
-| 9:00–10:00 | Conclusion + limitations | What we can claim; what we can't; where supervised still wins |
+| Time       | Segment                  | Content                                                                                                                                                                             |
+| ---------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0:00–1:00  | Hook                     | One slide: "Can an LLM annotate any linguistic schema with no training?" — show a Narnia sentence annotated three ways: POS, NER, agency                                            |
+| 1:00–2:30  | Thesis + task map        | Three claims (generality / no training / multilingual) → task × goal matrix, one sentence per task                                                                                  |
+| 2:30–4:30  | Core results             | Four tasks in 2 minutes: lemmatization = SOTA match; CoLA = beats human; NER = opus 0.95; Narnia agency = custom schema, no supervised baseline                                     |
+| 4:30–6:00  | Narnia deep dive         | Show zero-shot vs. few-shot F1 bar chart; show a sentence where the model gets agency right (and one where it fails); linguistic insight teaser ("Aslan is active 73% of the time") |
+| 6:00–7:30  | Multilingual story       | Pronoun resolution: EN 87–91%, FR/DE/RU 86–97%, IG/ZU near chance — one chart; presuppositions: EN hardest, neutral collapse                                                        |
+| 7:30–9:00  | Prompt engineering       | One finding per task: "think like a linguist" hurts; few-shot fixes format failures; decision-framing changes class geometry                                                        |
+| 9:00–10:00 | Conclusion + limitations | What we can claim; what we can't; where supervised still wins                                                                                                                       |
 
 **Slides needed:** ~10–12 (one per segment, plus title/conclusion). Keep results as charts — avoid tables in the demo.
 
@@ -222,6 +224,7 @@ Opus, sonnet, and chatgpt scored zero-shot and few-shot on the Narnia character-
 **Grammaticality 2.0 BLiMP** — run pairwise predictions for at least sonnet and GPT 5.4.
 
 **Pronoun resolution (EN/AM/IG/ZU) gaps** — run missing cells:
+
 - Sonnet: IG P2–P4, ZU P2–P4
 - ChatGPT: all languages P1–P4
 - Opus: AM/IG/ZU P0 at minimum
@@ -259,6 +262,7 @@ The through-line for the paper: each task is chosen to illustrate a different fa
 ---
 
 ## Open decisions
+
 - [ ] Is Claire running sonnet grammaticality 2.0?
 - [ ] Investigate EN presuppositions neutral-class collapse further — dataset artifact or model prior? (see Empirical Finding 7)
 - [x] Score Gemini few-shot Narnia predictions — done (F1 0.81)
