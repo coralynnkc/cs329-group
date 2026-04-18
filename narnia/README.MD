@@ -42,6 +42,7 @@ _Run `python narnia/scripts/update_readme.py` after scoring to update this table
 | sonnet_fewshot | 0.7698 | 0.8843 | 0.8231 |
 | opus_fewshot | 0.7518 | 0.876 | 0.8092 |
 | chatgpt_fewshot | 0.731 | 0.876 | 0.797 |
+| gemini_fewshot | 0.7518 | 0.876 | 0.8092 |
 <!-- results-fewshot:end -->
 
 _Run `python narnia/scripts/update_readme.py` after scoring to update this table._
