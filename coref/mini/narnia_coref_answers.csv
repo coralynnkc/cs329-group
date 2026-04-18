@@ -1,0 +1,200 @@
+sample_id,sentence_id,clusters
+1,1,[]
+1,2,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,3,[]
+1,4,[]
+1,5,"[{""character"": ""Susan Pevensie"", ""mentions"": [""Susan""]}]"
+1,6,"[{""character"": ""Edmund Pevensie"", ""mentions"": [""Ed""]}]"
+1,7,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,8,"[{""character"": ""Professor Digory Kirke"", ""mentions"": [""Professor""]}]"
+1,9,"[{""character"": ""Peter Pevensie"", ""mentions"": [""Peter""]}]"
+1,10,[]
+1,11,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Mr. Tumnus""]}]"
+1,12,[]
+1,13,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Mr. Tumnus""]}, {""character"": ""Unknown"", ""mentions"": [""Faun""]}]"
+1,14,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,15,[]
+1,16,[]
+1,17,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Mr. Tumnus""]}]"
+1,18,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Faun""]}]"
+1,19,"[{""character"": ""Mrs. Macready"", ""mentions"": [""Mrs. Macready""]}]"
+1,20,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Faun""]}]"
+1,21,"[{""character"": ""Edmund Pevensie"", ""mentions"": [""Edmund""]}]"
+1,22,"[{""character"": ""Silenus"", ""mentions"": [""Silenus""]}, {""character"": ""Bacchus"", ""mentions"": [""Bacchus""]}]"
+1,23,[]
+1,24,[]
+1,25,[]
+1,26,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Mr. Tumnus""]}]"
+1,27,[]
+1,28,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}, {""character"": ""Edmund Pevensie"", ""mentions"": [""Edmund""]}]"
+1,29,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,30,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,31,[]
+1,32,[]
+1,33,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,34,[]
+1,35,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,36,"[{""character"": ""Edmund Pevensie"", ""mentions"": [""Edmund""]}]"
+1,37,[]
+1,38,[]
+1,39,[]
+1,40,[]
+1,41,[]
+1,42,"[{""character"": ""Susan Pevensie"", ""mentions"": [""Susan""]}]"
+1,43,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,44,[]
+1,45,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Tumnus""]}]"
+1,46,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Mr. Tumnus""]}, {""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,47,[]
+1,48,[]
+1,49,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,50,[]
+1,51,[]
+1,52,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,53,"[{""character"": ""Susan Pevensie"", ""mentions"": [""Susan""]}]"
+1,54,"[{""character"": ""Peter Pevensie"", ""mentions"": [""Peter""]}, {""character"": ""Susan Pevensie"", ""mentions"": [""Susan""]}, {""character"": ""Edmund Pevensie"", ""mentions"": [""Edmund""]}, {""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,55,[]
+1,56,[]
+1,57,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,58,[]
+1,59,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,60,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,61,[]
+1,62,[]
+1,63,"[{""character"": ""Susan Pevensie"", ""mentions"": [""Susan""]}]"
+1,64,[]
+1,65,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Mr. Tumnus"", ""Faun""]}]"
+1,66,"[{""character"": ""Peter Pevensie"", ""mentions"": [""Peter""]}]"
+1,67,"[{""character"": ""Mrs. Pevensie"", ""mentions"": [""Mother""]}]"
+1,68,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Faun""]}]"
+1,69,[]
+1,70,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Mr. Tumnus""]}]"
+1,71,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,72,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Mr. Tumnus""]}, {""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,73,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Mr. Tumnus""]}, {""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,74,[]
+1,75,[]
+1,76,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,77,[]
+1,78,[]
+1,79,[]
+1,80,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Mr. Tumnus""]}]"
+1,81,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Faun""]}]"
+1,82,[]
+1,83,[]
+1,84,[]
+1,85,[]
+1,86,[]
+1,87,[]
+1,88,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Faun""]}, {""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,89,[]
+1,90,[]
+1,91,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Faun""]}]"
+1,92,[]
+1,93,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Mr. Tumnus""]}]"
+1,94,[]
+1,95,[]
+1,96,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,97,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Faun""]}]"
+1,98,"[{""character"": ""Peter Pevensie"", ""mentions"": [""Peter""]}, {""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,99,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Faun""]}]"
+1,100,"[{""character"": ""Ivy"", ""mentions"": [""Ivy""]}, {""character"": ""Margaret"", ""mentions"": [""Margaret""]}, {""character"": ""Betty"", ""mentions"": [""Betty""]}]"
+1,101,[]
+1,102,[]
+1,103,[]
+1,104,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Faun""]}]"
+1,105,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Mr. Tumnus""]}]"
+1,106,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Faun""]}]"
+1,107,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Daughter of Eve""]}]"
+1,108,[]
+1,109,[]
+1,110,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Mr. Tumnus""]}]"
+1,111,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Daughter of Eve""]}, {""character"": ""Mr. Tumnus"", ""mentions"": [""Mr. Tumnus""]}]"
+1,112,[]
+1,113,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}, {""character"": ""Mr. Tumnus"", ""mentions"": [""Mr. Tumnus""]}]"
+1,114,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Mr. Tumnus""]}]"
+1,115,[]
+1,116,[]
+1,117,[]
+1,118,[]
+1,119,[]
+1,120,[]
+1,121,[]
+1,122,[]
+1,123,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Faun""]}, {""character"": ""Jadis"", ""mentions"": [""White Witch""]}]"
+1,124,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Daughter of Eve""]}]"
+1,125,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Faun""]}]"
+1,126,[]
+1,127,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Faun""]}]"
+1,128,[]
+1,129,[]
+1,130,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Faun""]}]"
+1,131,"[{""character"": ""Professor Digory Kirke"", ""mentions"": [""Professor""]}]"
+1,132,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,133,[]
+1,134,[]
+1,135,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Mr. Tumnus""]}]"
+1,136,"[{""character"": ""Edmund Pevensie"", ""mentions"": [""Edmund""]}]"
+1,137,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Faun""]}]"
+1,138,[]
+1,139,[]
+1,140,[]
+1,141,"[{""character"": ""Jadis"", ""mentions"": [""White Witch""]}]"
+1,142,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,143,[]
+1,144,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Daughter of Eve""]}]"
+1,145,[]
+1,146,[]
+1,147,[]
+1,148,[]
+1,149,[]
+1,150,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,151,[]
+1,152,"[{""character"": ""Edmund Pevensie"", ""mentions"": [""Edmund""]}]"
+1,153,[]
+1,154,[]
+1,155,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Faun""]}]"
+1,156,[]
+1,157,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,158,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Mr. Tumnus""]}]"
+1,159,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Mr. Tumnus""]}]"
+1,160,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,161,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,162,[]
+1,163,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,164,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Faun""]}]"
+1,165,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Faun""]}]"
+1,166,"[{""character"": ""Edmund Pevensie"", ""mentions"": [""Edmund""]}]"
+1,167,[]
+1,168,[]
+1,169,[]
+1,170,[]
+1,171,[]
+1,172,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy"", ""Daughter of Eve""]}, {""character"": ""Mr. Tumnus"", ""mentions"": [""Mr. Tumnus""]}]"
+1,173,"[{""character"": ""Jadis"", ""mentions"": [""White Witch""]}]"
+1,174,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,175,[]
+1,176,[]
+1,177,[]
+1,178,[]
+1,179,[]
+1,180,[]
+1,181,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,182,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,183,"[{""character"": ""Peter Pevensie"", ""mentions"": [""Peter""]}]"
+1,184,[]
+1,185,[]
+1,186,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Faun""]}]"
+1,187,[]
+1,188,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Daughter of Eve""]}, {""character"": ""Mr. Tumnus"", ""mentions"": [""Faun""]}]"
+1,189,"[{""character"": ""Mr. Tumnus"", ""mentions"": [""Mr. Tumnus""]}]"
+1,190,"[{""character"": ""Peter Pevensie"", ""mentions"": [""Peter""]}]"
+1,191,"[{""character"": ""Jadis"", ""mentions"": [""White Witch""]}]"
+1,192,[]
+1,193,[]
+1,194,"[{""character"": ""Lucy Pevensie"", ""mentions"": [""Lucy""]}]"
+1,195,[]
+1,196,[]
+1,197,"[{""character"": ""Professor Digory Kirke"", ""mentions"": [""Professor""]}]"
+1,198,[]
+1,199,[]
