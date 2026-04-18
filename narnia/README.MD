@@ -83,8 +83,8 @@ Sentences with no annotated characters have `entities = []`.
    python narnia/scripts/make_mini.py
    ```
 
-   Creates `mini/narnia_input.csv` and `mini/narnia_answers.csv` — 3 samples × 13 sentences
-   randomly drawn from the test split.
+   Creates `mini/narnia_input.csv` and `mini/narnia_answers.csv` — all 199 sentences
+   in shuffled order (zero-shot baseline; no train/test contamination risk).
 
 4. Send the prompt below with `mini/narnia_input.csv` pasted in. Save the response as:
 
