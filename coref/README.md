@@ -1,5 +1,7 @@
 # Coref — Character Coreference NER (Narnia)
 
+multi-label entity categorization through coreference objects in narnia
+
 Source: Chronicles of Narnia — same 199 sentences used in agency-based NER (`narnia/`), re-annotated for character identity resolution.
 
 ## Task
@@ -10,30 +12,32 @@ Combined with the agency labels from `narnia/`, each `(span, character, agency_r
 
 ## Canonical Characters
 
-| Canonical name | Notes |
-| -------------- | ----- |
-| Peter Pevensie | |
-| Susan Pevensie | |
-| Edmund Pevensie | |
-| Lucy Pevensie | |
-| Professor Digory Kirke | |
-| Mrs. Macready | |
-| Mr. Tumnus | |
-| Jadis | the White Witch |
-| Bacchus | |
-| Silenus | |
-| Ivy | servant |
-| Margaret | servant |
-| Betty | servant |
+| Canonical name         | Notes           |
+| ---------------------- | --------------- |
+| Peter Pevensie         |                 |
+| Susan Pevensie         |                 |
+| Edmund Pevensie        |                 |
+| Lucy Pevensie          |                 |
+| Professor Digory Kirke |                 |
+| Mrs. Macready          |                 |
+| Mr. Tumnus             |                 |
+| Jadis                  | the White Witch |
+| Bacchus                |                 |
+| Silenus                |                 |
+| Ivy                    | servant         |
+| Margaret               | servant         |
+| Betty                  | servant         |
 
 ## Baseline Results — Entity-level Precision, Recall, F1
 
 <!-- results:start -->
-| Model | Precision | Recall | F1 |
-| ----- | --------- | ------ | -- |
-| opus | 0.8699 | 0.8992 | 0.8843 |
-| sonnet | 0.7355 | 0.7479 | 0.7417 |
-| chatgpt | 0.2801 | 0.7815 | 0.4124 |
+
+| Model   | Precision | Recall | F1     |
+| ------- | --------- | ------ | ------ |
+| opus    | 0.8699    | 0.8992 | 0.8843 |
+| sonnet  | 0.7355    | 0.7479 | 0.7417 |
+| chatgpt | 0.2801    | 0.7815 | 0.4124 |
+
 <!-- results:end -->
 
 _Run `python coref/scripts/update_readme.py` after scoring to update this table._
@@ -41,14 +45,80 @@ _Run `python coref/scripts/update_readme.py` after scoring to update this table.
 ## Few-shot Results — Entity-level Precision, Recall, F1
 
 <!-- results-fewshot:start -->
-| Model | Precision | Recall | F1 |
-| ----- | --------- | ------ | -- |
-| sonnet_fewshot | 0.7481 | 0.8487 | 0.7953 |
-| opus_fewshot | 0.8 | 0.8403 | 0.8197 |
-| chatgpt_fewshot | 0.4056 | 0.8487 | 0.5489 |
+
+| Model           | Precision | Recall | F1     |
+| --------------- | --------- | ------ | ------ |
+| sonnet_fewshot  | 0.7481    | 0.8487 | 0.7953 |
+| opus_fewshot    | 0.8       | 0.8403 | 0.8197 |
+| chatgpt_fewshot | 0.4056    | 0.8487 | 0.5489 |
+
 <!-- results-fewshot:end -->
 
 _Run `python coref/scripts/update_readme.py` after scoring to update this table._
+
+### Per-character F1 (zero-shot)
+
+_Run `python coref/scripts/score_baseline.py --model <model> --per_character` to reproduce._
+
+| Character              | opus  | sonnet | chatgpt |
+| ---------------------- | ----- | ------ | ------- |
+| Peter Pevensie         | 1.000 | 1.000  | 0.522   |
+| Susan Pevensie         | 0.909 | 0.909  | 0.455   |
+| Edmund Pevensie        | 0.889 | 0.889  | 0.516   |
+| Lucy Pevensie          | 0.901 | 0.911  | 0.462   |
+| Professor Digory Kirke | 1.000 | 0.333  | 0.143   |
+| Mrs. Macready          | 1.000 | 1.000  | 0.500   |
+| Mr. Tumnus             | 0.861 | 0.550  | 0.342   |
+| Jadis                  | 0.800 | 0.000  | 0.000   |
+| Bacchus                | 1.000 | 1.000  | 1.000   |
+| Silenus                | 0.667 | 0.667  | 0.667   |
+| Ivy                    | 1.000 | 1.000  | 1.000   |
+| Margaret               | 1.000 | 1.000  | 1.000   |
+| Betty                  | 1.000 | 1.000  | 1.000   |
+
+### Per-character F1 (few-shot)
+
+_Run `python coref/scripts/score_baseline.py --model <model> --prompt fewshot --per_character` to reproduce._
+
+| Character              | opus  | sonnet | chatgpt |
+| ---------------------- | ----- | ------ | ------- |
+| Peter Pevensie         | 1.000 | 1.000  | 1.000   |
+| Susan Pevensie         | 0.909 | 0.909  | 0.909   |
+| Edmund Pevensie        | 0.889 | 0.889  | 0.727   |
+| Lucy Pevensie          | 0.737 | 0.673  | 0.521   |
+| Professor Digory Kirke | 1.000 | 1.000  | 0.308   |
+| Mrs. Macready          | 1.000 | 1.000  | 1.000   |
+| Mr. Tumnus             | 0.857 | 0.872  | 0.529   |
+| Jadis                  | 0.800 | 0.800  | 0.000   |
+| Bacchus                | 1.000 | 1.000  | 1.000   |
+| Silenus                | 0.667 | 0.667  | 0.667   |
+| Ivy                    | 1.000 | 1.000  | 1.000   |
+| Margaret               | 1.000 | 1.000  | 1.000   |
+| Betty                  | 1.000 | 1.000  | 1.000   |
+
+### Qualitative findings (zero-shot)
+
+**Opus is the strongest model by a large margin.** F1 0.884 vs. sonnet 0.742 — the gap is driven almost entirely by epithet resolution: opus correctly maps "the Faun", "the Witch", "the Professor" to their canonical names while sonnet and chatgpt frequently fail.
+
+**Mr. Tumnus is the hardest character to resolve zero-shot.** Sonnet scores only F1 0.550 (15 FP, 21 FN) — the failure mode is inconsistency: "Mr. Tumnus" gets resolved correctly but "the Faun" often does not, or gets mapped to an incorrect character. Opus handles both surface forms reliably (F1 0.861).
+
+**Jadis is a complete zero for sonnet and chatgpt zero-shot.** Both score F1 0.000 — sonnet predicts no Jadis mentions at all (4 FN, 0 TP); chatgpt over-predicts wildly (9 FP, 4 FN) but never correctly. Opus gets F1 0.800. The likely failure mode is that "the White Witch" and "she" are not linked to the canonical name "Jadis" without a prompt cue.
+
+**Professor Digory Kirke collapses for sonnet zero-shot (F1 0.333).** Only 1 of 3 gold mentions is correctly resolved; the other two are predicted as a different character or missed entirely. This is surprising given "the Professor" is used consistently — the issue may be that sonnet defaults to a generic NER label rather than the canonical name.
+
+**ChatGPT's precision is catastrophically low across all characters (0.28 overall).** High recall but massive over-prediction: Lucy Pevensie alone has 91 FP vs. 40 TP. This is the same qualitative failure mode as its CoNLL-2003 NER result — the model tags far too many spans and assigns character labels to narrators, objects, and non-entities.
+
+### Qualitative findings (few-shot)
+
+**Few-shot examples fix the epithet problem for sonnet but not chatgpt.** Sonnet jumps from F1 0.000 → 0.800 on Jadis and 0.333 → 1.000 on Professor Digory Kirke — both directly addressed by prompt examples. Chatgpt remains at 0.000 on Jadis despite the same examples, confirming the over-prediction failure is structural, not a missing cue.
+
+**Opus regresses on Lucy Pevensie few-shot (0.901 → 0.737).** Precision drops (18 FP vs. 8 FP zero-shot) while recall also falls. The richer prompt appears to make opus over-apply the "Lucy" label — possibly confusing pronoun resolution with explicit mention tagging.
+
+**Sonnet's Mr. Tumnus resolution improves dramatically (+0.322 F1).** The "the Faun" → Mr. Tumnus example in the few-shot prompt directly fixes the dominant error. FP drop from 15 → 1 (almost no hallucinated Tumnus mentions), FN from 21 → 9.
+
+**Few-shot does not fix ChatGPT's precision problem.** Precision rises from 0.28 → 0.41 but remains far below opus (0.80) and sonnet (0.75). FP counts stay high: Lucy 63 FP, Mr. Tumnus 60 FP. The gain in overall F1 (0.412 → 0.549) comes from recall improvement, not fixing over-prediction.
+
+**Silenus is consistently weak across all models and conditions (F1 0.667).** Only 1 gold mention in the dataset — every model gets it right but also produces 1 FP, giving consistent P=0.5, R=1.0. Too few instances to draw conclusions.
 
 ---
 
@@ -73,11 +143,11 @@ Sentences with no character mentions have `entities = []`.
 
 ## Files
 
-| File | Description |
-| ---- | ----------- |
-| `data/narnia_coref_annotated.csv` | Character NER format: sentence + JSON entity list |
-| `mini/narnia_coref_input.csv` | Model-facing eval input (no labels) |
-| `mini/narnia_coref_answers.csv` | Gold answer key (JSON entity lists) |
+| File                                        | Description                                         |
+| ------------------------------------------- | --------------------------------------------------- |
+| `data/narnia_coref_annotated.csv`           | Character NER format: sentence + JSON entity list   |
+| `mini/narnia_coref_input.csv`               | Model-facing eval input (no labels)                 |
+| `mini/narnia_coref_answers.csv`             | Gold answer key (JSON entity lists)                 |
 | `mini/narnia_coref_predictions_<model>.csv` | Model predictions (save here after running a model) |
 
 ---
@@ -123,6 +193,7 @@ Sentences with no character mentions have `entities = []`.
    ```
 
 Scores are saved to:
+
 - `results/<model>_scores.csv` — precision, recall, F1, TP/FP/FN per sample
 - `results/<model>_fewshot_scores.csv` — same for few-shot runs
 - `results/summary.csv` — all models side by side
