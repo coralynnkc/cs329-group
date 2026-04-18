@@ -2,7 +2,7 @@
 
 Source: Chronicles of Narnia — 200 sentences manually annotated with character mentions and their narrative agency role.
 
-##Task Title: Multi-label entity categorization through coreferenced objects 
+## Task Title: Multi-label entity categorization through coreferenced objects 
 
 ## Canonical Characters
 - Jadis
