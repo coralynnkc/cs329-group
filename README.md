@@ -27,8 +27,8 @@ Each task is selected to illustrate a specific failure mode of existing supervis
 | Grammaticality 2.0 (CoLA + BLiMP) | `grammaticality-2.0/` | ✓ | **primary** — prompt design story; MCC/F1/BLiMP | — | Chat 5.4 CoLA fully scored (all prompts × both splits); BLiMP pending |
 | Pronoun resolution (EN/AM/IG/ZU) | `pronoun_resolution/testing/` | ✓ | ✓ | **primary** — EN/AM/IG/ZU; low-resource degradation | mostly done |
 | Pronoun resolution (EN/DE/FR/RU) | `srijon-2.0/pronoun_resolution/` | ✓ | ✓ | **primary** — P0–P4 fully scored for both models | **done** |
-| NER | `ner/` | **primary** — novel schemas supervised models can't handle | ✓ | — | zero-shot batch done; scoring pipeline broken |
-| Presuppositions | `srijon-2.0/presuppositions/` | ✓ | ✓ | **secondary** — EN/DE/FR/HI/RU/VI | P0–P1 sonnet done |
+| NER | `ner/` | **primary** — novel schemas supervised models can't handle | ✓ | — | **done** — all 4 models fully scored (CoNLL-2003) |
+| Presuppositions | `srijon-2.0/presuppositions/` | ✓ | ✓ | **secondary** — EN/DE/FR/HI/RU/VI | sonnet P0–P1 all 6 langs; chat 5.4 P0 all 6 langs + P2–P3 DE/EN/FR done |
 | Coreference | `coref/` | ✓ | — | — | deprioritized |
 | Lemmatization segmentation | `lemmatization/` | ✓ | ✓ | — | partial — no predictions yet |
 
@@ -48,7 +48,8 @@ Each task is selected to illustrate a specific failure mode of existing supervis
 | Pronoun resolution (EN/AM/IG/ZU) — P0–P4 | `pronoun_resolution/testing/` | sonnet (full EN/AM, partial IG/ZU); chatgpt P0 only; opus P0 EN only | chance = 50% | EN: 87% (P0) → 91% (P1); IG/ZU near chance |
 | Pronoun resolution (EN/DE/FR/RU) — P0–P4 | `srijon-2.0/pronoun_resolution/` | sonnet 4.6 (full), GPT 5.4 (full) | chance = 50% | see table below |
 | Grammaticality 2.0 (CoLA) | `grammaticality-2.0/` | Chat 5.4 | — | direct/anchor/repair ~88–89% acc, MCC 0.73–0.75 in-domain; checklist collapses in-domain but recovers OOD (90% acc, MCC 0.76) |
-| Presuppositions (EN/DE/FR/HI/RU/VI) — P0–P1 | `srijon-2.0/presuppositions/` | sonnet 4.6 | — | probabilistic E/N/C; model assigns high prob to correct label across all 6 languages |
+| NER (CoNLL-2003) | `ner/` | chatgpt, gemini, sonnet, opus | spaCy/stanza F1 ~91% | opus 0.95; gemini 0.93; sonnet 0.92; chatgpt 0.26 (failure — see note below) |
+| Presuppositions (EN/DE/FR/HI/RU/VI) | `srijon-2.0/presuppositions/` | sonnet 4.6 (P0–P1, all 6 langs); chat 5.4 (P0 all 6, P2–P3 DE/EN/FR) | — | sonnet: DE/FR/HI/RU/VI all 83–88% acc (macro-F1 0.82–0.88); EN anomalously low (68–70% acc) due to neutral-class collapse; chat 5.4 similar EN failure (56–61% acc) |
 
 #### Multilingual pronoun resolution — full results (srijon-2.0)
 
@@ -66,7 +67,6 @@ Both models fully scored. Prompt engineering has marginal effect in English; lar
 | Task | What exists | What's missing |
 |------|-------------|----------------|
 | Grammaticality 2.0 (BLiMP) | `blimp_summary.csv` exists (headers-only) | No prediction files yet |
-| NER | `pred_clean.csv` exists but has parsing errors (malformed JSON in predicted_entities column) | Fix parser; populate `pred_clean.csv`; run `eval_ner.py` |
 
 ### Partially done
 
@@ -100,15 +100,15 @@ From `heuristics.md` (consolidated lessons from running experiments):
 
 5. **Training data matters more than architecture** (per recent literature; see `cora-notes/training_data_vs_architecture_papers.docx`).
 
+6. **ChatGPT NER failure is qualitatively distinct from other models.** ChatGPT scored F1 0.26 vs. 0.92–0.95 for all other models. Inspection of `ner/mini/ner_predictions_chatgpt.csv` reveals three failure modes: (a) massive overclassification — pronouns ("We", "He", "It"), common words ("But", "Previously", "Results"), and temporal expressions ("Saturday", "Friday", "August") are all labeled as entities; (b) near-universal PER collapse — locations like "Jamaica", "Poland", "Germany" are labeled PER instead of LOC; (c) full headlines treated as single LOC entities (e.g., "SOCCER -- BELARUS BEAT ESTONIA IN WORLD CUP QUALIFIER" → one LOC span). This yields ~180 false positives per 100-sentence sample. The failure likely reflects the version of ChatGPT used producing a non-conforming output format or simply not following the structured annotation instructions; other models in the same family (GPT 5.4 in pronoun/grammaticality experiments) perform normally.
+
+7. **Presuppositions: "Neutral" (N) label collapses for English in both models.** Sonnet and chat 5.4 both score EN presuppositions ~10–20 pp below all other languages. Inspection of class-level recall shows neutral (N) recall near 0.06–0.12 for EN vs. 0.60–0.73 for other languages — the model consistently misclassifies N as E (entailment). Entailment and contradiction are handled well (recall ~1.0). This is likely a dataset artifact: the English XNLI examples may have subtler neutrals than the translated versions, or the model's English NLI priors are over-confident on entailment.
+
 ---
 
 ## What we have left to do
 
-### 1. Score existing predictions
-
-**NER** — Fix `pred_clean.csv` parsing (the predicted_entities column has raw JSON that wasn't parsed correctly). Then run `ner/eval_ner.py`.
-
-### 2. Complete baselining
+### 1. Complete baselining
 
 **Grammaticality 2.0 BLiMP** — run pairwise predictions for at least sonnet and GPT 5.4.
 
@@ -181,7 +181,7 @@ The through-line for the paper: each task is chosen to illustrate a different fa
 
 ## Deprioritized
 
-- **Presupposition** — sparse literature (~20 papers), risky positioning. P0–P1 done for sonnet across 6 languages; only pursue further if another task is dropped
+- **Presupposition** — sparse literature (~20 papers), risky positioning. Sonnet P0–P1 all 6 languages + chat 5.4 P0–P3 for DE/EN/FR now done; only pursue further if another task is dropped
 - **Coreference** — requires training to be competitive; deprioritize
 - **Lemmatization segmentation** — worth running for completeness but not a primary contribution
 
@@ -189,9 +189,11 @@ The through-line for the paper: each task is chosen to illustrate a different fa
 
 ## Open decisions
 
-- [ ] Confirm NER datasets (CoNLL-2003 + one biomedical source is the minimum)
-- [ ] Decide strict vs. relaxed span match for NER and document rationale
+- [x] ~~Confirm NER datasets~~ — using CoNLL-2003 (`eng.testa`) for standard baseline; novel-schema (agency) experiment still pending
+- [x] ~~Confirm which models to run NER on~~ — all 4 models scored (chatgpt, gemini, sonnet, opus)
+- [ ] Decide whether to rerun NER with ChatGPT using a corrected prompt (current results are anomalous — see Empirical Finding 6)
+- [ ] Decide strict vs. relaxed span match for NER novel-schema experiment and document rationale
 - [ ] Decide whether to include gradient grammaticality judgments (Pearson/Spearman with BLiMP) or keep binary-only
-- [ ] Confirm which models to run NER on (at minimum: sonnet, opus, one GPT variant for cross-family comparison)
 - [ ] Decide whether to run Sonnet on grammaticality-2.0 CoLA (currently only GPT 5.4 predictions exist)
 - [ ] Decide whether to include srijon-2.0 presuppositions in the paper or keep as supplemental
+- [ ] Investigate EN presuppositions neutral-class collapse further — dataset artifact or model prior? (see Empirical Finding 7)
