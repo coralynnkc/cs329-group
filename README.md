@@ -1,5 +1,5 @@
 # Working Document — LLMs for Linguistic Annotation
-*Last updated: 2026-04-17*
+*Last updated: 2026-04-18*
 
 ---
 
@@ -69,6 +69,18 @@ Both models fully scored. Prompt engineering has marginal effect in English; lar
 | Pronoun resolution (EN/AM/IG/ZU) — Igbo | P2–P4 missing for sonnet; chatgpt only P0 |
 | Pronoun resolution (EN/AM/IG/ZU) — Zulu | P2–P4 missing for sonnet; chatgpt only P0 |
 | Pronoun resolution (EN/AM/IG/ZU) — Opus | only P0 for EN; nothing for AM/IG/ZU |
+| Pronoun resolution challenge splits (all languages) | splits generated; no predictions yet |
+
+### New data splits (ready for baselining)
+
+**Challenge splits** — difficulty-stratified subsets of the train data, selected using a composite heuristic (sentence length, clause markers, blank-candidate distance). Generated for all 7 languages via `srijon-2.0/scripts/generate_challenge_splits.py`.
+
+| Module | Languages | Challenge size | Holdout size |
+|--------|-----------|---------------|--------------|
+| `srijon-2.0/pronoun_resolution/` | EN, DE, FR, RU | 50 items each | remainder of train |
+| `pronoun_resolution/testing/` | EN, AM, IG, ZU | ~70 items each | — |
+
+Source, inference, and full versions of each split are generated and committed. No predictions have been run yet — these are the next baselining targets.
 
 ### Not started
 
@@ -108,9 +120,11 @@ Both models fully scored. Prompt engineering has marginal effect in English; lar
 - ChatGPT: all languages P1–P4
 - Opus: AM/IG/ZU P0 at minimum
 
+**Challenge splits** — all 7 languages now have difficulty-stratified challenge sets (50 items for srijon-2.0, ~70 for pronoun_resolution/testing). Run at least sonnet and GPT 5.4 on these to test whether hard items drive the low-resource degradation story.
+
 **POS out-of-domain** — run existing models on an out-of-domain source. This is the clearest head-to-head: SOTA degrades ~4–5% OOD; LLM should hold or degrade less.
 
-### 3. NER — generality proof of concept
+### 2. NER — generality proof of concept
 
 The argument: supervised NER is trained on fixed schemas (PER, LOC, ORG) and cannot adapt when the label set changes. LLMs handle novel, theory-driven annotation schemes without retraining. Our demo is **agency-based NER in narrative texts** — a custom schema that no supervised model has been trained on.
 
@@ -135,7 +149,7 @@ This operationalizes linguistic agency (thematic roles, transitivity, voice) as 
 - Chain-of-thought: reason first, then produce entity list
 - Code-based extraction: ask model to output a Python dict / dataclass
 
-### 4. Prompt engineering — qualitative analysis
+### 3. Prompt engineering — qualitative analysis
 
 Goal: don't just show accuracy numbers; show *which constructions* improve with better prompts and explain why.
 
@@ -170,7 +184,7 @@ The through-line for the paper: each task is chosen to illustrate a different fa
 
 ## Deprioritized
 
-- **Presupposition** — sparse literature (~20 papers), risky positioning. Sonnet P0–P1 all 6 languages + chat 5.4 P0–P3 for DE/EN/FR now done; only pursue further if another task is dropped
+- **Presupposition** — sparse literature (~20 papers), risky positioning. Sonnet P0–P1 all 6 languages + chat 5.4 P0–P3 for DE/EN/FR now done. Key finding: P2 best for E/N boundary, P4 best all-around; English hardest (neutral collapses), French most stable. Only pursue further if another task is dropped. See `srijon-2.0/presuppositions/README.md` for full analysis.
 - **Coreference** — requires training to be competitive; deprioritize
 
 ---
