@@ -47,52 +47,26 @@ Probabilities must sum to 1. We score both:
 
 ## Prompts compared
 
-### P0 — probability-first baseline
-Minimal prompt. The model reads each pair and directly assigns E/N/C probabilities.
+**P0: direct probability-first labeling**
+P0 asks the model to assign E/N/C probabilities directly from the row, with formatting constraints but no explicit class definitions, no anti-plausibility warning, and no forced hard-label step. That makes it a probability-first method.
 
-What it tests:
-- weak semantic guidance
-- likely to rely on plausibility heuristics
+**P2: decision-first, direct semantic classification**
+P2 gives explicit semantic definitions for E, C, and N, warns against treating plausibility as entailment, and then tells the model to use this decision procedure:
+ask whether the premise guarantees the hypothesis is true
+if not, ask whether it guarantees the hypothesis is false
+if neither, choose Neutral
+then assign probabilities after the hard label is decided.
+So P2 is not just “stronger definitions.” It is also: classification before distribution generation , a sequential direct classification rule rather than free probability allocation.
 
-### P2 — strict semantic boundary prompt
-Adds explicit class definitions:
+**P4: explicitly decomposed two-question reasoning**
+P4 says “Do not decide the label in one step” and explicitly frames the task as two binary questions:
+Does the premise make the hypothesis definitely true?
+Does the premise make the hypothesis definitely false?
+Then it maps those answers to E/N/C. After that, it asks for probabilities.
+So P4 is:
+also classification before distribution generation
+but more explicitly factorized into two binary judgments than P2.
 
-- **E**: hypothesis is necessarily true
-- **C**: hypothesis is necessarily false
-- **N**: neither is guaranteed
-
-Also warns:
-- plausible ≠ entailment
-- unlikely ≠ contradiction
-
-What it tests:
-- whether stronger semantic framing improves the **E/N** boundary
-
-### P4 — two-question decomposition prompt
-The model answers two binary questions first:
-
-1. Is the hypothesis definitely true?
-2. Is the hypothesis definitely false?
-
-Then maps to:
-- true / not false → **E**
-- false / not true → **C**
-- neither → **N**
-
-What it tests:
-- whether factorizing the decision improves difficult boundaries, especially **N/C**
-
----
-
-## Why these prompts matter
-
-These are not just wording variants. They test different **reasoning structures**:
-
-P0 asks the model to generate an E/N/C probability distribution directly, while P2 first forces a discrete semantic classification and only then asks for a probability distribution. This means P2 differs from P0 both in semantic definitions and in the order of reasoning. Because of this, P2 should be interpreted as a decision-first prompt, not just a more explicit version of P0. P4 forces two decision boundaries to further clarify boundaries prior to assigning the probability distribution.
-
-- **P0**: one-step probability judgment
-- **P2**: one-step judgment with strict semantic definitions
-- **P4**: two-step decomposed semantic judgment
 
 The experiment asks whether stronger decision structure produces more linguistically grounded labeling.
 
@@ -205,51 +179,61 @@ The scorer reports:
 - coverage / missing rows / extra IDs
 
 ---
+## Findings so far
 
-## Main findings so far
+- **Prompt structure matters for semantic reasoning.**  
+  The main contrast is between **P0** (probability-first) and **P2/P4** (decision-first). Forcing class commitment before probability assignment changes model behavior in meaningful ways.
 
-### 1. Prompt structure matters
-Changing semantic reasoning structure changes which class boundaries the model gets right or wrong.
+- **P2 and P4 are not fully distinct methodologies.**  
+  Both are **decision-first prompts** that use truth/falsity-style semantic framing.  
+  The difference is that **P4 makes the decomposition more explicit**, while **P2 uses a sequential guarantee-based rule**.  
+  So the strongest clean contrast is still **P0 vs P2/P4**, not **P2 vs P4 as totally different reasoning systems**.
 
-### 2. P2 most strongly improves the E/N boundary
-P2 reduces the model’s tendency to treat “plausible” as entailment.
+- **P2 most strongly improves the Entailment–Neutral (E/N) boundary.**  
+  This is clearest in English, where P2 most strongly reduces the model’s tendency to treat plausible or compatible hypotheses as Entailment.
 
-Most visible in English:
-- P0 showed strong **Neutral → Entailment** drift
-- P2 moved many of those cases back toward Neutral
+- **P2 appears to overcorrect.**  
+  P2 improves Neutral handling, but often at the cost of shifting too many Contradiction cases into Neutral.  
+  In other words, it fixes part of the E/N problem by creating more N/C confusion.
 
-### 3. P2 overcorrects
-P2 often improves Neutral handling but can push too many true contradictions into Neutral.
+- **P4 does not overcorrect in the same way.**  
+  P4 is more balanced than P2, but it also does not preserve P2’s strongest E/N gains, especially in English.  
+  In the hardest cases, P4 often looks like a partial retreat toward the older P0-style behavior.
 
-So P2 is a good **probe prompt**, but not always the best practical prompt.
+- **P4 does not clearly outperform P2 overall.**  
+  The results are mixed:
+  - **P2** is slightly better on average hard-label metrics like accuracy and Macro-F1.
+  - **P4** tends to be somewhat better on probability-quality metrics like log loss and Brier score.
+  So neither prompt is a universal winner.
 
-### 4. P4 is the best balanced overall prompt
-P4 is the best compromise:
-- good class balance
-- strong probability behavior
-- less contradiction collapse than P2
+- **P0 is stronger than it first appeared after rerunning DE.**  
+  The original DE-P0 run had ID mismatch issues; after rerunning it cleanly, P0’s average performance improved.  
+  This reduced the size of the apparent P0 → P2/P4 gains, but did not eliminate the main pattern.
 
-### 5. English is hardest
-English is the clearest failure case across prompts.
+- **English remains the hardest language.**  
+  English consistently shows the clearest class-boundary instability:
+  - under **P0**, Neutral collapses into Entailment
+  - under **P2**, Neutral improves but Contradiction collapses into Neutral
+  - under **P4**, English still struggles and often drifts back toward the P0-style pattern
 
-Likely reason:
-- the model treats many English hypotheses as **plausible continuations** rather than strict semantic consequences
+- **French is the easiest and most stable language.**  
+  French performs strongly across prompts and achieves the best overall results under P4.  
+  This suggests the task is not equally difficult across languages.
 
-### 6. French is easiest
-French is the strongest and most stable language in these runs.
+- **The most important metric for hard-label performance is Macro-F1.**  
+  Macro-F1 is the best headline metric because it evaluates whether the model distinguishes all three classes well, not just whether it gets the top label right often.
 
-Possible reason:
-- cleaner class separation in the dataset / translation
-- less pragmatic overreading than English
+- **The most important metric for probability quality is log loss.**  
+  Log loss best captures whether the model assigns meaningful probability mass to the correct class.  
+  Brier score is also useful as a more stable, easier-to-interpret probability-fit metric.
 
-### 7. Hard-label quality and probability quality are not the same
-A prompt can improve:
-- accuracy / Macro-F1
+- **Centroid is useful, but not evaluative.**  
+  Centroid helps explain *how* prompts change class geometry in probability space, especially whether Neutral drifts toward Entailment or Contradiction.  
+  But centroid is not a primary evaluation metric because it averages away item-level correctness.
 
-without equally improving:
-- log loss / Brier
-
-That is why both hard-label and probability metrics are necessary.
+- **The strongest current conclusion is about class-boundary behavior, not raw score wins.**  
+  The experiment shows that prompt design changes which semantic distinctions the model prioritizes.  
+  The key result is not simply that one prompt is “best,” but that different prompts improve or distort different class boundaries.
 
 ---
 
