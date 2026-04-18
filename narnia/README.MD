@@ -176,7 +176,7 @@ Save the response as `mini/narnia_predictions_<model>_fewshot.csv`.
 You are annotating sentences from The Chronicles of Narnia for character agency.
 
 For each row, identify all character or group mentions and assign each one an agency label.
-Return ONLY a CSV with columns: sample_id,sentence_id,predicted_entities
+Return ONLY a CSV named narnia_predictions_[model]_fewshot.csv with columns: sample_id,sentence_id,predicted_entities
 where predicted_entities is a JSON list of {"text": "...", "label": "..."} objects.
 No explanation. Do not skip rows.
 
