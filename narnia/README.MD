@@ -22,7 +22,7 @@ _Run `python narnia/scripts/update_readme.py` after scoring to update this table
 | ----- | --------- | ------ | -- |
 | sonnet_fewshot | 0.7698 | 0.8843 | 0.8231 |
 | opus_fewshot | 0.7518 | 0.876 | 0.8092 |
-| chatgpt_fewshot | 0.7372 | 0.8347 | 0.7829 |
+| chatgpt_fewshot | 0.731 | 0.876 | 0.797 |
 <!-- results-fewshot:end -->
 
 _Run `python narnia/scripts/update_readme.py` after scoring to update this table._
@@ -157,7 +157,19 @@ Sentences with no annotated characters have `entities = []`.
 
    Repeat steps 2–3 for each model.
 
-4. Update this README:
+4. For few-shot runs, use the few-shot prompt (see below). Save the response as:
+
+   ```
+   mini/narnia_predictions_<model>_fewshot.csv
+   ```
+
+5. Score few-shot predictions with the `--prompt fewshot` flag:
+
+   ```bash
+   python narnia/scripts/score_baseline.py --model <model> --prompt fewshot
+   ```
+
+6. Update this README:
 
    ```bash
    python narnia/scripts/update_readme.py
@@ -165,7 +177,8 @@ Sentences with no annotated characters have `entities = []`.
 
 Scores are saved to:
 
-- `results/<model>_scores.csv` — precision, recall, F1, TP/FP/FN
+- `results/<model>_scores.csv` — precision, recall, F1, TP/FP/FN per sample
+- `results/<model>_fewshot_scores.csv` — same for few-shot runs
 - `results/summary.csv` — all models side by side
 
 ---
