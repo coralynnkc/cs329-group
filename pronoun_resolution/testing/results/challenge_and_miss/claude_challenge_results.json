@@ -1,0 +1,551 @@
+{
+  "gold_file": "am/full/am_challenge_and_miss_full.csv",
+  "pred_file": "results/challenge_and_miss/sonnet_4.6_challenge_and_miss_am.csv",
+  "data_size": 82,
+  "prediction_rows_raw": 82,
+  "prediction_rows_after_dedup": 82,
+  "correct": 49,
+  "accuracy": 0.5976,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 0,
+  "refusal_rate": 0.0,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0,
+  "precision_A": 0.5806,
+  "recall_A": 0.4737,
+  "f1_A": 0.5217,
+  "precision_B": 0.6078,
+  "recall_B": 0.7045,
+  "f1_B": 0.6526,
+  "macro_f1": 0.5872,
+  "class_metrics": {
+    "A": {
+      "tp": 18,
+      "fp": 13,
+      "fn": 20,
+      "support": 38,
+      "precision": 0.5806,
+      "recall": 0.4737,
+      "f1": 0.5217
+    },
+    "B": {
+      "tp": 31,
+      "fp": 20,
+      "fn": 13,
+      "support": 44,
+      "precision": 0.6078,
+      "recall": 0.7045,
+      "f1": 0.6526
+    }
+  }
+}
+
+{
+  "gold_file": "en/full/en_challenge_and_miss_full.csv",
+  "pred_file": "results/challenge_and_miss/sonnet_4.6_challenge_and_miss_en.csv",
+  "data_size": 72,
+  "prediction_rows_raw": 72,
+  "prediction_rows_after_dedup": 72,
+  "correct": 57,
+  "accuracy": 0.7917,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 0,
+  "refusal_rate": 0.0,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0,
+  "precision_A": 0.8333,
+  "recall_A": 0.7692,
+  "f1_A": 0.8,
+  "precision_B": 0.75,
+  "recall_B": 0.8182,
+  "f1_B": 0.7826,
+  "macro_f1": 0.7913,
+  "class_metrics": {
+    "A": {
+      "tp": 30,
+      "fp": 6,
+      "fn": 9,
+      "support": 39,
+      "precision": 0.8333,
+      "recall": 0.7692,
+      "f1": 0.8
+    },
+    "B": {
+      "tp": 27,
+      "fp": 9,
+      "fn": 6,
+      "support": 33,
+      "precision": 0.75,
+      "recall": 0.8182,
+      "f1": 0.7826
+    }
+  }
+}
+
+{
+  "gold_file": "ig/full/ig_challenge_and_miss_full.csv",
+  "pred_file": "results/challenge_and_miss/sonnet_4.6_challenge_and_miss_ig.csv",
+  "data_size": 109,
+  "prediction_rows_raw": 109,
+  "prediction_rows_after_dedup": 109,
+  "correct": 56,
+  "accuracy": 0.5138,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 0,
+  "refusal_rate": 0.0,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0,
+  "precision_A": 0.46,
+  "recall_A": 0.4694,
+  "f1_A": 0.4646,
+  "precision_B": 0.5593,
+  "recall_B": 0.55,
+  "f1_B": 0.5546,
+  "macro_f1": 0.5096,
+  "class_metrics": {
+    "A": {
+      "tp": 23,
+      "fp": 27,
+      "fn": 26,
+      "support": 49,
+      "precision": 0.46,
+      "recall": 0.4694,
+      "f1": 0.4646
+    },
+    "B": {
+      "tp": 33,
+      "fp": 26,
+      "fn": 27,
+      "support": 60,
+      "precision": 0.5593,
+      "recall": 0.55,
+      "f1": 0.5546
+    }
+  }
+}
+
+{
+  "gold_file": "zu/full/zu_challenge_and_miss_full.csv",
+  "pred_file": "results/challenge_and_miss/sonnet_4.6_challenge_and_miss_zu.csv",
+  "data_size": 98,
+  "prediction_rows_raw": 98,
+  "prediction_rows_after_dedup": 98,
+  "correct": 48,
+  "accuracy": 0.4898,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 1,
+  "refusal_rate": 0.0102,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0,
+  "precision_A": 0.6667,
+  "recall_A": 0.3667,
+  "f1_A": 0.4731,
+  "precision_B": 0.4062,
+  "recall_B": 0.6842,
+  "f1_B": 0.5098,
+  "macro_f1": 0.4915,
+  "class_metrics": {
+    "A": {
+      "tp": 22,
+      "fp": 11,
+      "fn": 38,
+      "support": 60,
+      "precision": 0.6667,
+      "recall": 0.3667,
+      "f1": 0.4731
+    },
+    "B": {
+      "tp": 26,
+      "fp": 38,
+      "fn": 12,
+      "support": 38,
+      "precision": 0.4062,
+      "recall": 0.6842,
+      "f1": 0.5098
+    }
+  }
+}
+
+{
+  "gold_file": "zu/full/zu_challenge_and_miss_full.csv",
+  "pred_file": "results/challenge_and_miss/sonnet_4.6_challenge_and_miss_zu_r2.csv",
+  "data_size": 98,
+  "prediction_rows_raw": 98,
+  "prediction_rows_after_dedup": 98,
+  "correct": 45,
+  "accuracy": 0.4592,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 1,
+  "refusal_rate": 0.0102,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0,
+  "precision_A": 0.6111,
+  "recall_A": 0.3667,
+  "f1_A": 0.4583,
+  "precision_B": 0.377,
+  "recall_B": 0.6053,
+  "f1_B": 0.4646,
+  "macro_f1": 0.4615,
+  "class_metrics": {
+    "A": {
+      "tp": 22,
+      "fp": 14,
+      "fn": 38,
+      "support": 60,
+      "precision": 0.6111,
+      "recall": 0.3667,
+      "f1": 0.4583
+    },
+    "B": {
+      "tp": 23,
+      "fp": 38,
+      "fn": 15,
+      "support": 38,
+      "precision": 0.377,
+      "recall": 0.6053,
+      "f1": 0.4646
+    }
+  }
+}
+
+{
+  "gold_file": "ig/full/ig_challenge_and_miss_full.csv",
+  "pred_file": "results/challenge_and_miss/sonnet_4.6_challenge_and_miss_ig_r2.csv",
+  "data_size": 109,
+  "prediction_rows_raw": 109,
+  "prediction_rows_after_dedup": 109,
+  "correct": 52,
+  "accuracy": 0.4771,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 0,
+  "refusal_rate": 0.0,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0,
+  "precision_A": 0.4231,
+  "recall_A": 0.449,
+  "f1_A": 0.4356,
+  "precision_B": 0.5263,
+  "recall_B": 0.5,
+  "f1_B": 0.5128,
+  "macro_f1": 0.4742,
+  "class_metrics": {
+    "A": {
+      "tp": 22,
+      "fp": 30,
+      "fn": 27,
+      "support": 49,
+      "precision": 0.4231,
+      "recall": 0.449,
+      "f1": 0.4356
+    },
+    "B": {
+      "tp": 30,
+      "fp": 27,
+      "fn": 30,
+      "support": 60,
+      "precision": 0.5263,
+      "recall": 0.5,
+      "f1": 0.5128
+    }
+  }
+}
+
+{
+  "gold_file": "en/full/en_challenge_and_miss_full.csv",
+  "pred_file": "results/challenge_and_miss/sonnet_4.6_challenge_and_miss_en_r2.csv",
+  "data_size": 72,
+  "prediction_rows_raw": 72,
+  "prediction_rows_after_dedup": 72,
+  "correct": 57,
+  "accuracy": 0.7917,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 0,
+  "refusal_rate": 0.0,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0,
+  "precision_A": 0.8529,
+  "recall_A": 0.7436,
+  "f1_A": 0.7945,
+  "precision_B": 0.7368,
+  "recall_B": 0.8485,
+  "f1_B": 0.7887,
+  "macro_f1": 0.7916,
+  "class_metrics": {
+    "A": {
+      "tp": 29,
+      "fp": 5,
+      "fn": 10,
+      "support": 39,
+      "precision": 0.8529,
+      "recall": 0.7436,
+      "f1": 0.7945
+    },
+    "B": {
+      "tp": 28,
+      "fp": 10,
+      "fn": 5,
+      "support": 33,
+      "precision": 0.7368,
+      "recall": 0.8485,
+      "f1": 0.7887
+    }
+  }
+}
+
+{
+  "gold_file": "am/full/am_challenge_and_miss_full.csv",
+  "pred_file": "results/challenge_and_miss/sonnet_4.6_challenge_and_miss_am_r2.csv",
+  "data_size": 82,
+  "prediction_rows_raw": 82,
+  "prediction_rows_after_dedup": 82,
+  "correct": 49,
+  "accuracy": 0.5976,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 0,
+  "refusal_rate": 0.0,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0,
+  "precision_A": 0.5806,
+  "recall_A": 0.4737,
+  "f1_A": 0.5217,
+  "precision_B": 0.6078,
+  "recall_B": 0.7045,
+  "f1_B": 0.6526,
+  "macro_f1": 0.5872,
+  "class_metrics": {
+    "A": {
+      "tp": 18,
+      "fp": 13,
+      "fn": 20,
+      "support": 38,
+      "precision": 0.5806,
+      "recall": 0.4737,
+      "f1": 0.5217
+    },
+    "B": {
+      "tp": 31,
+      "fp": 20,
+      "fn": 13,
+      "support": 44,
+      "precision": 0.6078,
+      "recall": 0.7045,
+      "f1": 0.6526
+    }
+  }
+}
+
+{
+  "gold_file": "am/full/am_challenge_and_miss_full.csv",
+  "pred_file": "results/challenge_and_miss/opus_4.6_challenge_and_miss_am.csv",
+  "data_size": 82,
+  "prediction_rows_raw": 82,
+  "prediction_rows_after_dedup": 82,
+  "correct": 63,
+  "accuracy": 0.7683,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 0,
+  "refusal_rate": 0.0,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0,
+  "precision_A": 0.7436,
+  "recall_A": 0.7632,
+  "f1_A": 0.7532,
+  "precision_B": 0.7907,
+  "recall_B": 0.7727,
+  "f1_B": 0.7816,
+  "macro_f1": 0.7674,
+  "class_metrics": {
+    "A": {
+      "tp": 29,
+      "fp": 10,
+      "fn": 9,
+      "support": 38,
+      "precision": 0.7436,
+      "recall": 0.7632,
+      "f1": 0.7532
+    },
+    "B": {
+      "tp": 34,
+      "fp": 9,
+      "fn": 10,
+      "support": 44,
+      "precision": 0.7907,
+      "recall": 0.7727,
+      "f1": 0.7816
+    }
+  }
+}
+
+{
+  "gold_file": "en/full/en_challenge_and_miss_full.csv",
+  "pred_file": "results/challenge_and_miss/opus_4.6_challenge_and_miss_en.csv",
+  "data_size": 72,
+  "prediction_rows_raw": 72,
+  "prediction_rows_after_dedup": 72,
+  "correct": 66,
+  "accuracy": 0.9167,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 0,
+  "refusal_rate": 0.0,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0,
+  "precision_A": 0.9024,
+  "recall_A": 0.9487,
+  "f1_A": 0.925,
+  "precision_B": 0.9355,
+  "recall_B": 0.8788,
+  "f1_B": 0.9062,
+  "macro_f1": 0.9156,
+  "class_metrics": {
+    "A": {
+      "tp": 37,
+      "fp": 4,
+      "fn": 2,
+      "support": 39,
+      "precision": 0.9024,
+      "recall": 0.9487,
+      "f1": 0.925
+    },
+    "B": {
+      "tp": 29,
+      "fp": 2,
+      "fn": 4,
+      "support": 33,
+      "precision": 0.9355,
+      "recall": 0.8788,
+      "f1": 0.9062
+    }
+  }
+}
+
+{
+  "gold_file": "ig/full/ig_challenge_and_miss_full.csv",
+  "pred_file": "results/challenge_and_miss/opus_4.6_challenge_and_miss_ig.csv",
+  "data_size": 109,
+  "prediction_rows_raw": 109,
+  "prediction_rows_after_dedup": 109,
+  "correct": 57,
+  "accuracy": 0.5229,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 0,
+  "refusal_rate": 0.0,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0,
+  "precision_A": 0.4805,
+  "recall_A": 0.7551,
+  "f1_A": 0.5873,
+  "precision_B": 0.625,
+  "recall_B": 0.3333,
+  "f1_B": 0.4348,
+  "macro_f1": 0.511,
+  "class_metrics": {
+    "A": {
+      "tp": 37,
+      "fp": 40,
+      "fn": 12,
+      "support": 49,
+      "precision": 0.4805,
+      "recall": 0.7551,
+      "f1": 0.5873
+    },
+    "B": {
+      "tp": 20,
+      "fp": 12,
+      "fn": 40,
+      "support": 60,
+      "precision": 0.625,
+      "recall": 0.3333,
+      "f1": 0.4348
+    }
+  }
+}
+
+{
+  "gold_file": "zu/full/zu_challenge_and_miss_full.csv",
+  "pred_file": "results/challenge_and_miss/opus_4.6_challenge_and_miss_zu.csv",
+  "data_size": 98,
+  "prediction_rows_raw": 98,
+  "prediction_rows_after_dedup": 98,
+  "correct": 67,
+  "accuracy": 0.6837,
+  "missing_predictions": 0,
+  "missing_rate": 0.0,
+  "refusals": 0,
+  "refusal_rate": 0.0,
+  "invalid_predictions": 0,
+  "invalid_rate": 0.0,
+  "duplicate_prediction_rows": 0,
+  "extra_prediction_ids": 0,
+  "coverage": 1.0,
+  "precision_A": 0.7101,
+  "recall_A": 0.8167,
+  "f1_A": 0.7597,
+  "precision_B": 0.6207,
+  "recall_B": 0.4737,
+  "f1_B": 0.5373,
+  "macro_f1": 0.6485,
+  "class_metrics": {
+    "A": {
+      "tp": 49,
+      "fp": 20,
+      "fn": 11,
+      "support": 60,
+      "precision": 0.7101,
+      "recall": 0.8167,
+      "f1": 0.7597
+    },
+    "B": {
+      "tp": 18,
+      "fp": 11,
+      "fn": 20,
+      "support": 38,
+      "precision": 0.6207,
+      "recall": 0.4737,
+      "f1": 0.5373
+    }
+  }
+}

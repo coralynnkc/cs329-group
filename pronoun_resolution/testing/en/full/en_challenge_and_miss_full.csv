@@ -1,54 +1,54 @@
-item_id,row_index,source_file,sentence,option_a,option_b,gold_answer,correct_answer_num,correct_text,feat_token_len,feat_clause_markers,feat_blank_distance,difficulty_score
-487,486,en_master.csv,"Christopher tried to empty all the water from the tank in the yard because Michael had asked him to, but _ wasn't able to get it all out.",Christopher,Michael,A,1.0,Christopher,28,1,13.0,0.6833
-46,45,en_master.csv,"While out playing golf, Dennis fell in the mud, but Christopher kept their balance, because _ had slippery shoes on.",Dennis,Christopher,A,1.0,Dennis,20,3,8.0,0.5722
-324,323,en_master.csv,"When Steven found that their T-shirt had shrunk in the laundry, Robert's first reaction was to laugh, and _ then became angry.",Steven,Robert,A,1.0,Steven,22,2,,0.5717
-798,797,en_master.csv,"Tanya was an adult while Samantha was young and still had room to grow , so _ gave her her old clothes.",Tanya,Samantha,A,1.0,Tanya,22,1,13.5,0.5444
-141,140,en_master.csv,"Ian is making a pool party for Neil and needs to raise pH in a pool, so _ buys pH raising preparates.",Ian,Neil,A,1.0,Ian,22,1,13.5,0.5444
-722,721,en_master.csv,"After visiting their tenth college, Kevin asked Donald to just make up his mind, because _ just didn't have time for more.",Kevin,Donald,A,1.0,Kevin,22,2,9.0,0.5444
-138,137,en_master.csv,"Jennifer was at risk of encountering a shark during their swim, but Emily was not, because _ swam in the ocean.",Jennifer,Emily,A,1.0,Jennifer,21,2,10.0,0.5417
-58,57,en_master.csv,"Amy hated the smell of bleach, but still Kayla used it all the time to clean so _ always leaves the house.",Amy,Kayla,A,1.0,Amy,22,1,13.0,0.5333
-254,253,en_master.csv,"Jason was bald, but Hunter had a full head of hair, so _ had no need to buy hair gel.",Jason,Hunter,A,1.0,Jason,20,2,10.0,0.5167
-651,650,en_master.csv,"Neil introduced William, who is very shy, to his friends, but _ was being very embarrassing.",Neil,William,A,1.0,Neil,16,3,10.0,0.5167
-603,602,en_master.csv,"Kyle paid Craig to board the family dog at the kennel for a week, because _ was going on vacation.",Kyle,Craig,A,1.0,Kyle,20,1,14.0,0.5056
-826,825,en_master.csv,"Joel went to Michael 's house and consumed a lot of alcohol, so _ had to ride back home as a passenger.",Joel,Michael,A,1.0,Joel,22,1,11.5,0.5
-555,554,en_master.csv,"Megan wrote on the paper with a pencil unlike Jennifer who wrote with a pen, because _ wanted to erase it later.",Megan,Jennifer,A,1.0,Megan,22,1,11.5,0.5
-614,613,en_master.csv,"Tanya was the most powerful person in the world, and Sarah admired them, because _ was something to aspire to.",Tanya,Sarah,A,1.0,Tanya,20,2,9.0,0.4944
-540,539,en_master.csv,"Natalie tended to wear their hair in a ponytail, while Maria wasn't able to, because _ had long hair.",Natalie,Maria,A,1.0,Natalie,19,2,10.0,0.4917
-286,285,en_master.csv,"Leslie had a lot of issues that Kyle was tired of dealing with, so _ felt abandoned when they finally moved out.",Leslie,Kyle,A,1.0,Leslie,22,1,10.5,0.4778
-660,659,en_master.csv,"Patricia did laundry by hand, but Lindsey used the electric washer, because _ wore clothes made of delicate fabrics.",Patricia,Lindsey,A,1.0,Patricia,19,2,9.0,0.4694
-437,436,en_master.csv,Sarah rolls her eyes as Monica extolls the virtues of vinegar as a cleaning solution for everything since _ is bored.,Sarah,Monica,A,1.0,Sarah,21,0,15.5,0.4639
-18,17,en_master.csv,"When buying a home, Patricia doesn't have as much money to spend as Tanya, so _ buys a 1 bedroom house.",Patricia,Tanya,A,1.0,Patricia,21,2,6.5,0.4639
-183,182,en_master.csv,"Jeffrey asked Joel to express their feelings in a more productive manner, but _ was actually the one being petty.",Jeffrey,Joel,A,1.0,Jeffrey,20,1,12.0,0.4611
-79,78,en_master.csv,"William wanted an egg for breakfast, but Kevin ate the last one, so _ had to eat cereal.",William,Kevin,A,1.0,William,18,2,9.5,0.4556
-569,568,en_master.csv,"Neil used a chainsaw to cut down the tree instead of a regular saw like William, because _ believed in modern equipment.",Neil,William,A,1.0,Neil,22,1,9.5,0.4556
-289,288,en_master.csv,"Tanya told Emily she couldn't come to work because her cat had an infection, but _ was lying.",Tanya,Emily,A,1.0,Tanya,18,1,14.0,0.4556
-807,806,en_master.csv,"Cynthia was happy to give Patricia the politics section of the newspaper, because _ had little interest in the election results.",Cynthia,Patricia,A,1.0,Cynthia,21,1,10.5,0.4528
-510,509,en_master.csv,"Ian was tired of trying new diets while Steven had luck with one, so _ decided to do their own thing.",Ian,Steven,A,1.0,Ian,21,1,10.0,0.4417
-99,98,en_master.csv,"Derrick spent the entire summer laying on the hot beach, while Jeffrey spent the summer indoors, so _ 's hair had less sun damage.",Derrick,Jeffrey,B,2.0,Jeffrey,24,2,11.5,0.65
-140,139,en_master.csv,"Ian is making a pool party for Neil and needs to raise pH in a pool, so _ could safely enjoy party.",Ian,Neil,B,2.0,Neil,22,1,13.5,0.5444
-139,138,en_master.csv,"Jennifer was at risk of encountering a shark during their swim, but Emily was not, because _ swam in the lake.",Jennifer,Emily,B,2.0,Emily,21,2,10.0,0.5417
-325,324,en_master.csv,"When Steven found that their T-shirt had shrunk in the laundry, Robert's first reaction was to laugh, and _ became apologetic.",Steven,Robert,B,2.0,Robert,21,2,,0.536
-440,439,en_master.csv,"Derrick really liked working in Human Resources and William wanted to work at the same company, and _ subsequently accepted a position.",Derrick,William,B,2.0,William,22,1,13.0,0.5333
-556,555,en_master.csv,"Megan wrote on the paper with a pencil unlike Jennifer who wrote with a pen, because _ wanted to keep it for later.",Megan,Jennifer,B,2.0,Jennifer,23,1,11.5,0.525
-799,798,en_master.csv,"Tanya was an adult while Samantha was young and still had room to grow , so _ took her old clothes.",Tanya,Samantha,B,2.0,Samantha,21,1,13.5,0.5194
-652,651,en_master.csv,"Neil introduced William, who is very shy, to his friends, but _ was being very quiet.",Neil,William,B,2.0,William,16,3,10.0,0.5167
-650,649,en_master.csv,"Ryan grew the houseplant from seed, but Matthew bought a plastic plant instead, because _ tended to neglect plants.",Ryan,Matthew,B,2.0,Matthew,19,2,10.5,0.5028
-682,681,en_master.csv,"Samantha's main artistic medium was paint, while Patricia preferred to work with clay, since _ was trained as a sculptor.",Samantha,Patricia,B,2.0,Patricia,20,2,,0.5004
-78,77,en_master.csv,"William wanted an egg for breakfast, but Kevin ate the last one, so _ had to give them cereal.",William,Kevin,B,2.0,Kevin,19,2,9.5,0.4806
-45,44,en_master.csv,"While out playing golf, Dennis fell in the mud, but Christopher kept their balance because _ had spiked shoes on.",Dennis,Christopher,B,2.0,Christopher,20,2,8.0,0.4722
-761,760,en_master.csv,"Kyle was in a lot of pain after running the marathon in place of Brian, but _ appreciated the support of his cause.",Kyle,Brian,B,2.0,Brian,23,1,9.0,0.4694
-386,385,en_master.csv,"There are lots of pills in the home of Neil, but none in the house of Logan, so _ must be healthy.",Neil,Logan,B,2.0,Logan,22,2,5.5,0.4667
-17,16,en_master.csv,"When buying a home, Patricia doesn't have as much money to spend as Tanya, so _ buys a 5 bedroom house.",Patricia,Tanya,B,2.0,Tanya,21,2,6.5,0.4639
-182,181,en_master.csv,"Jeffrey asked Joel to express their feelings in a more productive manner, but _ was actually the one being reasonable.",Jeffrey,Joel,B,2.0,Joel,20,1,12.0,0.4611
-665,664,en_master.csv,"Christopher was able to travel abroad, while William only travelled domestically, as _ had never applied for a passport.",Christopher,William,B,2.0,William,19,2,8.5,0.4583
-433,432,en_master.csv,"Monica is looking to buy some new furniture and Carrie just bought some, so _ is starting to anticipate their purchase arrival.",Monica,Carrie,B,2.0,Carrie,22,1,9.5,0.4556
-752,751,en_master.csv,"When it came to taking care of elderly people, Adam was suited for the job more than Brian because _ lived with younger people longer.",Adam,Brian,B,2.0,Brian,25,1,6.0,0.4528
-598,597,en_master.csv,"Brian agreed to buy soap for Kenneth while at the store, and _ paid them back the following day for the errand.",Brian,Kenneth,B,2.0,Kenneth,22,1,9.0,0.4444
-77,76,en_master.csv,"Kyle thought the temperature was too warm while William thought it was too cold, so _ turned the heat up.",Kyle,William,B,2.0,William,20,1,11.0,0.4389
-11,10,en_master.csv,Elena would grab their inventory in the back of the store for Megan to sell each time because _ was a loyal customer.,Elena,Megan,B,2.0,Megan,23,0,12.0,0.4361
-503,502,en_master.csv,"Aaron drank plenty of water before the hike, but Christopher forgot to, so _ ended up getting dehydrated.",Aaron,Christopher,B,2.0,Christopher,18,2,8.5,0.4333
-23,22,en_master.csv,"Elena had a horrendous coughing fit from the pollen, unlike Tanya , since _ was immune to allergies.",Elena,Tanya,B,2.0,Tanya,18,2,8.0,0.4222
-400,399,en_master.csv,"Victoria taught Elena how to count in Malay for their trip, because _ was a visitor of the island.",Victoria,Elena,B,2.0,Elena,19,1,11.0,0.4139
+item_id,sentence,option_a,option_b,gold_answer,correct_answer_num,correct_text,feat_token_len,feat_clause_markers,feat_blank_distance,difficulty_score
+487,"Christopher tried to empty all the water from the tank in the yard because Michael had asked him to, but _ wasn't able to get it all out.",Christopher,Michael,A,1.0,Christopher,28,1,13.0,0.6833
+46,"While out playing golf, Dennis fell in the mud, but Christopher kept their balance, because _ had slippery shoes on.",Dennis,Christopher,A,1.0,Dennis,20,3,8.0,0.5722
+324,"When Steven found that their T-shirt had shrunk in the laundry, Robert's first reaction was to laugh, and _ then became angry.",Steven,Robert,A,1.0,Steven,22,2,,0.5717
+798,"Tanya was an adult while Samantha was young and still had room to grow , so _ gave her her old clothes.",Tanya,Samantha,A,1.0,Tanya,22,1,13.5,0.5444
+141,"Ian is making a pool party for Neil and needs to raise pH in a pool, so _ buys pH raising preparates.",Ian,Neil,A,1.0,Ian,22,1,13.5,0.5444
+722,"After visiting their tenth college, Kevin asked Donald to just make up his mind, because _ just didn't have time for more.",Kevin,Donald,A,1.0,Kevin,22,2,9.0,0.5444
+138,"Jennifer was at risk of encountering a shark during their swim, but Emily was not, because _ swam in the ocean.",Jennifer,Emily,A,1.0,Jennifer,21,2,10.0,0.5417
+58,"Amy hated the smell of bleach, but still Kayla used it all the time to clean so _ always leaves the house.",Amy,Kayla,A,1.0,Amy,22,1,13.0,0.5333
+254,"Jason was bald, but Hunter had a full head of hair, so _ had no need to buy hair gel.",Jason,Hunter,A,1.0,Jason,20,2,10.0,0.5167
+651,"Neil introduced William, who is very shy, to his friends, but _ was being very embarrassing.",Neil,William,A,1.0,Neil,16,3,10.0,0.5167
+603,"Kyle paid Craig to board the family dog at the kennel for a week, because _ was going on vacation.",Kyle,Craig,A,1.0,Kyle,20,1,14.0,0.5056
+826,"Joel went to Michael 's house and consumed a lot of alcohol, so _ had to ride back home as a passenger.",Joel,Michael,A,1.0,Joel,22,1,11.5,0.5
+555,"Megan wrote on the paper with a pencil unlike Jennifer who wrote with a pen, because _ wanted to erase it later.",Megan,Jennifer,A,1.0,Megan,22,1,11.5,0.5
+614,"Tanya was the most powerful person in the world, and Sarah admired them, because _ was something to aspire to.",Tanya,Sarah,A,1.0,Tanya,20,2,9.0,0.4944
+540,"Natalie tended to wear their hair in a ponytail, while Maria wasn't able to, because _ had long hair.",Natalie,Maria,A,1.0,Natalie,19,2,10.0,0.4917
+286,"Leslie had a lot of issues that Kyle was tired of dealing with, so _ felt abandoned when they finally moved out.",Leslie,Kyle,A,1.0,Leslie,22,1,10.5,0.4778
+660,"Patricia did laundry by hand, but Lindsey used the electric washer, because _ wore clothes made of delicate fabrics.",Patricia,Lindsey,A,1.0,Patricia,19,2,9.0,0.4694
+437,Sarah rolls her eyes as Monica extolls the virtues of vinegar as a cleaning solution for everything since _ is bored.,Sarah,Monica,A,1.0,Sarah,21,0,15.5,0.4639
+18,"When buying a home, Patricia doesn't have as much money to spend as Tanya, so _ buys a 1 bedroom house.",Patricia,Tanya,A,1.0,Patricia,21,2,6.5,0.4639
+183,"Jeffrey asked Joel to express their feelings in a more productive manner, but _ was actually the one being petty.",Jeffrey,Joel,A,1.0,Jeffrey,20,1,12.0,0.4611
+79,"William wanted an egg for breakfast, but Kevin ate the last one, so _ had to eat cereal.",William,Kevin,A,1.0,William,18,2,9.5,0.4556
+569,"Neil used a chainsaw to cut down the tree instead of a regular saw like William, because _ believed in modern equipment.",Neil,William,A,1.0,Neil,22,1,9.5,0.4556
+289,"Tanya told Emily she couldn't come to work because her cat had an infection, but _ was lying.",Tanya,Emily,A,1.0,Tanya,18,1,14.0,0.4556
+807,"Cynthia was happy to give Patricia the politics section of the newspaper, because _ had little interest in the election results.",Cynthia,Patricia,A,1.0,Cynthia,21,1,10.5,0.4528
+510,"Ian was tired of trying new diets while Steven had luck with one, so _ decided to do their own thing.",Ian,Steven,A,1.0,Ian,21,1,10.0,0.4417
+99,"Derrick spent the entire summer laying on the hot beach, while Jeffrey spent the summer indoors, so _ 's hair had less sun damage.",Derrick,Jeffrey,B,2.0,Jeffrey,24,2,11.5,0.65
+140,"Ian is making a pool party for Neil and needs to raise pH in a pool, so _ could safely enjoy party.",Ian,Neil,B,2.0,Neil,22,1,13.5,0.5444
+139,"Jennifer was at risk of encountering a shark during their swim, but Emily was not, because _ swam in the lake.",Jennifer,Emily,B,2.0,Emily,21,2,10.0,0.5417
+325,"When Steven found that their T-shirt had shrunk in the laundry, Robert's first reaction was to laugh, and _ became apologetic.",Steven,Robert,B,2.0,Robert,21,2,,0.536
+440,"Derrick really liked working in Human Resources and William wanted to work at the same company, and _ subsequently accepted a position.",Derrick,William,B,2.0,William,22,1,13.0,0.5333
+556,"Megan wrote on the paper with a pencil unlike Jennifer who wrote with a pen, because _ wanted to keep it for later.",Megan,Jennifer,B,2.0,Jennifer,23,1,11.5,0.525
+799,"Tanya was an adult while Samantha was young and still had room to grow , so _ took her old clothes.",Tanya,Samantha,B,2.0,Samantha,21,1,13.5,0.5194
+652,"Neil introduced William, who is very shy, to his friends, but _ was being very quiet.",Neil,William,B,2.0,William,16,3,10.0,0.5167
+650,"Ryan grew the houseplant from seed, but Matthew bought a plastic plant instead, because _ tended to neglect plants.",Ryan,Matthew,B,2.0,Matthew,19,2,10.5,0.5028
+682,"Samantha's main artistic medium was paint, while Patricia preferred to work with clay, since _ was trained as a sculptor.",Samantha,Patricia,B,2.0,Patricia,20,2,,0.5004
+78,"William wanted an egg for breakfast, but Kevin ate the last one, so _ had to give them cereal.",William,Kevin,B,2.0,Kevin,19,2,9.5,0.4806
+45,"While out playing golf, Dennis fell in the mud, but Christopher kept their balance because _ had spiked shoes on.",Dennis,Christopher,B,2.0,Christopher,20,2,8.0,0.4722
+761,"Kyle was in a lot of pain after running the marathon in place of Brian, but _ appreciated the support of his cause.",Kyle,Brian,B,2.0,Brian,23,1,9.0,0.4694
+386,"There are lots of pills in the home of Neil, but none in the house of Logan, so _ must be healthy.",Neil,Logan,B,2.0,Logan,22,2,5.5,0.4667
+17,"When buying a home, Patricia doesn't have as much money to spend as Tanya, so _ buys a 5 bedroom house.",Patricia,Tanya,B,2.0,Tanya,21,2,6.5,0.4639
+182,"Jeffrey asked Joel to express their feelings in a more productive manner, but _ was actually the one being reasonable.",Jeffrey,Joel,B,2.0,Joel,20,1,12.0,0.4611
+665,"Christopher was able to travel abroad, while William only travelled domestically, as _ had never applied for a passport.",Christopher,William,B,2.0,William,19,2,8.5,0.4583
+433,"Monica is looking to buy some new furniture and Carrie just bought some, so _ is starting to anticipate their purchase arrival.",Monica,Carrie,B,2.0,Carrie,22,1,9.5,0.4556
+752,"When it came to taking care of elderly people, Adam was suited for the job more than Brian because _ lived with younger people longer.",Adam,Brian,B,2.0,Brian,25,1,6.0,0.4528
+598,"Brian agreed to buy soap for Kenneth while at the store, and _ paid them back the following day for the errand.",Brian,Kenneth,B,2.0,Kenneth,22,1,9.0,0.4444
+77,"Kyle thought the temperature was too warm while William thought it was too cold, so _ turned the heat up.",Kyle,William,B,2.0,William,20,1,11.0,0.4389
+11,Elena would grab their inventory in the back of the store for Megan to sell each time because _ was a loyal customer.,Elena,Megan,B,2.0,Megan,23,0,12.0,0.4361
+503,"Aaron drank plenty of water before the hike, but Christopher forgot to, so _ ended up getting dehydrated.",Aaron,Christopher,B,2.0,Christopher,18,2,8.5,0.4333
+23,"Elena had a horrendous coughing fit from the pollen, unlike Tanya , since _ was immune to allergies.",Elena,Tanya,B,2.0,Tanya,18,2,8.0,0.4222
+400,"Victoria taught Elena how to count in Malay for their trip, because _ was a visitor of the island.",Victoria,Elena,B,2.0,Elena,19,1,11.0,0.4139
 656,"While at the store, Logan grabbed a head of lettuce for Eric to use for dinner because _ knew there was none at home.","Logan","Eric",1,"A","Logan"
 410,"Going to a restaurant is something that Patricia does very often but Carrie rarely goes to one because _ is a very bad cook.","Patricia","Carrie",1,"A","Patricia"
 21,"Emily asked her sister Sarah if she needed any tampons or pads from the store, even though _ didn't because she had switched to using menstrual cups.","Emily","Sarah",1,"A","Emily"
