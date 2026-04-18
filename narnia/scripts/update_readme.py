@@ -26,29 +26,19 @@ def load_summary():
         return list(csv.DictReader(f))
 
 
-def load_per_sample(model):
-    scores_path = os.path.join(RES_DIR, f"{model}_scores.csv")
-    s = {"1": "", "2": "", "3": ""}
-    if os.path.exists(scores_path):
-        with open(scores_path, encoding="utf-8") as f:
-            for row in csv.DictReader(f):
-                s[str(row.get("sample", ""))] = row.get("f1", "")
-    return s["1"], s["2"], s["3"]
-
 
 def build_summary_table(rows):
     lines = [
         RESULTS_START,
-        "| Model | Sample 1 F1 | Sample 2 F1 | Sample 3 F1 | Precision | Recall | Mean F1 |",
-        "| ----- | ----------- | ----------- | ----------- | --------- | ------ | ------- |",
+        "| Model | Precision | Recall | F1 |",
+        "| ----- | --------- | ------ | -- |",
     ]
     for row in rows:
         model     = row.get("model", "")
         precision = row.get("precision", "")
         recall    = row.get("recall", "")
         f1        = row.get("f1", "")
-        s1, s2, s3 = load_per_sample(model)
-        lines.append(f"| {model} | {s1} | {s2} | {s3} | {precision} | {recall} | {f1} |")
+        lines.append(f"| {model} | {precision} | {recall} | {f1} |")
     lines.append(RESULTS_END)
     return "\n".join(lines)
 

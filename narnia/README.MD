@@ -5,11 +5,12 @@ Source: Chronicles of Narnia — 200 sentences manually annotated with character
 ## Baseline Results — Entity-level Precision, Recall, F1
 
 <!-- results:start -->
-| Model | Sample 1 F1 | Sample 2 F1 | Sample 3 F1 | Precision | Recall | Mean F1 |
-| ----- | ----------- | ----------- | ----------- | --------- | ------ | ------- |
+| Model | Precision | Recall | F1 |
+| ----- | --------- | ------ | -- |
+| sonnet | 0.7154 | 0.7686 | 0.741 |
 <!-- results:end -->
 
-_Run `python narnia/scripts/update_readme.py` after scoring to populate this table._
+_Run `python narnia/scripts/update_readme.py` after scoring to update this table._
 
 ---
 
@@ -65,42 +66,31 @@ Sentences with no annotated characters have `entities = []`.
 
 ### Workflow
 
-1. Convert raw annotations (one-time, already done):
+1. _(One-time, already done)_ Convert raw annotations and create splits:
 
    ```bash
    python narnia/scripts/convert_annotations.py
-   ```
-
-2. Create train/test splits (one-time, already done):
-
-   ```bash
    python narnia/scripts/make_splits.py
-   ```
-
-3. Generate mini CSVs (one-time):
-
-   ```bash
    python narnia/scripts/make_mini.py
    ```
 
-   Creates `mini/narnia_input.csv` and `mini/narnia_answers.csv` — all 199 sentences
-   in shuffled order (zero-shot baseline; no train/test contamination risk).
+   `make_mini.py` creates `mini/narnia_input.csv` and `mini/narnia_answers.csv` — all 199 sentences in shuffled order.
 
-4. Send the prompt below with `mini/narnia_input.csv` pasted in. Save the response as:
+2. Send the prompt below with `mini/narnia_input.csv` pasted in. Save the response as:
 
    ```
    mini/narnia_predictions_<model>.csv
    ```
 
-5. Score:
+3. Score:
 
    ```bash
-   python narnia/scripts/score_baseline.py --model sonnet
+   python narnia/scripts/score_baseline.py --model <model>
    ```
 
-   Repeat steps 4–5 for each model.
+   Repeat steps 2–3 for each model.
 
-6. Update this README:
+4. Update this README:
 
    ```bash
    python narnia/scripts/update_readme.py
@@ -108,7 +98,7 @@ Sentences with no annotated characters have `entities = []`.
 
 Scores are saved to:
 
-- `results/<model>_scores.csv` — per-sample breakdown (precision, recall, F1, TP/FP/FN)
+- `results/<model>_scores.csv` — precision, recall, F1, TP/FP/FN
 - `results/summary.csv` — all models side by side
 
 ---
