@@ -64,7 +64,7 @@ _Run `python narnia/scripts/score_baseline.py --model <model> --per_role` to rep
 
 _Run `python narnia/scripts/score_baseline.py --model <model> --prompt fewshot --per_role` to reproduce._
 
-| Label | sonnet | opus | chatgpt | gemini | gemini |
+| Label | sonnet | opus | chatgpt | gemini | 
 | ----- | ------ | ---- | ------- | ------ |
 | ACTIVE_SPEAKER   | 0.909 | 0.916 | 0.936 | 0.907 |
 | ACTIVE_PERFORMER | 0.640 | 0.783 | 0.741 | 0.643 |
