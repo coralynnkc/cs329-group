@@ -21,16 +21,12 @@ Each task is selected to illustrate a specific failure mode of existing supervis
 
 | Task | Module | Generality | No Training Needed | Multilingual | Status |
 |------|--------|:----------:|:-----------------:|:------------:|--------|
-| Lemmatization (args) | `lemmatization/` | ✓ | **primary** — matches SOTA | — | done |
+| Lemmatization | `lemmatization/` | ✓ | **primary** — matches SOTA | — | done |
 | Grammaticality / CoLA binary | `grammatical/` | ✓ | **primary** — fills gap where tools are absent | — | done |
 | POS tagging | `pos/` | ✓ | **primary** — competitive in-domain; OOD story pending | — | done (in-domain) |
-| Grammaticality 2.0 (CoLA + BLiMP) | `grammaticality-2.0/` | ✓ | **primary** — prompt design story; MCC/F1/BLiMP | — | Chat 5.4 CoLA fully scored (all prompts × both splits); BLiMP pending |
-| Pronoun resolution (EN/AM/IG/ZU) | `pronoun_resolution/testing/` | ✓ | ✓ | **primary** — EN/AM/IG/ZU; low-resource degradation | mostly done |
-| Pronoun resolution (EN/DE/FR/RU) | `srijon-2.0/pronoun_resolution/` | ✓ | ✓ | **primary** — P0–P4 fully scored for both models | **done** |
+| Grammaticality 2.0 (CoLA + BLiMP) | `grammaticality-2.0/` | ✓ | **primary** — prompt design story; MCC/F1/BLiMP | — | CoLA fully scored (all prompts × both splits); BLiMP pending |
+| Pronoun resolution (EN/AM/IG/ZU + EN/DE/FR/RU) | `pronoun_resolution/testing/`, `srijon-2.0/` | ✓ | ✓ | **primary** — 7 languages; low-resource degradation | mostly done |
 | NER | `ner/` | **primary** — novel schemas supervised models can't handle | ✓ | — | **done** — all 4 models fully scored (CoNLL-2003) |
-| Presuppositions | `srijon-2.0/presuppositions/` | ✓ | ✓ | **secondary** — EN/DE/FR/HI/RU/VI | sonnet P0–P1 all 6 langs; chat 5.4 P0 all 6 langs + P2–P3 DE/EN/FR done |
-| Coreference | `coref/` | ✓ | — | — | deprioritized |
-| Lemmatization segmentation | `lemmatization/` | ✓ | ✓ | — | partial — no predictions yet |
 
 **Key:** ✓ = task supports this goal; **primary** = task is the main evidence for this goal; — = not applicable or not a focus.
 
@@ -42,14 +38,12 @@ Each task is selected to illustrate a specific failure mode of existing supervis
 
 | Task | Module | Models scored | SOTA comparison | Key result |
 |------|--------|---------------|-----------------|------------|
-| Lemmatization (args) | `lemmatization/` | chatgpt, gemini, sonnet, opus | spaCy/stanza ~95–99% | sonnet/opus match SOTA (~96–97%) |
+| Lemmatization | `lemmatization/` | chatgpt, gemini, sonnet, opus | spaCy/stanza ~95–99% | sonnet/opus match SOTA (~96–97%) |
 | Grammaticality / CoLA binary | `grammatical/` | chatgpt, gemini, sonnet, opus | human ~80% | sonnet 84%, opus 88%; chatgpt ~49% |
 | POS tagging (in-domain) | `pos/` | chatgpt, gemini, sonnet, opus | spaCy/udpipe ~97–98% | opus 94%; sonnet 85%; chatgpt 81% |
-| Pronoun resolution (EN/AM/IG/ZU) — P0–P4 | `pronoun_resolution/testing/` | sonnet (full EN/AM, partial IG/ZU); chatgpt P0 only; opus P0 EN only | chance = 50% | EN: 87% (P0) → 91% (P1); IG/ZU near chance |
-| Pronoun resolution (EN/DE/FR/RU) — P0–P4 | `srijon-2.0/pronoun_resolution/` | sonnet 4.6 (full), GPT 5.4 (full) | chance = 50% | see table below |
 | Grammaticality 2.0 (CoLA) | `grammaticality-2.0/` | Chat 5.4 | — | direct/anchor/repair ~88–89% acc, MCC 0.73–0.75 in-domain; checklist collapses in-domain but recovers OOD (90% acc, MCC 0.76) |
+| Pronoun resolution (EN/AM/IG/ZU + EN/DE/FR/RU) | `pronoun_resolution/testing/`, `srijon-2.0/` | sonnet 4.6 (7 langs), GPT 5.4 (full EN/DE/FR/RU); partial IG/ZU | chance = 50% | EN: 87–91%; FR/DE/RU: 86–97%; IG/ZU near chance; see table below |
 | NER (CoNLL-2003) | `ner/` | chatgpt, gemini, sonnet, opus | spaCy/stanza F1 ~91% | opus 0.95; gemini 0.93; sonnet 0.92; chatgpt 0.26 (failure — see note below) |
-| Presuppositions (EN/DE/FR/HI/RU/VI) | `srijon-2.0/presuppositions/` | sonnet 4.6 (P0–P1, all 6 langs); chat 5.4 (P0 all 6, P2–P3 DE/EN/FR) | — | sonnet: DE/FR/HI/RU/VI all 83–88% acc (macro-F1 0.82–0.88); EN anomalously low (68–70% acc) due to neutral-class collapse; chat 5.4 similar EN failure (56–61% acc) |
 
 #### Multilingual pronoun resolution — full results (srijon-2.0)
 
@@ -60,7 +54,7 @@ Each task is selected to illustrate a specific failure mode of existing supervis
 | German   | 86–88%                 | 88–89%               |
 | Russian  | 95–97%                 | 90–93%               |
 
-Both models fully scored. Prompt engineering has marginal effect in English; larger effect in lower-resource settings (see Empirical Findings below).
+Both models fully scored. Prompt engineering has marginal effect in English; larger effect in lower-resource settings.
 
 ### Predictions done, scoring incomplete
 
@@ -75,7 +69,6 @@ Both models fully scored. Prompt engineering has marginal effect in English; lar
 | Pronoun resolution (EN/AM/IG/ZU) — Igbo | P2–P4 missing for sonnet; chatgpt only P0 |
 | Pronoun resolution (EN/AM/IG/ZU) — Zulu | P2–P4 missing for sonnet; chatgpt only P0 |
 | Pronoun resolution (EN/AM/IG/ZU) — Opus | only P0 for EN; nothing for AM/IG/ZU |
-| Lemmatization segmentation | mini CSVs exist, zero prediction files (`seg_predictions_*.csv`) |
 
 ### Not started
 
@@ -88,21 +81,19 @@ Both models fully scored. Prompt engineering has marginal effect in English; lar
 
 ## Empirical findings so far
 
-From `heuristics.md` (consolidated lessons from running experiments):
+1. **Chunking matters a lot.** Performance throttling from too-large chunks is hard to detect. Include refusal as an option rather than forcing a label.
 
-1. **Chunking matters a lot.** Performance throttling from too-large chunks is hard to detect. Include refusal as an option rather than forcing a label. Use task-specific validation to distinguish difficulty from chunking artifacts.
+2. **"Think like a linguist" prompts are counterproductive.** Providing explicit linguistic heuristics tends to hurt, not help — LLMs likely find richer patterns than a brief prompt can outline.
 
-2. **"Think like a linguist" prompts are counterproductive.** Providing explicit linguistic heuristics or telling models to reason linguistically tends to hurt, not help. Hypothesis: LLMs find more complex patterns than we can outline in a brief prompt; explicit framing interferes with that.
+3. **Prompt engineering has weaker effect than expected for well-understood tasks.** For English grammaticality and pronoun resolution, a minimal prompt usually outperforms elaborate scaffolding.
 
-3. **Prompt engineering has weaker effect than expected for well-understood tasks.** For English grammaticality, pronoun resolution, etc., a minimal, clear prompt usually outperforms elaborate prompt scaffolding.
-
-4. **The prompt effect is not uniform across languages.** In English, both models are already strong, so prompt changes shift scores marginally. In lower-resource settings (especially Igbo and Zulu in the African WinoGrande experiments), prompt wording matters more — models appear to operate closer to their uncertainty boundary, making small prompt changes move Macro-F1 more dramatically.
+4. **The prompt effect is not uniform across languages.** In lower-resource settings (Igbo, Zulu), prompt wording matters more — models operate closer to their uncertainty boundary.
 
 5. **Training data matters more than architecture** (per recent literature; see `cora-notes/training_data_vs_architecture_papers.docx`).
 
-6. **ChatGPT NER failure is qualitatively distinct from other models.** ChatGPT scored F1 0.26 vs. 0.92–0.95 for all other models. Inspection of `ner/mini/ner_predictions_chatgpt.csv` reveals three failure modes: (a) massive overclassification — pronouns ("We", "He", "It"), common words ("But", "Previously", "Results"), and temporal expressions ("Saturday", "Friday", "August") are all labeled as entities; (b) near-universal PER collapse — locations like "Jamaica", "Poland", "Germany" are labeled PER instead of LOC; (c) full headlines treated as single LOC entities (e.g., "SOCCER -- BELARUS BEAT ESTONIA IN WORLD CUP QUALIFIER" → one LOC span). This yields ~180 false positives per 100-sentence sample. The failure likely reflects the version of ChatGPT used producing a non-conforming output format or simply not following the structured annotation instructions; other models in the same family (GPT 5.4 in pronoun/grammaticality experiments) perform normally.
+6. **ChatGPT NER failure is qualitatively distinct.** F1 0.26 vs. 0.92–0.95 for all other models. Failure modes: massive overclassification of common words/pronouns, near-universal PER collapse for locations, and full headlines treated as single LOC spans. Likely a prompt-conformance failure specific to that model version.
 
-7. **Presuppositions: "Neutral" (N) label collapses for English in both models.** Sonnet and chat 5.4 both score EN presuppositions ~10–20 pp below all other languages. Inspection of class-level recall shows neutral (N) recall near 0.06–0.12 for EN vs. 0.60–0.73 for other languages — the model consistently misclassifies N as E (entailment). Entailment and contradiction are handled well (recall ~1.0). This is likely a dataset artifact: the English XNLI examples may have subtler neutrals than the translated versions, or the model's English NLI priors are over-confident on entailment.
+7. **Presuppositions: "Neutral" label collapses for English in both models.** EN scores ~10–20 pp below all other languages; neutral recall near 0.06–0.12 vs. 0.60–0.73 for other languages. Likely a dataset artifact — EN XNLI neutrals may be subtler than translated versions.
 
 ---
 
@@ -116,8 +107,6 @@ From `heuristics.md` (consolidated lessons from running experiments):
 - Sonnet: IG P2–P4, ZU P2–P4
 - ChatGPT: all languages P1–P4
 - Opus: AM/IG/ZU P0 at minimum
-
-**Lemmatization segmentation** — send `seg_input.csv` to each model, save `seg_predictions_<model>.csv`, run `python lemmatization/scripts/score_baseline.py --model <model>`
 
 **POS out-of-domain** — run existing models on an out-of-domain source. This is the clearest head-to-head: SOTA degrades ~4–5% OOD; LLM should hold or degrade less.
 
@@ -183,14 +172,12 @@ The through-line for the paper: each task is chosen to illustrate a different fa
 
 - **Presupposition** — sparse literature (~20 papers), risky positioning. Sonnet P0–P1 all 6 languages + chat 5.4 P0–P3 for DE/EN/FR now done; only pursue further if another task is dropped
 - **Coreference** — requires training to be competitive; deprioritize
-- **Lemmatization segmentation** — worth running for completeness but not a primary contribution
+- **Lemmatization segmentation** — no longer a primary contribution; fading from scope
 
 ---
 
 ## Open decisions
 
-- [x] ~~Confirm NER datasets~~ — using CoNLL-2003 (`eng.testa`) for standard baseline; novel-schema (agency) experiment still pending
-- [x] ~~Confirm which models to run NER on~~ — all 4 models scored (chatgpt, gemini, sonnet, opus)
 - [ ] Decide whether to rerun NER with ChatGPT using a corrected prompt (current results are anomalous — see Empirical Finding 6)
 - [ ] Decide strict vs. relaxed span match for NER novel-schema experiment and document rationale
 - [ ] Decide whether to include gradient grammaticality judgments (Pearson/Spearman with BLiMP) or keep binary-only
