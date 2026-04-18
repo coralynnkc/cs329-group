@@ -38,12 +38,12 @@ Each task is selected to illustrate a specific failure mode of existing supervis
 
 | Task | Module | Models scored | SOTA comparison | Key result |
 |------|--------|---------------|-----------------|------------|
-| Lemmatization | `lemmatization/` | chatgpt, gemini, sonnet, opus | spaCy/stanza ~95–99% | sonnet/opus match SOTA (~96–97%) |
-| Grammaticality / CoLA binary | `grammatical/` | chatgpt, gemini, sonnet, opus | human ~80% | sonnet 84%, opus 88%; chatgpt ~49% |
-| POS tagging (in-domain) | `pos/` | chatgpt, gemini, sonnet, opus | spaCy/udpipe ~97–98% | opus 94%; sonnet 85%; chatgpt 81% |
+| Lemmatization | `lemmatization/` | Chat 5.4, Gemini 3, Sonnet 4.6, Opus 4.6 | spaCy/stanza ~95–99% | sonnet/opus match SOTA (~96–97%) |
+| Grammaticality / CoLA binary | `grammatical/` | Chat 5.4, Gemini 3, Sonnet 4.6, Opus 4.6 | human ~80% | sonnet 84%, opus 88%; chatgpt ~49% |
+| POS tagging (in-domain) | `pos/` | Chat 5.4, Gemini 3, Sonnet 4.6, Opus 4.6 | spaCy/udpipe ~97–98% | opus 94%; sonnet 85%; chatgpt 81% |
 | Grammaticality 2.0 (CoLA) | `grammaticality-2.0/` | Chat 5.4 | — | direct/anchor/repair ~88–89% acc, MCC 0.73–0.75 in-domain; checklist collapses in-domain but recovers OOD (90% acc, MCC 0.76) |
 | Pronoun resolution (EN/AM/IG/ZU + EN/DE/FR/RU) | `pronoun_resolution/testing/`, `srijon-2.0/` | sonnet 4.6 (7 langs), GPT 5.4 (full EN/DE/FR/RU); partial IG/ZU | chance = 50% | EN: 87–91%; FR/DE/RU: 86–97%; IG/ZU near chance; see table below |
-| NER (CoNLL-2003) | `ner/` | chatgpt, gemini, sonnet, opus | spaCy/stanza F1 ~91% | opus 0.95; gemini 0.93; sonnet 0.92; chatgpt 0.26 (failure — see note below) |
+| NER (CoNLL-2003) | `ner/` | Chat 5.4, Gemini 3, Sonnet 4.6, Opus 4.6 | spaCy/stanza F1 ~91% | opus 0.95; gemini 0.93; sonnet 0.92; chatgpt 0.26 (failure — see note below) |
 
 #### Multilingual pronoun resolution — full results (srijon-2.0)
 
@@ -172,7 +172,6 @@ The through-line for the paper: each task is chosen to illustrate a different fa
 
 - **Presupposition** — sparse literature (~20 papers), risky positioning. Sonnet P0–P1 all 6 languages + chat 5.4 P0–P3 for DE/EN/FR now done; only pursue further if another task is dropped
 - **Coreference** — requires training to be competitive; deprioritize
-- **Lemmatization segmentation** — no longer a primary contribution; fading from scope
 
 ---
 
