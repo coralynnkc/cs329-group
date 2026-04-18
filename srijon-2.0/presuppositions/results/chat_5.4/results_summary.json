@@ -1,0 +1,661 @@
+{
+  "summary": {
+    "total_files_processed": 6,
+    "successful": 6,
+    "failed": 0
+  },
+  "results": {
+    "chat_5.4_dev_de_p0.csv": {
+      "gold_file": "de_sample100_full.csv",
+      "pred_file": "chat_5.4_dev_de_p0.csv",
+      "data_size": 100,
+      "prediction_rows_raw": 100,
+      "prediction_rows_after_dedup": 100,
+      "correct": 79,
+      "accuracy": 0.79,
+      "missing_predictions": 7,
+      "missing_rate": 0.07,
+      "invalid_predictions": 0,
+      "invalid_rate": 0.0,
+      "duplicate_prediction_rows": 0,
+      "extra_prediction_ids": 7,
+      "extra_prediction_id_examples": [
+        "ps_de_002562",
+        "ps_de_002575",
+        "ps_de_002603",
+        "ps_de_002618",
+        "ps_de_002628",
+        "ps_de_002677",
+        "ps_de_002709"
+      ],
+      "missing_prediction_id_examples": [
+        "ps_de_002664",
+        "ps_de_002669",
+        "ps_de_002687",
+        "ps_de_002754",
+        "ps_de_002796",
+        "ps_de_002801",
+        "ps_de_002825"
+      ],
+      "coverage": 0.93,
+      "valid_prediction_rate": 0.93,
+      "scored_rows_for_probability_metrics": 93,
+      "macro_f1": 0.8161,
+      "log_loss": 0.4574,
+      "multiclass_brier_score": 0.2431,
+      "precision_E": 0.8286,
+      "recall_E": 0.8788,
+      "f1_E": 0.8529,
+      "precision_N": 0.9167,
+      "recall_N": 0.6667,
+      "f1_N": 0.7719,
+      "precision_C": 0.8235,
+      "recall_C": 0.8235,
+      "f1_C": 0.8235,
+      "class_metrics": {
+        "E": {
+          "tp": 29,
+          "fp": 6,
+          "fn": 4,
+          "support": 33,
+          "precision": 0.8286,
+          "recall": 0.8788,
+          "f1": 0.8529
+        },
+        "N": {
+          "tp": 22,
+          "fp": 2,
+          "fn": 11,
+          "support": 33,
+          "precision": 0.9167,
+          "recall": 0.6667,
+          "f1": 0.7719
+        },
+        "C": {
+          "tp": 28,
+          "fp": 6,
+          "fn": 6,
+          "support": 34,
+          "precision": 0.8235,
+          "recall": 0.8235,
+          "f1": 0.8235
+        }
+      },
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 32,
+          "avg_e_probability": 0.7884,
+          "avg_n_probability": 0.1191,
+          "avg_c_probability": 0.0925
+        },
+        "N": {
+          "count": 31,
+          "avg_e_probability": 0.1781,
+          "avg_n_probability": 0.6961,
+          "avg_c_probability": 0.1258
+        },
+        "C": {
+          "count": 30,
+          "avg_e_probability": 0.007,
+          "avg_n_probability": 0.0923,
+          "avg_c_probability": 0.9007
+        }
+      },
+      "centroid_diagnostics": {
+        "centroid_method": "within-run class centroids computed from valid probability rows",
+        "centroid_note": "Measures how tightly each gold class clusters in probability space and whether an item sits closest to the centroid of its own gold class. Useful as a descriptive geometry/separability diagnostic, but not a substitute for accuracy, F1, log loss, or Brier score.",
+        "nearest_centroid_accuracy": 0.8495,
+        "avg_distance_to_gold_centroid": 0.2938,
+        "avg_distance_to_predicted_centroid": 0.1807,
+        "avg_margin_gold_vs_best_other": 0.5948,
+        "centroid_confusion": {
+          "E": {
+            "E": 29,
+            "N": 0,
+            "C": 3
+          },
+          "N": {
+            "E": 6,
+            "N": 22,
+            "C": 3
+          },
+          "C": {
+            "E": 0,
+            "N": 2,
+            "C": 28
+          }
+        }
+      }
+    },
+    "chat_5.4_dev_en_p0.csv": {
+      "gold_file": "en_sample100_full.csv",
+      "pred_file": "chat_5.4_dev_en_p0.csv",
+      "data_size": 100,
+      "prediction_rows_raw": 100,
+      "prediction_rows_after_dedup": 100,
+      "correct": 56,
+      "accuracy": 0.56,
+      "missing_predictions": 0,
+      "missing_rate": 0.0,
+      "invalid_predictions": 0,
+      "invalid_rate": 0.0,
+      "duplicate_prediction_rows": 0,
+      "extra_prediction_ids": 0,
+      "extra_prediction_id_examples": [],
+      "missing_prediction_id_examples": [],
+      "coverage": 1.0,
+      "valid_prediction_rate": 1.0,
+      "scored_rows_for_probability_metrics": 100,
+      "macro_f1": 0.5121,
+      "log_loss": 0.9572,
+      "multiclass_brier_score": 0.6459,
+      "precision_E": 0.541,
+      "recall_E": 1.0,
+      "f1_E": 0.7021,
+      "precision_N": 0.1875,
+      "recall_N": 0.0882,
+      "f1_N": 0.12,
+      "precision_C": 0.8696,
+      "recall_C": 0.6061,
+      "f1_C": 0.7143,
+      "class_metrics": {
+        "E": {
+          "tp": 33,
+          "fp": 28,
+          "fn": 0,
+          "support": 33,
+          "precision": 0.541,
+          "recall": 1.0,
+          "f1": 0.7021
+        },
+        "N": {
+          "tp": 3,
+          "fp": 13,
+          "fn": 31,
+          "support": 34,
+          "precision": 0.1875,
+          "recall": 0.0882,
+          "f1": 0.12
+        },
+        "C": {
+          "tp": 20,
+          "fp": 3,
+          "fn": 13,
+          "support": 33,
+          "precision": 0.8696,
+          "recall": 0.6061,
+          "f1": 0.7143
+        }
+      },
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.8158,
+          "avg_n_probability": 0.1721,
+          "avg_c_probability": 0.0121
+        },
+        "N": {
+          "count": 34,
+          "avg_e_probability": 0.6688,
+          "avg_n_probability": 0.2635,
+          "avg_c_probability": 0.0676
+        },
+        "C": {
+          "count": 33,
+          "avg_e_probability": 0.0512,
+          "avg_n_probability": 0.4533,
+          "avg_c_probability": 0.4955
+        }
+      },
+      "centroid_diagnostics": {
+        "centroid_method": "within-run class centroids computed from valid probability rows",
+        "centroid_note": "Measures how tightly each gold class clusters in probability space and whether an item sits closest to the centroid of its own gold class. Useful as a descriptive geometry/separability diagnostic, but not a substitute for accuracy, F1, log loss, or Brier score.",
+        "nearest_centroid_accuracy": 0.7,
+        "avg_distance_to_gold_centroid": 0.2667,
+        "avg_distance_to_predicted_centroid": 0.2067,
+        "avg_margin_gold_vs_best_other": 0.1392,
+        "centroid_confusion": {
+          "E": {
+            "E": 32,
+            "N": 1,
+            "C": 0
+          },
+          "N": {
+            "E": 23,
+            "N": 5,
+            "C": 6
+          },
+          "C": {
+            "E": 0,
+            "N": 0,
+            "C": 33
+          }
+        }
+      }
+    },
+    "chat_5.4_dev_fr_p0.csv": {
+      "gold_file": "fr_sample100_full.csv",
+      "pred_file": "chat_5.4_dev_fr_p0.csv",
+      "data_size": 100,
+      "prediction_rows_raw": 100,
+      "prediction_rows_after_dedup": 100,
+      "correct": 85,
+      "accuracy": 0.85,
+      "missing_predictions": 0,
+      "missing_rate": 0.0,
+      "invalid_predictions": 0,
+      "invalid_rate": 0.0,
+      "duplicate_prediction_rows": 0,
+      "extra_prediction_ids": 0,
+      "extra_prediction_id_examples": [],
+      "missing_prediction_id_examples": [],
+      "coverage": 1.0,
+      "valid_prediction_rate": 1.0,
+      "scored_rows_for_probability_metrics": 100,
+      "macro_f1": 0.8487,
+      "log_loss": 0.4474,
+      "multiclass_brier_score": 0.2405,
+      "precision_E": 0.8571,
+      "recall_E": 0.9091,
+      "f1_E": 0.8824,
+      "precision_N": 0.8065,
+      "recall_N": 0.7576,
+      "f1_N": 0.7812,
+      "precision_C": 0.8824,
+      "recall_C": 0.8824,
+      "f1_C": 0.8824,
+      "class_metrics": {
+        "E": {
+          "tp": 30,
+          "fp": 5,
+          "fn": 3,
+          "support": 33,
+          "precision": 0.8571,
+          "recall": 0.9091,
+          "f1": 0.8824
+        },
+        "N": {
+          "tp": 25,
+          "fp": 6,
+          "fn": 8,
+          "support": 33,
+          "precision": 0.8065,
+          "recall": 0.7576,
+          "f1": 0.7812
+        },
+        "C": {
+          "tp": 30,
+          "fp": 4,
+          "fn": 4,
+          "support": 34,
+          "precision": 0.8824,
+          "recall": 0.8824,
+          "f1": 0.8824
+        }
+      },
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.8306,
+          "avg_n_probability": 0.1206,
+          "avg_c_probability": 0.0488
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.1821,
+          "avg_n_probability": 0.6924,
+          "avg_c_probability": 0.1255
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0206,
+          "avg_n_probability": 0.1326,
+          "avg_c_probability": 0.8468
+        }
+      },
+      "centroid_diagnostics": {
+        "centroid_method": "within-run class centroids computed from valid probability rows",
+        "centroid_note": "Measures how tightly each gold class clusters in probability space and whether an item sits closest to the centroid of its own gold class. Useful as a descriptive geometry/separability diagnostic, but not a substitute for accuracy, F1, log loss, or Brier score.",
+        "nearest_centroid_accuracy": 0.85,
+        "avg_distance_to_gold_centroid": 0.2825,
+        "avg_distance_to_predicted_centroid": 0.1667,
+        "avg_margin_gold_vs_best_other": 0.6101,
+        "centroid_confusion": {
+          "E": {
+            "E": 30,
+            "N": 2,
+            "C": 1
+          },
+          "N": {
+            "E": 5,
+            "N": 25,
+            "C": 3
+          },
+          "C": {
+            "E": 0,
+            "N": 4,
+            "C": 30
+          }
+        }
+      }
+    },
+    "chat_5.4_dev_hi_p0.csv": {
+      "gold_file": "hi_sample100_full.csv",
+      "pred_file": "chat_5.4_dev_hi_p0.csv",
+      "data_size": 100,
+      "prediction_rows_raw": 100,
+      "prediction_rows_after_dedup": 100,
+      "correct": 75,
+      "accuracy": 0.75,
+      "missing_predictions": 0,
+      "missing_rate": 0.0,
+      "invalid_predictions": 0,
+      "invalid_rate": 0.0,
+      "duplicate_prediction_rows": 0,
+      "extra_prediction_ids": 0,
+      "extra_prediction_id_examples": [],
+      "missing_prediction_id_examples": [],
+      "coverage": 1.0,
+      "valid_prediction_rate": 1.0,
+      "scored_rows_for_probability_metrics": 100,
+      "macro_f1": 0.7509,
+      "log_loss": 0.687,
+      "multiclass_brier_score": 0.375,
+      "precision_E": 0.8333,
+      "recall_E": 0.7576,
+      "f1_E": 0.7937,
+      "precision_N": 0.6571,
+      "recall_N": 0.697,
+      "f1_N": 0.6765,
+      "precision_C": 0.7714,
+      "recall_C": 0.7941,
+      "f1_C": 0.7826,
+      "class_metrics": {
+        "E": {
+          "tp": 25,
+          "fp": 5,
+          "fn": 8,
+          "support": 33,
+          "precision": 0.8333,
+          "recall": 0.7576,
+          "f1": 0.7937
+        },
+        "N": {
+          "tp": 23,
+          "fp": 12,
+          "fn": 10,
+          "support": 33,
+          "precision": 0.6571,
+          "recall": 0.697,
+          "f1": 0.6765
+        },
+        "C": {
+          "tp": 27,
+          "fp": 8,
+          "fn": 7,
+          "support": 34,
+          "precision": 0.7714,
+          "recall": 0.7941,
+          "f1": 0.7826
+        }
+      },
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.7155,
+          "avg_n_probability": 0.1997,
+          "avg_c_probability": 0.0848
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.2033,
+          "avg_n_probability": 0.6452,
+          "avg_c_probability": 0.1515
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0312,
+          "avg_n_probability": 0.2265,
+          "avg_c_probability": 0.7424
+        }
+      },
+      "centroid_diagnostics": {
+        "centroid_method": "within-run class centroids computed from valid probability rows",
+        "centroid_note": "Measures how tightly each gold class clusters in probability space and whether an item sits closest to the centroid of its own gold class. Useful as a descriptive geometry/separability diagnostic, but not a substitute for accuracy, F1, log loss, or Brier score.",
+        "nearest_centroid_accuracy": 0.75,
+        "avg_distance_to_gold_centroid": 0.3936,
+        "avg_distance_to_predicted_centroid": 0.2374,
+        "avg_margin_gold_vs_best_other": 0.3474,
+        "centroid_confusion": {
+          "E": {
+            "E": 25,
+            "N": 5,
+            "C": 3
+          },
+          "N": {
+            "E": 5,
+            "N": 23,
+            "C": 5
+          },
+          "C": {
+            "E": 0,
+            "N": 7,
+            "C": 27
+          }
+        }
+      }
+    },
+    "chat_5.4_dev_ru_p0.csv": {
+      "gold_file": "ru_sample100_full.csv",
+      "pred_file": "chat_5.4_dev_ru_p0.csv",
+      "data_size": 100,
+      "prediction_rows_raw": 100,
+      "prediction_rows_after_dedup": 100,
+      "correct": 79,
+      "accuracy": 0.79,
+      "missing_predictions": 0,
+      "missing_rate": 0.0,
+      "invalid_predictions": 0,
+      "invalid_rate": 0.0,
+      "duplicate_prediction_rows": 0,
+      "extra_prediction_ids": 0,
+      "extra_prediction_id_examples": [],
+      "missing_prediction_id_examples": [],
+      "coverage": 1.0,
+      "valid_prediction_rate": 1.0,
+      "scored_rows_for_probability_metrics": 100,
+      "macro_f1": 0.7884,
+      "log_loss": 1.5391,
+      "multiclass_brier_score": 0.3382,
+      "precision_E": 0.8,
+      "recall_E": 0.7273,
+      "f1_E": 0.7619,
+      "precision_N": 0.7353,
+      "recall_N": 0.7576,
+      "f1_N": 0.7463,
+      "precision_C": 0.8333,
+      "recall_C": 0.8824,
+      "f1_C": 0.8571,
+      "class_metrics": {
+        "E": {
+          "tp": 24,
+          "fp": 6,
+          "fn": 9,
+          "support": 33,
+          "precision": 0.8,
+          "recall": 0.7273,
+          "f1": 0.7619
+        },
+        "N": {
+          "tp": 25,
+          "fp": 9,
+          "fn": 8,
+          "support": 33,
+          "precision": 0.7353,
+          "recall": 0.7576,
+          "f1": 0.7463
+        },
+        "C": {
+          "tp": 30,
+          "fp": 6,
+          "fn": 4,
+          "support": 34,
+          "precision": 0.8333,
+          "recall": 0.8824,
+          "f1": 0.8571
+        }
+      },
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.6879,
+          "avg_n_probability": 0.2121,
+          "avg_c_probability": 0.1
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.1527,
+          "avg_n_probability": 0.7288,
+          "avg_c_probability": 0.1185
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0238,
+          "avg_n_probability": 0.1056,
+          "avg_c_probability": 0.8706
+        }
+      },
+      "centroid_diagnostics": {
+        "centroid_method": "within-run class centroids computed from valid probability rows",
+        "centroid_note": "Measures how tightly each gold class clusters in probability space and whether an item sits closest to the centroid of its own gold class. Useful as a descriptive geometry/separability diagnostic, but not a substitute for accuracy, F1, log loss, or Brier score.",
+        "nearest_centroid_accuracy": 0.79,
+        "avg_distance_to_gold_centroid": 0.3727,
+        "avg_distance_to_predicted_centroid": 0.2159,
+        "avg_margin_gold_vs_best_other": 0.4864,
+        "centroid_confusion": {
+          "E": {
+            "E": 24,
+            "N": 6,
+            "C": 3
+          },
+          "N": {
+            "E": 5,
+            "N": 25,
+            "C": 3
+          },
+          "C": {
+            "E": 1,
+            "N": 3,
+            "C": 30
+          }
+        }
+      }
+    },
+    "chat_5.4_dev_vi_p0.csv": {
+      "gold_file": "vi_sample100_full.csv",
+      "pred_file": "chat_5.4_dev_vi_p0.csv",
+      "data_size": 100,
+      "prediction_rows_raw": 100,
+      "prediction_rows_after_dedup": 100,
+      "correct": 78,
+      "accuracy": 0.78,
+      "missing_predictions": 0,
+      "missing_rate": 0.0,
+      "invalid_predictions": 0,
+      "invalid_rate": 0.0,
+      "duplicate_prediction_rows": 0,
+      "extra_prediction_ids": 0,
+      "extra_prediction_id_examples": [],
+      "missing_prediction_id_examples": [],
+      "coverage": 1.0,
+      "valid_prediction_rate": 1.0,
+      "scored_rows_for_probability_metrics": 100,
+      "macro_f1": 0.7831,
+      "log_loss": 0.5221,
+      "multiclass_brier_score": 0.2986,
+      "precision_E": 0.8,
+      "recall_E": 0.7273,
+      "f1_E": 0.7619,
+      "precision_N": 0.65,
+      "recall_N": 0.7879,
+      "f1_N": 0.7123,
+      "precision_C": 0.9333,
+      "recall_C": 0.8235,
+      "f1_C": 0.875,
+      "class_metrics": {
+        "E": {
+          "tp": 24,
+          "fp": 6,
+          "fn": 9,
+          "support": 33,
+          "precision": 0.8,
+          "recall": 0.7273,
+          "f1": 0.7619
+        },
+        "N": {
+          "tp": 26,
+          "fp": 14,
+          "fn": 7,
+          "support": 33,
+          "precision": 0.65,
+          "recall": 0.7879,
+          "f1": 0.7123
+        },
+        "C": {
+          "tp": 28,
+          "fp": 2,
+          "fn": 6,
+          "support": 34,
+          "precision": 0.9333,
+          "recall": 0.8235,
+          "f1": 0.875
+        }
+      },
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.7052,
+          "avg_n_probability": 0.2164,
+          "avg_c_probability": 0.0785
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.2161,
+          "avg_n_probability": 0.6885,
+          "avg_c_probability": 0.0955
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0332,
+          "avg_n_probability": 0.1632,
+          "avg_c_probability": 0.8035
+        }
+      },
+      "centroid_diagnostics": {
+        "centroid_method": "within-run class centroids computed from valid probability rows",
+        "centroid_note": "Measures how tightly each gold class clusters in probability space and whether an item sits closest to the centroid of its own gold class. Useful as a descriptive geometry/separability diagnostic, but not a substitute for accuracy, F1, log loss, or Brier score.",
+        "nearest_centroid_accuracy": 0.78,
+        "avg_distance_to_gold_centroid": 0.3404,
+        "avg_distance_to_predicted_centroid": 0.2031,
+        "avg_margin_gold_vs_best_other": 0.4398,
+        "centroid_confusion": {
+          "E": {
+            "E": 24,
+            "N": 8,
+            "C": 1
+          },
+          "N": {
+            "E": 6,
+            "N": 26,
+            "C": 1
+          },
+          "C": {
+            "E": 0,
+            "N": 6,
+            "C": 28
+          }
+        }
+      }
+    }
+  }
+}

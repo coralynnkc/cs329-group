@@ -6,7 +6,6 @@ import io
 import json
 import math
 import re
-from collections import defaultdict
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
@@ -55,17 +54,15 @@ def parse_regular_csv(path: Path) -> List[Dict[str, str]]:
             raise ValueError(f"{path.name} has no header row")
         rows = []
         for row in reader:
-            normalized = {normalize_header(k): (v.strip() if isinstance(v, str) else v) for k, v in row.items()}
+            normalized = {
+                normalize_header(k): (v.strip() if isinstance(v, str) else v)
+                for k, v in row.items()
+            }
             rows.append(normalized)
         return rows
 
 
 def parse_quoted_csv(path: Path) -> List[Dict[str, str]]:
-    """
-    Handles files like:
-    "item_id,e_probability,n_probability,c_probability"
-    "ps_hi_0001,0.8,0.1,0.1"
-    """
     raw = path.read_text(encoding="utf-8-sig").strip()
     lines = raw.splitlines()
     cleaned = []
@@ -81,7 +78,10 @@ def parse_quoted_csv(path: Path) -> List[Dict[str, str]]:
         raise ValueError(f"{path.name} has no header row")
     rows = []
     for row in reader:
-        normalized = {normalize_header(k): (v.strip() if isinstance(v, str) else v) for k, v in row.items()}
+        normalized = {
+            normalize_header(k): (v.strip() if isinstance(v, str) else v)
+            for k, v in row.items()
+        }
         rows.append(normalized)
     return rows
 
@@ -251,6 +251,113 @@ def compute_multiclass_brier_score(rows: List[Dict[str, object]]) -> Optional[fl
     return sum(row_scores) / len(row_scores)
 
 
+def compute_centroids(rows: List[Dict[str, object]]) -> Dict[str, Dict[str, Optional[float]]]:
+    by_gold = {}
+    for label in GOLD_LABELS:
+        subset = [row for row in rows if row["gold_label"] == label]
+        if not subset:
+            by_gold[label] = {
+                "count": 0,
+                "avg_e_probability": None,
+                "avg_n_probability": None,
+                "avg_c_probability": None,
+            }
+            continue
+
+        by_gold[label] = {
+            "count": len(subset),
+            "avg_e_probability": sum(float(row["e_probability"]) for row in subset) / len(subset),
+            "avg_n_probability": sum(float(row["n_probability"]) for row in subset) / len(subset),
+            "avg_c_probability": sum(float(row["c_probability"]) for row in subset) / len(subset),
+        }
+    return by_gold
+
+
+def vector_from_row(row: Dict[str, object]) -> Tuple[float, float, float]:
+    return (
+        float(row["e_probability"]),
+        float(row["n_probability"]),
+        float(row["c_probability"]),
+    )
+
+
+def vector_from_centroid(centroid: Dict[str, Optional[float]]) -> Optional[Tuple[float, float, float]]:
+    if centroid["avg_e_probability"] is None:
+        return None
+    return (
+        float(centroid["avg_e_probability"]),
+        float(centroid["avg_n_probability"]),
+        float(centroid["avg_c_probability"]),
+    )
+
+
+def euclidean_distance(a: Tuple[float, float, float], b: Tuple[float, float, float]) -> float:
+    return math.sqrt(sum((x - y) ** 2 for x, y in zip(a, b)))
+
+
+def compute_centroid_diagnostics(rows: List[Dict[str, object]]) -> Dict[str, object]:
+    if not rows:
+        return {
+            "centroid_method": "within-run class centroids computed from valid probability rows",
+            "centroid_note": "Descriptive diagnostic of cluster structure, not a primary evaluation metric.",
+            "nearest_centroid_accuracy": None,
+            "avg_distance_to_gold_centroid": None,
+            "avg_distance_to_predicted_centroid": None,
+            "avg_margin_gold_vs_best_other": None,
+            "centroid_confusion": {},
+        }
+
+    centroids = compute_centroids(rows)
+    centroid_vectors = {
+        label: vector_from_centroid(centroid)
+        for label, centroid in centroids.items()
+    }
+
+    confusion = {gold: {pred: 0 for pred in GOLD_LABELS} for gold in GOLD_LABELS}
+    nearest_correct = 0
+    distances_to_gold = []
+    distances_to_nearest = []
+    margins = []
+
+    for row in rows:
+        row_vec = vector_from_row(row)
+        dists = {}
+        for label in GOLD_LABELS:
+            centroid_vec = centroid_vectors[label]
+            if centroid_vec is None:
+                continue
+            dists[label] = euclidean_distance(row_vec, centroid_vec)
+
+        if not dists:
+            continue
+
+        nearest_label = min(dists, key=dists.get)
+        gold_label = row["gold_label"]
+        confusion[gold_label][nearest_label] += 1
+        if nearest_label == gold_label:
+            nearest_correct += 1
+
+        gold_dist = dists[gold_label]
+        best_other = min(dist for label, dist in dists.items() if label != gold_label)
+        distances_to_gold.append(gold_dist)
+        distances_to_nearest.append(dists[nearest_label])
+        margins.append(best_other - gold_dist)
+
+    return {
+        "centroid_method": "within-run class centroids computed from valid probability rows",
+        "centroid_note": (
+            "Measures how tightly each gold class clusters in probability space and whether an item sits closest "
+            "to the centroid of its own gold class. Useful as a descriptive geometry/separability diagnostic, "
+            "but not a substitute for accuracy, F1, log loss, or Brier score."
+        ),
+        "nearest_centroid_accuracy": safe_div(nearest_correct, len(rows)),
+        "avg_distance_to_gold_centroid": sum(distances_to_gold) / len(distances_to_gold) if distances_to_gold else None,
+        "avg_distance_to_predicted_centroid": sum(distances_to_nearest) / len(distances_to_nearest) if distances_to_nearest else None,
+        "avg_margin_gold_vs_best_other": sum(margins) / len(margins) if margins else None,
+        "centroid_confusion": confusion,
+    }
+
+
 def merge_gold_and_pred(gold_rows: List[Dict[str, str]], pred_rows: List[Dict[str, str]]) -> List[Dict[str, object]]:
     pred_map = {}
     for row in pred_rows:
@@ -279,6 +386,7 @@ def score_pair(gold_path: Path, pred_path: Path) -> dict:
     gold_ids = {row["item_id"] for row in gold_rows}
     pred_ids = {str(row.get("item_id", "")).strip() for row in pred_rows_after_dedup}
     extra_prediction_ids = sorted(pred_ids - gold_ids)
+    missing_prediction_ids = sorted(gold_ids - pred_ids)
 
     merged = merge_gold_and_pred(gold_rows, pred_rows_after_dedup)
 
@@ -308,24 +416,27 @@ def score_pair(gold_path: Path, pred_path: Path) -> dict:
     log_loss = compute_multiclass_log_loss(scored_rows)
     multiclass_brier = compute_multiclass_brier_score(scored_rows)
 
-    by_gold = {}
-    for label in GOLD_LABELS:
-        subset = [row for row in scored_rows if row["gold_label"] == label]
-        if not subset:
-            by_gold[label] = {
-                "count": 0,
-                "avg_e_probability": None,
-                "avg_n_probability": None,
-                "avg_c_probability": None,
-            }
-            continue
-
-        by_gold[label] = {
-            "count": len(subset),
-            "avg_e_probability": round_or_none(sum(row["e_probability"] for row in subset) / len(subset)),
-            "avg_n_probability": round_or_none(sum(row["n_probability"] for row in subset) / len(subset)),
-            "avg_c_probability": round_or_none(sum(row["c_probability"] for row in subset) / len(subset)),
+    by_gold_raw = compute_centroids(scored_rows)
+    by_gold = {
+        label: {
+            "count": stats["count"],
+            "avg_e_probability": round_or_none(stats["avg_e_probability"]),
+            "avg_n_probability": round_or_none(stats["avg_n_probability"]),
+            "avg_c_probability": round_or_none(stats["avg_c_probability"]),
         }
+        for label, stats in by_gold_raw.items()
+    }
+
+    centroid_diag_raw = compute_centroid_diagnostics(scored_rows)
+    centroid_diag = {
+        "centroid_method": centroid_diag_raw["centroid_method"],
+        "centroid_note": centroid_diag_raw["centroid_note"],
+        "nearest_centroid_accuracy": round_or_none(centroid_diag_raw["nearest_centroid_accuracy"]),
+        "avg_distance_to_gold_centroid": round_or_none(centroid_diag_raw["avg_distance_to_gold_centroid"]),
+        "avg_distance_to_predicted_centroid": round_or_none(centroid_diag_raw["avg_distance_to_predicted_centroid"]),
+        "avg_margin_gold_vs_best_other": round_or_none(centroid_diag_raw["avg_margin_gold_vs_best_other"]),
+        "centroid_confusion": centroid_diag_raw["centroid_confusion"],
+    }
 
     return {
         "gold_file": gold_path.name,
@@ -341,6 +452,8 @@ def score_pair(gold_path: Path, pred_path: Path) -> dict:
         "invalid_rate": round_or_none(invalid_rate),
         "duplicate_prediction_rows": duplicate_prediction_rows,
         "extra_prediction_ids": len(extra_prediction_ids),
+        "extra_prediction_id_examples": extra_prediction_ids[:10],
+        "missing_prediction_id_examples": missing_prediction_ids[:10],
         "coverage": round_or_none(coverage),
         "valid_prediction_rate": round_or_none(valid_prediction_rate),
         "scored_rows_for_probability_metrics": len(scored_rows),
@@ -369,51 +482,109 @@ def score_pair(gold_path: Path, pred_path: Path) -> dict:
             for label in GOLD_LABELS
         },
         "avg_probabilities_by_gold_label": by_gold,
+        "centroid_diagnostics": centroid_diag,
     }
+
+
+def choose_gold_file_for_language(presup_dir: Path, lang: str) -> Path:
+    full_dir = presup_dir / lang / "full"
+    if not full_dir.exists():
+        raise ValueError(f"Missing expected gold directory: {full_dir}")
+
+    gold_files = sorted(full_dir.glob("*.csv"))
+    if not gold_files:
+        raise ValueError(f"No gold CSV files found in {full_dir}")
+
+    exact_candidates = [p for p in gold_files if p.name.lower() == f"{lang}_sample100_full.csv"]
+    if len(exact_candidates) == 1:
+        return exact_candidates[0]
+    if len(exact_candidates) > 1:
+        raise ValueError(f"Multiple exact gold matches found for language {lang}: {[p.name for p in exact_candidates]}")
+
+    preferred = [p for p in gold_files if "sample100" in p.name.lower() and "full" in p.name.lower()]
+    if len(preferred) == 1:
+        return preferred[0]
+    if len(preferred) > 1:
+        raise ValueError(
+            f"Ambiguous gold file for language {lang}. Multiple sample100/full candidates found: "
+            f"{[p.name for p in preferred]}"
+        )
+
+    full_candidates = [p for p in gold_files if "full" in p.name.lower()]
+    if len(full_candidates) == 1:
+        return full_candidates[0]
+    if len(full_candidates) > 1:
+        raise ValueError(
+            f"Ambiguous gold file for language {lang}. Multiple full candidates found: "
+            f"{[p.name for p in full_candidates]}"
+        )
+
+    raise ValueError(
+        f"Could not determine a single gold file for language {lang}. Found: {[p.name for p in gold_files]}"
+    )
+
+
+def validate_prediction_file_language(pred_file: Path, lang: str) -> None:
+    detected = extract_language_code(pred_file.name)
+    if detected != lang:
+        raise ValueError(
+            f"Prediction file {pred_file.name} does not cleanly match expected language {lang!r}; "
+            f"detected {detected!r}."
+        )
 
 
 def find_matching_files(presup_dir: Path, results_dir: Path) -> List[Tuple[Path, Path, str]]:
     matches = []
+    pred_files = sorted(results_dir.glob("*.csv"))
 
-    gold_by_lang: Dict[str, List[Path]] = {}
-    for lang in LANGUAGES:
-        full_dir = presup_dir / lang / "full"
-        if not full_dir.exists():
-            continue
-        gold_files = list(full_dir.glob("*.csv"))
-        if gold_files:
-            gold_by_lang[lang] = gold_files
+    if not pred_files:
+        raise ValueError(f"No prediction CSV files found in {results_dir}")
 
-    results_by_lang: Dict[str, List[Path]] = {}
-    for pred_file in results_dir.glob("*.csv"):
+    for pred_file in pred_files:
         lang = extract_language_code(pred_file.name)
-        if lang:
-            results_by_lang.setdefault(lang, []).append(pred_file)
+        if not lang:
+            raise ValueError(
+                f"Could not infer language from prediction filename: {pred_file.name}. "
+                f"Expected one of {LANGUAGES} to appear as a standalone code."
+            )
+        validate_prediction_file_language(pred_file, lang)
+        gold_file = choose_gold_file_for_language(presup_dir, lang)
+        matches.append((gold_file, pred_file, lang))
 
-    for lang, pred_files in results_by_lang.items():
-        if lang not in gold_by_lang:
-            continue
+    return matches
 
-        gold_candidates = gold_by_lang[lang]
 
-        preferred = [f for f in gold_candidates if "sample100" in f.name.lower() and "full" in f.name.lower()]
-        if not preferred:
-            preferred = [f for f in gold_candidates if "dev" in f.name.lower() and "full" in f.name.lower()]
-        if not preferred:
-            preferred = [f for f in gold_candidates if "full" in f.name.lower()]
-        if not preferred:
-            preferred = gold_candidates
+def print_result_summary(result: dict) -> None:
+    print(
+        f"  accuracy={result['accuracy']} | "
+        f"macro_f1={result['macro_f1']} | "
+        f"log_loss={result['log_loss']} | "
+        f"multiclass_brier_score={result['multiclass_brier_score']}"
+    )
+    print(
+        f"  nearest_centroid_accuracy={result['centroid_diagnostics']['nearest_centroid_accuracy']} | "
+        f"avg_distance_to_gold_centroid={result['centroid_diagnostics']['avg_distance_to_gold_centroid']} | "
+        f"avg_margin_gold_vs_best_other={result['centroid_diagnostics']['avg_margin_gold_vs_best_other']}"
+    )
+    print(
+        f"  matched={result['data_size'] - result['missing_predictions']}/{result['data_size']} | "
+        f"missing={result['missing_predictions']} | invalid={result['invalid_predictions']} | "
+        f"extra_pred_ids={result['extra_prediction_ids']} | duplicate_pred_rows={result['duplicate_prediction_rows']}"
+    )
 
-        gold_file = preferred[0]
-        for pred_file in pred_files:
-            matches.append((gold_file, pred_file, lang))
-
-    return sorted(matches, key=lambda x: (x[2], x[1].name))
+    for lbl, stats in result["avg_probabilities_by_gold_label"].items():
+        if stats["count"] > 0:
+            print(
+                f"    Gold={lbl} (n={stats['count']}): "
+                f"avg_E={stats['avg_e_probability']}, "
+                f"avg_N={stats['avg_n_probability']}, "
+                f"avg_C={stats['avg_c_probability']}"
+            )
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Batch scorer for presupposition probability outputs."
+        description="Strict batch scorer for presupposition probability outputs."
     )
     parser.add_argument(
         "--presup-dir",
@@ -442,10 +613,6 @@ def main():
 
     matches = find_matching_files(presup_dir, results_dir)
 
-    if not matches:
-        print("No matching files found!")
-        return
-
     print(f"Found {len(matches)} file pairs to process:")
     for gold_file, pred_file, lang in matches:
         print(f"  [{lang}] {gold_file.name} <-> {pred_file.name}")
@@ -458,27 +625,10 @@ def main():
         try:
             result = score_pair(gold_file, pred_file)
             all_results[pred_file.name] = result
-
-            print(
-                f"  accuracy={result['accuracy']} | "
-                f"macro_f1={result['macro_f1']} | "
-                f"log_loss={result['log_loss']} | "
-                f"multiclass_brier_score={result['multiclass_brier_score']}"
-            )
-
-            for lbl, stats in result["avg_probabilities_by_gold_label"].items():
-                if stats["count"] > 0:
-                    print(
-                        f"    Gold={lbl} (n={stats['count']}): "
-                        f"avg_E={stats['avg_e_probability']}, "
-                        f"avg_N={stats['avg_n_probability']}, "
-                        f"avg_C={stats['avg_c_probability']}"
-                    )
-
+            print_result_summary(result)
         except Exception as e:
             print(f"  ✗ Error: {e}")
             all_results[pred_file.name] = {"error": str(e)}
-
         print()
 
     output_data = {
