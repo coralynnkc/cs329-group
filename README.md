@@ -27,6 +27,7 @@ Each task is selected to illustrate a specific failure mode of existing supervis
 | Grammaticality 2.0 (CoLA + BLiMP) | `grammaticality-2.0/` | ✓ | **primary** — prompt design story; MCC/F1/BLiMP | — | CoLA fully scored (all prompts × both splits); BLiMP pending |
 | Pronoun resolution (EN/AM/IG/ZU + EN/DE/FR/RU) | `pronoun_resolution/testing/`, `srijon-2.0/` | ✓ | ✓ | **primary** — 7 languages; low-resource degradation | mostly done |
 | NER | `ner/` | **primary** — novel schemas supervised models can't handle | ✓ | — | **done** — all 4 models fully scored (CoNLL-2003) |
+| Agency-based NER (Narnia) | `narnia/` | **primary** — custom schema; no supervised baseline possible | ✓ | — | **done** — all 4 models fully scored (zero-shot) |
 
 **Key:** ✓ = task supports this goal; **primary** = task is the main evidence for this goal; — = not applicable or not a focus.
 
@@ -44,6 +45,7 @@ Each task is selected to illustrate a specific failure mode of existing supervis
 | Grammaticality 2.0 (CoLA) | `grammaticality-2.0/` | Chat 5.4 | — | direct/anchor/repair ~88–89% acc, MCC 0.73–0.75 in-domain; checklist collapses in-domain but recovers OOD (90% acc, MCC 0.76) |
 | Pronoun resolution (EN/AM/IG/ZU + EN/DE/FR/RU) | `pronoun_resolution/testing/`, `srijon-2.0/` | sonnet 4.6 (7 langs), GPT 5.4 (full EN/DE/FR/RU); partial IG/ZU | chance = 50% | EN: 87–91%; FR/DE/RU: 86–97%; IG/ZU near chance; see table below |
 | NER (CoNLL-2003) | `ner/` | Chat 5.4, Gemini 3, Sonnet 4.6, Opus 4.6 | spaCy/stanza F1 ~91% | opus 0.95; gemini 0.93; sonnet 0.92; chatgpt 0.26 (failure — see note below) |
+| Agency-based NER (Narnia) | `narnia/` | Chat 5.4, Gemini 3, Sonnet 4.6, Opus 4.6 | no supervised baseline (novel schema) | opus F1 0.78; chatgpt F1 0.78; sonnet F1 0.74; gemini F1 0.20 (failure) |
 
 #### Multilingual pronoun resolution — full results (srijon-2.0)
 
@@ -126,6 +128,8 @@ Source, inference, and full versions of each split are generated and committed. 
 
 ### 2. NER — generality proof of concept
 
+**Zero-shot baselining is done (all 4 models).** Results: opus F1 0.78, chatgpt F1 0.78, sonnet F1 0.74, gemini F1 0.20 (collapse — similar to chatgpt CoNLL failure pattern).
+
 The argument: supervised NER is trained on fixed schemas (PER, LOC, ORG) and cannot adapt when the label set changes. LLMs handle novel, theory-driven annotation schemes without retraining. Our demo is **agency-based NER in narrative texts** — a custom schema that no supervised model has been trained on.
 
 **Task:** Given sentences from *The Chronicles of Narnia*, classify each named entity by its agentive role:
@@ -137,14 +141,12 @@ This operationalizes linguistic agency (thematic roles, transitivity, voice) as 
 
 **Why this proves generality:** The schema is custom and theory-driven. Supervised models trained on CoNLL or OntoNotes cannot perform this task at all. LLMs handle it via prompting alone, demonstrating that the same interface generalizes to arbitrary user-defined annotation schemes.
 
-**Experimental design:**
-1. Zero-shot: provide entity role definitions, return tagged spans
-2. Few-shot (2–4 examples per type): test in-context learning sensitivity
-3. Comparison baseline: standard NER tools (spaCy, stanza) applied to the same text — they extract entities but cannot assign agency labels
+**Next steps (optional):**
+- Few-shot (2–4 examples per type): test in-context learning sensitivity
+- Comparison baseline: standard NER tools (spaCy, stanza) applied to the same text — they extract entities but cannot assign agency labels
+- Per-role F1 breakdown (active / passive / mentioned)
 
-**Eval metrics:** F1 with strict span match; also relaxed (type-only) match. Report per-entity-type breakdown.
-
-**Prompting techniques to test (from `cora-notes/prompting_notes_0416_revised.pdf`):**
+**Prompting techniques to explore (from `cora-notes/prompting_notes_0416_revised.pdf`):**
 - Text-to-text with special tokens: `[ENTITY]...[/ENTITY]` inline markup
 - Chain-of-thought: reason first, then produce entity list
 - Code-based extraction: ask model to output a Python dict / dataclass
@@ -175,7 +177,8 @@ Lemmatization         → "solved" anchor: prompting = SOTA, no training needed
 Grammaticality        → "no tool exists": LLMs fill a gap, prompt design matters
 POS tagging           → "LLMs competitive OOD where SOTA degrades"
 Pronoun resolution    → "multilingual": English strong, low-resource languages degrade gracefully
-NER                   → "generality": agency-based custom schema in narratives, supervised models can't adapt without retraining
+NER (CoNLL-2003)      → "generality": strong baseline (opus F1 0.95); supervised schema
+NER (Narnia / agency) → "generality proof of concept": custom agency schema, no supervised baseline; opus/chatgpt F1 ~0.78, gemini collapses
 ```
 
 The through-line for the paper: each task is chosen to illustrate a different failure mode of existing supervised pipelines. LLMs via prompting address all of them from a single interface.
