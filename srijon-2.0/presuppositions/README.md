@@ -88,6 +88,8 @@ What it tests:
 
 These are not just wording variants. They test different **reasoning structures**:
 
+P0 asks the model to generate an E/N/C probability distribution directly, while P2 first forces a discrete semantic classification and only then asks for a probability distribution. This means P2 differs from P0 both in semantic definitions and in the order of reasoning. Because of this, P2 should be interpreted as a decision-first prompt, not just a more explicit version of P0. P4 forces two decision boundaries to further clarify boundaries prior to assigning the probability distribution.
+
 - **P0**: one-step probability judgment
 - **P2**: one-step judgment with strict semantic definitions
 - **P4**: two-step decomposed semantic judgment
