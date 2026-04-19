@@ -84,38 +84,17 @@ _(Macro-F1 scores. EN consistently lowest — Neutral class collapses in both mo
 - ChatGPT/sonnet on HI/VI — only partial
 - No Opus or Gemini runs yet
 
-### Predictions done, scoring incomplete
+### Incomplete / not started
 
-| Task                       | What exists                               | What's missing          |
-| -------------------------- | ----------------------------------------- | ----------------------- |
-| Grammaticality 2.0 (BLiMP) | `blimp_summary.csv` exists (headers-only) | No prediction files yet |
-
-### Partially done
-
-| Task                                                | Gap                                       |
-| --------------------------------------------------- | ----------------------------------------- |
-| Pronoun resolution (EN/AM/IG/ZU) — Igbo             | P2–P4 missing for sonnet; chatgpt only P0 |
-| Pronoun resolution (EN/AM/IG/ZU) — Zulu             | P2–P4 missing for sonnet; chatgpt only P0 |
-| Pronoun resolution (EN/AM/IG/ZU) — Opus             | only P0 for EN; nothing for AM/IG/ZU      |
-| Pronoun resolution challenge splits (all languages) | splits generated; no predictions yet      |
-
-### New data splits (ready for baselining)
-
-**Challenge splits** — difficulty-stratified subsets of the train data, selected using a composite heuristic (sentence length, clause markers, blank-candidate distance). Generated for all 7 languages via `srijon-2.0/scripts/generate_challenge_splits.py`.
-
-| Module                           | Languages      | Challenge size | Holdout size       |
-| -------------------------------- | -------------- | -------------- | ------------------ |
-| `srijon-2.0/pronoun_resolution/` | EN, DE, FR, RU | 50 items each  | remainder of train |
-| `pronoun_resolution/testing/`    | EN, AM, IG, ZU | ~70 items each | —                  |
-
-Source, inference, and full versions of each split are generated and committed. No predictions have been run yet — these are the next baselining targets.
-
-### Not started
-
-- POS out-of-domain evaluation (the key argument: SOTA drops 4–5% OOD; LLMs may hold)
-- Grammaticality on non-English benchmarks
-- NER few-shot and novel-schema experiments
-- BLiMP pairwise predictions for any model
+| Task | Gap |
+| ---- | ---- |
+| Grammaticality 2.0 (BLiMP) | no prediction files yet (`blimp_summary.csv` is headers-only) |
+| Pronoun resolution — Igbo | sonnet P2–P4 missing; chatgpt only P0 |
+| Pronoun resolution — Zulu | sonnet P2–P4 missing; chatgpt only P0 |
+| Pronoun resolution — Opus | only P0 for EN; nothing for AM/IG/ZU |
+| Challenge splits (all 7 languages) | splits generated, no predictions yet |
+| POS out-of-domain | not started (key argument: SOTA drops 4–5% OOD; LLMs may hold) |
+| BLiMP pairwise predictions | not started |
 
 ---
 
@@ -154,72 +133,13 @@ Results exist for sonnet P0/P1 and chatgpt P0/P2/P4 across 6 languages. What rem
 - Write a 1-page qualitative analysis: which languages / prompt pairs fail on the E/N boundary? Use centroid to explain _why_ — does the model confuse plausibility with entailment, or contradiction with neutral?
 - **Key claim to make:** prompt decision-framing changes class geometry in probability space, not just accuracy; this holds cross-linguistically except English (where neutral collapses persist regardless of prompt)
 
-### 2. Fancy coreference — "character cluster" NER
+### 2. Narnia large — corpus-level annotation (WIP)
 
-**What it is:** For each sentence, identify all ways a character is referenced — proper names, pronouns, epithets ("the Lion", "the Great King") — and group them under a canonical character label. This is a hybrid of NER (find the spans) and coreference resolution (cluster them by identity).
+**Goal:** Run agency-based NER + character clustering on the full Narnia corpus to generate character-level agency statistics ("Aslan is active in 73% of his appearances"). See `narnia-large/` for current state.
 
-**Why it's interesting:** Standard NER labels span type (PER/LOC/ORG). Standard coref clusters spans by identity. Neither task alone gives you _character-centric_ annotation where every mention of Aslan maps to `ASLAN`, including indirect ones. LLMs can do this zero-shot; supervised pipelines require a two-stage pipeline that was never trained for this formulation.
+**Script to write:** `narnia-large/scripts/annotate_corpus.py` — takes `--model`, `--chapter`, `--batch-size`, `--dry-run` (cost estimate before committing API spend). Do a cost estimate before running on the full corpus.
 
-**Plan:**
-
-- Zero-shot: prompt the model to return `{character_name: [list of spans]}` for each sentence
-- Few-shot: 2–3 examples showing name + pronoun + epithet clustering
-- Metrics: use existing `coref/` infrastructure (MUC, B³, CEAFₑ, CoNLL F1) — this gives "fancy" validation
-- Data: same 199-sentence Narnia mini eval set; gold clusters derivable from existing `narnia_answers.csv` annotations
-
-### 3. Narnia corpus — linguistic insight generation (token-efficient)
-
-**Goal:** Run agency-based NER + character clustering on the _full_ Narnia corpus (`narnia.txt`) to generate insights like "Aslan is active in 73% of his appearances" or "Edmund is mostly passive in Book 1, active in Book 2."
-
-**How to do it without killing tokens:**
-
-1. **Pre-split the corpus.** Chunk `narnia.txt` into batches of ~20–30 sentences. Do this locally in a script — no model call needed.
-
-2. **Batch, don't loop.** Send each batch as a single prompt asking the model to process all sentences and return a JSON array. Never call the model once per sentence.
-
-   ```
-   "Below are 25 sentences from Narnia. For each sentence_id, return: {sentence_id, entities: [{span, character, role}]}"
-   ```
-
-3. **Use a cheap model for bulk annotation.** Haiku 4.5 is ~20× cheaper than Opus. Run the full corpus through Haiku first; only re-run flagged/uncertain sentences with Sonnet.
-
-4. **Save incrementally.** Write results to `narnia_full_results.jsonl` after each batch — one JSON object per line — so a crash doesn't lose everything.
-
-5. **Estimate token cost before running.** `narnia.txt` is ~X words. At ~750 words/1k tokens, with ~150-token prompt overhead per batch of 25 sentences, the full corpus is roughly Y batches × Z tokens = W total. Run a cost estimate script before committing.
-
-   ```python
-   # rough_cost.py
-   import tiktoken, math
-   with open("narnia/narnia.txt") as f: text = f.read()
-   words = len(text.split())
-   batches = math.ceil(words / (25 * 20))  # ~20 words/sentence
-   tokens_per_batch = 600  # prompt + 25 sentences + output
-   print(f"{batches} batches × {tokens_per_batch} tokens ≈ {batches*tokens_per_batch/1000:.1f}k tokens")
-   ```
-
-6. **Aggregate with pandas.** Once all batches are saved, a simple groupby-character-role count gives the linguistic insight table — no model calls needed at aggregation time.
-
-**Script to write:** `narnia/scripts/annotate_full_corpus.py` — takes `--model haiku|sonnet`, `--batch-size N`, `--output path`, `--dry-run` (estimates cost without calling the API).
-
-### 4. 10-minute demo outline
-
-**Target audience:** CS329 class — knows NLP, may not know the full project.
-
-**Structure:**
-
-| Time       | Segment                  | Content                                                                                                                                                                             |
-| ---------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0:00–1:00  | Hook                     | One slide: "Can an LLM annotate any linguistic schema with no training?" — show a Narnia sentence annotated three ways: POS, NER, agency                                            |
-| 1:00–2:30  | Thesis + task map        | Three claims (generality / no training / multilingual) → task × goal matrix, one sentence per task                                                                                  |
-| 2:30–4:30  | Core results             | Four tasks in 2 minutes: lemmatization = SOTA match; CoLA = beats human; NER = opus 0.95; Narnia agency = custom schema, no supervised baseline                                     |
-| 4:30–6:00  | Narnia deep dive         | Show zero-shot vs. few-shot F1 bar chart; show a sentence where the model gets agency right (and one where it fails); linguistic insight teaser ("Aslan is active 73% of the time") |
-| 6:00–7:30  | Multilingual story       | Pronoun resolution: EN 87–91%, FR/DE/RU 86–97%, IG/ZU near chance — one chart; presuppositions: EN hardest, neutral collapse                                                        |
-| 7:30–9:00  | Prompt engineering       | One finding per task: "think like a linguist" hurts; few-shot fixes format failures; decision-framing changes class geometry                                                        |
-| 9:00–10:00 | Conclusion + limitations | What we can claim; what we can't; where supervised still wins                                                                                                                       |
-
-**Slides needed:** ~10–12 (one per segment, plus title/conclusion). Keep results as charts — avoid tables in the demo.
-
-### 6. Complete baselining (lower priority)
+### 3. Complete baselining (lower priority)
 
 **Grammaticality 2.0 BLiMP** — run pairwise predictions for at least sonnet and GPT 5.4.
 
@@ -265,8 +185,6 @@ The through-line for the paper: each task is chosen to illustrate a different fa
 
 - [ ] Is Claire running sonnet grammaticality 2.0?
 - [ ] Investigate EN presuppositions neutral-class collapse further — dataset artifact or model prior? (see Empirical Finding 7)
-- [x] Score Gemini few-shot Narnia predictions — done (F1 0.81)
 - [ ] Decide: run sonnet P2/P4 presuppositions, or call presuppositions done with current results?
-- [x] Create `narnia-large/` module with chapter files and updated prompt (canonical character + agency labels) — done 2026-04-19
 - [ ] Write `narnia-large/scripts/annotate_corpus.py` — takes `--model`, `--chapter`, `--batch-size`, `--dry-run`; do a cost estimate before running on full corpus
 - [ ] Gold character-cluster annotations for Narnia: derive from `narnia_answers.csv` or re-annotate?
