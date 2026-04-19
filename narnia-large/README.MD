@@ -94,6 +94,8 @@ sentence_id,sentence,entities
 Paste the contents of a `chapters/chapter_N.txt` file after the prompt below.
 
 ```
+Save output as: results/<model>_chapter_<N>.csv
+
 You are annotating a chapter from The Lion, the Witch and the Wardrobe for character agency.
 
 For each sentence, identify all character mentions and assign each one an agency label.
@@ -152,6 +154,8 @@ Data:
 ### Few-shot (chapter-level)
 
 ```
+Save output as: results/<model>_chapter_<N>.csv
+
 You are annotating a chapter from The Lion, the Witch and the Wardrobe for character agency.
 
 For each sentence, identify all character mentions and assign each one an agency label.
