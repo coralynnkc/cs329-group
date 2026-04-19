@@ -10,7 +10,7 @@ Source: [CoNLL-2003](https://www.clips.uantwerpen.be/conll2003/ner/) — newswir
 | chatgpt 5.4 | 0.894 | 0.927 | 0.893 | 0.895 | 0.916 | 0.905 | 
 | gemini 3 | 0.9308 | 0.9425 | 0.9169 | 0.9325 | 0.9282 | 0.9301 |
 | sonnet 4.6 | 0.9137 | 0.9267 | 0.9183 | 0.9278 | 0.9116 | 0.9196 |
-| opus 4.7 | 0.949 | 0.956 | 0.9435 | 0.9579 | 0.9414 | 0.9495 |
+| opus 4.6 | 0.949 | 0.956 | 0.9435 | 0.9579 | 0.9414 | 0.9495 |
 <!-- results:end -->
 
 _Run `python ner/scripts/update_readme.py` after scoring to populate this table._
