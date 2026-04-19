@@ -49,10 +49,10 @@ _Run `python narnia/scripts/score_baseline.py --model <model> --prompt fewshot -
 | ----- | ------ | ---- | ------- | ------ |
 | ACTIVE_SPEAKER   | 0.909 | 0.916 | 0.936 | 0.907 |
 | ACTIVE_PERFORMER | 0.640 | 0.783 | 0.741 | 0.643 |
-| ACTIVE_THOUGHT   | 0.632 | 0.632 | 0.625 | 0.667 |
-| ADDRESSED        | 0.889 | 0.864 | 0.851 | 0.889 |
-| MENTIONED_ONLY   | 0.750 | 0.667 | 0.600 | 0.691 |
-| MISCELLANEOUS    | 0.800 | 0.667 | 0.000 | 0.800 |
+| ACTIVE_THOUGHT   | 0.632 | 0.632 | 0.667 | 0.667 |
+| ADDRESSED        | 0.889 | 0.864 | 0.864 | 0.889 |
+| MENTIONED_ONLY   | 0.750 | 0.667 | 0.692 | 0.691 |
+| MISCELLANEOUS    | 0.800 | 0.667 | 0.250 | 0.800 |
 
 ### Qualitative findings (zero-shot)
 
@@ -76,9 +76,9 @@ _Run `python narnia/scripts/score_baseline.py --model <model> --prompt fewshot -
 
 **Sonnet gained more from few-shot (+0.082 overall) than Opus (+0.026)**, consistent with Sonnet having more room to improve. The gains are almost entirely from ADDRESSED and MISCELLANEOUS.
 
-**ChatGPT fewshot results are identical to zero-shot** — same per-row predictions, including 0 F1 on MISCELLANEOUS. This likely means the zero-shot predictions file was reused rather than running a true few-shot pass. A dedicated few-shot run is needed.
+**ChatGPT few-shot shows modest but real gains** over zero-shot — overall F1 0.797 vs 0.586. ACTIVE_THOUGHT improved (0.625 → 0.667) and MISCELLANEOUS recovered from 0.000 to 0.250 (F1), though still weak. ADDRESSED and MENTIONED_ONLY also improved slightly. Unlike Sonnet and Opus, ChatGPT did not gain on ACTIVE_PERFORMER.
 
-**Gemini has no few-shot run yet.** Given its ADDRESSED recall (0.500 zero-shot) and the known vocative failure mode, it is a strong candidate to improve.
+**Gemini gained the most from few-shot prompting of any model**, improving overall F1 by +0.244 (0.566 → 0.809). Gains span nearly every label: ACTIVE_SPEAKER (0.731 → 0.907), ACTIVE_PERFORMER (0.375 → 0.643), ADDRESSED (0.600 → 0.889), MENTIONED_ONLY (0.348 → 0.691), and MISCELLANEOUS (0.000 → 0.800). The few-shot examples directly fixed Gemini's two main failure modes — over-predicting MENTIONED_ONLY and missing vocatives. Gemini fewshot matches Sonnet fewshot overall (both 0.809 F1).
 
 ---
 

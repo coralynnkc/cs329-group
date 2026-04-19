@@ -1,6 +1,6 @@
 # Working Document — LLMs for Linguistic Annotation
 
-_Last updated: 2026-04-18_
+_Last updated: 2026-04-19_
 
 ---
 
@@ -28,7 +28,7 @@ Each task is selected to illustrate a specific failure mode of existing supervis
 | Grammaticality 2.0 (CoLA + BLiMP)              | `grammaticality-2.0/`                        |                              ✓                               |    **primary** — prompt design story; MCC/F1/BLiMP     |                                  —                                   | CoLA fully scored (all prompts × both splits); BLiMP pending |
 | Pronoun resolution (EN/AM/IG/ZU + EN/DE/FR/RU) | `pronoun_resolution/testing/`, `srijon-2.0/` |                              ✓                               |                           ✓                            |         **primary** — 7 languages; low-resource degradation          | mostly done                                                  |
 | NER                                            | `ner/`                                       |  **primary** — novel schemas supervised models can't handle  |                           ✓                            |                                  —                                   | **done** — all 4 models fully scored (CoNLL-2003)            |
-| Agency-based NER (Narnia)                      | `narnia/`                                    | **primary** — custom schema; no supervised baseline possible |                           ✓                            |                                  —                                   | **done** — zero-shot + few-shot scored for 3/4 models        |
+| Agency-based NER (Narnia)                      | `narnia/`                                    | **primary** — custom schema; no supervised baseline possible |                           ✓                            |                                  —                                   | **done** — zero-shot + few-shot scored for all 4 models      |
 | Presuppositions (XNLI)                         | `srijon-2.0/presuppositions/`                |                              ✓                               |                           ✓                            | **primary** — 6 languages; prompt-framing effect on class boundaries | mostly done — sonnet P0/P1 + chatgpt P0/P2/P4                |
 | Fancy coreference (character-name clusters)    | `coref/`                                     |  **primary** — hybrid NER + coref; no fixed-schema baseline  |                           ✓                            |                                  —                                   | **done** — zero-shot + few-shot scored (opus/sonnet/chatgpt) |
 
@@ -267,5 +267,6 @@ The through-line for the paper: each task is chosen to illustrate a different fa
 - [ ] Investigate EN presuppositions neutral-class collapse further — dataset artifact or model prior? (see Empirical Finding 7)
 - [x] Score Gemini few-shot Narnia predictions — done (F1 0.81)
 - [ ] Decide: run sonnet P2/P4 presuppositions, or call presuppositions done with current results?
-- [ ] Write `narnia/scripts/annotate_full_corpus.py` — do a cost estimate before running on full corpus
+- [x] Create `narnia-large/` module with chapter files and updated prompt (canonical character + agency labels) — done 2026-04-19
+- [ ] Write `narnia-large/scripts/annotate_corpus.py` — takes `--model`, `--chapter`, `--batch-size`, `--dry-run`; do a cost estimate before running on full corpus
 - [ ] Gold character-cluster annotations for Narnia: derive from `narnia_answers.csv` or re-annotate?
