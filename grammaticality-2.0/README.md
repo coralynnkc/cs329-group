@@ -1,57 +1,309 @@
-# English pronoun-resolution batch-size study: cleaned summary
+# grammaticality-2.0
 
-## Canonical files for reporting
-- `chat_5.4_25_en.csv`
-- `chat_5.4_100_en.csv`
-- `chat_5.4_250_en.csv`
-- `chat_5.4_500_en.csv`
-- `sonnet_4.6_25_en.csv`
-- `sonnet_4.6_100_en.csv`
-- `sonnet_4.6_250_en.csv`
-- `sonnet_4.6_500_en.csv`
-- `opus_4.6_250_en.csv`
-- `opus_4.6_500_en.csv`
+A parallel upgrade of the existing `grammatical/` folder for stronger **binary grammaticality** and **pairwise BLiMP** evaluation.
 
-## Files to archive or label as exploratory
-- `chat_5.3_25_en.csv` — valid legacy run.
-- `chat_5.3_100_en.csv` — malformed coverage (missing intended items and includes extra IDs).
-- `chat_5.3_100_en_redo.csv` — wrong item set; not directly comparable to the intended 100-item subset.
-- `chat_5.3_100_en_forced_complete.csv` — valid shape, but should be labeled as a forced follow-up / repair run.
-- `chat_5.4_extended_500_en.csv` — not part of the main 25/100/250/500 comparison.
+This version is designed around two principles:
 
-## Cleaned metrics
+1. **Separate task formats cleanly**
+   - **CoLA-style binary judgment**: one sentence, predict `0` or `1`
+   - **BLiMP-style pairwise judgment**: given two sentences, choose `A` or `B`
 
-| family     |   size |   correct |   n |   accuracy_pct |   macro_f1 |   refusals |   missing |   extra |
-|:-----------|-------:|----------:|----:|---------------:|-----------:|-----------:|----------:|--------:|
-| Chat 5.3   |     25 |        25 |  25 |          100   |      1     |          0 |         0 |       0 |
-| Chat 5.3   |    100 |        57 | 100 |           57   |      0.616 |          0 |        15 |       7 |
-| Chat 5.3   |    100 |        64 | 100 |           64   |      0.64  |          0 |         0 |       0 |
-| Chat 5.3   |    100 |        11 | 100 |           11   |      0.185 |          0 |        81 |      75 |
-| Chat 5.4   |     25 |        24 |  25 |           96   |      0.978 |          1 |         0 |       0 |
-| Chat 5.4   |    100 |        93 | 100 |           93   |      0.944 |          3 |         0 |       0 |
-| Chat 5.4   |    250 |       214 | 250 |           85.6 |      0.865 |          5 |         0 |       0 |
-| Chat 5.4   |    500 |       418 | 500 |           83.6 |      0.84  |          5 |         0 |       0 |
-| Opus 4.6   |    250 |       239 | 250 |           95.6 |      0.958 |          1 |         0 |       0 |
-| Opus 4.6   |    500 |       463 | 500 |           92.6 |      0.926 |          0 |         0 |       0 |
-| Sonnet 4.6 |     25 |        24 |  25 |           96   |      0.96  |          0 |         0 |       0 |
-| Sonnet 4.6 |    100 |        91 | 100 |           91   |      0.919 |          2 |         0 |       0 |
-| Sonnet 4.6 |    250 |       213 | 250 |           85.2 |      0.852 |          0 |         0 |       0 |
-| Sonnet 4.6 |    500 |       438 | 500 |           87.6 |      0.876 |          0 |         0 |       0 |
+2. **Optimize for robust evaluation before prompt tweaking**
+   - CoLA scoring includes **accuracy, MCC, precision, recall, F1, coverage, invalid rate, refusal rate**
+   - BLiMP scoring includes **overall pairwise accuracy**, plus **per-dataset breakdown**, coverage, invalid rate, and refusal rate
 
-## Interpretation
-- Chat 5.4 shows a strong decline as batch size increases.
-- Sonnet 4.6 also declines, though less monotonically.
-- Opus 4.6 remains much more stable at larger batch sizes.
-- The biggest practical conclusion is that very large batch prompts can reduce pronoun-resolution quality, and model choice changes how severe that tradeoff is.
+## Why this folder exists
 
-## Nested subset comparisons
+Your original `grammatical/` folder is a clean manual baseline, but it is centered on:
+- mini sampling from CoLA train
+- one direct prompt
+- accuracy-only scoring
 
-| family     |   smaller |   larger |   smaller_better |   larger_better |   discordant |   mcnemar_p |
-|:-----------|----------:|---------:|-----------------:|----------------:|-------------:|------------:|
-| Chat 5.4   |        25 |      100 |                0 |               1 |            1 |    1        |
-| Chat 5.4   |       100 |      250 |                9 |               5 |           14 |    0.42395  |
-| Chat 5.4   |       250 |      500 |               19 |              20 |           39 |    1        |
-| Sonnet 4.6 |        25 |      100 |                0 |               0 |            0 |    1        |
-| Sonnet 4.6 |       100 |      250 |                2 |               2 |            4 |    1        |
-| Sonnet 4.6 |       250 |      500 |               13 |              17 |           30 |    0.584665 |
-| Opus 4.6   |       250 |      500 |                8 |               2 |           10 |    0.109375 |
+This `grammaticality-2.0/` folder adds:
+- stronger prompt baselines for binary classification
+- a dedicated BLiMP pairwise pipeline
+- MCC as a first-class metric for CoLA
+- better bookkeeping for invalid/refused outputs
+- result summaries that are easier to compare across prompt styles
+
+---
+
+## Folder layout
+
+```text
+grammaticality-2.0/
+├── README.md
+├── data/
+│   └── README.md
+├── prompts/
+│   ├── cola_direct_binary.txt
+│   ├── cola_linguist_checklist.txt
+│   ├── cola_minimal_repair.txt
+│   ├── cola_fewshot_anchor.txt
+│   ├── blimp_pairwise_direct.txt
+│   ├── blimp_pairwise_checklist.txt
+│   └── blimp_pairwise_repair.txt
+├── mini/
+├── results/
+│   ├── cola_summary.csv
+│   └── blimp_summary.csv
+└── scripts/
+    ├── make_cola_eval.py
+    ├── score_cola.py
+    ├── make_blimp_eval.py
+    ├── score_blimp.py
+    └── update_readme.py
+```
+
+---
+
+## Prompt baselines included
+
+I left out a gradient-rating prompt because you said you do **not** want to lean on scalar ratings that map poorly onto binary classification.
+
+Instead, this folder gives you four stronger **binary** prompt families for CoLA and three **pairwise** prompt families for BLiMP.
+
+### CoLA prompt families
+
+1. **Direct binary**
+   - simplest baseline
+   - just define grammatical acceptability clearly and require `0/1`
+
+2. **Linguist checklist**
+   - instruct the model to judge syntax rather than truth, style, plausibility, or prescriptive rules
+   - encourages attention to agreement, argument structure, binding, word order, extraction, etc.
+
+3. **Minimal repair**
+   - ask the model to internally decide whether the sentence would need grammatical repair before it could appear in native English
+   - return only `0/1`
+
+4. **Few-shot anchor**
+   - same binary task, but with carefully chosen positive and negative examples
+   - useful when the model confuses odd semantics with bad syntax
+
+### BLiMP prompt families
+
+1. **Pairwise direct**
+   - pick which sentence is more grammatically acceptable: `A` or `B`
+
+2. **Pairwise checklist**
+   - same output format, but explicitly tell the model to focus on syntax and ignore plausibility
+
+3. **Pairwise repair**
+   - ask which sentence would require fewer grammatical repairs
+   - can help on subtle minimal pairs
+
+---
+
+## Recommended experiment order
+
+### Phase 1: CoLA
+Use the existing CoLA files from `../grammatical/` and compare prompt variants on:
+- `in_domain_dev.tsv`
+- `out_of_domain_dev.tsv`
+
+Run:
+```bash
+python scripts/make_cola_eval.py --split in_domain_dev
+python scripts/make_cola_eval.py --split out_of_domain_dev
+```
+
+Then paste `mini/cola_<split>_input.csv` into a model using one of the prompt files.
+
+Save outputs as:
+```text
+mini/predictions_<model>_<prompt>_<split>.csv
+```
+
+Examples:
+```text
+mini/predictions_sonnet_direct_in_domain_dev.csv
+mini/predictions_sonnet_checklist_out_of_domain_dev.csv
+```
+
+Score:
+```bash
+python scripts/score_cola.py --model sonnet --prompt direct --split in_domain_dev
+python scripts/score_cola.py --model sonnet --prompt checklist --split out_of_domain_dev
+```
+
+### Phase 2: BLiMP
+Put BLiMP files under `data/blimp/` (details in `data/README.md`).
+
+Build an evaluation file:
+```bash
+python scripts/make_blimp_eval.py --source-dir data/blimp
+```
+
+Paste `mini/blimp_input.csv` into a model using one of the BLiMP prompt files.
+
+Save outputs as:
+```text
+mini/predictions_<model>_<prompt>_blimp.csv
+```
+
+Score:
+```bash
+python scripts/score_blimp.py --model sonnet --prompt direct
+```
+
+---
+
+## File naming conventions
+
+### CoLA predictions
+```text
+predictions_<model>_<prompt>_<split>.csv
+```
+
+Where:
+- `<model>`: `sonnet`, `opus`, `gpt5`, etc.
+- `<prompt>`: `direct`, `checklist`, `repair`, `fewshot`
+- `<split>`: `in_domain_dev`, `out_of_domain_dev`
+
+### BLiMP predictions
+```text
+predictions_<model>_<prompt>_blimp.csv
+```
+
+Where:
+- `<prompt>`: `direct`, `checklist`, `repair`
+
+---
+
+## Output formats expected from the model
+
+### CoLA
+The model should return only:
+```csv
+id,predicted_label
+1,1
+2,0
+3,1
+```
+
+or:
+```csv
+sample_id,id,predicted_label
+1,1,1
+1,2,0
+```
+
+Both are accepted.
+
+### BLiMP
+The model should return only:
+```csv
+pair_id,predicted_option
+1,A
+2,B
+3,A
+```
+
+or:
+```csv
+id,predicted_option
+1,A
+2,B
+3,A
+```
+
+Both are accepted.
+
+---
+
+## Metrics tracked
+
+### CoLA
+- accuracy
+- MCC
+- precision for label 1
+- recall for label 1
+- F1 for label 1
+- coverage
+- refusal rate
+- invalid prediction rate
+- counts of TP / TN / FP / FN
+
+### BLiMP
+- overall pairwise accuracy
+- per-dataset pairwise accuracy
+- coverage
+- refusal rate
+- invalid prediction rate
+
+---
+
+## Suggested starting matrix
+
+### CoLA
+- sonnet × direct
+- sonnet × checklist
+- sonnet × repair
+- sonnet × fewshot
+- opus × direct
+- opus × checklist
+
+### BLiMP
+- sonnet × direct
+- sonnet × checklist
+- sonnet × repair
+
+This is enough to see whether:
+- syntax-focused prompting beats the plain baseline
+- repair framing helps or hurts
+- few-shot anchors improve subtle discrimination
+- improvements transfer out of domain
+
+---
+
+## Notes on Pearson / Spearman with gradient judgments
+
+This folder intentionally does **not** implement gradient scoring because you said you do not want a gradient-style prompting regime. That is a reasonable choice for a binary-first workflow.
+
+If you later decide you still want Pearson/Spearman, the clean version is:
+- keep the binary track for CoLA and BLiMP
+- add a **separate** scalar-confidence or rating track
+- do **not** mix the two into one primary metric
+
+---
+
+## Refresh the README tables
+
+After scoring runs, update the README tables:
+```bash
+python scripts/update_readme.py
+```
+
+This script rebuilds:
+- CoLA results table
+- BLiMP results table
+
+
+## CoLA Results Table
+
+| Model | Prompt | Split | N | Accuracy | MCC | Precision(1) | Recall(1) | F1(1) | Coverage | Refusal rate | Invalid rate |
+| --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| chat_5.4 | direct | in_domain_dev | 100 | 0.88 | 0.7252 | 0.9254 | 0.8986 | 0.9118 | 1.0 | 0.0 | 0.0 |
+| chat_5.4 | checklist | in_domain_dev | 100 | 0.56 | -0.0472 | 0.6761 | 0.6957 | 0.6857 | 1.0 | 0.0 | 0.0 |
+| chat_5.4 | anchor | in_domain_dev | 100 | 0.89 | 0.7453 | 0.9265 | 0.913 | 0.9197 | 1.0 | 0.0 | 0.0 |
+| chat_5.4 | repair | in_domain_dev | 100 | 0.89 | 0.7453 | 0.9265 | 0.913 | 0.9197 | 1.0 | 0.0 | 0.0 |
+| chat_5.4 | finetuned | in_domain_dev | 100 | 0.89 | 0.7453 | 0.9265 | 0.913 | 0.9197 | 1.0 | 0.0 | 0.0 |
+| chat_5.4 | direct | out_of_domain_dev | 100 | 0.86 | 0.6638 | 0.8767 | 0.9275 | 0.9014 | 1.0 | 0.0 | 0.0 |
+| chat_5.4 | anchor | out_of_domain_dev | 100 | 0.86 | 0.6616 | 0.8667 | 0.942 | 0.9028 | 1.0 | 0.0 | 0.0 |
+| chat_5.4 | checklist | out_of_domain_dev | 100 | 0.9 | 0.7615 | 0.8933 | 0.971 | 0.9306 | 1.0 | 0.0 | 0.0 |
+| chat_5.4 | repair | out_of_domain_dev | 100 | 0.86 | 0.6638 | 0.8767 | 0.9275 | 0.9014 | 1.0 | 0.0 | 0.0 |
+| chat_5.4 | finetuned | out_of_domain_dev | 100 | 0.85 | 0.6357 | 0.8462 | 0.9565 | 0.898 | 1.0 | 0.0 | 0.0 |
+
+## BLiMP Results Table
+
+| Model | Prompt | N | Accuracy | Coverage | Refusal rate | Invalid rate |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+
+## Suggested next upgrade
+
+The next clean step after this folder is not more prompt complexity. It is:
+1. run the binary prompt sweep on both CoLA dev splits
+2. identify where MCC improves without coverage collapsing
+3. then run the top 1-2 prompt families on BLiMP
+4. only after that decide whether gradient judgments are worth adding back as a separate track
