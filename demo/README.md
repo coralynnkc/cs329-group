@@ -1,4 +1,5 @@
 # CS329 Demo Presentation Script
+
 **Format: ~5 min talk + ~5 min demo/visuals**
 
 ---
@@ -21,11 +22,11 @@ LLMs are general-purpose annotation engines. A linguist can describe a task in p
 
 ### 2. Background: What's Already Solved (1 min)
 
-We treat **lemmatization** as our proof of concept. Given an inflected word like *ate* or *geese*, return the dictionary headword: *eat*, *goose*. Opus, Sonnet, and Gemini all score 96–97% accuracy. Solved.
+We treat **lemmatization** as our proof of concept. Given an inflected word like _ate_ or _geese_, return the dictionary headword: _eat_, _goose_. Opus, Sonnet, and Gemini all score 96–97% accuracy. Solved.
 
 **POS tagging** and **standard NER** tell a similar story: Opus hits 94% on UD POS tags and 95% F1 on CoNLL-2003 NER with zero-shot prompting, though performance drops on out-of-domain data by about 4–5%.
 
-These tasks establish that the prompting-based approach works *in principle*. But notably, they aren't perfectly defined — these datasets and label sets are considered a gold standard, yet linguistics sometimes needs to go beyond that. What if a different language uses different parts of speech? What if you want a label set more complex than PER, LOC, ORG?
+These tasks establish that the prompting-based approach works _in principle_. But notably, they aren't perfectly defined — these datasets and label sets are considered a gold standard, yet linguistics sometimes needs to go beyond that. What if a different language uses different parts of speech? What if you want a label set more complex than PER, LOC, ORG?
 
 ---
 
@@ -41,13 +42,13 @@ Pronoun resolution is deterministic and shows strong performance overall: **Engl
 
 ### 4. Our Task: Agency NER in Narnia (1.5 min)
 
-Our primary contribution is a novel NER task we designed from scratch: **agency-based character recognition in narrative text**, applied to *The Lion, the Witch and the Wardrobe*.
+Our primary contribution is a novel NER task we designed from scratch: **agency-based character recognition in narrative text**, applied to _The Lion, the Witch and the Wardrobe_.
 
 Standard NER tags Lucy as PER. We asked: is Lucy speaking, acting, being addressed, or just mentioned? We defined six labels: `ACTIVE_SPEAKER`, `ACTIVE_PERFORMER`, `ACTIVE_THOUGHT`, `ADDRESSED`, `MENTIONED_ONLY`, `MISCELLANEOUS`.
 
-This operationalizes *agency* — a core concept in linguistics that concerns how language encodes control and participation in events. It lets linguists ask: who actually drives the narrative vs. who is just talked about?
+This operationalizes _agency_ — a core concept in linguistics that concerns how language encodes control and participation in events. It lets linguists ask: who actually drives the narrative vs. who is just talked about?
 
-We manually annotated 200 sentences as ground truth, then transformed the raw text into structured CSV data pairing sentences with entity annotations. Zero-shot: Opus 0.783 F1, Sonnet 0.741, Gemini 0.566, ChatGPT 0.586. Few-shot — eight examples in the prompt — pushed all models up: Sonnet to 0.823, Opus to 0.820, Gemini to 0.809. The hardest label zero-shot was `ADDRESSED` (vocatives like *"Oh, Mr. Tumnus!"* get misclassified as `MENTIONED_ONLY`). One labeled example fixed it: Sonnet's ADDRESSED F1 jumped from 0.53 to 0.89.
+We manually annotated 200 sentences as ground truth, then transformed the raw text into structured CSV data pairing sentences with entity annotations. Zero-shot: Opus 0.783 F1, Sonnet 0.741, Gemini 0.566, ChatGPT 0.586. Few-shot — eight examples in the prompt — pushed all models up: Sonnet to 0.823, Opus to 0.820, Gemini to 0.809. The hardest label zero-shot was `ADDRESSED` (vocatives like _"Oh, Mr. Tumnus!"_ get misclassified as `MENTIONED_ONLY`). One labeled example fixed it: Sonnet's ADDRESSED F1 jumped from 0.53 to 0.89.
 
 We also ran coreference resolution — mapping surface forms like "the White Witch" back to canonical characters. Opus leads at 0.884 F1 overall; ChatGPT struggles with precision (0.28 zero-shot). Few-shot improves all models significantly.
 
@@ -95,7 +96,7 @@ Now the full-book results. 2,404 sentences, over 2,300 entity mentions.
 
 **Label distribution.** Active Speaker 29.2%, Active Performer 22.2%, Active Thought 8.7%, Addressed 8.6%, Mentioned Only 30.4%, Misc 0.8%. About 60% of mentions are active. The model assigns agency wherever syntactic structure permits — which is itself interesting as a finding about the text.
 
-**Agency breakdown per character.** Edmund and Lucy are essentially tied at ~408 mentions each, the dual POV characters. Aslan and Jadis follow. Now look at the composition: Edmund and Lucy have large blocks of Active Speaker and Active Performer. Aslan and Jadis have comparatively large grey bars — Mentioned Only. The two most powerful characters in the book are talked *about* far more than they act within individual sentences. Lewis constructs them as off-screen forces — their presence felt through other characters' fear and awe. The model surfaces this structural feature without being told to look for it.
+**Agency breakdown per character.** Edmund and Lucy are essentially tied at ~408 mentions each, the dual POV characters. Aslan and Jadis follow. Now look at the composition: Edmund and Lucy have large blocks of Active Speaker and Active Performer. Aslan and Jadis have comparatively large grey bars — Mentioned Only. The two most powerful characters in the book are talked _about_ far more than they act within individual sentences. Lewis constructs them as off-screen forces — their presence felt through other characters' fear and awe. The model surfaces this structural feature without being told to look for it.
 
 Mr. Beaver punches above his weight in active mentions — concentrated in action-dense scenes, rarely present in expository passages.
 
@@ -105,31 +106,31 @@ These findings are what the task was designed to reveal: not just who is in the 
 
 ## Timing Guide
 
-| Segment | Content | Time |
-|---------|---------|------|
-| Talk 1 | Motivation | ~1:00 |
-| Talk 2 | Solved tasks | ~1:00 |
-| Talk 3 | Grammaticality + multilingual | ~1:30 |
-| Talk 4 | Agency NER intro | ~1:30 |
-| Visual 1 | Presuppositions table | ~0:45 |
-| Visual 2 | Pronoun resolution + grammaticality | ~1:00 |
-| Visual 3 | NER + coreference baseline tables | ~1:00 |
-| Visual 4 | Full-book corpus charts | ~2:30 |
-| **Total** | | **~10:15** |
+| Segment   | Content                             | Time       |
+| --------- | ----------------------------------- | ---------- |
+| Talk 1    | Motivation                          | ~1:00      |
+| Talk 2    | Solved tasks                        | ~1:00      |
+| Talk 3    | Grammaticality + multilingual       | ~1:30      |
+| Talk 4    | Agency NER intro                    | ~1:30      |
+| Visual 1  | Presuppositions table               | ~0:45      |
+| Visual 2  | Pronoun resolution + grammaticality | ~1:00      |
+| Visual 3  | NER + coreference baseline tables   | ~1:00      |
+| Visual 4  | Full-book corpus charts             | ~2:30      |
+| **Total** |                                     | **~10:15** |
 
 ---
 
 ## What to show on screen during demo
 
-| Segment | Slide |
-|---------|-------|
-| Presuppositions table | "PROJECT: Presuppositions" slide |
-| Pronoun resolution table | "PROJECT: Pronoun Resolutions" slide |
-| Grammaticality table | "PROJECT: Grammaticality Judgements" slide |
-| NER baseline results | "NARNIA: NER Baseline Results" slide |
-| Coreference baseline results | "NARNIA: Coreference Baseline Results" slide |
-| Label distribution | "NARNIA: Corpus Analysis Results" (chart 1) |
-| Agency breakdown per character | "NARNIA: Corpus Analysis Results" (chart 2) |
+| Segment                        | Slide                                        |
+| ------------------------------ | -------------------------------------------- |
+| Presuppositions table          | "PROJECT: Presuppositions" slide             |
+| Pronoun resolution table       | "PROJECT: Pronoun Resolutions" slide         |
+| Grammaticality table           | "PROJECT: Grammaticality Judgements" slide   |
+| NER baseline results           | "NARNIA: NER Baseline Results" slide         |
+| Coreference baseline results   | "NARNIA: Coreference Baseline Results" slide |
+| Label distribution             | "NARNIA: Corpus Analysis Results" (chart 1)  |
+| Agency breakdown per character | "NARNIA: Corpus Analysis Results" (chart 2)  |
 
 ---
 
