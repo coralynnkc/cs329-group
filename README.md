@@ -8,14 +8,22 @@
 
 | Task | Dataset | SOTA | Key Finding |
 |------|---------|------|-------------|
-| Lemmatization | UniMorph English | spaCy/stanza ~95–99% | Sonnet/Opus match SOTA (~96–97%); prompting alone is sufficient |
-| Grammaticality | CoLA | Human ~80% | Opus 88%, Sonnet 84% — both exceed human ceiling; ChatGPT collapses to ~49% |
+| Lemmatization † | UniMorph English | spaCy/stanza ~95–99% | Sonnet/Opus match SOTA (~96–97%); prompting alone is sufficient |
+| Grammaticality ‡ | CoLA | Human ~80% | Opus 88%, Sonnet 84% — both exceed human ceiling; ChatGPT collapses to ~49% |
 | POS tagging | UD English EWT | spaCy/udpipe ~97–98% | Opus 94% in-domain; competitive without any dependency parsing pipeline |
-| NER | CoNLL-2003 | spaCy/stanza F1 ~91% | Opus F1 0.95, exceeds SOTA; ChatGPT F1 0.26 (catastrophic over-prediction failure) |
+| NER * | CoNLL-2003 | spaCy/stanza F1 ~91% | Opus F1 0.95, exceeds SOTA; ChatGPT F1 0.26 (catastrophic over-prediction failure) |
 | Agency-based NER | Narnia (manual, 200 sentences) | No supervised baseline | Zero-shot Opus F1 0.78; few-shot Sonnet F1 0.82 — novel schema with no prior art |
 | Character-cluster NER | Narnia chapters | No supervised baseline | Opus F1 0.88 zero-shot; epithet resolution ("the Faun" → Mr. Tumnus) works reliably |
-| Pronoun resolution | African WinoGrande + XWinograd | Chance = 50% | EN/FR/DE/RU: 86–97%; Igbo/Zulu near chance — low-resource degradation is real |
+| Pronoun resolution § | African WinoGrande + XWinograd | Chance = 50% | EN/FR/DE/RU: 86–97%; Igbo/Zulu near chance — low-resource degradation is real |
 | Presuppositions | XNLI (6 languages) | — | EN Neutral collapses in all models; prompt framing shifts class boundaries cross-linguistically |
+
+\* **NER**: SOTA (spaCy/stanza ~91%) is reported on `eng.testb`; we evaluate on `eng.testa` (dev set). Different splits — comparison should be removed or re-run on testb.
+
+† **Lemmatization**: spaCy/stanza SOTA is benchmarked on UD treebanks, not UniMorph paradigm tables. Different datasets — comparison should be removed or replaced with a UniMorph-specific baseline.
+
+‡ **Grammaticality**: CoLA leaderboard reports MCC (Matthews Correlation Coefficient); we report accuracy. "Human ~80%" refers to MCC in the literature, not accuracy. These metrics are not directly comparable.
+
+§ **Pronoun resolution**: "Chance = 50%" is a floor, not a SOTA. No published model results are cited for African WinoGrande (Igbo/Zulu). The SOTA column should either be filled with real published numbers or left blank.
 
 ---
 
