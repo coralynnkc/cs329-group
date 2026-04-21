@@ -1,13 +1,7 @@
 # Pronoun Resolution — Prompt Testing
 
 This directory contains the canonical datasets, generated artifacts, and scripts
-for the **main prompt-engineering pronoun-resolution experiment** in this repo.
-
-Within the unified `pronoun_resolution/` layout, this is one sub-experiment among several:
-
-- this folder = main prompt testing on the `en / am / ig / zu` benchmark family
-- `../en_testing_batch_size/` = English-only batch-size study derived from the same main benchmark line
-- `../mlm_baseline/` = imported second multilingual baseline from `srijon-2.0` using a different benchmark family
+for multilingual pronoun-resolution prompt-engineering experiments.
 
 ---
 

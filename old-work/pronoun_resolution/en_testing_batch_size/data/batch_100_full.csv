@@ -1,0 +1,101 @@
+item_id,row_index,source_file,sentence,option_a,option_b,gold_answer,correct_answer_num,correct_text
+19,18,en_master.csv,Handling emergencies was never very difficult for Kevin but it was for Nelson because _ could remain calm under pressure.,Kevin,Nelson,A,1.0,Kevin
+20,19,en_master.csv,Handling emergencies was never very difficult for Kevin but it was for Nelson because _ wasn't able to remain calm under pressure.,Kevin,Nelson,B,2.0,Nelson
+39,38,en_master.csv,"The letter that Joel has written is being read by Adam, so _ is the writer.",Joel,Adam,A,1.0,Joel
+40,39,en_master.csv,"The letter that Joel has written is being read by Adam, so _ is the editor.",Joel,Adam,B,2.0,Adam
+47,46,en_master.csv,"Leslie was fascinated with collecting new shoes compared to Derrick, because _ loved fashion trends.",Leslie,Derrick,A,1.0,Leslie
+48,47,en_master.csv,"Leslie was fascinated with collecting new shoes compared to Derrick, because _ hated fashion trends.",Leslie,Derrick,B,2.0,Derrick
+53,52,en_master.csv,Kyle loves chocolate and candy and Steven loves pickles and lemons. _ loves sour foods.,Kyle,Steven,B,2.0,Steven
+54,53,en_master.csv,Kyle loves chocolate and candy and Steven loves pickles and lemons. _ loves sweet foods.,Kyle,Steven,A,1.0,Kyle
+71,70,en_master.csv,"William forgot about all the times when Ian saved them, because _ was generally self-involved.",William,Ian,A,1.0,William
+72,71,en_master.csv,"Katrina's being taught how to speak Korean by Felicia, so _ was most likely born in Korea.",Katrina,Felicia,B,2.0,Felicia
+82,81,en_master.csv,Erin is known an an entrepreneur while Victoria is only an employee because _ owns a business.,Erin,Victoria,A,1.0,Erin
+84,83,en_master.csv,After Logan contracted the chickenpox from Joseph so _ spent the day sending nice texts about it.,Logan,Joseph,B,2.0,Joseph
+126,125,en_master.csv,"The winter made Jason's hands dry, but not Leslie's, since _ always forgot to moisturize at night.",Jason,Leslie,A,1.0,Jason
+129,128,en_master.csv,Randy started his own business while Ryan worked for someone else so _ had W4 taxes.,Randy,Ryan,B,2.0,Ryan
+133,132,en_master.csv,Drawing was a talent of Sarah but not Carrie so _ was always eager to show her her artwork .,Sarah,Carrie,A,1.0,Sarah
+134,133,en_master.csv,Emily spent a lot of money on their smartphone but Rachel bought a cheap one because _ was very dowdy.,Emily,Rachel,B,2.0,Rachel
+165,164,en_master.csv,"The system that Jeffrey used was amazing compared to Randy, because _ system was higher end.",Jeffrey,Randy,A,1.0,Jeffrey
+186,185,en_master.csv,"At the mall, Laura applied makeup on Betty to beautify her because _ was not very attractive.",Laura,Betty,B,2.0,Betty
+193,192,en_master.csv,Jeffrey build a house with Kenneth's help so _ will have a nice new place to live.,Jeffrey,Kenneth,A,1.0,Jeffrey
+195,194,en_master.csv,"Megan had a baby whereas Katrina had a college aged child, so _ no longer had to change diapers.",Megan,Katrina,B,2.0,Katrina
+209,208,en_master.csv,"Mary is sending an important package to Sarah, so _ takes it to the post office.",Mary,Sarah,A,1.0,Mary
+210,209,en_master.csv,"Craig volunteered to help the dyslexic students at the school while Joel avoided them, since _ struggled with reading.",Craig,Joel,B,2.0,Joel
+211,210,en_master.csv,"Craig volunteered to help the dyslexic students at the school while Joel avoided them, since _ loved reading.",Craig,Joel,A,1.0,Craig
+214,213,en_master.csv,"Ian did not see the tumor on Brett's leg, because _ was only receiving an eye exam.",Ian,Brett,B,2.0,Brett
+223,222,en_master.csv,Benjamin had a more juvenile sense of humor than Donald so _ enjoyed whoopie cushions.,Benjamin,Donald,A,1.0,Benjamin
+224,223,en_master.csv,The ground around Michael's house was solid unlike Aaron's because _ had a month long rainfall.,Michael,Aaron,B,2.0,Aaron
+226,225,en_master.csv,"Megan inserted an IV into Sarah's arm once they were admitted to the hospital, because _ was a nurse.",Megan,Sarah,A,1.0,Megan
+231,230,en_master.csv,Patricia chose a hardy cultivar to grow unlike Tanya because _ had very rocky soil.,Patricia,Tanya,A,1.0,Patricia
+238,237,en_master.csv,"Dennis had a much higher testosterone level than Christopher, so _ started to worry about being able to have children.",Dennis,Christopher,B,2.0,Christopher
+242,241,en_master.csv,Katrina loves the taste of lettuce but Angela doesn't. _ ordered a big salad for dinner.,Katrina,Angela,A,1.0,Katrina
+248,247,en_master.csv,Nelson went to the doctors office without Dennis because _ had to change his prescription.,Nelson,Dennis,A,1.0,Nelson
+250,249,en_master.csv,"Ian asked Kevin to help with their taxes because _ was a successful, trained accountant.",Ian,Kevin,B,2.0,Kevin
+258,257,en_master.csv,"Patricia always had to clean up after Angela, because _ didn't care about living in filth.",Patricia,Angela,B,2.0,Angela
+268,267,en_master.csv,"Victoria decided to choose express shipping while Katrina did not, so _ got her order last.",Victoria,Katrina,B,2.0,Katrina
+276,275,en_master.csv,"At night, Jeffrey always stays up later than Hunter to watch TV because _ wakes up late.",Jeffrey,Hunter,A,1.0,Jeffrey
+284,283,en_master.csv,"Since Craig threw aluminum cans in the trash and Benjamin recycled, _ was environmentally irresponsible.",Craig,Benjamin,A,1.0,Craig
+288,287,en_master.csv,Joel researched laws and helped to open a preschool for Eric. Because _ is very good with kids.,Joel,Eric,B,2.0,Eric
+298,297,en_master.csv,"Randy gave their heart to Brian, and _ soon told them that they should have kept their heart to themselves.",Randy,Brian,B,2.0,Brian
+312,311,en_master.csv,"Emily never had as much money to spend as Carrie, because _ had a good job.",Emily,Carrie,B,2.0,Carrie
+324,323,en_master.csv,"When Steven found that their T-shirt had shrunk in the laundry, Robert's first reaction was to laugh, and _ then became angry.",Steven,Robert,A,1.0,Steven
+327,326,en_master.csv,"The house of Aaron took some damage from the storm but not Michael's house, because _ lived farther away.",Aaron,Michael,B,2.0,Michael
+344,343,en_master.csv,William liked to be outside more than Kyle so _ spent time arguing against getting a pool.,William,Kyle,B,2.0,Kyle
+349,348,en_master.csv,Rachel told Patricia to pick up some baby powder at the store because _ had sweaty feet.,Rachel,Patricia,A,1.0,Rachel
+371,370,en_master.csv,"Lawrence dealt the cards to Joseph at the blackjack table, because _ was a professional player.",Lawrence,Joseph,B,2.0,Joseph
+375,374,en_master.csv,William did not mind if it took them a while to prepare a meal but Adam did because _ was very meticulous.,William,Adam,A,1.0,William
+376,375,en_master.csv,Kevin ate large amounts of food but not Adam. _ didn't have to get checked to see if they had a tapeworm.,Kevin,Adam,B,2.0,Adam
+381,380,en_master.csv,"The cake that Lawrence tried to bake for Ryan didn't rise, and _ felt forgiving abut it.",Lawrence,Ryan,B,2.0,Ryan
+388,387,en_master.csv,Samantha had to get car insurance and Jessica did not because _ just got a new car.,Samantha,Jessica,A,1.0,Samantha
+389,388,en_master.csv,The stain was lighter on Jason's shirt than Donald's because _ spilled red wine and not white wine.,Jason,Donald,B,2.0,Donald
+392,391,en_master.csv,Ian needed to adjust the mirror and Craig did not because _ was the same height as the owner of the car.,Ian,Craig,B,2.0,Craig
+398,397,en_master.csv,Ryan had to use a calculator on the test but Michael didn't because _ was very bad at math.,Ryan,Michael,A,1.0,Ryan
+399,398,en_master.csv,"Christine accepted the over night challenge from Laura, because _ had a better chance of winning.",Christine,Laura,A,1.0,Christine
+410,409,en_master.csv,Going to a restaurant is something that Patricia does very often but Carrie rarely goes to one because _ is a very bad cook.,Patricia,Carrie,A,1.0,Patricia
+416,415,en_master.csv,Steven helped Derrick do research on the paper because _ did not have access to the internet.,Steven,Derrick,B,2.0,Derrick
+428,427,en_master.csv,Hunter bought a vehicle to commute in but not Dennis because _ had a driving distance to work.,Hunter,Dennis,A,1.0,Hunter
+436,435,en_master.csv,Katrina turned out to be much more spoiled than Felicia because _ had wealthy and generous parents.,Katrina,Felicia,A,1.0,Katrina
+441,440,en_master.csv,Jennifer wanted to get romance in a relationship while Elena did not because _ liked to watch romantic comedies.,Jennifer,Elena,A,1.0,Jennifer
+442,441,en_master.csv,"Adam loved dogs but Jason was afraid of them, so only _ petted the poodle.",Adam,Jason,A,1.0,Adam
+443,442,en_master.csv,"Elena brought the horse to the stables owned by Cynthia, so _ could buy the animal.",Elena,Cynthia,B,2.0,Cynthia
+445,444,en_master.csv,Brett wanted to get a massage but Kenneth did not. This is because _ was feeling relaxed.,Brett,Kenneth,B,2.0,Kenneth
+453,452,en_master.csv,Monica had trouble paying off their loan unlike Sarah because _ was an infrequent gambler.,Monica,Sarah,B,2.0,Sarah
+463,462,en_master.csv,Donald has a problem with hearing in his ears unlike Benjamin because _ worked in a quiet area.,Donald,Benjamin,B,2.0,Benjamin
+467,466,en_master.csv,The game on television was very important for Ian but not Dennis because _ was into music instead.,Ian,Dennis,B,2.0,Dennis
+490,489,en_master.csv,Kevin was not able to run fast compared to William because _ had no broken bones in his body.,Kevin,William,B,2.0,William
+492,491,en_master.csv,"When other people were smoking, Kayla was more disgusted than Erin because _ had always avoided smoke.",Kayla,Erin,A,1.0,Kayla
+497,496,en_master.csv,"Maria gave Samantha the blue floral pants, because _ didn't  fit into them very well.",Maria,Samantha,A,1.0,Maria
+503,502,en_master.csv,"Aaron drank plenty of water before the hike, but Christopher forgot to, so _ ended up getting dehydrated.",Aaron,Christopher,B,2.0,Christopher
+508,507,en_master.csv,Cynthia gave a rabbit as a companion to Carrie because _ explained they were lonely.,Cynthia,Carrie,B,2.0,Carrie
+519,518,en_master.csv,Craig had a slower running phone than Logan because _ had more apps running on theirs.,Craig,Logan,A,1.0,Craig
+524,523,en_master.csv,The personal trainer gave Laura but not Victoria the more difficult exercise because _ was in shape.,Laura,Victoria,A,1.0,Laura
+539,538,en_master.csv,Firing a shotgun came more naturally for Megan than Tanya because _ grew up around them.,Megan,Tanya,A,1.0,Megan
+543,542,en_master.csv,"Joel had many extra possesions while Neil didn't, so _ didn't have to rent a storage shed.",Joel,Neil,B,2.0,Neil
+585,584,en_master.csv,"Benjamin shaved his beard, but Nick had just grown one, so _ gave them all his old oils.",Benjamin,Nick,A,1.0,Benjamin
+595,594,en_master.csv,"Tanya was unrecognizable after Sarah was done beating them, so _ ended up going to jail.",Tanya,Sarah,B,2.0,Sarah
+596,595,en_master.csv,"Derrick showed Jason how to cut the tiles for their kitchen, and _ was shown appreciation for their help.",Derrick,Jason,A,1.0,Derrick
+600,599,en_master.csv,"Samuel was blown away to find out from Lawrence that goldfish are a type of carp, so _ decided to fact check his friend.",Samuel,Lawrence,A,1.0,Samuel
+601,600,en_master.csv,Michael had a cat as a pet but Nelson didn't have any pets because _ had little allergies in their system.,Michael,Nelson,A,1.0,Michael
+602,601,en_master.csv,Maria mimicked everything that Christine did at work because _ was like a fan to her.,Maria,Christine,A,1.0,Maria
+619,618,en_master.csv,"Craig grew frustrated trying to coach Nick in soccer, as _ lacked the patience needed for the task.",Craig,Nick,A,1.0,Craig
+624,623,en_master.csv,More people attended the funeral of Joel than of Derrick because _ was a mean person.,Joel,Derrick,B,2.0,Derrick
+637,636,en_master.csv,Michael had more money than Samuel did because _ like to shop and spend money too much.,Michael,Samuel,B,2.0,Samuel
+657,656,en_master.csv,Jeffrey asked Hunter when was the date set for the wedding because _ was getting married.,Jeffrey,Hunter,B,2.0,Hunter
+671,670,en_master.csv,Nelson teased Christopher about needing to find a homecoming date because _ already had one.,Nelson,Christopher,A,1.0,Nelson
+674,673,en_master.csv,Sarah had to call in an expert unlike Erin because _ had no knowledge on the subject.,Sarah,Erin,A,1.0,Sarah
+675,674,en_master.csv,Sarah had to call in an expert unlike Erin because _ had vast knowledge on the subject.,Sarah,Erin,B,2.0,Erin
+684,683,en_master.csv,Michael loved eating many different vegetables but not Brett because _ was on a vegetarian diet.,Michael,Brett,A,1.0,Michael
+686,685,en_master.csv,"As a marine, Emily looks down on civilians like Maria, so _ is a bit saddened.",Emily,Maria,B,2.0,Maria
+689,688,en_master.csv,The food that Hunter ate was spoiled but not that of Brett because _ left his food in the fridge.,Hunter,Brett,B,2.0,Brett
+697,696,en_master.csv,Brett took more medicines than Aaron did although _ was suffering from many more diseases.,Brett,Aaron,B,2.0,Aaron
+699,698,en_master.csv,Derrick greeted Craig at the event but he did not respond to him because _ is humble.,Derrick,Craig,A,1.0,Derrick
+700,699,en_master.csv,Derrick greeted Craig at the event but he did not respond to him because _ is arrogant.,Derrick,Craig,B,2.0,Craig
+701,700,en_master.csv,Monica chose Kayla as the winning contestant on the reality show because _ was a contestant on the show.,Monica,Kayla,B,2.0,Kayla
+717,716,en_master.csv,"Katrina demanded that Jessica get off of their property, because _ wasn't in the mood for visiting.",Katrina,Jessica,A,1.0,Katrina
+730,729,en_master.csv,Mastering the game of chess was easier for Brian than William because _ had an analytical mind.,Brian,William,A,1.0,Brian
+766,765,en_master.csv,"The mirror didn't lie when it showed how overweight Patricia was and how emaciated Felicia was, so _ needed to go on diet.",Patricia,Felicia,A,1.0,Patricia
+778,777,en_master.csv,Victoria had no issues with Achilles Tendinitis unlike Betty because _ never wore sneakers with cushion.,Victoria,Betty,B,2.0,Betty
+784,783,en_master.csv,"Victoria was interested in babies, but Katrina thought they were annoying, so _ preferred visiting the nursery.",Victoria,Katrina,A,1.0,Victoria
+811,810,en_master.csv,"Jennifer has more money than Amy, so _ became a homeowner at a young age.",Jennifer,Amy,A,1.0,Jennifer
+815,814,en_master.csv,The girl broke Leslie's heart but not Kenneth's because _ was never in love with her.,Leslie,Kenneth,B,2.0,Kenneth
+824,823,en_master.csv,William was a huge animal rights activist but Randy couldn't care less so _ loved leather.,William,Randy,B,2.0,Randy

@@ -1,13 +1,5 @@
 # English pronoun-resolution batch-size study: cleaned summary
 
-This directory contains the English-only batch-size sub-experiment inside the unified `pronoun_resolution/` repo.
-
-Relationship to the other pronoun-resolution work:
-
-- this folder studies how batch size affects performance on the main English benchmark line
-- `../testing/` contains the broader prompt-engineering workflow for `en / am / ig / zu`
-- `../mlm_baseline/` contains the imported second multilingual baseline (`en / fr / de / ru`) from `srijon-2.0`
-
 ## Canonical files for reporting
 - `chat_5.4_25_en.csv`
 - `chat_5.4_100_en.csv`

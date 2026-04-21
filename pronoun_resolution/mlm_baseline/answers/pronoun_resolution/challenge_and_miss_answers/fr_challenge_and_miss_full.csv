@@ -1,0 +1,70 @@
+item_id,sentence,option_a,option_b,gold_answer,model_prediction,correct
+pr_fr_000088,"John soupçonnait que le porc, et non le hamburger, lui avait donné une intoxication alimentaire, parce que _ avait été correctement cuit.",le porc,le hamburger,B,,
+pr_fr_000124,"Elle a ressenti beaucoup de colère en voyant l' école, mais pas en voyant l' église, parce que c' est dans _ qu' elle a eu de bonnes expériences.",l' école,l' église,B,,
+pr_fr_000141,"Le PDG a remplacé le tapis au travail dans la salle de repos par du bois dur pendant les vacances d' hiver, _ était vieux.",le tapis,le bois,A,,
+pr_fr_000142,"Le PDG a remplacé le tapis au travail dans la salle de repos par du bois dur pendant les vacances d' hiver, _ était à la mode.",le tapis,le franc,B,,
+pr_fr_000292,"L' enfant a eu des démangeaisons en portant la chemise, mais elles ont disparu lorsqu' il a appliqué de l' huile, car _ lui était apaisante.",l' huile,la chemise,A,,
+pr_fr_000503,"Alexis voulait perdre du poids, alors elle a acheté un banc pour soulever des poids et un pack repas hypocalorique, mais _ est tombé en panne.",le banc,le pack,A,,
+pr_fr_000504,"Alexis voulait perdre du poids, alors elle a acheté un banc pour soulever des poids et un pack repas hypocalorique, mais _ contenait des additifs.",le pack,le banc,A,,
+pr_fr_000581,"Quand Steve est allé à la pêche, il a choisi d' utiliser une canne au lieu d' une lance parce que _ exigeait des compétences de pêche avancées.",la canne,la lance,B,,
+pr_fr_000582,"Quand Steve est allé à la pêche, il a choisi d' utiliser une canne au lieu d' une lance parce que _ exigeait de simples compétences de pêche.",la lance,la canne,B,,
+pr_fr_000621,"Son masque était suffisamment convaincant pour le faire entrer dans le bâtiment, mais il a été arrêté au bureau, car _ avait une sécurité plus faible.",le bâtiment,le bureau,A,,
+pr_fr_000703,"Kalli avait beaucoup d' anxiété à parler dans le microphone, mais était à l' aise avec l' ordinateur, car _ ne lui était pas familier.",le microphone,l' ordinateur,A,,
+pr_fr_000731,"Le fermier voulait élever plus de lapins, alors il a essayé un nouveau type d' aliment et un nouvel enclos, mais _ a rendu les lapins malades.",l' enclos,l' aliment,B,,
+pr_fr_000804,"Evelyn s' est fait percer le nez et a choisi un cerceau en or plutôt qu' un clou en argent, car _ avait l' air plus frais.",le cerceau,le goujon,A,,
+pr_fr_000845,"Nous avons refusé de livrer la pizza au dortoir, mais nous avons été heureux de l' apporter au bureau, car _ avait négligé de nous payer.",le bureau,le dortoir,B,,
+pr_fr_000864,"Lorsque le bandage a échoué, nous avons utilisé un chiffon pour traiter la plaie, car _ était à la hauteur de la tâche.",le tissu,le bandage,A,,
+pr_fr_001006,"Ecrire un essai n' a pas été facile pour Adam, contrairement à l' écriture d' un poème, car _ lui était extrêmement difficile à composer.",l' essai,le poème,A,,
+pr_fr_001007,"Écrire un essai n' a pas été facile pour Adam, contrairement à l' écriture d' un poème, car _ lui était extrêmement facile à composer.",l' essai,le poème,B,,
+pr_fr_001054,"J' ai construit un nouveau placard à ma femme, mais elle n' aimait pas ça aussi bien que l' ancien tiroir, car _ avait plus de place.",le placard,le tiroir,B,,
+pr_fr_001061,"Afin d' aider une amie atteinte du SSPT, elle a laissé un dépliant de thérapie de groupe sur la table au lieu d' un livre d' auto-assistance car _ serait inutile.",le livre,le dépliant,A,,
+pr_fr_001081,"Le médecin a essayé de guérir la femme de son cancer par un médicament expérimental, mais il a échoué parce que _ était trop faible.",le médicament,le cancer,A,,
+pr_fr_001095,"Maria est entrée dans la petite boutique et a pris un panier au lieu d' un chariot, car elle pensait que _ ne serait pas de la bonne taille pour ses achats.",le chariot,le panier,A,,
+pr_fr_001243,"Si vous cherchez des maisons à acheter, je vous recommande de regarder dans le journal le magazine d' un agent immobilier, car _ propose généralement des ventes privées moins chères.",le journal,le magazine,A,,
+pr_fr_001330,"L' élève connaissait les mathématiques de base grâce au livre, bien qu' il ne comprenne pas mes problèmes au tableau, car _ avait des équations avancées.",le tableau,le livre,A,,
+pr_fr_001498,"Le crayon errant de l 'enfant a transformé toute la charge de linge en une couleur jaune vif, parce que _ était jaune.",le linge,le crayon,B,,
+pr_fr_001499,"Le crayon errant de l 'enfant a transformé toute la charge de linge en une couleur jaune vif, parce que _ était blanc.",le linge,le crayon,A,,
+pr_fr_001562,"Comme il était dangereux de faire de l' auto-stop, Sam a décidé d' acheter la voiture au lieu de la moto pour se rendre au travail, car _ n' était pas sûre.",la voiture,la moto,B,,
+pr_fr_001563,"Comme il était dangereux de faire de l' auto-stop, Sam a décidé d' acheter la voiture au lieu de la moto pour se rendre au travail, car _ était sûre.",la moto,la voiture,B,,
+pr_fr_001676,"James s' est rendu compte qu' il ne pouvait pas vendre sa maison assez rapidement à quelqu' un qui pouvait se le permettre, alors il a décidé de vendre sa voiture parce que _ était bon marché.",la voiture,la maison,A,,
+pr_fr_001677,"James s' est rendu compte qu' il ne pouvait pas vendre sa maison assez rapidement à quelqu' un qui pouvait se le permettre, alors il a décidé de vendre sa voiture parce que _ était chère.",la voiture,la maison,B,,
+pr_fr_001708,"Le bus devait arriver à 7h45 mais le concert avec mon groupe indépendant préféré était prévu pour 8h00; heureusement, _ était tôt, donc je n' ai rien manqué.",le bus,le concert,A,,
+pr_fr_001709,"Le bus devait arriver à 7h45 mais le concert avec mon groupe indépendant préféré était prévu pour 8h00; heureusement, _ était en retard donc je n' ai rien manqué.",le concert,le bus,A,,
+pr_fr_001811,"Elle voulait voir un film, plutôt qu' un concert, à son rendez-vous, car elle trouvait que _ avait l' air excitant.",le concert,le film,B,,
+pr_fr_001824,"John a dit à ses parents qu' il pouvait aller à l' université depuis la maison, mais qu' il devait prendre un taxi pour aller à l' église parce que _ était proche.",l' église,l' université,B,,
+pr_fr_001825,"John a dit à ses parents qu' il pouvait aller à l' université depuis la maison, mais il a dû prendre un taxi pour aller à l' église parce que _ est loin.",l' université,l' église,B,,
+pr_fr_001851,"Comme Tom a entendu un bruit lorsqu' il a appliqué le frein, il a décidé de fixer l' étrier plutôt que le rotor, car _ était silencieux.",l' étrier,le rotor,B,,
+pr_fr_001881,"Au restaurant, la femme a utilisé une cuillère au lieu d' une fourchette pour manger le dessert, car _ était incorrecte.",la cuillère,la fourchette,B,,
+pr_fr_001896,"Le pot n' était pas fructueux pour la culture des graines, nous les avons donc mis dans un jardin, car _ manquait de nutriments.",le pot,le jardin,A,,
+pr_fr_001897,"Le pot n' était pas fructueux pour la culture des graines, nous les avons donc mis dans un jardin, car _ était riche en nutriments.",le pot,le jardin,B,,
+pr_fr_002127,"Jen a écrit son scénario sur un cahier, puis l' a déplacé sur son ordinateur, et _ s' est senti plus en sécurité pour elle.",le cahier,l' ordinateur,B,,
+pr_fr_002214,"Pour rendre les choses moins gênantes entre eux, Kevin a acheté une marguerite à sa femme, même si elle préférait une tulipe, car _ était plus difficile à acquérir pour lui.",la tulipe,la marguerite,A,,
+pr_fr_002320,"Lorsque Beth est allée se faire examiner une bosse, le médecin lui a dit qu' il pouvait s' agir d' une petite bosse inoffensive ou d' une grosse tumeur, généralement _ était grosse.",la tumeur,la bosse,A,,
+pr_fr_002321,"Lorsque Beth est allée se faire examiner une bosse, le médecin lui a dit qu' il pouvait s' agir d' une petite bosse inoffensive ou d' une grosse tumeur, généralement _ était petite.",la tumeur,la bosse,B,,
+pr_fr_002492,"L' histoire a suscité un sourire de la fille, mais elle n' aimait pas la chanson qui allait avec, il semble que _ était si heureuse.",l' histoire,la chanson,A,,
+pr_fr_002556,"Max, le petit garçon, voulait du cola avec son déjeuner et non du jus parce que _ était plus rafraîchissant pour lui.",le cola,le jus,A,,
+pr_fr_002557,"Max, le petit garçon, voulait du cola avec son déjeuner et non du jus parce que _ était plus générique pour lui.",le jus,le cola,A,,
+pr_fr_002646,"Oly voulait faire de Jenna sa petite amie, alors il l' a emmenée à un rendez-vous au cinéma plutôt qu' au pub, car _ était un lieu inapproprié.",le cinéma,le pub,B,,
+pr_fr_002647,"Oly voulait faire de Jenna sa petite amie, alors il l' a emmenée à un rendez-vous au cinéma plutôt qu' au pub, car _ était un lieu approprié.",le pub,le cinéma,B,,
+pr_fr_002663,"Au lieu de faire relier le livre avec du cuir, Mary a demandé à le faire relier avec du tissu, parce que _ correspondait à ses autres livres.",le cuir,le tissu,B,,
+pr_fr_002700,"Après l' opération du genou, il a essayé d' utiliser un déambulateur, mais il est passé en fauteuil roulant, car _ était mal à l' aise.",le déambulateur,le roulant,A,,
+pr_fr_002780,"Il essayait de mesurer la hauteur de la boîte à l' aide d' une règle, mais a dû passer à une règle plus grande car _ est trop haute.",la règle,la boîte,B,,
+pr_fr_000103,"Par une chaude journée d' été, Kai a étudié dans la baignoire après que la climatisation de la bibliothèque se soit cassée, _ était chaude.","la bibliothèque","la baignoire",A
+pr_fr_000247,"La durée de la réunion était beaucoup plus longue que la présentation précédente, car _ était plus détaillée.","la présentation","la réunion",B
+pr_fr_000255,"Tout le papier que j' ai reçu de l' école ne rentrerait pas dans le dossier, parce que _ était trop épais.","le dossier","le papier",B
+pr_fr_000269,"L' homme a essayé d' installer l' écran sur le mur mais _ était trop court.","l' écran","le mur",B
+pr_fr_000485,"Il était plus facile de décomposer le plastique que le verre dans ce cas pour le recyclage car _ était plutôt cassant.","le plastique","le verre",A
+pr_fr_000526,"Le mur a mis plus de temps à peindre que le plafond car _ couvrait une zone plus petite.","le mur","le plafond",B
+pr_fr_000710,"L' homme a essayé d' écrire le plan sur un morceau de papier, mais _ était trop petit.","le plan","le papier",B
+pr_fr_000909,"Clare et David ont décidé d' aller au cinéma plutôt qu' au théâtre parce que _ n' avait pas l' air intéressant.","le film","le théâtre",B
+pr_fr_000933,"L' entraîneur a essayé de mettre la voiture sur la piste mais _ était trop grande.","la voiture","la piste",A
+pr_fr_000982,"Je n' ai pas pu utiliser le mot dans le titre de mon livre car _ était très long.","le titre","le mot",B
+pr_fr_000995,"Le projet que j' ai entrepris cette année était meilleur que mon travail de l' année dernière, car _ était plus difficile.","le projet","le travail",B
+pr_fr_001400,"Lors de l' entraînement au gymnase, mon instructeur a recommandé le rouleau sur le tapis pour le prix car _ était plus cher à utiliser.","le rouleau","le tapis",B
+pr_fr_001642,"J' ai lentement ajouté les pois du sac dans le pot jusqu' à ce que _ soit sorti.","le sac","le pot",A
+pr_fr_001670,"La cicatrice avait besoin de soins médicaux pour guérir, tandis que la coupure guérissait naturellement, car _ était une blessure grave.","la coupure","la cicatrice",A
+pr_fr_001882,"J' ai jeté la roquette avec de l' huile et du vinaigre et l' ai mangée, mais j' ai jeté la laitue à la poubelle, car _ était fraîche.","la roquette","la laitue",A
+pr_fr_001901,"Leur culture était beaucoup plus difficile à adapter que mon atmosphère car _ était très clémente.","l' atmosphère","la culture",A
+pr_fr_001907,"Je méprise le système actuellement en place au collège par rapport au programme à l' école, car _ est simple.","le programme","le système",A
+pr_fr_002611,"J' ai détesté le projet cette année par rapport à l' essai de l' année dernière, car _ nécessitait moins de travail.","le projet","l' essai",B
+pr_fr_002723,"Le drapeau peut difficilement souffler lorsqu' il est soulevé au vent car _ est léger.","le vent","le drapeau",A

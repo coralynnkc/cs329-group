@@ -1,0 +1,584 @@
+item_id,sentence,option_a,option_b
+pr_de_000004,"Die Reinigung des Aquariums dauerte länger als die des Hundekäfigs, da _ sauberer war.",das Aquarium,der Käfig
+pr_de_000005,"Der Kuchen, den er für die Geburtstagsfeier seiner Schwester gemacht hatte, passte nicht auf den Teller, weil _ zu groß war.",der Teller,der Kuchen
+pr_de_000014,"Sergey schätzte komplizierte Entwürfe und beschloss, das Gemälde anstelle der Skulptur beizubehalten, da _ langweilig war.",die Skulptur,das Gemälde
+pr_de_000018,"Der Schaden im Auto meiner Schwester war viel schlimmer als die Delle auf meinem Fahrrad, weil _ winzig war.",der Schaden,die Delle
+pr_de_000027,"Ich kaufte eine brandneue Creme aus dem Laden, um sie auf meinem Gesicht zu verwenden, und _ funktionierte perfekt.",die Creme,das Gesicht
+pr_de_000030,"Heather goss die gesamte Flasche Honig in ihre Teetasse, bis _ voll war.",die Flasche,die Tasse
+pr_de_000046,"Auf der Teeparty goss ich den ganzen Tee aus dem Wasserkocher in die Teetasse, bis _ voll war.",die Teetasse,der Wasserkocher
+pr_de_000054,"In der Hoffnung, viel zu verkaufen, nahm Mary die Pfadfinderinnen-Keksdosen vom Tisch und ordnete sie im Regal, weil _ auffälliger war.",das Regal,der Tisch
+pr_de_000059,"Ich war sehr müde und entschied mich für das Kissen auf dem Bett anstelle der Couch, da _ in der Nähe war.",das Bett,die Couch
+pr_de_000065,"Die Frau steckte die Notiz in ihre Gesäßtasche, aber sie ragte heraus, weil _ groß war.",die Notiz,die Tasche
+pr_de_000077,"Es war eine Herausforderung, den Kochtopf im Spülbecken zu waschen, da _ tief war.",der Kochtopf,das Spülbecken
+pr_de_000080,"Der Junge war so müde, dass er auf der Couch statt auf dem Bett schlafen ging, weil sich _ im anderen Raum befand.",das Bett,die Couch
+pr_de_000095,"Die Decke in meinem Haus war besser als das Dach auf Johns, weil _ perfekt war.",das Dach,die Decke
+pr_de_000121,"Wir gaben den Bohrer zurück und entschieden uns für den Kauf eines Hammers, da _ für unser Bauprojekt unbrauchbar war.",der Hammer,der Bohrer
+pr_de_000160,"James kann nie wissen, was auf dem Umschlag in der Schachtel steht, weil nur _ versteckt ist.",der Umschlag,die Schachtel
+pr_de_000173,"Meine Zähne taten nach dem Verzehr des Apfels mehr weh als nach dem Pudding, weil _ knuspriger war.",der Pudding,der Apfel
+pr_de_000194,"Adam wurde aufgefordert, vor dem Gericht zu erscheinen, um im Prozess auszusagen, aber der Anwalt rief eine Pause an und _ wurde evakuiert.",der Prozess,das Gericht
+pr_de_000201,"Wenn ich Blut spende, schaue ich nicht auf die Nadel, bis ich meinen Keks bekomme, und es ist immer toll zu sehen, dass _ ziemlich groß ist.",die Nadel,der Keks
+pr_de_000204,"Die Wahl des Stoffes für die Kleidung anstelle eines Verbundstoffs wurde getroffen, weil _ steif war.",der Verbundstoff,der Stoff
+pr_de_000205,"Jim putzte sich besser für die Hochzeit als für die Party, weil _ formeller war.",die Party,die Hochzeit
+pr_de_000218,"Ich habe versucht, das Wasser in die Flasche zu gießen, aber ich konnte es nicht tun, weil _ zu klein war.",das Wasser,die Flasche
+pr_de_000227,"Das Büro behandelte Steuerfragen, aber Regulierungsfragen wurden an die Verwaltung gesendet, da _ in Regulierungsfragen machtlos war.",das Büro,die Verwaltung
+pr_de_000245,"Der Löffel war zu heiß, um ihn nach dem Sitzen in der Suppe zu berühren, da _ seine gesamte Wärme aufgenommen hatte.",die Suppe,der Löffel
+pr_de_000258,"Laura entschied sich für eine Lederleine anstelle einer Kette, weil _ professioneller wirkte.",die Kette,die Leine
+pr_de_000261,"Liz wollte ein neues Bett für ihr Zimmer, konnte aber nicht das bekommen, das sie mochte, weil _ zu groß war.",das Bett,das Zimmer
+pr_de_000263,"Der Felsen war etwas Besonderes als der Stein, weil _ aus einer einzigartigen Gegend am Berg stammte.",der Stein,der Felsen
+pr_de_000296,"Sie beschloss, ihre Ersparnisse für einen Laptop anstelle eines Smartphones auszugeben, da _ weniger Funktionen hat.",der Laptop,das Smartphone
+pr_de_000314,"Die Hausbesitzer mussten das Vinyl auf dem Abstellgleis ersetzen, ließen aber das Holz intakt, weil _ noch gut war.",das Holz,das Vinyl
+pr_de_000318,"Ich habe es mehr genossen, Dinge mit meiner Gruppe als mit der Firma zu tun, weil _ lahm war.",die Gruppe,die Firma
+pr_de_000326,"Als wir das Haus verkauften, verließen wir die Möbel, nahmen aber den Fernseher, weil _ hell war.",die Möbel,der Fernseher
+pr_de_000327,"Der Bauer gab Dünger aus dem Wagen in den Garten, bis _ bedeckt war.",der Wagen,der Garten
+pr_de_000343,"Um die Schmerzen auf seinem Rücken zu lindern, benutzte der Mann das Eis anstelle der Hitze, weil _ unwirksam war.",das Eis,die Hitze
+pr_de_000356,"Mariah hatte ein Buch voller Gutscheine, also schnappte sie sich einen Einkaufswagen und nahm alles aus dem Ladenregal, bis _ knapp war.",das Regal,der Wagen
+pr_de_000362,"Das neue Auto passt nicht auf den Anhänger, weil _ zu kurz ist.",der Anhänger,das Auto
+pr_de_000364,"Das Brot, das Sara gestern im Laden gekauft hatte, wuchs bereits Schimmel, weil _ unfähig war.",das Brot,der Laden
+pr_de_000376,"James versuchte seine Hand in den Handschuh zu stecken, aber er rutscht immer wieder ab, weil _ klein ist.",der Handschuh,die Hand
+pr_de_000379,"James holte den Teppich heraus, auf den der Hund gekackt hatte, und legte eine Matte, weil _ schmutzig ist.",die Matte,der Teppich
+pr_de_000386,"Der Marker hatte eine bessere Spitze als der Bleistift, da _ neu und frisch war.",der Marker,der Bleistift
+pr_de_000411,"Jon übte, sein neues Auto in seiner Garage abzustellen, aber _ war zu groß.",die Garage,das Auto
+pr_de_000412,"Jon übte, sein neues Auto in seiner Garage abzustellen, aber _ war zu klein.",die Garage,das Auto
+pr_de_000415,"Ich habe ein neues Bild gekauft, aber es würde nicht in den Rahmen passen, weil _ zu schwer war.",das Bild,der Rahmen
+pr_de_000417,"Ihr Freund bereute es, ihr eine Jacke gekauft zu haben und besorgte ihr stattdessen einen neuen Hut, da er wusste, dass sie dachte, _ passe schlecht zu ihrer Garderobe.",der Hut,die Jacke
+pr_de_000444,"Die Geschichte verbreitete sich schneller als die Nachrichten und die Leute glaubten, dass _ langweilig sind.",die Nachrichten,die Geschichte
+pr_de_000459,"Ich habe den alten Käfig durch eine neue Hundehütte für unseren deutschen Schäferhund ersetzt, weil _ veraltet war.",die Hundehütte,der Käfig
+pr_de_000466,"Der Mann benutzte den Regenschirm, um den Regen zu stoppen, aber _ war zu schwach.",der Regen,der Regenschirm
+pr_de_000469,"Der Fotograf musste mit dem Smartphone und nicht mit der Kamera fotografieren, weil _ bei ihm war.",das Smartphone,die Kamera
+pr_de_000475,"Der Grillkoch versuchte, die Grillgabel in die Schublade zu legen, aber sie passte nicht. _ war zu lang.",Die Schublade,Die Gabel
+pr_de_000480,"Seine Spende zur Tilgung der Schulden der Wohltätigkeitsorganisation half nicht, weil _ zu hoch waren.",die Spende,die Schulden
+pr_de_000481,"Jacob war mit dem Soda zufrieden, aber mit dem Sorbet unzufrieden, weil _ lecker war.",das Sorbet,das Soda
+pr_de_000483,"Die Schaltung versorgte den Fernseher nicht mit Strom, hielt aber das Radio am Laufen, da _ eine schwache Verbindung hatte.",der Fernseher,das Radio
+pr_de_000497,"Der Friseur versuchte, mit der Chemikalie den Geruch aus den Haaren des Mannes zu waschen, aber _ war zu stark.",die Chemikalie,der Geruch
+pr_de_000500,"James rutschte von der Dachspitze zum Zaun, weil _ kürzer ist.",das Dach,der Zaun
+pr_de_000521,"Die Mitarbeiterin war enttäuscht, dass ihr Arbeitsplatz ihr zehnjähriges Jubiläum nicht anerkannte, da _ von Bedeutung war.",der Arbeitsplatz,das Jubiläum
+pr_de_000525,"Ich goss Orangensaft aus dem Mixer in die Tasse, bis _ leer war.",der Mixer,die Tasse
+pr_de_000543,"Nach dem Kauf des Tierfutters war die medizinische Behandlung für den Hund besser als die Spritze, da _ voller Medikamente war.",die Spritze,die Behandlung
+pr_de_000553,"Mike wollte den Kühler in den Urlaub nehmen, nahm aber stattdessen die Tasse, weil _ einen kaputten Deckel hatte.",der Kühler,die Tasse
+pr_de_000557,"James konnte den Ton seines Fernsehers in seiner Nachbarschaft nicht hören, weil _ zu laut ist.",der Fernseher,die Nachbarschaft
+pr_de_000562,"Die Haut der Person war feuchter als die Kopfhaut, da _ selten gewaschen wurde.",die Haut,die Kopfhaut
+pr_de_000564,"Er war müde, nachdem er auf dem Sofa geschlafen hatte, aber nicht auf dem Liebessitz, weil _ weich war.",der Liebessitz,das Sofa
+pr_de_000567,"Der Mann wollte das Schlafzimmer ins Haus stellen, aber _ war zu groß.",das Schlafzimmer,das Haus
+pr_de_000569,"Der Film wurde zu seiner Besessenheit und ließ ihn das Buch verlassen, weil _ einfach so einnehmend war.",der Film,das Buch
+pr_de_000570,"Der Film wurde zu seiner Besessenheit und ließ ihn das Buch verlassen, weil _ einfach so langweilig war.",das Buch,der Film
+pr_de_000574,"Das Fest musste abgesagt werden, nachdem alle die Tischdecke und den Tisch gesehen hatten, weil _ zu klein war.",die Tischdecke,der Tisch
+pr_de_000581,"Die schwangere Frau könnte das Sauerkraut leichter verdauen als den Blumenkohl, da _ knuspriger ist.",das Sauerkraut,der Blumenkohl
+pr_de_000582,"Die schwangere Frau könnte das Sauerkraut leichter verdauen als den Blumenkohl, da _ weicher ist.",der Blumenkohl,das Sauerkraut
+pr_de_000585,"Da sie ein begrenztes Budget hatte, kaufte die Frau den Champagner anstelle des Weins, weil _ billig war.",der Wein,der Champagner
+pr_de_000595,"Die Frau wollte eine große Jubiläumsfeier im Laden veranstalten, aber _ war zu groß.",der Laden,die Party
+pr_de_000597,"Sie husteten mehr im Wohnzimmer als in der Küche, weil _ viel sauberer war.",das Wohnzimmer,die Küche
+pr_de_000601,"Der Florist nahm die langstieligen Rosen aus dem Kühlschrank und stellte sie in die Vase, bis _ leer war.",die Vase,der Kühlschrank
+pr_de_000617,"In Mikes Garten wächst die Minze besser als der Rucola, so dass _ wahrscheinlich genügend Sonnenlicht bekommt.",die Minze,die Rucola
+pr_de_000618,"In Mikes Garten wächst die Minze besser als die Rucola, so dass _ wahrscheinlich nicht genügend Sonnenlicht bekommt.",die Rucola,die Minze
+pr_de_000646,"Ich hatte Hunger und legte das Schweinekotelett auf die Pfanne, weil _ warm war.",die Pfanne,das Schweinekotelett
+pr_de_000654,"Die junge Pflanze brauchte viel Pflege, damit sie im Klima wachsen konnte. _ war sehr frisch.",das Klima,Die Pflanze
+pr_de_000657,"Der Teenager entschied sich für die Zahnpasta und nicht für den Weißmacher im Regal, da _ sanft war.",die Zahnpasta,der Weißmacher
+pr_de_000672,"Bryce versuchte, die Walze an seinem Hals anstelle des Heizkissens zu verwenden, da _ effektiver zu sein schien.",die Walze,das Kissen
+pr_de_000695,"Der Druck des Wassers stieg an, wenn es vom Tank zum Rohr floss, weil _ breiter ist.",der Tank,das Rohr
+pr_de_000702,"Der Schaden in Hawaii war schlimmer als die Zerstörung in Japan, da _ durch ein schwächeres Erdbeben verursacht wurde.",der Schaden,die Zerstörung
+pr_de_000713,"Der Anwalt brauchte den Umhang, um seinen ganzen Körper zu bedecken, aber so ging er mit einem Trenchcoat, da _ lang war.",der Trenchcoat,der Umhang
+pr_de_000745,"Billy goss die gesamte Flasche Bremsflüssigkeit in die Tasse, bis _ leer war.",die Tasse,die Flasche
+pr_de_000757,"Der Mover war erfolgreich darin, die Kommode aus dem Haus zu holen, aber nicht den Schreibtisch, weil _ klein war.",die Kommode,der Schreibtisch
+pr_de_000760,"James erklärte sich bereit, den Gewinn zu teilen, runzelte jedoch die Stirn bei der Beschlagnahme von Eigentum, da _ wie ein Verlust erscheint.",die Beschlagnahme,der Gewinn
+pr_de_000765,"Julie konnte ihr neues Kleid nicht in ihre alte Handtasche stecken, _ war zu klein.",die Handtasche,das Kleid
+pr_de_000766,"Julie konnte ihr neues Kleid nicht in ihre alte Handtasche stecken, _ war zu groß.",die Handtasche,das Kleid
+pr_de_000768,"Der Radiologe entdeckte das Lymphom, aber nicht die Leukämie, da _ kaum sichtbar war.",die Leukämie,das Lymphom
+pr_de_000773,"Jane konnte die Hundehaare nicht mit dem Rasiermesser rasieren, deshalb benutzte sie den Haarschneider, weil _ stumpf ist.",der Haarschneider,der Rasierer
+pr_de_000793,"Um ihr trockenes Haar natürlich zu behandeln, wollte Amanda den Conditioner anstelle des Shampoos probieren, da _ biologisch war.",das Shampoo,der Conditioner
+pr_de_000795,"Das Schiff riskierte, von der Welle überwunden zu werden, da _ im Vergleich so klein war.",das Schiff,die Welle
+pr_de_000803,"Das Baby spielte lieber mit dem Handy als mit dem Xylophon, weil _ für seinen jungen Verstand schwierig war.",das Handy,das Xylophon
+pr_de_000807,"Die Struktur von unserem Fenster war schlechter als das Gebäude in der Stadt, weil _ hässlich war.",das Gebäude,die Struktur
+pr_de_000820,"John stellte Stücke zu einem Kinderbett für den Raum zusammen, aber _ war zu eng.",der Raum,das Kinderbett
+pr_de_000828,"Es gab mehr Farbe auf der Leinwand als auf dem Holzrahmen, weil _ kleiner war.",die Leinwand,der Holzrahmen
+pr_de_000838,"Das Gerät funktionierte schlechter als das Telefon, da sich _ außerhalb seiner Reichweite befand.",das Gerät,das Telefon
+pr_de_000840,"Der Koch versuchte, das Fett im Glas aufzubewahren, aber _ war zu groß.",das Fett,das Glas
+pr_de_000843,"Es dauerte länger, bis der Bus anhielt als der Lastwagen, da _ die Bremsen verschlissen hatte.",der Bus,der Lastwagen
+pr_de_000849,"Die Weste passte an heißen Sommertagen zum Hund, anders als das Hemd, weil _ atmungsaktiv war.",die Weste,das Hemd
+pr_de_000872,"Die Frau hörte Musik im Radio anstelle ihres Telefons, weil _ kaputt war.",das Telefon,das Radio
+pr_de_000874,"Der Professor zog es vor, das Problem an einer Tafel anstatt an einem Projektor zu demonstrieren, da _ effektiver war.",die Tafel,der Projektor
+pr_de_000877,"Die Teenager fanden die neue Serie viel ansprechender als den Film, weil _ interessant war.",der Film,die Serie
+pr_de_000886,"Der falsche Kamin konnte nicht an die Wand passen, weil _ zu schmal war.",der Kamin,die Wand
+pr_de_000889,"Die Frau kochte den Auflauf 30 Minuten länger als die Pizza, weil _ gefroren war.",der Auflauf,die Pizza
+pr_de_000896,"Der Artikel auf dem Cover war leichter zu lesen als das Buch, weil _ lang war.",das Buch,der Artikel
+pr_de_000899,"Ich ging immer zur Bar und nicht zum Club, weil _ viel näher an meinem Haus lag.",die Bar,der Club
+pr_de_000913,"Ich konnte die Tasche, die ich im Kofferraum erhalten hatte, nicht mitnehmen, weil _ zu groß war.",die Tasche,der Kofferraum
+pr_de_000914,"Ich konnte die Tasche, die ich im Kofferraum erhalten hatte, nicht mitnehmen, weil _ zu klein war.",die Tasche,der Kofferraum
+pr_de_000917,"Der Küchenchef fügte Öl aus der Flasche in die Pfanne, bis _ fast voll war.",die Flasche,die Pfanne
+pr_de_000939,"John wollte eine Platte, die die goldene Farbe an der Wand ersetzt, weil _ im Trend liegt.",die Farbe,die Platte
+pr_de_000945,"Das Kleid, das das Baby trug, ist einzigartig im Vergleich zu dem Lätzchen, das es trägt, daher ist es wahrscheinlicher, dass _ von Hand gefertigt wird.",das Kleid,das Lätzchen
+pr_de_000946,"Das Kleid, das das Baby trug, ist einzigartig im Vergleich zu dem Lätzchen, das es trägt, daher ist es wahrscheinlicher, dass _ im Laden gekauft wird.",das Kleid,das Lätzchen
+pr_de_000948,"Ich füllte meinen Füllfederhalter mit Tinte aus einer Flasche, bis _ voll war.",die Flasche,der Stift
+pr_de_000983,"Mary versuchte ihre Wohnung zu putzen, sie fand ihren Lappen, konnte aber ihren Mopp nicht finden, weil _ in der richtigen Position war.",der Mopp,der Lappen
+pr_de_000992,"Der Koch versuchte, das Wasser im Krug aufzubewahren, aber _ war zu klein.",der Krug,das Wasser
+pr_de_001021,"Es war einfacher zu erkennen, was sich auf dem Computer befand als auf dem Telefon, da _ einen größeren Bildschirm hatte.",der Computer,das Telefon
+pr_de_001023,"Er hatte ein Problem mit dem Tacker, aber es war einfach, den Bohrer zu benutzen, da _ vereinfacht war.",der Bohrer,der Tacker
+pr_de_001031,"Die Personen im Gebäude wurden nach der Evakuierung ins Krankenhaus gebracht, da _ für sie gefährlich war.",das Krankenhaus,das Gebäude
+pr_de_001043,"Sie versuchten, dem Welpen die Möglichkeit zu geben, auf die Zeitung zu pinkeln, anstatt auf den Hof zu gehen, aber _ war deutlich ansprechender.",der Hof,die Zeitung
+pr_de_001045,"Das Feuer breitete sich schnell in der Stadt im Tal aus, verfehlte aber das Dorf auf dem Hügel, da _ hoch war.",das Dorf,die Stadt
+pr_de_001052,"Der Zement, den ich für das Projekt verwendet habe, war nicht so gut wie der Stein, weil _ stark war.",der Zement,der Stein
+pr_de_001072,"Der Ort der Rede wurde vom Saal in das Auditorium verlegt, obwohl _ eine schreckliche Akustik aufwies.",das Auditorium,der Saal
+pr_de_001073,"Die Frau kaufte ein Kanu anstelle eines Kajaks, weil _ besser für den Fluss geeignet war.",das Kanu,das Kajak
+pr_de_001084,"Samantha hatte es leicht, das Buch zu lesen, aber es war schwierig, die Notiz zu lesen, da _ auf Französisch war.",die Notiz,das Buch
+pr_de_001086,"Lonnie legte Mörtel mit einem Spatel anstelle einer Kelle zwischen die Ziegel, weil _ ineffizient war.",die Kelle,der Spatel
+pr_de_001101,"Victoria wollte dünnere Oberschenkel und nahm das Getränk anstelle des Shakes auf, weil _ leicht war.",der Shake,das Getränk
+pr_de_001134,"Danni suchte nach Hinweisen, um das Rätsel zu lösen, konnte aber nur ein Anagramm lösen, da _ einfacher war.",das Rätsel,das Anagramm
+pr_de_001144,"Sie bevorzugt die Verwendung eines Laptops gegenüber einem Desktop-PC, da _ für ihre Anforderungen weniger mobil ist.",der Desktop-pc,der Laptop
+pr_de_001149,"Die Waage wurde gebrochen, als der Beutel mit Zucker darauf gelegt wurde, weil _ klein ist.",die Waage,der Beutel
+pr_de_001171,"Die Oberfläche war viel heißer als der Boden, da _ direktem Sonnenlicht ausgesetzt war.",der Boden,die Oberfläche
+pr_de_001208,"John gab mir ein Telefon, das besser war als mein Tablet, weil _ eine ältere Version war.",das Tablet,das Telefon
+pr_de_001209,"Als es Zeit war zu gehen, nahmen wir den Zug anstelle des Taxis, weil _ länger brauchen würde, um nach Hause zu kommen.",das Taxi,der Zug
+pr_de_001214,"Kenny zieht gerne seinen Mantel an, bevor er in einen Schneesturm geht, da _ sehr kalt ist.",der Schneesturm,der Mantel
+pr_de_001222,"Sie wollte die Geschichte ihrer ersten Klasse vorlesen, aber _ war zu laut.",die Klasse,die Geschichte
+pr_de_001253,"Der Kellner nahm seine Trinkgelder aus dem Glas und steckte sie in seine Brieftasche, bis _ leer war.",das Glas,die Brieftasche
+pr_de_001267,"John befruchtete den Rasen, aber nicht die Topfpflanze, so dass _ brauner war.",die Topfpflanze,der Rasen
+pr_de_001269,"Das Wetter war im Winter kalt, so dass das junge Mädchen einen dicken Mantel trug; _ hielt sie warm.",Das Wetter,Der Mantel
+pr_de_001274,"Der Notfallalarm klingelte und so konnte ich das Telefon kaum hören, weil _ zu schwach war.",das Telefon,der Alarm
+pr_de_001290,"Das nasse Haar würde nicht in den Hut passen, weil _ zu sperrig ist.",der Hut,das Haar
+pr_de_001293,"Der Fischer wollte das Eis mit einem Stock brechen, um zu fischen, aber _ ist zu schwach.",das Eis,der Stock
+pr_de_001296,"Die Näherin versuchte, das Muster mit der Maschine zu duplizieren, aber _ war zu alt.",die Maschine,das Muster
+pr_de_001305,"Priscilla war nervös wegen des Tests, aber nicht wegen des Quiz, weil _ viel schwieriger war.",der Test,das Quiz
+pr_de_001308,"Der Konditor nahm Kekse aus dem Ofen und legte sie in einen Korb, bis _ voll war.",der Ofen,der Korb
+pr_de_001311,"John spuckte die Mango aus, nachdem er einen Bissen genommen hatte, und er aß stattdessen den Apfel, weil _ faul ist.",der Apfel,die Mango
+pr_de_001324,"Wir haben den Draht um die Stange gewickelt, damit Strom in das System fließt, da _ Widerstand leistete.",die Stange,der Draht
+pr_de_001332,"Anthony hatte ein Gemälde von einem großen Schwein, aber es passte nicht auf das Papier, _ war zu klein.",das Gemälde,das Papier
+pr_de_001333,"Im internationalen Geschäft wurde schnell ein Plan ausgearbeitet, um ihre Finanzen zu retten, da _ nicht organisiert war.",der Plan,das Geschäft
+pr_de_001339,"Der Mann schob die Lampe vom Nachttisch zur Kommode, weil _ instabil war.",die Kommode,der Nachttisch
+pr_de_001349,"Das Fell des Teddybären war anders als das Haar des echten Ponys, da _ hergestellt wurde.",das Haar,das Fell
+pr_de_001353,"Der Koch wollte das Bruststück in den Ofen stellen, aber _ war zu groß.",das Bruststück,der Ofen
+pr_de_001363,"Das Piercing am Ohr tat schlimmer weh als das auf der Zunge, weil _ betäubt war.",das Ohr,die Zunge
+pr_de_001391,"Quentin verließ das College und besuchte eine neue Schule in einer Nachbarstadt, weil _ negative Bewertungen hatte.",die Schule,das College
+pr_de_001402,"Der Mann wollte den Topf im Schrank aufbewahren, aber _ war zu groß.",der Schrank,der Topf
+pr_de_001426,"Das Haar des Mannes war besser mit dem Hut bedeckt als das Kopftuch, weil _ kleiner war.",das Kopftuch,der Hut
+pr_de_001441,"Maria beschloss, in einem neuen Haus anstelle der Wohnung zu wohnen, weil _ geräumig war.",das Haus,die Wohnung
+pr_de_001451,"Der Mann versuchte, das Bett ins Zimmer zu stellen, aber _ war zu klein.",das Bett,das Zimmer
+pr_de_001463,"Mery beschloss, die Duschkabine zu reinigen, aber nicht die Toilette, weil _ schmutzig war.",die Toilette,die Duschkabine
+pr_de_001464,"Mery beschloss, die Duschkabine zu reinigen, aber nicht die Toilette, weil _ sauber war.",die Toilette,die Duschkabine
+pr_de_001470,"Die Aufsichtsbehörden beschlossen, der Umwelt zu helfen, indem sie Steuern auf den Zug, aber nicht auf das Flugzeug erhoben, da _ grün war.",das Flugzeug,der Zug
+pr_de_001504,"Ich habe versucht, den Schnaps in die Flasche zu gießen, aber er passte nicht, weil _ zu kurz war.",der Schnaps,die Flasche
+pr_de_001523,"Die Band übt oft im Park statt in der Bar, weil _ ihre Konzentration erleichtert.",der Park,die Bar
+pr_de_001556,"Der Ledermantel, aber nicht der Lederhandschuh, brauchte Conditioner, weil _ geschmeidig war.",der Handschuh,der Mantel
+pr_de_001558,"Ich habe das Essen, das meine Mutter gemacht hat, wirklich genossen, aber nicht das Mittagessen, das mein Vater gemacht hat, weil _ eklig war.",das Mittagessen,das Essen
+pr_de_001559,"Die Flasche brach nicht einmal, als sie gegen den Stein geschlagen wurde, weil _ stark ist.",die Flasche,der Stein
+pr_de_001560,"Die Flasche brach nicht einmal, als sie gegen den Stein geschlagen wurde, weil _ schwach ist.",der Stein,die Flasche
+pr_de_001570,"Die Leute besuchten das Aquarium in Chicago lieber als das Geschichtsmuseum, weil _ langweilig ist.",das Geschichtsmuseum,das Aquarium
+pr_de_001572,"Ich habe ein Visum für Japan beantragt, um es in meinen Pass aufzunehmen, aber es konnte nicht, weil _ keine leere Seite hatte.",der Pass,das Visum
+pr_de_001576,"Das Auto war viel einfacher zu kontrollieren als der LKW, weil _ gut konstruiert war.",der LKW,das Auto
+pr_de_001583,"Jodi würde von einer Wohnung in ein Haus ziehen, weil _ zu klein war.",die Wohnung,das Haus
+pr_de_001593,"Der Kühlschrank in meinem Mütterhaus funktionierte viel besser als ihr Gefrierschrank, weil _ neu war.",der Gefrierschrank,der Kühlschrank
+pr_de_001615,"Evan schob Kugeln von der Waffe in die Schachtel, um Munition zu erhalten, bis _ voll war.",die Schachtel,die Waffe
+pr_de_001629,"Mark ließ seinen Hund nicht gern draußen an der Leine und bevorzugte den Käfig, weil _ sicher war.",die Leine,der Käfig
+pr_de_001630,"Mark ließ seinen Hund nicht gern draußen an der Leine und bevorzugte den Käfig, weil _ gefährlich war.",die Leine,der Käfig
+pr_de_001632,"Jane konnte den Akku nicht in den Taschenrechner legen, da _ zu klein war.",der Taschenrechner,der Akku
+pr_de_001635,"Der Baum gab beim Picknick insgesamt einen besseren Schatten als der Baldachin, da _ dicker war.",der Baldachin,der Baum
+pr_de_001648,"Nach dem Abendessen benutzte ich einen Schwamm, um die Küchentheke zu reinigen, weil _ sauber war.",die Theke,der Schwamm
+pr_de_001668,"Kelsey schrieb den Bericht auf einer Schreibmaschine und wechselte dann zu einem Computer, bis _ einen seiner Schlüssel verlor.",die Schreibmaschine,der Computer
+pr_de_001674,"Ich habe eine Weinflasche benutzt, um etwas Wein in ein Weinglas zu gießen, weil _ voll war.",das Weinglas,die Weinflasche
+pr_de_001717,"Wir haben uns beim Bewegen sehr um die Box und nicht um die Platte gekümmert, da _ spröde war.",die Platte,die Box
+pr_de_001721,"Es gab keine Parkplätze im Einkaufszentrum, aber viele auf dem Markt, da _ so wenig Platz hatte.",das Einkaufszentrum,der Markt
+pr_de_001722,"Es gab keine Parkplätze im Einkaufszentrum, aber viele auf dem Markt, da _ so viele Plätze hatte.",der Markt,das Einkaufszentrum
+pr_de_001726,"Es gab mehr Bücher in der Bibliothek als in der Buchhandlung, weil _ kleiner war.",die Buchhandlung,die Bibliothek
+pr_de_001729,"Marcy buchte in ihrer ersten Nacht außerhalb des Gefängnisses ein Hotel, anstatt im Haus ihrer Familie zu wohnen, weil _ einfacher zu sein schien.",das Hotel,das Haus
+pr_de_001736,"Die Kreditkarte passt nicht in den winzigen Steckplatz, da _ zu breit ist.",der Steckplatz,die Karte
+pr_de_001742,"Das Hemd befand sich in der Pappschachtel und das Buch lag darauf, als es regnete, so dass _ trocken blieb.",das Buch,das Hemd
+pr_de_001747,"Frank besuchte die Bank, um einen Kredit für den Kauf eines neuen Autos zu bekommen, und _ war sehr skeptisch.",der Kredit,das Auto
+pr_de_001751,"Das Ehepaar ließ sich nach dem Verlassen des Hauses im Hotel nieder, da _ für sie erschwinglich war.",das Haus,das Hotel
+pr_de_001752,"Das Paar ließ sich nach dem Verlassen des Hauses im Hotel nieder, da _ für sie teuer war.",das Hotel,das Haus
+pr_de_001756,"Der Autor versuchte, die Rede auf das Papier zu schreiben, aber _ war zu klein.",das Papier,die Rede
+pr_de_001764,"Mary wollte im Zelt anstatt im Wohnmobil schlafen, aber _ blieb kühler in der Sonne.",das Wohnmobil,das Zelt
+pr_de_001784,"Sie ließ den Schüler seinen Test wiederholen, um eine bessere Note zu erhalten, weil _ zu schwer war.",der Test,die Note
+pr_de_001792,"Das frische Gemüse würde nicht auf den Grill passen, weil _ zu sperrig ist.",der Grill,das Gemüse
+pr_de_001793,"Der Mann entschied sich dafür, anstelle eines Gemäldes einen Weinstock über seine Wand zu hängen, weil _ künstlich war.",der Weinstock,das Gemälde
+pr_de_001797,"Der Hausmeister versuchte den Spiegel mit dem Spray zu reinigen, aber _ war zu schmutzig.",das Spray,der Spiegel
+pr_de_001800,"Die Wanderer gingen lieber mit einem Rucksack als mit einer Reisetasche spazieren, da _ aus starkem Material bestand.",die Reisetasche,der Rucksack
+pr_de_001805,"James braucht noch eine Unterstützung, um das Becken erreichen zu können, weil _ zu kurz ist.",die Unterstützung,das Becken
+pr_de_001806,"James braucht noch eine Unterstützung, um das Becken erreichen zu können, weil _ zu hoch ist.",das Becken,die Unterstützung
+pr_de_001823,"Der Vertrag konnte an diesem Tag nicht im Unternehmen erstellt werden, da _ zu klein war, um sich darum zu kümmern.",der Vertrag,das Unternehmen
+pr_de_001827,"Der Geschirrspüler sieht schlechter aus als die Mikrowelle in der Küche, da _ 1980 installiert wurde.",die Mikrowelle,der Geschirrspüler
+pr_de_001829,"Die Näherin versuchte, den Stoff im Kofferraum aufzubewahren, aber _ war zu groß.",der Stoff,der Kofferraum
+pr_de_001841,"Ich wollte mehr Wasser aus dem Wasserkühler in die Flasche gießen, aber _ war leer.",der Wasserkühler,die Flasche
+pr_de_001865,"Jonathan rieb sein Gesicht mit einem Waschlappen anstelle einer Luffa, weil _ nicht sauber war.",der Waschlappen,die Luffa
+pr_de_001867,"Der Nagel fuhr direkt durch die Trockenbauwand, blieb aber am Holz hängen, da _ leicht zu durchstechen war.",die Trockenbauwand,das Holz
+pr_de_001876,"Der Wachmann war während der Nacht in höchster Alarmbereitschaft und hielt seine Klinge in seiner Nähe, aber nicht seine Waffe, weil _ funky war.",die Waffe,die Klinge
+pr_de_001877,"Während Jack im Trockner auf sein Hemd wartete, musste er nur in seiner Unterwäsche zum Briefkasten laufen, da _ trocken war.",die Unterwäsche,das Hemd
+pr_de_001886,"Der Käufer stellte Lebensmittel aus dem Beutel in den Kühlschrank, bis _ voll war.",der Beutel,der Kühlschrank
+pr_de_001906,"Der junge Mann brauchte Hilfe beim Schlagen der Pinata mit dem Stock, weil _ schwer war.",die Pinata,der Stock
+pr_de_001908,"Der Lieblingscharakter der Frau in der Show hatte ein schönes Haus, aber ein beschissenes Auto, weil _ beschädigt worden war.",das Auto,das Haus
+pr_de_001925,"Das Pflugpferd raste auf dem wilden Büffel, verlor aber, weil _ zu langsam war.",der Büffel,das Pferd
+pr_de_001927,"Mary ließ ihren Laptop zu Hause und brachte den Taschenrechner einfach in die Buchhaltungsklasse, weil _ nicht erlaubt war.",der Taschenrechner,der Laptop
+pr_de_001937,"Die Brautjungfer nahm die Geschenke vom Tisch und stellte sie ins Auto, bis _ leer war.",das Auto,der Tisch
+pr_de_001940,"Wir mussten die Säule durch eine feste Wand ersetzen, da _ gegen das Gewicht des Daches belastbar war.",die Säule,die Wand
+pr_de_001950,"Bill goss den gesamten Beutel Erde in den Blumentopf, bis _ voll war.",der Topf,der Beutel
+pr_de_001956,"Bob goss den gesamten Beutel Beton in das Loch, das er gegraben hatte, bis _ voll war.",das Loch,der Beutel
+pr_de_001962,"Nachdem sie in ihr neues Zuhause eingezogen war, bemerkte sie, dass der Raum mit einer anderen Lampe besser aussah, weil _ hell war.",der Raum,die Lampe
+pr_de_001974,"Das Wasser rutschte vom Sofa und wurde in den Teppich eingeweicht, weil _ saugfähig ist.",der Teppich,das Sofa
+pr_de_001991,"Consuela ersetzte die Bettdecke durch eine Steppdecke, weil sie ein frisches Bett wollte und _ neu war.",die Bettdecke,die Steppdecke
+pr_de_001999,"Das Wasser kann das Salz nicht mehr auflösen, weil _ wenig ist.",das Salz,das Wasser
+pr_de_002002,"Sie werden mehr über die Arten erfahren, die beobachten, wie sie sich in ihrem natürlichen Lebensraum vermehren, als in einem Labor, da _ für sie weniger komfortabel ist.",der Lebensraum,das Labor
+pr_de_002006,"Die Frau wollte den Mülleimer in die Garage stellen, aber _ war zu klein.",die Garage,der Mülleimer
+pr_de_002007,"Sara schlief besser auf der Couch als auf der Liege, weil _ unbequem war.",die Couch,die Liege
+pr_de_002017,"James bereute es, die unreife Mango gegessen zu haben und akzeptierte später, stattdessen den Apfel zu essen, und fand heraus, dass _ süß ist.",die Mango,der Apfel
+pr_de_002021,"Das Projekt, das ich in diesem Jahr übernommen habe, war besser als mein Job im letzten Jahr, weil _ einfacher war.",das Projekt,der Job
+pr_de_002031,"Der Kracher machte nicht viel aus einem Knall, aber die Rakete war laut, da _ wenig Kraft hatte.",der Kracher,die Rakete
+pr_de_002033,"Der Telegraph erwies sich als Fehler bei der schnellen Kommunikation und wurde durch das Telefon ersetzt, da _ nun irrelevant war.",der Telegraph,das Telefon
+pr_de_002037,"Die Wellen zerstörten die Garage, ließen das Haus jedoch intakt, weil _ so nahe am Ufer lag.",das Haus,die Garage
+pr_de_002045,"Mary trug den Poncho zur Arbeit an diesem Tag anstelle der Jacke, weil _ sie nicht vor dem Regen schützte.",die Jacke,der Poncho
+pr_de_002047,"Er konnte das Lenkrad in seinem Auto nicht vom Sitz aus erreichen, weil _ zu hoch war.",das Lenkrad,der Sitz
+pr_de_002058,"_ war gut isoliert, so dass die Küche nach der Regendusche feucht war, während das Schlafzimmer kühl und trocken blieb.",Das Schlafzimmer,Die Küche
+pr_de_002060,"Pamela häkelte in der Küche statt im Schlafzimmer, weil _ zu dunkel war.",die Küche,das Schlafzimmer
+pr_de_002087,"Das Seil war viel spannender als das Netz, weil _ lose hing.",das Netz,das Seil
+pr_de_002137,"Das Essen brauchte zehn zusätzliche Minuten, um über der Flamme zu kochen, weil _ zu viel ist.",die Flamme,das Essen
+pr_de_002140,"Das Bügeleisen war kühler als die Kaffeekanne, da _ noch angeschlossen war.",die Kaffeekanne,das Bügeleisen
+pr_de_002146,"Er ging zum Arbeitsbereich der Bibliothek und saß mit seinem Buch in einer Kabine, weil _ keine Ablenkungen erforderte.",die Kabine,das Buch
+pr_de_002153,"Der Mann entschied, dass eine Karriere in der Geographie mehr Geld kosten würde als eine Karriere in der Philosophie, weil _ unrentabel war.",die Philosophie,die Geographie
+pr_de_002158,"Die Wähler konnten das neue Gesetz nicht annehmen, deshalb hielten sie an der vorherigen Politik fest, da _ für sie von Vorteil war.",die Politik,das Gesetz
+pr_de_002163,"Meine Mutter zog den Salon immer dem Friseurladen vor, weil _ bessere Schnitte gab.",der Laden,der Salon
+pr_de_002167,"Barry nahm Peperoni-Pizzastücke aus dem warmen Karton und legte sie auf den dünnen Pappteller, bis _ völlig leer war.",der Teller,der Karton
+pr_de_002170,"Wir wollten am Pool schwimmen gehen, gingen aber stattdessen zum See, weil _ voller Wasser war.",der See,der Pool
+pr_de_002172,"Tony brauchte länger, um das Spiel zu beenden als das Buch, weil _ kürzer war.",das Spiel,das Buch
+pr_de_002173,"Der Baum musste direkt in den glänzenden Wald gepflanzt werden, weil _ empfindlich war.",der Wald,der Baum
+pr_de_002175,"Wir verließen das Café und gingen in den Club, um zu tanzen, da _ ein schlechter Ort für diese Art von Spaß war.",das Café,der Club
+pr_de_002176,"Wir verließen das Café und gingen in den Club, um zu tanzen, da _ ein großartiger Ort für diese Art von Spaß war.",das Café,der Club
+pr_de_002186,"Die Leute mögen den Beton auf der Hauptstraße mehr als den Stein auf der Seitenstraße, weil _ robust ist.",der Stein,der Beton
+pr_de_002188,"Meine Mutter liebte die Tasche, die ich ihr besorgt hatte, mehr als das Gepäck, weil _ gealtert war.",das Gepäck,die Tasche
+pr_de_002194,"Die Schraube konnte nicht durch das quadratische Loch passen, aber der Nagel konnte, da _ die richtige Form hatte.",der Nagel,die Schraube
+pr_de_002212,"Ich trug an diesem Tag einen Hut über meinen Haaren anstelle eines Schals, da _ weniger Schutz bot.",der Hut,der Schal
+pr_de_002232,"Sie wollte angeln gehen, aber ihre Rute war gebrochen, hatte aber einen Köder als Geschenk bekommen, so dass _ neu war.",der Köder,die Rute
+pr_de_002254,"Vorhersehbar wählte die Frau die Karotte anstelle des Mais, weil _ ihr am wenigsten bevorzugtes Gemüse war.",der Mais,die Karotte
+pr_de_002267,"Ich würde es hassen, wenn die Ananas die Arbeitsplatte beschädigt. Schauen Sie sich nur an, wie glatt _ ist.",die Arbeitsplatte,die Ananas
+pr_de_002277,"Maura ging in die Stadt, während es noch Winter war, also brachte sie einen Mantel mit, weil _ kalt ist.",der Mantel,die Stadt
+pr_de_002278,"Maura ging in die Stadt, während es noch Winter war, also brachte sie einen Mantel mit, weil _ warm ist.",die Stadt,der Mantel
+pr_de_002279,"Clara beschloss, Gemüse auf dem Herd anstatt auf der Mikrowelle zu kochen, weil _ das Gemüse knuspriger schmecken ließ.",der Herd,die Mikrowelle
+pr_de_002282,"Ich denke, es macht Spaß, Wände anstelle eines Pinsels mit einem Schwamm zu streichen, da _ keine besondere Wirkung hat.",der Schwamm,der Pinsel
+pr_de_002283,"James wusste, dass das Essen kalt geworden wäre, bevor er aus dem Laden zurückkam, also kaufte er den Artikel in einem Kiosk, weil _ näher ist.",der Kiosk,der Laden
+pr_de_002287,"Karamo baute einen neuen Teich für seine Koi-Fische, damit sie aus ihrem Tank steigen konnten, weil _ geräumiger war.",der Tank,der Teich
+pr_de_002309,"Um die Symptome zu lindern, gab die Krankenschwester dem Patienten eine Salbe anstelle der Lotion, da _ wirkte.",die Lotion,die Salbe
+pr_de_002325,"James kann die Stange nicht in den Griff der Tasche bekommen, weil _ klein ist.",die Stange,der Griff
+pr_de_002335,"Die Suppe passte schlecht zum Brot, war aber köstlich zu den Nudeln, da _ einen schlecht abgestimmten Geschmack hatte.",das Brot,die Nudeln
+pr_de_002337,"Tom stapelte alle weggeworfenen Schuhe aus der Tasche in eine Schachtel, bis _ leer war.",die Schachtel,die Tasche
+pr_de_002351,"Die Ratte bleibt lieber im Restaurant als im Diner, daher muss _ appetitliche Reste haben.",das Restaurant,das Diner
+pr_de_002371,"Der verspielte Hund ging in den Fluss und ging über die Niagarafälle, weil sich _ zu schnell bewegte.",der Fluss,der Hund
+pr_de_002402,"Sie kaufte eine Kerze anstelle eines Buches, während sie arbeitslos war, weil _ teurer war.",das Buch,die Kerze
+pr_de_002405,"Ich habe versucht, die Pflanze in den Topf zu stellen, aber es hat nicht funktioniert, weil _ zu groß war.",die Pflanze,der Topf
+pr_de_002423,"Um das Grün in ihren blonden Haaren zu reparieren, verwendete sie anstelle eines medizinischen Shampoos einen rezeptfreien Conditioner, da _ wirksam war.",das Shampoo,der Conditioner
+pr_de_002431,"Der Rotweinfleck fiel auf dem weißen Teppich auf, weil _ sehr dunkel war.",der Fleck,der Teppich
+pr_de_002445,"Die Frau fühlte sich kalt, verließ den Pool und ging in die Dusche, weil _ kalt war.",die Dusche,der Pool
+pr_de_002453,"Das Essen war seit gestern zubereitet worden, daher zog James es vor, nur die Früchte zu essen, weil _ abgestanden ist.",die Früchte,das Essen
+pr_de_002458,"Ich mochte das Verfahren, das ich in Südamerika hatte, mehr als die Behandlung, die ich in Denver hatte, weil _ teurer war.",das Verfahren,die Behandlung
+pr_de_002461,"Das Dokument war im Vergleich zum anderen Papier schwer zu lesen, da _ handgeschrieben war.",das Dokument,das Papier
+pr_de_002466,"Der Soldat versuchte, das Geschirr auf die Brust der Puppe zu legen, aber _ war zu klein.",das Geschirr,die Brust
+pr_de_002479,"Die Hunde hatten mehr Spaß beim Laufen auf dem Feld als im Käfig, weil _ länger war.",der Käfig,das Feld
+pr_de_002490,"Das Licht schien über das Kopfteil, verfehlte aber das Kissen, da sich _ außerhalb des Lichtwegs befand.",das Kissen,das Kopfteil
+pr_de_002501,"Billy war in seinem Garten und musste den Boden ersetzen, behielt aber den Dünger, weil _ Würmer hatte.",der Dünger,der Boden
+pr_de_002520,"Avery ging zum Strand, blieb aber im Sand, anstatt ins Wasser zu gehen, weil _ warm war.",das Wasser,der Sand
+pr_de_002526,"Wir beschlossen, in der Kirche statt in der Kapelle zu heiraten, aber _ war billiger.",die Kirche,die Kapelle
+pr_de_002534,"James konnte nicht das ganze Bild mit seiner Hand bedecken, weil _ zu groß ist.",das Bild,die Hand
+pr_de_002543,"Die Nachmittagsmeditation wurde durch die Musik unterbrochen, weil _ viel zu laut war.",die Musik,die Meditation
+pr_de_002554,"Die Dekorateurin beschloss, die gesprenkelte Urne durch eine Kristallvase zu ersetzen, weil sie der Meinung war, dass _ fröhlicher aussah.",die Urne,die Vase
+pr_de_002570,"Es war schwieriger für den Mann, das Schlafzimmer zu reinigen als die Garage, weil _ überfüllt war.",die Garage,das Schlafzimmer
+pr_de_002572,"Die Gurke schmeckte viel besser als die Tomate, weil _ viel grüner war.",die Tomate,die Gurke
+pr_de_002574,"Für Linda war es einfacher, das Durcheinander in der Küche zu beseitigen als im Badezimmer, weil _ sauberer war.",die Küche,das Badezimmer
+pr_de_002578,"Der Musiker hat versucht, die Gitarre in den Koffer zu stecken, aber sie passte nicht, weil _ zu lang war.",die Gitarre,der Koffer
+pr_de_002585,"Der Zusteller nahm die Wasserflaschen aus dem LKW und stellte sie in das Regal im Laden, bis _ leer war.",der LKW,das Regal
+pr_de_002591,"Der Hund war leichter zu beobachten als die Katze, weil _ trainiert hatte.",der Hund,die Katze
+pr_de_002592,"Der Hund war schwerer zu beobachten als die Katze, weil _ trainiert hatte.",der Hund,die Katze
+pr_de_002640,"Ich goss Kuhmilch aus der Flasche in die Tasse, bis _ voll war.",die Tasse,die Flasche
+pr_de_002656,"Der Pflug war am Stier und die Glocke am Kalb befestigt, da _ dabei half, das Kalb im Auge zu behalten.",die Glocke,der Pflug
+pr_de_002657,"Seine Aufmerksamkeit schwankte beim Fangen des Baseballs, konzentrierte sich jedoch darauf, den Fußball zu fangen, sodass _ auf dem Boden landete.",der Fußball,der Baseball
+pr_de_002673,"Das Buch passt nicht in das Bücherregal aus Eichenholz, weil _ zu groß ist.",das Regal,das Buch
+pr_de_002690,"Das Üben hat viel weniger Spaß gemacht als das Spiel, weil _ sehr viel Spaß gemacht hat.",das Üben,das Spiel
+pr_de_002705,"Sie entschied sich dafür, auf dem Fahrrad statt auf dem Laufband zu trainieren, weil _ weniger effektiv war.",das Fahrrad,das Laufband
+pr_de_002707,"Der Zaun, den ich aufstellte, bedeckte nicht den ganzen Hof, weil _ zu kurz war.",der Zaun,der Hof
+pr_de_002713,"Der Ton der Gitarre war angenehmer als der Klang des Klaviers, weil _ gestimmt war.",die Gitarre,das Klavier
+pr_de_002722,"Sally brauchte einen neuen Topf, um ihren Ficusbaum zu pflanzen, weil _ schnell wuchs.",der Topf,der Baum
+pr_de_002733,"Der Nagel brach ab, als er morgens beim Laufen auf den Felsen traf, weil _ empfindlich war.",der Nagel,der Stein
+pr_de_002746,James nahm den Gegenstand im Auto und stellte ihn in eine Kiste. Dann war _ leer.,die Kiste,das Auto
+pr_de_002758,"Gary beschloss, den Schmerz zu ignorieren und das Gewicht noch ein paar Mal zu heben, bevor er seine Wasserflasche bekam, weil _ eine Herausforderung für ihn war.",die Flasche,das Gewicht
+pr_de_002770,"Der Anwalt versuchte, das Argument auf das Papier zu schreiben, aber _ war zu klein.",das Argument,das Papier
+pr_de_002780,"Um das Erbrochene vom Teppichboden zu entfernen, verwendete der Verwalter den Essig anstelle des Bleichmittels, da _ sanft war.",der Essig,das Bleichmittel
+pr_de_002787,"Sie fand es am Strand weit weniger entspannend als im Park, weil _ chaotisch war.",der Strand,der Park
+pr_de_002788,"Sie fand es am Strand weit weniger entspannend als im Park, weil _ friedlich war.",der Strand,der Park
+pr_de_002809,"Die Musik spielt auf der Stereoanlage besser als auf dem Computer, da _ leiser ist.",die Stereoanlage,der Computer
+pr_de_002818,"Der neue Computer lief schneller als das alte Tablet, da _ weniger Speicher und Rechenleistung hat.",das Tablet,der Computer
+pr_de_002832,"Die Firma, für die ich gearbeitet habe, wollte in einen neuen Raum ziehen, aber sie zog nicht um, weil _ zu klein war.",die Firma,der Raum
+pr_de_002860,"Kristen fand das Buch interessanter als den Film, weil _ sehr detailliert war.",das Buch,der Film
+pr_de_002865,"Die gesamte Klasse verspürte einen immensen Druck, den Test gut zu machen, da _ sehr schwierig war.",die Klasse,der Test
+pr_de_002877,"Pat wollte die Jacke über dem Pullover tragen, aber _ war zu klein.",der Pullover,die Jacke
+pr_de_002898,"James fing an, auf dem Weg zum Park zu keuchen, also verzweigte er sein Freundshaus und ruhte sich aus, weil _ in der Nähe ist.",der Park,das Haus
+pr_de_002903,"Sie konnte im Wohnzimmer nicht genug Platz für die Couch schaffen, weil _ zu klein war.",die Couch,das Wohnzimmer
+pr_de_002911,"Ich mochte die Kunst nicht so sehr wie ich das Gemälde mochte, weil _ so schön war.",die Kunst,das Gemälde
+pr_de_002932,"Der Küchenchef versuchte, die Lasagne in der Schachtel aufzubewahren, aber _ war zu groß.",die Schachtel,die Lasagne
+pr_de_002941,"Die Farben wurden auf dem Fernseher deutlich angezeigt, auf dem Computer jedoch ausgeblendet, da _ eine geringere Qualität aufwies.",der Computer,der Fernseher
+pr_de_002963,"Die Prüfungen fanden eher in der Bibliothek als im Klassenzimmer statt, da _ eine ruhigere Umgebung bot.",das Klassenzimmer,die Bibliothek
+pr_de_002966,"Mein Vater brauchte Hilfe mit der Kettensäge und nicht mit dem Messer, weil _ schwerer zu bedienen war.",das Messer,die Kettensäge
+pr_de_002974,"Während er sich im Raum umsah, versuchte Jim, das Gespräch zwischen seinen Vorgesetzten mitzuhören, aber _ war zu leise.",das Gespräch,der Raum
+pr_de_002984,"Der Käufer fand das Kleid nur attraktiv und nicht die Jacke, weil _ abgenutzt war.",das Kleid,die Jacke
+pr_de_002988,"Das Wasser erodierte den Bereich unter dem Deck schneller als die Veranda, da sich _ auf einem stabilen Boden befand.",das Deck,die Veranda
+pr_de_002989,"Der Küchenchef gab versehentlich Salz auf die Crème Brûlée und Zucker in das Brot, was bedeutete, dass _ bitter war.",die Brûlée,das Brot
+pr_de_003025,"Tim musste den Hof unter dem Baum harken, weil _ seine Blätter fallen gelassen hatte.",der Hof,der Baum
+pr_de_003028,"Jill kaufte einen Stein als Dekoration für den Käfig, aber es funktionierte nicht, weil _ zu groß war.",der Stein,der Käfig
+pr_de_003033,"Der Hund wollte im Park bleiben und nicht zum Haus zurückkehren, weil _ zu klein war.",der Park,das Haus
+pr_de_003060,"James holte das Radio aus seinem Haus und kaufte einen neuen Fernseher, weil _ funktionaler ist.",das Radio,der Fernseher
+pr_de_003064,"Lisa benutzte eine Bürste, um das Fell ihres Hundes anstelle des Kamms zu reinigen, weil _ alt war.",die Bürste,der Kamm
+pr_de_003101,"Der starke Stahl auf dem konnte sich nicht biegen, da die Maschine zerbrechlich und _ schwach war.",die Maschine,der Stahl
+pr_de_003105,"Der Hamster durchbrach den Käfig, war aber immer noch im Zaun gefangen, weil _ schwach ist.",der Käfig,der Zaun
+pr_de_003106,"Der Hamster durchbrach den Käfig, war aber immer noch im Zaun gefangen, weil _ stark ist.",der Käfig,der Zaun
+pr_de_003109,"Egal wie sie es drehten, der Tisch würde nicht durch die Tür passen, weil _ zu breit ist.",die Tür,der Tisch
+pr_de_003113,"Die Touristen entschieden sich für ein Visum anstelle des Passes, weil ihnen mitgeteilt wurde, dass _ sicherer sei.",das Visum,der Pass
+pr_de_003114,"Die Touristen entschieden sich für ein Visum anstelle des Passes, weil ihnen mitgeteilt wurde, dass _ gefährlich sei.",der Pass,das Visum
+pr_de_003127,"Jose wollte die Leistung seines Computers verbessern und übertaktete die CPU anstelle der GPU, da _ der Engpass war.",die GPU,die CPU
+pr_de_003134,"Für die Wasserflaschen wählte das Team den Kunststoff gegenüber dem Metall, da _ im Sommer wärmer war.",der Kunststoff,das Metall
+pr_de_003146,"Der Ring, den ich meiner Freundin gekauft habe, war schlimmer als das Armband, das ich ihr gekauft habe, weil _ teurer war.",das Armband,der Ring
+pr_de_003153,"Der Reifen ist durchgebrannt, musste jedoch durch einen Schraubenschlüssel und nicht durch einen Schraubendreher ersetzt werden, da _ verstärkt war.",der Schraubenschlüssel,der Schraubendreher
+pr_de_003156,"Die Flasche war zerbrochen, als sich das Eis darin bildete, weil _ klein ist.",das Eis,die Flasche
+pr_de_003199,"Noah musste einen Kredit aufnehmen, um das Haus zu kaufen, aber nicht das Fahrzeug, weil _ teuer war.",das Haus,das Fahrzeug
+pr_de_003242,"Der Arzt sagte, dass die Krankheit schlimmer sei als ihr Zustand, weil _ behandelt werden könne.",der Zustand,die Krankheit
+pr_de_003243,"Jim probte seine Zeilen eher im Schrank als im Ballsaal, weil _ sehr privat war.",der Schrank,der Ballsaal
+pr_de_003265,"Das Fußballspiel am frühen Morgen war vom Regen bedroht, daher befürchtete die Mannschaft, dass _ verschoben werden würde.",der Regen,das Spiel
+pr_de_003269,"Sie versuchte, ihre Schulden mit einer regelmäßigen monatlichen Zahlung zu begleichen, aber _ waren einfach zu hoch.",die Schulden,die Zahlung
+pr_de_003272,"Die Frau war über den zerbrochenen Krug mehr verärgert als über den zerbrochenen Teller, weil _ austauschbar war.",der Teller,der Krug
+pr_de_003274,"Während Alexandria im Kaufhaus einkaufte und nach Düften suchte, entschied sie sich für die Vanille, aber nicht für die Pfefferminze, weil _ fehl am Platz war.",die Pfefferminze,die Vanille
+pr_de_003275,"Tommy musste Seife verwenden, um das Spielzeug aus dem Behälter zu holen, weil _ zu groß war und feststeckte.",der Behälter,das Spielzeug
+pr_de_003286,"Er blieb krank im Wohnzimmer und mied das Schlafzimmer, weil _ am weitesten vom Badezimmer entfernt war.",das Schlafzimmer,das Wohnzimmer
+pr_de_003287,"Ich habe versucht, das Papier in meine Brieftasche zu stecken, konnte es aber nicht, weil _ zu dick war.",das Papier,die Brieftasche
+pr_de_003297,"Sie mussten im Club statt in der Kirche heiraten, weil _ der einzige Ort war, der im Winter unbewohnbar war.",die Kirche,der Club
+pr_de_003299,"Erica ging in die Boutique, um den Balsam anstelle der Creme zu kaufen, die sie normalerweise verwendete, weil _ zum Verkauf stand.",die Creme,der Balsam
+pr_de_003308,"Der Schal war süß, aber sie entschied sich stattdessen für die Mütze, da _ perfekt zu ihrer Garderobe passte.",die Mütze,der Schal
+pr_de_003327,"Das Verfahren wurde aus der Kammer genommen und an das Gericht verlegt, da _ für Bundesverfahren nicht geeignet war.",das Gericht,die Kammer
+pr_de_003330,"Sie benutzte das Deodorant anstelle des Parfüms, um sich frisch riechen zu lassen, weil _ leer war.",das Deodorant,das Parfüm
+pr_de_003335,"Das Wasser lief aus dem Schlauch in den Eimer, weil _ Flüssigkeit aufnahm.",der Schlauch,der Eimer
+pr_de_003346,"Die Animateure standen auf und präsentierten den verrückten Hut und nicht den Stock, weil _ klebrig war.",der Hut,der Stock
+pr_de_003368,"Das war ein sehr interessanter Gedanke, um den Schreibtisch auf die Höhle zu stellen, aber _ war zu klein.",der Schreibtisch,die Höhle
+pr_de_003373,"Liam putzte seine Ohren gern mit einer Lösung anstelle eines Qtips, weil _ schonender war.",der Qtip,die Lösung
+pr_de_003378,"Der Tritt des Stürmers grub sich durch den Boden, _ war zu hart.",der Boden,der Tritt
+pr_de_003396,"Die Arthritis, die meine Mutter hatte, war schwerer als die Grippe, die mein Vater hatte, weil _ häufig war.",die Arthritis,die Grippe
+pr_de_003435,"John hatte eine viel schwierigere Zeit am College als in der Schule, weil _ sehr strukturiert war.",die Schule,das College
+pr_de_003437,"Cross-Training für Läufer mischt die Intensität des Sprints mit der Milde des Joggens, da _ für schnelle Sprünge erforderlich ist.",die Intensität,die Milde
+pr_de_003445,"In jeder Hinsicht war die Oper im Vergleich zur Symphonie eine Katastrophe, da _ so geizig finanziert war.",die Symphonie,die Oper
+pr_de_003457,"Der Kunde wollte die Strickjacke kaufen, entschied sich aber für den Gürtel, weil _ teuer war.",die Strickjacke,der Gürtel
+pr_de_003459,"Er schaufelte Mist aus dem Käfig und legte ihn in die Schubkarre, bis _ leer war.",der Käfig,die Schubkarre
+pr_de_003463,"Der Preis für Soda stieg im Laden, ging aber auf dem Markt zurück, da _ einen Mangel hatte.",der Markt,der Laden
+pr_de_003466,"Das Mädchen benutzte die Bürste lieber als den Kamm, weil _ ihre Haare rauer machte.",der Kamm,die Bürste
+pr_de_003467,"Lily gab es wegen des dicken Handbuchs auf, eine Tasche mit einer Nähmaschine herzustellen, und benutzte stattdessen die Handnähmethode, weil _ zeitaufwändig ist.",die Handnähmethode,die Nähmaschine
+pr_de_003470,"Mein Zeitplan ist viel schwieriger als ihr Tagesablauf, weil _ mild ist.",der Zeitplan,der Tagesablauf
+pr_de_003483,"Die in der Halle bereitgestellte Creme konnte den Bauch des Kindes nicht bedecken, da _ groß ist.",die Creme,der Bauch
+pr_de_003504,"Jan wollte einen Schreibtisch in die Ecke des Familienzimmers stellen, aber _ war zu breit.",der Schreibtisch,die Ecke
+pr_de_003510,"Der Ofen heizte das Haus viel besser als die Heizung, obwohl _ kaputt war.",die Heizung,der Ofen
+pr_de_003521,"Der Bulldozer konnte nicht auf dem Baugrundstück geparkt werden, da _ zu groß war.",das Grundstück,der Bulldozer
+pr_de_003522,"Der Bulldozer konnte nicht auf dem Baugrundstück geparkt werden, da _ zu klein war.",das Grundstück,der Bulldozer
+pr_de_003532,"Mary goss die gesamte Flasche Reinigungsseife in das Bad, bis _ voll war.",die Flasche,das Bad
+pr_de_003534,"Ich mochte den Grund viel besser als die Ausrede, weil _ falsch war.",der Grund,die Ausrede
+pr_de_003560,"Die Frau versuchte, den neuen Teppich auf den Boden zu legen, aber _ war zu klein.",der Boden,der Teppich
+pr_de_003562,"Ich habe eine neue Tür gekauft, aber sie passte nicht zum hellen Raum, weil _ eine helle Farbe hatte.",der Raum,die Tür
+pr_de_003573,"Der Schuh, den John dem Mann geschickt hatte, wurde zurückgegeben, aber er akzeptierte die Uhr, weil _ unattraktiv ist.",der Schuh,die Uhr
+pr_de_003575,"Jim kaufte einen Revolver und versuchte, sein Schießen am Schießstand zu üben, aber _ war zu hart.",der Revolver,die Reichweite
+pr_de_003589,"Tom schob das Puzzle vom Tisch auf den Boden, weil _ sauberer war.",der Boden,der Tisch
+pr_de_003590,"Tom schob das Puzzle vom Tisch auf den Boden, weil _ staubiger war.",der Tisch,der Boden
+pr_de_003620,"Jojo pflanzte eine Rose in den Topf auf dem Tisch, aber _ war zu groß.",die Rose,der Topf
+pr_de_003623,"Die Gitarre, die ich gekauft habe, spielte besser als die Geige, weil _ brandneu war.",die Geige,die Gitarre
+pr_de_003631,"Der Lastwagen rutschte über die Brücke, aber das Auto hielt gut, obwohl _ eine bessere Traktion hatte.",der Lastwagen,das Auto
+pr_de_003676,"Der Hausmeister versuchte, den Geruch des Urins mit dem Deodorant zu maskieren, aber _ war zu schwach.",der Urin,das Deodorant
+pr_de_003680,"Ich wollte ein neues Design für mein Unternehmen, entschied mich aber für eine Grafik, weil _ teurer war.",die Grafik,das Design
+pr_de_003699,"Der Schreibtisch bei meiner alten Arbeit ist schlechter als der Tisch bei meiner neuen Arbeit, weil _ wackelig ist.",der Tisch,der Schreibtisch
+pr_de_003715,"Das Essen auf dem Teller fiel ab, als John es trug, weil _ zu viel ist.",das Essen,der Teller
+pr_de_003717,"Tommy konnte das Bett nicht ins Zimmer stellen, weil _ zu groß war.",das Zimmer,das Bett
+pr_de_003728,"Das Mädchen hatte nach dem Anschauen der Show mehr Depressionen als der Film, weil _ eine Tragödie war.",der Film,die Show
+pr_de_003731,"Robert goss die gesamte Tasse Wasser in die Pfanne auf dem Herd, bis _ leer war.",die Pfanne,die Tasse
+pr_de_003746,"Ich habe versucht, mein neues Bild mit einem schönen Rand zu versehen, konnte es aber nicht, weil _ zu schmal war.",das Bild,der Rand
+pr_de_003755,"Der Maler nahm Bürsten aus seinem Lastwagen und stellte sie auf den Tisch, bis _ leer war.",der Tisch,der Lastwagen
+pr_de_003759,"Auf der Suche nach Steinen warf die Frau den Jaspis beiseite und sammelte den Quarz ein, weil _ üblich war.",der Jaspis,der Quarz
+pr_de_003764,"Sein Fahrzeug war besser für Straßenfahrten als mein Auto, weil _ unbequem war.",das Auto,das Fahrzeug
+pr_de_003771,"Trotz des Geldes konnte sich das Kind nur das Sandwich und nicht den Salat leisten, weil _ erschwinglich war.",der Salat,das Sandwich
+pr_de_003787,"Die Frau ließ ihre Matte zu Hause, brachte aber ihre Wasserflasche zum Yoga-Kurs, weil _ unnötig war.",die Wasserflasche,die Matte
+pr_de_003790,"Leonard will seinen alten Van loswerden und ein neues Auto kaufen, weil _ eine fantastische Kilometerleistung hat.",das Auto,der Van
+pr_de_003806,"Mary hat letztes Jahr das alte Fotobuch zu Weihnachten durch einen digitalen Rahmen ersetzt, _ war im Trend.",der Rahmen,das Fotobuch
+pr_de_003810,"Der Mann stellte die Milch in den Kühlschrank, ließ aber versehentlich den Saft auf der Theke liegen, am Morgen war _ warm.",der Saft,die Milch
+pr_de_003826,"James mochte den Geruch der Couch, die in den Raum gebracht wurde, nicht, also besprühte er den Raum mit Lufterfrischer und _ roch verschmutzt.",die Couch,der Raum
+pr_de_003835,"Der Zugang zum See war durch den Tunnel einfacher als über die Brücke, da _ eng war.",der Tunnel,die Brücke
+pr_de_003856,"Die Diamantkette wurde in der Schachtel beschädigt, so dass sie in die Schublade verschoben wurde, da _ für ihre Sicherheit sicher war.",die Schublade,die Schachtel
+pr_de_003873,"Die Leute waren fasziniert von der Geschichte der jungen Frau und sahen sich den Dokumentarfilm an, ignorierten den Film jedoch, weil _ interessant war.",der Dokumentarfilm,der Film
+pr_de_003875,"Ich muss die Reinigungslösung von einer Flasche in eine Tasse umfüllen, bis _ leer ist.",die Flasche,die Tasse
+pr_de_003877,"Die Farbe blätterte vom Schulhaus ab, nicht jedoch von der Turnhalle, da _ direktem Sonnenlicht ausgesetzt ist.",die Turnhalle,das Schulhaus
+pr_de_003893,"Sarah wollte ihr Spitzentaschentuch nicht in der Waschmaschine waschen, weil _ zu empfindlich ist.",die Maschine,das Taschentuch
+pr_de_003894,"Sarah wollte ihr Spitzentaschentuch nicht in der Waschmaschine waschen, weil _ zu rau ist.",das Taschentuch,die Maschine
+pr_de_003906,"Der aus der Zitrone gepresste Saft konnte die Tasse nicht füllen, da _ zu groß ist.",die Zitrone,die Tasse
+pr_de_003944,"Die Frau versuchte, die Flasche im Schrank aufzubewahren, aber _ war zu klein.",die Flasche,der Schrank
+pr_de_003977,"Sie verkauften das Grundstück in der Stadt und kauften einige in der Vorstadt, da _ so teuer war.",die Stadt,die Vorstadt
+pr_de_003979,"James stellte fest, dass der Tank überraschend einfach zu bedienen war und nicht das Fahrzeug, da _ einfache Bedienelemente hatte.",das Fahrzeug,der Tank
+pr_de_003982,"Der Duft konnte den Geruch von Kacke im Raum nicht loswerden, weil _ stark ist.",der Duft,der Geruch
+pr_de_003987,"Die Katzen huschten aus der Wanne und machten sich auf den Weg zur warmen Decke, da _ sehr unbequem war.",die Decke,die Wanne
+pr_de_004003,"Der akribische Schreiner benutzte das Schleifpapier, um das Holz zu schleifen, bis _ glatt war.",das Schleifpapier,das Holz
+pr_de_004043,"Der Baum im Vorgarten traf die Telefonkabel, der Busch jedoch nicht, weil _ hoch ist.",der Busch,der Baum
+pr_de_004050,"Es war eine Überraschung zu erfahren, dass sie mehr Zeit im Weinberg verbracht hatten als im Schloss, weil _ sehr aufregend war.",der Weinberg,das Schloss
+pr_de_004090,"Der Ladenbesitzer versuchte, das Schild am Fenster anzubringen, aber _ war zu klein.",das Schild,das Fenster
+pr_de_004101,"Der neue Ofen passt nicht durch die Tür zur Küche, weil _ zu breit ist.",der Ofen,die Tür
+pr_de_004120,"Beim Packen für die Jagd achtete Chris darauf, seine Tasche und nicht sein Messer mitzubringen, da _ nicht unbedingt erforderlich war.",das Messer,die Tasche
+pr_de_004140,"Die Konstrukteure versuchten, das Motorboot in den Anhänger zu laden, aber es konnte nicht passen, weil _ zu klein war.",das Motorboot,der Anhänger
+pr_de_004141,"Mary konnte die Haare ihres Hundes nicht sauber mit dem Shampoo waschen, weil _ zu dick sind.",das Shampoo,die Haare
+pr_de_004145,"Der Mann versuchte, seine Posaune in die Schule zu bringen, aber _ war zu groß.",die Posaune,die Schule
+pr_de_004155,"Wir beschlossen, statt ins Kino in die Kegelbahn zu gehen, weil _ später geschlossen wurde.",das Kino,die Kegelbahn
+pr_de_004159,"SpongeBob entschied sich zwischen einer Ananas und einem Felsen, um unter dem Meer zu leben, aber _ war genau richtig.",der Felsen,die Ananas
+pr_de_004161,"Die Frau schob ihren Stuhl vom Deck auf die Terrasse, weil _ zu exponiert war.",die Terrasse,das Deck
+pr_de_004174,"Der Text war leichter zu sehen als die Grafik auf dem Poster, da _ sehr klein war.",die Grafik,der Text
+pr_de_004175,"George musste das Wasser aus dem Becken in den Eimer nehmen, weil _ Löcher hatte.",der Eimer,das Becken
+pr_de_004188,"Stacey brauchte eine monatliche Mitgliedschaft im Fitnessstudio in ihrer Nähe, da _ Richtlinien hatte.",die Mitgliedschaft,das Fitnessstudio
+pr_de_004190,"Der Büroangestellte verwendete eine Heftklammer für den Bericht, jedoch nicht für die Datei, sodass _ unordentlich wurde.",die Datei,der Bericht
+pr_de_004212,"Allison versuchte, mit einem Gummiband ihr Haar in einen Pferdeschwanz zu stecken, aber _ war zu spröde.",das Gummiband,das Haar
+pr_de_004223,"Während des Winters musste Jimmy seinen alten Pullover ersetzen, aber nicht seine Jacke, weil _ voller Löcher war.",der Pullover,die Jacke
+pr_de_004240,"Das Skalpell wurde verwendet, um den Einschnitt anstelle des Rasierers zu schneiden, da _ präzise war.",das Skalpell,der Rasierer
+pr_de_004244,"Ich fühlte mich negativer, als ich im Motel war, als wenn ich im Hotel war, weil _ gut beleuchtet war.",das Motel,das Hotel
+pr_de_004260,"Der Weg durch den Wald war eine Aufgabe, aber sie stiegen schmerzlos auf den Berg, da _ eine angenehme Umgebung war.",der Berg,der Wald
+pr_de_004283,"Die Schüler wurden durch das Ansehen des Videos erzogen, aber nicht durch das Lesen des Buches, da _ verständlich war.",das Buch,das Video
+pr_de_004323,"Der Trainer versuchte, das Trainingsgerät in den Van zu stellen, aber es passte nicht. _ war zu klein.",Die Ausrüstung,Der Van
+pr_de_004334,"Der Gebärmutterhals musste mit einer medizinischen Creme anstelle einer verschreibungspflichtigen Pille behandelt werden, da _ indirekt war.",die Creme,die Pille
+pr_de_004335,"Die Pflanze war leichter zu pflegen als der Baum, weil _ mehr Aufmerksamkeit brauchte.",der Baum,die Pflanze
+pr_de_004345,"Das Piercing, das ich auf meine Lippe bekam, war weniger schmerzhaft als mein Tattoo, weil _ schnell war.",das Tattoo,das Piercing
+pr_de_004351,"Der Bagger wurde verlassen und sie brachten einen Kran mit, um das Haus zu bauen, da sich _ für den Prozess als nutzlos erwies.",der Kran,der Bagger
+pr_de_004364,"Wir haben den Campingausflug vom Park auf den Berg verlegt, da _ ein einladendes Gebiet geworden war.",der Berg,der Park
+pr_de_004376,"Der Brief würde nicht in den Umschlag passen, den ich gekauft habe, weil _ zu dünn war.",der Brief,der Umschlag
+pr_de_004393,"Die Frau versuchte, die Liste in ihre Handtasche zu stecken, aber _ war zu groß.",die Handtasche,die Liste
+pr_de_004394,"Die Frau versuchte, die Liste in ihre Handtasche zu stecken, aber _ war zu klein.",die Liste,die Handtasche
+pr_de_004399,"Mein Vater benutzte immer sein Gewehr und nicht seinen Bogen, weil _ genauer war.",das Gewehr,der Bogen
+pr_de_004405,"Mike und seine Freunde übten bei Regen Basketball auf dem Feld anstatt im Fitnessstudio, obwohl _ nass ist.",das Fitnessstudio,das Feld
+pr_de_004411,"Ich nahm mein Date zu einem Konzert anstelle eines Films, weil _ aufregender war.",das Konzert,der Film
+pr_de_004416,"Der Clown trug eine Blume in der Tasche anstelle eines Stiftes, weil _ langweiliger war.",der Stift,die Blume
+pr_de_004418,"Sie behandelten das Schlafzimmer und verließen vorerst das Wohnzimmer, weil _ von den Bettwanzen verschont blieb.",das Schlafzimmer,das Wohnzimmer
+pr_de_004419,"Die Kommode sah im Raum besser aus als im Büro, weil _ zu groß für den Raum war.",die Kommode,das Büro
+pr_de_004429,"Mama entfernte die Windel des Babys und legte das Baby in ein sauberes Handtuch, weil _ stinkend war.",das Handtuch,die Windel
+pr_de_004442,"Ich wollte mich nicht um meine Arbeit kümmern, weil es mehr Zeit für mein Spiel brauchte, weil _ Spaß machte.",das Spiel,die Arbeit
+pr_de_004451,"Wir entschieden uns, zu unserem Date eher zum Abendessen als zum Restaurant zu gehen, weil _ näher war.",das Abendessen,das Restaurant
+pr_de_004465,"Die Hochzeitstorte, die ich gemacht habe, würde nicht in unseren normalen Kühlschrank passen, weil _ sehr klein war.",der Kühlschrank,die Torte
+pr_de_004468,"Die müde Frau im Wohnzimmer ging vom Liebessitz auf die Couch, weil _ bequem war.",die Couch,der Liebessitz
+pr_de_004470,"Leider war seine körperliche Gesundheit nicht so gut wie seine Denkweise, weil _ stark war.",die Denkweise,die Gesundheit
+pr_de_004489,"Das Mädchen stellte das Geschichtsbuch wieder ins Regal und las die Zeitschrift, weil _ langweilig war.",die Zeitschrift,das Buch
+pr_de_004504,"Er steckte den Dollarschein in die Schublade anstatt in die Tasche, weil _ das am meisten erwartete Versteck war.",die Tasche,die Schublade
+pr_de_004509,"Ich habe versucht, den Alkohol in eine Flasche zu gießen, aber es ging nicht alles rein, weil _ so viel war.",die Flasche,der Alkohol
+pr_de_004520,"Unsere Erfahrung war besser, nachdem wir das Videospiel dem Film vorgezogen hatten, da _ passiv war.",das Videospiel,der Film
+pr_de_004523,"Tracy benutzte ein Rasiermesser, um die Stoppeln unter ihren Achselhöhlen loszuwerden, aber _ waren zu rau.",das Rasiermesser,die Stoppeln
+pr_de_004527,"Er hat versucht, sein Portfolio in den Ordner zu legen, aber _ war zu groß.",der Ordner,das Portfolio
+pr_de_004533,"Der Eyeliner tat mehr weh als der Lippenstift, weil _ in die Augen des Mädchens geriet.",der Eyeliner,der Lippenstift
+pr_de_004538,"Als die Welpen älter wurden, mussten sie die Küche verlassen, um die Treppe zum Spielzimmer hinaufzugehen, da sich _ oben befand.",die Küche,das Spielzimmer
+pr_de_004542,"Menschen können es über einen Zaun schaffen, aber nicht über eine Mauer, weil _ sehr kurz ist.",der Zaun,die Mauer
+pr_de_004544,"Sie hofften, dass es sich nur um eine Essstörung statt um eine Krankheit handelte, da _ überlebensfähig sein würde.",die Krankheit,die Störung
+pr_de_004553,"Der Ehemann konnte es sich nicht leisten, ein Boot zu budgetieren, konnte sich aber ein Auto leisten, weil _ zu teuer war.",das Auto,das Boot
+pr_de_004563,"Sandras Bein wurde von einem Stock und einem Stein getroffen, aber nur der Stock schnitt sie, weil _ scharf war.",der Stock,der Stein
+pr_de_004567,"Sie lebte lieber in der Wohnung als im Haus, weil _ eintönig war.",die Wohnung,das Haus
+pr_de_004587,"Der Papst meditierte lieber im leeren Kreuzgang als im Garten, in dem viele Kardinäle sprachen, weil _ ruhig war.",der Garten,der Kreuzgang
+pr_de_004595,"Die Frau sprühte Reiniger auf den Spiegel, ließ aber die Arbeitsplatte aus, weil _ schmutzig war.",der Spiegel,die Arbeitsplatte
+pr_de_004598,"Daniel beschloss, den Bericht nach Abschluss des Forschungspapiers zu beginnen, da _ eine frühere Frist hatte.",das Forschungspapier,der Bericht
+pr_de_004599,"Der Vater versuchte das neue Spielzeug in der Schachtel zu verstecken, aber _ war zu klein.",die Schachtel,das Spielzeug
+pr_de_004613,"Das Holz passte nicht in die Ladefläche, weil _ zu lang war.",die Ladefläche,das Holz
+pr_de_004631,"Jane strich sich mit einer Bürste über die Haare, aber sie verheddern sich immer noch, weil _ zu zäh sind.",die Bürste,die Haare
+pr_de_004647,"Die Begrüßung wurde auf der Unternehmenskonferenz nicht gehört, da _ zu leise war.",die Begrüßung,die Konferenz
+pr_de_004648,"Die Begrüßung wurde auf der Unternehmenskonferenz nicht gehört, da _ zu laut war.",die Konferenz,die Begrüßung
+pr_de_004663,"Der Koch versuchte, die Banane in den Kuchen zu geben, aber _ war zu klein.",der Kuchen,die Banane
+pr_de_004667,"John wollte ein Spielhaus für seine Kinder bauen, kaufte ihnen aber stattdessen ein Spielzeug, weil _ teuer war.",das Spielhaus,das Spielzeug
+pr_de_004678,"Das Unternehmen beauftragte den Bau eines Büros anstelle einer Wohnung, da _ für sie ein naiver Bereich war.",die Wohnung,das Büro
+pr_de_004716,"Das Team musste nur den Monitor und nicht den Computer austauschen, da _ gerade freigegeben wurde.",der Monitor,der Computer
+pr_de_004721,"Sie klebte das Papier an, aber nicht den Karton, weil _ angebracht werden sollte.",der Karton,das Papier
+pr_de_004724,"Der Spieler versuchte, seinen Fußball im Regal zu halten, aber _ war zu groß.",der Fußball,das Regal
+pr_de_004730,"Ich habe versucht, den Schlüssel in das Schloss zu stecken, aber es hat nicht funktioniert, weil _ für einen anderen Schlüssel war.",das Schloss,der Schlüssel
+pr_de_004743,"Die Infektion breitete sich im Gefängnis schneller aus als im Krankenhaus, da _ hygienischer war.",das Krankenhaus,das Gefängnis
+pr_de_004745,"Das Haar des Hundes musste entfernt werden, nachdem es im Schlamm stecken geblieben war, weil _ ekelhaft war.",der Schlamm,das Haar
+pr_de_004752,"Ich bin Pre-Diabetiker, also habe ich den Ananassalat anstelle des Kuchens bestellt, weil _ mehr Zucker enthält.",der Ananassalat,der Kuchen
+pr_de_004757,"Er hat das Interview gewonnen, hatte aber wirklich Probleme mit dem Job selbst, weil _ einfach war.",der Job,das Interview
+pr_de_004772,"Wir haben beschlossen, dieses Jahr zu Weihnachten einen Kranz an der Tür anstelle eines Baumes zu machen, weil _ viel mehr Arbeit war.",der Kranz,der Baum
+pr_de_004781,"Die Kinder spielten gern auf der Rutsche, aber nicht auf der Schaukel, weil _ mehr Spaß macht.",die Schaukel,die Rutsche
+pr_de_004782,"Die Kinder spielten gern auf der Rutsche, aber nicht auf der Schaukel, weil _ rostiger ist.",die Rutsche,die Schaukel
+pr_de_004786,"Sie verwendeten den Impfstoff anstelle der Pille, um das Virus zu verhindern, da _ wirksamer war.",der Impfstoff,die Pille
+pr_de_004789,"Arthur ging in die Nachbarschaftsklinik anstatt ins Krankenhaus, weil _ teuer war.",das Krankenhaus,die Klinik
+pr_de_004820,"Der Arzt konnte den Patienten besser mit einem Schlauch als mit einem Löffel ernähren, da _ für den Job geeignet war.",der Schlauch,der Löffel
+pr_de_004821,"Nachdem sie den Film gesehen hatte, war Claire emotional glücklicher als beim Lesen des Buches, weil _ optimistischer ist.",der Film,das Buch
+pr_de_004828,"Die Frau wollte den Kamm in der Schublade aufbewahren, aber _ war zu groß.",der Kamm,die Schublade
+pr_de_004838,"Wir haben den Tank verwendet, um das Wasser anstelle des Eimers zu speichern, weil _ schmutziger war.",der Tank,der Eimer
+pr_de_004871,"Der Erwachsene konnte das Backblech nicht in den Ofen legen, da _ zu klein war.",das Backblech,der Ofen
+pr_de_004875,"Das Bandmitglied versuchte, die Gitarre in den Koffer zu stecken, aber es passte nicht, weil _ zu groß war.",die Gitarre,der Koffer
+pr_de_004882,"Die auf den Boden geworfenen Würfel konnten nicht mehr gefunden werden, da _ breit ist.",der Boden,die Würfel
+pr_de_004886,"Der Wasserkocher, den meine Mutter mir gekauft hatte, war schlimmer als meine letzte Teekanne, weil _ so leise war.",der Wasserkocher,die Teekanne
+pr_de_004888,"Das Anschauen des Films zog viel weniger an den Emotionen als das Lesen des Buches, da _ voller Leidenschaft war.",das Buch,der Film
+pr_de_004907,"Der Stein machte ein lauteres Geräusch, als er ins Wasser fiel als der Baumstamm, weil _ schwerer war.",der Stein,der Baumstamm
+pr_de_004932,"Das Unternehmen hielt Brainstorming-Sitzungen eher im Besprechungsraum als im Büro ab, da _ zu Faulheit führte.",der Besprechungsraum,das Büro
+pr_de_004946,"Ich nahm die Kekse aus ihrer Schachtel und stellte sie in die Keksdose, bis _ leer war.",die Schachtel,die Kanne
+pr_de_004955,"Das Brett konnte nicht in der mit den Jungen mitgebrachten Tasche versteckt werden, da _ breit ist.",das Brett,die Tasche
+pr_de_004967,"Die Tänzerin versuchte, ihren neuen Zug auf der Tanzfläche zu zeigen, aber _ war zu klein.",der Zug,die Fläche
+pr_de_004970,"Jim wollte die Rosacea mit einem Rezept loswerden, aber _ ist zu schwach.",die Rosacea,das Rezept
+pr_de_004989,"Simone wollte die Oper besuchen, entschied sich aber stattdessen für das Stück, weil _ zu weit von zu Hause entfernt war.",das Stück,die Oper
+pr_de_004991,"Der Mann beschloss, den Teppich auf dem Boden zu lassen, weil _ zu alt war.",der Boden,der Teppich
+pr_de_005008,"Das Modell konnte im Vergleich zum tatsächlichen Schiff nicht verwendet werden, da _ verhältnismäßig war.",das Modell,das Schiff
+pr_de_005011,"Die Kinder spielten Fußball mit einem Ballon anstelle eines Balls, weil _ aufregend schien.",der Ballon,der Ball
+pr_de_005043,"Ich wollte ein Badezimmer im dritten Stock des Hauses bauen, konnte es aber nicht, weil _ zu voll wäre.",der Boden,das Badezimmer
+pr_de_005067,"Der Filter im Wohnzimmer musste häufiger gewechselt werden als der im Schlafzimmer, da _ sauberer war.",das Schlafzimmer,das Wohnzimmer
+pr_de_005073,"James verließ die Party und ging zum Haus, um weiterzulesen, weil _ ruhig ist.",das Haus,die Party
+pr_de_005074,"Der Pfeil klebte an der Rinde, aber nicht am Stein, weil _ schwach war.",die Rinde,der Stein
+pr_de_005085,"James war froh, das Papageienlied zu hören, also reduzierte er die Lautstärke des Radios, weil _ leiser war.",das Lied,das Radio
+pr_de_005089,"Carrie stellte ihr Sofa zum Verkauf auf Craigslist und hatte ein Angebot erhalten, das sie ablehnen mussten, weil _ wertvoll ist.",das Sofa,das Angebot
+pr_de_005105,"Sie zeigte mehr Freundlichkeit gegenüber dem Tisch als gegenüber der Theke, weil _ wertlos war.",der Tisch,die Theke
+pr_de_005123,"Er zog seine Familie vom Haus in die Wohnung, weil _ sauber war.",das Haus,die Wohnung
+pr_de_005141,"Pete zog es vor, das Blatt für die Decke zu verwenden, da _ viel heißer war.",die Decke,das Blatt
+pr_de_005150,"Mary beschloss, sich die Haare abzuschneiden und trug stattdessen eine Perücke, weil _ dünner waren, als sie wollte.",die Haare,die Perücke
+pr_de_005160,"Die Mover konnten das alte Bett des Paares nicht durch die Tür passen, weil _ zu groß war.",das Bett,die Tür
+pr_de_005170,"Mary hatte vor, einen Supermarkt und eine Apotheke zu besuchen, aber sie konnte nur einen Supermarkt besuchen, da _ noch geöffnet war.",die Apotheke,der Supermarkt
+pr_de_005186,"Die Frau stellte die Urne vor die Vase im Regal, weil _ attraktiv war.",die Urne,die Vase
+pr_de_005196,"James wechselte zum Lesen des Kommunikationsbuchs aus dem Video, weil _ mehr Informationen enthielt.",das Video,das Buch
+pr_de_005197,"James wechselte zum Lesen des Kommunikationsbuchs aus dem Video, weil _ zu einfach war.",das Buch,das Video
+pr_de_005202,"Meine Mutter arbeitete für eine Firma, die sie mehr hasste als ihren alten Job, weil _ schrecklich war.",die Firma,der Job
+pr_de_005208,"Bobby musste seinen Stift verwenden, um die Prüfung zu beenden, anstatt den Bleistift, weil _ voller Tinte war.",der Bleistift,der Stift
+pr_de_005220,"Das Mädchen benutzte den Kamm, um sich die Haare zu bürsten, aber _ waren zu hart.",die Haare,der Kamm
+pr_de_005235,"Die Band durfte ihre Musik im Park spielen, aber nicht im Einkaufszentrum, da _ Live-Auftritte verbot.",das Einkaufszentrum,der Park
+pr_de_005239,"Die Bäckerin wollte ihren Kuchen im Restaurant anstatt im Einkaufszentrum verkaufen, weil _ weniger Kunden anzieht.",das Einkaufszentrum,das Restaurant
+pr_de_005243,"Er füllte den Eimer lieber mit dem Schlauch als mit dem Wasserhahn, weil _ zusätzlichen Wasserdruck lieferte.",der Schlauch,der Wasserhahn
+pr_de_005251,"Bob benutzte ein Brett, um das Schwein zu ermutigen, sich anstelle eines Stocks vorwärts zu bewegen. _ ist sicher.",Der Stock,Das Board
+pr_de_005256,"Ich habe den Test im Büro statt in der Schule gemacht, weil _ weiter von meinem Haus entfernt war.",das Büro,die Schule
+pr_de_005267,"Mary ging ins Büro, um eine neue Karte mit ihrem Foto zu erhalten, und warf einen Aufkleber weg, weil _ dauerhaft ist.",der Aufkleber,die Karte
+pr_de_005288,"Der Mopp konnte die Reinigungsmethode besser anwenden als der Besen, da _ gebrochen war.",der Besen,der Mopp
+pr_de_005294,"Die Tasche zerriss, als der Junge ein Spielzeug hineinlegte, weil _ zu dünn war.",die Tasche,das Spielzeug
+pr_de_005309,"Der Dialog in der Fiktionsgeschichte war besser als in der Sachgeschichte, weil _ weniger zuordenbar war.",die Sachliteratur,die Fiktionsgeschichte
+pr_de_005324,"Joe trank seine Milch und versuchte, seinen Keks in das Glas zu tauchen, aber _ war zu groß.",der Keks,das Glas
+pr_de_005343,"Sie schickte das T-Shirt in einer Plastiktüte anstelle eines Kartons, weil _ schwerer ist.",der Karton,die Plastiktüte
+pr_de_005354,"Die Art und Weise, wie sie das Kleid trug, hob sich wirklich von der Bluse ab, daher war _ ansprechend.",das Kleid,die Bluse
+pr_de_005358,"Das Wasser floss frei in das Loch, bis es verschwand, _ war tief.",das Wasser,das Loch
+pr_de_005370,"Die Pflanzen sahen im Garten besser aus als im Gewächshaus, weil _ ein besseres Klima hat.",das Gewächshaus,der Garten
+pr_de_005386,"Niemand wurde im Spiel verletzt, aber es gab Verletzungen in der Praxis, da _ weniger körperlich war.",das Spiel,die Übung
+pr_de_005399,"Wir wollten Essen aus dem Topf in den Behälter geben, bis _ leer war.",der Behälter,der Topf
+pr_de_005405,"Henry wird seinen Hund regelmäßig mit einem Geschirr anstelle einer Leine laufen lassen, da _ für den Hund beim Ziehen relativ schmerzfrei ist.",die Leine,das Geschirr
+pr_de_005418,"Mein Arzt empfahl das Nikotinpflaster anstelle des Arzneimittels, um meine Tabaksucht einzudämmen, da _ schneller wirkt.",das Arzneimittel,das Nikotinpflaster
+pr_de_005419,"Mein Arzt empfahl das Nikotinpflaster anstelle des Arzneimittels, um meine Tabakabhängigkeit einzudämmen, da _ langsamer wirkt.",das Nikotinpflaster,das Arzneimittel
+pr_de_005423,"Meine Cocktailmischung schlug die andere Kreation beim Wettbewerb, weil _ minderwertig schmeckte.",die Kreation,die Mischung
+pr_de_005435,"Harold griff vor dem Conditioner nach dem Shampoo, weil _ für ihn zugänglicher war.",das Shampoo,der Conditioner
+pr_de_005481,"Der Mann versuchte, das Telefon auf den Tisch zu legen, aber _ war zu klein.",der Tisch,das Telefon
+pr_de_005491,"James fand einen Platz auf der Couch, auf dem die Kiste platziert werden konnte, aber er konnte ihn nicht finden, weil _ klein ist.",die Kiste,die Couch
+pr_de_005503,"Manchmal schreibe ich mit einem Bleistift anstelle eines Stiftes in mein Tagebuch, aber _ kann trocken laufen.",der Stift,der Bleistift
+pr_de_005517,"James wollte die Corsage tragen, aber sie passte nicht um sein Handgelenk, weil _ zu klein war.",seine Corsage,sein Handgelenk
+pr_de_005519,"Ich habe versucht, mein Auto auf dem Parkplatz zu parken, aber es passte nicht, weil _ zu klein war.",das Auto,der Platz
+pr_de_005534,"Die Weihnachtsdekoration passte nicht auf den Kaminmantel, da _ zu breit war.",der Mantel,die Dekoration
+pr_de_005544,"Auf der Reise wollten wir im Meer schnorcheln und ich wusste, dass ich einen Neoprenanzug anstelle eines Badeanzugs verwenden sollte, da _ widerstandsfähig ist.",der Neoprenanzug,der Badeanzug
+pr_de_005573,"Sarah entschied sich für eine Halskette anstelle eines Schals, weil _ cool war.",die Kette,der Schal
+pr_de_005575,"Der Mann hatte akute Ohrenschmerzen und ging in die Klinik, anstatt das Medikament zu kaufen, weil _ hilfreich war.",das Medikament,die Klinik
+pr_de_005578,"Um Pfannkuchen zu machen, gieße ich den Teig in die Pfanne, bis _ weg ist.",die Pfanne,der Teig
+pr_de_005585,"Elsie liebte den Weltraum und verbrachte mehr Zeit im Planetarium als im Aquarium, weil _ ihre Vorstellungskraft einschränkte.",das Planetarium,das Aquarium
+pr_de_005596,"Ich goss langsam die Milch über meine Müslischale, bis _ weg war.",das Müsli,die Milch
+pr_de_005600,"Devin wurde krank, nachdem er die Wurst gegessen hatte, also legte er sich auf die Couch und ging später zum Bett, weil _ zu klumpig war.",die Couch,das Bett
+pr_de_005609,"Sandra probierte einen neuen Conditioner für ihr Haar aus, der es lockig macht, war aber über die Ergebnisse verärgert, weil _ zu glatt war.",das Haar,der Conditioner
+pr_de_005616,"Der Schütze schoss nur mit der Pistole auf die Ziele und nicht auf das Gewehr, weil _ nützlich war.",die Pistole,das Gewehr
+pr_de_005628,"Ida zog es vor, den Bericht von Forschern zu lesen, anstatt sich die Analyse von Experten anzuhören, da _ sachlich war.",die Analyse,der Bericht
+pr_de_005631,"Die Gemeinde konnte nicht in das neue Heiligtum der Kirche passen, weil _ zu klein war.",das Heiligtum,die Gemeinde
+pr_de_005638,"Der Regen war heute stärker als der Wind, weil _ viele Unfälle verursachte.",der Wind,der Regen
+pr_de_005651,"Seth ging zur ägyptischen Ausstellung im Museum und genoss den Sarkophag, aber nicht die Mumie, weil _ wunderschön war.",die Mumie,der Sarkophag
+pr_de_005653,"Das Team beschloss, sein Ziel trotz der neuen Informationen beizubehalten, da _ unübersichtlich waren.",die Informationen,das Team
+pr_de_005659,"Nach der Knieoperation versuchte er, Walker zu benutzen, wechselte aber zum Rollstuhl, weil _ bequemer war.",der Walker,der Rollstuhl
+pr_de_005669,"Russ kaufte ein Teleskop, um den Planeten zu sehen, aber er konnte den Stern nicht sehen, weil _ näher war.",der Planet,der Stern
+pr_de_005681,"Sie kletterte im Regen auf den Baum, aber nicht im Wind, weil _ sehr schwach war.",der Wind,der Regen
+pr_de_005687,"Das Team des Unternehmens musste für den nächsten Monat komplett umstrukturiert werden, da _ fokussiert war.",das Unternehmen,das Team
+pr_de_005700,"John konnte den Alarm seiner Uhr nicht hören, als der Lehrer seine Stimme zu ihm erhob, weil _ laut ist.",der Alarm,die Stimme
+pr_de_005720,"Um seine Muskeln zu straffen, benutzte der Mann den Ruderer anstelle des Laufbandes, da _ für diesen Zweck unbrauchbar war.",der Ruderer,das Laufband
+pr_de_005746,"Wir konnten den Truthahn, den wir zu Thanksgiving gekauft hatten, nicht in den Kühlschrank stellen, weil _ riesig war.",der Kühlschrank,der Truthahn
+pr_de_005750,"Die Sonne ist viel heller als der andere Stern, weil _ viel näher ist.",die Sonne,der Stern
+pr_de_005772,"Alle zuckten zusammen, als der Sänger seine lauteste Singstimme ins Mikrofon steckte, weil _ laut war.",die Stimme,das Mikrofon
+pr_de_005782,"Der Wind in Belize war so stark, dass er eine alte Statue umwarf, _ war zu schwach.",die Statue,der Wind
+pr_de_005785,"Sie beschloss, den Bus zu verlassen und sich auf den Weg zu machen, um ein Flugzeug zu erreichen, damit sie schneller dorthin gelangen konnte, aber _ kam aufgrund von Verspätungen tatsächlich langsamer an.",der Bus,das Flugzeug
+pr_de_005788,"Wir haben nicht viel geschlafen, nicht wegen des Alarms, sondern wegen der Sirene, da _ leise war.",die Sirene,der Alarm
+pr_de_005798,"Während des Nachmittags im Wind gespielt, wurde der Drachen hoch gesprengt, _ war leicht.",der Drachen,der Wind
+pr_de_005811,"Das gesamte Publikum konnte nicht in das Theater passen, weil _ zu viel war.",das Theater,das Publikum
+pr_de_005812,"James wickelte ein Band über sein Tattoo, aber es ist immer noch sichtbar, weil _ groß ist.",das Tattoo,die Band
+pr_de_005823,"Hugh schrubbte den Schimmel in seiner Wohnung mit einem Reiniger, musste aber einen Profi anrufen, weil _ zu schwach war.",der Schimmel,der Reiniger
+pr_de_005827,"Die Krabbe schmeckte ekelhafter als die Garnele, weil _ außerhalb der Saison war.",die Garnele,die Krabbe
+pr_de_005829,"Während Mary den Weihnachtsbaum schmückte, warf sie den Stern aus, bevor sie das Ornament aufhängte, da _ intakt war.",der Stern,das Ornament
