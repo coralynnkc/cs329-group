@@ -1,4 +1,17 @@
 label,gold_file,pred_file,n,acc,mean_ned,macro_f1,f1_ambiguous,f1_changed,f1_easy,f1_irregular,f1_rare,acc_ambiguous,acc_changed,acc_easy,acc_irregular,acc_rare
+chat_5.3_100,sample_100_stratified_labeled.csv,chat_5.3_100_samples.csv,100,0.85,0.1251,0.85,0.9,1.0,0.95,0.6,0.8,0.9,1.0,0.95,0.6,0.8
+chat_5.3_200,sample_200_stratified_labeled.csv,chat_5.3_200_samples.csv,200,0.795,0.1795,0.795,0.9,0.775,0.925,0.55,0.825,0.9,0.775,0.925,0.55,0.825
+chat_5.3_300,sample_300_stratified_labeled.csv,chat_5.3_300_samples.csv,300,0.54,0.4363,0.54,0.6167,0.5,0.5667,0.45,0.5667,0.6167,0.5,0.5667,0.45,0.5667
+chat_5.3_500,sample_500_stratified_labeled.csv,chat_5.3_500_samples.csv,500,0.472,0.5145,0.472,0.65,0.48,0.57,0.4,0.26,0.65,0.48,0.57,0.4,0.26
+gemeni_3_100,sample_100_stratified_labeled.csv,gemeni_3_100_samples.csv,100,0.91,0.0596,0.91,0.9,1.0,1.0,0.75,0.9,0.9,1.0,1.0,0.75,0.9
+gemeni_3_200,sample_200_stratified_labeled.csv,gemeni_3_200_samples.csv,200,0.965,0.0157,0.965,0.95,1.0,0.975,0.95,0.95,0.95,1.0,0.975,0.95,0.95
+gemeni_3_300,sample_300_stratified_labeled.csv,gemeni_3_300_samples.csv,300,0.8633,0.1111,0.8633,0.95,0.9667,0.9833,0.5667,0.85,0.95,0.9667,0.9833,0.5667,0.85
+gemeni_3_500,sample_500_stratified_labeled.csv,gemeni_3_500_samples.csv,500,0.972,0.01,0.972,0.98,0.96,0.98,0.98,0.96,0.98,0.96,0.98,0.98,0.96
+opus_4.6_100,sample_100_stratified_labeled.csv,opus_4.6_100_samples.csv,100,0.95,0.0175,0.95,0.9,1.0,0.95,0.95,0.95,0.9,1.0,0.95,0.95,0.95
+opus_4.6_200,sample_200_stratified_labeled.csv,opus_4.6_200_samples.csv,200,0.965,0.0157,0.965,0.95,1.0,0.975,0.95,0.95,0.95,1.0,0.975,0.95,0.95
+opus_4.6_300,sample_300_stratified_labeled.csv,opus_4.6_300_samples.csv,300,0.8567,0.1176,0.8567,0.95,0.9667,0.9667,0.5667,0.8333,0.95,0.9667,0.9667,0.5667,0.8333
+opus_4.6_500,sample_500_stratified_labeled.csv,opus_4.6_500_samples.csv,500,0.86,0.117,0.86,0.95,0.95,0.96,0.57,0.87,0.95,0.95,0.96,0.57,0.87
 sonnet_4.6_100,sample_100_stratified_labeled.csv,sonnet_4.6_100_samples.csv,100,0.93,0.0375,0.93,0.9,1.0,0.95,0.85,0.95,0.9,1.0,0.95,0.85,0.95
 sonnet_4.6_200,sample_200_stratified_labeled.csv,sonnet_4.6_200_samples.csv,200,0.94,0.0376,0.94,0.925,1.0,0.975,0.85,0.95,0.925,1.0,0.975,0.85,0.95
 sonnet_4.6_300,sample_300_stratified_labeled.csv,sonnet_4.6_300_samples.csv,300,0.9233,0.0535,0.9233,0.95,0.9667,0.9667,0.8,0.9333,0.95,0.9667,0.9667,0.8,0.9333
+sonnet_4.6_500,sample_500_stratified_labeled.csv,sonnet_4.6_500_samples.csv,500,0.932,0.0484,0.932,0.97,0.96,0.97,0.81,0.95,0.97,0.96,0.97,0.81,0.95

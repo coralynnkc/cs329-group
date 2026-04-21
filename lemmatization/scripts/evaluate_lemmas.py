@@ -34,8 +34,10 @@ import warnings
 from collections import defaultdict
 
 # ── config ────────────────────────────────────────────────────────────────────
+HERE        = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR    = os.path.dirname(HERE)
 SIZES       = [100, 200, 300, 500]
-RESULTS_DIR = "results"
+RESULTS_DIR = os.path.join(BASE_DIR, "results")
 
 # column name variants to try (lowercase)
 GOLD_LEMMA_VARIANTS  = {"lemma", "gold_lemma", "gold"}
@@ -49,19 +51,34 @@ FORM_VARIANTS        = {"form", "token", "word", "surface"}
 def load_csv(path):
     with open(path, encoding="utf-8-sig") as f:
         content = f.read()
-    
-    # Strip wrapping quotes from each line
-    lines = []
-    for line in content.splitlines():
-        line = line.strip()
-        if line.startswith('"') and line.endswith('"'):
-            line = line[1:-1]
-        lines.append(line)
-    
-    cleaned = "\n".join(lines)
-    reader = csv.DictReader(cleaned.splitlines())
-    rows = list(reader)
-    return [{k.strip(): v.strip() for k, v in r.items() if k is not None and v is not None} for r in rows if r]
+
+    def parse_lines(lines):
+        reader = csv.DictReader(lines)
+        rows = list(reader)
+        return [
+            {k.strip(): v.strip() for k, v in r.items() if k is not None and v is not None}
+            for r in rows if r
+        ]
+
+    raw_lines = [line.strip() for line in content.splitlines() if line.strip()]
+    rows = parse_lines(raw_lines)
+
+    # Some model exports wrap each whole CSV row in quotes, e.g.:
+    #   "form,model_lemma"
+    #   "running,run"
+    # In that case, the initial parse yields a single combined header instead of
+    # separate columns. Only then do we strip one outer quote pair per line.
+    if rows:
+        keys = list(rows[0].keys())
+        if len(keys) == 1 and "," in keys[0]:
+            cleaned_lines = []
+            for line in raw_lines:
+                if line.startswith('"') and line.endswith('"'):
+                    line = line[1:-1]
+                cleaned_lines.append(line)
+            rows = parse_lines(cleaned_lines)
+
+    return rows
 
 
 def find_col(row_keys, variants, label):
