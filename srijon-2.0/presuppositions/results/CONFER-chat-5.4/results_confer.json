@@ -1,13 +1,15 @@
 Gold file: confer_en/presupposition_answers.csv
-Found 8 prediction file(s) to score:
+Found 10 prediction file(s) to score:
   p0.csv
   p1.csv
+  p1_redux.csv
   p2.csv
   p4.csv
   p5.csv
   p6.csv
   p7.csv
   p8.csv
+  p9.csv
 
 Processing: p0.csv
   accuracy=0.6933 | macro_f1=0.6828 | log_loss=0.9081 | multiclass_brier_score=0.5244
@@ -24,6 +26,14 @@ Processing: p1.csv
     Gold=E (n=99): avg_E=0.94, avg_N=0.04, avg_C=0.02
     Gold=N (n=101): avg_E=0.3269, avg_N=0.6103, avg_C=0.0628
     Gold=C (n=100): avg_E=0.041, avg_N=0.32, avg_C=0.639
+
+Processing: p1_redux.csv
+  accuracy=0.8 | macro_f1=0.7779 | log_loss=0.6034 | multiclass_brier_score=0.345
+  nearest_centroid_accuracy=0.8 | avg_distance_to_gold_centroid=0.2379 | avg_margin_gold_vs_best_other=0.4077
+  matched=300/300 | missing=0 | invalid=0 | extra_pred_ids=0 | duplicate_pred_rows=11
+    Gold=E (n=99): avg_E=0.9077, avg_N=0.0723, avg_C=0.02
+    Gold=N (n=101): avg_E=0.4796, avg_N=0.4083, avg_C=0.1121
+    Gold=C (n=100): avg_E=0.0502, avg_N=0.1083, avg_C=0.8415
 
 Processing: p2.csv
   accuracy=0.71 | macro_f1=0.7094 | log_loss=0.8589 | multiclass_brier_score=0.4917
@@ -50,12 +60,12 @@ Processing: p5.csv
     Gold=C (n=100): avg_E=0.073, avg_N=0.6144, avg_C=0.3126
 
 Processing: p6.csv
-  accuracy=0.3967 | macro_f1=0.3525 | log_loss=1.5022 | multiclass_brier_score=0.9054
-  nearest_centroid_accuracy=0.424 | avg_distance_to_gold_centroid=0.3374 | avg_margin_gold_vs_best_other=-0.0447
-  matched=283/300 | missing=17 | invalid=0 | extra_pred_ids=1 | duplicate_pred_rows=26
-    Gold=E (n=94): avg_E=0.3561, avg_N=0.5855, avg_C=0.0584
-    Gold=N (n=97): avg_E=0.2369, avg_N=0.6946, avg_C=0.0685
-    Gold=C (n=92): avg_E=0.1002, avg_N=0.7364, avg_C=0.1634
+  accuracy=0.47 | macro_f1=0.4563 | log_loss=1.5028 | multiclass_brier_score=0.8689
+  nearest_centroid_accuracy=0.47 | avg_distance_to_gold_centroid=0.472 | avg_margin_gold_vs_best_other=0.0
+  matched=300/300 | missing=0 | invalid=0 | extra_pred_ids=0 | duplicate_pred_rows=11
+    Gold=E (n=99): avg_E=0.3446, avg_N=0.6195, avg_C=0.0359
+    Gold=N (n=101): avg_E=0.261, avg_N=0.6998, avg_C=0.0392
+    Gold=C (n=100): avg_E=0.0832, avg_N=0.576, avg_C=0.3408
 
 Processing: p7.csv
   accuracy=0.4567 | macro_f1=0.4042 | log_loss=1.8956 | multiclass_brier_score=0.9854
@@ -66,7 +76,10 @@ Processing: p7.csv
     Gold=C (n=100): avg_E=0.036, avg_N=0.592, avg_C=0.372
 
 Processing: p8.csv
-  ✗ Error: Prediction file p8.csv is missing required columns: ['e_probability', 'n_probability', 'c_probability']. Found columns: ['item_id', 'predicted_label']
+  ✗ Error: Prediction file p8.csv is missing required columns: ['e_probability', 'n_probability', 'c_probability']. Found columns: ['s1 acc: 0.3600']
+
+Processing: p9.csv
+  ✗ Error: Prediction file p9.csv is missing required columns: ['e_probability', 'n_probability', 'c_probability']. Found columns: ['s1 acc: 0.4500']
 
 ================================================================================
 FINAL RESULTS
@@ -75,9 +88,9 @@ FINAL RESULTS
   "summary": {
     "gold_file": "confer_en/presupposition_answers.csv",
     "results_dir": "results/CONFER-chat-5.4",
-    "total_files_processed": 8,
-    "successful": 7,
-    "failed": 1
+    "total_files_processed": 10,
+    "successful": 8,
+    "failed": 2
   },
   "results": {
     "p0.csv": {
@@ -288,6 +301,112 @@ FINAL RESULTS
             "E": 0,
             "N": 35,
             "C": 65
+          }
+        }
+      }
+    },
+    "p1_redux.csv": {
+      "gold_file": "presupposition_answers.csv",
+      "pred_file": "p1_redux.csv",
+      "data_size": 300,
+      "prediction_rows_raw": 300,
+      "prediction_rows_after_dedup": 289,
+      "correct": 240,
+      "accuracy": 0.8,
+      "missing_predictions": 0,
+      "missing_rate": 0.0,
+      "invalid_predictions": 0,
+      "invalid_rate": 0.0,
+      "duplicate_prediction_rows": 11,
+      "extra_prediction_ids": 0,
+      "extra_prediction_id_examples": [],
+      "missing_prediction_id_examples": [],
+      "coverage": 1.0,
+      "valid_prediction_rate": 1.0,
+      "scored_rows_for_probability_metrics": 300,
+      "macro_f1": 0.7779,
+      "log_loss": 0.6034,
+      "multiclass_brier_score": 0.345,
+      "precision_E": 0.6644,
+      "recall_E": 1.0,
+      "f1_E": 0.7984,
+      "precision_N": 0.9767,
+      "recall_N": 0.4158,
+      "f1_N": 0.5833,
+      "precision_C": 0.9167,
+      "recall_C": 0.99,
+      "f1_C": 0.9519,
+      "class_metrics": {
+        "E": {
+          "tp": 99,
+          "fp": 50,
+          "fn": 0,
+          "support": 99,
+          "precision": 0.6644,
+          "recall": 1.0,
+          "f1": 0.7984
+        },
+        "N": {
+          "tp": 42,
+          "fp": 1,
+          "fn": 59,
+          "support": 101,
+          "precision": 0.9767,
+          "recall": 0.4158,
+          "f1": 0.5833
+        },
+        "C": {
+          "tp": 99,
+          "fp": 9,
+          "fn": 1,
+          "support": 100,
+          "precision": 0.9167,
+          "recall": 0.99,
+          "f1": 0.9519
+        }
+      },
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 99,
+          "avg_e_probability": 0.9077,
+          "avg_n_probability": 0.0723,
+          "avg_c_probability": 0.02
+        },
+        "N": {
+          "count": 101,
+          "avg_e_probability": 0.4796,
+          "avg_n_probability": 0.4083,
+          "avg_c_probability": 0.1121
+        },
+        "C": {
+          "count": 100,
+          "avg_e_probability": 0.0502,
+          "avg_n_probability": 0.1083,
+          "avg_c_probability": 0.8415
+        }
+      },
+      "centroid_diagnostics": {
+        "centroid_method": "within-run class centroids computed from valid probability rows",
+        "centroid_note": "Measures how tightly each gold class clusters in probability space and whether an item sits closest to the centroid of its own gold class. Useful as a descriptive geometry/separability diagnostic, but not a substitute for accuracy, F1, log loss, or Brier score.",
+        "nearest_centroid_accuracy": 0.8,
+        "avg_distance_to_gold_centroid": 0.2379,
+        "avg_distance_to_predicted_centroid": 0.1322,
+        "avg_margin_gold_vs_best_other": 0.4077,
+        "centroid_confusion": {
+          "E": {
+            "E": 99,
+            "N": 0,
+            "C": 0
+          },
+          "N": {
+            "E": 50,
+            "N": 42,
+            "C": 9
+          },
+          "C": {
+            "E": 0,
+            "N": 1,
+            "C": 99
           }
         }
       }
@@ -614,117 +733,104 @@ FINAL RESULTS
       "gold_file": "presupposition_answers.csv",
       "pred_file": "p6.csv",
       "data_size": 300,
-      "prediction_rows_raw": 299,
-      "prediction_rows_after_dedup": 273,
-      "correct": 119,
-      "accuracy": 0.3967,
-      "missing_predictions": 17,
-      "missing_rate": 0.0567,
+      "prediction_rows_raw": 300,
+      "prediction_rows_after_dedup": 289,
+      "correct": 141,
+      "accuracy": 0.47,
+      "missing_predictions": 0,
+      "missing_rate": 0.0,
       "invalid_predictions": 0,
       "invalid_rate": 0.0,
-      "duplicate_prediction_rows": 26,
-      "extra_prediction_ids": 1,
-      "extra_prediction_id_examples": [
-        "test_type4_possessive_0106"
-      ],
-      "missing_prediction_id_examples": [
-        "test_type1_again_0828",
-        "test_type1_again_1450",
-        "test_type1_again_1488",
-        "test_type1_again_2178",
-        "test_type1_again_2186",
-        "test_type2_again_1624",
-        "test_type2_possessive_1699",
-        "test_type3_again_1210",
-        "test_type3_again_1252",
-        "test_type4_possessive_1947"
-      ],
-      "coverage": 0.9433,
-      "valid_prediction_rate": 0.9433,
-      "scored_rows_for_probability_metrics": 283,
-      "macro_f1": 0.3525,
-      "log_loss": 1.5022,
-      "multiclass_brier_score": 0.9054,
-      "precision_E": 0.6304,
+      "duplicate_prediction_rows": 11,
+      "extra_prediction_ids": 0,
+      "extra_prediction_id_examples": [],
+      "missing_prediction_id_examples": [],
+      "coverage": 1.0,
+      "valid_prediction_rate": 1.0,
+      "scored_rows_for_probability_metrics": 300,
+      "macro_f1": 0.4563,
+      "log_loss": 1.5028,
+      "multiclass_brier_score": 0.8689,
+      "precision_E": 0.58,
       "recall_E": 0.2929,
-      "f1_E": 0.4,
-      "precision_N": 0.3553,
+      "f1_E": 0.3893,
+      "precision_N": 0.3699,
       "recall_N": 0.802,
-      "f1_N": 0.4924,
+      "f1_N": 0.5062,
       "precision_C": 1.0,
-      "recall_C": 0.09,
-      "f1_C": 0.1651,
+      "recall_C": 0.31,
+      "f1_C": 0.4733,
       "class_metrics": {
         "E": {
           "tp": 29,
-          "fp": 17,
+          "fp": 21,
           "fn": 70,
           "support": 99,
-          "precision": 0.6304,
+          "precision": 0.58,
           "recall": 0.2929,
-          "f1": 0.4
+          "f1": 0.3893
         },
         "N": {
           "tp": 81,
-          "fp": 147,
+          "fp": 138,
           "fn": 20,
           "support": 101,
-          "precision": 0.3553,
+          "precision": 0.3699,
           "recall": 0.802,
-          "f1": 0.4924
+          "f1": 0.5062
         },
         "C": {
-          "tp": 9,
+          "tp": 31,
           "fp": 0,
-          "fn": 91,
+          "fn": 69,
           "support": 100,
           "precision": 1.0,
-          "recall": 0.09,
-          "f1": 0.1651
+          "recall": 0.31,
+          "f1": 0.4733
         }
       },
       "avg_probabilities_by_gold_label": {
         "E": {
-          "count": 94,
-          "avg_e_probability": 0.3561,
-          "avg_n_probability": 0.5855,
-          "avg_c_probability": 0.0584
+          "count": 99,
+          "avg_e_probability": 0.3446,
+          "avg_n_probability": 0.6195,
+          "avg_c_probability": 0.0359
         },
         "N": {
-          "count": 97,
-          "avg_e_probability": 0.2369,
-          "avg_n_probability": 0.6946,
-          "avg_c_probability": 0.0685
+          "count": 101,
+          "avg_e_probability": 0.261,
+          "avg_n_probability": 0.6998,
+          "avg_c_probability": 0.0392
         },
         "C": {
-          "count": 92,
-          "avg_e_probability": 0.1002,
-          "avg_n_probability": 0.7364,
-          "avg_c_probability": 0.1634
+          "count": 100,
+          "avg_e_probability": 0.0832,
+          "avg_n_probability": 0.576,
+          "avg_c_probability": 0.3408
         }
       },
       "centroid_diagnostics": {
         "centroid_method": "within-run class centroids computed from valid probability rows",
         "centroid_note": "Measures how tightly each gold class clusters in probability space and whether an item sits closest to the centroid of its own gold class. Useful as a descriptive geometry/separability diagnostic, but not a substitute for accuracy, F1, log loss, or Brier score.",
-        "nearest_centroid_accuracy": 0.424,
-        "avg_distance_to_gold_centroid": 0.3374,
-        "avg_distance_to_predicted_centroid": 0.2549,
-        "avg_margin_gold_vs_best_other": -0.0447,
+        "nearest_centroid_accuracy": 0.47,
+        "avg_distance_to_gold_centroid": 0.472,
+        "avg_distance_to_predicted_centroid": 0.3968,
+        "avg_margin_gold_vs_best_other": 0.0,
         "centroid_confusion": {
           "E": {
             "E": 29,
-            "N": 0,
-            "C": 65
+            "N": 70,
+            "C": 0
           },
           "N": {
-            "E": 16,
-            "N": 0,
-            "C": 81
+            "E": 20,
+            "N": 81,
+            "C": 0
           },
           "C": {
             "E": 1,
-            "N": 0,
-            "C": 91
+            "N": 68,
+            "C": 31
           }
         }
       }
@@ -836,7 +942,10 @@ FINAL RESULTS
       }
     },
     "p8.csv": {
-      "error": "Prediction file p8.csv is missing required columns: ['e_probability', 'n_probability', 'c_probability']. Found columns: ['item_id', 'predicted_label']"
+      "error": "Prediction file p8.csv is missing required columns: ['e_probability', 'n_probability', 'c_probability']. Found columns: ['s1 acc: 0.3600']"
+    },
+    "p9.csv": {
+      "error": "Prediction file p9.csv is missing required columns: ['e_probability', 'n_probability', 'c_probability']. Found columns: ['s1 acc: 0.4500']"
     }
   }
 }

@@ -1,3 +1,13 @@
+S1 Acc: 0.3600
+S2 Acc: 0.3500
+S3 Acc: 0.3300
+Mean Acc: 0.3467
+F1-E: 0.0588
+F1-N: 0.5075
+F1-C: 0.0000
+Macro-F1: 0.1888
+Correct: 104/300
+
 item_id,predicted_label
 test_type1_again_1513,N
 test_type3_again_1813,N
