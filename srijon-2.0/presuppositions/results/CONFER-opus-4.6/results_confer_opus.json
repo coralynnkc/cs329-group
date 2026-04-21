@@ -1,0 +1,254 @@
+
+Gold file: confer_en/presupposition_answers.csv
+Found 2 prediction file(s) to score:
+  p0.csv
+  p1.csv
+
+Processing: p0.csv
+  accuracy=0.0 | macro_f1=0.0 | log_loss=None | multiclass_brier_score=None
+  nearest_centroid_accuracy=None | avg_distance_to_gold_centroid=None | avg_margin_gold_vs_best_other=None
+  matched=0/300 | missing=300 | invalid=0 | extra_pred_ids=300 | duplicate_pred_rows=0
+
+Processing: p1.csv
+  accuracy=0.0 | macro_f1=0.0 | log_loss=None | multiclass_brier_score=None
+  nearest_centroid_accuracy=None | avg_distance_to_gold_centroid=None | avg_margin_gold_vs_best_other=None
+  matched=0/300 | missing=300 | invalid=0 | extra_pred_ids=300 | duplicate_pred_rows=0
+
+================================================================================
+FINAL RESULTS
+================================================================================
+{
+  "summary": {
+    "gold_file": "confer_en/presupposition_answers.csv",
+    "results_dir": "results/CONFER-opus-4.6",
+    "total_files_processed": 2,
+    "successful": 2,
+    "failed": 0
+  },
+  "results": {
+    "p0.csv": {
+      "gold_file": "presupposition_answers.csv",
+      "pred_file": "p0.csv",
+      "data_size": 300,
+      "prediction_rows_raw": 300,
+      "prediction_rows_after_dedup": 300,
+      "correct": 0,
+      "accuracy": 0.0,
+      "missing_predictions": 300,
+      "missing_rate": 1.0,
+      "invalid_predictions": 0,
+      "invalid_rate": 0.0,
+      "duplicate_prediction_rows": 0,
+      "extra_prediction_ids": 300,
+      "extra_prediction_id_examples": [
+        "1_1",
+        "1_10",
+        "1_100",
+        "1_11",
+        "1_12",
+        "1_13",
+        "1_14",
+        "1_15",
+        "1_16",
+        "1_17"
+      ],
+      "missing_prediction_id_examples": [
+        "test_type1_again_0750",
+        "test_type1_again_0753",
+        "test_type1_again_0806",
+        "test_type1_again_0811",
+        "test_type1_again_0821",
+        "test_type1_again_0828",
+        "test_type1_again_0843",
+        "test_type1_again_0845",
+        "test_type1_again_1450",
+        "test_type1_again_1460"
+      ],
+      "coverage": 0.0,
+      "valid_prediction_rate": 0.0,
+      "scored_rows_for_probability_metrics": 0,
+      "macro_f1": 0.0,
+      "log_loss": null,
+      "multiclass_brier_score": null,
+      "precision_E": 0.0,
+      "recall_E": 0.0,
+      "f1_E": 0.0,
+      "precision_N": 0.0,
+      "recall_N": 0.0,
+      "f1_N": 0.0,
+      "precision_C": 0.0,
+      "recall_C": 0.0,
+      "f1_C": 0.0,
+      "class_metrics": {
+        "E": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 99,
+          "support": 99,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "N": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 101,
+          "support": 101,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "C": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 100,
+          "support": 100,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 0,
+          "avg_e_probability": null,
+          "avg_n_probability": null,
+          "avg_c_probability": null
+        },
+        "N": {
+          "count": 0,
+          "avg_e_probability": null,
+          "avg_n_probability": null,
+          "avg_c_probability": null
+        },
+        "C": {
+          "count": 0,
+          "avg_e_probability": null,
+          "avg_n_probability": null,
+          "avg_c_probability": null
+        }
+      },
+      "centroid_diagnostics": {
+        "centroid_method": "within-run class centroids computed from valid probability rows",
+        "centroid_note": "Descriptive diagnostic of cluster structure, not a primary evaluation metric.",
+        "nearest_centroid_accuracy": null,
+        "avg_distance_to_gold_centroid": null,
+        "avg_distance_to_predicted_centroid": null,
+        "avg_margin_gold_vs_best_other": null,
+        "centroid_confusion": {}
+      }
+    },
+    "p1.csv": {
+      "gold_file": "presupposition_answers.csv",
+      "pred_file": "p1.csv",
+      "data_size": 300,
+      "prediction_rows_raw": 300,
+      "prediction_rows_after_dedup": 300,
+      "correct": 0,
+      "accuracy": 0.0,
+      "missing_predictions": 300,
+      "missing_rate": 1.0,
+      "invalid_predictions": 0,
+      "invalid_rate": 0.0,
+      "duplicate_prediction_rows": 0,
+      "extra_prediction_ids": 300,
+      "extra_prediction_id_examples": [
+        "1_1",
+        "1_10",
+        "1_100",
+        "1_11",
+        "1_12",
+        "1_13",
+        "1_14",
+        "1_15",
+        "1_16",
+        "1_17"
+      ],
+      "missing_prediction_id_examples": [
+        "test_type1_again_0750",
+        "test_type1_again_0753",
+        "test_type1_again_0806",
+        "test_type1_again_0811",
+        "test_type1_again_0821",
+        "test_type1_again_0828",
+        "test_type1_again_0843",
+        "test_type1_again_0845",
+        "test_type1_again_1450",
+        "test_type1_again_1460"
+      ],
+      "coverage": 0.0,
+      "valid_prediction_rate": 0.0,
+      "scored_rows_for_probability_metrics": 0,
+      "macro_f1": 0.0,
+      "log_loss": null,
+      "multiclass_brier_score": null,
+      "precision_E": 0.0,
+      "recall_E": 0.0,
+      "f1_E": 0.0,
+      "precision_N": 0.0,
+      "recall_N": 0.0,
+      "f1_N": 0.0,
+      "precision_C": 0.0,
+      "recall_C": 0.0,
+      "f1_C": 0.0,
+      "class_metrics": {
+        "E": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 99,
+          "support": 99,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "N": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 101,
+          "support": 101,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "C": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 100,
+          "support": 100,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 0,
+          "avg_e_probability": null,
+          "avg_n_probability": null,
+          "avg_c_probability": null
+        },
+        "N": {
+          "count": 0,
+          "avg_e_probability": null,
+          "avg_n_probability": null,
+          "avg_c_probability": null
+        },
+        "C": {
+          "count": 0,
+          "avg_e_probability": null,
+          "avg_n_probability": null,
+          "avg_c_probability": null
+        }
+      },
+      "centroid_diagnostics": {
+        "centroid_method": "within-run class centroids computed from valid probability rows",
+        "centroid_note": "Descriptive diagnostic of cluster structure, not a primary evaluation metric.",
+        "nearest_centroid_accuracy": null,
+        "avg_distance_to_gold_centroid": null,
+        "avg_distance_to_predicted_centroid": null,
+        "avg_margin_gold_vs_best_other": null,
+        "centroid_confusion": {}
+      }
+    }
+  }
+}

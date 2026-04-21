@@ -97,12 +97,16 @@ def parse_quoted_csv(path: Path) -> List[Dict[str, str]]:
 
 def read_gold(path: Path) -> List[Dict[str, str]]:
     """
-    Read CONFER gold file. Uses 'uid' as the item identifier.
+    Read CONFER gold file.
     Expected columns: sample_id, row_id, uid, type, gold_label
+
+    Each row gets two item_id keys so predictions can match by either:
+      - uid  (e.g. "test_type1_again_1513")  — used by CONFER-chat
+      - {sample_id}_{row_id}  (e.g. "1_1")  — used by CONFER-opus-4.6
     """
     rows = parse_regular_csv(path)
 
-    required = {"uid", "gold_label"}
+    required = {"uid", "gold_label", "sample_id", "row_id"}
     if not rows:
         return []
 
@@ -116,14 +120,15 @@ def read_gold(path: Path) -> List[Dict[str, str]]:
 
     cleaned = []
     for row in rows:
-        item_id = str(row["uid"]).strip()
+        uid = str(row["uid"]).strip()
+        composite = f"{str(row['sample_id']).strip()}_{str(row['row_id']).strip()}"
         gold_label = str(row["gold_label"]).strip().upper()
         if gold_label not in GOLD_LABELS:
             raise ValueError(
                 f"Gold file {path.name} contains unexpected label {gold_label!r}. "
                 f"Expected one of {GOLD_LABELS}."
             )
-        cleaned.append({"item_id": item_id, "gold_label": gold_label})
+        cleaned.append({"item_id": uid, "item_id_composite": composite, "gold_label": gold_label})
 
     return cleaned
 
@@ -378,11 +383,13 @@ def merge_gold_and_pred(gold_rows: List[Dict[str, str]], pred_rows: List[Dict[st
 
     merged = []
     for gold in gold_rows:
-        item_id = gold["item_id"]
-        pred_row = pred_map.get(item_id, {"item_id": item_id})
+        uid = gold["item_id"]
+        composite = gold["item_id_composite"]
+        # Try uid first (CONFER-chat style), then composite sample_row key (CONFER-opus style)
+        pred_row = pred_map.get(uid) or pred_map.get(composite) or {"item_id": uid}
         pred_info = normalize_probability_row(pred_row)
         merged.append({
-            "item_id": item_id,
+            "item_id": uid,
             "gold_label": gold["gold_label"],
             **pred_info,
         })
@@ -396,10 +403,12 @@ def score_pair(gold_path: Path, pred_path: Path) -> dict:
 
     pred_rows_after_dedup, duplicate_prediction_rows = dedup_predictions(pred_rows_raw)
 
-    gold_ids = {row["item_id"] for row in gold_rows}
+    gold_ids = {row["item_id"] for row in gold_rows} | {row["item_id_composite"] for row in gold_rows}
     pred_ids = {str(row.get("item_id", "")).strip() for row in pred_rows_after_dedup}
     extra_prediction_ids = sorted(pred_ids - gold_ids)
-    missing_prediction_ids = sorted(gold_ids - pred_ids)
+    missing_uid_ids = {row["item_id"] for row in gold_rows} - pred_ids
+    missing_composite_ids = {row["item_id_composite"] for row in gold_rows} - pred_ids
+    missing_prediction_ids = sorted(missing_uid_ids & missing_composite_ids)
 
     merged = merge_gold_and_pred(gold_rows, pred_rows_after_dedup)
 
