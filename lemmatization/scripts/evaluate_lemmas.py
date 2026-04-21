@@ -34,7 +34,7 @@ import warnings
 from collections import defaultdict
 
 # ── config ────────────────────────────────────────────────────────────────────
-SIZES       = [100, 200, 300]
+SIZES       = [100, 200, 300, 500]
 RESULTS_DIR = "results"
 
 # column name variants to try (lowercase)
@@ -257,7 +257,7 @@ def main():
     parser = argparse.ArgumentParser()
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("--model",
-        help="model name prefix, e.g. sonnet_4.6 — scores all three sizes")
+        help="model name prefix, e.g. sonnet_4.6 — scores all sizes")
     group.add_argument("--gold",
         help="path to a single gold CSV")
     parser.add_argument("--pred",
