@@ -1,0 +1,502 @@
+item_id,premise,hypothesis,gold_label
+ps_fr_000010,Il y a tellement de choses dont vous pourriez parler que je vais juste m'en passer.,J'aimerais vous dire tout ce que je sais à propos de cela !,C
+ps_fr_000022,"Et j'avais mis euh, cinq détachements à l'extérieur de l'U2.",J'ai géré les U2.,E
+ps_fr_000049,"Elle a dit qu'il y avait juste des larmes qui descendaient de ses yeux et elle a dit, puis elle a dit que Joe est venu sur le porche.","Comme elle disait de monter le porche, elle avait les larmes aux yeux.",E
+ps_fr_000063,Ils avaient déjà eu leur entraînement pour les combinaisons pressurisées et ça m'a pris du temps si tu mets une combinaison pressurisée complète.,Nous pourrions vous entraîner à utiliser une combinaison à pression d'ici la fin de la journée.,C
+ps_fr_000084,Donc je n'ai pas d'histoires spécifiques.,On y trouve beaucoup de magasins.,N
+ps_fr_000101,"Ils ont dit, nous payons pour une place pour que vous restiez.",Ils paient le logement pour moi-même et mes frères et sœurs.,N
+ps_fr_000104,"Eh bien, le lendemain, bien sûr, le président Kennedy a bloqué Cuba, et nos navires ont arrêté un navire russe qui se dirigeait juste à l'extérieur de Cuba, et ils ont trouvé des missiles sur ces eux.",Ils n'ont arrêté aucun bateau car ils voulaient éviter tout conflit.,C
+ps_fr_000113,Je n'ai pas eu le temps d'entrer dans toutes sortes de choses.,Je l'ai inscrit à temps.,C
+ps_fr_000116,"Et euh, l'un de mes jobs de l'époque était de former les gens à mettre des parachutes sur les armes nucléaires pour que les bombes atomiques explosent toutes seules.",La détonateur déclenche la bombe lorsqu'il est tiré.,E
+ps_fr_000119,"Ma grand-mère me racontait de nombreuses choses sur son enfance et euh, en particulier, elle parlait de sa famille et de comment était la vie à cette époque.",Ma grand-mère refusait toujours de parler de son enfance.,C
+ps_fr_000142,C'était un formidable revirement d'humeur.,Elle a maintenu son humeur tout au long.,C
+ps_fr_000148,"Ils doivent traverser un certain nombre de chambres d'altitude, de tours avant même de commencer à piloter des U2 ou de voler avec des combinaisons pressurisées.","La plupart des gens échouent aux tests, et n'arrivent jamais à piloter les U2.",N
+ps_fr_000159,S'il y avait quelque chose que je pouvais faire.,Je pense que j'aurais pu faire quelque chose pour le sauver.,N
+ps_fr_000161,"Elle détestait ça et elle avait l'habitude de le dire à sa sœur tous les jours. C'est ce qu'elle a dit, que tu te trompes.",Elle a bien insisté sur le fait que sa sœur ne pouvait rien faire de bien.,N
+ps_fr_000167,"eh bien j'arrive ici ce matin et um, j'oublie comment, je pense que soi j'ai posé une question et il vint ici ou, peut importe.","Je me suis présenté à la gym aujourd'hui, il est venu plus tard et m'a dit bonjour.",N
+ps_fr_000170,Nous ne savions pas où ils allaient.,Nous ne savions pas où les gens allaient.,E
+ps_fr_000189,"Tout le monde reçoit du champagne et certaines personnes n'en boivent pas. Alors ce qui reste, les enfants le boivent. Donc nous nous baladions pour boire tout ce champagne.",Aucun alcool n'a été servi durant toute la fête.,C
+ps_fr_000211,Et ils ne pouvaient pas rester dans la région d'Alberta parce que les gens savaient qu'ils avaient vraiment enfreint un tabou et qu'ils avaient essayé de passer pour Blancs.,Les gens n'avaient aucune idée du fait qu'ils n'étaient pas blancs.,C
+ps_fr_000212,Et ils ne pouvaient pas rester dans la région d'Alberta parce que les gens savaient qu'ils avaient vraiment enfreint un tabou et qu'ils avaient essayé de passer pour Blancs.,Les gens étaient conscients qu'ils étaient afro-américains.,N
+ps_fr_000221,"De toute façon, je pense que j'ai à nouveau parlé à Ramona.",J'ai déjà parlé à Ramona dans le passé.,E
+ps_fr_000223,"Il était la seule victime de la crise cubaine, et euh, Kaiser euh, il a pris les photos et a volé directement jusqu'à Andrews Air Force à Washington.",10 000 personnes sont mortes dans la crise cubaine.,C
+ps_fr_000230,"Puis je l'ai et je me dis : « bon super, qu'est-ce que je fais avec ? »",Je ne sais pas ce pourquoi je devais l'utiliser.,E
+ps_fr_000236,"Donc je suis allé, je suis allé à Washington D.C. et je ne suis pas allé directement à, euh, cet, euh, où ils m'avaient ordonné d'aller.",Je suis allé à Washington pour voir mon superviseur.,N
+ps_fr_000237,"Donc je suis allé, je suis allé à Washington D.C. et je ne suis pas allé directement à, euh, cet, euh, où ils m'avaient ordonné d'aller.",Je suis allé dans la capitale nationale.,E
+ps_fr_000238,Elle était une personne noire à la peau claire.,Elle avait une peau incroyablement foncée.,C
+ps_fr_000255,"OK, vous m'entendez ?",Je sais que tu ne m'entends pas.,C
+ps_fr_000268,"et c'était comme, j'avais presque fini.",Je lui ai dit que j'aurai terminé dans 10 minutes.,N
+ps_fr_000281,"Sa sœur pouvait passer pour une blanche, et c'était effectivement le cas.",On supposait généralement que sa sœur était blanche.,E
+ps_fr_000301,"Euh, jusqu'à présent on ne me l'a jamais dit--",Il m'a dit tout ce que j'avais besoin de savoir,C
+ps_fr_000304,« Alors il… nous vivions dans cette région. »,Notre maison se trouvait par ici.,E
+ps_fr_000307,Et il parle super vite : il téléphone avec un portable,Il parle aussi lentement qu'il peut.,C
+ps_fr_000329,Donc le mari de sa sœur avait également la peau claire ?,Sa sœur est mariée.,E
+ps_fr_000330,Donc le mari de sa sœur avait également la peau claire ?,Sa soeur est célibataire.,C
+ps_fr_000337,"J'ai rendu visite à ma sœur qui habitait là-bas. Son mari travaillait pour les services secrets et faisait du renseignement, et j'ai été chez eux.",Mon beau-frère était dans l'armée.,N
+ps_fr_000358,J'ai commencé immédiatement à m'entraîner pour ça avec les deux autres hommes qui étaient au même endroit.,Je n'ai jamais eu de formation donc je l'ai juste compris au fur et à mesure.,C
+ps_fr_000371,Nous nous y rendrions.,Nous entrerions.,E
+ps_fr_000373,"Et c'était comme si elle rejetait qui elle était, à certains égards, par, vous savez, la façon dont elle traitait, vous savez, les autres petits-enfants.",Elle a traité tout le monde de la même manière.,C
+ps_fr_000404,Le mari de sa femme avait aussi la peau claire.,son beau-frère était suédois.,N
+ps_fr_000409,"Et c'est ainsi que nous avons déménagé à Las Vegas, NV, et je me suis déclaré, comme je l'ai fait à Washington, à une certaine adresse au centre-ville de Las Vegas.",Je n'ai jamais été à Las Vegas.,C
+ps_fr_000412,"Ah, je me suis bien amusé au CM1.",J'ai détesté tous les aspects de l'école.,C
+ps_fr_000421,Et ils ont déménagé à Mallard Creek à Charlotte.,Ils ont construit une maison sur Mallard Creek.,N
+ps_fr_000423,Et ils ont déménagé à Mallard Creek à Charlotte.,Ils ont ensuite vécu à Mallard Creek.,E
+ps_fr_000427,"Et euh, je ne savais pas combien de détails il voulait.",Je ne savais pas s'il voulait des informations sur les temps de voyage.,N
+ps_fr_000440,"Fin 1962, j'ai reçu l'ordre d'aller à Washington, D.C.",L'armée m'a immédiatement envoyé à DC.,N
+ps_fr_000445,"Quoi qu'il en soit, nous nous sommes déployés, je m'en souviens maintenant, et euh, nous avons été déployés à Kadina, Okinawa, et c'était en 1968.",Nous avons déployé nos forces en 1968.,E
+ps_fr_000447,"Quoi qu'il en soit, nous nous sommes déployés, je m'en souviens maintenant, et euh, nous avons été déployés à Kadina, Okinawa, et c'était en 1968.",Nous avons envoyé nos troupes au Japon en juin 1968.,N
+ps_fr_000489,"Nous avons vécu, euh, au 85 à Mallard Creek où est actuellement le 485 maintenant parce que, puis les dix dernières années, nous avons dû déménager à cause du 485.",Nous y avons vécu juste pour deux semaines.,C
+ps_fr_000494,Il est suffisamment vieux pour être mon père.,Il est bien plus jeune que moi.,C
+ps_fr_000511,tu as un problème sérieux de raisonnement,Je n'ai jamais vu ce genre de problème de câblage auparavant.,N
+ps_fr_000518,ouais exactement je veux d'ici à ce que vous vous habillez et ensuite devoir aller vous faire suer en le faisant uh vous pourriez vous pourriez aller au Club med uh vacances tout compris,Il en coûte beaucoup pour vous équiper.,E
+ps_fr_000527,"oui les gens qui, qui pourraient être au travail à tout moment ou dont les décisions pourraient être assombries si elles devaient prendre une décision","Oui, des gens qui n'ont peut-être pas faim.",N
+ps_fr_000536,"eh bien, elle est bien celle-là, je n'avais pas pensé à ça, oui",C'est un bon point.,E
+ps_fr_000563,euh-huh c'est vrai c'est c'est pas vraiment euh cohérent,Je pense que tu as peut-être raison au sujet de sa cohérence.,N
+ps_fr_000565,J'essaye de m'accrocher,Je tente de rester accroché.,E
+ps_fr_000572,Bien vous avez dit que vous aviez des enfants quel age,Je suis désolé d'apprendre que vous n'avez pas pu avoir d'enfants.,C
+ps_fr_000584,et cela amènerait aussi les gens à compacter davantage leurs ordures et euh et limiter le volume est probablement un peu plus proche du vrai problème que de limiter le poids,Les gens n'ont pas à s'inquiéter de la quantité de déchets tant qu'ils s'en débarrassent correctement.,C
+ps_fr_000591,"Vous savez, faire les joints et tout ça, ça demande une finition tellement pro",Il a fallu beaucoup de temps pour terminer les coutures.,N
+ps_fr_000607,"Oui, profitez bien de l’été !",J'espère que tu auras une pause estivale misérable.,C
+ps_fr_000615,ouais je me souviens de mes grands-parents et j'avais l'habitude de toujours sortir sur la route et ramasser des canettes de bière et euh,Nous avions l'habitude de faire la fête dans la maison de mon père.,C
+ps_fr_000623,"euh non, je vis en dehors du campus",J'habite à quelques pâtés de maisons du campus.,N
+ps_fr_000633,c'était depuis Wills Point. Je ne sais pas si vous connaissez cet endroit.,Ça vient de Cambridge.,C
+ps_fr_000635,"J’avais ma montre, et c’était... il y en avait partout sur mes chaussures. Tous les arbustes sont devenus blancs là-bas.",C'était embêtant quand ça a recouvert mes chaussures.,N
+ps_fr_000659,"À chaque vois que vous achetez un article, en particulier un achat important, c'est quelque chose que vous payez, et vous devez toujours ajouter une taxe de dix pour cent au prix",Quand vous essayez de vous rendre compte du prix vous devez toujours ajouter dix pour cent de taxe à tout ce que vous achetez.,E
+ps_fr_000661,ce qui est un peu inhabituel mais c'est fait sous les auspices,Ce n'est pas si courant.,E
+ps_fr_000666,"c'est ce qu'elle prévoit de faire, donc je l'espère",Elle n'a pas l'intention de le faire.,C
+ps_fr_000671,"mon Dieu, vous savez qu'il n'a suivi aucune règle, et cela ne m'a même pas dérangé bien sûr qu'ils le foutent à la porte",Il a suivi toutes les règles et s'est quand même fait virer.,C
+ps_fr_000682,oh je vois en ce qui me concerne j'aime l'atmosphère,J'aime bien l'ambiance moi-même.,E
+ps_fr_000688,Le le second qu'elle a était un des chiots de la portée et uh le seul male qu'elle utilisa avait un problème de dent.,Elle n'avait pas de chiots.,C
+ps_fr_000698,êtes-vous allé dans des musées en Europe,Avez-vous visité des musées au Canada?,C
+ps_fr_000710,et puis la deuxième chose que je regarderais probablement est euh ce qu'ils peuvent se permettre,Je ne me soucie pas de ce qu'ils peuvent se permettre.,C
+ps_fr_000722,mettez-y une pub pour Coca-Cola,Mettez une publicité pour une boisson gazeuse.,N
+ps_fr_000748,donc ça hum-hum bah ça n'apporte rien que du chaos,"Le chaos, c'est tout ce qu'on en tire.",E
+ps_fr_000749,donc ça hum-hum bah ça n'apporte rien que du chaos,Il est très calme et ne cause aucun problème.,C
+ps_fr_000763,c'est probablement plus parce que j'apprécie simplement la couverture que parce que je n'ai pas le temps de lire le journal vous savez,J'aime sa couverture médiatique car je n'ai jamais le temps de m'asseoir et lire le journal.,E
+ps_fr_000764,c'est probablement plus parce que j'apprécie simplement la couverture que parce que je n'ai pas le temps de lire le journal vous savez,Je prends au moins une heure par jour pour lire le journal juste pour ne pas avoir à le regarder.,C
+ps_fr_000813,"oui ils sont remplis très vite, la foule un peu bien vêtu, du type yuppie",Leurs habits sont très chics.,N
+ps_fr_000824,"ouais c'est vrai, mais, euh, je pense que ce que je veux dire, c'est pire que ça. Si vous abandonnez le lycée, par exemple.","Non, ce n'est pas vrai du tout.",C
+ps_fr_000835,Ouais bien je en fait j'avais des chanteurs plus vieux donc ou plus vieux plus vieux chanteurs plus vielles sœurs.,Toutes mes soeurs étaient plus jeunes que moi,C
+ps_fr_000841,euh Danse avec les Loups nous venons de le voir avec un peu de retard qu'est-ce que j'ai vu d'autre euh Le Silence des Agneaux,J'ai regardé Dance avec les Loups.,E
+ps_fr_000857,"oui, là-bas vous savez, il y a euh... j'ai une ferme à une centaine de miles d'ici à l'est, dans l'est du Texas","J'ai une ferme ici, au Texas.",E
+ps_fr_000865,et oh je pense qu'on sera à égalité avec eux en terme de salaire et de reconnaissance sur le long terme,Ces deux options devraient rapporter beaucoup plus que le taux normal du marché au cours de la prochaine décennie.,N
+ps_fr_000930,quand je grandissais euh,"C'était une fois, lorsque j'étais une personne âgée.",C
+ps_fr_000932,"Ils n'ont pas de neige, ils ne savent pas ce qu'est la neige, ils paniquent quand il y a de la neige sur le sol. Oh Amarillo eh bien c'est près d'ici. Depuis combien de temps es tu à Raleigh ?",Les gens d'Amarillo deviennent fous quand il y a de la neige sur le sol.,E
+ps_fr_000935,"Eh bien, pas même pas me dire dernièrement",Ce n'est pas encore arrivé ces derniers temps.,E
+ps_fr_000938,"oui, oui, euh non. En descendant, nous avons bien des skis pour faire du ski de fond et",Nous avons cinq séries de skis de fond.,N
+ps_fr_000941,donc je ne sais pas j’espère que je l'ai fait,J'aurais vraiment aimé être au courant.,E
+ps_fr_000950,"Eh bien, je suis au Texas et nous avons un enseignant qui est décédé du SIDA.","Un enseignant du Texas s'est battu contre le SIDA pendant une décennie, mais est finalement décédé l'année dernière.",N
+ps_fr_000962,"Oh et puis si vous essayez de l'obtenir en dehors de votre société euh, ça va vous coûter un bras.","Si vous sortez un peu de l'entreprise, vous pouvez économiser beaucoup d'argent.",C
+ps_fr_000963,"Oh et puis si vous essayez de l'obtenir en dehors de votre société euh, ça va vous coûter un bras.","Si vous êtes allés au-delà de votre entreprise, cela vous coûtera de l'argent.",E
+ps_fr_000971,tout cela donc... il y a beaucoup de choses comme ça que Texas Instruments fabrique alors que les employés mêmes ne le savent pas pour la plupart du temps,Texas Instruments fabrique des bombes ultrasecrètes.,N
+ps_fr_000980,"ouais c'est une autre chose que je ne comprends pas, ce sont des choses comme la vente de technologie et même du matériel militaire aux gouvernements étrangers, puis pardonner leur dette",Il est tout à fait logique de vendre des secrets à d'autres pays pour rien en retour.,C
+ps_fr_000989,"Eh bien, la science informatique et les sciences cognitives",La science de l'environnement aussi.,N
+ps_fr_000995,euh tu sais qu'ils seront partis et et euh il n'y aura pas autant d'activités hein?,"Une fois qu'ils partirons, l'activité partira également.",E
+ps_fr_001001,"mais à part ça, j'espère qu'il fait toujours bon, pas trop froid, peut-être un peu de neige pour le réveillon de Noël, ou un autre jour ça serait bien, mais c'est mal parti","J'espère qu'il ne fera pas trop froid et que ça restera un peu chaud, sauf pour avoir un peu de neige à Noël.",E
+ps_fr_001019,"Avec ce saut, un cristal normal ne peut pas encoder beaucoup d'informations.",Les cristaux réguliers ne sont pas très utiles pour coder l'information.,E
+ps_fr_001035,Dois-je le féliciter davantage ?,Devrais-je le féliciter davantage pour sa performance au piano ?,N
+ps_fr_001037,Les théories de réseau de rotation peuvent être construites dans différentes dimensions.,Les réseaux Spin sont très utiles pour les technologies de stockage de données.,N
+ps_fr_001046,"Dans le régime chaotique, la mer verte scintillante percole.",La mer était remplie de petits poissons qui se cognaient contre le bateau.,N
+ps_fr_001074,"La majeure partie de la recherche sur les Quinceañeras indique que les familles veulent entretenir une tradition culturelle et historique, et que la célébration du quinzième anniversaire d'une fille est un moyen de renforcer les liens culturels à un héritage latino-américain.",La célébration du quinzième anniversaire d'une fille est une façon de perpétuer les liens culturels.,E
+ps_fr_001093,"Dans une économie à fort réinvestissement, que se passera-t-il si nous pouvons tirer parti de nos avantages commerciaux et réinvestir tout excédent afin de pouvoir créer plus de pommes et de poires que ce avec quoi nous avons démarré?",Nous pouvons beaucoup échanger dans notre économie.,E
+ps_fr_001112,"C'est un simple déplacement de l'équilibre, et un simple dispositif, le flocon de mica, sera fait pour trembler, donc, extraire le travail mécanique.",Le flocon de mica est un dispositif complexe.,C
+ps_fr_001119,Quelle est la place de la valeur dans un monde de faits ?,Nous refusons de nous occuper de quoi que ce soit à l'exception des faits.,N
+ps_fr_001166,Les autres ne rendent pas les consommateurs assez heureux.,Les autres font un mauvais travail.,E
+ps_fr_001178,"Prendre les privilèges et les immunités des citoyens comme la valeur pivotante de l'ordre nouveau, comme le fait Black, créant ses propres problèmes d'égalité couvert par le droit.",Les citoyens peuvent se voir retirer leurs privilèges.,E
+ps_fr_001185,"Dans certaines variantes une jeune fille transgresse spécifiquement les croyances religieuses en insistant pour aller dancer le vendredi saint, un jour férié religieux, et un jour révéré dans la maison catholique de chicano;",Les parents des filles les ont convaincu de danser le vendredi saint.,N
+ps_fr_001202,"Il a concédé que l'idéalisation booléenne était problématique, mais il a constaté que dans de nombreux cas, la réponse d'un gène à ses intrants était non linéaire.",Les gènes ont toujours été linéaires par rapport à ses intrants.,C
+ps_fr_001218,C'est pourquoi je pense que P est un exhausteur allostérique de la réaction.,"Quand on ajoute P à la réaction, celle-ci s'arrête complètement.",C
+ps_fr_001221,Ces signes n'ont pas plus aux rabbins.,Les rabbins n'étaient pas au courant des signes.,C
+ps_fr_001223,La fin du XVIIIe siècle était en effet une époque merveilleusement simpliste.,La fin du dix-huitième siècle était une période de paix.,N
+ps_fr_001227,La tâche immédiate est de finir la guerre et de réunir la nation.,Nous devons nous assurer que la guerre continue pendant des siècles.,C
+ps_fr_001236,"Siégeant seul, le juge Taney a  utilisé la disposition constitutionnelle pour exiger l'autorisation du congrès de suspendre le décret.",Taney a dit que le Congrès pouvait suspendre l'assignation.,E
+ps_fr_001243,"Et, bien sûr, la compréhension de la liberté au XVIIIe siècle culmine avec ces deux chefs d’œuvre que sont la Constitution et la Déclaration des droits.","Personne, au dix-huitième siècle, ne comprenait la notion de liberté.",C
+ps_fr_001247,1 Les gens font un meilleur travail que les ordinateurs pour ajuster l'alignement des tissus à travers les machines à coudre et compenser les erreurs de couture et de coupe.,Les gens sont meilleurs que les ordinateurs dans certains métiers de couture.,E
+ps_fr_001249,Les enfants frappaient aux portes de leurs voisins et,Les enfants allaient souvent dans les maisons de leurs voisins.,E
+ps_fr_001252,"La philosophie du droit de la confédération a triomphé, à la fois sur le fond et dans la forme.","Même si elle a triomphé, la philosophie juridique était moralement erronée.",N
+ps_fr_001254,"La philosophie du droit de la confédération a triomphé, à la fois sur le fond et dans la forme.",La philosophie juridique a gagné en substance et en style.,E
+ps_fr_001262,"C. P. Snow évoque les deux cultures, les sciences et les sciences humaines, qui jamais ne se mélangent.",Les deux cultures sont les sciences et les humanités.,E
+ps_fr_001283,"Intuitivement, il semble qu'une telle planète d'entité complexes non vivantes pourrait avoir été suscité à partir du Big Bang.",Il semblerait que les entités inanimées ne sont pas là par hasard.,E
+ps_fr_001287,Donc nous entrons dans un tout nouveau domaine.,Nous sommes en train de faire un nouveau produit.,N
+ps_fr_001298,"C'est la manière dont nous vivons aujourd'hui, Gehry semble dire, pourquoi ne pas en profiter ?",Gehry est une personne heureuse.,N
+ps_fr_001304,L'énergie du système dans son ensemble pourrait diminuer si l'orientation des dipôles s'inversait pour s'approcher de l'un ou l'autre de ses états fondamentaux.,Les dipôles peuvent changer de direction.,E
+ps_fr_001318,"Lego World pourrait construire les machines-outils pour construire d'autres objets, y compris d'autres outils.",Lego World ne peut imprimer que des personnages de dessins animés sur papier.,C
+ps_fr_001329,Les changements dans les valeurs des spins sur les bords qui changent les zones et les volumes des tétraèdres peuvent être considérés comme modifiant la géométrie de sorte qu'elle se déforme de différentes manières.,Le volume des tétraèdres est toujours le même.,C
+ps_fr_001342,96 Les parents et les entraîneurs qui critiquent plutôt qu'ils n'encouragent et ne laissent pas les joueurs oublier la défaite provoquent une anxiété intense chez certains jeunes.,Les entraîneurs ne laissent pas les joueurs oublier la défaite.,C
+ps_fr_001346,"Nous avons observé des nuances subtilement différentes d'herbe brune, d'arbres, de saleté, de poussière, de de faucons, de souris, et sommes d'accord.)",Il y avait des tonnes de couleurs différentes sur le sol.,N
+ps_fr_001360,"Laissée à elle-même, cette réaction est exergonique et, en présence de trimères en excès par rapport au rapport d'équilibre de l'hexamère aux trimères, elle s'écoule vers l'équilibre de façon exergonale en synthétisant l'hexamère.","Si cette réaction n'est pas touchée, elle finira par s'équilibrer.",E
+ps_fr_001375,"Par conséquent, il existe une infinité comptable, ou dénombrable, de programmes informatiques.",Une chose peut être à la fois comptable et dénombrable.,E
+ps_fr_001387,"En effet, les nuages ​​moléculaires froids géants dans les galaxies, à des degrés absolus de température, sont des mélanges très complexes d'espèces moléculaires, nombreuses carbonées, ainsi que le lieu de naissance des étoiles.",Les nuages moléculaires sont chauds.,N
+ps_fr_001424,"En effet, l'une des caractéristiques intéressantes des graphiques technologiques est qu'ils constituent le cadre conceptuel approprié pour considérer la conception de processus et de produits simultanément.",Les graphiques te montrent le bon cadre.,E
+ps_fr_001436,"Les membres mandala du tas infini des mandalas mort les uns après les autres seulement dans les amplitudes  fondamentales, donc légalement, qui s'applique à tous les mandala.",Des membres du Mandala meurent d'empoisonnement.,N
+ps_fr_001441,"Si oui, seule la sélection naturelle peut l'avoir ainsi réglée.","Si tel est le cas, alors il a été créé de cette façon par Dieu.",C
+ps_fr_001443,"Si oui, seule la sélection naturelle peut l'avoir ainsi réglée.",La sélection naturelle aurait pu le transformer en cela.,E
+ps_fr_001469,Les droits dont bénéficient les individus suspectés de crime.,Tout suspect criminel a droit à un avocat.,N
+ps_fr_001487,"Ce groupe comprend également le vingt-troisième amendement, qui étend le droit de vote pour le président et le vice-président aux citoyens autrement qualifiés dans le district de Columbia.","Le 23ème amendement stipule que vous pouvez voter pour le président si vous vivez dans la capitale, à moins que vous ne soyez considéré comme étant un criminel.",N
+ps_fr_001489,"Le ton de l'amendement reste déférent au contrôle des États du processus électoral, même pour le bureau national.",Les états changent leur processus électoral quand ils le jugent bon.,N
+ps_fr_001490,"Le ton de l'amendement reste déférent au contrôle des États du processus électoral, même pour le bureau national.",Les états ne changent jamais le processus électoral parce qu'ils n'y  sont pas autorisés.,C
+ps_fr_001511,"Mais je ne peux pas oublier que lorsque je n'étais pas mieux loti qu'un esclave chez votre oncle, à la Barbade, vous m'avez traité avec une certaine gentillesse.","Tu étais incroyablement cruel avec moi, et tu m'as traité bien pire que de la saleté.",C
+ps_fr_001517,"Là, pas plus de trois milles plus loin, était la terre - un mur inégal de verdure vive remplissait l'horizon à l'ouest.",L'île dont ils s'approchaient était inhabitée.,N
+ps_fr_001536,"Bien sûr, alors, je vais vous le dire.",C'est seulement parce que vous avez promis de ne pas répéter cela que je vous le dis.,N
+ps_fr_001537,Je sortais sur le Royal Mary ....,J'arrivais par le Royal Mary.,E
+ps_fr_001546,Votre motivation est sans doute louable... votre gratitude à son égard pour vous avoir délivré des Espagnols.,"Les Espagnols vous avaient gardé, avant qu'il ne vous délivre d'eux.",E
+ps_fr_001557,Ah ! Et de quelle façon ?,La personne qui pose la question est pressée et a besoin de savoir immédiatement la route à prendre.,N
+ps_fr_001562,Je n'accorde pas la commission du roi à la légère.,J'ai beaucoup réfléchi à la commission du Roi.,E
+ps_fr_001566,Il réalisa qu'il pourrait avoir besoin de se replier en vitesse.,"Si il était resté au même endroit, on l'aurait trouvé.",N
+ps_fr_001578,Un froncement de sourcils plissa son front.,Elle fronçait les sourcils.,E
+ps_fr_001591,je pense que ce n'était rien que l'espérance de prendre et de pendre le capitaine Blood qui fit partir mon oncle des plantations de la Barbade pour accepter la fonction de vice gouverneur de Jamaïque.,Je crois que mon oncle voulait voir le Capitaine Blood mort pour ses crimes.,N
+ps_fr_001621,"Elle était très blanche, et ne détachait pas les yeux de ses mains pliées.",Elle était bleue et elle gardait les yeux fermés tout le temps.,C
+ps_fr_001625,Alors ils t'ont parlé de ça !,Alors ils vous ont parlé de la situation difficile !,N
+ps_fr_001634,"Pas pour sa nièce, ni pour sa fille, ni pour sa propre mère, il ne renoncerait à ce qu'il pense qu'on lui doit.",Il pourrait renoncer à l'appel au sang si sa mére le lui avait demandé.,C
+ps_fr_001680,Cela ne fait pas partie de la discussion.,Ce n'est pas inclus dans l'accord.,E
+ps_fr_001688,"Aie! les boucaniers en-dessous s'écriaient, et l'un ou deux d'entre eux ont élaboré cette affirmation.",Les Buccaneers étaient bruyants quand ils disaient oui.,E
+ps_fr_001695,"Je l'ai tué, c'est vrai.",La vie de l'homme a été épargnée.,C
+ps_fr_001703,Votre station se trouve sur le pont-batterie.,Vous êtes positionné sur le Pont-batterie.,E
+ps_fr_001734,"Dame, comme je viens tout juste de le dire à Monseigneur, qui pensait comme vous que la présence de Miss Bishop à bord nous protégerait, ce sale négrier ne renoncerait jamais à son dû, même pour sa propre mère.",J'étais aussi amoureuse de Mlle Bishop.,N
+ps_fr_001738,"Permettez-moi de vous présenter Capitaine Blood. Forcément, Bishop doit pouvoir diriger en s'entourant des meilleurs.",Le capitaine Blood a récemment été promu à sa position grâce au travail qu'il a fourni.,N
+ps_fr_001753,"Finalement, ça lui a donné une raison de se plaindre.",Il lui avait finalement présenté une réclamation.,E
+ps_fr_001765,"Même si nous avions une cargaison entière de Bishop's nieces, cela n'était pas suffisant pour lui donner envie de lui tenir la main.",Sa main a tout le temps été énergiquement tenu par la nièce de l'évêque.,C
+ps_fr_001773,C'est ce qu'on nous a conseillé.,"Lorsqu'elle nous a dit quoi faire, la direction n'a pas partagé avec nous de secrets commerciaux.",N
+ps_fr_001778,"Ce sera un acte de gentillese, donc ce sera. Pendant un moment elle s'est tenue devant lui avec une respiration rapide, l'air pâle, et des larmes sur ses joues.",Elle était essoufflée et a eu l'air agité pendant un moment.,E
+ps_fr_001786,"Je vois, monsieur, que vous ne saisissez pas encore tout à fait les circonstances.",Il comprit totalement et clairement la situation.,C
+ps_fr_001798,Expressément. Sa seigneurie attendit un moment la réponse.,Sa seigneurie avait répondu peu de temps après.,E
+ps_fr_001804,"Mais nombre d'entre eux ne parvenaient pas à se décider pour une option ou pour l'autre avant d'avoir obtenu réponse de façon satisfaisante à plusieurs questions, au premier titre desquelles celle qui avait été posée par Ogle.",Toutes les questions étaient traitées et un compromis rapidement trouvé.,C
+ps_fr_001807,"Tu vas te livrer à Bishop, l'avertit Pitt.",Bishop était un sinistre individu sans pitié.,N
+ps_fr_001816,"Mais si elle n'appréciait pas son ton et ses mots, elle étouffait son ressentiment.",Il s'était assez mal comporté avec elle.,N
+ps_fr_001818,"Mais si elle n'appréciait pas son ton et ses mots, elle étouffait son ressentiment.",Elle a aimé les paroles avec lesquelles il lui a parlé.,C
+ps_fr_001837,"« Bonjour à vous » dit-il, et il ajouta « j'ai été si maladroit, donc oui. »",Il lui a dit bonsoir.,C
+ps_fr_001842,"Il recula, un homme déconcerté et impuissant.",Sa réaction a montré qu'elle était profondément blessée.,N
+ps_fr_001849,"Ce sera le signal pour mentir à, dit Blood, dans la même voix monotone, et il soupira.","Blood dit qu'il n'y aurait pas de signes, et que les autres devraient juste comprendre par eux-mêmes.",C
+ps_fr_001864,Si les hommes dans la panique qu'Ogle avait déclenchée parmi eux considéraient une vue différente de celle de Wolverstone il ne savait pas.,Adrian n'était pas sûr que les hommes paniqués verraient les choses d'un autre œil que Woverstone.,N
+ps_fr_001872,Je l'accepte comme l'unique moyen de nous sauver tous de la destruction certaine que mes propres actions pourraient avoir suscitée.,"Bien que le problème n'ait pas été causé par ma propre volonté, je peux tous vous sauver.",C
+ps_fr_001889,"Les menaces seront inutiles, Capitaine.",Le capitaine avait fait une menace.,N
+ps_fr_001895,"si tu espère tirer les cordes sensible de Bishop, tu es un plus grand fou, Ogle, que je n'aurais jamais pensé tu n'avais que des armes.",Ogle était très amoureux de l'évêque.,N
+ps_fr_001897,"Il avait trouvé le seul moyen, et même si c'était répugnant pour lui, il devait le faire.",Il désirait ardemment s'en emparer.,C
+ps_fr_001913,"Tu me parles sur ce ton ! Tu oses me parler sur ce ton, cria-t-elle, l'étonnant par sa soudaine véhémence.","Elle a crié assez fort, ce qui l'a surpris.",E
+ps_fr_001914,"Tu me parles sur ce ton ! Tu oses me parler sur ce ton, cria-t-elle, l'étonnant par sa soudaine véhémence.",Elle a crié parce qu'on pensait que l'homme était stupide.,N
+ps_fr_001921,"si quelque chose devait t'arriver, Peter, dit il, alors que Blood allait sur le côté, le colonel Bishop ferait mieux de s'occuper de lui-même.",Évêque était couvert de taches de vin tandis que Sang s'approchait de lui.,N
+ps_fr_001924,"Je vais mettre mon chapeau, attraper ma canne et mon épée et aller à terre.",Je vais rester là et je ne vais pas rentrer à terre.,C
+ps_fr_001955,Il aligna son télescope sur cette forme.,Il pointa son télescope sur la silhouette.,E
+ps_fr_001957,"Mlle Bishop était également à bord du Royal Mary, et je l'ai sauvée avec sa seigneurie.",J'ai aussi sauvé 15 autres personnes.,N
+ps_fr_001960,Et s'il peut? Sang interrompu négligemment.,Blood posait la question parce qu'il était très résolu à faire les choses à sa façon.,N
+ps_fr_001961,Et s'il peut? Sang interrompu négligemment.,"Blood, insouciant, demanda s'il pouvait.",E
+ps_fr_001965,"Je vais pourrir en enfer si jamais je sert le roi, brailla-t-il dans une grande colère.",Je ne servirai jamais le roi!,E
+ps_fr_001969,"Debout maintenant devant le rail, avec Lord Julian à côté de lui, le capitaine Blood s'expliqua lui même.",Le Capitaine Blood et Lord Julian se tenaient à quarante pieds l'un de l'autre.,C
+ps_fr_001978,"Faith, tu arrives tout juste à t'expliquer, dit-il.",Une explication est donnée tout de suite.,C
+ps_fr_001990,"Et si vous n'étiez pas un imbécile, Ogle, vous n'auriez pas besoin de moi pour vous le dire.","Ogle semble être plutôt idiot, comme on l'a prétendu.",E
+ps_fr_001994,"Et qu'est-ce qui m'arrivera, Jeremy ? C'est sûr, maintenant, je serai de retour pour le dîner, j'en suis sûr. Du sang dégoulina jusque dans le bateau qui attendait.",Le sang est monté dans un bateau.,E
+ps_fr_001997,"Juste à l'entrée de l'allée menant à la cabine, il rencontra Mlle Bishop.",Il n'a jamais rencontré Mlle Bishop.,C
+ps_fr_001998,"Juste à l'entrée de l'allée menant à la cabine, il rencontra Mlle Bishop.",Mlle Bishop portait des chaussures rouges.,N
+ps_fr_002012,Canal Motorboats BV dispose de deux emplacements dans la ville,Il y a deux concessionnaires pour Canal Motorboats BV dans cette ville.,E
+ps_fr_002026,"Les enfants visiteront l'ESTRAN Cité de la Mer (37 rue de l'Asile Thomas) où ils verront des expositions sur l'histoire de la construction navale, sur l'industrie de la pêche et sur la formation du littoral sous l'effet des marées et des courants.",Les enfants aimeront les expositions sur les bateaux.,E
+ps_fr_002034,"À une époque, les Tombeaux des Ming étaient incontournables lors de la visite de la Grande Muraille à Badaling, mais les touristes étrangers étaient rarement impressionnés par le site, qu'ils trouvaient humide et mal restauré.",Les tombes Ming ne sont plus une grande attraction touristique.,E
+ps_fr_002042,"Et ils restent tolérants et serviables, même s'ils savent que leur belle côte n'est plus la leur.",Ils doivent partager la rive avec d'autres personnes maintenant.,E
+ps_fr_002052,"S'assimilant plus facilement à la communauté anglophone, seules les écoles protestantes ont accepté que leurs enfants juifs d'Europe de l'est soient diplômés du riche Westmount ou qu'ils aient émigré, à nouveau, vers Toronto.",Les Juifs s'assimilaient plus facilement à la communauté anglophone.,E
+ps_fr_002067,"1 400 ans avant la construction du Palais de Estei, Milreu était aussi la grande maison de campagne d'une personne éminente.",Milreu était en plein cœur de la ville.,C
+ps_fr_002068,"Avec son entrée dans le Marché Commun en 1981, les perspectives économiques de la Grèce se sont améliorées.",Les citoyens grecs étaient heureux que leur pays allait rejoindre le marché commun européen.,N
+ps_fr_002069,"Avec son entrée dans le Marché Commun en 1981, les perspectives économiques de la Grèce se sont améliorées.",L'entrée de la Grèce dans le Marché Commun a marqué la chute de son économie.,C
+ps_fr_002100,"Le lac lui-même se trouve dans l'ombre de plusieurs hautes montagnes, y compris Scafell Pike, le plus haut en Angleterre à 977 m (3,205 ft).",Le sommet de Scafell Pike est un endroit idéal pour observer le lac.,N
+ps_fr_002117,"Parmi les bassins il y en a un habité par des pièces jetées des visiteurs en espérance d'une tête d'une seule tortue rebondissant, une façon certaine d'atteindre la chance.",Les gens lancent des pièces de monnaie même si le panneau leur dit de ne pas le faire.,N
+ps_fr_002124,"Il y a un programme de natation avec les dauphins au centre de la station, dans les eaux abritées de la lagune intérieure,",Vous pouvez nager avec les dauphins dans le complexe touristique.,E
+ps_fr_002132,"Descendez à l'arrêt qui précède Batthyány tér pour admirer la façade colorée de l'église calviniste néo-gothique construite en 1896, qui figure sur tant de panoramas de la ville.",L'église Néo-Gothique Calviniste avait peu de panorama.,N
+ps_fr_002155,"Célèbre pour ses concours de bûcherons en août, la ville de Squamish constitue une base utile pour des randonnées dans le parc provincial Garibaldi.",Sqamish n'a jamais participé à un concours de roulage de bûches de bois dans l'eau.,C
+ps_fr_002168,Ils lient les principales plages publiques (de Warwick Long Bay à Horseshoe Bay).,Certaines plages sont publiques.,E
+ps_fr_002177,"En dehors des pièces établies, la plupart de la musique est percutante et sert à soutenir et à refléter l'action et l'humeur.",La musique est interprétée principalement à la flûte.,C
+ps_fr_002189,"On ne peut parvenir à la mer que par des voies étroites et des chemins agricoles, mais cela vaut la peine de faire une randonnée pour échapper aux foules.",L'océan est pourvu de petits chemins de 2 pieds de large qui y mènent.,N
+ps_fr_002199,Vous trouverez une plage agréable à proximité de Batu Hitam.,Il y a une plage près de Batu Hitam.,E
+ps_fr_002208,"L'outrageux et conservateur, apprend-on, coexiste ici sans trop d'histoires.",Les gens s'entendent très bien.,E
+ps_fr_002213,"L'impitoyable ministre de la défense, Gustav Noske, a appelé 4 000 Freikorps (des troupes d'assaut de droite) à écraser le mouvement.",Noske voulait que les choses continuent tout de suite.,C
+ps_fr_002217,"Aujourd'hui, les groupes de touristes viennent pour de courts séjours et, comme partout à Bali, les normes et les prix ne cessent de grimper.",Les groupes de touristes vont voir les temples à Bali.,N
+ps_fr_002220,Ce sont eux qui ont fait le premier et le plus dur effort pour mener une vie moderne hors de cette terre dure.,Ils auraient pu faire plus d'efforts.,N
+ps_fr_002226,Noté comment la peinture trompe l'œil sur le bas plafond en arc incite à changer le petite église en une sublime cathédrale gothique.,La peinture transformerait l'église en un harem.,C
+ps_fr_002231,Les pêcheurs en eau douce doivent avoir un permis. Demander à l'office de tourisme le plus proche pour obtenir des informations sur la façon d'en obtenir un.,"Vous pouvez juste saisir ce que vous voulez, quand vous le voulez.",C
+ps_fr_002236,Seules les randonnées avec guide accompagnateur de la coopérative locale des guides sont conseillées.,Vous pouvez marcher seul n'importe quand.,C
+ps_fr_002240,"À l'heure actuelle, il est peut-être préférable de laisser ces petites îles moins développées tranquilles.",Les îles sont prises au milieu d'une guerre.,N
+ps_fr_002248,"La Baixada de Santa Eulalia descend à Carrer dels Banys Nous, du nom des anciens bains du ghetto, construits au XIIe siècle.",CArrer dels Banys Nous porte le nom d'une forêt.,C
+ps_fr_002250,"La Baixada de Santa Eulalia descend à Carrer dels Banys Nous, du nom des anciens bains du ghetto, construits au XIIe siècle.",Carrer dels Banys Nous est le nom des bains.,E
+ps_fr_002264,"Il a trois pagodes dédiées à Brahma, Shiva et Vishnu.",Les sanctuaires servent du pain de viande le lundi.,N
+ps_fr_002266,"Moins d'un mile après le Arboretum, vous trouverez deux églises du côté droit de la route, avec des centaines de tombes familiales peintes en blanc à l'arrière du côté de la colline.",Les églises sont aussi des garderies pour enfants.,N
+ps_fr_002272,Presque 100 000 personne par jour viennent ici pour s'émerveiller à l'architecture à coupé le souffle et explorer les dernières attractions de cette cité en constant changement.,Presque 100 mille personnes viennent visiter la ville chaque jour.,E
+ps_fr_002280,"Derrière l'hôtel, par-delà la statue élaborée en 1898 de Samuel de Champlain, le fondateur de la ville, Dufferin Terrace offre une vue magnifique sur le Saint-Laurent et en aval, sur l'île d'Orléans.",La statue a été construite en l'an 1775.,C
+ps_fr_002285,"Fondé en 1861, le Massachusetts Institute of Technology (MIT) est le principal établissement de science et d'ingénierie des États-Unis. Il a été le pionnier de nombreuses technologies modernes, de la photographie stroboscopique aux procédés de conservation des aliments.",Le MIT a été fondé en 1861.,E
+ps_fr_002291,"Kodaly kerend (Croissant Kodaly, du nom d'un autre compositeur hongrois) est un ensemble splendide, ses faades courbées décorées de guirlandes classiques et de motifs incrustés.","La place Kodály körönd est décorée de plusieurs choses, y compris des figures et des motifs.",N
+ps_fr_002317,"Le bâtiment, construit sur le quartier général souterrain des SS, accueille la Topographie de la terreur, une exposition de photographies qui illustre de manière déchirante la vie de ceux qui ont résisté à la terreur nazie.",Le bâtiment n'avait pas de sous-sol.,C
+ps_fr_002318,"Le bâtiment, construit sur le quartier général souterrain des SS, accueille la Topographie de la terreur, une exposition de photographies qui illustre de manière déchirante la vie de ceux qui ont résisté à la terreur nazie.",Dans le bâtiment étaient cachées les résidences des gardes SS.,N
+ps_fr_002319,"Le bâtiment, construit sur le quartier général souterrain des SS, accueille la Topographie de la terreur, une exposition de photographies qui illustre de manière déchirante la vie de ceux qui ont résisté à la terreur nazie.",Le bâtiment se trouvait au-dessus des maisons des gardes SS.,E
+ps_fr_002330,Les Jeux Olympiques de 1992 ont consolidé la réputation de Barcelone en tant que ville folle de sport.,Les Jeux Olympiques en Espagne ont été les plus populaires de cette décennie.,N
+ps_fr_002341,Tour Pei une allée sinueuse mène au parc de Hong Kong.,Le parc de Hong Kong était un chemin qui y mène.,E
+ps_fr_002360,"D'un portique gothique au milieu de la ville, à côté de l'imposant campanile du XIIIe siècle, un escalier de 90 marches descend jusqu'aux portes de bronze du XIe siècle.",Il y a 90 marches.,E
+ps_fr_002361,"D'un portique gothique au milieu de la ville, à côté de l'imposant campanile du XIIIe siècle, un escalier de 90 marches descend jusqu'aux portes de bronze du XIe siècle.",Il n'y a que 3 étapes.,C
+ps_fr_002362,"Ils aiment socialiser et ils aiment les bars, surtout les célèbres bars noirs où ils se retrouvent, généralement pour refaire le monde.","Ils ne sortent jamais avec des amis, mais restent seuls à l'intérieur.",C
+ps_fr_002365,Il est actionné en soulevant simplement deux planches de bois à la main,Il liste 10 planches de bois.,C
+ps_fr_002386,Voir la liste des mèches blondes aux pages 82 et 85.,Il y a une liste de plages.,E
+ps_fr_002391,"En attendant, Caldas de Monchique est un bon endroit pour un pique-nique et une promenade dans les bois.",Caldas de Monchique est situé dans une région boisée.,E
+ps_fr_002394,"Vous pouvez vous promener sur les ponts ou même faire une croisière de deux heures sur cette réplique du fameux voilier champion en 1921, représenté sur la pièce de dix cents canadienne.",La croisière ne dure que 17 minutes.,C
+ps_fr_002411,"Après deux siècles d'hérésie religieuse, l'Église, qui avait besoin d'un renouveau spirituel, a trouvé l'allié parfait en François d'Assise (1182-1226), pieux sans être d'une combativité gênante.",L'Église haïssait François d'Assise.,C
+ps_fr_002418,"Mais avec tous les nouveaux razzmatazz, le musée n'a pas oublié le charme des voitures anciennes en parfait état, ni, surtout, des énormes machines à moteur de la grande époque de la vapeur qui a vraiment fait le Canada.",Le musée a des voitures antiques.,E
+ps_fr_002427,"29 pour les meubles et l'argent, la compagnie Tai Sing à 122 pour la porcelaine.",La porcelaine était plus que des meubles et de l'argent.,E
+ps_fr_002436,"Colenia de Sant Jordi voit s'aligner des hôtels et des villas, mais cette tentative de complexe touristique semble plutôt timide.",Seulement la petite rue a des petits hôtels et des palais où séjourner.,N
+ps_fr_002446,Vous les trouverez dans différentes tailles et avec différentes décorations.,Ils sont décorés de paillettes et d'autocollants.,N
+ps_fr_002447,Vous les trouverez dans différentes tailles et avec différentes décorations.,Ils sont décorés.,E
+ps_fr_002471,"Le cœur de l'Athènes antique était centré autour du dôme de l'Acropole, avec des temples sacrés construits sur le rocher et la ville construite sur ses pentes vallonnés.",L'Acropole est considérée comme le plus important édifice de la Grèce antique.,N
+ps_fr_002477,"On pense aujourd'hui que les grands terrains nus découverts depuis les années 60 étaient utilisés pour des jeux de balle, jeux qui avaient beaucoup d'importance même si ces cérémonies rituelles indiennes restent encore peu comprises.",Ils n'ont pas découvert d'espaces ouverts depuis 1932.,C
+ps_fr_002492,Vous serez en mesure de jouer aux côtés des meilleurs à la roulette ou aux tables craps ou mettre quelques pièces dans la machine à sous.,Vous pouvez jouer à Las Vegas.,N
+ps_fr_002502,Les routes tortillent et contournent les virages serrés et suivent les ondulations du relief.,La route était totalement droite.,C
+ps_fr_002509,Le groupe de sécurité de l'information conduit entre 8 et 12 sessions par mois.,Le groupe de sécurité compte en moyenne 9 sessions par mois.,N
+ps_fr_002512,"Cependant, l'ingénierie préliminaire a été accomplie plus tôt.",L'ingénierie a eu une période préliminaire.,E
+ps_fr_002530,Ceci s'applique à la fois aux relations entre C et R définies par une unique fonction C-R et à celles qui sont définies par un ensemble de fonctions C-R.,Les fonctions C-R peuvent être mises en commun par les scientifiques.,N
+ps_fr_002546,"Non seulement l'épargne affecte le stock de richesse, mais la richesse influence à son tour le choix d'épargner.",La richesse et les économies ne sont généralement pas liées.,C
+ps_fr_002549,"Par exemple, une organisation que nous avons étudiée a subi deux fusions qui ont nécessité que l'entreprise intègre rapidement les nouveaux contrats et qu'elle se restructure pour répondre aux besoins commerciaux.",La fusion de deux entreprises en une seule organisation et la restructuration ont donné naissance à un environnement de travail chaotique.,N
+ps_fr_002553,"À sa conception, nous étions préoccupés par le fait que le paiement serait autorisé avant de vérifier que le voyage avait effectivement eu lieu.",Nous avons pensé que le paiement pourrait être envoyé trop tôt et nous serions escroqués.,N
+ps_fr_002556,"La technologie est fortement intégrée aux processus d'affaires de ces organisations parce qu'elle est perçue comme un facilitateur pour l'entreprise, et pas seulement comme un outil.",Ces entreprises accordent une grande importance à la technologie.,E
+ps_fr_002568,Les lignes composées de cases indiquent le niveau de bien-être de tous les expéditeurs combinés et les lignes composées de diamants montrent les pertes techniques (si elles sont négatives) du transfert du travail à une autre partie.,Les lignes indiquent le niveau de bien-être de tous les expéditeurs.,E
+ps_fr_002577,"Faire autrement enverrait un message troublant aux employés de GAO, la presse, et le public.",C'est un mauvais message à envoyer aux travailleurs si vous ne le faites pas.,E
+ps_fr_002586,Le dirigeant principal de l'Information et les autorités décisionnelles décident quel type de travail externaliser et quel type de travail il vaut mieux effectuer en interne.,Le DPI s'est tenu à l'écart de toute discussion sur les travaux autorisés.,C
+ps_fr_002596,"Le DSI de l'entreprise travaille avec les responsables du DSI ou d'autres responsables de l'information dans chacune des unités d'affaires pour assurer une technologie efficace, fiable et interopérable pour l'ensemble de la société.",Le DSI forme d'autres DSI.,E
+ps_fr_002600,BLM a inclus les normes de performances qui sont une réussite totale,Black Lives Matter a inséré des informations dans la brochure.,N
+ps_fr_002607,L'inclusion de toutes les parties ou éléments nécessaires.,Ils n'ont qu'à inclure les parties essentielles.,C
+ps_fr_002620,"Le flux de l'épargne est essentiel pour accumuler un stock de richesse - en règle générale, quelqu'un qui n'épargne jamais n'aura aucune richesse.","Si vous n'économisez pas d'argent dans votre compte bancaire, vous n'aurez rien.",N
+ps_fr_002631,"une organisation comme source de stratégie fait partie de la stratégie de développement d'un capital humain  plus large, laquelle est discutée au principe VI.",Le principe XII traite de la stratégie de développement du capital.,C
+ps_fr_002637,"L'exercice 2000 a été une année formidable d'accomplissement et de réussite pour le GAO, une année de grand service au Congrès et d'un grand bénéfice pour le contribuable américain.",2000 était la pire des années.,C
+ps_fr_002641,"Les compétences en informatique sont très demandées, ce qui complique l'embauche de l'État. Ce directeur informatique a donc cherché des alternatives au développement et à la gestion de logiciels internes.",Les travailleurs en TI sont beaucoup trop courants de nos jours.,C
+ps_fr_002649,Les émissions de mercure contribuent aux dépôts de mercure dans l'eau.,Les émissions de mercure n'ont aucune influence sur l'eau.,C
+ps_fr_002662,"Enfin, si les données que vous avez évaluées ne sont pas suffisamment fiables, vous devez inclure cette constatation dans le rapport et recommander que l'entité auditée prenne des mesures correctives.",La conservation des reçus physiques est un moyen d'accroître la fiabilité des données.,N
+ps_fr_002663,"Enfin, si les données que vous avez évaluées ne sont pas suffisamment fiables, vous devez inclure cette constatation dans le rapport et recommander que l'entité auditée prenne des mesures correctives.",L'entité d'audit peut prendre des mesures correctives pour améliorer la fiabilité des données.,E
+ps_fr_002678,"L'assurance sociale n'inclut pas les programmes étant établis uniquement ou principalement pour les employés fédéraux, comme la pension et d'autres régimes de retraites.",La couverture sociale ne s'étend pas aux programmes dédiés aux seuls employés fédéraux.,E
+ps_fr_002682,Une telle liste fournit l'approbation administrative officielle du bon (généralement le superviseur du voyageur) et l'officier de certification de l'évidence additionnelle de déterminer le caractère raisonnable de la plainte.,La liste indique qui a approuvé le bon.,E
+ps_fr_002702,"Inclure les visites aux l'urgence dans une analyse des avantages qui tient déjà compte des admissions à l'hôpital, par exemple, entraînera le double comptage de certains avantages si la catégorie admissions à l'hôpital inclut les visites à l'urgence.",Les admissions à l'hôpital comptent double si le patient n'est pas assuré.,N
+ps_fr_002710,"11 Toutefois, dans le cas de rénovations plus complexes, le temps d'arrêt peut être affecté de façon significative.",Les rétrofits n'ont pas d'impact réel sur les temps d'arrêt.,C
+ps_fr_002711,"11 Toutefois, dans le cas de rénovations plus complexes, le temps d'arrêt peut être affecté de façon significative.",Les impacts de temps morts significatifs peuvent se faire ressentir dans des rénovations plus ardues.,E
+ps_fr_002724,Le délai entre la passation de la commande et la fin des activités de mise en service est de 46 semaines pour les deux unités.,D'autres unités pourraient compléter ces commandes plus rapidement à un prix plus élevé.,N
+ps_fr_002731,"Une initiative impliquait l'établissement d'une orientation stratégique, de lignes directrices et de normes pour l'établissement du commerce électronique dans le gouvernement de l'État.",Des efforts ont été déployés pour aider à mettre en place le commerce électronique dans les gouvernements des États.,E
+ps_fr_002752,Certaines des fonctions de concentration-réponse utilisées dans cette analyse des avantages ont été dérivées de ces études à court terme.,Cinq études à court terme différentes ont été analysées pour cette étude.,N
+ps_fr_002754,Certaines des fonctions de concentration-réponse utilisées dans cette analyse des avantages ont été dérivées de ces études à court terme.,Des études à court terme ont été utilisées dans certaines parties de cette analyse.,E
+ps_fr_002756,24 Ces caractéristiques seraient également appropriées pour les rapports de responsabilité de la GMRA.,Il y a d'autres caractéristiques qui pourraient également être utilisées pour les rapports.,N
+ps_fr_002763,"Dans tous les cas, des mesures importantes devraient être prises pour éviter de porter préjudice aux réclamations du client.",Ces mesures comprennent la dissimulation de l'identité réelle des clients aux enquêteurs.,N
+ps_fr_002765,"Si le produit était porteur de plus de nouveautés ou d’innovations, on avait fréquemment recours à des prototypes complètement intégrés pour vérifier la conformité de la conception par rapport aux exigences.",Les exigences de conception étaient souvent démontrées au moyen de prototypes.,E
+ps_fr_002785,Un fournisseur allemand de systèmes SCR a installé le SCR sur une partie significative de la capacité allemande pendant les périodes d'interruption de moins de quatre semaines.,Un système SCR allemand est en Europe depuis 20 ans.,N
+ps_fr_002789,Les contributions des employeurs et celle des employés sont généralement calculées de la même manière.,Il y a deux manières différentes de calculer les cotisations de l'employeur et de l'employé.,C
+ps_fr_002792,"« L’Administration, la Substance Abuse and Mental Health Services Administration (Administration chargée des services de santé mentale et de la prévention et du traitement de la toxicomanie) et la Health Resources and Services Administration (Administration chargée des ressources et des services de santé). »",Les Administrations de toxicomanie et de santé mentale sont des entités différentes.,C
+ps_fr_002796,"20 À l'inverse, la désépargne - le fait de dépenser plus que ses revenus du moment - réduit les réserves de richesse dans la mesure où les fonds épargnés par le passé doivent être utilisés, les actifs existants vendus, ou le recours à l'emprunt augmenté.",Dissoudre signifie que vous économisez plein d'argent.,C
+ps_fr_002804,"Dans son programme Medicaid, le Texas considère que les diverses formes d'éducation ont un rapport coût/bénéfice favorable.",Le Texas ne prend pas en compte les bénéfices pédagogiques.,C
+ps_fr_002817,"Un organisme avait l'intention de mettre en œuvre une procédure de demande de remboursement des frais de voyage permettant aux voyageurs, sauf certaines exceptions, d'inscrire simplement un montant global de toutes les dépenses, qui coûtent individuellement 75 $ ou moins.",Les voyageurs n'ont pas à faire la liste de leurs dépenses.,C
+ps_fr_002828,Le temps nécessaire pour compléter cette phrase d'un projet d'implémentation est d'environ 17 mois pour SCR.,On a besoin de 17 mois pour mettre en exécution les nouvelles règles.,N
+ps_fr_002838,Ce colis de bienvenue est remis en mains propres lors d'une visite du site par l'un des 19 représentants du terrain de Medicaid au Texas.,Les paquets de bienvenue sont envoyées par la poste.,C
+ps_fr_002843,"De même, les statistiques des tableaux A2 et A3 montrent que les routes ayant un volume de routes de transport élevé se trouvent dans des codes postaux avec des niveaux plus élevés de revenus par ménage et de niveaux de scolarité.",Les endroits avec un nombre élevé sont les plus pauvres.,C
+ps_fr_002845,"TVA  a installé une voie de contournement durant la construction afin d'envoyer directement le gaz de la sortie du préchauffeur d'air au dispositif de désulfuration, tandis que l'électrofiltre était en cours de démolition et que le réacteur de la RCS était érigé à sa place.",Le contournement enverra de l'eau au FGD.,C
+ps_fr_002851,Quarante-quatre projets pilotes ont soumis des rapports pour le premier cycle de rapports sur le rendement en 1995.,Nos rapports sur les programmes pilotes ont été envoyés.,C
+ps_fr_002867,"Comme le montre la pièce A-3 de l'annexe A, ce processus peut se produire simultanément avec le traitement de la demande de permis de construction.",Les deux processus peuvent se produire en même temps.,E
+ps_fr_002882,"Le groupe se réunit tous les mois pour traiter du statut des initiatives évoquées ou mises en place précédemment, et pour proposer des initiatives potentielles et discuter des problèmes courants.",Le groupe se réunit tous les mois.,E
+ps_fr_002883,"Le groupe se réunit tous les mois pour traiter du statut des initiatives évoquées ou mises en place précédemment, et pour proposer des initiatives potentielles et discuter des problèmes courants.",Le groupe ne s'est réuni que deux fois par an.,C
+ps_fr_002884,61 - Les employés fédéraux peuvent être couverts par des programmes d'assurance sociale tels que la sécurité sociale62 et l'assurance-maladie selon les mêmes termes et conditions que le reste de la population couverte.,Les employés fédéraux acceptent les mêmes termes et conditions que le reste de la population couverte.,E
+ps_fr_002907,Les pompiers de Baltimore n'ont pas un programme formel pour offrir un boost financier aux pompiers et ambulanciers qui sont blessés et incapables de travailler.,Il devrait y avoir un programme en place pour compenser ces fonctionnaires.,N
+ps_fr_002944,Aucune erreur trouvée dans les données.,Liberté retrouvée après une erreur de données.,E
+ps_fr_002957,"Face à ce choix, les clients conserveraient probablement leur droit de quitter le pays.",Quitter le pays serait le meilleur choix pour les clients.,E
+ps_fr_002960,"Environ 2 100 médecins généralistes ont consulté leur rapport d'évaluation en ligne en 1999, et HIC a mis en place des améliorations supplémentaires afin d'inclure les évaluations des autres médecins.",HIC n'a apporté aucune modification aux évaluations.,C
+ps_fr_002964,"Ne répondrions nous pas à un appel téléphonique, à une question, n'annulerions nous pas une déposition, or n'irions nous pas à la bibliothèque pour faire des recherches sur un cas?",Il n'y a aucune question à propos de répondre au téléphone.,C
+ps_fr_002968,Un exemple de perturbations qui pourraient survenir est fourni par les récentes attaques de type DOS (déni de service) sur des sites Web populaires.,Les attaques de dénis de service provoquent des perturbations.,E
+ps_fr_003022,"Khallad a donné une seconde version, c'est à dire que les trois ont voyagé ensemble vers Karachi.",Khallad a dit qu'il ne savait rien d'eux trois.,C
+ps_fr_003024,"Khallad a donné une seconde version, c'est à dire que les trois ont voyagé ensemble vers Karachi.",Khallad a dit qu'il y avait 50% de chances que les trois se rendent ensemble à Karachi en Octobre.,N
+ps_fr_003036,"Durant sa détention, KSM a nié que Al-Qaïda ait des agents en Californie du Sud.",L'union de la jeunesse communiste a confirmé qu'il y avait plusieurs agents en Californie du sud.,C
+ps_fr_003059,"Le 9 septembre, un nouvelle dramatique arriva d'Afghanistan;",Nous n'avons pas entendu parler de l'Afghanistan jusqu'à octobre.,C
+ps_fr_003075,"En 2003, ces désignations ont été éliminées; toutes les affaires de terrorisme international reçoivent maintenant la même désignation, 315.",Chaque affaire de terrorisme est jugée et notée indépendamment.,C
+ps_fr_003091,Le secrétaire Powell et le secrétaire Rumsfeld semblent avoir déjà été informés sur ces sujets par le DCI.,Le directeur de la CIA a refusé de donner les détails sur cette affaire même aux hauts fonctionnaires.,C
+ps_fr_003111,"Au même moment, l'Arabie Saoudite était un lieu où Al-Qaïda levait directement des fonds auprès d'individus et d'organisations caritatives.","En Arabie Saoudite, Al-Qaïda a reçu de l'argent de la part de particuliers et d'organisations caritatives.",E
+ps_fr_003115,Le FBI doit maintenir des normes de sécurité et de compétence rigoureuses à l'égard de ses employés permanents et contractuels.,Le FBI ne pense pas à ses employés.,C
+ps_fr_003117,Le FBI doit maintenir des normes de sécurité et de compétence rigoureuses à l'égard de ses employés permanents et contractuels.,Le FBI doit protéger ses employés.,E
+ps_fr_003124,"Troisièmement, l'ogive Hellfire portée par le Predator avait besoin de travail.","Le Hellfire, porté par le Predator, pourrait être bientôt prêt au départ.",N
+ps_fr_003138,"De retour aux États-Unis, Hage a été accueilli à l'aéroport par des agents du FBI, interrogé et appelé le lendemain devant le grand jury fédéral, alors qu'il enquêtait sur Ben Laden.",Hage n'a jamais été interrogé par les agents du FBI.,C
+ps_fr_003143,"Pour les deux compagnies et leurs actions, voir l'interview du FDNY 22, Bataillon 28 (janv.",Aucune interview n'a été enregistrée concernant les actions des sapeurs-pompiers.,C
+ps_fr_003163,Les civils qui ont appelé le bureau de police de l'Autorité portuaire situé au 5 WTC ont été avisés de partir s'ils le pouvaient.,L'autorité portuaire a dit que les gens devaient courir aussi loin que possible.,N
+ps_fr_003186,"Pour les avertissements de Ballinger, voir l'interview d'Ed Ballinger (14 avril 2004).",Il a averti l'interviewer qu'il y aurait une tentative d'attaque en mai.,N
+ps_fr_003191,"En certaines occasion le travail groupé a été mieux, et parfois pire.","Depuis lors, le travail en commun s'est amélioré à tous points de vue.",C
+ps_fr_003195,"Notre système de gestion des frontières et de l'immigration, y compris les forces de l'ordre, doit adresser un message de bienvenue, de tolérance et de justice aux membres des communautés d'immigrants situées tant aux États-Unis que dans leur pays d'origine.",Nous devons préciser que nous ne voulons pas d'immigrants ici.,C
+ps_fr_003202,"Bandar al Hazmi a poursuivi sa formation à Arizona Aviation avec des voyages intermittents à la maison en Arabie Saoudite, avant de quitter les États-Unis pour la dernière fois en janvier 2000.",Bandar al Hazmi est venu aux États-Unis 18 fois.,N
+ps_fr_003228,"Après avoir entendu que le camp devait être fermé, lui et d'autres se sont rendus au camp d'Al Faruq près de Kandahar, où ils ont reçu plus d'entraînement.",Il n'y avait aucun camp près de Kandahar.,C
+ps_fr_003250,"Début mai 1996, la CIA a reçu des informations selon lesquelles Ben Laden vivait au Soudan.","À cette époque, Ben Laden avait une réservation pour une conférence dans un complexe hôtelier grec.",N
+ps_fr_003262,Plusieurs étages en feu auraient été au-delà de la capacité d'extinction des forces que nous avions en main.,Tout le bâtiment aurait pu s'enflammer et nous aurions pu éteindre les incendies.,C
+ps_fr_003281,Des fenêtres allant du sol au plafond avaient été détruites dans le coin nord-ouest du hall West Street.,Il a fallu plus de deux semaines aux équipes de travail pour remplacer toutes les vitres brisées.,N
+ps_fr_003283,Il a été trouvé pour avoir des confédérés des deux côtés de la frontière.,Il avait de l'influence des deux côtés de la frontière.,E
+ps_fr_003298,"Alors qu'il continuait à surveiller la chaîne SOD couvrant la ville, que les hélicoptères du NYPD utilisaient, il surveillait également le canal tactique point à point utilisé par les équipes ESU escaladant les tours.",Les hélicoptères de la police de New York utilisaient le canal SOD.,E
+ps_fr_003312,Nous n'avons pas interviewé toutes les personnes compétentes ou trouvé touts les papiers pertinents.,Il y beaucoup de gens qui en savent bien plus et n'ont pas été interrogés.,N
+ps_fr_003313,La surveillance par le Congrès des services d'Intelligence - et du contre-terrorisme - est maintenant dysfonctionnelle.,Le Congrès n'a jamais surveillé ni le renseignement ni le contre-terrorisme.,C
+ps_fr_003340,"Bien qu'il nous soit aujourd'hui facile de faire l'amalgame entre KSM et Al-Qaïda, ce n'était pas le cas avant le 11 septembre.","Même si personne ne s'en est rendu compte, KSM a toujours été connecté à Al Qaeda.",N
+ps_fr_003343,Les membres du Comité Directeur se sont concentrés sur le Pakistan et sur ce qu'il pourrait faire pour retourner les Talibans contre Al-Qaïda.,Le taliban étaient un proche allié d'Al-Qaïda.,N
+ps_fr_003347,"Enfin, il a demandé au secrétaire au Trésor, Paul O'Neill, d'élaborer un plan pour cibler le financement d'al-Qaïda et saisir ses actifs.","Le secrétaire au Trésor, Paul O'Neill, a reçu l'ordre de ne pas s'incommoder du financement d'al-Qaïda.",C
+ps_fr_003366,"En mai ou juin, Clarke a demandé à être transféré de son portefeuille antiterroriste à un nouvel ensemble de responsabilités en matière de cybersécurité.",Clarke était responsable de la lutte contre le terrorisme en avril.,E
+ps_fr_003386,"Pour connaître le statut des systèmes de construction auprès du personnel du bâtiment, concertez l'interview FDNY 4, Chief (Jan.",Il y a une entrevue disponible qui discute des systèmes de construction.,E
+ps_fr_003399,"Rapport d'investigation du FBI, entretien de Jennifer Strangel, 14 Sept. 2001.",Jennifer Stangel a été interviewée pour la première fois le 14 septembre.,N
+ps_fr_003400,"Avant le 11 septembre, aucune agence gouvernementale américaine n'analysait de façon systématique la stratégie de déplacement des terroristes.",On se rendit compte plus tard que le terroriste se deplace habituellement en avion ou voiture.,N
+ps_fr_003404,"Voir les interrogatoires de KSM dans les rapports de renseignement, 1er juil. 2003 - 5 sept. 2003.",KSM a été interrogé en 2003.,E
+ps_fr_003407,Cela ne fut jamais le sujet de délibérations inter-agences formelles.,Les agences ont mis en place de nombreux panels pour évaluer formellement le sujet.,C
+ps_fr_003410,3. L'appel a été passé depuis un téléphone public dans le terminal C (entre le point de contrôle de contrôle et la porte d'embarquement de United 175).,Le coup de fil était pour la commande de grandes pizza au pepperoni.,N
+ps_fr_003433,"À 10h45, on a dit aux participants de ne pas attendre Defcon 3, mais une minute plus tard, l'ordre a été rétabli.",Il a finalement été décidé que Defcon 3 devrait être commandé.,E
+ps_fr_003442,La menace qui venait ne provenait pas des cellules dormantes.,Les cellules dormantes n'étaient pas une menace dans ce cas.,E
+ps_fr_003454,"Pour l'arrivée du chef et des compagnies, voir Jules Naudet et Gédéon Naudet, séquences vidéo, 11 septembre 2001; Interview FDNY 4, Chef (Jan.",Le chef est arrivé sur le site du WTC à 10 h du matin.,N
+ps_fr_003462,"Il a déclaré que si ses conseillés lui avaient dit qu'il y avait une cellule aux États-Unis, ils auraient fait en sorte de s'en occuper.","En fait, il y avait trois cellules différentes aux États-Unis à l'époque.",N
+ps_fr_003486,KSM a peut-être demandé à Binalshibh d'envoyer de l'argent à Moussaoui afin de préparer Moussaoui à devenir un pilote de remplacement potentiel pour Jarrah.,KSM a dit à Binalshibh quoi faire.,E
+ps_fr_003489,Thumairy dément s'exposer à de telles mesures disciplinaires.,Thumairy a été accusé de manquement au devoir par certains.,N
+ps_fr_003492,"A part examiner minutieusement divers dossiers officiels, le gouvernement Tchèque a aussi revu des photos de surveillance prises à l'extérieur de l'ambassade iraquienne.",Le gouvernement tchèque a regardé les photos qu'ils avaient.,E
+ps_fr_003496,"Si les États-Unis n'agissent pas agressivement pour se définir dans le monde islamique, les extrémistes feront volontiers le travail pour nous.",Les extrémistes seraient prêts à définir les Etats-Unis dans le monde Islamique.,E
+ps_fr_003512,"Nous fournissons de l'aide par téléphone 24 heures sur 24, 7 jours sur 7 par le biais du Centre de ressources d'information sur la prévention et de la ligne d'aide aux parents.","Nous sommes joignables par téléphone, à tout moment de la journée.",E
+ps_fr_003513,"Nous fournissons de l'aide par téléphone 24 heures sur 24, 7 jours sur 7 par le biais du Centre de ressources d'information sur la prévention et de la ligne d'aide aux parents.",Nous recevons plus d'une centaine d'appels chaque lundi et vendredi,N
+ps_fr_003520,"00 nous a permis de fournir conseils, encouragements et l'amusement à près de 400 enfants de la région d'Indianapolis.","Grâce aux généreuses donations, nous avons pu inviter Beyonce à donner un concert pour les orphelins d'Indianapolis.",N
+ps_fr_003540,Si chaque personne recevant cette lettre donne seulement 18 $.,Nous espérons que chacun des destinataires de nos lettres pourra faire un don de 18$.,E
+ps_fr_003552,80% des participants vont faire preuve de connaissance accrue dans la résolution des conflits.,Il y avait plus de 100 participants.,N
+ps_fr_003563,Je suis donc ravi de prolonger cette invitation aujourd'hui en vous donnant l'opportunité de vous joindre à nous en tant qu'Associé Charte du Centre de Philanthropie.,Nous avons décidé que vous ne pouvez être membre associé du centre de philantropie.,C
+ps_fr_003568,"L'école de droit a besoin d'autonomie pour acquérir de nouveaux terminaux informatiques, payer les frais de voyage de nos équipes de simulation de procès et pour rénover le Gray Lounge, pour acheter les références matérielles pour la librairie.",Seule la moitié des ordinateurs de la faculté de droit sont toujours fonctionnels.,N
+ps_fr_003569,"L'école de droit a besoin d'autonomie pour acquérir de nouveaux terminaux informatiques, payer les frais de voyage de nos équipes de simulation de procès et pour rénover le Gray Lounge, pour acheter les références matérielles pour la librairie.","L'école de Droit possède des ordinateurs, ainsi qu'une bibliothèque.",E
+ps_fr_003571,NOUVEAUX ARRIVAGES ! CHAQUE CADEAU FAIT LA DIFFÉRENCE !,Chaque don est enregistré et annoncé dans notre journal mensuel.,N
+ps_fr_003574,Nous avons encore un long chemin à parcourir avant d'atteindre notre objectif de 365 000 $ de la part d'amis et d'abonnés tels que vous.,Notre objectif monétaire dépasse 300 000 $.,E
+ps_fr_003581,Le revenu des billets ne couvre pas du tout le coût de ces programmes.,Le coût de ces programmes est très élevés.,N
+ps_fr_003587,"Nom de l’organisation (si applicable), adresse, ville, état, code postal","Si l'organisation n'a pas de nom, indiquez votre prénom et votre nom de famille ainsi que vos coordonnées.",N
+ps_fr_003598,"En tant que membre Inner Circle, vous aurez droit à une place assise de choix durant la convention, et à des  invitations spéciales pour des dîners, des réceptions et des activités tout au long de la semaine.",Les membres du Cercle Intérieur ne reçoivent rien parce qu'ils font partie du groupe.,C
+ps_fr_003604,Je vous demande de vous joindre à moi pour renouveler votre engagement envers les bibliothèques universitaires de l'IUPUI et d'envisager d'augmenter cette contribution.,L'IUPUI n'accepte plus les dons.,C
+ps_fr_003609,"Costume de Brigitte Doth, Jade Stice et Penny Laimana.",Trois personnes ont contribué à la création des costumes.,E
+ps_fr_003622,En touchant les étudiants qui ne sont pas touchés à travers l'école et les autres institutions communautaires.,Chaque étudiant est contacté via l'école.,C
+ps_fr_003626,"En remerciement pour votre contribution de 100 $ ou plus pour la campagne, vous, ainsi qu'un(e) invité(e) de votre choix, êtes conviés au Herron Hall le jeudi 23 mars 2000 de 17:30 à 20:00 pour une réception exceptionnelle.",Vous et un invité serez conviés à assister à une réception spéciale si vous faites un don de 100$ ou plus à la campagne.,E
+ps_fr_003627,"En remerciement pour votre contribution de 100 $ ou plus pour la campagne, vous, ainsi qu'un(e) invité(e) de votre choix, êtes conviés au Herron Hall le jeudi 23 mars 2000 de 17:30 à 20:00 pour une réception exceptionnelle.",Tu dois faire don d'au moins 10 000$ pour être invité à assister à la réception.,C
+ps_fr_003635,"Pour que la Bibliothèque de l'université possède du patrimoine, des accès et des services qui satisfassent vos attentes, il faut du personnel et des associés à l'intérieur de l'université mais aussi dans toute la communauté, l'état et la nation.",La bibliothèque IUPUI a besoin d'aide.,E
+ps_fr_003653,", des classes plus petites, l'usage de la technologie), et du fait d'un manque déjà ancien d'espaces dédiés aux élèves (casiers, restauration, bureaux réservés aux organisations étudiantes).",Il y a beaucoup plus de coffres que les étudiants n'en auraient jamais besoin.,C
+ps_fr_003659,La Clinton Birthplace Foundation  propose un accès à tous les privilèges aux personnes qui paient seulement 10 $.,Vous recevrez un bulletin d'information si vous êtes membre de la Fondation Clinton Birthplace .,N
+ps_fr_003672,Wanda est aussi consciente que n'importe quelle mère peut l'être des nouvelles possibilités que vous créez. Elle dit que c'est une chose merveilleuse à connaître.,Wanda est une maman.,E
+ps_fr_003687,Ci-joint une carte-réponse et une enveloppe avec l'espoir que vous envisagerez de commencer 1994 avec un cadeau à IU.,Renvoyez-nous cette carte pour nous dire ce que vous aimeriez pour le dîner.,C
+ps_fr_003691,Nous comptons sur vous et d'autres amis généreux pour fournir les 38% restants.,"62% ont déjà été couverts, et nous espérons que vous allez fournir le reste.",E
+ps_fr_003693,Nous comptons sur vous et d'autres amis généreux pour fournir les 38% restants.,"Nous n'aurons pas besoin de votre aide, car nous avons eu plus de financement que nécessaire.",C
+ps_fr_003701,Les treize couleurs de ce magnifique tapis symbolisent les treize colonies originelles de cette nation.,"Cette nation avait treize colonies au départ, et d'autres vinrent s'y ajouter.",E
+ps_fr_003718,"Dans le cas d'animaux qui ne sont pas récupérés par leur propriétaire, votre organisation contre la violence faite aux animaux utilise une variété de services pour aider ces animaux et leur donner la chance d'avoir une vie heureuse.",Tous les animaux sont récupérés par leurs maîtres.,C
+ps_fr_003720,"Dans le cas d'animaux qui ne sont pas récupérés par leur propriétaire, votre organisation contre la violence faite aux animaux utilise une variété de services pour aider ces animaux et leur donner la chance d'avoir une vie heureuse.",Humane Society est une organisation à but non-lucratif qui s’occupent des animaux  domestiques abandonnés.,N
+ps_fr_003725,"Nous espérons que vous aurez plaisir à leur parler, mais vous pouvez économiser l'argent administratif en envoyant votre cadeau dans l'enveloppe de retour dès aujourd'hui.",L'envoi de votre don par la poste permettrait à l'IRT d'économiser  500 $.,N
+ps_fr_003726,"Nous espérons que vous aurez plaisir à leur parler, mais vous pouvez économiser l'argent administratif en envoyant votre cadeau dans l'enveloppe de retour dès aujourd'hui.",Vous ne pouvez faire un don que par virement bancaire.,C
+ps_fr_003730,"Avec votre contributions à la bibliothèque, vous deviendrez un membre de la Citywide Friends.","Aujourd'hui, faites un don à la Bibliothèque pour devenir un Ami de la campagne.",C
+ps_fr_003740,Votre soutien apporté bénéficie directement aux programmes de sensibilisation de l'IRT et les fonds de contrepartie correspondent aux dons.,Vos contributions sont égalées.,E
+ps_fr_003742,Il est temps pour le DERNIER APPEL proverbial !,C'est le dernier appel parce que nous allons fermé à 02:00 du matin.,N
+ps_fr_003767,Je vous demande aujourd'hui de faire un don à l'IRT afin de les aider à poursuivre l’excellent travail qu'ils font depuis 26 ans.,"Veuillez faire un don de 100,00 $ à l'IRT aujourd'hui.",N
+ps_fr_003773,"Depuis 1914, Civic a maintenu sa singularité en restant fidèle à ses",L'éducation civique existe depuis le début des années 1900.,E
+ps_fr_003781,Des fonds sont nécessaires ici pour servir de capital d'amorçage car nous travaillons à l'établissement de projets qui devraient devenir autosuffisants pour l'école.,"Nous n'avons pas besoin de plus d'argent, juste de votre temps.",C
+ps_fr_003783,Des fonds sont nécessaires ici pour servir de capital d'amorçage car nous travaillons à l'établissement de projets qui devraient devenir autosuffisants pour l'école.,Nous avons besoin d'un capital de base pour aider l'école.,E
+ps_fr_003785,L'acquisition historique en décembre de 75 rouleaux suspendus rares et importants et de paravents pliants témoigne de l'engagement à construire la collection permanente d'art mondial de l'IMA.,"L'art était acquis, ce qui était très excitant.",E
+ps_fr_003806,"L'an dernier, seulement 20% de nos anciens élèves ont contribué à l'école, comparé à 14% en 1990.",17 % de nos anciens élèves ont contribué à l'école il y a trois ans.,N
+ps_fr_003807,"L'an dernier, seulement 20% de nos anciens élèves ont contribué à l'école, comparé à 14% en 1990.",Les contributions des anciens élèves au profit de l'école ont augmenté depuis 1990.,E
+ps_fr_003809,En tant que membre de la Citywide Friends de la bibliothèque gratuite vous recevrez une newsletter trimestrielle vous informant des évènements et questions législatives de la bibliothèque.,Les membres des Amis de la bibliothèque libre de la ville reçoivent des bulletins d'information de 16 pages.,N
+ps_fr_003817,"Voici les résultats pour l'instant : 5 615 personnes ciblées pour nos anciens élèves non donateurs, 81 1,4 pour cent, le don le plus important a été de 2 840 dollars et le moins important de 5 dollars.",La plupart des gens ont donné plus de 1 000 $.,N
+ps_fr_003829,"Pendant plusieurs années, il a effectué des travaux d'emballage et de bureau.",Il gagnait 400 $ par semaine en emballant les produits qu'ils vendaient.,N
+ps_fr_003840,Approximativement 25% de l'ensemble des étudiants existant de la cathédral reçoivent une aide financière.,Nous ne donnons d'aide financière à aucun étudiant.,C
+ps_fr_003846,"Cette lettre a pour but de vous faire savoir que nous avons toujours besoin de votre aide pour poursuivre notre solide gestion financière, mettre sur pied des productions théâtrales dynamiques et des programmes éducatifs exceptionnels.",Nous avons besoin de votre aide pour conserver notre production théâtrale.,E
+ps_fr_003850,Sans votre aide nous allons perdre une partie de l'argent de cette subvention.,"Si vous ne nous aidez pas, on perdra 10 000$.",N
+ps_fr_003851,Sans votre aide nous allons perdre une partie de l'argent de cette subvention.,"Nous n'avons pas besoin de votre aide, nous avons tout ce qu'il nous faut.",C
+ps_fr_003853,La recherche publiée dans Science donne des preuves de progrès en documentant la première transplantation réussie de cellules cardiaques fonctionnelles dans un modèle animal.,Les cellules cardiaques peuvent être transplantées chez les animaux.,E
+ps_fr_003855,La recherche publiée dans Science donne des preuves de progrès en documentant la première transplantation réussie de cellules cardiaques fonctionnelles dans un modèle animal.,Les porcs ont d'abord subi une greffe de cellules cardiaques.,N
+ps_fr_003869,J'aimerais que cela continue.,Ce serait formidable si la collecte de fonds durait jusqu'en juillet.,N
+ps_fr_003880,"Si vous souhaitez obtenir des informations supplémentaires sur la campagne de l'École de médecine IU ou sur la recherche du Dr Field, veuillez composer le 274-3270.",Le Dr Field est le scientifique le plus important de l'école de médecine.,N
+ps_fr_003889,"Dans la mesure où les réservations pour notre séjour à Houston sont limitées, j'espère que vous nous retournerez l'acceptation de votre nomination aujourd'hui.",J'espère que tu l'as renvoyé avant que les trois dernières positions soient prises !,N
+ps_fr_003901,"Grâce à votre générosité, l'IRT continuera à raconter les meilleures histoires de la façon la plus juste possible.","Sans votre don, l'IRT serait en difficulté.",N
+ps_fr_003908,"Jerry Bepko, chancelier de l'IUPUI, a rendu hommage à Kent à travers ces remarques.",Bepko a honoré Kent.,E
+ps_fr_003909,"Jerry Bepko, chancelier de l'IUPUI, a rendu hommage à Kent à travers ces remarques.",Bepko n'a jamais rien dit de gentil à propos de Kent.,C
+ps_fr_003914,"C'est primordial, et nous espérons que cette année, vous ferez une contribution significative au fonds dédié à la Quête de l'Excellence.",Nous voulons que vous sachiez la grande nécessité cette année d'un don pour la Poursuite de l'excellence.,E
+ps_fr_003922,"Vous, avec d'autres membres bienveillants, aiderez à préserver et à promouvoir le fier héritage de notre État.",L'aide est nécessaire pour l'état.,E
+ps_fr_003953,"Mon intuition, bien sûr, a une base très spécifique - vous êtes une personne charitable, comme le démontre votre don annuel d'intendance à votre paroisse.",J'ai l'impression que vous êtes une personne attentionnée et gentille.,E
+ps_fr_003955,Et elle a toujours été là pour nous,Elle nous a donné tout l'argent dont nous avions besoin.,N
+ps_fr_003961,"Ces sièges libres - Washington, Colorado et Dakota du Nord - couplés à l'éviction du démocrate au long cours Alan Dixon, ont considérablement accru nos chances de victoire.",Alan Dixon est un politicien démocrate.,E
+ps_fr_003967,"De plus, les résidants de l’Indiana peuvent bénéficier de réductions fiscales grâce au crédit d’impôt de l’Indiana qui s’applique directement sur le revenu net de la déclaration fiscale.",L'Indiana n'offre pas de crédits d'impôt.,C
+ps_fr_003968,"De plus, les résidants de l’Indiana peuvent bénéficier de réductions fiscales grâce au crédit d’impôt de l’Indiana qui s’applique directement sur le revenu net de la déclaration fiscale.",Les résidents de l'Indiana obtiennent un crédit d'impôt de 50 % s'ils font un don au théâtre.,N
+ps_fr_003970,"A la suite d'un spectacle, un jeune couple monta sur scène pour dire bonjour.",Un jeune couple était au spectacle.,E
+ps_fr_003971,"A la suite d'un spectacle, un jeune couple monta sur scène pour dire bonjour.",Un jeune couple est allé à leur toute première performance.,N
+ps_fr_003973,Nous demandons un cadeau de 1000 $ à tous les diplômés.,Nous recueillons des fonds auprès des diplômés.,E
+ps_fr_003995,Commencement 1991 renouvelle les souvenirs des journées d'études à l'Université de l'Indiana.,Les étudiants diplômés se souviennent de leur parcours en tant qu'étudiants de l'Université d'Indiana.,E
+ps_fr_004000,Mais il en reste beaucoup qui ont encore besoin de notre aide.,Il y a encore 10 000 personnes qui ont besoin de notre aide.,N
+ps_fr_004008,"Nous mettons également l'accent sur des pièces qui ont un rapport direct avec l'histoire, la littérature et les sujets d'étude sociale.",Nous essayons de ne pas faire de pièces qui soient orientées vers l'histoire ou la littérature.,C
+ps_fr_004012,Beaucoup a été fait pour engager Michael Apted pour amener plus d'humanité à la série.,"Michael Apted a gâche tous les séries en insistant à ce qu'ils enlèvent tous éléments chaleureux, humains.",C
+ps_fr_004016,regarder une fille dans un parka en fourrure blanche avec des bottes,Une fille porte des vêtements blancs.,E
+ps_fr_004021,Rockefeller a été pris dans ce don angoissé quand Avenging Angel Tarbell a commencé à déchirer sa chair chez McClure.,Rockefeller a donné pour la recherche sur le cancer.,N
+ps_fr_004022,Rockefeller a été pris dans ce don angoissé quand Avenging Angel Tarbell a commencé à déchirer sa chair chez McClure.,Rockfeller donnait.,E
+ps_fr_004029,"Dans Hollywood Strikes Back (La Revanche d'Hollywood), Nancy Griffin raconte que Michael Eisner a tendu un rameau d'olivier à son ancien ami Mike Ovitz, mais que celui-ci l'a refusé.",Mike Ovitz a refusé la tentative de Michael Eisner de régler leurs différences à cause des soupçons entourant les finances et la vision sur l'entreprise.,N
+ps_fr_004046,"La publication du livre du CRP (Candidat Républicain à la Présidentielle) est suivie de la tournée promotionnelle du livre, ce qui introduit la caractéristique suivante du",La tournée du livre concerne 10 villes.,N
+ps_fr_004058,Les sports ne sont pas les seuls événements sur lequels parier sur ces sites.,Ces sites n'acceptent que les paris portant sur des événements sportifs.,C
+ps_fr_004059,Les sports ne sont pas les seuls événements sur lequels parier sur ces sites.,Ces sites prennent le meilleur sur plusieurs activités.,E
+ps_fr_004083,"Il existe plusieurs options pour attaquer la logique de cet argument cosmologique, et les opposants contemporains du théisme les ont toutes essayées.",Cet argument cosmologique a été accepté et approuvé par tous ceux qui le lisent.,C
+ps_fr_004084,Talmudique n'emporte rien de son bagage.,Talmudic a tous ces problèmes.,C
+ps_fr_004089,Le palais de justice n’est pas la seule arène politique à Washington ce matin.,Il y a un cirque au palais de justice avec des clowns.,C
+ps_fr_004100,L'OMS a annoncé qu'une nouvelle stratégie pour le traitement de la tuberculose pourrait sauver 10 millions de vies dans les prochaines décennies.,L'OMS a une stratégie pour traiter la tuberculose qui pourrait sauver plus de dix millions de vies.,N
+ps_fr_004136,"En utilisant ces huit techniques simples, vous pouvez fabriquer une information dans le confort de votre propre maison.",Écrire des nouvelles dans vos pajamas est facile et financièrement intéressant si vous suivez ces huit étapes,N
+ps_fr_004147,La politisation de Presque Tout (Division Littéraire) avance à grands pas.,La politisation de presque tout se passe rapidement.,E
+ps_fr_004216,"La démocratisation, elle non plus, ne change pas les réalités sous-jacentes de la géographie internationale.",La démocratisation ne peut pas changer grand-chose à la réalité de la géographie internationale.,E
+ps_fr_004233,La véritable cause de préoccupation est que les HMO peuvent ne pas contrôler les coûts à long terme.,Il est possible que les HMO ne soient pas en mesure de contrôler les coûts à long terme.,E
+ps_fr_004238,Vous ne pouvez pas trouver pire comme réponse.,Il y a des réponses pour un prix plus bas presque partout où tu cherches.,C
+ps_fr_004244,"Je sais pour de bon que, ayant rencontré cette voix singulière et déchirée, je ne l'oublierai jamais.",Je connais cette voix.,E
+ps_fr_004245,"Je sais pour de bon que, ayant rencontré cette voix singulière et déchirée, je ne l'oublierai jamais.",Je connais cette voix parce qu'elle appartient à ma mère.,N
+ps_fr_004254,"Au contraire, une subvention gouvernementale n'est pas de la coercion et même pas comparable de près à ce qui se passe en Chine.",Le gouvernement est clairement en train de corrompre les gens s'ils donnent de l'argent.,C
+ps_fr_004266,"Et donc, combien Slate a-t-il de lecteurs ?",L'orateur se demande combien de personnes lisent Slate.,E
+ps_fr_004271,"Mme Dalloway continue d'avoir des délires, mais un élément plus critique émerge également.",Plusieurs étudiants font l'éloge de Mme Dalloway et la critiquent encore plus.,N
+ps_fr_004275,Quand un dollar n'est-il pas un dollar ?,"Il y a des moments où l'argent a plus de valeur que d'habitude, comme en temps de guerre.",N
+ps_fr_004296,"Nos objecteurs les plus agressifs, excités à clouer l'intégralité du travail d'un coup, court-circuitent des livres et vont directement vers les auteurs eux-mêmes.",Les personnes qui ont répondu ont parlé de leurs auteurs préférés.,N
+ps_fr_004352,Qu'est-il arrivé à l'approche sans-coeur traditionnelle de l'armée qui consiste à trouver un bouc-émissaire ?,L'armée a l'habitude d'utiliser les boucs émissaires.,E
+ps_fr_004354,"Michael Lewis, interviewé au sujet de son livre Trail Fever, a observé qu'Alexandre avait fait quelque chose que je ne pensais pas possible dans cette campagne.","Michael Lewis a donné plus de 50 interviews sur son livre, Trail Fever.",N
+ps_fr_004362,"L 'article de couverture de Newsweek soutient que l' Amérique du Nord a été peuplée pour la première fois par une coalition arc - en - ciel de types ethniques, et pas seulement les Asiatiques traversant le détroit de Béring couramment représentés dans les manuels d'histoire.",Les blancs ont principalement représenté l'Amérique du Nord depuis sa découverte.,N
+ps_fr_004365,Marcher sur les pieds des puissants,Les orteils sont grands.,E
+ps_fr_004400,"Mercredi, Clinton a choisi de parler d'une industrie différente.",Clinton a parlé ce Mercredi.,E
+ps_fr_004407,Peu importe si la moyenne du Dow Jones industriel est le bon indicateur pour savoir comment se porte les riches.,Le Dow Jones réflète ce qui se passe dans l'économie.,E
+ps_fr_004410,L'implication la plus frappante de la théorie CMP est que le souci de la position relative disparaît dans les sociétés où les partenaires sont attribués par des mécanismes autres que la richesse.,La théorie CMP concernent les cerf-volants.,C
+ps_fr_004423,Est-ce que je commanderais un lot pour moi-même ?,L'ensemble est très cher.,N
+ps_fr_004424,Est-ce que je commanderais un lot pour moi-même ?,Devrais-je ignorer le set ?,C
+ps_fr_004425,Est-ce que je commanderais un lot pour moi-même ?,Est-ce que je m'achèterais un ensemble pour moi-même ?,E
+ps_fr_004426,Le temps prévoit des problèmes pour le SAT.,Le SAT est intemporel et il n'y aura pas de problèmes à l'avenir.,C
+ps_fr_004439,"Troisièmement, même si nous acceptons les conclusions, elles ne sauraient s'appliquer à toutes les salles de spectacles grand public.",Les conclusions n'ont pas de relation avec les grandes salles de divertissement.,E
+ps_fr_004444,"Pour supprimer l'image de l'homosexualité comme un vice, Clinton et Birch attribuent les vertus civiques aux homosexuels.",Clinton et Birch sont homosexuels.,N
+ps_fr_004446,"Pour supprimer l'image de l'homosexualité comme un vice, Clinton et Birch attribuent les vertus civiques aux homosexuels.",L'homosexualité est perçue comme étant un vice.,E
+ps_fr_004456,Newsweek lance une critique en se plaignant de l'ostentation des Hamptons.,Newsweek n'a jamais écrit quoi que ce soit au sujet des Hamptons.,C
+ps_fr_004459,"Mon héro, donc, est Richard Heseltine, le président de la foundation d' investissement d' Outre-mer, qui a démissionné plus tôt ce mois-ci pour s'opposer au plan de développement que lui ont imposé ses supérieurs",Heseltine n'a pas l'intention de prendre sa retraite.,C
+ps_fr_004471,Le vrai bruit attire les jeunes et ulcère les vieux.,Les personnes âgées n'aiment pas le bruit parce qu'elles sont sensibles.,N
+ps_fr_004486,Que cette combinaison de faits et de spéculations serve de base à des manifestations de protestation est une question de goût.,Les faits contribuent davantage aux protestations.,N
+ps_fr_004495,La Russie fait face à des défis croissants dans la guerre tchétchène.,La Russie est confrontée à des défis de moins en moins importants en raison de la guerre en Tchétchénie.,C
+ps_fr_004501,"Les théories de la fin de la fin de l'histoire distinguent des ères aux caractéristiques spécifiques, qui sont achevées ou vont s'achever et ne réapparaîtront pas.",Les théories identifient l'âge avec des caractéristiques du visage.,N
+ps_fr_004506,"Le Times interviewe Deborah Eappen, la mère affligée de l'affaire de la jeune fille au pair Louise Woodward.",Time interroge John Handcock.,C
+ps_fr_004511,") En revenant à la base on gare sa voiture dans une autocaravane - sinon, où ?",Les camping-cars protègent les voitures du soleil et de la neige.,N
+ps_fr_004515,"On peut imaginer un conducteur de bulldozer en train de préparer une route pour un nouveau développement, salué par le développeur Hey, Loyd ...",Vous ne pouvez pas imaginer un opérateur de bulldozer.,C
+ps_fr_004517,"Je l'ai signalé dans une lettre au Dr. Cela a semblé l'amuser, et il m'a envoyé un petit cake aux fruits pour Noël.",Je n'ai pas mangé le gâteau que le médecin m'a envoyé ce Noël-là.,N
+ps_fr_004521,"L'équipe avait auparavant été connu par la mémorable appellation Mangeurs d'haricot, laquelle, curieusement, pourrais être aussi considérée comme un surnom indien.",L'équipe n'a toujours eu qu'un nom.,C
+ps_fr_004522,On présume sans fondement que le yiddish...,Il est supposé avec raison que le yiddish...,E
+ps_fr_004529,Je n'ai pas pu trouver une telle définition dans un dictionnaire de synonymes.,J'ai regardé dans le thésaurus et n'ai pas trouvé de définition.,E
+ps_fr_004541,"On peut dire que l'écriture doit être phonémique et non phonétique, mais les phonèmes changent aussi, même si cela se produit à une vitesse plus lente.",Les phonèmes ne changent jamais au fil du temps.,C
+ps_fr_004543,"« Split Ends, une boutique de cosmétologie » est un bon exemple d'élégance par apposition combinée à un euphémisme qui donne un ton discret ou décalé à la phrase.",La fin de split est un salon de coiffure.,E
+ps_fr_004548,Bernstein explique dans l' introduction,L'introduction contient une explication.,E
+ps_fr_004550,"Si vous trouvez un nom curieux (Missouri) ou certains qui viennent par surprise (Nebraska), juste notez les (Texas) prudemment (Tennessee)-- sauf, bien sure, si ils sont errata (Mississipi).",Surprise Le Nebraska a 10 000 habitants.,N
+ps_fr_004554,"l' alphabétisation et l' arithmétique sont revenus au gout du jours ces dernières années comme des enjeux majeures, pas seulement (pour autant ce peu) dans le tiers monde mais aussi dans les nations industrialisées.",Le tiers monde est à la traîne.,N
+ps_fr_004562,"Cependant, une chose dont M. Tesniares n'a pas tenu compte est l'apport anglo-saxon.",M. Tesniares n'a pas considéré l'apport anglo-saxon.,E
+ps_fr_004583,"En plus de tout cela, nous avons le fait malheureux que l'écriture éloquente est en effet parfois mémorable, aggravant le problème.",Un texte bien écrit est souvent beaucoup plus facile à retenir qu'un texte mal écrit.,E
+ps_fr_004616,"Il y a bien sûr une plus grande variété de dialectes anglais en Grande-Bretagne qu'en Amérique du Nord, et tous ceux qui les ont écoutés vous diront que certains d'entre eux ne sont pas mutuellement intelligibles.","Les dialectes nord-américains et britanniques sont exactement les mêmes, et les gens ne peuvent distinguer aucune différence entre eux.",C
+ps_fr_004618,"«Un informateur du Tennessee a utilisé l'expression temps de chien pour signifier «un temps chaud et sec», ce qui vient sans doute de l'expression canicule, qui fait référence au temps sec du mois d'août.","Selon l'informateur, le temps des chiens était utilisé pour décrire les pluies saisonnières de mousson.",C
+ps_fr_004620,"«Un informateur du Tennessee a utilisé l'expression temps de chien pour signifier «un temps chaud et sec», ce qui vient sans doute de l'expression canicule, qui fait référence au temps sec du mois d'août.",Le temps est chaud et sans pluie la plupart des journées du mois d'août.,E
+ps_fr_004622,"une alternative à une expression détournée, afin d'éviter la perte éventuelle de sa propre fierté ou, en choquant, celle de l'auditoire, ou d'un tiers.",Afin d'éviter les pertes.,E
+ps_fr_004629,"Ces choses sont en dehors d'un homme, bien que toujours un homme lui même",L'essence d'une personne est son style.,E
+ps_fr_004636,"j'espère vivre jusqu'à l'année 2000 afin de participer au Guide Yiddish. je suis sûr que le Yddish sera toujours là, survivant ses détracteurs, comme il a été pendant des milliers d'années.",Je suis sûr que le Yiddish existera encore en l'an 2000.,E
+ps_fr_004665,(a) Changez chaque d ou t de la cible en un c.,Il devrait y avoir plus de c's dans la cible que de d's.,E
+ps_fr_004666,Un autre exemple vient du VIP Poly-peptide Intestinal Vasoactif.,Un exemple vient de VIP.,E
+ps_fr_004669,Grammaire et glamour viennent du même mot.,La grammaire et le glamour n'ont jamais été liés l'un à l'autre.,C
+ps_fr_004687,L'un des derniers mots à entrer la Course au Cycle de Redondance des Abréviations est Missouri. L'État montre-mois obtenu le statut d'État en 1821.,"Avant 1800, le Missouri n'était pas considéré comme un état des États-Unis.",E
+ps_fr_004694,"Dans un livre traitant d'un sujet de ce genre, il faut être extrêmement attentif à s'attacher à des définitions rigides des termes clés (euphémisme, dysphémisme, tabou, etc.) et ne pas s'en écarter.",Le livre parle de la façon dont les mots sont utilisés en médecine.,N
+ps_fr_004696,Et nous savons que le Professeur Honey a raison lorsqu'il écrit à propos de,Et nous savons que le Professeur Honey a raison dans ses écrits.,E
+ps_fr_004710,Un des phénomènes linguistiques à avoir émergé au cours du dernier siècle environ est l'acceptation de la notion selon laquelle une étape importante de la résolution des problèmes consiste à leur attribuer un nom.,"Une fois un problème identifié, la solution s’en suit dans des délais acceptables.",N
+ps_fr_004754,Les jurons et invectives espagnols sont inventifs - echar sapos y culebras signifie littéralement «jeter des grenouilles et des serpents».,Echar sapos y culebras signifie lancer des grenouilles et des serpents en français.,C
+ps_fr_004760,"Depuis le début, les gens devaient avoir un nom pour pouvoir s’identifier.",Les gens qui débutaient s'identifiaient à l'aide de noms.,E
+ps_fr_004798,"Ici, le long de la rivière Oil Creek, les Indiens écrémaient le pétrole de la surface de l'eau à des fins domestiques, et les colons blancs le mettaient en bouteille à des fins médicinales, l'appelant Huile de Seneca.",Les Indiens et les colons blancs utilisaient tous deux le pétrole de Oil Creek.,E
+ps_fr_004814,"Un segment des forces armées est le Bataillon de Construction, qui a été rapidement abrégé en à B.C.",Le bataillon de construction est l'une des branches les plus importantes des forces armées.,N
+ps_fr_004821,"La loi des marques, qui remplit plus de deux volumes des États-Unis annotés",Le droit des marques est très compliqué et nécessite de fréquentes références aux deux volumes de l'ouvrage de la Constitution Annotée.,N
+ps_fr_004827,"M. Nields a répondu, je suis parfaitement heureux d'utiliser l'expression «longues déclarations».",M. Nields a dit être heureux d'utiliser ces mots.,E
+ps_fr_004840,Cicatrices de Vénus. Une éruption cutanée produite par la syphilis secondaire.,Une éruption cutanée est le premier signe externe de syphilis.,N
+ps_fr_004841,Cicatrices de Vénus. Une éruption cutanée produite par la syphilis secondaire.,Il n'y a aucun symptôme de la syphilis.,C
+ps_fr_004848,"Mais s'il utilise le grammaire, le vocabulaire et l'idiome de l'anglais standard trouvés dans les journaux, les livres, les magazines et les bulletins d'information, et tout ce que nous remarquons à propos de son discours est son accent - et peut-être son intonation.",Son accent et peut-être son intonation sont ce qui est perceptible quand il utilise la grammaire et le vocabulaire anglais standards.,E
+ps_fr_004854,"Ainsi, les bosses sont appelées nudgies, et les bosses majeures - celles qui nécessitent plus de 500 $ à réparer - sont des owies.",Ils les appellent simplement des bosses.,C
+ps_fr_004883,"Mais même si en tant qu'enfant je vivais dans un ranch juste à la frontière mexicaine, je me souviens d'avoir été mystifié par des termes d'élevage qui se glissaient dans les chansons occidentales du nord de notre pays, Cayuse, par exemple.",J'ai été subjugué par les termes d'élevage.,E
+ps_fr_004887,"En fait, il y a une bonne centaine de modificateurs.",Il n'y a que 50 modificateurs syllothetic.,C
+ps_fr_004893,La décharge de la section 8 est ordonnée pour cette société fxxxup incorrigible.,Cette personne est libérée.,N
+ps_fr_004902,"Toutefois, comme l'a fait remarquer la fille de M. Levitt, c'est d'ordinaire un lien élastique que l'on utilise pour attacher des choses, comme une grand-voile réduite sur son mat, des objets légers sur un porte-bagages, etc. -- l’Éditeur.",La fille de Mr Levitt avait 17 ans.,N
+ps_fr_004906,"Si l'espéranto aspire à devenir une vraie langue, alors il doit commencer à se comporter comme tel et, d'ici peu, il commencera à souffrir des mêmes faiblesses que les langues naturelles - la polysémie et la pleurésie.",L'espéranto est une véritable langue qui a déjà toutes les faiblesses des autres langues.,C
+ps_fr_004907,"Si l'espéranto aspire à devenir une vraie langue, alors il doit commencer à se comporter comme tel et, d'ici peu, il commencera à souffrir des mêmes faiblesses que les langues naturelles - la polysémie et la pleurésie.",L'espéranto est parlé par moins d'un pour cent de la population mondiale.,N
+ps_fr_004922,"Quand j'ai pris mon premier emploi de bureau en Suisse, j'avais une secrétaire qui ne connaissait ni le français ni l'anglais, de sorte que j'ai dû écrire des lettres dans ces langues à la main pour qu'elle puisse les taper.","Mon secrétaire ne parle ni anglais ni français, mais moi oui.",N
+ps_fr_004926,"La complexité du subjonctif en français ne le soucie pas le moins du monde, pour la bonne et simple raison qu'il n'essaye pas de l'employer.",Il n'est pas inquiet parce qu'il n'essaie pas.,E
+ps_fr_004938,"il semble absurde de séparer le fromage Gruyère du lieu 'Gruyère en Suisse d'où il vient en fait, le second n'est même pas un mot dans les sections géographiques du dictionnaire.",Vous ne pouvez pas dissocier le fromage Gruyère de l'endroit.,E
+ps_fr_004940,Tu vois cette curieuse petite bête là-bas ?,Est-ce que vous voyez ce drôle d'animal là-bas ?,E
+ps_fr_004941,Tu vois cette curieuse petite bête là-bas ?,Je ne peux pas voir cette curieuse petite bête.,C
+ps_fr_004984,"Son précurseur était le désormais obsolète strangury (1398), une miction lente et douloureuse.",Un jet d'urine lent et douloureux était le précurseur.,E
+ps_fr_004990,"Et repose toi, Mlle Dalrymple, quand je réédite des manuscrits de discours pour la publication imprimée, je reviens toujours au bon vieux usage anglais d'académiquement pur.",Je garde les mêmes discours.,C

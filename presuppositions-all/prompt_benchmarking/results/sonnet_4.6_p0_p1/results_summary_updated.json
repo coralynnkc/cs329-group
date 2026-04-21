@@ -1,0 +1,957 @@
+{
+  "summary": {
+    "total_files_processed": 12,
+    "successful": 12,
+    "failed": 0
+  },
+  "results": {
+    "sonnet_4.6_dev_de_p0.csv": {
+      "gold_file": "de_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_de_p0.csv",
+      "data_size": 100,
+      "prediction_rows_raw": 100,
+      "prediction_rows_after_dedup": 100,
+      "correct": 83,
+      "accuracy": 0.83,
+      "missing_predictions": 0,
+      "missing_rate": 0.0,
+      "invalid_predictions": 0,
+      "invalid_rate": 0.0,
+      "duplicate_prediction_rows": 0,
+      "extra_prediction_ids": 0,
+      "coverage": 1.0,
+      "valid_prediction_rate": 1.0,
+      "scored_rows_for_probability_metrics": 100,
+      "macro_f1": 0.8226,
+      "log_loss": 0.4581,
+      "multiclass_brier_score": 0.2436,
+      "precision_E": 0.7442,
+      "recall_E": 0.9697,
+      "f1_E": 0.8421,
+      "precision_N": 0.9091,
+      "recall_N": 0.6061,
+      "f1_N": 0.7273,
+      "precision_C": 0.8857,
+      "recall_C": 0.9118,
+      "f1_C": 0.8986,
+      "class_metrics": {
+        "E": {
+          "tp": 32,
+          "fp": 11,
+          "fn": 1,
+          "support": 33,
+          "precision": 0.7442,
+          "recall": 0.9697,
+          "f1": 0.8421
+        },
+        "N": {
+          "tp": 20,
+          "fp": 2,
+          "fn": 13,
+          "support": 33,
+          "precision": 0.9091,
+          "recall": 0.6061,
+          "f1": 0.7273
+        },
+        "C": {
+          "tp": 31,
+          "fp": 4,
+          "fn": 3,
+          "support": 34,
+          "precision": 0.8857,
+          "recall": 0.9118,
+          "f1": 0.8986
+        }
+      },
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.7645,
+          "avg_n_probability": 0.1709,
+          "avg_c_probability": 0.0645
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.2576,
+          "avg_n_probability": 0.5918,
+          "avg_c_probability": 0.1506
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0691,
+          "avg_n_probability": 0.1132,
+          "avg_c_probability": 0.8176
+        }
+      }
+    },
+    "sonnet_4.6_dev_de_p1.csv": {
+      "gold_file": "de_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_de_p1.csv",
+      "data_size": 100,
+      "prediction_rows_raw": 100,
+      "prediction_rows_after_dedup": 100,
+      "correct": 86,
+      "accuracy": 0.86,
+      "missing_predictions": 0,
+      "missing_rate": 0.0,
+      "invalid_predictions": 0,
+      "invalid_rate": 0.0,
+      "duplicate_prediction_rows": 0,
+      "extra_prediction_ids": 0,
+      "coverage": 1.0,
+      "valid_prediction_rate": 1.0,
+      "scored_rows_for_probability_metrics": 100,
+      "macro_f1": 0.8571,
+      "log_loss": 0.4638,
+      "multiclass_brier_score": 0.2399,
+      "precision_E": 0.8378,
+      "recall_E": 0.9394,
+      "f1_E": 0.8857,
+      "precision_N": 0.8571,
+      "recall_N": 0.7273,
+      "f1_N": 0.7869,
+      "precision_C": 0.8857,
+      "recall_C": 0.9118,
+      "f1_C": 0.8986,
+      "class_metrics": {
+        "E": {
+          "tp": 31,
+          "fp": 6,
+          "fn": 2,
+          "support": 33,
+          "precision": 0.8378,
+          "recall": 0.9394,
+          "f1": 0.8857
+        },
+        "N": {
+          "tp": 24,
+          "fp": 4,
+          "fn": 9,
+          "support": 33,
+          "precision": 0.8571,
+          "recall": 0.7273,
+          "f1": 0.7869
+        },
+        "C": {
+          "tp": 31,
+          "fp": 4,
+          "fn": 3,
+          "support": 34,
+          "precision": 0.8857,
+          "recall": 0.9118,
+          "f1": 0.8986
+        }
+      },
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.7858,
+          "avg_n_probability": 0.1761,
+          "avg_c_probability": 0.0382
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.163,
+          "avg_n_probability": 0.673,
+          "avg_c_probability": 0.1639
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0706,
+          "avg_n_probability": 0.1068,
+          "avg_c_probability": 0.8226
+        }
+      }
+    },
+    "sonnet_4.6_dev_en_p0.csv": {
+      "gold_file": "en_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_en_p0.csv",
+      "data_size": 100,
+      "prediction_rows_raw": 100,
+      "prediction_rows_after_dedup": 100,
+      "correct": 68,
+      "accuracy": 0.68,
+      "missing_predictions": 0,
+      "missing_rate": 0.0,
+      "invalid_predictions": 0,
+      "invalid_rate": 0.0,
+      "duplicate_prediction_rows": 0,
+      "extra_prediction_ids": 0,
+      "coverage": 1.0,
+      "valid_prediction_rate": 1.0,
+      "scored_rows_for_probability_metrics": 100,
+      "macro_f1": 0.5854,
+      "log_loss": 1.0622,
+      "multiclass_brier_score": 0.5839,
+      "precision_E": 0.541,
+      "recall_E": 1.0,
+      "f1_E": 0.7021,
+      "precision_N": 1.0,
+      "recall_N": 0.0588,
+      "f1_N": 0.1111,
+      "precision_C": 0.8919,
+      "recall_C": 1.0,
+      "f1_C": 0.9429,
+      "class_metrics": {
+        "E": {
+          "tp": 33,
+          "fp": 28,
+          "fn": 0,
+          "support": 33,
+          "precision": 0.541,
+          "recall": 1.0,
+          "f1": 0.7021
+        },
+        "N": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 32,
+          "support": 34,
+          "precision": 1.0,
+          "recall": 0.0588,
+          "f1": 0.1111
+        },
+        "C": {
+          "tp": 33,
+          "fp": 4,
+          "fn": 0,
+          "support": 33,
+          "precision": 0.8919,
+          "recall": 1.0,
+          "f1": 0.9429
+        }
+      },
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.9485,
+          "avg_n_probability": 0.0403,
+          "avg_c_probability": 0.0112
+        },
+        "N": {
+          "count": 34,
+          "avg_e_probability": 0.7847,
+          "avg_n_probability": 0.0924,
+          "avg_c_probability": 0.1229
+        },
+        "C": {
+          "count": 33,
+          "avg_e_probability": 0.0203,
+          "avg_n_probability": 0.0306,
+          "avg_c_probability": 0.9491
+        }
+      }
+    },
+    "sonnet_4.6_dev_en_p1.csv": {
+      "gold_file": "en_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_en_p1.csv",
+      "data_size": 100,
+      "prediction_rows_raw": 100,
+      "prediction_rows_after_dedup": 100,
+      "correct": 70,
+      "accuracy": 0.7,
+      "missing_predictions": 0,
+      "missing_rate": 0.0,
+      "invalid_predictions": 0,
+      "invalid_rate": 0.0,
+      "duplicate_prediction_rows": 0,
+      "extra_prediction_ids": 0,
+      "coverage": 1.0,
+      "valid_prediction_rate": 1.0,
+      "scored_rows_for_probability_metrics": 100,
+      "macro_f1": 0.6236,
+      "log_loss": 0.8637,
+      "multiclass_brier_score": 0.5198,
+      "precision_E": 0.5593,
+      "recall_E": 1.0,
+      "f1_E": 0.7174,
+      "precision_N": 1.0,
+      "recall_N": 0.1176,
+      "f1_N": 0.2105,
+      "precision_C": 0.8919,
+      "recall_C": 1.0,
+      "f1_C": 0.9429,
+      "class_metrics": {
+        "E": {
+          "tp": 33,
+          "fp": 26,
+          "fn": 0,
+          "support": 33,
+          "precision": 0.5593,
+          "recall": 1.0,
+          "f1": 0.7174
+        },
+        "N": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 30,
+          "support": 34,
+          "precision": 1.0,
+          "recall": 0.1176,
+          "f1": 0.2105
+        },
+        "C": {
+          "tp": 33,
+          "fp": 4,
+          "fn": 0,
+          "support": 33,
+          "precision": 0.8919,
+          "recall": 1.0,
+          "f1": 0.9429
+        }
+      },
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.8985,
+          "avg_n_probability": 0.0806,
+          "avg_c_probability": 0.0209
+        },
+        "N": {
+          "count": 34,
+          "avg_e_probability": 0.7235,
+          "avg_n_probability": 0.1465,
+          "avg_c_probability": 0.13
+        },
+        "C": {
+          "count": 33,
+          "avg_e_probability": 0.05,
+          "avg_n_probability": 0.05,
+          "avg_c_probability": 0.9
+        }
+      }
+    },
+    "sonnet_4.6_dev_fr_p0.csv": {
+      "gold_file": "fr_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_fr_p0.csv",
+      "data_size": 100,
+      "prediction_rows_raw": 100,
+      "prediction_rows_after_dedup": 100,
+      "correct": 88,
+      "accuracy": 0.88,
+      "missing_predictions": 0,
+      "missing_rate": 0.0,
+      "invalid_predictions": 0,
+      "invalid_rate": 0.0,
+      "duplicate_prediction_rows": 0,
+      "extra_prediction_ids": 0,
+      "coverage": 1.0,
+      "valid_prediction_rate": 1.0,
+      "scored_rows_for_probability_metrics": 100,
+      "macro_f1": 0.8763,
+      "log_loss": 0.4078,
+      "multiclass_brier_score": 0.2075,
+      "precision_E": 0.8462,
+      "recall_E": 1.0,
+      "f1_E": 0.9167,
+      "precision_N": 0.9231,
+      "recall_N": 0.7273,
+      "f1_N": 0.8136,
+      "precision_C": 0.8857,
+      "recall_C": 0.9118,
+      "f1_C": 0.8986,
+      "class_metrics": {
+        "E": {
+          "tp": 33,
+          "fp": 6,
+          "fn": 0,
+          "support": 33,
+          "precision": 0.8462,
+          "recall": 1.0,
+          "f1": 0.9167
+        },
+        "N": {
+          "tp": 24,
+          "fp": 2,
+          "fn": 9,
+          "support": 33,
+          "precision": 0.9231,
+          "recall": 0.7273,
+          "f1": 0.8136
+        },
+        "C": {
+          "tp": 31,
+          "fp": 4,
+          "fn": 3,
+          "support": 34,
+          "precision": 0.8857,
+          "recall": 0.9118,
+          "f1": 0.8986
+        }
+      },
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.8324,
+          "avg_n_probability": 0.1309,
+          "avg_c_probability": 0.0367
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.163,
+          "avg_n_probability": 0.673,
+          "avg_c_probability": 0.1639
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0706,
+          "avg_n_probability": 0.1068,
+          "avg_c_probability": 0.8226
+        }
+      }
+    },
+    "sonnet_4.6_dev_fr_p1.csv": {
+      "gold_file": "fr_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_fr_p1.csv",
+      "data_size": 100,
+      "prediction_rows_raw": 100,
+      "prediction_rows_after_dedup": 100,
+      "correct": 88,
+      "accuracy": 0.88,
+      "missing_predictions": 0,
+      "missing_rate": 0.0,
+      "invalid_predictions": 0,
+      "invalid_rate": 0.0,
+      "duplicate_prediction_rows": 0,
+      "extra_prediction_ids": 0,
+      "coverage": 1.0,
+      "valid_prediction_rate": 1.0,
+      "scored_rows_for_probability_metrics": 100,
+      "macro_f1": 0.8763,
+      "log_loss": 0.4078,
+      "multiclass_brier_score": 0.2075,
+      "precision_E": 0.8462,
+      "recall_E": 1.0,
+      "f1_E": 0.9167,
+      "precision_N": 0.9231,
+      "recall_N": 0.7273,
+      "f1_N": 0.8136,
+      "precision_C": 0.8857,
+      "recall_C": 0.9118,
+      "f1_C": 0.8986,
+      "class_metrics": {
+        "E": {
+          "tp": 33,
+          "fp": 6,
+          "fn": 0,
+          "support": 33,
+          "precision": 0.8462,
+          "recall": 1.0,
+          "f1": 0.9167
+        },
+        "N": {
+          "tp": 24,
+          "fp": 2,
+          "fn": 9,
+          "support": 33,
+          "precision": 0.9231,
+          "recall": 0.7273,
+          "f1": 0.8136
+        },
+        "C": {
+          "tp": 31,
+          "fp": 4,
+          "fn": 3,
+          "support": 34,
+          "precision": 0.8857,
+          "recall": 0.9118,
+          "f1": 0.8986
+        }
+      },
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.8324,
+          "avg_n_probability": 0.1309,
+          "avg_c_probability": 0.0367
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.163,
+          "avg_n_probability": 0.673,
+          "avg_c_probability": 0.1639
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0706,
+          "avg_n_probability": 0.1068,
+          "avg_c_probability": 0.8226
+        }
+      }
+    },
+    "sonnet_4.6_dev_hi_p0.csv": {
+      "gold_file": "hi_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_hi_p0.csv",
+      "data_size": 100,
+      "prediction_rows_raw": 100,
+      "prediction_rows_after_dedup": 100,
+      "correct": 86,
+      "accuracy": 0.86,
+      "missing_predictions": 0,
+      "missing_rate": 0.0,
+      "invalid_predictions": 0,
+      "invalid_rate": 0.0,
+      "duplicate_prediction_rows": 0,
+      "extra_prediction_ids": 0,
+      "coverage": 1.0,
+      "valid_prediction_rate": 1.0,
+      "scored_rows_for_probability_metrics": 100,
+      "macro_f1": 0.8571,
+      "log_loss": 0.4629,
+      "multiclass_brier_score": 0.2395,
+      "precision_E": 0.8378,
+      "recall_E": 0.9394,
+      "f1_E": 0.8857,
+      "precision_N": 0.8571,
+      "recall_N": 0.7273,
+      "f1_N": 0.7869,
+      "precision_C": 0.8857,
+      "recall_C": 0.9118,
+      "f1_C": 0.8986,
+      "class_metrics": {
+        "E": {
+          "tp": 31,
+          "fp": 6,
+          "fn": 2,
+          "support": 33,
+          "precision": 0.8378,
+          "recall": 0.9394,
+          "f1": 0.8857
+        },
+        "N": {
+          "tp": 24,
+          "fp": 4,
+          "fn": 9,
+          "support": 33,
+          "precision": 0.8571,
+          "recall": 0.7273,
+          "f1": 0.7869
+        },
+        "C": {
+          "tp": 31,
+          "fp": 4,
+          "fn": 3,
+          "support": 34,
+          "precision": 0.8857,
+          "recall": 0.9118,
+          "f1": 0.8986
+        }
+      },
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.7879,
+          "avg_n_probability": 0.1742,
+          "avg_c_probability": 0.0379
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.163,
+          "avg_n_probability": 0.673,
+          "avg_c_probability": 0.1639
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0706,
+          "avg_n_probability": 0.1068,
+          "avg_c_probability": 0.8226
+        }
+      }
+    },
+    "sonnet_4.6_dev_hi_p1.csv": {
+      "gold_file": "hi_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_hi_p1.csv",
+      "data_size": 100,
+      "prediction_rows_raw": 100,
+      "prediction_rows_after_dedup": 100,
+      "correct": 87,
+      "accuracy": 0.87,
+      "missing_predictions": 0,
+      "missing_rate": 0.0,
+      "invalid_predictions": 0,
+      "invalid_rate": 0.0,
+      "duplicate_prediction_rows": 0,
+      "extra_prediction_ids": 0,
+      "coverage": 1.0,
+      "valid_prediction_rate": 1.0,
+      "scored_rows_for_probability_metrics": 100,
+      "macro_f1": 0.8667,
+      "log_loss": 0.4349,
+      "multiclass_brier_score": 0.2232,
+      "precision_E": 0.8421,
+      "recall_E": 0.9697,
+      "f1_E": 0.9014,
+      "precision_N": 0.8889,
+      "recall_N": 0.7273,
+      "f1_N": 0.8,
+      "precision_C": 0.8857,
+      "recall_C": 0.9118,
+      "f1_C": 0.8986,
+      "class_metrics": {
+        "E": {
+          "tp": 32,
+          "fp": 6,
+          "fn": 1,
+          "support": 33,
+          "precision": 0.8421,
+          "recall": 0.9697,
+          "f1": 0.9014
+        },
+        "N": {
+          "tp": 24,
+          "fp": 3,
+          "fn": 9,
+          "support": 33,
+          "precision": 0.8889,
+          "recall": 0.7273,
+          "f1": 0.8
+        },
+        "C": {
+          "tp": 31,
+          "fp": 4,
+          "fn": 3,
+          "support": 34,
+          "precision": 0.8857,
+          "recall": 0.9118,
+          "f1": 0.8986
+        }
+      },
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.8112,
+          "avg_n_probability": 0.1515,
+          "avg_c_probability": 0.0373
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.163,
+          "avg_n_probability": 0.673,
+          "avg_c_probability": 0.1639
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0706,
+          "avg_n_probability": 0.1068,
+          "avg_c_probability": 0.8226
+        }
+      }
+    },
+    "sonnet_4.6_dev_ru_p0.csv": {
+      "gold_file": "ru_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_ru_p0.csv",
+      "data_size": 100,
+      "prediction_rows_raw": 100,
+      "prediction_rows_after_dedup": 100,
+      "correct": 88,
+      "accuracy": 0.88,
+      "missing_predictions": 0,
+      "missing_rate": 0.0,
+      "invalid_predictions": 0,
+      "invalid_rate": 0.0,
+      "duplicate_prediction_rows": 0,
+      "extra_prediction_ids": 0,
+      "coverage": 1.0,
+      "valid_prediction_rate": 1.0,
+      "scored_rows_for_probability_metrics": 100,
+      "macro_f1": 0.8763,
+      "log_loss": 0.4078,
+      "multiclass_brier_score": 0.2075,
+      "precision_E": 0.8462,
+      "recall_E": 1.0,
+      "f1_E": 0.9167,
+      "precision_N": 0.9231,
+      "recall_N": 0.7273,
+      "f1_N": 0.8136,
+      "precision_C": 0.8857,
+      "recall_C": 0.9118,
+      "f1_C": 0.8986,
+      "class_metrics": {
+        "E": {
+          "tp": 33,
+          "fp": 6,
+          "fn": 0,
+          "support": 33,
+          "precision": 0.8462,
+          "recall": 1.0,
+          "f1": 0.9167
+        },
+        "N": {
+          "tp": 24,
+          "fp": 2,
+          "fn": 9,
+          "support": 33,
+          "precision": 0.9231,
+          "recall": 0.7273,
+          "f1": 0.8136
+        },
+        "C": {
+          "tp": 31,
+          "fp": 4,
+          "fn": 3,
+          "support": 34,
+          "precision": 0.8857,
+          "recall": 0.9118,
+          "f1": 0.8986
+        }
+      },
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.8324,
+          "avg_n_probability": 0.1309,
+          "avg_c_probability": 0.0367
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.163,
+          "avg_n_probability": 0.673,
+          "avg_c_probability": 0.1639
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0706,
+          "avg_n_probability": 0.1068,
+          "avg_c_probability": 0.8226
+        }
+      }
+    },
+    "sonnet_4.6_dev_ru_p1.csv": {
+      "gold_file": "ru_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_ru_p1.csv",
+      "data_size": 100,
+      "prediction_rows_raw": 100,
+      "prediction_rows_after_dedup": 100,
+      "correct": 88,
+      "accuracy": 0.88,
+      "missing_predictions": 0,
+      "missing_rate": 0.0,
+      "invalid_predictions": 0,
+      "invalid_rate": 0.0,
+      "duplicate_prediction_rows": 0,
+      "extra_prediction_ids": 0,
+      "coverage": 1.0,
+      "valid_prediction_rate": 1.0,
+      "scored_rows_for_probability_metrics": 100,
+      "macro_f1": 0.8763,
+      "log_loss": 0.4085,
+      "multiclass_brier_score": 0.2077,
+      "precision_E": 0.8462,
+      "recall_E": 1.0,
+      "f1_E": 0.9167,
+      "precision_N": 0.9231,
+      "recall_N": 0.7273,
+      "f1_N": 0.8136,
+      "precision_C": 0.8857,
+      "recall_C": 0.9118,
+      "f1_C": 0.8986,
+      "class_metrics": {
+        "E": {
+          "tp": 33,
+          "fp": 6,
+          "fn": 0,
+          "support": 33,
+          "precision": 0.8462,
+          "recall": 1.0,
+          "f1": 0.9167
+        },
+        "N": {
+          "tp": 24,
+          "fp": 2,
+          "fn": 9,
+          "support": 33,
+          "precision": 0.9231,
+          "recall": 0.7273,
+          "f1": 0.8136
+        },
+        "C": {
+          "tp": 31,
+          "fp": 4,
+          "fn": 3,
+          "support": 34,
+          "precision": 0.8857,
+          "recall": 0.9118,
+          "f1": 0.8986
+        }
+      },
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.8306,
+          "avg_n_probability": 0.1318,
+          "avg_c_probability": 0.0376
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.163,
+          "avg_n_probability": 0.673,
+          "avg_c_probability": 0.1639
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0706,
+          "avg_n_probability": 0.1068,
+          "avg_c_probability": 0.8226
+        }
+      }
+    },
+    "sonnet_4.6_dev_vi_p0.csv": {
+      "gold_file": "vi_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_vi_p0.csv",
+      "data_size": 100,
+      "prediction_rows_raw": 100,
+      "prediction_rows_after_dedup": 100,
+      "correct": 88,
+      "accuracy": 0.88,
+      "missing_predictions": 0,
+      "missing_rate": 0.0,
+      "invalid_predictions": 0,
+      "invalid_rate": 0.0,
+      "duplicate_prediction_rows": 0,
+      "extra_prediction_ids": 0,
+      "coverage": 1.0,
+      "valid_prediction_rate": 1.0,
+      "scored_rows_for_probability_metrics": 100,
+      "macro_f1": 0.8763,
+      "log_loss": 0.4078,
+      "multiclass_brier_score": 0.2075,
+      "precision_E": 0.8462,
+      "recall_E": 1.0,
+      "f1_E": 0.9167,
+      "precision_N": 0.9231,
+      "recall_N": 0.7273,
+      "f1_N": 0.8136,
+      "precision_C": 0.8857,
+      "recall_C": 0.9118,
+      "f1_C": 0.8986,
+      "class_metrics": {
+        "E": {
+          "tp": 33,
+          "fp": 6,
+          "fn": 0,
+          "support": 33,
+          "precision": 0.8462,
+          "recall": 1.0,
+          "f1": 0.9167
+        },
+        "N": {
+          "tp": 24,
+          "fp": 2,
+          "fn": 9,
+          "support": 33,
+          "precision": 0.9231,
+          "recall": 0.7273,
+          "f1": 0.8136
+        },
+        "C": {
+          "tp": 31,
+          "fp": 4,
+          "fn": 3,
+          "support": 34,
+          "precision": 0.8857,
+          "recall": 0.9118,
+          "f1": 0.8986
+        }
+      },
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.8324,
+          "avg_n_probability": 0.1309,
+          "avg_c_probability": 0.0367
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.163,
+          "avg_n_probability": 0.673,
+          "avg_c_probability": 0.1639
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0706,
+          "avg_n_probability": 0.1068,
+          "avg_c_probability": 0.8226
+        }
+      }
+    },
+    "sonnet_4.6_dev_vi_p1.csv": {
+      "gold_file": "vi_sample100_full.csv",
+      "pred_file": "sonnet_4.6_dev_vi_p1.csv",
+      "data_size": 100,
+      "prediction_rows_raw": 100,
+      "prediction_rows_after_dedup": 100,
+      "correct": 88,
+      "accuracy": 0.88,
+      "missing_predictions": 0,
+      "missing_rate": 0.0,
+      "invalid_predictions": 0,
+      "invalid_rate": 0.0,
+      "duplicate_prediction_rows": 0,
+      "extra_prediction_ids": 0,
+      "coverage": 1.0,
+      "valid_prediction_rate": 1.0,
+      "scored_rows_for_probability_metrics": 100,
+      "macro_f1": 0.8763,
+      "log_loss": 0.4078,
+      "multiclass_brier_score": 0.2075,
+      "precision_E": 0.8462,
+      "recall_E": 1.0,
+      "f1_E": 0.9167,
+      "precision_N": 0.9231,
+      "recall_N": 0.7273,
+      "f1_N": 0.8136,
+      "precision_C": 0.8857,
+      "recall_C": 0.9118,
+      "f1_C": 0.8986,
+      "class_metrics": {
+        "E": {
+          "tp": 33,
+          "fp": 6,
+          "fn": 0,
+          "support": 33,
+          "precision": 0.8462,
+          "recall": 1.0,
+          "f1": 0.9167
+        },
+        "N": {
+          "tp": 24,
+          "fp": 2,
+          "fn": 9,
+          "support": 33,
+          "precision": 0.9231,
+          "recall": 0.7273,
+          "f1": 0.8136
+        },
+        "C": {
+          "tp": 31,
+          "fp": 4,
+          "fn": 3,
+          "support": 34,
+          "precision": 0.8857,
+          "recall": 0.9118,
+          "f1": 0.8986
+        }
+      },
+      "avg_probabilities_by_gold_label": {
+        "E": {
+          "count": 33,
+          "avg_e_probability": 0.8324,
+          "avg_n_probability": 0.1309,
+          "avg_c_probability": 0.0367
+        },
+        "N": {
+          "count": 33,
+          "avg_e_probability": 0.163,
+          "avg_n_probability": 0.673,
+          "avg_c_probability": 0.1639
+        },
+        "C": {
+          "count": 34,
+          "avg_e_probability": 0.0706,
+          "avg_n_probability": 0.1068,
+          "avg_c_probability": 0.8226
+        }
+      }
+    }
+  }
+}

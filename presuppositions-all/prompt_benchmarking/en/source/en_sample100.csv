@@ -1,0 +1,101 @@
+item_id,premise,hypothesis,gold_label
+ps_en_000024,"Is it true that if Evelyn lands in New York, her best friend will greet her at the airport?",Evelyn has a best friend.,E
+ps_en_000108,"Is it true that if Paul travels to London, his best friend will meet him at the train station?",Paul has a best friend.,E
+ps_en_000215,"Sam believes that if Alexander's team wins the championship, their fans will celebrate in the streets.",Alexander has fans.,E
+ps_en_000254,"It's not the case that if Caleb agrees to attend the conference, his colleague will drive him to the venue.",Caleb has a colleague.,E
+ps_en_000416,"Is it true that if Nathan's flight arrives on time, his best friend will be waiting for him at the airport?",Nathan has a best friend.,E
+ps_en_000509,"If Jacob arrives on time, his boss will give him a promotion.",Jacob has a boss.,E
+ps_en_000519,"Sam believes that if Barbara finishes her work on time, her colleague will give her a ride home.",Barbara has a colleague.,E
+ps_en_000605,"If Harper's flight arrives on time, his brother will be waiting for him at the airport.",Harper has a brother.,E
+ps_en_000666,"It's not the case that if Noah completes his work on time, his colleague will cover his shift at the hospital.",Noah has a colleague.,E
+ps_en_000685,"If Lisa agrees to attend the conference, her colleague will accompany her for the presentation.",Lisa has a colleague.,E
+ps_en_000740,"Is it true that if Nancy arrives early, his brother will meet him at the train station?",Nancy has a brother.,E
+ps_en_000790,"It's not the case that if Jessica completes her work early, her colleague will cover her shift.",Jessica has a colleague.,E
+ps_en_000972,"Is it true that if Matt is a scuba diver, he'll bring his wetsuit?",Matt has a wetsuit.,E
+ps_en_000983,"Sam believes that if Theodore is a ski teacher, he'll bring his skis.",Theodore has skis.,E
+ps_en_001013,"If Kenneth is a factory worker, he'll wear his factory uniform.",Kenneth has a factory uniform.,E
+ps_en_001035,"Sam believes that if Gary is a musician, he'll play his guitar.",Gary has a guitar.,E
+ps_en_001042,"It's not the case that if Roger is a roofer, he'll secure roofing shingles with his roofing nailer.",Roger has a roofing nailer.,E
+ps_en_001188,"Is it true that if Aliya is a nurse, she'll wear her scrub to work?",Aliya has scrubs.,E
+ps_en_001229,"If Abigail finishes her presentation early, she'll never clean a bathtub again.",Abigail has cleaned a bathtub before.,E
+ps_en_001388,"Is it true that if Liam travels to Paris, he'll never issue a statement against the politician again?",Liam has issued a statement against the politician before.,E
+ps_en_001407,"Sam believes that if Mary takes the train to the city, she'll never lend a book to Dorothy again.",Mary has lent a book to Dorothy before.,E
+ps_en_001487,"Sam believes that if Mia's flight arrives on time, she'll never run with a team member at the university again.",Mia has run with a team member at the university before.,E
+ps_en_001588,"Is it true that if David arrives early, he'll never anticipate a result from the team again?",David has anticipated a result from the team before.,E
+ps_en_001621,"If Abigail passes the exam, she'll never confide in a friend of Sania again.",Abigail has confided in a friend of Sania before.,E
+ps_en_001646,"It's not the case that if Ryan flight is delayed, he'll never delegate a task to the workers again.",Ryan has delegated a task to the workers before.,E
+ps_en_001780,"Is it true that if Anthony drives to the concert, he'll never join a club again?",Anthony has joined a club before.,E
+ps_en_001792,"Is it true that if Margaret arrives early, she'll never lead a social movement again?",Margaret has led a social movement before.,E
+ps_en_001836,"Is it true that if Karen finishes her work early, she'll never participate in a workshop again?",Karen has participated in a workshop before.,E
+ps_en_001981,"If Barbara finishes her work on time, she'll never solve an equation again.",Barbara has solved an equation before.,E
+ps_en_002022,"It's not the case that if Isaac arrives on time, he'll never survey a landscape to plan a new development again.",Isaac has surveyed a landscape to plan a new development before.,E
+ps_en_002078,"It's not the case that if Jacob completes the project on time, he'll never vocalize a deeply held belief again.",Jacob has vocalized a deeply held belief before.,E
+ps_en_002104,"Is it true that if Noah graduates from college, he'll never yield a significant breakthrough again?",Noah has yielded a significant breakthrough before.,E
+ps_en_002200,"If Joel inspected a salvage vehicle, he'll never inspect a salvage vehicle again.",Joel inspected a salvage vehicle.,N
+ps_en_002308,"It's not the case that if Melissa joined a club, she'll never join a club again.",Melissa joined a club.,N
+ps_en_002328,"If the senator blamed a mistake by Julia, he'll never blame a mistake by Julia again.",The senator blamed a mistake by Julia.,N
+ps_en_002356,"Is it true that if Ted argued with a colleague at the office, he'll never argue with a colleague at the office again?",Ted argued with a colleague at the office.,N
+ps_en_002372,"It's not the case that if the guy refurbished a piece of furniture, he'll never refurbish a piece of furniture again.",The guy refurbished a piece of furniture.,N
+ps_en_002387,"Sam believes that if Curtis issued a statement against the politician, he'll never issue a statement against the politician again.",Curtis issued a statement against the politician.,N
+ps_en_002575,"Is it true that if the boy has a lost sister, he'll report his lost sister missing?",The boy has a lost sister.,N
+ps_en_002616,"Sam believes that if Homer has a friendly stepsister, he'll sing a song for his friendly stepsister.",Homer has a friendly stepsister.,N
+ps_en_002636,"It's not the case that if Bob has a dutiful stepdaughter, he'll rent a house for his dutiful stepdaughter.",Bob has a dutiful stepdaughter.,N
+ps_en_002644,"It's not the case that if the cashier has a kind sister, he'll purchase a car for his kind sister.",The cashier has a kind sister.,N
+ps_en_002751,"It's not the case that if the boss has a bright best friend, he'll evaluate his bright best friend's performance.",The boss has a bright best friend.,N
+ps_en_002769,"If Nadia has an intellectual nephew, she'll store his intellectual nephew's stuff.",Nadia has an intellectual nephew.,N
+ps_en_002823,"It's not the case that if the teacher acknowledges this contribution by Meg, she'll never acknowledge a contribution by Meg again.",The teacher has acknowledged a contribution by Meg before.,N
+ps_en_002938,"It's not the case that if Alice memorizes this song by LMFAO, she'll never memorize a song by LMFAO again.",Alice has memorized a song by LMFAO before.,N
+ps_en_003005,"It's not the case that if Nadia refurbishes this piece of furniture, she'll never refurbish a piece of furniture again.",Nadia has refurbished a piece of furniture before.,N
+ps_en_003035,"If Benjamin gives this gift to his mom, he'll never give a gift to his mom again.",Benjamin has given a gift to his mom before.,N
+ps_en_003046,"Sam believes that if Martin hides this treasure in the dungeon, he'll never hide a treasure in the dungeon again.",Martin has hided a treasure in the dungeon before.,N
+ps_en_003276,"Is it true that if Alan has an enthusiastic sister, he looks at his sister with love?",Alan has a sister.,N
+ps_en_003418,"If Nadia ever started reading a novel, she didn't start reading Mrs Dalloway again.",Nadia has started reading Mrs Dalloway.,N
+ps_en_003487,"Is it true that if the doctor ever ate hawaiian fruits, he didn't eat papaya again?",The doctor has eaten papaya.,N
+ps_en_003516,"If the actor ever listened to a symphony, he didn't listen to Beethoven's 5th again.",The actor has listened to Beethoven's 5th.,N
+ps_en_003612,"It's not the case that if Martin ever ate a chocolate cake, he didn't eat a brownie again.",Martin has eaten a brownie.,N
+ps_en_003745,"If Sara has luxurious bags, she will carry her Hermes bag during the hiking trip.",Sara has a Hermes bag.,N
+ps_en_003789,"Is it true that if Sara has luxurious bags, she will carry her Hermes bag during the hiking trip?",Sara has a Hermes bag.,N
+ps_en_004015,"If William has gardening tools, he will use his watering can to water his plants.",William has a watering can.,N
+ps_en_004096,"Sam believes that if Sandy has a pen, I wonder how smoothly Sandy's pen writes.",Sandy has a pen.,N
+ps_en_004101,"Is it true that if Angela has a quilt, I wonder how warm Angela's quilt feels?",Angela has a quilt.,N
+ps_en_004478,"If Lisa simplified a complicated task, she'll never simplify a complicated task again.",Lisa simplified a complicated task again.,C
+ps_en_004610,"If Mary and Bob have a wise stepson, they'll travel with their wise stepson.",Mary and Bob did not travel with their wise stepson.,C
+ps_en_004732,"If Michelle has an intellectual son-in-law, she'll spoil her intellectual son-in-law.",Michelle did not spoil her intellectual son-in-law.,C
+ps_en_004778,"If the actor argues with this colleague at the office, she'll never argue with a colleague at the office again.",The actor argued with this colleague at the office again.,C
+ps_en_004858,"If Dan solves with this problem, he'll never solve a problem again.",Dan solved this problem again.,C
+ps_en_004878,"If the teacher depicts this gloomy scene in her painting, she'll never depict a gloomy scene in her painting again.",The teacher depicted this gloomy scene in her painting again.,C
+ps_en_004939,"If the teacher agrees with this decision by his student, he'll never agree with a decision by his student again.",The teacher agreed with this decision by his student again.,C
+ps_en_004997,"If Mina revises this contract, she'll never revise a contract again.",Mina revised this contract again.,C
+ps_en_005012,"If Walter has a chatty daughter-in-law, he lives with his daughter-in-law.",Walter did not live with his chatty daughter-in-law.,C
+ps_en_005054,"If the waiter has a loving granddaughter, he moves in with his granddaughter.",The waiter did not move in with his loving granddaughter.,C
+ps_en_005117,"If Wendy has a kind roommate, she expresses her heartfelt gratitude to her roommate.",Wendy did not express her heartfelt gratitude to her kind roommate.,C
+ps_en_005119,"If Angela has a kind daughter-in-law, she criticizes her daughter-in-law's behavior.",Angela did not criticize her kind daughter-in-law's behavior.,C
+ps_en_005145,"If Alan has a curious nephew, he fills his nephew's cup quickly.",Alan did not fill his curious nephew's cup quickly.,C
+ps_en_005222,"If Benjamin has an empathetic son, he trusts his son's judgement.",Benjamin did not trust his empathetic son's judgment.,C
+ps_en_005360,"If the waiter ever studied a subject in college, he didn't study Philosophy again.",The waiter studied Philosophy again.,C
+ps_en_005411,"If Melissa ever read a manuscript, she didn't read the Dead Sea Scrolls again.",Melissa read the Dead Sea Scrolls again.,C
+ps_en_005549,"If Amanda has musical instruments, she will play her piano at the reunion event.",Amanda did not play her piano at the reunion event.,C
+ps_en_005655,"If the man has classes, he will attend his mathematics class.",The man did not attend his mathematics class.,C
+ps_en_005703,"If Margaret has travel gear, she will bring her travel pillow.",Margaret did not bring her travel pillow.,C
+ps_en_005714,"If Dennis has hair styling tools, he will use his hair dryer to style his hair.",Dennis did not use his hair dryer to style his hair.,C
+ps_en_005797,"If Bill has a lantern, I wonder how softly Bill's lantern flickers.",Bill does not have a lantern.,C
+ps_en_005818,"If Gary has a suitcase, I wonder how big Gary's suitcase is.",Gary does not have a suitcase.,C
+ps_en_005891,"If Tiffany has a cloak, I wonder how warm Tiffany's cloak feels.",Tiffany does not have a cloak.,C
+ps_en_005932,"If Victoria has lilacs in her garden, I wonder how beautifully Victoria's lilacs bloom.",Victoria does not have lilacs in her garden.,C
+ps_en_005960,"If Liam has a drum, I wonder how loudly Liam's drum beats.",Liam does not have a drum.,C
+ps_en_006057,"If Lisa's car breaks down, her brother will come to pick her up on the side of the road.",Lisa does not have a brother.,C
+ps_en_006145,"If Isabella agrees to go shopping, her best friend will accompany her to the mall.",Isabella does not have a best friend.,C
+ps_en_006149,"If Ashley finishes her work on time, her colleague will drive her home after the meeting.",Ashley does not have a colleague.,C
+ps_en_006164,"If Victoria finishes work early, his friend will join him for dinner.",Victoria does not have a friend.,C
+ps_en_006170,"If Isaac arrives on time, his best friend will be waiting for him at the train station.",Isaac does not have a best friend.,C
+ps_en_006358,"If Steven misses the bus, he'll never moderate a debate again.",Steven has not moderated a debate before.,C
+ps_en_006460,"Is it true that if the merchant reported on an issue, he'll never report on an issue again?",The merchant did not report on an issue.,N
+ps_en_006464,"Sam believes that if Bruce developed a plan for the company, he'll never develop a plan for the company again.",Bruce did not develope a plan for the company.,N
+ps_en_006556,"If Wendy has a responsible grandson, she'll pay her responsible grandson's bills diligently.",Wendy does not pay her responsible grandson's bills diligently.,C
+ps_en_006565,"Is it true that if Marley rewards this good behavior by Nava, he'll never reward a good behavior by Nava again?",Marley will reward a good behavior by Nava.,N
+ps_en_006700,"Is it true that if the queen ever watched an adventure, she didn't watch Indiana Jones again?","If the queen ever watched an adventure, she has watched Indiana Jones.",E
+ps_en_006744,"Sam believes that if Kristin has plants, he'll water his Spider plant.",Kristin has plants.,N
+ps_en_006854,"Sam believes that if Kevin is a textile artist, he'll dye his fabrics.",Kevin does not have fabrics.,C
+ps_en_006877,"If Ryan passes his driving test, he'll never run a marathon in the US again.",Ryan ran a marathon in the US again.,N
+ps_en_006928,"It's not the case that if Scarlett finishes her work early, her husband will take her out for dinner.",Scarlett has a sister-in-law.,N
+ps_en_006929,"Sam believes that if Scarlett finishes her work early, her husband will take her out for dinner.",Scarlett has a sister-in-law.,N
