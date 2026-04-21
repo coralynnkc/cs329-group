@@ -1,6 +1,6 @@
 {
   "english_master_file": "en_master.csv",
-  "english_master_path": "/Users/claireburkhardt/Documents/cs329-group/pronoun_resolution/en_master.csv",
+  "english_master_path": "/Users/claireburkhardt/Documents/cs329-group/pronoun_resolution/mlm_african/data/en_master.csv",
   "seed": 329,
   "split_sizes": {
     "fewshot_bank": 8,

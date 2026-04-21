@@ -44,7 +44,7 @@ remain fixed.  This isolates batch size as the sole independent variable.
 ### 2.1 Canonical English master file
 
 ```
-pronoun_resolution/en_master.csv
+pronoun_resolution/mlm_african/data/en_master.csv
 ```
 
 - **826 items** total (as of this writing)
@@ -389,7 +389,7 @@ With explicit options:
 
 ```bash
 python pronoun_resolution/en_testing_batch_size/scripts/create_batch_size_subsets.py \
-    --input  pronoun_resolution/en_master.csv \
+    --input  pronoun_resolution/mlm_african/data/en_master.csv \
     --seed   329 \
     --sizes  25 100 250 500
 ```

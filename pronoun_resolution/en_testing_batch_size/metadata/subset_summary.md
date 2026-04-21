@@ -3,7 +3,7 @@
 ## Source Data
 
 - **English master file**: `en_master.csv`
-- **Full path**: `/Users/claireburkhardt/Documents/cs329-group/pronoun_resolution/en_master.csv`
+- **Full path**: `/Users/claireburkhardt/Documents/cs329-group/pronoun_resolution/mlm_african/data/en_master.csv`
 - **Random seed**: 329
 - **Generated**: 2026-04-16T02:09:29.162847Z
 
@@ -56,7 +56,7 @@ after the model run is complete.
 
 ## Assumptions
 
-1. The canonical English master is `pronoun_resolution/en_master.csv`.
+1. The canonical English master is `pronoun_resolution/mlm_african/data/en_master.csv`.
 2. The file uses the schema: `item_num, sentence, option1, option2,
    correct_answer_num, correct_letter, correct_text`.
 3. `item_num` is unique and serves as the stable item identifier.

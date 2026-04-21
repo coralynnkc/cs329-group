@@ -6,7 +6,7 @@ testing experiment (pronoun_resolution/en_testing_batch_size/).
 
 This script:
   1. Auto-detects (or accepts via --input) the canonical English master
-     dataset: pronoun_resolution/en_master.csv
+     dataset: pronoun_resolution/mlm_african/data/en_master.csv
   2. Normalizes the data to the canonical internal schema:
        item_id, row_index, source_file, sentence,
        option_a, option_b, gold_answer,
@@ -49,6 +49,7 @@ import numpy as np
 REPO_ROOT = Path(__file__).resolve().parents[3]
 PRONOUN_DIR = REPO_ROOT / "pronoun_resolution"
 THIS_DIR = Path(__file__).resolve().parents[1]  # en_testing_batch_size/
+AFRICAN_DATA_DIR = PRONOUN_DIR / "mlm_african" / "data"
 
 # Canonical output locations (relative to THIS_DIR, overrideable via --outdir)
 DEFAULT_OUTDIR = THIS_DIR / "data"
@@ -77,14 +78,26 @@ INFERENCE_COLS = ["item_id", "sentence", "option_a", "option_b"]
 
 def find_english_master(pronoun_dir: Path) -> Path:
     """Return the path to the English master CSV, exiting loudly if missing."""
-    candidate = pronoun_dir / "en_master.csv"
+    candidate = AFRICAN_DATA_DIR / "en_master.csv"
     if candidate.exists():
         return candidate
+
+    legacy_candidate = pronoun_dir / "en_master.csv"
+    if legacy_candidate.exists():
+        print(
+            f"[WARNING] Using legacy raw-data location: {legacy_candidate}. "
+            "Move the file into pronoun_resolution/mlm_african/data/ to keep "
+            "the repo layout consistent."
+        )
+        return legacy_candidate
+
     # Fallback: first en_*.csv found
-    matches = sorted(pronoun_dir.glob("en_*.csv"))
+    matches = sorted(AFRICAN_DATA_DIR.glob("en_*.csv"))
+    if not matches:
+        matches = sorted(pronoun_dir.glob("en_*.csv"))
     if not matches:
         sys.exit(
-            f"[ERROR] No English master CSV found in {pronoun_dir}.\n"
+            f"[ERROR] No English master CSV found in {AFRICAN_DATA_DIR}.\n"
             "  Expected: en_master.csv\n"
             "  Pass --input to specify the path explicitly."
         )
@@ -419,7 +432,7 @@ after the model run is complete.
 
 ## Assumptions
 
-1. The canonical English master is `pronoun_resolution/en_master.csv`.
+1. The canonical English master is `pronoun_resolution/mlm_african/data/en_master.csv`.
 2. The file uses the schema: `item_num, sentence, option1, option2,
    correct_answer_num, correct_letter, correct_text`.
 3. `item_num` is unique and serves as the stable item identifier.

@@ -1,8 +1,8 @@
-# MLM Baseline
+# European MLM Baseline
 
 This directory contains the imported multilingual pronoun-resolution baseline copied from `srijon-2.0`.
 
-It is kept as a self-contained subtree because it represents a **different benchmark family** from the main `pronoun_resolution/testing/` workflow.
+It is kept as a self-contained subtree because it represents a **different benchmark family** from the main `pronoun_resolution/mlm_african/` workflow.
 
 ## What this baseline is
 
@@ -22,7 +22,7 @@ This makes it the second multilingual benchmark line in the main project.
 
 ## Why it lives separately
 
-The main `pronoun_resolution/testing/` workflow uses a different benchmark family and different language set:
+The main `pronoun_resolution/mlm_african/` workflow uses a different benchmark family and different language set:
 
 - `en`
 - `am`
@@ -75,7 +75,7 @@ The imported scripts are preserved close to their original assumptions.
 For example, scripts in `scripts/` expect the benchmark tree to live at:
 
 ```text
-mlm_baseline/pronoun_resolution/
+mlm_european/pronoun_resolution/
 ```
 
 That relationship has been kept intact on purpose so the imported infrastructure does not silently break.
@@ -88,3 +88,27 @@ That relationship has been kept intact on purpose so the imported infrastructure
 - [docs/task_inventory.md](docs/task_inventory.md)
 - [docs/assumptions.md](docs/assumptions.md)
 - [docs/split_strategy.md](docs/split_strategy.md)
+
+## Results Snapshot
+
+The compact scored summaries for this subtree live in:
+
+- `pronoun_resolution/results/results_summary_sonnet_4.6.json`
+- `pronoun_resolution/results/results_summary_gpt_5.4.json`
+
+Those summaries cover `20` dev-sample100 runs per model
+(`4` languages × `5` prompts).
+
+From the saved numbers:
+
+- Sonnet 4.6 is strongest on Russian, where the saved runs are `0.95` to `0.97` accuracy.
+- Sonnet 4.6 is also strong on French (`0.88` to `0.91`) and English (`0.89` across prompts), with German somewhat lower (`0.86` to `0.88`).
+- Chat 5.4 is competitive on German (`0.88` to `0.89`) and French (`0.90` to `0.93`), but weaker on English in this benchmark (`0.84` to `0.86`).
+- Chat 5.4 Russian remains strong as well (`0.90` to `0.93`), though below the saved Sonnet Russian scores.
+- Refusal rates are generally negligible in these summaries (`0.00` to `0.01`).
+
+## Current Conclusions
+
+- In this European benchmark family, language differences are larger than prompt differences.
+- Sonnet 4.6 is the strongest overall saved baseline here, especially on Russian.
+- Chat 5.4 remains competitive, particularly on German and French, but is noticeably weaker on English in the current saved runs.

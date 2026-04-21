@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-04-16T02:09:29.162847Z",
   "source_file": "en_master.csv",
-  "source_path": "/Users/claireburkhardt/Documents/cs329-group/pronoun_resolution/en_master.csv",
+  "source_path": "/Users/claireburkhardt/Documents/cs329-group/pronoun_resolution/mlm_african/data/en_master.csv",
   "seed": 329,
   "sizes": [
     25,

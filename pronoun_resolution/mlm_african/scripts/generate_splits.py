@@ -1,9 +1,10 @@
 """
 generate_splits.py
 ==================
-Reproducible split-generation pipeline for pronoun-resolution prompt-testing.
+Reproducible split-generation pipeline for the African-language pronoun-
+resolution benchmark in `pronoun_resolution/mlm_african/`.
 
-Given the English master dataset (en_master.csv), this script:
+Given the English master dataset (`mlm_african/data/en_master.csv`), this script:
   1. Normalizes the data to a canonical internal schema.
   2. Assigns stable item IDs (using the existing item_num when available,
      otherwise a deterministic SHA-256 hash of content).
@@ -22,8 +23,10 @@ Usage
     python generate_splits.py [OPTIONS]
 
     --input             Path to English master CSV (auto-detected if omitted)
-    --outdir            Output directory for split CSVs   [default: splits/]
-    --metadata-dir      Output directory for metadata     [default: metadata/]
+    --outdir            Output directory for English split CSVs
+                        [default: mlm_african/en/source/]
+    --metadata-dir      Output directory for metadata
+                        [default: mlm_african/metadata/]
     --seed              Random seed for reproducibility   [default: 329]
     --dev-size          Number of items in dev split      [default: 100]
     --challenge-size    Number of items in challenge split [default: 50]
@@ -44,8 +47,12 @@ import numpy as np
 # Constants
 # ---------------------------------------------------------------------------
 
-REPO_ROOT = Path(__file__).resolve().parents[3]   # scripts/ → testing/ → pronoun_resolution/ → repo root
+REPO_ROOT = Path(__file__).resolve().parents[3]
 PRONOUN_DIR = REPO_ROOT / "pronoun_resolution"
+AFRICAN_DIR = Path(__file__).resolve().parents[1]
+RAW_DATA_DIR = AFRICAN_DIR / "data"
+LEGACY_RAW_DIR = PRONOUN_DIR
+EN_SOURCE_DIR = AFRICAN_DIR / "en" / "source"
 
 # Schema mapping from en_master.csv column names → internal canonical names
 EN_COLUMN_MAP = {
@@ -70,16 +77,29 @@ MULTILINGUAL_PREFIXES = {
 # Auto-detection
 # ---------------------------------------------------------------------------
 
-def find_english_master(pronoun_dir: Path) -> Path:
+def find_english_master(raw_data_dir: Path) -> Path:
     """Return the path to the English master CSV, raising if not found."""
-    candidate = pronoun_dir / "en_master.csv"
+    candidate = raw_data_dir / "en_master.csv"
     if candidate.exists():
         return candidate
-    # Fallback: search for any file starting with 'en_'
-    matches = list(pronoun_dir.glob("en_*.csv"))
+
+    legacy_candidate = LEGACY_RAW_DIR / "en_master.csv"
+    if legacy_candidate.exists():
+        print(
+            f"[WARNING] Using legacy raw-data location: {legacy_candidate}. "
+            "Move the file into pronoun_resolution/mlm_african/data/ to keep "
+            "the repo layout consistent."
+        )
+        return legacy_candidate
+
+    # Fallback: search for any file starting with 'en_' in the new data dir,
+    # then in the legacy repo root.
+    matches = list(raw_data_dir.glob("en_*.csv"))
+    if not matches:
+        matches = list(LEGACY_RAW_DIR.glob("en_*.csv"))
     if not matches:
         sys.exit(
-            f"[ERROR] Could not find English master CSV in {pronoun_dir}. "
+            f"[ERROR] Could not find English master CSV in {raw_data_dir}. "
             "Pass --input explicitly."
         )
     return sorted(matches)[0]
@@ -463,8 +483,8 @@ def validate_splits(splits: dict[str, pd.DataFrame], total: int) -> None:
 
 def propagate_multilingual(
     splits: dict[str, pd.DataFrame],
-    pronoun_dir: Path,
-    outdir: Path,
+    raw_data_dir: Path,
+    african_dir: Path,
 ) -> dict[str, str]:
     """
     For each aligned multilingual master file, write parallel split CSVs.
@@ -473,7 +493,9 @@ def propagate_multilingual(
     """
     notes = {}
     for lang_code, lang_name in MULTILINGUAL_PREFIXES.items():
-        src = pronoun_dir / f"{lang_code}_master.csv"
+        src = raw_data_dir / f"{lang_code}_master.csv"
+        if not src.exists():
+            src = LEGACY_RAW_DIR / f"{lang_code}_master.csv"
         if not src.exists():
             notes[lang_code] = f"Source file {src.name} not found — skipped."
             continue
@@ -527,12 +549,10 @@ def propagate_multilingual(
             )
 
         for split_name, sdf in splits.items():
-            if split_name == "holdout":
-                # Write holdout for completeness
-                pass
             split_ids = sdf["item_id"].tolist()
             lang_split = lang_df[lang_df["item_id"].isin(split_ids)].copy()
-            out_path = outdir / f"{lang_code}_{split_name}.csv"
+            out_path = african_dir / lang_code / "source" / f"{lang_code}_{split_name}.csv"
+            out_path.parent.mkdir(parents=True, exist_ok=True)
             lang_split.to_csv(out_path, index=False)
 
     return notes
@@ -546,7 +566,7 @@ def write_manifest(
     splits: dict[str, pd.DataFrame],
     outdir: Path,
 ) -> None:
-    """Write split_manifest.csv listing every item and its split assignment."""
+    """Write en_split_manifest.csv listing every item and its split assignment."""
     rows = []
     for split_name, sdf in splits.items():
         for _, row in sdf.iterrows():
@@ -557,7 +577,7 @@ def write_manifest(
                 "difficulty_score": row.get("difficulty_score", ""),
             })
     manifest = pd.DataFrame(rows)
-    manifest.to_csv(outdir / "split_manifest.csv", index=False)
+    manifest.to_csv(outdir / "en_split_manifest.csv", index=False)
 
 
 def write_metadata(
@@ -674,8 +694,8 @@ def write_metadata(
 # ---------------------------------------------------------------------------
 
 def parse_args() -> argparse.Namespace:
-    here = Path(__file__).resolve().parent           # scripts/
-    testing_dir = here.parent                         # testing/
+    here = Path(__file__).resolve().parent
+    african_dir = here.parent
     parser = argparse.ArgumentParser(
         description="Generate reproducible pronoun-resolution evaluation splits.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
@@ -689,13 +709,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--outdir",
         type=Path,
-        default=testing_dir / "splits",
-        help="Output directory for split CSV files.",
+        default=african_dir / "en" / "source",
+        help="Output directory for English split CSV files.",
     )
     parser.add_argument(
         "--metadata-dir",
         type=Path,
-        default=testing_dir / "metadata",
+        default=african_dir / "metadata",
         help="Output directory for metadata files.",
     )
     parser.add_argument("--seed", type=int, default=329)
@@ -709,8 +729,8 @@ def main() -> None:
     args = parse_args()
 
     # Resolve input path
-    pronoun_dir = PRONOUN_DIR
-    input_path = args.input if args.input else find_english_master(pronoun_dir)
+    raw_data_dir = RAW_DATA_DIR
+    input_path = args.input if args.input else find_english_master(raw_data_dir)
     input_path = Path(input_path).resolve()
     print(f"[INFO] English master dataset : {input_path}")
 
@@ -733,7 +753,7 @@ def main() -> None:
     )
 
     # Write normalised master
-    norm_path = args.outdir / "english_master_normalized.csv"
+    norm_path = args.outdir / "en_master_normalized.csv"
     df.to_csv(norm_path, index=False)
     print(f"[INFO] Normalised master written → {norm_path}")
 
@@ -752,17 +772,17 @@ def main() -> None:
 
     # Write split CSVs
     for split_name, sdf in splits.items():
-        out = args.outdir / f"{split_name}.csv"
+        out = args.outdir / f"en_{split_name}.csv"
         sdf.to_csv(out, index=False)
         print(f"[INFO] Wrote {split_name:<20} → {out}")
 
     # Manifest
     write_manifest(splits, args.outdir)
-    print(f"[INFO] Manifest written         → {args.outdir / 'split_manifest.csv'}")
+    print(f"[INFO] Manifest written         → {args.outdir / 'en_split_manifest.csv'}")
 
     # Multilingual propagation
     print("[INFO] Attempting multilingual propagation …")
-    multilingual_notes = propagate_multilingual(splits, pronoun_dir, args.outdir)
+    multilingual_notes = propagate_multilingual(splits, raw_data_dir, AFRICAN_DIR)
     for lang_code, note in multilingual_notes.items():
         print(f"       [{lang_code.upper()}] {note}")
 

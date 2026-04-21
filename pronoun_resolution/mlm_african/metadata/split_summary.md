@@ -3,6 +3,7 @@
 ## Source Data
 
 - **English master file**: `en_master.csv`
+- **Full path**: `pronoun_resolution/mlm_african/data/en_master.csv`
 - **Random seed**: 329
 - **Total items**: 826
 

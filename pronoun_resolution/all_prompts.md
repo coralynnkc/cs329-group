@@ -66,4 +66,4 @@ Metrics such as **MUC**, **B³**, and **CEAF** are primarily intended for cluste
 All files for this experiment live in:
 
 ```text
-pronoun_resolution/testing/
+pronoun_resolution/mlm_african/

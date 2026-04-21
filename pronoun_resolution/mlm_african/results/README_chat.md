@@ -7,8 +7,8 @@ ENGLISH
 PO
 
 {
-  "gold_file": "pronoun_resolution/testing/en/full/en_dev_full.csv",
-  "pred_file": "pronoun_resolution/testing/results/CHAT_5.4_dev_en_p0.csv",
+  "gold_file": "pronoun_resolution/mlm_african/en/full/en_dev_full.csv",
+  "pred_file": "pronoun_resolution/mlm_african/results/CHAT_5.4_dev_en_p0.csv",
   "data_size": 100,
   "prediction_rows_raw": 100,
   "prediction_rows_after_dedup": 100,
@@ -55,8 +55,8 @@ PO
 P1
 
 {
-  "gold_file": "pronoun_resolution/testing/en/full/en_dev_full.csv",
-  "pred_file": "pronoun_resolution/testing/results/CHAT_5.4_dev_en_p1.csv",
+  "gold_file": "pronoun_resolution/mlm_african/en/full/en_dev_full.csv",
+  "pred_file": "pronoun_resolution/mlm_african/results/CHAT_5.4_dev_en_p1.csv",
   "data_size": 100,
   "prediction_rows_raw": 100,
   "prediction_rows_after_dedup": 100,
@@ -103,8 +103,8 @@ P1
 P2
 
 {
-  "gold_file": "pronoun_resolution/testing/en/full/en_dev_full.csv",
-  "pred_file": "pronoun_resolution/testing/results/CHAT_5.4_dev_en_p2.csv",
+  "gold_file": "pronoun_resolution/mlm_african/en/full/en_dev_full.csv",
+  "pred_file": "pronoun_resolution/mlm_african/results/CHAT_5.4_dev_en_p2.csv",
   "data_size": 100,
   "prediction_rows_raw": 100,
   "prediction_rows_after_dedup": 100,
@@ -151,8 +151,8 @@ P2
 P3
 
 {
-  "gold_file": "pronoun_resolution/testing/en/full/en_dev_full.csv",
-  "pred_file": "pronoun_resolution/testing/results/CHAT_5.4_dev_en_p3.csv",
+  "gold_file": "pronoun_resolution/mlm_african/en/full/en_dev_full.csv",
+  "pred_file": "pronoun_resolution/mlm_african/results/CHAT_5.4_dev_en_p3.csv",
   "data_size": 100,
   "prediction_rows_raw": 100,
   "prediction_rows_after_dedup": 100,
@@ -198,8 +198,8 @@ P3
 
 P4
 {
-  "gold_file": "pronoun_resolution/testing/en/full/en_dev_full.csv",
-  "pred_file": "pronoun_resolution/testing/results/CHAT_5.4_dev_en_p4.csv",
+  "gold_file": "pronoun_resolution/mlm_african/en/full/en_dev_full.csv",
+  "pred_file": "pronoun_resolution/mlm_african/results/CHAT_5.4_dev_en_p4.csv",
   "data_size": 100,
   "prediction_rows_raw": 100,
   "prediction_rows_after_dedup": 100,
@@ -248,8 +248,8 @@ AMHARIC
 P0
 
 {
-  "gold_file": "pronoun_resolution/testing/am/full/am_dev_full.csv",
-  "pred_file": "pronoun_resolution/testing/results/CHAT_5.4_dev_am_p0.csv",
+  "gold_file": "pronoun_resolution/mlm_african/am/full/am_dev_full.csv",
+  "pred_file": "pronoun_resolution/mlm_african/results/CHAT_5.4_dev_am_p0.csv",
   "data_size": 90,
   "prediction_rows_raw": 90,
   "prediction_rows_after_dedup": 90,
@@ -296,8 +296,8 @@ P0
 P1
 
 {
-  "gold_file": "pronoun_resolution/testing/am/full/am_dev_full.csv",
-  "pred_file": "pronoun_resolution/testing/results/CHAT_5.4_dev_am_p1.csv",
+  "gold_file": "pronoun_resolution/mlm_african/am/full/am_dev_full.csv",
+  "pred_file": "pronoun_resolution/mlm_african/results/CHAT_5.4_dev_am_p1.csv",
   "data_size": 90,
   "prediction_rows_raw": 90,
   "prediction_rows_after_dedup": 90,
@@ -344,8 +344,8 @@ P1
 P2
 
 {
-  "gold_file": "pronoun_resolution/testing/am/full/am_dev_full.csv",
-  "pred_file": "pronoun_resolution/testing/results/CHAT_5.4_dev_am_p2.csv",
+  "gold_file": "pronoun_resolution/mlm_african/am/full/am_dev_full.csv",
+  "pred_file": "pronoun_resolution/mlm_african/results/CHAT_5.4_dev_am_p2.csv",
   "data_size": 90,
   "prediction_rows_raw": 90,
   "prediction_rows_after_dedup": 90,
@@ -392,8 +392,8 @@ P2
 P3
 
 {
-  "gold_file": "pronoun_resolution/testing/am/full/am_dev_full.csv",
-  "pred_file": "pronoun_resolution/testing/results/CHAT_5.4_dev_am_p3.csv",
+  "gold_file": "pronoun_resolution/mlm_african/am/full/am_dev_full.csv",
+  "pred_file": "pronoun_resolution/mlm_african/results/CHAT_5.4_dev_am_p3.csv",
   "data_size": 90,
   "prediction_rows_raw": 90,
   "prediction_rows_after_dedup": 90,
@@ -440,8 +440,8 @@ P3
 P4
 
 {
-  "gold_file": "pronoun_resolution/testing/am/full/am_dev_full.csv",
-  "pred_file": "pronoun_resolution/testing/results/CHAT_5.4_dev_am_p4.csv",
+  "gold_file": "pronoun_resolution/mlm_african/am/full/am_dev_full.csv",
+  "pred_file": "pronoun_resolution/mlm_african/results/CHAT_5.4_dev_am_p4.csv",
   "data_size": 90,
   "prediction_rows_raw": 90,
   "prediction_rows_after_dedup": 90,
@@ -490,8 +490,8 @@ IGBO
 P0
 
 {
-  "gold_file": "pronoun_resolution/testing/ig/full/ig_dev_full.csv",
-  "pred_file": "pronoun_resolution/testing/results/CHAT_5.4_dev_ig_p0.csv",
+  "gold_file": "pronoun_resolution/mlm_african/ig/full/ig_dev_full.csv",
+  "pred_file": "pronoun_resolution/mlm_african/results/CHAT_5.4_dev_ig_p0.csv",
   "data_size": 90,
   "prediction_rows_raw": 90,
   "prediction_rows_after_dedup": 90,
@@ -538,8 +538,8 @@ P0
 P1 
 
 {
-  "gold_file": "pronoun_resolution/testing/ig/full/ig_dev_full.csv",
-  "pred_file": "pronoun_resolution/testing/results/CHAT_5.4_dev_ig_p1.csv",
+  "gold_file": "pronoun_resolution/mlm_african/ig/full/ig_dev_full.csv",
+  "pred_file": "pronoun_resolution/mlm_african/results/CHAT_5.4_dev_ig_p1.csv",
   "data_size": 90,
   "prediction_rows_raw": 90,
   "prediction_rows_after_dedup": 90,
@@ -586,8 +586,8 @@ P1
 P2
 
 {
-  "gold_file": "pronoun_resolution/testing/ig/full/ig_dev_full.csv",
-  "pred_file": "pronoun_resolution/testing/results/CHAT_5.4_dev_ig_p2.csv",
+  "gold_file": "pronoun_resolution/mlm_african/ig/full/ig_dev_full.csv",
+  "pred_file": "pronoun_resolution/mlm_african/results/CHAT_5.4_dev_ig_p2.csv",
   "data_size": 90,
   "prediction_rows_raw": 90,
   "prediction_rows_after_dedup": 90,
@@ -634,8 +634,8 @@ P2
 P3
 
 {
-  "gold_file": "pronoun_resolution/testing/ig/full/ig_dev_full.csv",
-  "pred_file": "pronoun_resolution/testing/results/CHAT_5.4_dev_ig_p3.csv",
+  "gold_file": "pronoun_resolution/mlm_african/ig/full/ig_dev_full.csv",
+  "pred_file": "pronoun_resolution/mlm_african/results/CHAT_5.4_dev_ig_p3.csv",
   "data_size": 90,
   "prediction_rows_raw": 90,
   "prediction_rows_after_dedup": 90,
@@ -682,8 +682,8 @@ P3
 P4
 
 {
-  "gold_file": "pronoun_resolution/testing/ig/full/ig_dev_full.csv",
-  "pred_file": "pronoun_resolution/testing/results/CHAT_5.4_dev_ig_p4.csv",
+  "gold_file": "pronoun_resolution/mlm_african/ig/full/ig_dev_full.csv",
+  "pred_file": "pronoun_resolution/mlm_african/results/CHAT_5.4_dev_ig_p4.csv",
   "data_size": 90,
   "prediction_rows_raw": 90,
   "prediction_rows_after_dedup": 90,
@@ -733,8 +733,8 @@ ZULU
 P0
 
 {
-  "gold_file": "pronoun_resolution/testing/zu/full/zu_dev_full.csv",
-  "pred_file": "pronoun_resolution/testing/results/CHAT_5.4_dev_zu_p0.csv",
+  "gold_file": "pronoun_resolution/mlm_african/zu/full/zu_dev_full.csv",
+  "pred_file": "pronoun_resolution/mlm_african/results/CHAT_5.4_dev_zu_p0.csv",
   "data_size": 90,
   "prediction_rows_raw": 90,
   "prediction_rows_after_dedup": 90,
@@ -781,8 +781,8 @@ P0
 P1 
 
 {
-  "gold_file": "pronoun_resolution/testing/zu/full/zu_dev_full.csv",
-  "pred_file": "pronoun_resolution/testing/results/CHAT_5.4_dev_zu_p1.csv",
+  "gold_file": "pronoun_resolution/mlm_african/zu/full/zu_dev_full.csv",
+  "pred_file": "pronoun_resolution/mlm_african/results/CHAT_5.4_dev_zu_p1.csv",
   "data_size": 90,
   "prediction_rows_raw": 90,
   "prediction_rows_after_dedup": 90,
@@ -829,8 +829,8 @@ P1
 P2
 
 {
-  "gold_file": "pronoun_resolution/testing/zu/full/zu_dev_full.csv",
-  "pred_file": "pronoun_resolution/testing/results/CHAT_5.4_dev_zu_p2.csv",
+  "gold_file": "pronoun_resolution/mlm_african/zu/full/zu_dev_full.csv",
+  "pred_file": "pronoun_resolution/mlm_african/results/CHAT_5.4_dev_zu_p2.csv",
   "data_size": 90,
   "prediction_rows_raw": 90,
   "prediction_rows_after_dedup": 90,
@@ -877,8 +877,8 @@ P2
 P3
 
 {
-  "gold_file": "pronoun_resolution/testing/zu/full/zu_dev_full.csv",
-  "pred_file": "pronoun_resolution/testing/results/CHAT_5.4_dev_zu_p3.csv",
+  "gold_file": "pronoun_resolution/mlm_african/zu/full/zu_dev_full.csv",
+  "pred_file": "pronoun_resolution/mlm_african/results/CHAT_5.4_dev_zu_p3.csv",
   "data_size": 90,
   "prediction_rows_raw": 90,
   "prediction_rows_after_dedup": 90,
@@ -925,8 +925,8 @@ P3
 P4
 
 {
-  "gold_file": "pronoun_resolution/testing/zu/full/zu_dev_full.csv",
-  "pred_file": "pronoun_resolution/testing/results/CHAT_5.4_dev_zu_p4.csv",
+  "gold_file": "pronoun_resolution/mlm_african/zu/full/zu_dev_full.csv",
+  "pred_file": "pronoun_resolution/mlm_african/results/CHAT_5.4_dev_zu_p4.csv",
   "data_size": 90,
   "prediction_rows_raw": 90,
   "prediction_rows_after_dedup": 90,

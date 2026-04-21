@@ -6,7 +6,7 @@ This folder preserves the separate answer-aligned files that were stored in:
 srijon-2.0/answers/pronoun_resolution/
 ```
 
-They are included in the unified `pronoun_resolution/mlm_baseline/` subtree so the imported baseline remains reproducible without having to look back into `srijon-2.0`.
+They are included in the unified `pronoun_resolution/mlm_european/` subtree so the imported baseline remains reproducible without having to look back into `srijon-2.0`.
 
 ## What is here
 
@@ -22,7 +22,7 @@ They are included in the unified `pronoun_resolution/mlm_baseline/` subtree so t
 The main benchmark CSVs used by the imported baseline live under:
 
 ```text
-pronoun_resolution/mlm_baseline/pronoun_resolution/
+pronoun_resolution/mlm_european/pronoun_resolution/
 ```
 
 Those normalized files are what the imported scripts operate on most directly.
@@ -34,7 +34,7 @@ The files in this directory are useful when you want the separate answer/match a
 The companion scripts for this baseline live in:
 
 ```text
-pronoun_resolution/mlm_baseline/scripts/
+pronoun_resolution/mlm_european/scripts/
 ```
 
 That folder includes:
