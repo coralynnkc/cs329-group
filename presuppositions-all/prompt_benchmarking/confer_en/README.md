@@ -36,7 +36,6 @@ We **exclude** the `P13`, `P13_redux`, `P14`, and `P15` family from the main ana
 |---|---|---|---|
 | `P0` | Probabilities | Minimal baseline | Lets the model infer the task from the dataset alone |
 | `P1` | Probabilities | Few-shot, benchmark-shaped examples | Main best-performing prompt |
-| `P1_redux` | Probabilities | Exploratory `P1` variant | Strong Chat-only follow-up variant |
 | `P2` | Probabilities | Guarantee-based NLI decision rule | Strong generic non-few-shot Chat alternative |
 | `P4` | Probabilities | Symmetric definitely-true / definitely-false rule | Strong structured Opus alternative |
 | `P5` | Probabilities | Compatibility then determination | Lower-performing rule-heavy variant |
@@ -53,7 +52,6 @@ We **exclude** the `P13`, `P13_redux`, `P14`, and `P15` family from the main ana
 | Prompt | Output | Family | Accuracy | Macro-F1 | Log Loss | Brier | F1-E | F1-N | F1-C | Integrity |
 |---|---|---|---:|---:|---:|---:|---:|---:|---:|---|
 | `P1` | Probabilities | Few-shot examples | **0.7867** | **0.7841** | 0.6815 | 0.3686 | 0.8722 | **0.6923** | 0.7879 | Full scorer coverage |
-| `P1_redux` | Probabilities | Exploratory `P1` variant | **0.8000** | 0.7779 | **0.6034** | **0.3450** | 0.7984 | 0.5833 | **0.9519** | Full scorer coverage |
 | `P2` | Probabilities | Guarantee-based NLI | 0.7100 | 0.7094 | 0.8589 | 0.4917 | 0.7845 | 0.5700 | 0.7738 | Full scorer coverage |
 | `P0` | Probabilities | Minimal baseline | 0.6933 | 0.6828 | 0.9081 | 0.5244 | 0.7857 | 0.4889 | 0.7738 | Full scorer coverage |
 | `P10` | Hard label | `P1` mirror | 0.6000 | 0.5645 | — | — | 0.7200 | 0.2323 | 0.7412 | Manual full-set scoring |
@@ -117,8 +115,6 @@ We **exclude** the `P13`, `P13_redux`, `P14`, and `P15` family from the main ana
 - it is the strongest prompt tested on **both models**
 - it has the best **Chat 5.4 macro-F1** among the core prompt families
 - it remains substantially better than its hard-label counterpart `P10`
-
-`P1_redux` is worth noting because it slightly improves Chat 5.4 **accuracy**, **log loss**, **Brier score**, and **F1-C** relative to `P1`. But it trails `P1` on **macro-F1** and **F1-N**, and it was not run on Opus 4.6. For the main cross-model story, `P1` is still the cleanest best prompt.
 
 ### 4.2 Few-shot examples help more than heavier scaffolding
 
