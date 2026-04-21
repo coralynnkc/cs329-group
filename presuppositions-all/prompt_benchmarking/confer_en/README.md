@@ -1,4 +1,4 @@
-# CONFER (English): explaining P1's unusually strong performance
+# CONFER (English): prompt benchmarking results
 
 This directory contains the English-only CONFER prompt-benchmarking materials inside `presuppositions-all/prompt_benchmarking/`.
 
@@ -7,336 +7,176 @@ Primary data files in this folder:
 - `presupposition_input.csv`
 - `presupposition_answers.csv`
 
-These are the gold/input files used by the CONFER scorer in `../scripts/batch_scorer_CONFER.py`.
+These are the input and gold files used by the CONFER scorer in `../scripts/batch_scorer_CONFER.py`.
 
 ## Executive summary
 
-Across the current CONFER English prompt sweep, **P1 is the strongest prompt overall**. It is the best-performing prompt for **Chat 5.4** and **Opus 4.6**, and it is also the only prompt that is clearly strong **across both models**.
+Across the high-integrity CONFER English runs, **P1 remains the strongest prompt overall**. It is the best-performing prompt across both **Chat 5.4** and **Opus 4.6**, and it also remains the clearest all-around winner once we compare probability-based prompts against their hard-label counterparts.
 
-That matters because the size of the P1 jump is larger than most prompt effects we have seen elsewhere in this project. At the same time, the safest interpretation is **not** simply "few-shot works." A narrower and better-supported claim is this:
+Three conclusions stand out:
 
-> **P1 appears to work because it teaches the model the benchmark's presupposition-sensitive label boundary more effectively than the alternative prompts.**
+1. **Benchmark-shaped few-shot examples help a lot.** P1 consistently beats the minimal baseline (`P0`) and the more formal rule-based prompts (`P2`, `P4`, `P5`, `P6`, `P7`).
+2. **Probability output helps.** Within the prompt families where we tested both formats, the probability versions outperform the hard-label versions.
+3. **Prompt tuning is model-specific.** `P2` is much stronger than `P4` on Chat 5.4, while `P4` is much stronger than `P2` on Opus 4.6.
 
-In particular, P1 seems to do three things at once:
+The broad pattern is that **light-touch, benchmark-aligned example anchoring works better than either minimal prompting or heavier semantic/rule scaffolding**.
 
-1. It keeps the operational setup simple.
-2. It gives the model **one example of each label**.
-3. It teaches the task by **benchmark-shaped examples** rather than by abstract, generic NLI rules.
+## Inclusion rule
 
-This is an important distinction. Some of the other prompts are not weak because they are vague. In fact, several are quite explicit. The problem is that many of them appear to anchor the task as **generic semantic inference** rather than **presupposition-sensitive inference**. P1 seems to avoid that mistake.
+This write-up includes only the runs we consider **high-integrity and comparable**:
 
-A second important result is that the new **hard-label prompts** are not strong. The especially notable case is **P9**, the no-probability counterpart to P1. Its weak performance suggests that probability output may not be a superficial formatting choice. At least for Opus, it may be part of what makes P1 work so well.
+- probabilistic runs with full dataset coverage and valid scorer output
+- hard-label runs with complete 300-item outputs and manually computed summary metrics
 
-## Scope and caution
+We **exclude** the `P13`, `P13_redux`, `P14`, and `P15` family from the main analysis because those outputs had substantial integrity failures such as partial coverage, repeated blocks, or mismatched item IDs. Those runs are useful as prompt-development attempts, but not as fair model-comparison evidence.
 
-This document is meant to explain the current results carefully, not to overclaim.
+## 1) Included prompt families
 
-Two cautions matter:
+| Prompt | Output | Family | Working role |
+|---|---|---|---|
+| `P0` | Probabilities | Minimal baseline | Lets the model infer the task from the dataset alone |
+| `P1` | Probabilities | Few-shot, benchmark-shaped examples | Main best-performing prompt |
+| `P1_redux` | Probabilities | Exploratory `P1` variant | Strong Chat-only follow-up variant |
+| `P2` | Probabilities | Guarantee-based NLI decision rule | Strong generic non-few-shot Chat alternative |
+| `P4` | Probabilities | Symmetric definitely-true / definitely-false rule | Strong structured Opus alternative |
+| `P5` | Probabilities | Compatibility then determination | Lower-performing rule-heavy variant |
+| `P6` | Probabilities | Independent E / C / N tests | Lower-performing rule-heavy variant |
+| `P7` | Probabilities | Explicit presupposition / projection definitions | Task-specific wording without examples |
+| `P8` | Hard label | Hard-label counterpart to `P7` | Tests no-probability version of projection-aware prompt |
+| `P10` | Hard label | Hard-label counterpart to `P1` | Tests no-probability version of few-shot prompt |
+| `P12` | Hard label | Hard-label counterpart to `P2` | Tests no-probability version of guarantee-based prompt |
 
-- These results strongly suggest that **P1 is doing something importantly right**.
-- They do **not** yet prove which single ingredient is responsible.
+## 2) Master results tables
 
-P1 differs from the weaker prompts in more than one way. It differs in examples, in how it anchors the label space, and in the fact that it asks for probabilities rather than a single hard label. So the safest conclusion is that **P1 is the best-tested prompt so far, and its advantage is most plausibly due to better task anchoring, with possible additional benefit from probability elicitation**.
+### Table 1. Chat 5.4 included runs
 
-`p1_redux` is intentionally excluded from this write-up.
+| Prompt | Output | Family | Accuracy | Macro-F1 | Log Loss | Brier | F1-E | F1-N | F1-C | Integrity |
+|---|---|---|---:|---:|---:|---:|---:|---:|---:|---|
+| `P1` | Probabilities | Few-shot examples | **0.7867** | **0.7841** | 0.6815 | 0.3686 | 0.8722 | **0.6923** | 0.7879 | Full scorer coverage |
+| `P1_redux` | Probabilities | Exploratory `P1` variant | **0.8000** | 0.7779 | **0.6034** | **0.3450** | 0.7984 | 0.5833 | **0.9519** | Full scorer coverage |
+| `P2` | Probabilities | Guarantee-based NLI | 0.7100 | 0.7094 | 0.8589 | 0.4917 | 0.7845 | 0.5700 | 0.7738 | Full scorer coverage |
+| `P0` | Probabilities | Minimal baseline | 0.6933 | 0.6828 | 0.9081 | 0.5244 | 0.7857 | 0.4889 | 0.7738 | Full scorer coverage |
+| `P10` | Hard label | `P1` mirror | 0.6000 | 0.5645 | — | — | 0.7200 | 0.2323 | 0.7412 | Manual full-set scoring |
+| `P4` | Probabilities | Symmetric rule-based NLI | 0.4767 | 0.4644 | 1.6368 | 0.9029 | 0.4106 | 0.5094 | 0.4733 | Full scorer coverage |
+| `P5` | Probabilities | Compatibility then determination | 0.4700 | 0.4563 | 1.5819 | 0.8962 | 0.3893 | 0.5062 | 0.4733 | Full scorer coverage |
+| `P6` | Probabilities | Independent E / C / N tests | 0.4700 | 0.4563 | 1.5028 | 0.8689 | 0.3893 | 0.5062 | 0.4733 | Full scorer coverage |
+| `P12` | Hard label | `P2` mirror | 0.4700 | 0.4563 | — | — | 0.3893 | 0.5062 | 0.4733 | Manual full-set scoring |
+| `P7` | Probabilities | Explicit presupposition definitions | 0.4567 | 0.4042 | 1.8956 | 0.9854 | 0.6875 | 0.0355 | 0.4895 | Full scorer coverage |
+| `P8` | Hard label | `P7` mirror | 0.3467 | 0.1888 | — | — | 0.0588 | 0.5075 | 0.0000 | Manual full-set scoring |
 
----
+### Table 2. Opus 4.6 included runs
 
-## 1) Current results overview
+| Prompt | Output | Family | Accuracy | Macro-F1 | Log Loss | Brier | F1-E | F1-N | F1-C | Integrity |
+|---|---|---|---:|---:|---:|---:|---:|---:|---:|---|
+| `P1` | Probabilities | Few-shot examples | **0.9200** | **0.9192** | **0.3649** | **0.1618** | 0.8959 | **0.8667** | **0.9950** | Full scorer coverage |
+| `P4` | Probabilities | Symmetric rule-based NLI | 0.8633 | 0.8626 | 0.5004 | 0.2483 | **0.9688** | 0.8313 | 0.7879 | Full scorer coverage |
+| `P2` | Probabilities | Guarantee-based NLI | 0.6833 | 0.6601 | 0.8197 | 0.5040 | 0.8750 | 0.6801 | 0.4252 | Full scorer coverage |
+| `P0` | Probabilities | Minimal baseline | 0.6033 | 0.5700 | 1.0121 | 0.6163 | 0.7046 | 0.2222 | 0.7831 | Full scorer coverage |
 
-### Table 1. Chat 5.4 on CONFER English (probability prompts only)
+### Table 3. Cross-model comparison for prompts run on both models
 
-| Prompt | Accuracy | Macro-F1 | Log Loss | Brier Score | F1-E | F1-N | F1-C | Notes |
-|---|---:|---:|---:|---:|---:|---:|---:|---|
-| **P1** | **0.7867** | **0.7841** | **0.6815** | **0.3686** | **0.8722** | **0.6923** | **0.7879** | Best overall |
-| P2 | 0.7100 | 0.7094 | 0.8589 | 0.4917 | 0.7845 | 0.5700 | 0.7738 | Best non-few-shot Chat prompt |
-| P0 | 0.6933 | 0.6828 | 0.9081 | 0.5244 | 0.7857 | 0.4889 | 0.7738 | Minimal baseline |
-| P4 | 0.4767 | 0.4644 | 1.6368 | 0.9029 | 0.4106 | 0.5094 | 0.4733 | Strong Neutral bias |
-| P5 | 0.4700 | 0.4563 | 1.5819 | 0.8962 | 0.3893 | 0.5062 | 0.4733 | Similar to P4 |
-| P6 | 0.4700 | 0.4563 | 1.5028 | 0.8689 | 0.3893 | 0.5062 | 0.4733 | Revised results; low-performing but structurally normal |
-| P7 | 0.4567 | 0.4042 | 1.8956 | 0.9854 | 0.6875 | 0.0355 | 0.4895 | Presupposition-specific wording alone did not help |
+| Prompt | Chat 5.4 Acc | Chat 5.4 Macro-F1 | Opus 4.6 Acc | Opus 4.6 Macro-F1 | Opus - Chat Δ Acc | Opus - Chat Δ Macro-F1 |
+|---|---:|---:|---:|---:|---:|---:|
+| `P0` | 0.6933 | 0.6828 | 0.6033 | 0.5700 | -0.0900 | -0.1128 |
+| `P1` | **0.7867** | **0.7841** | **0.9200** | **0.9192** | +0.1333 | +0.1351 |
+| `P2` | 0.7100 | 0.7094 | 0.6833 | 0.6601 | -0.0267 | -0.0493 |
+| `P4` | 0.4767 | 0.4644 | 0.8633 | 0.8626 | +0.3866 | +0.3982 |
 
-### Table 2. Opus 4.6 on CONFER English
+## 3) Hard-label versus probability output
 
-| Prompt | Output type | Accuracy | Macro-F1 | Log Loss | Brier Score | F1-E | F1-N | F1-C | Notes |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---|
-| **P1** | Probabilities | **0.9200** | **0.9192** | **0.3649** | **0.1618** | **0.8959** | **0.8667** | **0.9950** | Best overall |
-| P4 | Probabilities | 0.8633 | 0.8626 | 0.5004 | 0.2483 | **0.9688** | 0.8313 | 0.7879 | Strong rule-based alternative |
-| P2 | Probabilities | 0.6833 | 0.6601 | 0.8197 | 0.5040 | 0.8750 | 0.6801 | 0.4252 | Over-neutralizes contradiction |
-| P0 | Probabilities | 0.6033 | 0.5700 | 1.0121 | 0.6163 | 0.7046 | 0.2222 | 0.7831 | Minimal baseline |
-| P9 | Hard label | 0.4700 | 0.4563 | — | — | 0.3893 | 0.5062 | 0.4733 | P1-style few-shot, no probabilities |
-| P8 | Hard label | 0.3467 | 0.1888 | — | — | 0.0588 | 0.5075 | 0.0000 | Projection-aware, no probabilities |
+### Table 4. Family-level comparison: probability vs hard-label
 
-**Note:** P8 and P9 were scored manually as hard-label runs, so probability-based metrics such as log loss and Brier score are not available for them.
+| Family | Probability prompt | Accuracy | Macro-F1 | F1-E | F1-N | F1-C | Hard-label prompt | Accuracy | Macro-F1 | F1-E | F1-N | F1-C |
+|---|---|---:|---:|---:|---:|---:|---|---:|---:|---:|---:|---:|
+| Few-shot examples | `P1` | **0.7867** | **0.7841** | 0.8722 | 0.6923 | 0.7879 | `P10` | 0.6000 | 0.5645 | 0.7200 | 0.2323 | 0.7412 |
+| Guarantee-based NLI | `P2` | **0.7100** | **0.7094** | 0.7845 | 0.5700 | 0.7738 | `P12` | 0.4700 | 0.4563 | 0.3893 | 0.5062 | 0.4733 |
+| Projection-aware definitions | `P7` | **0.4567** | **0.4042** | 0.6875 | 0.0355 | 0.4895 | `P8` | 0.3467 | 0.1888 | 0.0588 | 0.5075 | 0.0000 |
 
-### Table 3. P1 gain over selected alternatives
+### Table 5. Hard-label penalty relative to probability version
 
-| Model | Comparison | Δ Accuracy | Δ Macro-F1 | Δ F1-E | Δ F1-N | Δ F1-C |
+| Family | Δ Accuracy | Δ Macro-F1 | Δ F1-E | Δ F1-N | Δ F1-C | Main takeaway |
+|---|---:|---:|---:|---:|---:|---|
+| `P1 -> P10` | -0.1867 | -0.2196 | -0.1522 | **-0.4600** | -0.0467 | Few-shot prompting remains helpful, but the probability version is much better, especially on Neutral |
+| `P2 -> P12` | -0.2400 | -0.2531 | -0.3952 | -0.0638 | -0.3005 | Hard labels strongly weaken the generic guarantee-based prompt |
+| `P7 -> P8` | -0.1100 | -0.2154 | **-0.6287** | +0.4720 | -0.4895 | `P8` collapses into a mostly-Neutral strategy rather than preserving `P7`'s intended distinctions |
+
+### Table 6. Manual split accuracies for included hard-label runs
+
+| Prompt | Family | S1 Acc | S2 Acc | S3 Acc | Mean Acc | Macro-F1 |
 |---|---|---:|---:|---:|---:|---:|
-| Chat 5.4 | P1 vs P0 | +0.0934 | +0.1013 | +0.0865 | +0.2034 | +0.0141 |
-| Chat 5.4 | P1 vs P2 | +0.0767 | +0.0747 | +0.0877 | +0.1223 | +0.0141 |
-| Chat 5.4 | P1 vs P7 | +0.3300 | +0.3799 | +0.1847 | +0.6568 | +0.2984 |
-| Opus 4.6 | P1 vs P0 | +0.3167 | +0.3492 | +0.1913 | +0.6445 | +0.2119 |
-| Opus 4.6 | P1 vs P4 | +0.0567 | +0.0566 | -0.0729 | +0.0354 | +0.2071 |
-| Opus 4.6 | P1 vs P9 | +0.4500 | +0.4629 | +0.5066 | +0.3605 | +0.5217 |
+| `P10` | `P1` mirror | 0.6000 | 0.5600 | 0.6400 | 0.6000 | 0.5645 |
+| `P12` | `P2` mirror | 0.4500 | 0.4800 | 0.4800 | 0.4700 | 0.4563 |
+| `P8` | `P7` mirror | 0.3600 | 0.3500 | 0.3300 | 0.3467 | 0.1888 |
 
-Two immediate points follow from these tables:
+## 4) What the results suggest
 
-- **P1 is not just the best prompt on one model. It is the best prompt across both models.**
-- The biggest repeated gain is at the **Entailment/Neutral boundary**, though for Opus P1 also produces a very large gain on **Contradiction**.
+### 4.1 P1 is still the best overall prompt
 
----
+`P1` remains the main winner for three reasons:
 
-## 2) Prompt families and what each one is trying to do
+- it is the strongest prompt tested on **both models**
+- it has the best **Chat 5.4 macro-F1** among the core prompt families
+- it remains substantially better than its hard-label counterpart `P10`
 
-### Table 4. Prompt design map
+`P1_redux` is worth noting because it slightly improves Chat 5.4 **accuracy**, **log loss**, **Brier score**, and **F1-C** relative to `P1`. But it trails `P1` on **macro-F1** and **F1-N**, and it was not run on Opus 4.6. For the main cross-model story, `P1` is still the cleanest best prompt.
 
-| Prompt | Output | Few-shot? | Presupposition-specific framing? | Core decision style | Working interpretation |
-|---|---|---|---|---|---|
-| P0 | Probabilities | No | No | Minimal batch prompt | Lets the model infer the task from priors |
-| **P1** | Probabilities | **Yes: 1 E, 1 N, 1 C** | Implicitly, by example | Example-based anchoring | Teaches the label geometry directly |
-| P2 | Probabilities | No | No | Guarantee true / guarantee false / else N | Generic necessity-based NLI |
-| P4 | Probabilities | No | No | Definitely true / definitely false / else N | Stricter rule-based NLI |
-| P5 | Probabilities | No | No | Compatibility, then determination | Generic compatibility-based NLI |
-| P6 | Probabilities | No | No | Independent E / C / N tests | Another rule-heavy NLI framing |
-| P7 | Probabilities | No | **Yes** | Explicit projection-aware definitions | Presupposition-specific wording without examples |
-| P8 | Hard label | No | **Yes** | Projection-aware hard-label prompt | Hard-label counterpart to P7 |
-| P9 | Hard label | **Yes: 1 E, 1 N, 1 C** | Implicitly, by example | P1-style few-shot, but no probabilities | Hard-label counterpart to P1 |
+### 4.2 Few-shot examples help more than heavier scaffolding
 
-This table helps clarify an important point: **P1 is not the only prompt that tries to help the model.** Some other prompts are quite elaborate. The issue is not whether they add instructions. The issue is **what kind of task they teach**.
+The main pattern across both models is that **benchmark-shaped examples beat more elaborate semantic or rule-based instructions**.
 
----
+- `P1` beats the minimal baseline `P0`
+- `P1` beats the generic guarantee-based prompt `P2`
+- `P1` beats the heavier rule-based families `P4`, `P5`, and `P6`
+- `P1` also beats the explicitly presupposition-aware definition prompt `P7`
 
-## 3) Why P1 is so much stronger
+That suggests the critical gain is not simply "more instructions." The gain seems to come from **teaching the benchmark's label geometry by example**.
 
-### 3.1 P1 teaches the benchmark's label space by example
+### 4.3 Probability output is not cosmetic
 
-P1 does something deceptively simple: it gives the model **one example each of E, N, and C** before asking it to score the dataset. That seems to matter a great deal.
+The paired family comparisons make the probability effect hard to ignore.
 
-The key is not just that there are examples. It is that the examples are **benchmark-shaped**. They are not generic textbook entailment pairs. They are close to the kind of presupposition-sensitive reasoning that CONFER is testing.
+- `P1 -> P10`: hard labels reduce both accuracy and macro-F1, with the biggest drop on **Neutral**
+- `P2 -> P12`: hard labels also substantially weaken the guarantee-based prompt
+- `P7 -> P8`: hard labels do not rescue the explicit presupposition-definition family
 
-That gives P1 a practical advantage over both extremes:
+So the most careful current interpretation is:
 
-- over **P0**, which leaves the model to infer the task almost entirely from its own priors, and
-- over **P2/P4/P5/P6**, which try to impose explicit reasoning pipelines that are more natural for generic NLI than for presupposition projection.
+> **The strongest results appear to come from a combination of prompt design and probability-style output, not from hard-label classification alone.**
 
-P1 does not lecture the model about semantics. It simply shows the model what counts as E, N, and C **on this benchmark**.
+## 5) Prompt tuning is model-specific
 
-### 3.2 P1 appears to anchor the right task, not just any task
+The clearest model-specific example is `P2` versus `P4`.
 
-A useful way to frame the result is:
+`P2` and `P4` look superficially similar, but they are not doing quite the same thing. `P2` uses a simple sequential decision rule: first ask whether the premise guarantees the hypothesis is true; if not, ask whether it guarantees the hypothesis is false; if neither is guaranteed, choose Neutral. `P4` is stricter and more symmetric: it asks the model to evaluate "definitely true?" and "definitely false?" as separate questions up front, then reconcile the answers. In practice, that extra strictness is handled very differently by different models. For **Chat 5.4**, `P2` is much stronger than `P4` (`0.7100` vs `0.4767` accuracy; `0.7094` vs `0.4644` macro-F1), which suggests the heavier rule framing may push Chat toward over-cautious or miscalibrated labeling. For **Opus 4.6**, the pattern flips: `P4` is much stronger than `P2` (`0.8633` vs `0.6833` accuracy; `0.8626` vs `0.6601` macro-F1), which suggests Opus benefits from the stricter symmetric truth/falsity audit.
 
-> The weak prompts are not necessarily unanchored. Many of them are **mis-anchored**.
+```mermaid
+xychart-beta
+    title "P2 vs P4 Performance by Model"
+    x-axis ["Chat Accuracy", "Chat Macro-F1", "Opus Accuracy", "Opus Macro-F1"]
+    y-axis "Score" 0 --> 1
+    bar "P2" [0.7100, 0.7094, 0.6833, 0.6601]
+    bar "P4" [0.4767, 0.4644, 0.8633, 0.8626]
+```
 
-This seems especially true of P2, P4, P5, and P6. All of them define the problem in terms like:
+This is one of the clearest examples in the project that prompt fine-tuning is **model-specific**, not just task-specific.
 
-- must the hypothesis be true,
-- definitely true / definitely false,
-- compatible or not compatible,
-- guaranteed or not guaranteed.
+## 6) Bottom line
 
-Those are sensible concepts for **standard sentence-pair inference**. But CONFER is probing **presupposition triggers** and **projection behavior**, where the relevant information is often not asserted in the simplest surface way. A prompt that pushes the model to behave like a strict theorem prover may therefore be teaching the wrong boundary.
+The high-integrity CONFER English runs support a fairly clean story:
 
-P1 seems to avoid this. It does not try to replace the model's semantic reasoning with a rigid procedure. Instead, it gives the model three demonstrations that implicitly show what the benchmark designers mean by E, N, and C.
+1. **P1 is the strongest overall prompt family.**
+2. **Benchmark-shaped few-shot examples outperform both minimal prompting and heavier rule-based or definition-based prompts.**
+3. **Probability-style output is consistently better than hard-label output within the tested prompt families.**
+4. **Prompt effects are strongly model-specific, especially in the `P2` vs `P4` contrast.**
 
-### 3.3 The clearest repeated gain is at the E/N boundary
+The most defensible conclusion is:
 
-For Chat 5.4, the biggest P1 gain over P0 is **F1-N: +0.2034**.
-
-For Opus 4.6, the biggest P1 gain over P0 is again **F1-N: +0.6445**.
-
-That is a strong signal. It suggests that P1 is especially good at teaching the model where **Neutral actually lives** on CONFER.
-
-This is exactly where a presupposition benchmark can confuse a generic inference prompt. A model can easily over-read projected content as Entailment, or under-read it as Neutral, depending on how the task is framed. P1 seems to reduce both kinds of mistake better than the alternatives.
-
-### 3.4 P1 is better than explicit presupposition wording alone
-
-One of the most important newer results is **P7**.
-
-P7 was designed to be presupposition-specific. It explicitly defines the labels in terms of triggering, preserving, or canceling presuppositions, and it warns that presuppositions can project through negation, questions, and belief/report contexts. On paper, that should have been a strong fit for CONFER.
-
-But on Chat 5.4, P7 performs badly: **0.4567 accuracy** and **0.4042 macro-F1**.
-
-That matters because it rules out a too-simple explanation. P1 is **not** strong merely because it somehow mentions the right topic. In fact, P1 does not explicitly define presupposition at all. Instead, it **shows** the model the correct boundary by example.
-
-So the evidence currently points to this stronger claim:
-
-> **Examples seem to help more than abstract semantic definitions.**
-
-That is a more interesting and more precise finding than simply saying that task-specific wording helps.
-
-### 3.5 P1 is strong without being over-engineered
-
-P1 is not long. It does not have a multi-stage reasoning procedure. It does not ask the model to answer multiple meta-questions before labeling. It does not require explicit verification steps.
-
-This is important because it suggests that the gain is **not** coming from prompt length or complexity. If anything, the current results point the other way:
-
-- **P0** is too sparse.
-- **P2/P4/P5/P6/P7** are more explicit, but that explicitness does not reliably help.
-- **P1** hits a useful middle ground: enough structure to teach the task, but not so much structure that it teaches the wrong task.
-
-In that sense, P1 may be strong partly because it is **light-touch but highly diagnostic**.
-
----
-
-## 4) Model-by-model interpretation
-
-### 4.1 Chat 5.4
-
-For Chat 5.4, P1 is clearly best. P2 is the next best probability prompt, but it still trails P1 by **0.0767 accuracy** and **0.0747 macro-F1**.
-
-This is useful because it shows that P1 is not only beating obviously weak prompts. It is also beating the best of the more formal rule-based prompts.
-
-At the same time, the Chat results also show that **not every alternative is equally bad**:
-
-- P0 is respectable, but weaker on Neutral.
-- P2 is decent, but still not as good as P1.
-- P4, P5, P6, and P7 all fall off sharply.
-
-So for Chat 5.4, the current story is not that only one prompt works at all. It is that **P1 works best by a real margin, and the weaker prompts seem to fail for different reasons**.
-
-### 4.2 Opus 4.6
-
-For Opus 4.6, the story is even more striking.
-
-P1 is best by a large margin over P0 and P2, and still clearly ahead of P4. But unlike Chat, Opus also performs well on **P4**. That is important because it shows that Opus is not simply allergic to rule-based prompting. It can handle it.
-
-Still, P1 remains best overall, and its advantage over P4 is highly informative:
-
-- P4 actually has the better **F1-E**.
-- But P1 is better on **F1-N** and much better on **F1-C**.
-
-That suggests that P4 is a strong prompt for high-confidence entailment-style reasoning, while P1 is better at preserving the **full three-way label balance**, especially contradiction.
-
-This is one reason P1 looks more attractive as a general-use prompt: it is the most robust across both models and across all three labels.
-
----
-
-## 5) Revised interpretation of P6
-
-An earlier version of this write-up described P6 as incomplete or structurally problematic because the original score dump included missing items, duplicates, and other output mismatches.
-
-That is **no longer the right interpretation** for the updated data.
-
-In the revised Chat 5.4 results, P6 now has full matched coverage and can be treated as a normal prompt run. Its performance is still poor, but the issue is now performance, not output integrity.
-
-In fact, the revised P6 looks very similar to P5 on the core metrics:
-
-- P5: **0.4700 accuracy / 0.4563 macro-F1**
-- P6: **0.4700 accuracy / 0.4563 macro-F1**
-
-So the clean updated reading is:
-
-> **P6 is not a broken prompt in the revised results. It is simply another low-performing rule-heavy prompt.**
-
-That is important for keeping the analysis honest. It also strengthens the overall argument, because it means the pattern is not being driven by one anomalous failed run.
-
----
-
-## 6) Why P9 matters so much
-
-P9 is one of the most interesting additions to the experiment.
-
-P9 is the hard-label, no-probability counterpart to the P1-style few-shot prompt. If it truly differs from P1 only in the output format, then it gives the cleanest current test of whether **probability elicitation** is doing real work.
-
-The result is dramatic for Opus 4.6:
-
-- **P1:** 0.9200 accuracy / 0.9192 macro-F1
-- **P9:** 0.4700 accuracy / 0.4563 macro-F1
-
-That is a collapse of:
-
-- **-0.4500 accuracy**
-- **-0.4629 macro-F1**
-
-The class-level drops are also large:
-
-- **F1-E:** 0.8959 -> 0.3893
-- **F1-N:** 0.8667 -> 0.5062
-- **F1-C:** 0.9950 -> 0.4733
-
-This does not prove that probabilities are always better. But it does strongly suggest that, at least for Opus on CONFER, the probability request is **not cosmetic**.
-
-### Table 5. Hard-label ablation on Opus 4.6
-
-| Family | Probability version | Accuracy | Macro-F1 | Hard-label version | Accuracy | Macro-F1 |
-|---|---|---:|---:|---|---:|---:|
-| Few-shot | P1 | 0.9200 | 0.9192 | P9 | 0.4700 | 0.4563 |
-| Projection-aware | P7 | 0.4567* | 0.4042* | P8 | 0.3467 | 0.1888 |
-
-\*P7 was run on Chat 5.4, not Opus 4.6, so this row is only a directional comparison of prompt family behavior, not a within-model ablation.
-
-The P8 result points in the same direction. The projection-aware hard-label prompt is also weak. So the pattern is at least suggestive:
-
-- explicit presupposition instructions alone do not seem sufficient,
-- and removing probabilities from these prompts does not help.
-
-The most careful current interpretation is:
-
-> **P1's success may come from a combination of good example-based task anchoring and the probability-output format.**
-
-That is especially worth noting because this was one of the original questions behind the experiment.
-
-### Table 6. Manual split accuracies for hard-label Opus prompts
-
-| Prompt | S1 Acc | S2 Acc | S3 Acc | Mean Acc | Macro-F1 |
-|---|---:|---:|---:|---:|---:|
-| P8 | 0.3600 | 0.3500 | 0.3300 | 0.3467 | 0.1888 |
-| P9 | 0.4500 | 0.4800 | 0.4800 | 0.4700 | 0.4563 |
-
-P9 is therefore interesting not because it is good, but because it is **bad in a very informative way**. A hard-label mirror of the best-performing prompt does not preserve that performance. That strongly suggests that P1's success cannot be reduced to "same prompt, but shorter output." The probability request appears to matter.
-
----
-
-## 7) What we can say confidently
-
-### Strong claims that are supported
-
-1. **P1 is the strongest prompt tested so far on CONFER English.**
-2. **P1 is the only prompt that is clearly strong across both Chat 5.4 and Opus 4.6.**
-3. **Its gains are especially clear at the Entailment/Neutral boundary, with additional major gains for Contradiction on Opus.**
-4. **P1 seems to outperform the alternatives because it teaches the benchmark's label geometry by example rather than by abstract NLI rules.**
-5. **The hard-label result for P9 suggests that probability elicitation may be an important part of P1's effectiveness.**
-
-### Claims that should remain cautious
-
-1. We cannot yet say that **few-shot prompting in general** is the reason.
-2. We cannot yet say that **probability output alone** explains the entire effect.
-3. We cannot yet assume the same pattern will hold on every presupposition dataset.
-4. We should not describe P6 as unreliable or malformed in the revised results.
-5. We should not say that P1 is literally the **only** successful prompt, because **P4 is also strong on Opus**.
-
-Those cautions do not undermine the main result. They simply keep the analysis precise.
-
----
-
-## 8) Bottom-line conclusion
-
-The most defensible conclusion from the current CONFER English results is this:
-
-> **P1 is powerful because it teaches the model the right task in the right way.**
-
-It does not leave the model to guess the label space from scratch, like P0.
-It does not overconstrain the task with generic compatibility or guarantee-based NLI rules, like P2, P4, P5, and P6.
-It does not rely only on abstract presupposition definitions, like P7.
-
-Instead, it gives the model a compact, benchmark-aligned demonstration of what **Entailment**, **Neutral**, and **Contradiction** look like for this dataset.
-
-That appears to be enough to produce the strongest overall performance on both Chat 5.4 and Opus 4.6.
-
-The new P9 result makes the story even more interesting. A hard-label mirror of P1 does **not** retain P1's strength. So the best current explanation is not just "few-shot helps." It is something narrower and more informative:
-
-> **P1 likely benefits from a combination of benchmark-shaped example anchoring and probability elicitation.**
-
-That is a stronger and more publication-worthy finding than a generic claim about prompt engineering.
-
----
+> **For CONFER English, the most effective strategy is a light-touch, benchmark-aligned few-shot prompt with probabilistic output.**
 
 ## Source notes
 
 This summary is based on:
 
-- the current CONFER English score dumps for Chat 5.4 and Opus 4.6,
-- the current prompt files in `srijon-2.0/presuppositions/prompts`,
-- the earlier `presupposition/README.md` framing of CoNFER as a presupposition-projection task,
-- and the manually calculated hard-label metrics provided for P8 and P9.
+- the current CONFER English score dumps for Chat 5.4 and Opus 4.6
+- the current prompt files in `presuppositions-all/prompt_benchmarking/prompts`
+- the manually calculated hard-label metrics provided for `P8`, `P10`, and `P12`

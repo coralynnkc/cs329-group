@@ -1,24 +1,24 @@
-S1 Acc: 0.4500
-S2 Acc: 0.4800
-S3 Acc: 0.4800
-Mean Acc: 0.4700
-F1-E: 0.3893
-F1-N: 0.5062
-F1-C: 0.4733
-Macro-F1: 0.4563
+S1 Acc: 0.6000
+S2 Acc: 0.5600
+S3 Acc: 0.6400
+Mean Acc: 0.6000
+F1-E: 0.7200
+F1-N: 0.2323
+F1-C: 0.7412
+Macro-F1: 0.5645
 
-item_id,e_probability,n_probability,c_probability
+item_id,predicted_label
 test_type1_again_1513,N
 test_type3_again_1813,C
 test_type3_possessive_1927,C
 test_type2_again_1676,N
-test_type2_possessive_1083,E
+test_type2_possessive_1083,N
 test_type3_possessive_1362,E
 test_type4_possessive_1420,E
 test_type3_possessive_1886,C
 test_type5_again_0703,E
 test_type5_again_0623,E
-test_type2_possessive_1164,E
+test_type2_possessive_1164,N
 test_type2_again_1641,N
 test_type1_again_0811,E
 test_type3_possessive_1335,E
@@ -26,13 +26,13 @@ test_type4_possessive_0412,E
 test_type3_again_2267,E
 test_type2_again_0966,E
 test_type3_again_1222,E
-test_type2_possessive_1711,C
+test_type2_possessive_1711,N
 test_type4_possessive_1389,E
 test_type2_again_0983,E
 test_type5_again_0505,E
 test_type5_possessive_0268,E
 test_type5_again_2121,C
-test_type2_possessive_1128,E
+test_type2_possessive_1128,N
 test_type4_possessive_0386,E
 test_type5_possessive_0295,E
 test_type3_possessive_1370,E
@@ -66,10 +66,10 @@ test_type3_possessive_2287,E
 test_type1_again_0843,E
 test_type5_possessive_0149,E
 test_type4_possessive_0346,E
-test_type2_possessive_1160,E
+test_type2_possessive_1160,N
 test_type1_again_1527,N
 test_type5_possessive_0135,E
-test_type2_possessive_1103,E
+test_type2_possessive_1103,N
 test_type4_possessive_0355,E
 test_type2_again_1625,N
 test_type4_possessive_2297,C
@@ -82,7 +82,7 @@ test_type5_again_0640,E
 test_type5_again_2108,C
 test_type3_possessive_1333,E
 test_type3_again_1201,E
-test_type2_possessive_1715,C
+test_type2_possessive_1715,N
 test_type4_possessive_1379,E
 test_type1_possessive_0880,E
 test_type3_again_1841,C
@@ -99,12 +99,12 @@ test_type1_possessive_0870,E
 test_type5_again_2157,C
 test_type4_possessive_1938,C
 test_type1_again_1464,N
-test_type2_possessive_1741,C
+test_type2_possessive_1741,N
 test_type5_possessive_2049,C
 test_type5_possessive_0224,E
 test_type5_possessive_2039,C
-test_type2_possessive_1691,C
-test_type2_possessive_1067,E
+test_type2_possessive_1691,N
+test_type2_possessive_1067,N
 test_type5_again_0537,E
 test_type5_possessive_0316,E
 test_type5_possessive_0214,E
@@ -131,7 +131,7 @@ test_type5_possessive_0176,E
 test_type4_possessive_1387,E
 test_type1_again_0845,E
 test_type5_again_2310,N
-test_type2_possessive_1696,C
+test_type2_possessive_1696,N
 test_type2_again_1640,N
 test_type5_again_0597,E
 test_type3_possessive_1366,E
@@ -141,7 +141,7 @@ test_type3_again_1825,C
 test_type4_possessive_1397,E
 test_type5_again_2108,C
 test_type5_again_0457,E
-test_type2_possessive_1752,C
+test_type2_possessive_1752,N
 test_type5_possessive_2026,C
 test_type5_again_0630,E
 test_type4_possessive_1952,C
@@ -157,11 +157,11 @@ test_type1_possessive_0876,E
 test_type1_possessive_0857,E
 test_type4_possessive_1959,C
 test_type5_again_2168,C
-test_type2_possessive_1063,E
+test_type2_possessive_1063,N
 test_type4_possessive_0408,E
 test_type1_again_1460,N
 test_type5_again_0509,E
-test_type2_possessive_1724,C
+test_type2_possessive_1724,N
 test_type5_possessive_0058,E
 test_type4_possessive_0422,E
 test_type4_possessive_1991,C
@@ -172,10 +172,10 @@ test_type1_possessive_0856,E
 test_type5_possessive_0219,E
 test_type4_possessive_0349,E
 test_type1_again_0821,E
-test_type2_possessive_1739,C
+test_type2_possessive_1739,N
 test_type5_again_0587,E
 test_type1_possessive_0878,E
-test_type2_possessive_1065,E
+test_type2_possessive_1065,N
 test_type4_possessive_0416,E
 test_type3_again_1216,E
 test_type5_again_2143,C
@@ -189,7 +189,7 @@ test_type5_possessive_0187,E
 test_type4_possessive_1930,C
 test_type5_possessive_0183,E
 test_type3_possessive_2281,E
-test_type2_possessive_1699,C
+test_type2_possessive_1699,N
 test_type1_possessive_1569,C
 test_type5_again_2128,C
 test_type5_again_2130,C
@@ -198,13 +198,13 @@ test_type3_again_1189,E
 test_type2_again_1018,E
 test_type5_possessive_2066,C
 test_type1_possessive_1608,C
-test_type2_possessive_1073,E
+test_type2_possessive_1073,N
 test_type1_possessive_0905,E
 test_type5_again_0728,E
 test_type2_again_1665,N
 test_type5_again_0569,E
-test_type2_possessive_1736,C
-test_type2_possessive_1766,C
+test_type2_possessive_1736,N
+test_type2_possessive_1766,N
 test_type3_possessive_2286,E
 test_type5_possessive_0010,E
 test_type5_possessive_0249,E
@@ -225,9 +225,9 @@ test_type5_possessive_0290,E
 test_type5_possessive_0212,E
 test_type3_possessive_1328,E
 test_type5_again_2166,C
-test_type2_possessive_1130,E
+test_type2_possessive_1130,N
 test_type5_possessive_0307,E
-test_type2_possessive_1752,C
+test_type2_possessive_1752,N
 test_type3_again_1810,C
 test_type3_possessive_1923,C
 test_type5_possessive_0048,E
@@ -249,7 +249,7 @@ test_type1_possessive_1550,C
 test_type1_possessive_0906,E
 test_type2_again_1670,N
 test_type1_again_0828,E
-test_type2_possessive_1746,C
+test_type2_possessive_1746,N
 test_type1_again_2178,N
 test_type5_again_0492,E
 test_type4_possessive_0329,E
@@ -272,11 +272,11 @@ test_type5_possessive_0114,E
 test_type3_possessive_1894,C
 test_type1_possessive_1586,C
 test_type5_again_0529,E
-test_type2_possessive_1147,E
+test_type2_possessive_1147,N
 test_type4_possessive_0413,E
 test_type5_again_0638,E
 test_type1_again_1450,N
-test_type2_possessive_1115,E
+test_type2_possessive_1115,N
 test_type3_possessive_1341,E
 test_type5_possessive_0223,E
 test_type5_possessive_2045,C
@@ -284,20 +284,20 @@ test_type1_possessive_0931,E
 test_type5_again_2119,C
 test_type4_possessive_1431,E
 test_type5_again_0522,E
-test_type2_possessive_1074,E
+test_type2_possessive_1074,N
 test_type2_again_1640,N
 test_type4_possessive_0373,E
 test_type5_possessive_0139,E
-test_type2_possessive_1075,E
-test_type5_possessive_0177,N
+test_type2_possessive_1075,N
+test_type5_possessive_0177,E
 test_type5_again_2126,C
 test_type4_possessive_2291,C
-test_type2_possessive_2242,C
+test_type2_possessive_2242,N
 test_type4_possessive_1441,E
 test_type3_again_1841,C
 test_type1_possessive_1593,C
 test_type5_again_0506,E
-test_type2_possessive_1697,C
+test_type2_possessive_1697,N
 test_type1_again_1488,N
 test_type2_again_0971,E
 test_type3_possessive_2279,E
@@ -305,6 +305,6 @@ test_type5_possessive_2013,C
 test_type5_again_0693,E
 test_type4_possessive_1957,C
 test_type3_possessive_1924,C
-test_type2_possessive_1154,E
+test_type2_possessive_1154,N
 test_type4_possessive_0395,E
 test_type5_again_0434,E
