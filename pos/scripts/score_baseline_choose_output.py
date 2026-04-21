@@ -7,19 +7,28 @@ where predicted_tags is a space-separated sequence of UD POS tags.
 
 Usage:
     # Score for a model
-    python scripts/score_baseline.py --model sonnet
+    python scripts/score_baseline_choose_output.py --model sonnet
 
     # Debug to inspect token-level mismatches
-    python scripts/score_baseline.py --model sonnet --debug
+    python scripts/score_baseline_choose_output.py --model sonnet --debug
 
-    # Score a single file directly
-    python scripts/score_baseline.py \\
+    # Score a single file directly, print all results including per-tag F1
+    python scripts/score_baseline_choose_output.py \\
         --predictions mini/en_predictions_sonnet.csv \\
         --answers     mini/en_answers.csv
+
+    # Score a single file and save all results to a specified output file
+    python scripts/score_baseline_choose_output.py \\
+        --predictions results/chatgpt_5.4_r1_scores.csv \\
+        --answers     mini/en_answers_r1.csv \\
+        --output      results/my_output.csv
 
 Results are saved to:
     results/<model>_scores.csv   — per-sample breakdown
     results/summary.csv          — all models side by side
+
+When --output is specified with --predictions:
+    <output>             — summary + per-sample + per-tag F1 all in one file
 """
 
 import os
@@ -196,6 +205,32 @@ def write_csv_file(rows, path):
         w.writerows(rows)
 
 
+def write_full_output(r, output_path):
+    """Write summary, per-sample, and per-tag F1 all to one CSV."""
+    os.makedirs(os.path.dirname(os.path.abspath(output_path)), exist_ok=True)
+    rows = []
+
+    # Summary section
+    rows.append({"section": "summary", "key": "mean_acc",  "value": r["mean_acc"]})
+    rows.append({"section": "summary", "key": "min_acc",   "value": r["min_acc"]})
+    rows.append({"section": "summary", "key": "max_acc",   "value": r["max_acc"]})
+    rows.append({"section": "summary", "key": "mean_f1",   "value": r["mean_f1"]})
+
+    # Per-sample section
+    for i, (acc, f1) in enumerate(zip(r["samples_acc"], r["samples_f1"]), start=1):
+        rows.append({"section": "per_sample", "key": f"sample_{i}_acc", "value": acc})
+        rows.append({"section": "per_sample", "key": f"sample_{i}_f1",  "value": f1})
+
+    # Per-tag F1 section
+    for tag, f1 in sorted(r["tag_f1"].items()):
+        rows.append({"section": "per_tag_f1", "key": tag, "value": f1})
+
+    with open(output_path, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=["section", "key", "value"])
+        w.writeheader()
+        w.writerows(rows)
+
+
 def score_model(model, debug=False):
     pred_path   = os.path.join(MINI_DIR, f"en_predictions_{model}.csv")
     answer_path = os.path.join(MINI_DIR, "en_answers.csv")
@@ -250,6 +285,8 @@ def main():
                        help="path to a single predictions CSV")
     parser.add_argument("--answers",
                        help="answer key CSV (required with --predictions)")
+    parser.add_argument("--output",
+                       help="path to save full results (summary + per-sample + per-tag F1) as CSV")
     parser.add_argument("--debug", action="store_true",
                        help="print token-level diagnostics")
     args = parser.parse_args()
@@ -263,6 +300,13 @@ def main():
         print(f"mean_acc={r['mean_acc']:.3f}  min_acc={r['min_acc']:.3f}  max_acc={r['max_acc']:.3f}  mean_f1={r['mean_f1']:.3f}")
         print(f"per-sample acc: {r['samples_acc']}")
         print(f"per-sample f1:  {r['samples_f1']}")
+        if r["tag_f1"]:
+            print("\nper-tag F1:")
+            for tag, f1 in sorted(r["tag_f1"].items()):
+                print(f"  {tag:<6} {f1:.4f}")
+        if args.output:
+            write_full_output(r, args.output)
+            print(f"\nFull results saved to {args.output}")
 
 
 if __name__ == "__main__":

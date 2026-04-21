@@ -1,0 +1,16 @@
+R1:
+mean_acc=0.930  min_acc=0.930  max_acc=0.930  mean_f1=0.847
+per-sample acc: [0.9302]
+per-sample f1:  [0.8472]
+
+
+R2:
+mean_acc=0.856  min_acc=0.856  max_acc=0.856  mean_f1=0.817
+per-sample acc: [0.8556]
+per-sample f1:  [0.8174]
+
+R3:
+mean_acc=0.752  min_acc=0.752  max_acc=0.752  mean_f1=0.693
+per-sample acc: [0.7518]
+per-sample f1:  [0.6932]
+
