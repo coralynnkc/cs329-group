@@ -43,17 +43,20 @@ def load_per_sample(model):
 def build_summary_table(rows):
     lines = [
         RESULTS_START,
-        "| Model | S1 Acc | S2 Acc | S3 Acc | Mean Acc | Mean Macro-F1 |",
-        "| ----- | ------ | ------ | ------ | -------- | ------------- |",
+        "| Model | S1 Acc | S2 Acc | S3 Acc | Mean Acc | F1-E | F1-N | F1-C | Macro-F1 |",
+        "| ----- | ------ | ------ | ------ | -------- | ---- | ---- | ---- | -------- |",
     ]
     for row in rows:
-        model    = row.get("model", "")
-        mean_acc = row.get("mean_acc", "")
-        mean_f1  = row.get("mean_f1", "")
-        acc, _   = load_per_sample(model)
+        model      = row.get("model", "")
+        mean_acc   = row.get("mean_acc", "")
+        mean_f1_E  = row.get("mean_f1_E", "")
+        mean_f1_N  = row.get("mean_f1_N", "")
+        mean_f1_C  = row.get("mean_f1_C", "")
+        mean_f1    = row.get("mean_f1", "")
+        acc, _     = load_per_sample(model)
         lines.append(
             f"| {model} | {acc['1']} | {acc['2']} | {acc['3']} "
-            f"| {mean_acc} | {mean_f1} |"
+            f"| {mean_acc} | {mean_f1_E} | {mean_f1_N} | {mean_f1_C} | {mean_f1} |"
         )
     lines.append(RESULTS_END)
     return "\n".join(lines)

@@ -16,8 +16,8 @@ Each trigger family has 5 sub-types (type1–type5) corresponding to different l
 ## Baseline Results
 
 <!-- results:start -->
-| Model | S1 Acc | S2 Acc | S3 Acc | Mean Acc | Mean Macro-F1 |
-| ----- | ------ | ------ | ------ | -------- | ------------- |
+| Model | S1 Acc | S2 Acc | S3 Acc | Mean Acc | F1-E | F1-N | F1-C | Macro-F1 |
+| ----- | ------ | ------ | ------ | -------- | ---- | ---- | ---- | -------- |
 <!-- results:end -->
 
 *Run `python presupposition/scripts/update_readme.py` after scoring to populate this table.*
@@ -118,10 +118,11 @@ Use exactly E, N, or C — no other values.
 
 ## Metrics
 
-- **Accuracy** — primary metric (fraction of correct 3-way classifications)
-- **Macro-F1** — unweighted average F1 across E / N / C classes
+- **Accuracy** — fraction of correct 3-way classifications
+- **F1-E / F1-N / F1-C** — per-label F1 for each class
+- **Macro-F1** — unweighted average of F1-E, F1-N, F1-C
 
-Reported per sample and averaged across all 3 samples.
+All metrics are reported per sample and averaged across all 3 samples.
 
 ---
 
