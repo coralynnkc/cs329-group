@@ -18,6 +18,10 @@ Each trigger family has 5 sub-types (type1–type5) corresponding to different l
 <!-- results:start -->
 | Model | S1 Acc | S2 Acc | S3 Acc | Mean Acc | F1-E | F1-N | F1-C | Macro-F1 |
 | ----- | ------ | ------ | ------ | -------- | ---- | ---- | ---- | -------- |
+| sonnet | 0.45 | 0.46 | 0.44 | 0.45 | 0.6171 | 0.0142 | 0.4897 | 0.3736 |
+| opus | 0.58 | 0.58 | 0.55 | 0.57 | 0.6949 | 0.0979 | 0.7558 | 0.5162 |
+| chatgpt | 0.7 | 0.69 | 0.71 | 0.7 | 0.8218 | 0.6779 | 0.5177 | 0.6725 |
+| gemini | 0.59 | 0.58 | 0.61 | 0.5933 | 0.7807 | 0.5288 | 0.3252 | 0.5449 |
 <!-- results:end -->
 
 *Run `python presupposition/scripts/update_readme.py` after scoring to populate this table.*
