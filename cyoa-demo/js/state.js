@@ -10,6 +10,11 @@ export function createDefaultState() {
       batchSizeGuess: null,
       revealedCells: [],
       hardestGuess: null,
+      posBenchmarkGuess: null,
+      posHardTagGuesses: [],
+      narniaLabelGuess: null,
+      narniaFewshotGuess: null,
+      narniaChildGuess: null,
     },
     pronoun: {
       step: "intro",

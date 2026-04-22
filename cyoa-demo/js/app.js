@@ -13,7 +13,7 @@ import {
   tableCard,
 } from "./components.js";
 import { lemmatizationData } from "./data/lemmatization.js";
-import { pathways, sharedNotes, siteMeta } from "./data/site.js";
+import { pathways, siteMeta } from "./data/site.js";
 import { presuppositionsData } from "./data/presuppositions.js";
 import { pronounData } from "./data/pronoun.js";
 import { createDefaultState, loadState, resetPathwayState, saveState } from "./state.js";
@@ -31,6 +31,16 @@ const routeConfig = {
       "transition",
       "hardest",
       "subgroups",
+      "bridge",
+      "pos-intro",
+      "pos-reveal",
+      "pos-tags",
+      "pos-decomposition",
+      "ner-reveal",
+      "narnia-labels",
+      "narnia-benchmark-predict",
+      "narnia-benchmark",
+      "narnia-child",
       "conclusion",
     ],
   },
@@ -101,16 +111,9 @@ function getProgressLabel(pathwayId, step) {
 function getPreviousStep(pathwayId) {
   const p = state[pathwayId];
   if (pathwayId === "lemmatization") {
-    const prev = {
-      benchmark: "intro",
-      predictions: "benchmark",
-      grid: "predictions",
-      transition: "grid",
-      hardest: "transition",
-      subgroups: "hardest",
-      conclusion: "subgroups",
-    };
-    return prev[p.step] || null;
+    const steps = routeConfig.lemmatization.steps;
+    const index = steps.indexOf(p.step);
+    return index > 0 ? steps[index - 1] : null;
   }
 
   if (pathwayId === "pronoun") {
@@ -168,19 +171,11 @@ function renderHome() {
     )
     .join("");
 
-  const notes = sharedNotes
-    .map((note) => `<li>${escapeHtml(note)}</li>`)
-    .join("");
-
   return `
     <section class="home-hero">
-      ${progressPill("Interactive Desktop Demo")}
+      ${progressPill("Interactive Demo")}
       <h1>${escapeHtml(siteMeta.title)}</h1>
       <p class="hero-subtitle">${escapeHtml(siteMeta.subtitle)}</p>
-      <div class="hero-note">
-        <strong>What this demo does:</strong>
-        <span>${escapeHtml(siteMeta.projectSummary)}</span>
-      </div>
     </section>
 
     <section class="home-grid">
@@ -191,9 +186,9 @@ function renderHome() {
         <section class="panel-card">
           <div class="panel-header">
             <h3>How It Works</h3>
-            <p>Choose a pathway, make a few predictions, then compare them with the benchmark reveal.</p>
+            <p>How good are you at predicting LLM performance? Choose a pathway, test your intuition, and learn about linguistics and LLM applications!</p>
+            <p>Don't know where to start? Enter the Wardrobe and take the pathway to Narnia!</p>
           </div>
-          <ul class="note-list">${notes}</ul>
         </section>
       </aside>
     </section>
@@ -206,6 +201,18 @@ function renderLemmatization() {
     canBack: p.step !== "intro",
     pathwayId: "lemmatization",
   });
+  const scoreToneClass = (value, thresholds = {}) => {
+    const { high = 0.9, medium = 0.8, low = 0.65 } = thresholds;
+    if (value >= high) return "score-chip-high";
+    if (value >= medium) return "score-chip-medium";
+    if (value >= low) return "score-chip-warm";
+    return "score-chip-low";
+  };
+  const posHardTagHits = lemmatizationData.pos.actualHardestTags.filter((tag) =>
+    p.posHardTagGuesses.includes(tag),
+  );
+  const narniaQuizCorrect =
+    p.narniaLabelGuess && p.narniaLabelGuess === lemmatizationData.narnia.quiz.correct;
 
   const hero = `
     <section class="hero-card">
@@ -251,7 +258,7 @@ function renderLemmatization() {
       <section class="panel-card">
         <div class="panel-header">
           <h3>How Good Are LLMs at This?</h3>
-          <p>Current state-of-the-art lemmatization performance is very high. Our best models get close to that level.</p>
+          <p>${escapeHtml(lemmatizationData.benchmarkPrompt)}</p>
         </div>
         <h4 class="question-label">Do you think LLMs can match state-of-the-art accuracy?</h4>
         <div class="binary-row">
@@ -402,7 +409,7 @@ function renderLemmatization() {
         ${revealReady ? `
         <div class="callout-banner">
           <strong>${escapeHtml(lemmatizationData.modelTakeaway)}</strong>
-          <span>Some models peak higher. Others are more dependable across different batch sizes.</span>
+          <span>Generally, all these models do well and hover around the same performance metrics. Some models have better one-off performance. Others are more dependable across different batch sizes.</span>
         </div>` : ""}
         <div class="action-row">
           ${
@@ -423,7 +430,7 @@ function renderLemmatization() {
       <section class="panel-card center-card">
         <div class="panel-header">
           <h3>Why Do Certain Models Perform Better or Worse?</h3>
-          <p>The performance differences you just saw are not random. They are mostly driven by how well each model handles <strong>edge cases</strong> — the harder categories of lemmatization where regular patterns break down.</p>
+          <p>The performance differences you just saw are not only randomness. They are largely driven by how well each model handles <strong>edge cases</strong> — the harder categories of lemmatization where regular patterns break down.</p>
         </div>
         <div class="action-row">
           ${button("Explore The Edge Cases", "set-step", {
@@ -516,21 +523,491 @@ function renderLemmatization() {
           <tbody>${rows}</tbody>
         </table>
         <div class="callout-banner">
-          <strong>${userGuessedRight ? "Nice call" : "The surprise"}</strong>
+          <strong>${userGuessedRight ? "Nice call" : "Non-Standard Categories Drive Performance Differentials"}</strong>
           <span>
             ${
               userGuessedRight
                 ? "Irregular forms are the toughest category across all models in this shared comparison."
-                : "The hardest cases are not just the rare ones. Irregular forms are the weakest subgroup across every model in this shared comparison."
+                : "Irregular lemmatization is clearly the hardest category. It's also statistically uncommon. But when models already perform well, the edge cases (ie. irregular forms) tend to define top-tier performance."
             }
           </span>
         </div>
-        <p class="note-text">The models are not failing randomly. Their remaining weakness is concentrated in specific kinds of lemmas.</p>
+        <p class="note-text">The models are not failing randomly. The failures are concentrated in specific types of lemmas.</p>
         <div class="action-row">
-          ${button("Why This Matters", "set-step", {
+          ${button("Zoom Out", "set-step", {
             pathway: "lemmatization",
-            step: "conclusion",
+            step: "bridge",
           })}
+        </div>
+      </section>
+    `;
+  }
+
+  if (p.step === "bridge") {
+    body = `
+      <section class="panel-card center-card">
+        <div class="panel-header">
+          <h3>${escapeHtml(lemmatizationData.bridge.title)}</h3>
+          <p>${escapeHtml(lemmatizationData.bridge.body)}</p>
+        </div>
+        <div class="concept-grid">
+          ${lemmatizationData.bridge.concepts
+            .map(
+              (concept) => `
+                <article class="concept-card">
+                  <h4>${escapeHtml(concept.title)}</h4>
+                  <p>${escapeHtml(concept.body)}</p>
+                </article>
+              `,
+            )
+            .join("")}
+        </div>
+        <div class="action-row">
+          ${button("Try Task Decomposition", "set-step", {
+            pathway: "lemmatization",
+            step: "pos-intro",
+          })}
+        </div>
+      </section>
+    `;
+  }
+
+  if (p.step === "pos-intro") {
+    body = `
+      <section class="panel-card">
+        <div class="panel-header">
+          <h3>${escapeHtml(lemmatizationData.pos.title)}</h3>
+          <p>${escapeHtml(lemmatizationData.pos.definition)}</p>
+        </div>
+        <div class="example-stack example-stack-tight">
+          <div class="quote-card">
+            <p>${escapeHtml(lemmatizationData.pos.example.sentenceA)}</p>
+            <strong>${escapeHtml(lemmatizationData.pos.example.tagsA)}</strong>
+          </div>
+          <div class="quote-card">
+            <p>${escapeHtml(lemmatizationData.pos.example.sentenceB)}</p>
+            <strong>${escapeHtml(lemmatizationData.pos.example.tagsB)}</strong>
+          </div>
+        </div>
+        <div class="callout-banner callout-banner-prominent">
+          <strong>POS tagging is effectively a solved task for fine-tuned systems.</strong>
+          <span>State-of-the-art performance is about ${formatDecimal(lemmatizationData.pos.sota.f1, 2)} F1 and ${formatDecimal(lemmatizationData.pos.sota.acc, 2)} accuracy.</span>
+        </div>
+        <div class="question-focus">
+          <strong>${escapeHtml(lemmatizationData.pos.benchmarkQuestion)}</strong>
+        </div>
+        <div class="binary-row">
+          ${choiceCard({
+            label: "Yes",
+            body: "They should be able to reach benchmark range.",
+            selected: p.posBenchmarkGuess === "yes",
+            action: "set-guess",
+            extra: { pathway: "lemmatization", key: "posBenchmarkGuess", value: "yes" },
+          })}
+          ${choiceCard({
+            label: "No",
+            body: "They'll get close, but the ceiling is still tough.",
+            selected: p.posBenchmarkGuess === "no",
+            action: "set-guess",
+            extra: { pathway: "lemmatization", key: "posBenchmarkGuess", value: "no" },
+          })}
+        </div>
+        <div class="action-row">
+          ${
+            p.posBenchmarkGuess
+              ? button("Reveal POS Results", "set-step", {
+                  pathway: "lemmatization",
+                  step: "pos-reveal",
+                })
+              : `<button class="button" disabled>Choose an answer first</button>`
+          }
+        </div>
+      </section>
+    `;
+  }
+
+  if (p.step === "pos-reveal") {
+    const rows = lemmatizationData.pos.benchmarks
+      .map(
+        (row) => `
+          <tr>
+            <th>${escapeHtml(row.model)}</th>
+            <td><span class="score-chip ${scoreToneClass(row.accuracy, { high: 0.95, medium: 0.9, low: 0.82 })}">${formatDecimal(row.accuracy, 4)}</span></td>
+            <td><span class="score-chip ${scoreToneClass(row.macroF1, { high: 0.95, medium: 0.9, low: 0.8 })}">${formatDecimal(row.macroF1, 4)}</span></td>
+          </tr>
+        `,
+      )
+      .join("");
+
+    body = `
+      <section class="panel-card">
+        <div class="panel-header">
+          <h3>LLMs get close (even with a basic prompt!), but the ceiling is hard</h3>
+          <p>General-purpose LLMs can do POS tagging well, but tippy-top F1 and accuracy are still difficult to match without fine-tuning. Why?</p>
+        </div>
+        <table class="results-table benchmark-table">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Accuracy</th>
+              <th>Macro-F1</th>
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+        <p class="note-text">Accuracy and F1 approach SOTA for this benchmark for Opus 4.6! But where are the models failing?</p>
+        <div class="action-row">
+          ${button("Why Is The Ceiling Hard To Match?", "set-step", {
+            pathway: "lemmatization",
+            step: "pos-tags",
+          })}
+        </div>
+      </section>
+    `;
+  }
+
+  if (p.step === "pos-tags") {
+    body = `
+      <section class="panel-card">
+        <div class="panel-header">
+          <h3>Where Does POS Get Hard?</h3>
+          <p>${escapeHtml(lemmatizationData.pos.tagQuestion)}</p>
+        </div>
+        <div class="tag-picker-status">
+          <strong>${p.posHardTagGuesses.length} / 3 selected</strong>
+          <span>Pick three tags from the mini label map below.</span>
+        </div>
+        <div class="tag-choice-grid">
+          ${lemmatizationData.pos.tagChoices
+            .map(
+              (choice) => `
+                <button
+                  class="tag-choice-card ${p.posHardTagGuesses.includes(choice.id) ? "tag-choice-card-selected" : ""}"
+                  data-action="toggle-multi-select"
+                  data-pathway="lemmatization"
+                  data-key="posHardTagGuesses"
+                  data-value="${escapeHtml(choice.id)}"
+                  data-limit="3"
+                >
+                  <strong>${escapeHtml(choice.label)}</strong>
+                  <span>${escapeHtml(choice.description)}</span>
+                </button>
+              `,
+            )
+            .join("")}
+        </div>
+        <div class="action-row">
+          ${
+            p.posHardTagGuesses.length === 3
+              ? button("Reveal The Hardest Tags", "set-step", {
+                  pathway: "lemmatization",
+                  step: "pos-decomposition",
+                })
+              : `<button class="button" disabled>Pick exactly 3 tags</button>`
+          }
+        </div>
+      </section>
+    `;
+  }
+
+  if (p.step === "pos-decomposition") {
+    const heatmapRows = lemmatizationData.pos.tagHeatmap
+      .map(
+        (row) => `
+          <tr>
+            <th>${escapeHtml(row.model)}</th>
+            ${lemmatizationData.pos.tagChoices
+              .map((choice) => {
+                const value = row.tags[choice.id];
+                return `<td><span class="score-chip ${scoreToneClass(value, { high: 0.88, medium: 0.72, low: 0.45 })}">${formatPercent(value, 1)}</span></td>`;
+              })
+              .join("")}
+          </tr>
+        `,
+      )
+      .join("");
+
+    body = `
+      <section class="panel-card">
+        <div class="panel-header">
+          <h3>Answer: Task Decomposition</h3>
+          <p>POS tagging looks like one task, but the error profile says otherwise.</p>
+        </div>
+        <div class="callout-banner">
+          <strong>
+            ${
+              posHardTagHits.length === 3
+                ? "Nice call."
+                : `You found ${posHardTagHits.length} of the 3 hardest tags.`
+            }
+          </strong>
+          <span>The hardest tags here are <strong>${escapeHtml(lemmatizationData.pos.actualHardestTags.join(", "))}</strong>.</span>
+        </div>
+        <table class="results-table heatmap-table">
+          <thead>
+            <tr>
+              <th>Model</th>
+              ${lemmatizationData.pos.tagChoices
+                .map((choice) => `<th>${escapeHtml(choice.label)}</th>`)
+                .join("")}
+            </tr>
+          </thead>
+          <tbody>${heatmapRows}</tbody>
+        </table>
+        <div class="decomposition-layout">
+          <div class="analysis-card">
+            <strong>What this shows</strong>
+            ${lemmatizationData.pos.decompositionNotes
+              .map((note) => `<p>${escapeHtml(note)}</p>`)
+              .join("")}
+          </div>
+          <div class="decomposition-node-list">
+            ${lemmatizationData.pos.decompositionNodes
+              .map((node) => `<div class="decomposition-node">${escapeHtml(node)}</div>`)
+              .join("")}
+          </div>
+        </div>
+        <div class="action-row">
+          ${button("Now Build The Task Back Up", "set-step", {
+            pathway: "lemmatization",
+            step: "ner-reveal",
+          })}
+        </div>
+      </section>
+    `;
+  }
+
+  if (p.step === "ner-reveal") {
+    const rows = lemmatizationData.ner.benchmarks
+      .map(
+        (row) => `
+          <tr>
+            <th>${escapeHtml(row.model)}</th>
+            <td><span class="score-chip ${scoreToneClass(row.f1, { high: 0.945, medium: 0.92, low: 0.88 })}">${formatDecimal(row.f1, 4)}</span></td>
+            <td>${escapeHtml(row.note)}</td>
+          </tr>
+        `,
+      )
+      .join("");
+
+    body = `
+      <section class="panel-card">
+        <div class="panel-header">
+          <h3>${escapeHtml(lemmatizationData.ner.title)}</h3>
+          <p>${escapeHtml(lemmatizationData.ner.definition)}</p>
+        </div>
+        <div class="callout-banner callout-banner-prominent">
+          <strong>Standard NER is perhaps the strongest fit for general LLMs.</strong>
+          <span>Benchmark standards land around ${escapeHtml(lemmatizationData.ner.sotaF1Range)} F1.</span>
+        </div>
+        <table class="results-table benchmark-table">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>F1</th>
+              <th>Read</th>
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+        <p class="note-text">${escapeHtml(lemmatizationData.ner.takeaway)}</p>
+        <div class="action-row">
+          ${button("Compose A New NER Task", "set-step", {
+            pathway: "lemmatization",
+            step: "narnia-labels",
+          })}
+        </div>
+      </section>
+    `;
+  }
+
+  if (p.step === "narnia-labels") {
+    body = `
+      <section class="panel-card">
+        <div class="panel-header">
+          <h3>${escapeHtml(lemmatizationData.narnia.title)}</h3>
+          <p>${escapeHtml(lemmatizationData.narnia.intro)}</p>
+        </div>
+        <div class="label-grid">
+          ${lemmatizationData.narnia.labels
+            .map(
+              (label) => `
+                <article class="label-card">
+                  <strong>${escapeHtml(label.id)}</strong>
+                  <p>${escapeHtml(label.description)}</p>
+                </article>
+              `,
+            )
+            .join("")}
+        </div>
+        <div class="analysis-card">
+          <strong>${escapeHtml(lemmatizationData.narnia.quiz.prompt)}</strong>
+          <p class="quiz-sentence">${escapeHtml(lemmatizationData.narnia.quiz.sentence)}</p>
+          <div class="option-grid option-grid-wide">
+            ${lemmatizationData.narnia.quiz.options
+              .map((option) =>
+                choiceCard({
+                  label: option,
+                  body: "",
+                  selected: p.narniaLabelGuess === option,
+                  action: "set-guess",
+                  extra: { pathway: "lemmatization", key: "narniaLabelGuess", value: option },
+                }),
+              )
+              .join("")}
+          </div>
+          ${
+            p.narniaLabelGuess
+              ? `
+                <div class="callout-banner ${narniaQuizCorrect ? "" : "callout-banner-soft-coral"}">
+                  <strong>${narniaQuizCorrect ? "Exactly." : "Close, but not quite."}</strong>
+                  <span>${escapeHtml(lemmatizationData.narnia.quiz.explanation)}</span>
+                </div>
+              `
+              : ""
+          }
+        </div>
+        <div class="action-row">
+          ${
+            p.narniaLabelGuess
+              ? button("Test The Custom Benchmark", "set-step", {
+                  pathway: "lemmatization",
+                  step: "narnia-benchmark-predict",
+                })
+              : `<button class="button" disabled>Answer the label question first</button>`
+          }
+        </div>
+      </section>
+    `;
+  }
+
+  if (p.step === "narnia-benchmark-predict") {
+    body = `
+      <section class="panel-card center-card">
+        <div class="panel-header">
+          <h3>Will A Better Prompt Help Here?</h3>
+          <p>${escapeHtml(lemmatizationData.narnia.benchmarkQuestion)}</p>
+        </div>
+        <div class="callout-banner">
+          <strong>${escapeHtml(lemmatizationData.narnia.note)}</strong>
+          <span>Because this is a small, custom literary benchmark, prompt design may matter more than it did in the standard NER setting.</span>
+        </div>
+        <div class="binary-row">
+          ${choiceCard({
+            label: "Yes",
+            body: "A few-shot prompt should help.",
+            selected: p.narniaFewshotGuess === "yes",
+            action: "set-guess",
+            extra: { pathway: "lemmatization", key: "narniaFewshotGuess", value: "yes" },
+          })}
+          ${choiceCard({
+            label: "No",
+            body: "The task should stay about the same.",
+            selected: p.narniaFewshotGuess === "no",
+            action: "set-guess",
+            extra: { pathway: "lemmatization", key: "narniaFewshotGuess", value: "no" },
+          })}
+        </div>
+        <div class="action-row">
+          ${
+            p.narniaFewshotGuess
+              ? button("Reveal The Narnia Results", "set-step", {
+                  pathway: "lemmatization",
+                  step: "narnia-benchmark",
+                })
+              : `<button class="button" disabled>Choose an answer first</button>`
+          }
+        </div>
+      </section>
+    `;
+  }
+
+  if (p.step === "narnia-benchmark") {
+    const rows = lemmatizationData.narnia.benchmarks
+      .map((row) => {
+        const gain = row.fewShot - row.zeroShot;
+        return `
+          <tr>
+            <th>${escapeHtml(row.model)}</th>
+            <td><span class="score-chip ${scoreToneClass(row.zeroShot, { high: 0.8, medium: 0.7, low: 0.58 })}">${formatDecimal(row.zeroShot, 4)}</span></td>
+            <td><span class="score-chip ${scoreToneClass(row.fewShot, { high: 0.8, medium: 0.7, low: 0.58 })}">${formatDecimal(row.fewShot, 4)}</span></td>
+            <td><span class="score-chip ${scoreToneClass(gain, { high: 0.18, medium: 0.08, low: 0.03 })}">+${formatDecimal(gain, 4)}</span></td>
+          </tr>
+        `;
+      })
+      .join("");
+
+    body = `
+      <section class="panel-card">
+        <div class="panel-header">
+          <h3>Custom Literary NER Benefits From Prompting</h3>
+          <p>Once the task becomes more niche, prompt engineering starts helping again.</p>
+        </div>
+        <table class="results-table benchmark-table">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Zero-shot F1</th>
+              <th>Few-shot F1</th>
+              <th>Gain</th>
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+        <div class="callout-banner">
+          <strong>Establishing a sufficient baseline for our custom task...</strong>
+          <span>${escapeHtml(lemmatizationData.narnia.applicationCopy)}</span>
+        </div>
+        <p class="fine-print">${escapeHtml(lemmatizationData.narnia.note)}</p>
+        <div class="action-row">
+          ${button("One Last Prediction", "set-step", {
+            pathway: "lemmatization",
+            step: "narnia-child",
+          })}
+        </div>
+      </section>
+    `;
+  }
+
+  if (p.step === "narnia-child") {
+    body = `
+      <section class="panel-card center-card">
+        <div class="panel-header">
+          <h3>OUR FINAL QUESTION!</h3>
+          <p>${escapeHtml(lemmatizationData.narnia.childQuestion)}</p>
+        </div>
+        <div class="binary-row binary-row-wrap">
+          ${lemmatizationData.narnia.childOptions
+            .map((child) =>
+              choiceCard({
+                label: child,
+                body: "",
+                selected: p.narniaChildGuess === child,
+                action: "set-guess",
+                extra: { pathway: "lemmatization", key: "narniaChildGuess", value: child },
+              }),
+            )
+            .join("")}
+        </div>
+        ${
+          p.narniaChildGuess
+            ? `
+              <div class="callout-banner">
+                <strong>You picked ${escapeHtml(p.narniaChildGuess)}.</strong>
+                <span>${escapeHtml(lemmatizationData.narnia.childTease)}</span>
+              </div>
+            `
+            : ""
+        }
+        <div class="action-row">
+          ${
+            p.narniaChildGuess
+              ? button("See The TLDR", "set-step", {
+                  pathway: "lemmatization",
+                  step: "conclusion",
+                })
+              : `<button class="button" disabled>Pick a child first</button>`
+          }
         </div>
       </section>
     `;
@@ -540,17 +1017,17 @@ function renderLemmatization() {
     body = `
       <section class="panel-card">
         <div class="panel-header">
-          <h3>Why This Matters</h3>
-          <p>LLMs are already highly usable for lemmatization. But even for this reliable task, accuracy can't be quite perfect — and the remaining errors are concentrated, not random.</p>
+          <h3>${escapeHtml(lemmatizationData.conclusion.title)}</h3>
+          <p>${escapeHtml(lemmatizationData.conclusion.body)}</p>
         </div>
         <div class="summary-stack">
-          ${metricCard("Main remaining weakness", "Irregular lemmatization", "non-standard mappings like went -> go")}
-          ${metricCard("Mitigation: lookup dictionary", "Splice in a dictionary of known irregular lemmas", "catch errors the model misses at inference time")}
-          ${metricCard("Mitigation: targeted training", "More model development on irregular forms", "improve the model's coverage of non-standard patterns")}
+          ${metricCard("Build down", "Task decomposition", "Use sub-task structure to find where difficulty really lives.")}
+          ${metricCard("Build up", "Task composition", "Use strong base tasks to create more interesting annotation schemes.")}
+          ${metricCard("Practical rule", "Match task, data, and prompt", "Thse combinations make LLM applications interesting")}
         </div>
         <div class="callout-banner">
-          <strong>The bottom line</strong>
-          <span>LLMs are useful for lemmatization right now — but irregular forms need extra attention. A hybrid approach (LLM + irregular-lemma dictionary) is the most practical path to near-perfect accuracy.</span>
+          <strong>Keep Exploring</strong>
+          <span>Check out our Narnia results or learn about the application of LLMs among more difficult linguistic tasks.</span>
         </div>
         <div class="action-row">
           ${button("Return Home", "go-home")}
@@ -1333,6 +1810,9 @@ function handleAction(target) {
     if (pathway === "presuppositions" && step === "prompt-select") {
       state.presuppositions.promptDraft = null;
     }
+    if (pathway === "lemmatization" && step === "grid") {
+      state.lemmatization.revealedCells = [];
+    }
     state[pathway].step = step;
     setRoute(pathway, step);
     return;
@@ -1341,6 +1821,24 @@ function handleAction(target) {
   if (action === "set-guess") {
     const { pathway, key, value } = target.dataset;
     state[pathway][key] = value;
+    saveState(state);
+    render();
+    return;
+  }
+
+  if (action === "toggle-multi-select") {
+    const { pathway, key, value } = target.dataset;
+    const limit = Number(target.dataset.limit || 0);
+    const current = Array.isArray(state[pathway][key]) ? [...state[pathway][key]] : [];
+    const existingIndex = current.indexOf(value);
+
+    if (existingIndex >= 0) {
+      current.splice(existingIndex, 1);
+    } else if (!limit || current.length < limit) {
+      current.push(value);
+    }
+
+    state[pathway][key] = current;
     saveState(state);
     render();
     return;

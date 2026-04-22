@@ -1,7 +1,7 @@
 export const siteMeta = {
   title: "Applying LLMs in Linguistics",
   subtitle:
-    "When large language models help, prompts matter (sometimes), and where linguistic tasks compound.",
+    "When large language models help, prompts matter (sometimes), and linguistic tasks compound.",
   projectSummary:
     "Each pathway teaches a different methodological lesson on optimizing LLMS to the linguistics research field",
 };
@@ -9,10 +9,10 @@ export const siteMeta = {
 export const pathways = [
   {
     id: "lemmatization",
-    title: "Lemmatization",
+    title: "Lemmatization, POS Tagging, NER, and ...Narnia?",
     eyebrow: "Morphology",
     short:
-      "High headline accuracy still hides structured weakness, especially on irregular forms.",
+      "What makes LLMs accurate, intesesting, and applicable to linguistics?",
     accent: "teal",
     cta: "Explore Lemmatization",
   },
@@ -21,7 +21,7 @@ export const pathways = [
     title: "Pronoun Resolution",
     eyebrow: "Reference",
     short:
-      "Prompt tuning does not matter equally everywhere. Stable English settings are different from lower-resource ones.",
+      "Prompts, multi-language comparisons, and model stability!",
     accent: "coral",
     cta: "Explore Pronoun Resolution",
   },
@@ -30,7 +30,7 @@ export const pathways = [
     title: "Presuppositions",
     eyebrow: "Semantics",
     short:
-      "The best prompt is not the longest one. It is the one that teaches the semantic boundary clearly.",
+      "How do you define a semantic boundary? Can you identify the best prompt?",
     accent: "gold",
     cta: "Explore Presuppositions",
   },

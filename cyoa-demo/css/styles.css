@@ -828,6 +828,183 @@ textarea {
   background: linear-gradient(90deg, rgba(14, 124, 134, 0.35), rgba(191, 90, 73, 0.72));
 }
 
+.concept-grid,
+.label-grid,
+.tag-choice-grid,
+.decomposition-node-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.concept-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1rem;
+}
+
+.concept-card,
+.label-card {
+  padding: 1.1rem 1.15rem;
+  border-radius: 1.15rem;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid var(--line);
+  text-align: left;
+}
+
+.concept-card h4,
+.label-card strong {
+  margin: 0 0 0.45rem;
+  display: block;
+}
+
+.concept-card p,
+.label-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.example-stack-tight {
+  gap: 0.65rem;
+}
+
+.benchmark-table th:first-child,
+.benchmark-table td:first-child,
+.heatmap-table th:first-child,
+.heatmap-table td:first-child {
+  min-width: 140px;
+}
+
+.score-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 5.4rem;
+  padding: 0.42rem 0.72rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  border: 1px solid transparent;
+}
+
+.score-chip-high {
+  background: rgba(14, 124, 134, 0.15);
+  color: #0a626b;
+  border-color: rgba(14, 124, 134, 0.18);
+}
+
+.score-chip-medium {
+  background: rgba(98, 152, 118, 0.14);
+  color: #2f6841;
+  border-color: rgba(98, 152, 118, 0.18);
+}
+
+.score-chip-warm {
+  background: rgba(225, 177, 83, 0.18);
+  color: #7f5b03;
+  border-color: rgba(172, 123, 15, 0.18);
+}
+
+.score-chip-low {
+  background: rgba(191, 90, 73, 0.14);
+  color: #8d3e32;
+  border-color: rgba(191, 90, 73, 0.18);
+}
+
+.tag-picker-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 0.8rem 0.95rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+}
+
+.tag-picker-status span {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.tag-choice-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 1rem;
+}
+
+.tag-choice-card {
+  appearance: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  padding: 1rem 1.05rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.82);
+  cursor: pointer;
+  transition: transform 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
+  text-align: left;
+}
+
+.tag-choice-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(14, 124, 134, 0.3);
+  box-shadow: 0 14px 28px rgba(33, 41, 62, 0.08);
+}
+
+.tag-choice-card span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.tag-choice-card-selected {
+  border-color: rgba(14, 124, 134, 0.42);
+  background: rgba(220, 244, 245, 0.86);
+}
+
+.decomposition-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: start;
+}
+
+.decomposition-node-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.decomposition-node {
+  padding: 0.9rem 0.95rem;
+  border-radius: 1rem;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(220, 244, 245, 0.68));
+  border: 1px solid rgba(14, 124, 134, 0.12);
+  font-weight: 600;
+}
+
+.label-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 1rem;
+}
+
+.quiz-sentence {
+  margin: 0.55rem 0 1rem;
+  padding: 0.9rem 1rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid var(--line);
+  font-size: 1.03rem;
+}
+
+.callout-banner-soft-coral {
+  background: rgba(252, 229, 223, 0.92);
+  border-color: rgba(191, 90, 73, 0.18);
+}
+
+.binary-row-wrap {
+  flex-wrap: wrap;
+}
+
 .theme-home {
   --accent: var(--home);
   --accent-strong: #243a54;
@@ -856,7 +1033,8 @@ textarea {
   .home-grid,
   .pathway-shell,
   .table-layout,
-  .class-grid {
+  .class-grid,
+  .decomposition-layout {
     grid-template-columns: 1fr;
   }
 
@@ -883,7 +1061,11 @@ textarea {
   .metric-row,
   .summary-stack,
   .grid-row,
-  .binary-row {
+  .binary-row,
+  .concept-grid,
+  .label-grid,
+  .tag-choice-grid,
+  .decomposition-node-list {
     grid-template-columns: 1fr;
     flex-direction: column;
   }
@@ -899,5 +1081,10 @@ textarea {
 
   .robustness-row {
     grid-template-columns: 1fr;
+  }
+
+  .tag-picker-status {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
