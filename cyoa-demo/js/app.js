@@ -1446,8 +1446,8 @@ function renderPresuppositions() {
     body = `
       <section class="panel-card">
         <div class="panel-header">
-          <h3>Can We Beat the Benchmark?</h3>
-          <p>You're working on <strong>${escapeHtml(presuppositionsData.challenge.benchmark)}</strong>, a benchmark for presupposition reasoning. Here is the baseline result for <strong>Chat 5.4</strong>:</p>
+          <h3>Can We Beat Our Own Benchmark?</h3>
+          <p>You're working on <strong>${escapeHtml(presuppositionsData.challenge.benchmark)}</strong>, a benchmark for presupposition reasoning. Here is the baseline result for <strong>Chat 5.4 with a minimal prompt</strong>:</p>
         </div>
         <div class="metric-row">
           ${metricCard("Model", "Chat 5.4")}
@@ -1468,7 +1468,6 @@ function renderPresuppositions() {
 
   if (p.step === "prompt-select") {
     const attemptNumber = p.attempts.length + 1;
-    const triedPrompts = new Set(p.attempts.map((a) => a.promptId));
     body = `
       <section class="panel-card">
         <div class="panel-header">
@@ -1477,23 +1476,20 @@ function renderPresuppositions() {
         </div>
         <div class="option-grid option-grid-wide">
           ${presuppositionsData.promptCards
-            .map((card) => {
-              const alreadyTried = triedPrompts.has(card.id);
-              return choiceCard({
+            .map((card) =>
+              choiceCard({
                 label: `${card.id} · ${card.family}`,
                 body: card.description,
                 selected: p.promptDraft === card.id,
-                disabled: alreadyTried,
-                disabledLabel: "Already tried",
                 action: "set-guess",
                 extra: { pathway: "presuppositions", key: "promptDraft", value: card.id },
-              });
-            })
+              }),
+            )
             .join("")}
         </div>
         <div class="action-row">
           ${
-            p.promptDraft && !triedPrompts.has(p.promptDraft)
+            p.promptDraft
               ? button("Run Prompt", "run-presupposition-prompt")
               : `<button class="button" disabled>Select a prompt first</button>`
           }

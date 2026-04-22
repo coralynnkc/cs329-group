@@ -7,7 +7,7 @@ It contains **two related but distinct sub-experiments** that both use 3-way sem
 - **Prompt engineering on CONFER (English only)**  
   This is the focused English presupposition benchmark centered on CONFER and stored primarily in [`confer_en/`](confer_en/) and the `results/CONFER-*` folders.
 - **Prompt engineering on the multilingual benchmark ("MLM" in project shorthand)**  
-  This is the multilingual presupposition-labeling benchmark across `de`, `en`, `fr`, `hi`, `ru`, and `vi`, stored in the language folders at the root of this directory.
+  This is the multilingual presupposition-labeling benchmark across `de`, `fr`, `hi`, `ru`, and `vi`, stored in the language folders at the root of this directory. An archival English split still exists in the tree for provenance, but the current headline multilingual comparison excludes English because English is benchmarked more cleanly in the dedicated CONFER experiment.
 
 The internal layout has been kept intentionally close to the original source so that the existing scripts and result folders still work with minimal path changes.
 
@@ -28,12 +28,11 @@ Writeup: https://docs.google.com/document/d/1FE2MNvQg3cjaUybsyY9nZky-q5gvIz_ROei
 
 ### 2. Multilingual prompt-engineering experiment
 
-- Task: presupposition-style 3-way semantic classification across `de`, `en`, `fr`, `hi`, `ru`, and `vi`
+- Task: presupposition-style 3-way semantic classification across `de`, `fr`, `hi`, `ru`, and `vi`
 - Dataset sources:
-  - **English (`en`)** comes from **CONFER**
   - **French / German / Hindi / Russian / Vietnamese** come from **XNLI**
 - Main question: how do different prompt structures change the model's `E / N / C` decision boundaries across languages?
-- Practical takeaway: the strongest pattern so far is not simply "one prompt wins everywhere," but that **prompt structure changes which class boundaries the model gets right**, especially `E vs N` and `N vs C`.
+- Practical takeaway: on the current clean multilingual comparison, **P1 is the strongest overall prompt family**, beating `P0` on every non-English language and also outperforming `P2` on average. The present multilingual story is therefore stronger than before: `P1` is not just a good English CONFER prompt, it also transfers well to the non-English MLM benchmark.
 
 ## Overall Goal
 
@@ -79,6 +78,16 @@ This is the broader multilingual benchmark stored in:
 
 This sub-experiment evaluates the same style of prompt variants across multiple languages and then scores prediction files against the corresponding language-specific gold files.
 
+For analysis purposes, the current headline multilingual comparison uses the non-English set:
+
+- `de/`
+- `fr/`
+- `hi/`
+- `ru/`
+- `vi/`
+
+The `en/` directory is retained for provenance and script compatibility, but English results are not part of the main multilingual comparison because English is already covered by the cleaner, dedicated CONFER benchmark.
+
 The dedicated scorer for this setup is:
 
 ```bash
@@ -106,6 +115,8 @@ The multilingual benchmark mixes two sources:
 - **French / German / Hindi / Russian / Vietnamese (`fr`, `de`, `hi`, `ru`, `vi`)**: XNLI
 
 This is the important provenance caveat in this experiment family: the multilingual tree has a shared surface schema, but it is **not** a single homogeneous dataset. English and non-English rows come from different underlying corpora.
+
+Because of that provenance mismatch, and because English is already evaluated more directly in the CONFER experiment, the current README treats the multilingual benchmark as a **non-English transfer benchmark** in its topline analysis. The English MLM files are still preserved here, but they are not used for the headline cross-language claims.
 
 ## How The Multilingual Data Was Processed
 
@@ -200,6 +211,9 @@ Probabilities must sum to 1. We score both:
 
 **P0: direct probability-first labeling**
 P0 asks the model to assign E/N/C probabilities directly from the row, with formatting constraints but no explicit class definitions, no anti-plausibility warning, and no forced hard-label step. That makes it a probability-first method.
+
+**P1: few-shot benchmark-anchored labeling**
+P1 keeps the probability-output format but adds benchmark-shaped examples that demonstrate the intended `E / N / C` boundary directly. In practice, this has become the most important comparison point in the project because it performs strongly on CONFER English and also transfers well to the non-English multilingual benchmark.
 
 **P2: decision-first, direct semantic classification**
 P2 gives explicit semantic definitions for E, C, and N, warns against treating plausibility as entailment, and then tells the model to use this decision procedure:
@@ -330,61 +344,69 @@ The scorer reports:
 - coverage / missing rows / extra IDs
 
 ---
+## Current multilingual snapshot: P0 vs P1 vs P2
+
+The newest clean multilingual comparison asks a simpler question than the earlier `P0 / P2 / P4` sweep: how does the stronger few-shot `P1` prompt compare against both the minimal baseline `P0` and the decision-first `P2` prompt on the non-English multilingual benchmark?
+
+For the current headline comparison, we exclude the MLM English file and compare only `de`, `fr`, `hi`, `ru`, and `vi`.
+
+### Non-English MLM results for Chat 5.4
+
+| Language | P0 Acc | P1 Acc | P2 Acc | Best Acc | P0 Macro-F1 | P1 Macro-F1 | P2 Macro-F1 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| `de` | 0.7900 | 0.8500 | 0.8300 | **P1** | 0.8161 | 0.8499 | 0.8288 |
+| `fr` | 0.8500 | 0.8700 | 0.8400 | **P1** | 0.8487 | 0.8709 | 0.8417 |
+| `hi` | 0.7500 | 0.8000 | 0.8000 | **P1 / P2 tie** | 0.7509 | 0.8016 | 0.8039 |
+| `ru` | 0.7900 | 0.8200 | 0.7800 | **P1** | 0.7884 | 0.8197 | 0.7837 |
+| `vi` | 0.7800 | 0.7900 | 0.7800 | **P1** | 0.7831 | 0.7920 | 0.7811 |
+| **Average** | **0.7920** | **0.8260** | **0.8060** | **P1** | **0.7974** | **0.8268** | **0.8078** |
+
+Interpretation:
+
+- `P1` is the strongest overall prompt family on this non-English MLM comparison.
+- `P1` improves over `P0` in **every non-English language** in both accuracy and Macro-F1.
+- `P1` also beats `P2` on average accuracy and average Macro-F1.
+- `P2` is competitive, but it only matches `P1` on accuracy in `hi` and trails it in the other four languages.
+- The largest `P0 -> P1` gains appear in `de` and `hi`.
+- `fr` remains the strongest overall language, and `P1` is also the best prompt there.
+
+### Why English is excluded from the MLM headline table
+
+The MLM English file is preserved in the repository, but it is no longer part of the main benchmark claim for two reasons:
+
+1. English is already evaluated more directly in the dedicated CONFER experiment.
+2. The latest `chat_5.4` MLM English `P1` run had severe ID mismatch / coverage problems, so it is not a fair comparison point for prompt effects.
+
+---
 ## Findings so far
 
-- **Prompt structure matters for semantic reasoning.**  
-  The main contrast is between **P0** (probability-first) and **P2/P4** (decision-first). Forcing class commitment before probability assignment changes model behavior in meaningful ways.
+- **P1 is now the most important multilingual result.**  
+  On the clean non-English multilingual comparison, `P1` beats `P0` in every language we re-scored and also beats `P2` overall. That makes `P1` more than just the strongest CONFER-English prompt family: it also appears to transfer well across the multilingual benchmark.
 
-- **P2 and P4 are not fully distinct methodologies.**  
-  Both are **decision-first prompts** that use truth/falsity-style semantic framing.  
-  The difference is that **P4 makes the decomposition more explicit**, while **P2 uses a sequential guarantee-based rule**.  
-  So the strongest clean contrast is still **P0 vs P2/P4**, not **P2 vs P4 as totally different reasoning systems**.
+- **The multilingual benchmark should be interpreted as a non-English transfer test.**  
+  English is still preserved in the directory tree, but the headline comparison should focus on `de`, `fr`, `hi`, `ru`, and `vi`. That keeps the multilingual claim methodologically cleaner because English already has its own dedicated CONFER benchmark.
 
-- **P2 most strongly improves the Entailment–Neutral (E/N) boundary.**  
-  This is clearest in English, where P2 most strongly reduces the model’s tendency to treat plausible or compatible hypotheses as Entailment.
+- **Few-shot benchmark anchoring looks more useful than either lighter prompting or stricter decision-first prompting.**  
+  The multilingual comparison now points in the same direction as the English CONFER results: benchmark-shaped examples appear to teach the label boundary better than either the minimal probability-only baseline `P0` or the more rule-structured `P2` prompt.
 
-- **P2 appears to overcorrect.**  
-  P2 improves Neutral handling, but often at the cost of shifting too many Contradiction cases into Neutral.  
-  In other words, it fixes part of the E/N problem by creating more N/C confusion.
+- **French remains the strongest language overall.**  
+  `fr` is still the highest-scoring language in the current multilingual runs, and it remains strong under both prompts.
 
-- **P4 does not overcorrect in the same way.**  
-  P4 is more balanced than P2, but it also does not preserve P2’s strongest E/N gains, especially in English.  
-  In the hardest cases, P4 often looks like a partial retreat toward the older P0-style behavior.
+- **German and Hindi show the clearest prompt effects.**  
+  The largest `P0 -> P1` improvements appear in `de` and `hi`, and `hi` is also the one language where `P2` remains genuinely competitive with `P1`.
 
-- **P4 does not clearly outperform P2 overall.**  
-  The results are mixed:
-  - **P2** is slightly better on average hard-label metrics like accuracy and Macro-F1.
-  - **P4** tends to be somewhat better on probability-quality metrics like log loss and Brier score.
-  So neither prompt is a universal winner.
+- **Macro-F1 remains the best headline hard-label metric.**  
+  Macro-F1 is still the most useful single summary because it checks whether the model is separating all three classes well rather than winning by overusing the largest or easiest class.
 
-- **P0 is stronger than it first appeared after rerunning DE.**  
-  The original DE-P0 run had ID mismatch issues; after rerunning it cleanly, P0’s average performance improved.  
-  This reduced the size of the apparent P0 → P2/P4 gains, but did not eliminate the main pattern.
-
-- **English remains the hardest language.**  
-  English consistently shows the clearest class-boundary instability:
-  - under **P0**, Neutral collapses into Entailment
-  - under **P2**, Neutral improves but Contradiction collapses into Neutral
-  - under **P4**, English still struggles and often drifts back toward the P0-style pattern
-
-- **French is the easiest and most stable language.**  
-  French performs strongly across prompts and achieves the best overall results under P4.  
-  This suggests the task is not equally difficult across languages.
-
-- **The most important metric for hard-label performance is Macro-F1.**  
-  Macro-F1 is the best headline metric because it evaluates whether the model distinguishes all three classes well, not just whether it gets the top label right often.
-
-- **The most important metric for probability quality is log loss.**  
-  Log loss best captures whether the model assigns meaningful probability mass to the correct class.  
-  Brier score is also useful as a more stable, easier-to-interpret probability-fit metric.
+- **Probability metrics still matter, but they are secondary to clean coverage.**  
+  Log loss and Brier remain important for probability quality, but they are only meaningful once a run has clean ID alignment and near-complete coverage.
 
 - **Centroid is useful, but not evaluative.**  
   Centroid helps explain *how* prompts change class geometry in probability space, especially whether Neutral drifts toward Entailment or Contradiction.  
   But centroid is not a primary evaluation metric because it averages away item-level correctness.
 
-- **The strongest current conclusion is about class-boundary behavior, not raw score wins.**  
-  The experiment shows that prompt design changes which semantic distinctions the model prioritizes.  
-  The key result is not simply that one prompt is “best,” but that different prompts improve or distort different class boundaries.
+- **The main current claim is now stronger and simpler.**  
+  For the multilingual benchmark, the clearest defensible result is that `P1` is the best current non-English prompt family: it yields a modest but consistent boost over `P0` and also outperforms `P2` overall.
 
 ---
 
@@ -418,16 +440,15 @@ If reporting one metric from each category:
 
 Highest-value next steps:
 
-1. Run **P4 on a larger sample or full set**
-2. Do a focused **English error audit**:
+1. Do a focused **non-English error audit** on `P1`:
    - N predicted as E
    - C predicted as N
    - E predicted as N
-3. Compare **hard-label-only** vs **probability-output** versions of the same prompt
-4. Test a **contradiction-anchored** prompt:
+2. Compare **hard-label-only** vs **probability-output** versions of the same prompt
+3. Test a **contradiction-anchored** prompt:
    - first decide compatibility
    - then split compatible cases into E vs N
-5. Replicate the final prompt family on another model
+4. Replicate the final prompt family on another model
 
 Probably not worth doing:
 - lots of minor wording variants
@@ -441,7 +462,7 @@ Probably not worth doing:
 This experiment shows that **semantic decision framing matters** for presupposition labeling.
 
 - **P0** is a useful baseline, but weakly constrained
-- **P2** is the best prompt for probing whether the model is confusing plausibility with entailment
-- **P4** is the best all-around prompt for balanced real-world labeling
+- **P1** is currently the strongest multilingual prompt family
+- the best current multilingual claim is that **P1 improves non-English MLM performance over both P0 and, overall, P2**
 
 Use standard evaluation metrics for performance, and use centroid to explain **why** prompts fail or succeed.
