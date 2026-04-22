@@ -21,7 +21,7 @@ export const pathways = [
     title: "Pronoun Resolution",
     eyebrow: "Reference",
     short:
-      "A tale of two langauge families: prompts, multi-language comparisons, problem, definition, and model stability!",
+      "A tale of two langauge families: prompts, multi-language comparisons, problem definition, and model stability!",
     accent: "coral",
     cta: "Explore Pronoun Resolution",
   },
