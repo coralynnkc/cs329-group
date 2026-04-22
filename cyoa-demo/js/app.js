@@ -418,17 +418,17 @@ function renderLemmatization() {
     `;
   }
 
-  if (p.step === “transition”) {
+  if (p.step === "transition") {
     body = `
-      <section class=”panel-card center-card”>
-        <div class=”panel-header”>
+      <section class="panel-card center-card">
+        <div class="panel-header">
           <h3>Why Do Certain Models Perform Better or Worse?</h3>
           <p>The performance differences you just saw are not random. They are mostly driven by how well each model handles <strong>edge cases</strong> — the harder categories of lemmatization where regular patterns break down.</p>
         </div>
-        <div class=”action-row”>
-          ${button(“Explore The Edge Cases”, “set-step”, {
-            pathway: “lemmatization”,
-            step: “hardest”,
+        <div class="action-row">
+          ${button("Explore The Edge Cases", "set-step", {
+            pathway: "lemmatization",
+            step: "hardest",
           })}
         </div>
       </section>
@@ -536,24 +536,24 @@ function renderLemmatization() {
     `;
   }
 
-  if (p.step === “conclusion”) {
+  if (p.step === "conclusion") {
     body = `
-      <section class=”panel-card”>
-        <div class=”panel-header”>
+      <section class="panel-card">
+        <div class="panel-header">
           <h3>Why This Matters</h3>
           <p>LLMs are already highly usable for lemmatization. But even for this reliable task, accuracy can't be quite perfect — and the remaining errors are concentrated, not random.</p>
         </div>
-        <div class=”summary-stack”>
-          ${metricCard(“Main remaining weakness”, “Irregular lemmatization”, “non-standard mappings like went → go”)}
-          ${metricCard(“Mitigation: lookup dictionary”, “Splice in a dictionary of known irregular lemmas”, “catch errors the model misses at inference time”)}
-          ${metricCard(“Mitigation: targeted training”, “More model development on irregular forms”, “improve the model's coverage of non-standard patterns”)}
+        <div class="summary-stack">
+          ${metricCard("Main remaining weakness", "Irregular lemmatization", "non-standard mappings like went -> go")}
+          ${metricCard("Mitigation: lookup dictionary", "Splice in a dictionary of known irregular lemmas", "catch errors the model misses at inference time")}
+          ${metricCard("Mitigation: targeted training", "More model development on irregular forms", "improve the model's coverage of non-standard patterns")}
         </div>
-        <div class=”callout-banner”>
+        <div class="callout-banner">
           <strong>The bottom line</strong>
           <span>LLMs are useful for lemmatization right now — but irregular forms need extra attention. A hybrid approach (LLM + irregular-lemma dictionary) is the most practical path to near-perfect accuracy.</span>
         </div>
-        <div class=”action-row”>
-          ${button(“Return Home”, “go-home”)}
+        <div class="action-row">
+          ${button("Return Home", "go-home")}
         </div>
       </section>
     `;
