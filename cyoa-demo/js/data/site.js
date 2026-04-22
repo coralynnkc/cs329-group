@@ -21,7 +21,7 @@ export const pathways = [
     title: "Pronoun Resolution",
     eyebrow: "Reference",
     short:
-      "Prompts, multi-language comparisons, and model stability!",
+      "A tale of two langauge families: prompts, multi-language comparisons, problem, definition, and model stability!",
     accent: "coral",
     cta: "Explore Pronoun Resolution",
   },
@@ -30,7 +30,7 @@ export const pathways = [
     title: "Presuppositions",
     eyebrow: "Semantics",
     short:
-      "How do you define a semantic boundary? Can you identify the best prompt?",
+      "How do you define a semantic boundary? Can you identify the best prompt? Is that best prompt generalizable across languages?",
     accent: "gold",
     cta: "Explore Presuppositions",
   },

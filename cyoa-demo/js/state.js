@@ -29,6 +29,7 @@ export function createDefaultState() {
       step: "intro",
       promptDraft: null,
       attempts: [],
+      multilingualTransferGuess: null,
     },
   };
 }

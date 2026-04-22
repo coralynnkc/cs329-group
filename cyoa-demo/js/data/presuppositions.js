@@ -269,4 +269,94 @@ export const presuppositionsData = {
     { label: "RoBERTa", f1E: 0.5, f1N: 0.9, f1C: 0.96 },
     { label: "DeBERTa", f1E: 0.45, f1N: 0.95, f1C: 0.88 },
   ],
+  multilingual: {
+    question:
+      "Does this performance extension carry over to non-English presupposition mapping? Will prompt engineering still apply?",
+    intro:
+      "We tested the same prompt families on a non-English multilingual benchmark across German, French, Hindi, Russian, and Vietnamese.",
+    englishDifferentials: {
+      p1VsP0: 0.1013,
+      p1VsP2: 0.0747,
+    },
+    rows: [
+      {
+        language: "de",
+        p0Acc: 0.79,
+        p1Acc: 0.85,
+        p2Acc: 0.83,
+        p0MacroF1: 0.8161,
+        p1MacroF1: 0.8499,
+        p2MacroF1: 0.8288,
+        best: "P1",
+      },
+      {
+        language: "fr",
+        p0Acc: 0.85,
+        p1Acc: 0.87,
+        p2Acc: 0.84,
+        p0MacroF1: 0.8487,
+        p1MacroF1: 0.8709,
+        p2MacroF1: 0.8417,
+        best: "P1",
+      },
+      {
+        language: "hi",
+        p0Acc: 0.75,
+        p1Acc: 0.8,
+        p2Acc: 0.8,
+        p0MacroF1: 0.7509,
+        p1MacroF1: 0.8016,
+        p2MacroF1: 0.8039,
+        best: "P1 / P2 tie",
+      },
+      {
+        language: "ru",
+        p0Acc: 0.79,
+        p1Acc: 0.82,
+        p2Acc: 0.78,
+        p0MacroF1: 0.7884,
+        p1MacroF1: 0.8197,
+        p2MacroF1: 0.7837,
+        best: "P1",
+      },
+      {
+        language: "vi",
+        p0Acc: 0.78,
+        p1Acc: 0.79,
+        p2Acc: 0.78,
+        p0MacroF1: 0.7831,
+        p1MacroF1: 0.792,
+        p2MacroF1: 0.7811,
+        best: "P1",
+      },
+      {
+        language: "Average",
+        p0Acc: 0.792,
+        p1Acc: 0.826,
+        p2Acc: 0.806,
+        p0MacroF1: 0.7974,
+        p1MacroF1: 0.8268,
+        p2MacroF1: 0.8078,
+        best: "P1",
+        isAverage: true,
+      },
+    ],
+    multilingualDifferentials: {
+      p1VsP0: 0.0294,
+      p1VsP2: 0.019,
+    },
+    takeaway:
+      "Yes: the improvement carries over on average, but less dramatically than it did on the English CONFER benchmark.",
+    sidenote:
+      "Sidenote: French consistently outperforms the other languages on this benchmark. Is French semantically easier to analyze presuppositionally than the other languages on this list? Food for thought.",
+  },
+  conclusion: {
+    title: "Why This Matters",
+    body:
+      "This demo shows that prompt engineering is part of the method — and that more is not always better.",
+    transferQuestion:
+      "Are prompting strategies always generalizable for multilingual model trials?",
+    transferAnswer:
+      "Refer to the Pronoun Resolution pathway to find out!",
+  },
 };

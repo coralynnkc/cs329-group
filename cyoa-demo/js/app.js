@@ -65,8 +65,9 @@ const routeConfig = {
       "reveal",
       "ranking",
       "why-p1",
+      "multilingual-predict",
+      "multilingual-reveal",
       "balance",
-      "conclusion",
     ],
   },
 };
@@ -138,8 +139,9 @@ function getPreviousStep(pathwayId) {
     if (p.step === "reveal") return "prompt-select";
     if (p.step === "ranking") return "reveal";
     if (p.step === "why-p1") return "ranking";
-    if (p.step === "balance") return "why-p1";
-    if (p.step === "conclusion") return "balance";
+    if (p.step === "multilingual-predict") return "why-p1";
+    if (p.step === "multilingual-reveal") return "multilingual-predict";
+    if (p.step === "balance") return "multilingual-reveal";
   }
 
   return null;
@@ -1169,7 +1171,7 @@ function renderPronoun() {
       <section class="panel-card">
         <div class="callout-banner callout-banner-prominent callout-center">
           <strong>${escapeHtml(headlineText)}</strong>
-          <span>In this English Sonnet 4.6 setup, prompt choice did not change the outcome. The results below are the same regardless of which prompt you use.</span>
+          <span>For our tests, the results below were the same regardless of which prompt we used.</span>
         </div>
         <div class="panel-header">
           <h3>English Baseline Results</h3>
@@ -1612,6 +1614,109 @@ function renderPresuppositions() {
           <p>Abstract rules (P2's guarantee-based NLI) and linguistic definitions (P7's projection-aware framing) can't capture CONFER's specific labeling conventions. P4–P6 actively confuse the model — their multi-step decompositions push accuracy below 50%. More scaffolding is not better when the scaffold doesn't match the benchmark's label geometry.</p>
         </div>
         <div class="action-row">
+          ${button("Will It Transfer Cross-Lingually?", "set-step", {
+            pathway: "presuppositions",
+            step: "multilingual-predict",
+          })}
+        </div>
+      </section>
+    `;
+  }
+
+  if (p.step === "multilingual-predict") {
+    body = `
+      <section class="panel-card center-card">
+        <div class="panel-header">
+          <h3>Will Prompt Engineering Still Apply?</h3>
+          <p>${escapeHtml(presuppositionsData.multilingual.intro)}</p>
+        </div>
+        <div class="question-focus">
+          <strong>${escapeHtml(presuppositionsData.multilingual.question)}</strong>
+        </div>
+        <div class="binary-row">
+          ${choiceCard({
+            label: "Yes",
+            body: "The same prompt advantage should carry over.",
+            selected: p.multilingualTransferGuess === "yes",
+            action: "set-guess",
+            extra: { pathway: "presuppositions", key: "multilingualTransferGuess", value: "yes" },
+          })}
+          ${choiceCard({
+            label: "No",
+            body: "English prompt gains probably will not transfer.",
+            selected: p.multilingualTransferGuess === "no",
+            action: "set-guess",
+            extra: { pathway: "presuppositions", key: "multilingualTransferGuess", value: "no" },
+          })}
+        </div>
+        <div class="action-row">
+          ${
+            p.multilingualTransferGuess
+              ? button("Reveal Multilingual Results", "set-step", {
+                  pathway: "presuppositions",
+                  step: "multilingual-reveal",
+                })
+              : `<button class="button" disabled>Choose yes or no first</button>`
+          }
+        </div>
+      </section>
+    `;
+  }
+
+  if (p.step === "multilingual-reveal") {
+    const rows = presuppositionsData.multilingual.rows
+      .map(
+        (row) => `
+          <tr class="${row.isAverage ? "table-row-highlight" : ""}">
+            <th>${escapeHtml(row.language)}</th>
+            <td>${formatDecimal(row.p0Acc, 4)}</td>
+            <td>${formatDecimal(row.p1Acc, 4)}</td>
+            <td>${formatDecimal(row.p2Acc, 4)}</td>
+            <td>${formatDecimal(row.p0MacroF1, 4)}</td>
+            <td>${formatDecimal(row.p1MacroF1, 4)}</td>
+            <td>${formatDecimal(row.p2MacroF1, 4)}</td>
+            <td>${escapeHtml(row.best)}</td>
+          </tr>
+        `,
+      )
+      .join("");
+
+    body = `
+      <section class="panel-card">
+        <div class="panel-header">
+          <h3>Yes, But Less Dramatically</h3>
+          <p>${escapeHtml(presuppositionsData.multilingual.takeaway)}</p>
+        </div>
+        <div class="metric-row">
+          ${metricCard("English: P1 - P0", `+${formatDecimal(presuppositionsData.multilingual.englishDifferentials.p1VsP0, 4)}`, "Macro-F1 gain on CONFER English")}
+          ${metricCard("MLM Avg: P1 - P0", `+${formatDecimal(presuppositionsData.multilingual.multilingualDifferentials.p1VsP0, 4)}`, "Average Macro-F1 gain across de / fr / hi / ru / vi")}
+          ${metricCard("English: P1 - P2", `+${formatDecimal(presuppositionsData.multilingual.englishDifferentials.p1VsP2, 4)}`, "Macro-F1 gain on CONFER English")}
+          ${metricCard("MLM Avg: P1 - P2", `+${formatDecimal(presuppositionsData.multilingual.multilingualDifferentials.p1VsP2, 4)}`, "Average Macro-F1 gain across de / fr / hi / ru / vi")}
+        </div>
+        <table class="results-table benchmark-table">
+          <thead>
+            <tr>
+              <th>Language</th>
+              <th>P0 Acc</th>
+              <th>P1 Acc</th>
+              <th>P2 Acc</th>
+              <th>P0 Macro-F1</th>
+              <th>P1 Macro-F1</th>
+              <th>P2 Macro-F1</th>
+              <th>Best</th>
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+        <div class="callout-banner">
+          <strong>What changed?</strong>
+          <span>This is the same linguistic task, on a different dataset housing different multi-language model benchmarkks. In this case, the P1 prompt strategy still travels well, but the gain shrinks once we leave the cleaner English CONFER setting. Prompt engineering still matters here, just not as dramatically. But there remains some generalizability (at least in this case).</span>
+        </div>
+        <div class="analysis-card analysis-card-soft">
+          <strong>Sidenote</strong>
+          <p>${escapeHtml(presuppositionsData.multilingual.sidenote)}</p>
+        </div>
+        <div class="action-row">
           ${button("Show Class Balance", "set-step", {
             pathway: "presuppositions",
             step: "balance",
@@ -1645,32 +1750,6 @@ function renderPresuppositions() {
         </div>
         <div class="class-grid">${cards}</div>
         <p class="fine-print">*These prompt-benchmarking results are from an n = 300 CONFER English evaluation slice. They show strong prompt effects, but they are not meant to claim that P1 definitively beats full-dataset SOTA across the entire benchmark.</p>
-        <div class="action-row">
-          ${button("Why This Matters", "set-step", {
-            pathway: "presuppositions",
-            step: "conclusion",
-          })}
-        </div>
-      </section>
-    `;
-  }
-
-  if (p.step === "conclusion") {
-    body = `
-      <section class="panel-card">
-        <div class="panel-header">
-          <h3>Why This Matters</h3>
-          <p>This demo shows that prompt engineering is part of the method — and that more is not always better.</p>
-        </div>
-        <ul class="note-list">
-          <li>P1 won because its three worked examples taught the model CONFER's specific label conventions — especially the Entailment/Neutral boundary that other prompts collapsed.</li>
-          <li>Probability output preserved the model's uncertainty structure. Hard labels destroyed it.</li>
-          <li>Abstract rules and linguistic definitions couldn't capture what concrete examples could.</li>
-        </ul>
-        <div class="callout-banner">
-          <strong>The practical lesson</strong>
-          <span>For novel semantic tasks, benchmark-aligned few-shot examples with probability output beat both minimal prompting and heavy-scaffolded reasoning chains.</span>
-        </div>
         <div class="action-row">
           ${button("Return Home", "go-home")}
         </div>
@@ -1781,9 +1860,9 @@ function handleAction(target) {
 
   if (action === "open-pathway") {
     const pathway = target.dataset.pathway;
-    if (pathway === "lemmatization") setRoute("lemmatization", "intro");
-    if (pathway === "pronoun") setRoute("pronoun", "intro");
-    if (pathway === "presuppositions") setRoute("presuppositions", "intro");
+    resetPathwayState(state, pathway);
+    const firstStep = createDefaultState()[pathway].step;
+    setRoute(pathway, firstStep);
     return;
   }
 
