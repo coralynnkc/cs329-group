@@ -325,6 +325,27 @@ textarea {
   margin-top: 1.15rem;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.callout-center {
+  text-align: center;
+}
+
+.question-focus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 1rem 1.1rem;
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--line);
+  text-align: center;
+}
+
+.question-focus strong {
+  font-size: 1.2rem;
 }
 
 .metric-row,

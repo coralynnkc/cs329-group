@@ -370,7 +370,7 @@ function renderLemmatization() {
                 <span class="grid-meta">n = ${batch}</span>
                 ${
                   revealed
-                    ? `<strong>${formatPercent(score, 1)}</strong><small>${isBestRevealed ? "Best revealed" : "Click for accuracy"}</small>`
+                    ? `<strong>${formatPercent(score, 1)}</strong>${isBestRevealed ? "<small>Best revealed</small>" : ""}`
                     : `<strong>?</strong><small>Click to reveal</small>`
                 }
               </button>
@@ -614,9 +614,12 @@ function renderPronoun() {
           <h3>English Baseline</h3>
           <p>You're using <strong>${escapeHtml(pronounData.englishSetup.model)}</strong> to evaluate the <strong>${escapeHtml(pronounData.englishSetup.dataset)}</strong>.</p>
         </div>
-        <div class="metric-row">
-          ${metricCard("State-of-the-art target", pronounData.englishSetup.sota)}
-          ${metricCard("Question", "Do you want to refine your prompt?")}
+        <div class="callout-banner callout-banner-prominent">
+          <strong>Your goal is to meet a state-of-the-art target of 0.89.</strong>
+          <span>According to OpenAI's own benchmarking, that's the performance bar for this English benchmark.</span>
+        </div>
+        <div class="question-focus">
+          <strong>Do you want to refine your prompt?</strong>
         </div>
         <div class="binary-row">
           ${choiceCard({
@@ -683,11 +686,11 @@ function renderPronoun() {
 
   if (p.step === "english-reveal") {
     const headlineText = p.englishPrompt
-      ? "Prompt engineering made no difference here."
-      : "Good instinct — prompt engineering made no difference here.";
+      ? "Good try...but Prompt engineering made no difference here."
+      : "Prompt engineering made no difference here.";
     body = `
       <section class="panel-card">
-        <div class="callout-banner callout-banner-prominent">
+        <div class="callout-banner callout-banner-prominent callout-center">
           <strong>${escapeHtml(headlineText)}</strong>
           <span>In this English Sonnet 4.6 setup, prompt choice did not change the outcome. The results below are the same regardless of which prompt you use.</span>
         </div>
@@ -825,9 +828,9 @@ function renderPronoun() {
       <section class="panel-card pivot-card">
         <div class="panel-header">
           <h3 class="pivot-heading">What Changed?</h3>
-          <p>Unlike the English baseline, prompt choice now produces <strong>real variation</strong>. The best prompt is not identical across all three languages — which means the model is less stable in these lower-resource settings.</p>
+          <p>Unlike the English baseline, prompt choice now produces <strong>real variation</strong>. The best prompt is not identical across all three languages, which means the model is <strong>likely</strong> less stable in these lower-resource settings.</p>
         </div>
-        <p class="note-text">Why do prompts matter here but not in English? Let's look at the bigger pattern.</p>
+        <p class="note-text"><strong>Why do prompts matter here but not in English?</strong> Let's look at the bigger pattern.</p>
         <div class="action-row">
           ${button("See The Pattern", "set-step", {
             pathway: "pronoun",
@@ -877,12 +880,10 @@ function renderPronoun() {
         <div class="callout-banner callout-banner-prominent">
           <strong>For Claude Sonnet 4.6, prompt sensitivity increases as we move into lower-resource settings.</strong>
           <span>That suggests these task environments are less stable under simple prompting choices.</span>
+          <span>In a stable English benchmark setting, changing the prompt did nothing. In lower-resource settings, prompt choice mattered much more. Prompt sensitivity can itself be a clue about model robustness.</span>
         </div>
         <div class="action-row">
-          ${button("Why Does This Matter?", "set-step", {
-            pathway: "pronoun",
-            step: "conclusion",
-          })}
+          ${button("Return Home", "go-home")}
         </div>
       </section>
     `;
@@ -968,7 +969,7 @@ function renderPresuppositions() {
     body = `
       <section class="panel-card">
         <div class="panel-header">
-          <h3>Can We Beat the Baseline?</h3>
+          <h3>Can We Beat the Benchmark?</h3>
           <p>You're working on <strong>${escapeHtml(presuppositionsData.challenge.benchmark)}</strong>, a benchmark for presupposition reasoning. Here is the baseline result for <strong>Chat 5.4</strong>:</p>
         </div>
         <div class="metric-row">
@@ -1048,7 +1049,6 @@ function renderPresuppositions() {
           ${metricCard("F1-C", formatDecimal(result.f1C, 4))}
           ${metricCard("Log Loss", result.logLoss == null ? "—" : formatDecimal(result.logLoss, 4))}
           ${metricCard("Brier", result.brier == null ? "—" : formatDecimal(result.brier, 4))}
-          ${metricCard("Integrity", result.integrity)}
         </div>
         <div class="analysis-card">
           <strong>Interpretation</strong>
@@ -1216,7 +1216,6 @@ function renderPresuppositions() {
 }
 
 function render() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
   const route = parseHash();
   state.route = route;
   saveState(state);
