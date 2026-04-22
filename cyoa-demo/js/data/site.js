@@ -1,9 +1,9 @@
 export const siteMeta = {
-  title: "LLMs for Linguistic Analysis",
+  title: "Applying LLMs in Linguistics",
   subtitle:
-    "A click-through desktop demo on where large language models help, where prompts matter, and where linguistic structure still matters most.",
+    "When large language models help, prompts matter (sometimes), and where linguistic tasks compound.",
   projectSummary:
-    "Each pathway teaches a different methodological lesson through interaction, not lecture.",
+    "Each pathway teaches a different methodological lesson on optimizing LLMS to the linguistics research field",
 };
 
 export const pathways = [
