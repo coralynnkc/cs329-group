@@ -189,7 +189,7 @@ function renderHome() {
           <div class="panel-header">
             <h3>How It Works</h3>
             <p>How good are you at predicting LLM performance? Choose a pathway, test your intuition, and learn about linguistics and LLM applications!</p>
-            <p>Don't know where to start? Enter the Wardrobe and take the pathway to Narnia!</p>
+            <p>Don't know where to start? Take the pathway to Narnia!</p>
           </div>
         </section>
       </aside>
